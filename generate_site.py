@@ -411,6 +411,73 @@ def fetch_zai(key):
     return out
 
 
+def fetch_modelscope(key):
+    # ModelScope inference API is OpenAI-compatible; most open-weight models
+    # (Qwen family etc.) are free to serve through it.
+    headers = {"Authorization": f"Bearer {key}"} if key else {}
+    data = _get("https://api-inference.modelscope.cn/v1/models", headers=headers)
+    items = data.get("data", []) if isinstance(data, dict) else data
+    out = []
+    for m in items:
+        mid = m.get("id", "")
+        if not mid:
+            continue
+        if any(x in mid.lower() for x in ("embed", "rerank", "tts", "stt", "audio", "whisper", "image", "video")):
+            continue
+        ctx = m.get("context_length") or m.get("max_tokens") or m.get("context_window")
+        out.append(
+            {
+                "id": mid,
+                "name": m.get("name") or mid,
+                "context": ctx if isinstance(ctx, int) else None,
+                "limits": "free inference tier",
+            }
+        )
+    return out
+
+
+def fetch_kilo(key):
+    # Kilo Code gateway exposes a single /models list; free models carry a
+    # `:free` suffix (e.g. `stepfun/step-3.7-flash:free`) plus the special
+    # `kilo-auto/free` auto-router.
+    headers = {"Authorization": f"Bearer {key}"} if key else {}
+    data = _get("https://api.kilo.ai/api/gateway/models", headers=headers)
+    items = data.get("data", []) if isinstance(data, dict) else data
+    out = []
+    for m in items:
+        mid = m.get("id", "")
+        if not mid:
+            continue
+        free = mid.endswith(":free") or mid.endswith("/free") or ":free-" in mid
+        if not free:
+            continue
+        ctx = m.get("context_length") or m.get("max_tokens") or m.get("context_window")
+        out.append(
+            {
+                "id": mid,
+                "name": m.get("name") or mid,
+                "context": ctx if isinstance(ctx, int) else None,
+                "limits": "free tier",
+            }
+        )
+    return out
+
+
+def fetch_zen(key):
+    # OpenCode Zen /models is public (no key needed); free models carry a
+    # `-free` suffix (e.g. `deepseek-v4-flash-free`).
+    headers = {"Authorization": f"Bearer {key}"} if key else {}
+    data = _get("https://opencode.ai/zen/v1/models", headers=headers)
+    items = data.get("data", []) if isinstance(data, dict) else data
+    out = []
+    for m in items:
+        mid = m.get("id", "")
+        if not mid or not mid.endswith("-free"):
+            continue
+        out.append({"id": mid, "name": mid, "context": None, "limits": "free tier"})
+    return out
+
+
 # ── LiteLLM model metadata enrichment ────────────────────────────────────────
 # https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json
 
@@ -715,6 +782,34 @@ PROVIDERS = [
         "color": "#0ea5e9",
         "url": "https://open.bigmodel.cn",
         "key_url": "https://open.bigmodel.cn/usercenter/apikeys",
+    },
+    {
+        "key": "modelscope",
+        "label": "ModelScope",
+        "env": "MODELSCOPE_API_KEY",
+        "fetch": fetch_modelscope,
+        "color": "#3b82f6",
+        "url": "https://modelscope.cn",
+        "key_url": "https://modelscope.cn/my/myaccesstoken",
+    },
+    {
+        "key": "kilo",
+        "label": "Kilo Code",
+        "env": "KILOCODE_API_KEY",
+        "fetch": fetch_kilo,
+        "color": "#f59e0b",
+        "url": "https://kilo.code",
+        "key_url": "https://kilo.code",
+    },
+    {
+        "key": "zen",
+        "label": "OpenCode Zen",
+        "env": "OPENCODE_ZEN_API_KEY",
+        "fetch": fetch_zen,
+        "color": "#7c3aed",
+        "url": "https://opencode.ai/zen",
+        "key_url": "https://opencode.ai/settings/api-keys",
+        "anonymous_ok": True,
     },
 ]
 

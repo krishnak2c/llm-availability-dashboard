@@ -142,6 +142,24 @@ PROVIDER_PROBES = {
         "auth": "bearer",
         "style": "openai",
     },
+    "modelscope": {
+        "env": "MODELSCOPE_API_KEY",
+        "url": "https://api-inference.modelscope.cn/v1/chat/completions",
+        "auth": "bearer",
+        "style": "openai",
+    },
+    "kilo": {
+        "env": "KILOCODE_API_KEY",
+        "url": "https://api.kilo.ai/api/gateway/chat/completions",
+        "auth": "bearer",
+        "style": "openai",
+    },
+    "zen": {
+        "env": "OPENCODE_ZEN_API_KEY",
+        "url": "https://opencode.ai/zen/v1/chat/completions",
+        "auth": "bearer",
+        "style": "openai",
+    },
 }
 
 

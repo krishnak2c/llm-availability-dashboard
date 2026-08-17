@@ -106,6 +106,9 @@ probe Pollinations  "https://gen.pollinations.ai/v1/models"        ""           
 probe Kluster       "https://api.kluster.ai/v1/models"            "Authorization: Bearer $KLUSTER_API_KEY"       KLUSTER_API_KEY
 probe LLM7          "https://api.llm7.io/v1/models"               ""                                            LLM7_API_KEY         optional
 probe "Z.ai"        "https://open.bigmodel.cn/api/paas/v4/models" "Authorization: Bearer $ZAI_API_KEY"           ZAI_API_KEY
+probe ModelScope    "https://api-inference.modelscope.cn/v1/models" "Authorization: Bearer $MODELSCAPE_API_KEY"  MODELSCAPE_API_KEY
+probe "Kilo Code"   "https://api.kilo.ai/api/gateway/models"      "Authorization: Bearer $KILOCODE_API_KEY"      KILOCODE_API_KEY
+probe "OpenCode Zen" "https://opencode.ai/zen/v1/models"          ""                                            OPENCODE_ZEN_API_KEY optional
 
 echo
 echo "== provider result: OK=$OK SKIPPED=$SKIPPED AUTH=$AUTH RATE=$RATE UNREACHABLE=$UNREACH SERVER=$SERVER =="
