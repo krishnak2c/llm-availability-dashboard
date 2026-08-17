@@ -298,6 +298,7 @@ def test_env_example_has_provider_keys():
         "MODELSCAPE_API_KEY",
         "KILOCODE_API_KEY",
         "OPENCODE_ZEN_API_KEY",
+        "OLLAMA_API_KEY",
     ]:
         assert re.search(rf"^{re.escape(key)}=", text, re.M), f"{key} missing from .env.example"
 

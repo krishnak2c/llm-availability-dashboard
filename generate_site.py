@@ -72,6 +72,28 @@ def _get(url, headers=None, timeout=20):
         raise RuntimeError(f"GET {url} → {e}")
 
 
+def _post(url, headers=None, data=None, timeout=20):
+    req = urllib.request.Request(
+        url,
+        data=data,
+        headers={**_HEADERS, **(headers or {})},
+        method="POST",
+    )
+    try:
+        with _opener.open(req, timeout=timeout) as r:
+            body = r.read().decode()
+            ct = r.headers.get_content_type() or ""
+            return (
+                json.loads(body)
+                if "json" in ct
+                or body.lstrip().startswith("{")
+                or body.lstrip().startswith("[")
+                else body
+            )
+    except Exception as e:
+        raise RuntimeError(f"POST {url} → {e}")
+
+
 # ── Provider fetchers (same logic as sync_models.py) ─────────────────────────
 
 
@@ -478,6 +500,48 @@ def fetch_zen(key):
     return out
 
 
+def fetch_ollama(key):
+    # Ollama Cloud /v1/models carries no price metadata, so free models are
+    # identified by probing the chat endpoint: 403 "requires a subscription"
+    # = paid, 200 = free. Hardcode the known-free set as a base (like
+    # fetch_zai) and augment with any API-listed model that probes free.
+    free_base = {
+        "minimax-m3",
+        "nemotron-3-super",
+        "nemotron-3-ultra",
+        "gpt-oss:20b",
+        "gemma4:31b",
+        "gpt-oss:120b",
+        "nemotron-3-nano:30b",
+    }
+    headers = {"Authorization": f"Bearer {key}"} if key else {}
+    data = _get("https://ollama.com/v1/models", headers=headers)
+    items = data.get("data", []) if isinstance(data, dict) else data
+    out = [{"id": mid, "name": mid, "context": None, "limits": "free tier"} for mid in free_base]
+    seen = set(free_base)
+    for m in items:
+        mid = m.get("id", "")
+        if not mid or mid in seen:
+            continue
+        seen.add(mid)
+        try:
+            _post(
+                "https://ollama.com/v1/chat/completions",
+                headers=headers,
+                data=json.dumps(
+                    {
+                        "model": mid,
+                        "messages": [{"role": "user", "content": "ping"}],
+                        "max_tokens": 1,
+                    }
+                ).encode(),
+            )
+        except Exception:
+            continue  # paid or unreachable
+        out.append({"id": mid, "name": mid, "context": None, "limits": "free tier"})
+    return out
+
+
 # ── LiteLLM model metadata enrichment ────────────────────────────────────────
 # https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json
 
@@ -810,6 +874,15 @@ PROVIDERS = [
         "url": "https://opencode.ai/zen",
         "key_url": "https://opencode.ai/settings/api-keys",
         "anonymous_ok": True,
+    },
+    {
+        "key": "ollama",
+        "label": "Ollama Cloud",
+        "env": "OLLAMA_API_KEY",
+        "fetch": fetch_ollama,
+        "color": "#22c55e",
+        "url": "https://ollama.com",
+        "key_url": "https://ollama.com/settings/keys",
     },
 ]
 

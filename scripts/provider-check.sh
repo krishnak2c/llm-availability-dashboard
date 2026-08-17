@@ -109,6 +109,7 @@ probe "Z.ai"        "https://open.bigmodel.cn/api/paas/v4/models" "Authorization
 probe ModelScope    "https://api-inference.modelscope.cn/v1/models" "Authorization: Bearer $MODELSCAPE_API_KEY"  MODELSCAPE_API_KEY
 probe "Kilo Code"   "https://api.kilo.ai/api/gateway/models"      "Authorization: Bearer $KILOCODE_API_KEY"      KILOCODE_API_KEY
 probe "OpenCode Zen" "https://opencode.ai/zen/v1/models"          ""                                            OPENCODE_ZEN_API_KEY optional
+probe "Ollama Cloud" "https://ollama.com/v1/models"               "Authorization: Bearer $OLLAMA_API_KEY"        OLLAMA_API_KEY
 
 echo
 echo "== provider result: OK=$OK SKIPPED=$SKIPPED AUTH=$AUTH RATE=$RATE UNREACHABLE=$UNREACH SERVER=$SERVER =="

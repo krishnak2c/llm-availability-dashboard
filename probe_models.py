@@ -160,6 +160,12 @@ PROVIDER_PROBES = {
         "auth": "bearer",
         "style": "openai",
     },
+    "ollama": {
+        "env": "OLLAMA_API_KEY",
+        "url": "https://ollama.com/v1/chat/completions",
+        "auth": "bearer",
+        "style": "openai",
+    },
 }
 
 
