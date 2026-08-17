@@ -1,0 +1,62 @@
+name: Update free models list
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # every hour
+  push:
+    branches: [main]
+    paths:
+      - generate_site.py
+      - .github/workflows/update-models.yml
+  workflow_dispatch:        # allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate site
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY:        ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY:    ${{ secrets.CEREBRAS_API_KEY }}
+          SAMBANOVA_API_KEY:   ${{ secrets.SAMBANOVA_API_KEY }}
+          COHERE_API_KEY:      ${{ secrets.COHERE_API_KEY }}
+          TOGETHER_API_KEY:    ${{ secrets.TOGETHER_API_KEY }}
+          GEMINI_API_KEY:      ${{ secrets.GEMINI_API_KEY }}
+          NVIDIA_NIM_API_KEY:  ${{ secrets.NVIDIA_NIM_API_KEY }}
+          HF_TOKEN:            ${{ secrets.HF_TOKEN }}
+          MISTRAL_API_KEY:     ${{ secrets.MISTRAL_API_KEY }}
+          GH_MODELS_TOKEN:     ${{ secrets.GH_MODELS_TOKEN }}
+          CLOUDFLARE_API_KEY:  ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
+          KLUSTER_API_KEY:     ${{ secrets.KLUSTER_API_KEY }}
+          LLM7_API_KEY:        ${{ secrets.LLM7_API_KEY }}
+          ZAI_API_KEY:         ${{ secrets.ZAI_API_KEY }}
+        run: python generate_site.py
+
+      - name: Commit generated site
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git diff --cached --quiet || git commit -m "chore: update free models list $(date -u '+%Y-%m-%d')"
+          # Rebase-and-retry in case another commit landed on main concurrently.
+          for i in 1 2 3 4; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && break
+            sleep $((2 ** i))
+          done

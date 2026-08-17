@@ -1,0 +1,124 @@
+name: Monitor cheahjs/free-llm-api-resources
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"   # every Monday at 09:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for changes
+        id: check
+        run: |
+          python3 - <<'PYEOF'
+          import urllib.request, re, json, os
+
+          README_URL = (
+              "https://raw.githubusercontent.com/cheahjs/free-llm-api-resources"
+              "/refs/heads/main/README.md"
+          )
+
+          # Providers we already support
+          KNOWN = {
+              "openrouter", "groq", "cerebras", "sambanova", "together",
+              "cohere", "gemini", "google", "nvidia", "huggingface",
+              "mistral", "github", "cloudflare",
+          }
+
+          with urllib.request.urlopen(README_URL, timeout=20) as r:
+              readme = r.read().decode()
+
+          # Extract all ### headings (each is a provider section)
+          headings = re.findall(r"^### \[?([^\]\n#]+)", readme, re.MULTILINE)
+          headings = [h.strip() for h in headings if h.strip()]
+
+          new_providers = []
+          for h in headings:
+              key = h.lower().replace(" ", "").replace("-", "").replace("_", "")
+              if not any(k in key or key in k for k in KNOWN):
+                  new_providers.append(h)
+
+          # Detect added/removed sections since last run
+          snapshot_path = ".cheahjs_snapshot"
+          try:
+              with open(snapshot_path) as f:
+                  old_headings = set(json.load(f))
+          except Exception:
+              old_headings = set()
+
+          current_headings = set(headings)
+          removed = old_headings - current_headings if old_headings else set()
+          added_all = current_headings - old_headings if old_headings else set()
+
+          # Always persist the snapshot so next run has a baseline
+          with open(snapshot_path, "w") as f:
+              json.dump(sorted(current_headings), f)
+
+          lines = []
+          if new_providers:
+              lines.append("## New providers not yet in our project")
+              for p in sorted(new_providers):
+                  lines.append(f"- **{p}**")
+              lines.append("")
+          if added_all:
+              lines.append("## Sections added to cheahjs README")
+              for p in sorted(added_all):
+                  lines.append(f"- {p}")
+              lines.append("")
+          if removed:
+              lines.append("## Sections removed from cheahjs README")
+              for p in sorted(removed):
+                  lines.append(f"- {p}")
+              lines.append("")
+
+          if lines:
+              body = "\n".join(lines)
+              body += "\n\nSource: https://github.com/cheahjs/free-llm-api-resources"
+              with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                  f.write("has_changes=true\n")
+              with open("/tmp/issue_body.md", "w") as f:
+                  f.write(body)
+              print("Changes detected:\n" + body)
+          else:
+              with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                  f.write("has_changes=false\n")
+              print("No changes detected.")
+          PYEOF
+
+      - name: Commit updated snapshot
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .cheahjs_snapshot
+          git diff --cached --quiet || git commit -m "chore: update cheahjs snapshot" && git push
+
+      - name: Create issue if changes found (skip if duplicate open issue exists)
+        if: steps.check.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE=$(date -u '+%Y-%m-%d')
+          TITLE="cheahjs update detected — ${DATE}"
+          # Avoid duplicate issues: check for any open issue with the same title
+          EXISTING=$(gh issue list --state open --search "$TITLE" --json number --jq length)
+          if [ "$EXISTING" -gt 0 ]; then
+            echo "Open issue with this title already exists, skipping."
+            exit 0
+          fi
+          BODY=$(cat /tmp/issue_body.md)
+          gh label create new-provider --color BFD4F2 --description "Auto-detected new provider in cheahjs/free-llm-api-resources" 2>/dev/null || true
+          gh issue create \
+            --title "$TITLE" \
+            --body "$BODY" \
+            --label "new-provider"
