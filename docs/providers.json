@@ -1,15 +1,15 @@
 {
   "order": [
     "nvidia-minimaxm3",
+    "ollama-minimaxm3",
+    "zen-hy3",
     "kilo-hy3",
+    "orca-hy3",
     "nvidia-glm52",
+    "openrouter-glm52",
+    "openrouter-dots3notepreview",
     "kilo-dots3notepreview",
-    "pollinations-lagunas21",
-    "kilo-openrouterfree",
-    "groq-allam2",
-    "nvidia-llama318binstruct",
-    "nvidia-llama33nemotronsuper49bv1",
-    "nvidia-nemotronmini4binstruct"
+    "zen-lagunas21"
   ],
   "chain": [
     {
@@ -19,10 +19,28 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
+      "id": "ollama-minimaxm3",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "minimax-m3",
+      "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
+      "id": "zen-hy3",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "hy3-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+    },
+    {
       "id": "kilo-hy3",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "tencent/hy3:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "orca-hy3",
+      "baseUrl": "https://api.orcarouter.ai/v1",
+      "model": "tencent/hy3-free",
+      "apiKeyEnv": "ORCA_API_KEY"
     },
     {
       "id": "nvidia-glm52",
@@ -31,50 +49,31 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
+      "id": "openrouter-glm52",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "z-ai/glm-5.2:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "openrouter-dots3notepreview",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "dots-studio/dots-3-note-preview:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
       "id": "kilo-dots3notepreview",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "dots-studio/dots-3-note-preview:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "pollinations-lagunas21",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "vendouple/laguna-s-2.1:free",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
-    },
-    {
-      "id": "kilo-openrouterfree",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "openrouter/free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "groq-allam2",
-      "baseUrl": "https://api.groq.com/openai/v1",
-      "model": "allam-2-7b",
-      "apiKeyEnv": "GROQ_API_KEY"
-    },
-    {
-      "id": "nvidia-llama318binstruct",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "meta/llama-3.1-8b-instruct",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "nvidia-llama33nemotronsuper49bv1",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/llama-3.3-nemotron-super-49b-v1",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "nvidia-nemotronmini4binstruct",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/nemotron-mini-4b-instruct",
-      "apiKeyEnv": "NIM_API_KEY"
+      "id": "zen-lagunas21",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "laguna-s-2.1-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
     }
   ],
   "modelAllowlist": [
-    "allam-2-7b",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
@@ -82,19 +81,17 @@
     "hy3",
     "hy3-free",
     "laguna-s-2.1-free",
-    "meta/llama-3.1-8b-instruct",
     "mimo-v2.5-free",
+    "minimax-m3",
     "minimaxai/minimax-m3",
     "nemotron-3-ultra-free",
-    "nvidia/llama-3.3-nemotron-super-49b-v1",
-    "nvidia/nemotron-mini-4b-instruct",
-    "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b-free",
+    "tencent/hy3-free",
     "tencent/hy3:free",
     "thinkingmachines/inkling",
-    "vendouple/laguna-s-2.1:free",
-    "z-ai/glm-5.2"
+    "z-ai/glm-5.2",
+    "z-ai/glm-5.2:free"
   ]
 }
