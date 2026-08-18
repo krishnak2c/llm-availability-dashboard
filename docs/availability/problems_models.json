@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T16:30:44.666097+00:00",
+  "updated": "2026-08-18T17:26:43.647679+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -132,13 +132,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
           "id": "groq/compound",
           "name": "groq/compound",
           "context": 131072,
@@ -209,13 +202,6 @@
           "params_b": 49.0
         },
         {
-          "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
-          "name": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 49.0
-        },
-        {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
           "name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
           "context": null,
@@ -251,13 +237,6 @@
           "params_b": null
         },
         {
-          "id": "thinkingmachines/inkling",
-          "name": "thinkingmachines/inkling",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
-        },
-        {
           "id": "z-ai/glm-5.2",
           "name": "z-ai/glm-5.2",
           "context": null,
@@ -271,18 +250,6 @@
       "name": "Mistral",
       "url": "https://console.mistral.ai",
       "models": [
-        {
-          "id": "devstral-2512",
-          "name": "devstral-2512",
-          "context": 256000,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        },
         {
           "id": "devstral-latest",
           "name": "devstral-2512",
@@ -301,33 +268,6 @@
           "context": null,
           "limits": "1 req/s · 1B tok/month",
           "params_b": null
-        },
-        {
-          "id": "mistral-large-2512",
-          "name": "mistral-large-2512",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-medium-latest",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
         }
       ],
       "error": null
@@ -336,13 +276,6 @@
       "name": "Cloudflare AI",
       "url": "https://developers.cloudflare.com/workers-ai/",
       "models": [
-        {
-          "id": "@cf/meta/llama-guard-3-8b",
-          "name": "@cf/meta/llama-guard-3-8b",
-          "context": 131072,
-          "limits": "10k neurons/day",
-          "params_b": 8.0
-        },
         {
           "id": "@cf/google/gemma-4-26b-a4b-it",
           "name": "@cf/google/gemma-4-26b-a4b-it",

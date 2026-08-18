@@ -1,10 +1,23 @@
 {
-  "updated": "2026-08-18T16:30:44.666097+00:00",
+  "updated": "2026-08-18T17:26:43.647679+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
         {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
@@ -32,24 +45,18 @@
           "params_b": 120.0
         },
         {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
-        },
-        {
           "id": "allam-2-7b",
           "name": "allam-2-7b",
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
+        },
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
         }
       ],
       "error": null
@@ -106,6 +113,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 8.0
+        },
+        {
+          "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+          "name": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 49.0
         },
         {
           "id": "nvidia/nemotron-3-nano-30b-a3b",
@@ -176,6 +190,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 20.0
+        },
+        {
+          "id": "thinkingmachines/inkling",
+          "name": "thinkingmachines/inkling",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
         }
       ],
       "error": null
@@ -244,6 +265,18 @@
           "name": "codestral-2508",
           "context": null,
           "limits": "1 req/s · 1B tok/month",
+          "params_b": null
+        },
+        {
+          "id": "devstral-2512",
+          "name": "devstral-2512",
+          "context": 256000,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
           "params_b": null
         },
         {
@@ -319,6 +352,19 @@
           "params_b": null
         },
         {
+          "id": "mistral-large-2512",
+          "name": "mistral-large-2512",
+          "context": 262144,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
+          "params_b": null
+        },
+        {
           "id": "mistral-large-latest",
           "name": "mistral-large-2512",
           "context": 262144,
@@ -384,6 +430,20 @@
           "context": null,
           "limits": "1 req/s · 1B tok/month",
           "params_b": 14.0
+        },
+        {
+          "id": "mistral-medium-latest",
+          "name": "mistral-medium-latest",
+          "context": 262144,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": null
         },
         {
           "id": "mistral-medium",
@@ -483,6 +543,13 @@
           "context": 80000,
           "limits": "10k neurons/day",
           "params_b": 3.0
+        },
+        {
+          "id": "@cf/meta/llama-guard-3-8b",
+          "name": "@cf/meta/llama-guard-3-8b",
+          "context": 131072,
+          "limits": "10k neurons/day",
+          "params_b": 8.0
         },
         {
           "id": "@cf/mistral/mistral-7b-instruct-v0.2-lora",
@@ -785,11 +852,18 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 20.0
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         },
         {
           "id": "gpt-oss:120b",
@@ -806,18 +880,11 @@
           "params_b": 31.0
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
+          "params_b": null
         },
         {
           "id": "minimax-m3",
