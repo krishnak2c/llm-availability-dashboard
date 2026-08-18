@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Free-LLM availability dashboard: probes free-tier LLM models from ~15 providers and publishes a static GitHub Pages site (`docs/`). Fork of cheahjs/litellm-free-models-proxy, stripped to the availability site only — the LiteLLM proxy, sync, Postgres, and compose stack have been removed. See `README.md` for the full picture; this file covers what agents get wrong.
+Free-LLM availability dashboard: probes free-tier LLM models from ~15 providers and publishes a static GitHub Pages site (`docs/`). See `README.md` for the full picture; this file covers what agents get wrong.
 
 ## Commands
 
