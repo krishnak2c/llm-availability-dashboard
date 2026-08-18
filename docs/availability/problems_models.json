@@ -1,20 +1,20 @@
 {
-  "updated": "2026-08-18T08:36:04.461071+00:00",
+  "updated": "2026-08-18T09:32:54.564575+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "groq/compound",
-          "name": "groq/compound",
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
           "context": 131072,
           "limits": "varies per model",
           "params_b": null
         },
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
+          "id": "groq/compound",
+          "name": "groq/compound",
           "context": 131072,
           "limits": "varies per model",
           "params_b": null
@@ -62,11 +62,25 @@
           "params_b": 3.0
         },
         {
+          "id": "minimaxai/minimax-m3",
+          "name": "minimaxai/minimax-m3",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
           "id": "mistralai/mistral-nemotron",
           "name": "mistralai/mistral-nemotron",
           "context": null,
           "limits": "40 req/min",
           "params_b": null
+        },
+        {
+          "id": "nvidia/llama-3.3-nemotron-super-49b-v1",
+          "name": "nvidia/llama-3.3-nemotron-super-49b-v1",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 49.0
         },
         {
           "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
@@ -304,6 +318,48 @@
         {
           "id": "laguna-s-2.1-free",
           "name": "laguna-s-2.1-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "orca": {
+      "name": "Orca Router",
+      "url": "https://orcarouter.ai",
+      "models": [
+        {
+          "id": "orcarouter/free",
+          "name": "orcarouter/free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "deepseek/deepseek-v4-flash-free",
+          "name": "DeepSeek: DeepSeek V4 Flash (Free)",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "deepseek/deepseek-v4-pro-free",
+          "name": "DeepSeek: DeepSeek V4 Pro (Free)",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "qwen/qwen3.8-27b-free",
+          "name": "Qwen: Qwen3.8 27B (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": 27.0
+        },
+        {
+          "id": "tencent/hy3-free",
+          "name": "Tencent: Hy3 (Free)",
           "context": null,
           "limits": "free tier",
           "params_b": null

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T08:36:04.461071+00:00",
+  "updated": "2026-08-18T09:32:54.564575+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
@@ -17,6 +17,19 @@
             "reasoning"
           ],
           "params_b": 20.0
+        },
+        {
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         },
         {
           "id": "allam-2-7b",
@@ -37,19 +50,6 @@
             "reasoning"
           ],
           "params_b": 120.0
-        },
-        {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
         }
       ],
       "error": null
@@ -71,13 +71,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 30.0
-        },
-        {
-          "id": "minimaxai/minimax-m3",
-          "name": "minimaxai/minimax-m3",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
         },
         {
           "id": "nvidia/ising-calibration-1.5-31b",
@@ -113,13 +106,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 8.0
-        },
-        {
-          "id": "nvidia/llama-3.3-nemotron-super-49b-v1",
-          "name": "nvidia/llama-3.3-nemotron-super-49b-v1",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 49.0
         },
         {
           "id": "nvidia/nemotron-3-nano-30b-a3b",
@@ -866,29 +852,8 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -901,11 +866,32 @@
           "params_b": 30.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
+          "id": "minimax-m3",
+          "name": "minimax-m3",
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
         }
       ],
       "error": null
