@@ -8,8 +8,8 @@
     "nvidia-inkling",
     "openrouter-dots3notepreview",
     "kilo-dots3notepreview",
-    "openrouter-liquidlfm25",
-    "kilo-liquidlfm25"
+    "zen-lagunas21",
+    "openrouter-lagunas21"
   ],
   "chain": [
     {
@@ -61,16 +61,16 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "openrouter-liquidlfm25",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "liquid/lfm-2.5-2.6b:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
+      "id": "zen-lagunas21",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "laguna-s-2.1-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
     },
     {
-      "id": "kilo-liquidlfm25",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "liquid/lfm-2.5-2.6b:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
+      "id": "openrouter-lagunas21",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "poolside/laguna-s-2.1:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -81,11 +81,11 @@
     "hy3",
     "hy3-free",
     "laguna-s-2.1-free",
-    "liquid/lfm-2.5-2.6b:free",
     "mimo-v2.5-free",
     "minimax-m3",
     "minimaxai/minimax-m3",
     "nemotron-3-ultra-free",
+    "poolside/laguna-s-2.1:free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b-free",
