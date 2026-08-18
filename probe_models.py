@@ -166,6 +166,12 @@ PROVIDER_PROBES = {
         "auth": "bearer",
         "style": "openai",
     },
+    "orca": {
+        "env": "ORCA_API_KEY",
+        "url": "https://api.orcarouter.ai/v1/chat/completions",
+        "auth": "bearer",
+        "style": "openai",
+    },
 }
 
 

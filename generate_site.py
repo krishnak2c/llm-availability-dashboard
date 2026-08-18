@@ -542,6 +542,32 @@ def fetch_ollama(key):
     return out
 
 
+def fetch_orca(key):
+    # Orca Router gateway /v1/models lists all routed models; free ones carry a
+    # `-free` suffix (e.g. `deepseek/deepseek-v4-flash-free`) plus the special
+    # `orcarouter/free` router id.
+    headers = {"Authorization": f"Bearer {key}"} if key else {}
+    data = _get("https://api.orcarouter.ai/v1/models", headers=headers)
+    items = data.get("data", []) if isinstance(data, dict) else data
+    out = []
+    for m in items:
+        mid = m.get("id", "")
+        if not mid:
+            continue
+        if not (mid.endswith("-free") or mid.endswith("/free")):
+            continue
+        ctx = m.get("context_length") or m.get("max_tokens") or m.get("context_window")
+        out.append(
+            {
+                "id": mid,
+                "name": m.get("name") or mid,
+                "context": ctx if isinstance(ctx, int) else None,
+                "limits": "free tier",
+            }
+        )
+    return out
+
+
 # ── LiteLLM model metadata enrichment ────────────────────────────────────────
 # https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json
 
@@ -883,6 +909,15 @@ PROVIDERS = [
         "color": "#22c55e",
         "url": "https://ollama.com",
         "key_url": "https://ollama.com/settings/keys",
+    },
+    {
+        "key": "orca",
+        "label": "Orca Router",
+        "env": "ORCA_API_KEY",
+        "fetch": fetch_orca,
+        "color": "#f97316",
+        "url": "https://orcarouter.ai",
+        "key_url": "https://www.orcarouter.ai/console/billing",
     },
 ]
 
