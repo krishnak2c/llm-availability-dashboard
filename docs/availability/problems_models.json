@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T20:23:28.928643+00:00",
+  "updated": "2026-08-18T21:23:57.820900+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -379,6 +379,20 @@
       "url": "https://kilo.code",
       "models": [
         {
+          "id": "kilo-auto/free",
+          "name": "Auto Free",
+          "context": 256000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "stepfun/step-3.7-flash:free",
+          "name": "StepFun: Step 3.7 Flash (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "poolside/laguna-xs-2.1:free",
           "name": "Poolside: Laguna XS 2.1 (free)",
           "context": 262144,
@@ -430,6 +444,20 @@
         {
           "id": "laguna-s-2.1-free",
           "name": "laguna-s-2.1-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "ollama": {
+      "name": "Ollama Cloud",
+      "url": "https://ollama.com",
+      "models": [
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
