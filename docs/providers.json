@@ -1,0 +1,58 @@
+{
+  "order": [
+    "zen-hy3",
+    "zen-deep",
+    "zen-mimo",
+    "zen-laguna",
+    "nvidia-laguna",
+    "nvidia-glm"
+  ],
+  "chain": [
+    {
+      "id": "nvidia-glm",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "z-ai/glm-5.2",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "zen-deep",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "deepseek-v4-flash-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+    },
+    {
+      "id": "zen-laguna",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "laguna-s-2.1-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+    },
+    {
+      "id": "nvidia-laguna",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "poolside/laguna-xs-2.1",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "zen-hy3",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "hy3-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+    },
+    {
+      "id": "zen-mimo",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "mimo-v2.5-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+    }
+  ],
+  "modelAllowlist": [
+    "z-ai/glm-5.2",
+    "deepseek-ai/deepseek-v4-flash-0731",
+    "deepseek-v4-flash-free",
+    "laguna-s-2.1-free",
+    "poolside/laguna-xs-2.1",
+    "hy3-free",
+    "hy3",
+    "mimo-v2.5-free"
+  ]
+}
