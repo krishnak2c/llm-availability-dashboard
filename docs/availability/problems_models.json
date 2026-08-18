@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T08:04:09.325222+00:00",
+  "updated": "2026-08-18T08:36:04.461071+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
@@ -157,6 +157,13 @@
       "name": "Cloudflare AI",
       "url": "https://developers.cloudflare.com/workers-ai/",
       "models": [
+        {
+          "id": "@cf/meta/llama-guard-3-8b",
+          "name": "@cf/meta/llama-guard-3-8b",
+          "context": 131072,
+          "limits": "10k neurons/day",
+          "params_b": 8.0
+        },
         {
           "id": "@cf/google/gemma-4-26b-a4b-it",
           "name": "@cf/google/gemma-4-26b-a4b-it",

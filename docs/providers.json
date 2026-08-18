@@ -2,11 +2,11 @@
   "order": [
     "nvidia-minimaxm3",
     "ollama-minimaxm3",
+    "nvidia-glm52",
+    "openrouter-glm52",
     "zen-hy3",
     "kilo-hy3",
     "orca-hy3",
-    "nvidia-glm52",
-    "openrouter-glm52",
     "openrouter-dots3notepreview",
     "kilo-dots3notepreview",
     "zen-lagunas21"
@@ -25,6 +25,18 @@
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
+      "id": "nvidia-glm52",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "z-ai/glm-5.2",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "openrouter-glm52",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "z-ai/glm-5.2:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
       "id": "zen-hy3",
       "baseUrl": "https://opencode.ai/zen/v1",
       "model": "hy3-free",
@@ -41,18 +53,6 @@
       "baseUrl": "https://api.orcarouter.ai/v1",
       "model": "tencent/hy3-free",
       "apiKeyEnv": "ORCA_API_KEY"
-    },
-    {
-      "id": "nvidia-glm52",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "z-ai/glm-5.2",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "openrouter-glm52",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "z-ai/glm-5.2:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "openrouter-dots3notepreview",
