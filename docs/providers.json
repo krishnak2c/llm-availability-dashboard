@@ -1,13 +1,29 @@
 {
   "order": [
+    "nvidia-m3",
     "zen-hy3",
+    "zen-nemotron",
+    "nvidia-inkling",
+    "groq-qwen36",
     "zen-deep",
     "zen-mimo",
-    "zen-laguna",
-    "nvidia-laguna",
+    "orca-qwen38",
+    "orca-dsv4pro",
     "nvidia-glm"
   ],
   "chain": [
+    {
+      "id": "orca-qwen38",
+      "baseUrl": "https://api.orcarouter.ai/v1",
+      "model": "qwen/qwen3.8-27b-free",
+      "apiKeyEnv": "ORCA_API_KEY"
+    },
+    {
+      "id": "orca-dsv4pro",
+      "baseUrl": "https://api.orcarouter.ai/v1",
+      "model": "deepseek/deepseek-v4-pro-free",
+      "apiKeyEnv": "ORCA_API_KEY"
+    },
     {
       "id": "nvidia-glm",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
@@ -21,15 +37,15 @@
       "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
     },
     {
-      "id": "zen-laguna",
-      "baseUrl": "https://opencode.ai/zen/v1",
-      "model": "laguna-s-2.1-free",
-      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+      "id": "nvidia-m3",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "minimaxai/minimax-m3",
+      "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "nvidia-laguna",
+      "id": "nvidia-inkling",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "poolside/laguna-xs-2.1",
+      "model": "thinkingmachines/inkling",
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
@@ -39,20 +55,38 @@
       "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
     },
     {
+      "id": "zen-nemotron",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "nemotron-3-ultra-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+    },
+    {
       "id": "zen-mimo",
       "baseUrl": "https://opencode.ai/zen/v1",
       "model": "mimo-v2.5-free",
       "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+    },
+    {
+      "id": "groq-qwen36",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "model": "qwen/qwen3.6-27b",
+      "apiKeyEnv": "GROQ_API_KEY"
     }
   ],
   "modelAllowlist": [
+    "qwen/qwen3.8-27b-free",
+    "deepseek/deepseek-v4-pro-free",
     "z-ai/glm-5.2",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
-    "laguna-s-2.1-free",
-    "poolside/laguna-xs-2.1",
+    "minimaxai/minimax-m3",
+    "thinkingmachines/inkling",
     "hy3-free",
     "hy3",
-    "mimo-v2.5-free"
+    "nemotron-3-ultra-free",
+    "mimo-v2.5-free",
+    "qwen/qwen3.6-27b",
+    "laguna-s-2.1-free",
+    "poolside/laguna-xs-2.1"
   ]
 }
