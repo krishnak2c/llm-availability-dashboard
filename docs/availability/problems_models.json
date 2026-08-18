@@ -1,6 +1,183 @@
 {
-  "updated": "2026-08-18T05:23:49.481800+00:00",
+  "updated": "2026-08-18T05:41:34.709682+00:00",
   "providers": {
+    "groq": {
+      "name": "Groq",
+      "url": "https://console.groq.com",
+      "models": [
+        {
+          "id": "groq/compound",
+          "name": "groq/compound",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "nvidia": {
+      "name": "NVIDIA NIM",
+      "url": "https://build.nvidia.com",
+      "models": [
+        {
+          "id": "deepseek-ai/deepseek-v4-flash-0731",
+          "name": "deepseek-ai/deepseek-v4-flash-0731",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
+          "id": "google/diffusiongemma-26b-a4b-it",
+          "name": "google/diffusiongemma-26b-a4b-it",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 26.0
+        },
+        {
+          "id": "meta/llama-3.1-70b-instruct",
+          "name": "meta/llama-3.1-70b-instruct",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 70.0
+        },
+        {
+          "id": "meta/llama-3.2-11b-vision-instruct",
+          "name": "meta/llama-3.2-11b-vision-instruct",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 11.0
+        },
+        {
+          "id": "meta/llama-3.2-3b-instruct",
+          "name": "meta/llama-3.2-3b-instruct",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 3.0
+        },
+        {
+          "id": "mistralai/mistral-nemotron",
+          "name": "mistralai/mistral-nemotron",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+          "name": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 49.0
+        },
+        {
+          "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+          "name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 30.0
+        },
+        {
+          "id": "nvidia/nemotron-nano-12b-v2-vl",
+          "name": "nvidia/nemotron-nano-12b-v2-vl",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 12.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 120.0
+        },
+        {
+          "id": "poolside/laguna-xs-2.1",
+          "name": "poolside/laguna-xs-2.1",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
+          "id": "stepfun-ai/step-3.7-flash",
+          "name": "stepfun-ai/step-3.7-flash",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
+          "id": "thinkingmachines/inkling",
+          "name": "thinkingmachines/inkling",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
+          "id": "z-ai/glm-5.2",
+          "name": "z-ai/glm-5.2",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "mistral": {
+      "name": "Mistral",
+      "url": "https://console.mistral.ai",
+      "models": [
+        {
+          "id": "devstral-2512",
+          "name": "devstral-2512",
+          "context": 256000,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "mistral-code-agent-latest",
+          "name": "devstral-2512",
+          "context": null,
+          "limits": "1 req/s · 1B tok/month",
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "cloudflare": {
+      "name": "Cloudflare AI",
+      "url": "https://developers.cloudflare.com/workers-ai/",
+      "models": [
+        {
+          "id": "@cf/google/gemma-4-26b-a4b-it",
+          "name": "@cf/google/gemma-4-26b-a4b-it",
+          "context": 256000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": 26.0
+        }
+      ],
+      "error": null
+    },
+    "pollinations": {
+      "name": "Pollinations",
+      "url": "https://pollinations.ai",
+      "models": [
+        {
+          "id": "YoannDev90/diffusiongemma-26b-a4b-it:free",
+          "name": "YoannDev90/diffusiongemma-26b-a4b-it:free",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": 26.0
+        }
+      ],
+      "error": null
+    },
     "llm7": {
       "name": "LLM7",
       "url": "https://llm7.io",
@@ -20,6 +197,13 @@
           "params_b": null
         },
         {
+          "id": "deepseek-v3",
+          "name": "deepseek-v3",
+          "context": 1048576,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "gemini-3.1-flash-lite",
           "name": "gemini-3.1-flash-lite",
           "context": 256000,
@@ -32,6 +216,48 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
+        }
+      ],
+      "error": null
+    },
+    "zai": {
+      "name": "Z.ai (GLM)",
+      "url": "https://open.bigmodel.cn",
+      "models": [
+        {
+          "id": "glm-4.5-flash",
+          "name": "GLM-4.5-Flash",
+          "context": null,
+          "limits": "free Flash tier",
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "zen": {
+      "name": "OpenCode Zen",
+      "url": "https://opencode.ai/zen",
+      "models": [
+        {
+          "id": "deepseek-v4-flash-free",
+          "name": "deepseek-v4-flash-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "mimo-v2.5-free",
+          "name": "mimo-v2.5-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "laguna-s-2.1-free",
+          "name": "laguna-s-2.1-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
