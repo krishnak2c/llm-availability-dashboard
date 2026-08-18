@@ -5,11 +5,11 @@
     "zen-hy3",
     "kilo-hy3",
     "orca-hy3",
-    "nvidia-glm52",
     "openrouter-dots3notepreview",
     "kilo-dots3notepreview",
     "zen-lagunas21",
-    "openrouter-lagunas21"
+    "openrouter-lagunas21",
+    "pollinations-lagunas21"
   ],
   "chain": [
     {
@@ -43,12 +43,6 @@
       "apiKeyEnv": "ORCA_API_KEY"
     },
     {
-      "id": "nvidia-glm52",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "z-ai/glm-5.2",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
       "id": "openrouter-dots3notepreview",
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "dots-studio/dots-3-note-preview:free",
@@ -71,6 +65,12 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "poolside/laguna-s-2.1:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "pollinations-lagunas21",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "vendouple/laguna-s-2.1:free",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -92,6 +92,7 @@
     "tencent/hy3-free",
     "tencent/hy3:free",
     "thinkingmachines/inkling",
+    "vendouple/laguna-s-2.1:free",
     "z-ai/glm-5.2"
   ]
 }

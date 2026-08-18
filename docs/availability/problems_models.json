@@ -1,6 +1,132 @@
 {
-  "updated": "2026-08-18T11:24:37.781762+00:00",
+  "updated": "2026-08-18T12:44:07.767203+00:00",
   "providers": {
+    "openrouter": {
+      "name": "OpenRouter",
+      "url": "https://openrouter.ai",
+      "models": [
+        {
+          "id": "dots-studio/dots-3-note-preview:free",
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "context": 512000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3.5-lightning:free",
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "context": 1000000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "poolside/laguna-s-2.1:free",
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "poolside/laguna-xs-2.1:free",
+          "name": "Poolside: Laguna XS 2.1 (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "cohere/north-mini-code:free",
+          "name": "Cohere: North Mini Code (free)",
+          "context": 256000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3.5-content-safety:free",
+          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+          "context": 128000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "context": 1000000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 550.0
+        },
+        {
+          "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+          "context": 256000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 30.0
+        },
+        {
+          "id": "google/gemma-4-26b-a4b-it:free",
+          "name": "Google: Gemma 4 26B A4B  (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 26.0
+        },
+        {
+          "id": "google/gemma-4-31b-it:free",
+          "name": "Google: Gemma 4 31B (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 31.0
+        },
+        {
+          "id": "nvidia/nemotron-3-super-120b-a12b:free",
+          "name": "NVIDIA: Nemotron 3 Super (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 120.0
+        },
+        {
+          "id": "openrouter/free",
+          "name": "Free Models Router",
+          "context": 200000,
+          "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3-nano-30b-a3b:free",
+          "name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
+          "context": 256000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 30.0
+        },
+        {
+          "id": "nvidia/nemotron-nano-12b-v2-vl:free",
+          "name": "NVIDIA: Nemotron Nano 12B 2 VL (free)",
+          "context": 128000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 12.0
+        },
+        {
+          "id": "nvidia/nemotron-nano-9b-v2:free",
+          "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
+          "context": 128000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 9.0
+        },
+        {
+          "id": "openai/gpt-oss-20b:free",
+          "name": "OpenAI: gpt-oss-20b (free)",
+          "context": 131072,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 20.0
+        }
+      ],
+      "error": null
+    },
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
@@ -280,6 +406,13 @@
       "name": "Kilo Code",
       "url": "https://kilo.code",
       "models": [
+        {
+          "id": "poolside/laguna-s-2.1:free",
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
         {
           "id": "poolside/laguna-xs-2.1:free",
           "name": "Poolside: Laguna XS 2.1 (free)",
