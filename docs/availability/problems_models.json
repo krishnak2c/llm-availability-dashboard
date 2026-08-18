@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T21:23:57.820900+00:00",
+  "updated": "2026-08-18T22:22:44.767578+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -209,6 +209,13 @@
           "params_b": 30.0
         },
         {
+          "id": "nvidia/nemotron-3-ultra-550b-a55b",
+          "name": "nvidia/nemotron-3-ultra-550b-a55b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 550.0
+        },
+        {
           "id": "nvidia/nemotron-nano-12b-v2-vl",
           "name": "nvidia/nemotron-nano-12b-v2-vl",
           "context": null,
@@ -333,13 +340,6 @@
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "deepseek-v3",
-          "name": "deepseek-v3",
-          "context": 1048576,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
