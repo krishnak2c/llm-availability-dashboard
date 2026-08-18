@@ -2028,6 +2028,11 @@ RELAY_TOP_N = 10  # dynamic chain length (fallback chain also has 10 entries)
 # is named NVIDIA_NIM_API_KEY. All other env names match on both sides.
 RELAY_KEY_ALIASES = {"NVIDIA_NIM_API_KEY": "NIM_API_KEY"}
 
+# Provider preference when the SAME model is served by multiple providers:
+# opencode (zen) first, nvidia nim second, any other provider after.
+# Lower value = earlier in the chain for the same normalized model id.
+RELAY_PROVIDER_PREFERENCE = {"zen": 0, "nvidia": 1}
+
 # Model ids matching any of these are guard/safety/vision/image/embedding
 # models — useless in a chat relay. The stable list 'capabilities' field is
 # None for most models, so keyword filtering is the reliable filter.
@@ -2243,12 +2248,16 @@ def select_dynamic_chain(benchmarks, avail_data, stable_data, top_n=10):
     and a PROVIDERS entry (for the apiKeyEnv). Availability stats come from
     avail_data['providers'][<provider-key>][<model-id>] (dashboard provider key
     == stable provider key). Quality = lookup_quality(benchmarks, norm) or 40.
-    Non-chat models (NON_CHAT_KEYWORDS) are skipped. Final score = availability_score × quality; duplicates per normalized model id
-    keep the highest-quality occurrence (real benchmark score beats default 40).
+    Non-chat models (NON_CHAT_KEYWORDS) are skipped. Final score = availability_score × quality.
 
-    Returns a list of {id, baseUrl, model, apiKeyEnv} sorted by score DESC,
-    top_n entries. baseUrl is derived from the probe config endpoint
-    (PROVIDERS['url'] is a console link, not an API base URL).
+    The SAME model served by multiple providers is kept as separate entries
+    (e.g. hy3 on zen AND kilo). Within a model group, entries are ordered by
+    RELAY_PROVIDER_PREFERENCE (opencode/zen first, nvidia nim second, others
+    after); groups are ranked by their best score DESC.
+
+    Returns a list of {id, baseUrl, model, apiKeyEnv}, top_n entries. baseUrl
+    is derived from the probe config endpoint (PROVIDERS['url'] is a console
+    link, not an API base URL).
     """
     if not stable_data or not avail_data:
         return []
@@ -2256,7 +2265,7 @@ def select_dynamic_chain(benchmarks, avail_data, stable_data, top_n=10):
     avail_providers = avail_data.get("providers", avail_data) if isinstance(avail_data, dict) else {}
     providers_by_key = {p["key"]: p for p in PROVIDERS}
 
-    best = {}  # normalized_model_id -> (quality, total, entry_dict)
+    groups = {}  # normalized_model_id -> list of (total, provider_pref, entry_dict)
     for prov_key, prov in stable_providers.items():
         probe_cfg = PROVIDER_PROBES.get(prov_key)
         if not probe_cfg or probe_cfg.get("style") != "openai":
@@ -2283,21 +2292,27 @@ def select_dynamic_chain(benchmarks, avail_data, stable_data, top_n=10):
             norm = normalize_model_id(model_id)
             quality = lookup_quality(benchmarks, norm) or 40
             total = a * quality
-            prev = best.get(norm)
-            if prev is not None and (
-                quality < prev[0] or (quality == prev[0] and total <= prev[1])
-            ):
-                continue  # keep only the highest-quality occurrence per norm id
+            pref = RELAY_PROVIDER_PREFERENCE.get(prov_key, 99)
             entry = {
                 "id": f"{prov_key}-{norm}",
                 "baseUrl": base_url,
                 "model": model_id,
                 "apiKeyEnv": api_key_env,
             }
-            best[norm] = (quality, total, entry)
+            groups.setdefault(norm, []).append((total, pref, entry))
 
-    ranked = sorted(best.values(), key=lambda t: t[1], reverse=True)  # stable sort
-    return [t[2] for t in ranked[:top_n]]
+    # Within each model group: provider preference (zen=0, nvidia=1, others=99).
+    for g in groups.values():
+        g.sort(key=lambda t: t[1])
+    # Groups ranked by their best score DESC (stable), then flattened.
+    ranked_groups = sorted(groups.values(), key=lambda g: max(t[0] for t in g), reverse=True)
+    out = []
+    for g in ranked_groups:
+        for total, pref, entry in g:
+            out.append(entry)
+            if len(out) >= top_n:
+                return out
+    return out
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
