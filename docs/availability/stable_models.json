@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T15:31:27.121780+00:00",
+  "updated": "2026-08-18T16:30:44.666097+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
@@ -259,18 +259,6 @@
           "params_b": null
         },
         {
-          "id": "devstral-latest",
-          "name": "devstral-2512",
-          "context": 256000,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        },
-        {
           "id": "mistral-small-2603",
           "name": "mistral-small-2603",
           "context": 262144,
@@ -328,19 +316,6 @@
           "name": "voxtral-small-2507",
           "context": null,
           "limits": "1 req/s · 1B tok/month",
-          "params_b": null
-        },
-        {
-          "id": "mistral-large-2512",
-          "name": "mistral-large-2512",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision"
-          ],
           "params_b": null
         },
         {
@@ -409,20 +384,6 @@
           "context": null,
           "limits": "1 req/s · 1B tok/month",
           "params_b": 14.0
-        },
-        {
-          "id": "mistral-medium-latest",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
         },
         {
           "id": "mistral-medium",
@@ -824,8 +785,8 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -838,11 +799,11 @@
           "params_b": 120.0
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
+          "params_b": 31.0
         },
         {
           "id": "gpt-oss:20b",
@@ -852,6 +813,13 @@
           "params_b": 20.0
         },
         {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
           "id": "minimax-m3",
           "name": "minimax-m3",
           "context": null,
@@ -859,18 +827,11 @@
           "params_b": null
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
-        },
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
         }
       ],
       "error": null
