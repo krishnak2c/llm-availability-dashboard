@@ -2,8 +2,6 @@
 
 A static [GitHub Pages](https://danissimode.github.io/litellm-free-models-prox-DNy/) site that tracks the live availability of **free-tier LLM models** across providers. It probes each provider's API directly (no proxy in between), aggregates uptime/latency, and renders the results as a static site under `docs/`.
 
-Fork of [cheahjs/litellm-free-models-proxy](https://github.com/cheahjs/litellm-free-models-proxy), stripped down to the availability site only — the LiteLLM proxy, sync, Postgres, and compose stack have been removed.
-
 ## What this is
 
 - **Direct provider probing** — `probe_models.py` calls each provider's chat-completions endpoint with a tiny `ping` request (max_tokens=1) and classifies the result: `ok`, `rate_limited`, `quota_exhausted`, `auth_error`, `not_found`, `server_error`, `timeout`, `bad_response`, `network_error`.
@@ -87,5 +85,4 @@ CI (`ci.yml`) runs: `ruff check .` → `pytest -v` → `compileall`. Run all thr
 
 ## Credits
 
-- [cheahjs/litellm-free-models-proxy](https://github.com/cheahjs/litellm-free-models-proxy) — upstream this repo is a fork of.
 - [cheahjs/free-llm-api-resources](https://github.com/cheahjs/free-llm-api-resources) — community free-API list used as a cross-reference.
