@@ -1,10 +1,23 @@
 {
-  "updated": "2026-08-18T05:41:34.709682+00:00",
+  "updated": "2026-08-18T06:41:42.262898+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
+        },
         {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
@@ -37,26 +50,6 @@
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
         }
       ],
       "error": null
@@ -719,13 +712,6 @@
       "url": "https://pollinations.ai",
       "models": [
         {
-          "id": "MarcosFRG/nemotron-3.5-lightning-30b",
-          "name": "MarcosFRG/nemotron-3.5-lightning-30b",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": 30.0
-        },
-        {
           "id": "chigwell/llm7-fast",
           "name": "chigwell/llm7-fast",
           "context": null,
@@ -759,6 +745,90 @@
           "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": 30.0
+        }
+      ],
+      "error": null
+    },
+    "kilo": {
+      "name": "Kilo Code",
+      "url": "https://kilo.code",
+      "models": [
+        {
+          "id": "kilo-auto/free",
+          "name": "Auto Free",
+          "context": 256000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "stepfun/step-3.7-flash:free",
+          "name": "StepFun: Step 3.7 Flash (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "poolside/laguna-s-2.1:free",
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "tencent/hy3:free",
+          "name": "Tencent: Hy3 (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "dots-studio/dots-3-note-preview:free",
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "context": 512000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3.5-lightning:free",
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "context": 1000000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "cohere/north-mini-code:free",
+          "name": "Cohere: North Mini Code (free)",
+          "context": 256000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3.5-content-safety:free",
+          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+          "context": 128000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "context": 1000000,
+          "limits": "free tier",
+          "params_b": 550.0
+        },
+        {
+          "id": "nvidia/nemotron-3-super-120b-a12b:free",
+          "name": "NVIDIA: Nemotron 3 Super (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
+          "id": "openrouter/free",
+          "name": "OpenRouter Free Models Router",
+          "context": 200000,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
