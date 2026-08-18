@@ -54,6 +54,22 @@ jobs:
           ORCA_API_KEY:         ${{ secrets.ORCA_API_KEY }}
         run: python generate_site.py
 
+      - name: Publish providers.json to relay repo
+        env:
+          REPO_PAT: ${{ secrets.RELAY_REPO_PAT }}
+        run: |
+          git clone https://x-access-token:${REPO_PAT}@github.com/krishnak2c/vercel-ai-failover-relay.git /tmp/relay
+          cp docs/providers.json /tmp/relay/providers.json
+          git -C /tmp/relay config user.name "gha-bot"
+          git -C /tmp/relay config user.email "actions@github.com"
+          if git -C /tmp/relay diff --quiet providers.json; then
+            echo "no change"
+          else
+            git -C /tmp/relay add providers.json
+            git -C /tmp/relay commit -m "update providers.json order from dashboard"
+            git -C /tmp/relay push
+          fi
+
       - name: Commit generated site
         run: |
           git config user.name  "github-actions[bot]"

@@ -2000,6 +2000,92 @@ def render_availability(provider_list, results, availability):
     return html
 
 
+# ── Relay providers.json (consumed by vercel-ai-failover-relay) ───────────────
+
+RELAY_CHAIN = [
+    {"id": "nvidia-glm", "baseUrl": "https://integrate.api.nvidia.com/v1", "model": "z-ai/glm-5.2", "apiKeyEnv": "NIM_API_KEY"},
+    {"id": "zen-deep", "baseUrl": "https://opencode.ai/zen/v1", "model": "deepseek-v4-flash-free", "apiKeyEnv": "OPENCODE_ZEN_API_KEY"},
+    {"id": "zen-laguna", "baseUrl": "https://opencode.ai/zen/v1", "model": "laguna-s-2.1-free", "apiKeyEnv": "OPENCODE_ZEN_API_KEY"},
+    {"id": "nvidia-laguna", "baseUrl": "https://integrate.api.nvidia.com/v1", "model": "poolside/laguna-xs-2.1", "apiKeyEnv": "NIM_API_KEY"},
+    {"id": "zen-hy3", "baseUrl": "https://opencode.ai/zen/v1", "model": "hy3-free", "apiKeyEnv": "OPENCODE_ZEN_API_KEY"},
+    {"id": "zen-mimo", "baseUrl": "https://opencode.ai/zen/v1", "model": "mimo-v2.5-free", "apiKeyEnv": "OPENCODE_ZEN_API_KEY"},
+]
+
+RELAY_ALLOWLIST = [
+    "z-ai/glm-5.2",
+    "deepseek-ai/deepseek-v4-flash-0731",
+    "deepseek-v4-flash-free",
+    "laguna-s-2.1-free",
+    "poolside/laguna-xs-2.1",
+    "hy3-free",
+    "hy3",
+    "mimo-v2.5-free",
+]
+
+# AAII quality scores keyed by relay model string; unscored models default to 40.
+RELAY_QUALITY_WEIGHTS = {
+    "z-ai/glm-5.2": 52.6,
+    "deepseek-v4-flash-free": 51.8,
+    "mimo-v2.5-free": 42.9,
+    "hy3-free": 42.2,
+    "laguna-s-2.1-free": 40,
+    "poolside/laguna-xs-2.1": 40,
+}
+
+# Relay model string → (dashboard provider key, dashboard model key) in availability.json.
+RELAY_AVAIL_MAP = {
+    "z-ai/glm-5.2": ("llm7", "glm-5.2"),
+    "deepseek-v4-flash-free": ("zen", "deepseek-v4-flash-free"),
+    "laguna-s-2.1-free": ("zen", "laguna-s-2.1-free"),
+    "poolside/laguna-xs-2.1": ("nvidia", "poolside/laguna-xs-2.1"),
+    "hy3-free": ("zen", "hy3-free"),
+    "mimo-v2.5-free": ("zen", "mimo-v2.5-free"),
+}
+
+
+def build_relay_providers_json(avail):
+    """Build the providers.json payload for the Vercel relay.
+
+    avail: availability.json "providers" dict: {provider: {model: stats}}.
+    Scoring mirrors the relay's original logic:
+      availability_score: if samples_7d is 0/missing → uptime_30d,
+                          else 0.7*uptime_7d + 0.3*uptime_30d;
+                          if the entry is missing entirely → 0 (sinks to bottom);
+                          if last_status in (rate_limited, quota_exhausted) → *0.5.
+      final score = availability_score * quality_weight (default 40).
+    Returns {"order": [...], "chain": [...], "modelAllowlist": [...]}.
+    Order: provider ids sorted by final score DESC; ties keep RELAY_CHAIN order
+    (stable sort).
+    """
+    scored = []
+    for entry in RELAY_CHAIN:
+        stats = {}
+        avail_key = RELAY_AVAIL_MAP.get(entry["model"])
+        if avail_key:
+            stats = avail.get(avail_key[0], {}).get(avail_key[1], {}) or {}
+        if not stats:
+            avail_score = 0.0
+        else:
+            up_7d = stats.get("uptime_7d")
+            up_30d = stats.get("uptime_30d")
+            samples_7d = stats.get("samples_7d", 0) or 0
+            if samples_7d == 0:
+                avail_score = up_30d if up_30d is not None else 0.0
+            else:
+                avail_score = 0.7 * (up_7d or 0.0) + 0.3 * (up_30d or 0.0)
+            if stats.get("last_status") in ("rate_limited", "quota_exhausted"):
+                avail_score *= 0.5
+        quality = RELAY_QUALITY_WEIGHTS.get(entry["model"], 40)
+        scored.append((entry["id"], avail_score * quality, avail_score))
+    # Stable sort by final score DESC → ties retain RELAY_CHAIN order.
+    scored.sort(key=lambda t: t[1], reverse=True)
+    return {
+        "order": [item[0] for item in scored],
+        "chain": [dict(e) for e in RELAY_CHAIN],
+        "modelAllowlist": list(RELAY_ALLOWLIST),
+    }
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 
@@ -2041,6 +2127,13 @@ def main():
         avail_providers = json.loads(avail_path.read_text()).get("providers", {})
     except Exception:
         pass
+
+    # Relay ordering file: providers.json consumed by vercel-ai-failover-relay.
+    relay_payload = build_relay_providers_json(avail_providers)
+    (OUT_DIR / "providers.json").write_text(
+        json.dumps(relay_payload, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    print(f"Written docs/providers.json (order: {', '.join(relay_payload['order'])})")
 
     # Self-correcting layer: drop models that probe data confirms are broken.
     # A model is dropped when uptime_7d == 0 with samples_7d >= MIN_SAMPLES.
