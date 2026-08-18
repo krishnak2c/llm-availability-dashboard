@@ -5,11 +5,11 @@
     "zen-hy3",
     "kilo-hy3",
     "orca-hy3",
-    "orca-qwen38",
     "nvidia-inkling",
     "openrouter-dots3notepreview",
     "kilo-dots3notepreview",
-    "zen-lagunas21"
+    "openrouter-liquidlfm25",
+    "kilo-liquidlfm25"
   ],
   "chain": [
     {
@@ -43,12 +43,6 @@
       "apiKeyEnv": "ORCA_API_KEY"
     },
     {
-      "id": "orca-qwen38",
-      "baseUrl": "https://api.orcarouter.ai/v1",
-      "model": "qwen/qwen3.8-27b-free",
-      "apiKeyEnv": "ORCA_API_KEY"
-    },
-    {
       "id": "nvidia-inkling",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "thinkingmachines/inkling",
@@ -67,10 +61,16 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "zen-lagunas21",
-      "baseUrl": "https://opencode.ai/zen/v1",
-      "model": "laguna-s-2.1-free",
-      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+      "id": "openrouter-liquidlfm25",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-liquidlfm25",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -81,6 +81,7 @@
     "hy3",
     "hy3-free",
     "laguna-s-2.1-free",
+    "liquid/lfm-2.5-2.6b:free",
     "mimo-v2.5-free",
     "minimax-m3",
     "minimaxai/minimax-m3",
