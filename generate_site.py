@@ -14,6 +14,7 @@ from html import escape
 from pathlib import Path
 
 from common import _is_free, _opener
+from probe_models import PROVIDER_PROBES
 
 OUT_DIR = Path(__file__).parent / "docs"
 OUT_DIR.mkdir(exist_ok=True)
@@ -92,6 +93,11 @@ def _post(url, headers=None, data=None, timeout=20):
             )
     except Exception as e:
         raise RuntimeError(f"POST {url} → {e}")
+
+
+def _get_json(url, headers=None, timeout=20):
+    """GET and parse JSON with optional auth headers (thin wrapper over _get)."""
+    return _get(url, headers=headers, timeout=timeout)
 
 
 # ── Provider fetchers (same logic as sync_models.py) ─────────────────────────
@@ -2015,6 +2021,22 @@ RELAY_CHAIN = [
     {"id": "groq-qwen36", "baseUrl": "https://api.groq.com/openai/v1", "model": "qwen/qwen3.6-27b", "apiKeyEnv": "GROQ_API_KEY"},
 ]
 
+RELAY_TOP_N = 10  # dynamic chain length (fallback chain also has 10 entries)
+
+# Dashboard PROVIDERS env name → relay Vercel env name when they differ.
+# The relay's Vercel project uses NIM_API_KEY; the dashboard provider entry
+# is named NVIDIA_NIM_API_KEY. All other env names match on both sides.
+RELAY_KEY_ALIASES = {"NVIDIA_NIM_API_KEY": "NIM_API_KEY"}
+
+# Model ids matching any of these are guard/safety/vision/image/embedding
+# models — useless in a chat relay. The stable list 'capabilities' field is
+# None for most models, so keyword filtering is the reliable filter.
+NON_CHAT_KEYWORDS = (
+    "nemoguard", "safety", "guard", "topic-control", "nano-vl", "vision",
+    "calibration", "ising", "glimmer", "embed", "riva", "moderation",
+    "classifier",
+)
+
 RELAY_ALLOWLIST = [
     "qwen/qwen3.8-27b-free",
     "deepseek/deepseek-v4-pro-free",
@@ -2106,6 +2128,178 @@ def build_relay_providers_json(avail):
     }
 
 
+# ── Dynamic relay chain selection (top-N best stable OpenAI-compatible models) ─
+
+# Provider-qualified prefixes stripped from model ids before matching benchmarks.
+_RELAY_PREFIX_RE = re.compile(
+    r"^(?:nvidia/|@cf/|zen/|orca/|kilo/|pollinations/|llm7/|zai/|ollama/|"
+    r"groq/|mistral/|cloudflare/|cerebras/|sambanova/)",
+    re.IGNORECASE,
+)
+# Leading org segments stripped after the provider prefix.
+_RELAY_ORG_RE = re.compile(
+    r"^(?:openai|google|meta|mistralai|qwen|deepseek-ai|deepseek|z-ai|nvidia|"
+    r"zai-org|tencent|xiaomi|minimaxai|stepfun-ai|stepfun|cohere|poolside|"
+    r"thinkingmachines|moonshotai|anthropic|x-ai|ibm-granite|aisingapore|"
+    r"marcosfrg|chigwell|yoanndev90|morriszdweck|vendouple|dots-studio)/",
+    re.IGNORECASE,
+)
+
+
+def normalize_model_id(mid):
+    """Normalize a model id to a lowercase canonical slug for benchmark matching.
+
+    Strips provider prefixes (nvidia/, @cf/, ...), leading org segments,
+    :free/-free/-latest/-preview suffixes, -YYYYMMDD / -YYYY date suffixes,
+    -<digits>b|m|k param suffixes, then collapses [-:._ /]+ separators.
+    """
+    s = str(mid or "").strip()
+    s = _RELAY_PREFIX_RE.sub("", s)
+    s = _RELAY_ORG_RE.sub("", s)
+    s = re.sub(r"(?i)(:free|-free|-latest|-preview)$", "", s)
+    s = re.sub(r"-\d{8}$", "", s)  # -YYYYMMDD
+    s = re.sub(r"-\d{4}$", "", s)  # -YYYY
+    s = re.sub(r"(?i)-(\d+(?:\.\d+)?)[bmk]$", "", s)  # -27b, -2.1b, -70m, -3k
+    s = re.sub(r"[-:._/ ]+", "", s)
+    return s.lower()
+
+
+def fetch_quality_benchmarks(api_key):
+    """Fetch AAII intelligence benchmarks from OpenRouter.
+
+    Returns {normalized_model_id: intelligence_index}. Rows with missing or
+    non-finite intelligence_index are skipped. Returns {} on any failure so
+    the caller falls back to the static RELAY_* config.
+    """
+    try:
+        data = _get_json(
+            "https://openrouter.ai/api/v1/benchmarks?source=artificial-analysis&task_type=intelligence",
+            headers={"Authorization": f"Bearer {api_key}"},
+            timeout=30,
+        )
+    except Exception:
+        return {}
+    rows = data.get("data", data) if isinstance(data, dict) else data
+    if not isinstance(rows, list):
+        return {}
+    out = {}
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        slug = row.get("model_permaslug") or row.get("display_name")
+        if not slug:
+            continue
+        idx = row.get("intelligence_index")
+        try:
+            idx = float(idx)
+        except (TypeError, ValueError):
+            continue
+        if idx != idx:  # NaN
+            continue
+        out[normalize_model_id(slug)] = idx
+    return out
+
+
+def _relay_avail_score(stats):
+    """Availability score mirroring build_relay_providers_json (shared logic)."""
+    if not stats:
+        return 0.0
+    up_7d = stats.get("uptime_7d")
+    up_30d = stats.get("uptime_30d")
+    samples_7d = stats.get("samples_7d", 0) or 0
+    if samples_7d == 0:
+        a = up_30d if up_30d is not None else 0.0
+    else:
+        a = 0.7 * (up_7d or 0.0) + 0.3 * (up_30d or 0.0)
+    if stats.get("last_status") in ("rate_limited", "quota_exhausted"):
+        a *= 0.5
+    return a
+
+
+def lookup_quality(bench, norm):
+    """Look up a quality score for a normalized model id.
+
+    1. exact match `norm in bench` → its value
+    2. else substring match: bench keys k where `norm in k or k in norm`,
+       requiring len(norm) >= 3; among candidates prefer the SHORTEST key
+       (least ambiguous, e.g. 'hy3preview' resolves to hy3)
+    3. else None (caller falls back to the default 40)
+    """
+    if norm in bench:
+        return bench[norm]
+    if len(norm) >= 3:
+        cands = [k for k in bench if norm in k or k in norm]
+        if cands:
+            cands.sort(key=len)
+            return bench[cands[0]]
+    return None
+
+
+def select_dynamic_chain(benchmarks, avail_data, stable_data, top_n=10):
+    """Select the top-N relay chain entries from stable, OpenAI-compatible models.
+
+    Candidates: every model in stable_data (docs/availability/stable/models.json)
+    whose provider has an OpenAI-style probe config (probe_models.PROVIDER_PROBES)
+    and a PROVIDERS entry (for the apiKeyEnv). Availability stats come from
+    avail_data['providers'][<provider-key>][<model-id>] (dashboard provider key
+    == stable provider key). Quality = lookup_quality(benchmarks, norm) or 40.
+    Non-chat models (NON_CHAT_KEYWORDS) are skipped. Final score = availability_score × quality; duplicates per normalized model id
+    keep the highest-quality occurrence (real benchmark score beats default 40).
+
+    Returns a list of {id, baseUrl, model, apiKeyEnv} sorted by score DESC,
+    top_n entries. baseUrl is derived from the probe config endpoint
+    (PROVIDERS['url'] is a console link, not an API base URL).
+    """
+    if not stable_data or not avail_data:
+        return []
+    stable_providers = stable_data.get("providers", {}) or {}
+    avail_providers = avail_data.get("providers", avail_data) if isinstance(avail_data, dict) else {}
+    providers_by_key = {p["key"]: p for p in PROVIDERS}
+
+    best = {}  # normalized_model_id -> (quality, total, entry_dict)
+    for prov_key, prov in stable_providers.items():
+        probe_cfg = PROVIDER_PROBES.get(prov_key)
+        if not probe_cfg or probe_cfg.get("style") != "openai":
+            continue  # not OpenAI-compatible (/v1/chat/completions)
+        prov_entry = providers_by_key.get(prov_key)
+        if not prov_entry:
+            continue
+        api_key_env = RELAY_KEY_ALIASES.get(prov_entry.get("env"), prov_entry.get("env"))
+        # API base URL: probe endpoint minus the /chat/completions suffix.
+        base_url = probe_cfg.get("url", "")
+        if base_url.endswith("/chat/completions"):
+            base_url = base_url[: -len("/chat/completions")]
+        if not base_url or not api_key_env:
+            continue
+        prov_avail = avail_providers.get(prov_key, {}) or {}
+        for model in prov.get("models", []) or []:
+            model_id = model.get("id") if isinstance(model, dict) else model
+            if not model_id:
+                continue
+            if any(kw in model_id.lower() for kw in NON_CHAT_KEYWORDS):
+                continue  # guard/safety/vision/image/embedding models don't chat
+            stats = prov_avail.get(model_id) or {}
+            a = _relay_avail_score(stats)
+            norm = normalize_model_id(model_id)
+            quality = lookup_quality(benchmarks, norm) or 40
+            total = a * quality
+            prev = best.get(norm)
+            if prev is not None and (
+                quality < prev[0] or (quality == prev[0] and total <= prev[1])
+            ):
+                continue  # keep only the highest-quality occurrence per norm id
+            entry = {
+                "id": f"{prov_key}-{norm}",
+                "baseUrl": base_url,
+                "model": model_id,
+                "apiKeyEnv": api_key_env,
+            }
+            best[norm] = (quality, total, entry)
+
+    ranked = sorted(best.values(), key=lambda t: t[1], reverse=True)  # stable sort
+    return [t[2] for t in ranked[:top_n]]
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 
@@ -2149,7 +2343,29 @@ def main():
         pass
 
     # Relay ordering file: providers.json consumed by vercel-ai-failover-relay.
-    relay_payload = build_relay_providers_json(avail_providers)
+    # Prefer a dynamically selected top-N chain; fall back to the static
+    # RELAY_* config when benchmarks or stable/availability data are missing.
+    relay_payload = build_relay_providers_json(avail_providers)  # static fallback
+    bench_key = os.environ.get("OPENROUTER_API_KEY", "")
+    benchmarks = fetch_quality_benchmarks(bench_key) if bench_key else {}
+    stable_data = {}
+    stable_path = OUT_DIR / "availability" / "stable" / "models.json"
+    try:
+        stable_data = json.loads(stable_path.read_text())
+    except Exception:
+        pass
+    chain = (
+        select_dynamic_chain(benchmarks, avail_providers, stable_data, RELAY_TOP_N)
+        if benchmarks and stable_data
+        else None
+    )
+    if chain is not None and len(chain) >= 4:
+        allowlist = sorted(set(e["model"] for e in chain) | set(RELAY_ALLOWLIST))
+        relay_payload = {
+            "order": [e["id"] for e in chain],
+            "chain": chain,
+            "modelAllowlist": allowlist,
+        }
     (OUT_DIR / "providers.json").write_text(
         json.dumps(relay_payload, indent=2, ensure_ascii=False), encoding="utf-8"
     )
