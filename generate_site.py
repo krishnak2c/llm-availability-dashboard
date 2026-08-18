@@ -2003,43 +2003,63 @@ def render_availability(provider_list, results, availability):
 # ── Relay providers.json (consumed by vercel-ai-failover-relay) ───────────────
 
 RELAY_CHAIN = [
+    {"id": "orca-qwen38", "baseUrl": "https://api.orcarouter.ai/v1", "model": "qwen/qwen3.8-27b-free", "apiKeyEnv": "ORCA_API_KEY"},
+    {"id": "orca-dsv4pro", "baseUrl": "https://api.orcarouter.ai/v1", "model": "deepseek/deepseek-v4-pro-free", "apiKeyEnv": "ORCA_API_KEY"},
     {"id": "nvidia-glm", "baseUrl": "https://integrate.api.nvidia.com/v1", "model": "z-ai/glm-5.2", "apiKeyEnv": "NIM_API_KEY"},
     {"id": "zen-deep", "baseUrl": "https://opencode.ai/zen/v1", "model": "deepseek-v4-flash-free", "apiKeyEnv": "OPENCODE_ZEN_API_KEY"},
-    {"id": "zen-laguna", "baseUrl": "https://opencode.ai/zen/v1", "model": "laguna-s-2.1-free", "apiKeyEnv": "OPENCODE_ZEN_API_KEY"},
-    {"id": "nvidia-laguna", "baseUrl": "https://integrate.api.nvidia.com/v1", "model": "poolside/laguna-xs-2.1", "apiKeyEnv": "NIM_API_KEY"},
+    {"id": "nvidia-m3", "baseUrl": "https://integrate.api.nvidia.com/v1", "model": "minimaxai/minimax-m3", "apiKeyEnv": "NIM_API_KEY"},
+    {"id": "nvidia-inkling", "baseUrl": "https://integrate.api.nvidia.com/v1", "model": "thinkingmachines/inkling", "apiKeyEnv": "NIM_API_KEY"},
     {"id": "zen-hy3", "baseUrl": "https://opencode.ai/zen/v1", "model": "hy3-free", "apiKeyEnv": "OPENCODE_ZEN_API_KEY"},
+    {"id": "zen-nemotron", "baseUrl": "https://opencode.ai/zen/v1", "model": "nemotron-3-ultra-free", "apiKeyEnv": "OPENCODE_ZEN_API_KEY"},
     {"id": "zen-mimo", "baseUrl": "https://opencode.ai/zen/v1", "model": "mimo-v2.5-free", "apiKeyEnv": "OPENCODE_ZEN_API_KEY"},
+    {"id": "groq-qwen36", "baseUrl": "https://api.groq.com/openai/v1", "model": "qwen/qwen3.6-27b", "apiKeyEnv": "GROQ_API_KEY"},
 ]
 
 RELAY_ALLOWLIST = [
+    "qwen/qwen3.8-27b-free",
+    "deepseek/deepseek-v4-pro-free",
     "z-ai/glm-5.2",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
-    "laguna-s-2.1-free",
-    "poolside/laguna-xs-2.1",
+    "minimaxai/minimax-m3",
+    "thinkingmachines/inkling",
     "hy3-free",
     "hy3",
+    "nemotron-3-ultra-free",
     "mimo-v2.5-free",
+    "qwen/qwen3.6-27b",
+    "laguna-s-2.1-free",
+    "poolside/laguna-xs-2.1",
 ]
 
 # AAII quality scores keyed by relay model string; unscored models default to 40.
 RELAY_QUALITY_WEIGHTS = {
+    "qwen/qwen3.8-27b-free": 58.1,
+    "deepseek/deepseek-v4-pro-free": 53.2,
     "z-ai/glm-5.2": 52.6,
     "deepseek-v4-flash-free": 51.8,
-    "mimo-v2.5-free": 42.9,
+    "minimaxai/minimax-m3": 45.4,
+    "thinkingmachines/inkling": 42.3,
     "hy3-free": 42.2,
+    "nemotron-3-ultra-free": 38.3,
+    "mimo-v2.5-free": 42.9,
+    "qwen/qwen3.6-27b": 37.7,
     "laguna-s-2.1-free": 40,
     "poolside/laguna-xs-2.1": 40,
 }
 
 # Relay model string → (dashboard provider key, dashboard model key) in availability.json.
 RELAY_AVAIL_MAP = {
+    "qwen/qwen3.8-27b-free": ("orca", "qwen/qwen3.8-27b-free"),
+    "deepseek/deepseek-v4-pro-free": ("orca", "deepseek/deepseek-v4-pro-free"),
     "z-ai/glm-5.2": ("llm7", "glm-5.2"),
     "deepseek-v4-flash-free": ("zen", "deepseek-v4-flash-free"),
-    "laguna-s-2.1-free": ("zen", "laguna-s-2.1-free"),
-    "poolside/laguna-xs-2.1": ("nvidia", "poolside/laguna-xs-2.1"),
+    "minimaxai/minimax-m3": ("nvidia", "minimaxai/minimax-m3"),
+    "thinkingmachines/inkling": ("nvidia", "thinkingmachines/inkling"),
     "hy3-free": ("zen", "hy3-free"),
+    "nemotron-3-ultra-free": ("zen", "nemotron-3-ultra-free"),
     "mimo-v2.5-free": ("zen", "mimo-v2.5-free"),
+    "qwen/qwen3.6-27b": ("groq", "qwen/qwen3.6-27b"),
 }
 
 
