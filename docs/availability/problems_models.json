@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T17:26:43.647679+00:00",
+  "updated": "2026-08-18T18:37:43.101606+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -378,6 +378,20 @@
       "name": "Kilo Code",
       "url": "https://kilo.code",
       "models": [
+        {
+          "id": "kilo-auto/free",
+          "name": "Auto Free",
+          "context": 256000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "stepfun/step-3.7-flash:free",
+          "name": "StepFun: Step 3.7 Flash (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
         {
           "id": "poolside/laguna-s-2.1:free",
           "name": "Poolside: Laguna S 2.1 (free)",
