@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19T07:20:53.304476+00:00",
+  "updated": "2026-08-19T07:50:31.979323+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -132,18 +132,18 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
           "id": "allam-2-7b",
           "name": "allam-2-7b",
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
+        },
+        {
+          "id": "groq/compound",
+          "name": "groq/compound",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -172,8 +172,8 @@
           "params_b": 27.0
         },
         {
-          "id": "groq/compound",
-          "name": "groq/compound",
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
           "context": 131072,
           "limits": "varies per model",
           "params_b": null
@@ -1013,6 +1013,13 @@
           "params_b": null
         },
         {
+          "id": "vendouple/qwen-3.8-27b:free",
+          "name": "vendouple/qwen-3.8-27b:free",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": 27.0
+        },
+        {
           "id": "MarcosFRG/nemotron-3.5-lightning-30b",
           "name": "MarcosFRG/nemotron-3.5-lightning-30b",
           "context": null,
@@ -1122,307 +1129,6 @@
           "name": "GLM-4.5-Flash",
           "context": null,
           "limits": "free Flash tier",
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
-    "modelscope": {
-      "name": "ModelScope",
-      "url": "https://modelscope.cn",
-      "models": [
-        {
-          "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-          "name": "deepseek-ai/DeepSeek-V4-Flash-0731",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "deepseek-ai/DeepSeek-V4-Pro",
-          "name": "deepseek-ai/DeepSeek-V4-Pro",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "name": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "MedAIBase/AntAngelMed",
-          "name": "MedAIBase/AntAngelMed",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "meituan-longcat/LongCat-Flash-Lite",
-          "name": "meituan-longcat/LongCat-Flash-Lite",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "MiniMax/MiniMax-M1-80k",
-          "name": "MiniMax/MiniMax-M1-80k",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "MiniMax/MiniMax-M3",
-          "name": "MiniMax/MiniMax-M3",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "mistralai/Mistral-Large-Instruct-2407",
-          "name": "mistralai/Mistral-Large-Instruct-2407",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "opencompass/CompassJudger-1-32B-Instruct",
-          "name": "opencompass/CompassJudger-1-32B-Instruct",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 32.0
-        },
-        {
-          "id": "OpenGVLab/InternVL3_5-241B-A28B",
-          "name": "OpenGVLab/InternVL3_5-241B-A28B",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 241.0
-        },
-        {
-          "id": "PaddlePaddle/ERNIE-4.5-0.3B-PT",
-          "name": "PaddlePaddle/ERNIE-4.5-0.3B-PT",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 0.3
-        },
-        {
-          "id": "PaddlePaddle/ERNIE-4.5-21B-A3B-PT",
-          "name": "PaddlePaddle/ERNIE-4.5-21B-A3B-PT",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 21.0
-        },
-        {
-          "id": "PaddlePaddle/ERNIE-4.5-300B-A47B-PT",
-          "name": "PaddlePaddle/ERNIE-4.5-300B-A47B-PT",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 300.0
-        },
-        {
-          "id": "PaddlePaddle/ERNIE-4.5-VL-28B-A3B-PT",
-          "name": "PaddlePaddle/ERNIE-4.5-VL-28B-A3B-PT",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 28.0
-        },
-        {
-          "id": "Qwen/Qwen3-14B",
-          "name": "Qwen/Qwen3-14B",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 14.0
-        },
-        {
-          "id": "Qwen/Qwen3-235B-A22B",
-          "name": "Qwen/Qwen3-235B-A22B",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 235.0
-        },
-        {
-          "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
-          "name": "Qwen/Qwen3-235B-A22B-Instruct-2507",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 235.0
-        },
-        {
-          "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-          "name": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 235.0
-        },
-        {
-          "id": "Qwen/Qwen3-30B-A3B",
-          "name": "Qwen/Qwen3-30B-A3B",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
-          "name": "Qwen/Qwen3-30B-A3B-Thinking-2507",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "Qwen/Qwen3-4B",
-          "name": "Qwen/Qwen3-4B",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 4.0
-        },
-        {
-          "id": "Qwen/Qwen3-8B",
-          "name": "Qwen/Qwen3-8B",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 8.0
-        },
-        {
-          "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
-          "name": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
-          "name": "Qwen/Qwen3-Next-80B-A3B-Instruct",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 80.0
-        },
-        {
-          "id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
-          "name": "Qwen/Qwen3-Next-80B-A3B-Thinking",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 80.0
-        },
-        {
-          "id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
-          "name": "Qwen/Qwen3-VL-235B-A22B-Instruct",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 235.0
-        },
-        {
-          "id": "Qwen/Qwen3-VL-8B-Instruct",
-          "name": "Qwen/Qwen3-VL-8B-Instruct",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 8.0
-        },
-        {
-          "id": "Qwen/Qwen3-VL-8B-Thinking",
-          "name": "Qwen/Qwen3-VL-8B-Thinking",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 8.0
-        },
-        {
-          "id": "Qwen/Qwen3.5-122B-A10B",
-          "name": "Qwen/Qwen3.5-122B-A10B",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 122.0
-        },
-        {
-          "id": "Qwen/Qwen3.5-27B",
-          "name": "Qwen/Qwen3.5-27B",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 27.0
-        },
-        {
-          "id": "Qwen/Qwen3.5-35B-A3B",
-          "name": "Qwen/Qwen3.5-35B-A3B",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 35.0
-        },
-        {
-          "id": "Qwen/Qwen3.5-397B-A17B",
-          "name": "Qwen/Qwen3.5-397B-A17B",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 397.0
-        },
-        {
-          "id": "Shanghai_AI_Laboratory/Intern-S1",
-          "name": "Shanghai_AI_Laboratory/Intern-S1",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "Shanghai_AI_Laboratory/Intern-S1-mini",
-          "name": "Shanghai_AI_Laboratory/Intern-S1-mini",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "Shanghai_AI_Laboratory/Intern-S2-Preview",
-          "name": "Shanghai_AI_Laboratory/Intern-S2-Preview",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "stepfun-ai/Step-3.5-Flash",
-          "name": "stepfun-ai/Step-3.5-Flash",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "stepfun-ai/Step-3.7-Flash",
-          "name": "stepfun-ai/Step-3.7-Flash",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "Tencent-Hunyuan/Hy3",
-          "name": "Tencent-Hunyuan/Hy3",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "XGenerationLab/XiYanSQL-QwenCoder-32B-2412",
-          "name": "XGenerationLab/XiYanSQL-QwenCoder-32B-2412",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 32.0
-        },
-        {
-          "id": "XGenerationLab/XiYanSQL-QwenCoder-32B-2504",
-          "name": "XGenerationLab/XiYanSQL-QwenCoder-32B-2504",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": 32.0
-        },
-        {
-          "id": "ZhipuAI/GLM-4.7-Flash",
-          "name": "ZhipuAI/GLM-4.7-Flash",
-          "context": null,
-          "limits": "free inference tier",
-          "params_b": null
-        },
-        {
-          "id": "ZhipuAI/GLM-5.2",
-          "name": "ZhipuAI/GLM-5.2",
-          "context": null,
-          "limits": "free inference tier",
           "params_b": null
         }
       ],
@@ -1587,11 +1293,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 20.0
         },
         {
           "id": "nemotron-3-ultra",
@@ -1601,18 +1307,11 @@
           "params_b": null
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "minimax-m3",
+          "name": "minimax-m3",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
+          "params_b": null
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -1620,6 +1319,13 @@
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
         },
         {
           "id": "nemotron-3-super",
