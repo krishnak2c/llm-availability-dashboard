@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19T22:24:12.089406+00:00",
+  "updated": "2026-08-19T23:21:57.466028+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -253,6 +253,13 @@
         {
           "id": "poolside/laguna-xs-2.1",
           "name": "poolside/laguna-xs-2.1",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
+          "id": "stepfun-ai/step-3.7-flash",
+          "name": "stepfun-ai/step-3.7-flash",
           "context": null,
           "limits": "40 req/min",
           "params_b": null
@@ -531,11 +538,25 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "minimax-m3",
+          "name": "minimax-m3",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         },
         {
           "id": "gpt-oss:20b",
@@ -552,8 +573,8 @@
           "params_b": 31.0
         },
         {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -564,20 +585,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         }
       ],
       "error": null
