@@ -1,7 +1,6 @@
 {
   "order": [
     "ollama-minimaxm3",
-    "nvidia-minimaxm3",
     "zen-hy3",
     "kilo-hy3",
     "nvidia-inkling",
@@ -9,7 +8,8 @@
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
     "ollama-gemma431b",
-    "ollama-gptoss120b"
+    "ollama-gptoss120b",
+    "kilo-dots3notepreview"
   ],
   "chain": [
     {
@@ -17,12 +17,6 @@
       "baseUrl": "https://ollama.com/v1",
       "model": "minimax-m3",
       "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
-      "id": "nvidia-minimaxm3",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "minimaxai/minimax-m3",
-      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "zen-hy3",
@@ -71,12 +65,19 @@
       "baseUrl": "https://ollama.com/v1",
       "model": "gpt-oss:120b",
       "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
+      "id": "kilo-dots3notepreview",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "dots-studio/dots-3-note-preview:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
+    "dots-studio/dots-3-note-preview:free",
     "gemma4:31b",
     "gpt-oss:120b",
     "hy3",
