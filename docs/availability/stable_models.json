@@ -1,29 +1,16 @@
 {
-  "updated": "2026-08-19T01:13:04.978052+00:00",
+  "updated": "2026-08-19T02:56:56.640095+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
           "context": 131072,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
+          "params_b": null
         },
         {
           "id": "qwen/qwen3.6-27b",
@@ -39,11 +26,11 @@
           "params_b": 27.0
         },
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
           "limits": "varies per model",
-          "params_b": null
+          "params_b": 7.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -57,6 +44,19 @@
             "reasoning"
           ],
           "params_b": 20.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
         }
       ],
       "error": null
@@ -71,13 +71,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 8.0
-        },
-        {
-          "id": "meta/muse-glimmer-30b",
-          "name": "meta/muse-glimmer-30b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 30.0
         },
         {
           "id": "nvidia/ising-calibration-1.5-31b",
@@ -719,13 +712,6 @@
           "params_b": null
         },
         {
-          "id": "YoannDev90/muse-glimmer-30b:free",
-          "name": "YoannDev90/muse-glimmer-30b:free",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": 30.0
-        },
-        {
           "id": "morriszdweck/osaii-api-smart",
           "name": "morriszdweck/osaii-api-smart",
           "context": null,
@@ -738,13 +724,6 @@
           "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
-        },
-        {
-          "id": "vendouple/muse-glimmer-30b:free",
-          "name": "vendouple/muse-glimmer-30b:free",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": 30.0
         }
       ],
       "error": null
@@ -773,13 +752,6 @@
           "context": 512000,
           "limits": "free tier",
           "params_b": null
-        },
-        {
-          "id": "liquid/lfm-2.5-2.6b:free",
-          "name": "LiquidAI: LFM2.5-2.6B (free)",
-          "context": 128000,
-          "limits": "free tier",
-          "params_b": 2.6
         },
         {
           "id": "nvidia/nemotron-3.5-lightning:free",
@@ -852,11 +824,11 @@
           "params_b": 30.0
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": 120.0
+          "params_b": 31.0
         },
         {
           "id": "minimax-m3",
@@ -866,11 +838,11 @@
           "params_b": null
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 120.0
         },
         {
           "id": "gpt-oss:20b",
@@ -880,11 +852,11 @@
           "params_b": 20.0
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
+          "params_b": null
         }
       ],
       "error": null
