@@ -41,6 +41,11 @@ def common():
     return load_module("common", "common.py")
 
 
+@pytest.fixture(scope="module")
+def generate_site():
+    return load_module("generate_site", "generate_site.py")
+
+
 # ── Security: no literal provider keys ────────────────────────────────────────
 
 
@@ -310,3 +315,100 @@ def test_env_example_has_no_proxy_remnants():
         assert not re.search(rf"^{re.escape(key)}=", text, re.M), (
             f"proxy-era {key} still in .env.example"
         )
+
+
+# ── generate_site.py: select_dynamic_chain ────────────────────────────────────
+
+
+def _stable(providers):
+    """Build a stable_data dict: {providers: {key: {models: [...]}}}."""
+    return {"providers": {k: {"models": v} for k, v in providers.items()}}
+
+
+def _avail(providers):
+    """Build an avail_data dict: {providers: {key: {model: stats}}}."""
+    return {"providers": {k: v for k, v in providers.items()}}
+
+
+class TestSelectDynamicChain:
+    """select_dynamic_chain: failover chain ordering, dedup, truncation."""
+
+    # Availability stats yielding deterministic _relay_avail_score values.
+    HEALTHY = {"uptime_7d": 0.9, "uptime_30d": 0.9, "samples_7d": 10}  # a=0.9
+    WEAK = {"uptime_7d": 0.5, "uptime_30d": 0.5, "samples_7d": 10}  # a=0.5
+
+    def test_duplicates_kept_availability_first(self, generate_site):
+        """Same model on two providers: both kept, higher-total sorts first
+        even when the lower-total one is the preferred provider (zen)."""
+        gs = generate_site
+        stable = _stable({"zen": ["hy3"], "kilo": ["hy3"]})
+        avail = _avail({"zen": {"hy3": self.WEAK}, "kilo": {"hy3": self.HEALTHY}})
+        chain = gs.select_dynamic_chain({"hy3": 100}, avail, stable)
+        ids = [e["id"] for e in chain]
+        assert ids == ["kilo-hy3", "zen-hy3"]  # healthy kilo first, zen kept
+        assert {e["model"] for e in chain} == {"hy3"}
+        assert {e["apiKeyEnv"] for e in chain} == {"KILOCODE_API_KEY", "OPENCODE_ZEN_API_KEY"}
+
+    def test_groups_ranked_by_best_score_desc(self, generate_site):
+        """Distinct models: the higher-total model's group appears first."""
+        gs = generate_site
+        stable = _stable({"kilo": ["hy3"], "groq": ["qwen3"]})
+        avail = _avail({"kilo": {"hy3": self.HEALTHY}, "groq": {"qwen3": self.WEAK}})
+        chain = gs.select_dynamic_chain({"hy3": 100, "qwen3": 100}, avail, stable)
+        ids = [e["id"] for e in chain]
+        assert ids == ["kilo-hy3", "groq-qwen3"]  # 90 > 50
+
+    def test_straggler_duplicate_dropped(self, generate_site):
+        """A weak duplicate (< half the group's best score) is dropped and
+        does not displace a healthy distinct model from another group."""
+        gs = generate_site
+        stable = _stable({"kilo": ["hy3"], "zen": ["hy3"], "groq": ["qwen3"]})
+        avail = _avail(
+            {
+                "kilo": {"hy3": self.HEALTHY},  # total 90
+                "zen": {"hy3": {"uptime_7d": 0.05, "uptime_30d": 0.05, "samples_7d": 10}},  # total 5
+                "groq": {"qwen3": self.WEAK},  # total 40
+            }
+        )
+        chain = gs.select_dynamic_chain({"hy3": 100, "qwen3": 80}, avail, stable, top_n=2)
+        ids = [e["id"] for e in chain]
+        assert "zen-hy3" not in ids  # 5 < 0.5 * 90 → dropped
+        assert ids == ["kilo-hy3", "groq-qwen3"]  # healthy distinct model not displaced
+
+    def test_top_n_truncates_mid_group(self, generate_site):
+        """top_n cut lands mid-group: exactly top_n entries, earlier groups
+        fully emitted."""
+        gs = generate_site
+        stable = _stable(
+            {
+                "zen": ["alpha"],
+                "nvidia": ["alpha"],
+                "kilo": ["alpha"],
+                "groq": ["beta"],
+                "llm7": ["beta"],
+                "openrouter": ["beta"],
+            }
+        )
+        avail = _avail(
+            {
+                "zen": {"alpha": self.HEALTHY},
+                "nvidia": {"alpha": self.HEALTHY},
+                "kilo": {"alpha": self.HEALTHY},
+                "groq": {"beta": self.WEAK},
+                "llm7": {"beta": self.WEAK},
+                "openrouter": {"beta": self.WEAK},
+            }
+        )
+        chain = gs.select_dynamic_chain({"alpha": 100, "beta": 100}, avail, stable, top_n=4)
+        ids = [e["id"] for e in chain]
+        assert len(ids) == 4
+        assert ids[:3] == ["zen-alpha", "nvidia-alpha", "kilo-alpha"]  # group fully emitted
+        assert ids[3].endswith("-beta")  # cut lands mid-beta
+
+    def test_empty_and_missing_inputs(self, generate_site):
+        """Empty/missing stable or avail data yields an empty chain."""
+        gs = generate_site
+        assert gs.select_dynamic_chain({}, {}, {}) == []
+        assert gs.select_dynamic_chain({}, {}, {"providers": {}}) == []  # no avail
+        assert gs.select_dynamic_chain({}, {"providers": {}}, {}) == []  # no stable
+        assert gs.select_dynamic_chain({}, {"providers": {}}, {"providers": {}}) == []  # no candidates

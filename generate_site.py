@@ -1373,9 +1373,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <span class="top-pill"><strong>{total_models}</strong> models</span>
     <span class="top-pill"><strong>{total_providers}</strong> providers</span>
     <span class="top-pill" title="Last updated">{updated}</span>
-    <span class="top-pill"><a href="https://danissimode.github.io/litellm-free-models-prox-DNy/models.json" target="_blank">JSON</a></span>
-    <span class="top-pill"><a href="https://danissimode.github.io/litellm-free-models-prox-DNy/availability/stable_models.json" target="_blank" title="Models with 7d uptime ≥ 95%">JSON · stable</a></span>
-    <span class="top-pill"><a href="https://danissimode.github.io/litellm-free-models-prox-DNy/availability/problems_models.json" target="_blank" title="Models with 7d uptime &lt; 95%">JSON · problems</a></span>
+    <span class="top-pill"><a href="https://krishnak2c.github.io/llm-availability-dashboard/models.json" target="_blank">JSON</a></span>
+    <span class="top-pill"><a href="https://krishnak2c.github.io/llm-availability-dashboard/availability/stable_models.json" target="_blank" title="Models with 7d uptime ≥ 95%">JSON · stable</a></span>
+    <span class="top-pill"><a href="https://krishnak2c.github.io/llm-availability-dashboard/availability/problems_models.json" target="_blank" title="Models with 7d uptime &lt; 95%">JSON · problems</a></span>
     <span class="top-pill"><a href="https://github.com/Danissimode/litellm-free-models-prox-DNy" target="_blank">GitHub</a></span>
   </div>
 </header>
@@ -2252,8 +2252,9 @@ def select_dynamic_chain(benchmarks, avail_data, stable_data, top_n=10):
 
     The SAME model served by multiple providers is kept as separate entries
     (e.g. hy3 on zen AND kilo). Within a model group, entries are ordered by
-    RELAY_PROVIDER_PREFERENCE (opencode/zen first, nvidia nim second, others
-    after); groups are ranked by their best score DESC.
+    availability score DESC, then provider preference (zen/nvidia first as
+    tiebreaker); weak duplicates (< half the group's best score) are dropped
+    before flattening. Groups are ranked by their best score DESC.
 
     Returns a list of {id, baseUrl, model, apiKeyEnv}, top_n entries. baseUrl
     is derived from the probe config endpoint (PROVIDERS['url'] is a console
@@ -2301,14 +2302,18 @@ def select_dynamic_chain(benchmarks, avail_data, stable_data, top_n=10):
             }
             groups.setdefault(norm, []).append((total, pref, entry))
 
-    # Within each model group: provider preference (zen=0, nvidia=1, others=99).
+    # Within each model group: availability DESC, provider preference as
+    # tiebreaker (zen=0, nvidia=1, others=99).
     for g in groups.values():
-        g.sort(key=lambda t: t[1])
+        group_max = max(t[0] for t in g)
+        g.sort(key=lambda t: (-t[0], t[1]))
+        # Drop weak duplicates (< half the group's best score) before flattening.
+        g[:] = [t for t in g if t[0] >= 0.5 * group_max]
     # Groups ranked by their best score DESC (stable), then flattened.
     ranked_groups = sorted(groups.values(), key=lambda g: max(t[0] for t in g), reverse=True)
     out = []
     for g in ranked_groups:
-        for total, pref, entry in g:
+        for total, _, entry in g:
             out.append(entry)
             if len(out) >= top_n:
                 return out
