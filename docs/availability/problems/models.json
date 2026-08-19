@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19T12:45:33.858695+00:00",
+  "updated": "2026-08-19T13:43:12.161566+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -132,17 +132,11 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
+          "id": "groq/compound",
+          "name": "groq/compound",
           "context": 131072,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
+          "params_b": null
         },
         {
           "id": "allam-2-7b",
@@ -165,20 +159,6 @@
           "params_b": 20.0
         },
         {
-          "id": "groq/compound",
-          "name": "groq/compound",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
           "id": "qwen/qwen3.6-27b",
           "name": "qwen/qwen3.6-27b",
           "context": 131072,
@@ -190,6 +170,26 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
+        },
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
         }
       ],
       "error": null
@@ -1005,11 +1005,25 @@
       "url": "https://pollinations.ai",
       "models": [
         {
-          "id": "JustScriptzz/gpt-oss:ultra-fast",
-          "name": "JustScriptzz/gpt-oss:ultra-fast",
+          "id": "gggff123/Gemini-3.7-Flash",
+          "name": "gggff123/Gemini-3.7-Flash",
           "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
+        },
+        {
+          "id": "gggff123/Glm-5.3",
+          "name": "gggff123/Glm-5.3",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "JustScriptzz/gpt-oss-120b",
+          "name": "JustScriptzz/gpt-oss-120b",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": 120.0
         },
         {
           "id": "JustScriptzz/moondream-3.1",
@@ -1299,13 +1313,6 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "nemotron-3-super",
           "name": "nemotron-3-super",
           "context": null,
@@ -1313,11 +1320,18 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": 120.0
+          "params_b": 20.0
+        },
+        {
+          "id": "minimax-m3",
+          "name": "minimax-m3",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -1327,8 +1341,15 @@
           "params_b": 30.0
         },
         {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -1339,13 +1360,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
-        },
-        {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
         }
       ],
       "error": null
@@ -1378,7 +1392,7 @@
         {
           "id": "qwen/qwen3.8-27b-free",
           "name": "Qwen: Qwen3.8 27B (free)",
-          "context": 262144,
+          "context": 65536,
           "limits": "free tier",
           "params_b": 27.0
         },
