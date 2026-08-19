@@ -8,7 +8,7 @@ class SafeRedirectHandler(urllib.request.HTTPRedirectHandler):
             old_host = req.host
             new_host = new_req.host
             if old_host != new_host:
-                for header in ["Authorization", "x-goog-api-key"]:
+                for header in ["Authorization", "x-goog-api-key", "x-api-key"]:
                     if header.title() in new_req.unredirected_hdrs:
                         del new_req.unredirected_hdrs[header.title()]
                     if header in new_req.unredirected_hdrs:

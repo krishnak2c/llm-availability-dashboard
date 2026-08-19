@@ -2205,6 +2205,39 @@ def fetch_quality_benchmarks(api_key):
     return out
 
 
+def load_quality_rankings(path):
+    """Load quality scores from a local rankings.json produced by hermes_rank.py.
+
+    Expected format: {"metadata": ..., "ranking": [{"model_id": "...",
+    "hermes_score": 0-100, "data_coverage": 0.0-1.0, ...}]}. Defensive:
+    returns {} on any failure (missing file, bad JSON, wrong schema) so the
+    caller falls back to the static RELAY_* config.
+    """
+    try:
+        data = json.loads(Path(path).read_text())
+    except Exception:
+        return {}
+    rows = data.get("ranking") if isinstance(data, dict) else None
+    if not isinstance(rows, list):
+        return {}
+    out = {}
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        mid = row.get("model_id")
+        if not mid:
+            continue
+        score = row.get("hermes_score")
+        try:
+            score = float(score)
+        except (TypeError, ValueError):
+            continue
+        if score != score:  # NaN
+            continue
+        out[normalize_model_id(mid)] = score
+    return out
+
+
 def _relay_avail_score(stats):
     """Availability score mirroring build_relay_providers_json (shared logic)."""
     if not stats:
@@ -2366,8 +2399,7 @@ def main():
     # Prefer a dynamically selected top-N chain; fall back to the static
     # RELAY_* config when benchmarks or stable/availability data are missing.
     relay_payload = build_relay_providers_json(avail_providers)  # static fallback
-    bench_key = os.environ.get("OPENROUTER_API_KEY", "")
-    benchmarks = fetch_quality_benchmarks(bench_key) if bench_key else {}
+    benchmarks = load_quality_rankings(OUT_DIR / "availability" / "rankings.json")
     stable_data = {}
     stable_path = OUT_DIR / "availability" / "stable" / "models.json"
     try:

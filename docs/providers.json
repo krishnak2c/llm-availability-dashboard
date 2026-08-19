@@ -1,0 +1,98 @@
+{
+  "order": [
+    "ollama-minimaxm3",
+    "nvidia-minimaxm3",
+    "zen-hy3",
+    "kilo-hy3",
+    "orca-hy3",
+    "nvidia-inkling",
+    "groq-qwen36",
+    "mistral-mistralmedium35",
+    "mistral-mistralmedium35",
+    "ollama-gemma431b"
+  ],
+  "chain": [
+    {
+      "id": "ollama-minimaxm3",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "minimax-m3",
+      "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
+      "id": "nvidia-minimaxm3",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "minimaxai/minimax-m3",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "zen-hy3",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "hy3-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+    },
+    {
+      "id": "kilo-hy3",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "tencent/hy3:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "orca-hy3",
+      "baseUrl": "https://api.orcarouter.ai/v1",
+      "model": "tencent/hy3-free",
+      "apiKeyEnv": "ORCA_API_KEY"
+    },
+    {
+      "id": "nvidia-inkling",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "thinkingmachines/inkling",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "groq-qwen36",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "model": "qwen/qwen3.6-27b",
+      "apiKeyEnv": "GROQ_API_KEY"
+    },
+    {
+      "id": "mistral-mistralmedium35",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "mistral-medium-3-5",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "mistral-mistralmedium35",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "mistral-medium-3.5",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "ollama-gemma431b",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "gemma4:31b",
+      "apiKeyEnv": "OLLAMA_API_KEY"
+    }
+  ],
+  "modelAllowlist": [
+    "deepseek-ai/deepseek-v4-flash-0731",
+    "deepseek-v4-flash-free",
+    "deepseek/deepseek-v4-pro-free",
+    "gemma4:31b",
+    "hy3",
+    "hy3-free",
+    "laguna-s-2.1-free",
+    "mimo-v2.5-free",
+    "minimax-m3",
+    "minimaxai/minimax-m3",
+    "mistral-medium-3-5",
+    "mistral-medium-3.5",
+    "nemotron-3-ultra-free",
+    "poolside/laguna-xs-2.1",
+    "qwen/qwen3.6-27b",
+    "qwen/qwen3.8-27b-free",
+    "tencent/hy3-free",
+    "tencent/hy3:free",
+    "thinkingmachines/inkling",
+    "z-ai/glm-5.2"
+  ]
+}

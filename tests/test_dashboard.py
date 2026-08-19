@@ -99,16 +99,20 @@ def test_no_literal_provider_keys_committed():
 
 
 def test_env_example_covers_dashboard_env_vars():
-    """Every os.environ key read by the dashboard scripts must be documented."""
+    """Every os.environ.get/os.getenv key read by the dashboard scripts must be documented."""
     template = ENV_EXAMPLE.read_text()
     env_keys = set()
-    for name, path in [("probe_models", "probe_models.py"), ("generate_site", "generate_site.py")]:
+    for name, path in [
+        ("probe_models", "probe_models.py"),
+        ("generate_site", "generate_site.py"),
+        ("hermes_rank", "hermes_rank.py"),
+    ]:
         try:
             load_module(name, path)
         except Exception:
             continue
         src = (REPO / path).read_text()
-        env_keys |= set(re.findall(r'os\.environ\.get\("([A-Z0-9_]+)"', src))
+        env_keys |= set(re.findall(r'os\.(?:environ\.get|getenv)\("([A-Z0-9_]+)"', src))
     for key in sorted(env_keys):
         assert re.search(rf"^{re.escape(key)}=", template, re.M), (
             f"os.environ key {key} missing from .env.example"
