@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19T09:33:35.470464+00:00",
+  "updated": "2026-08-19T10:28:09.334993+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -264,6 +264,18 @@
       "name": "Mistral",
       "url": "https://console.mistral.ai",
       "models": [
+        {
+          "id": "devstral-2512",
+          "name": "devstral-2512",
+          "context": 256000,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
+          "params_b": null
+        },
         {
           "id": "devstral-latest",
           "name": "devstral-2512",
