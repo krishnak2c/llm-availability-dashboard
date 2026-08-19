@@ -1,22 +1,16 @@
 {
-  "updated": "2026-08-19T08:37:04.987941+00:00",
+  "updated": "2026-08-19T09:33:35.470464+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
           "context": 131072,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
+          "params_b": null
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -39,11 +33,17 @@
           "params_b": 7.0
         },
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
           "context": 131072,
           "limits": "varies per model",
-          "params_b": null
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -660,13 +660,6 @@
           "params_b": 24.0
         },
         {
-          "id": "@cf/qwen/qwen3.8-27b",
-          "name": "@cf/qwen/qwen3.8-27b",
-          "context": null,
-          "limits": "10k neurons/day",
-          "params_b": 27.0
-        },
-        {
           "id": "@cf/openai/gpt-oss-20b",
           "name": "@cf/openai/gpt-oss-20b",
           "context": 128000,
@@ -831,20 +824,6 @@
           "params_b": 31.0
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
           "id": "nemotron-3-super",
           "name": "nemotron-3-super",
           "context": null,
@@ -857,6 +836,20 @@
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
         }
       ],
       "error": null
