@@ -1,23 +1,17 @@
 {
   "order": [
-    "ollama-minimaxm3",
     "zen-hy3",
     "kilo-hy3",
     "nvidia-inkling",
     "groq-qwen36",
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
-    "ollama-gemma431b",
-    "ollama-gptoss120b",
-    "kilo-dots3notepreview"
+    "ollama-minimaxm3",
+    "nvidia-minimaxm3",
+    "kilo-dots3notepreview",
+    "pollinations-lagunas21"
   ],
   "chain": [
-    {
-      "id": "ollama-minimaxm3",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "minimax-m3",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
     {
       "id": "zen-hy3",
       "baseUrl": "https://opencode.ai/zen/v1",
@@ -55,22 +49,28 @@
       "apiKeyEnv": "MISTRAL_API_KEY"
     },
     {
-      "id": "ollama-gemma431b",
+      "id": "ollama-minimaxm3",
       "baseUrl": "https://ollama.com/v1",
-      "model": "gemma4:31b",
+      "model": "minimax-m3",
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
-      "id": "ollama-gptoss120b",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "gpt-oss:120b",
-      "apiKeyEnv": "OLLAMA_API_KEY"
+      "id": "nvidia-minimaxm3",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "minimaxai/minimax-m3",
+      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "kilo-dots3notepreview",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "dots-studio/dots-3-note-preview:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "pollinations-lagunas21",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "vendouple/laguna-s-2.1:free",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -78,8 +78,6 @@
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
     "dots-studio/dots-3-note-preview:free",
-    "gemma4:31b",
-    "gpt-oss:120b",
     "hy3",
     "hy3-free",
     "laguna-s-2.1-free",
@@ -94,6 +92,7 @@
     "qwen/qwen3.8-27b-free",
     "tencent/hy3:free",
     "thinkingmachines/inkling",
+    "vendouple/laguna-s-2.1:free",
     "z-ai/glm-5.2"
   ]
 }
