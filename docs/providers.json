@@ -4,12 +4,12 @@
     "nvidia-minimaxm3",
     "zen-hy3",
     "kilo-hy3",
-    "orca-hy3",
     "nvidia-inkling",
     "groq-qwen36",
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
-    "ollama-gemma431b"
+    "ollama-gemma431b",
+    "ollama-gptoss120b"
   ],
   "chain": [
     {
@@ -35,12 +35,6 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "tencent/hy3:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "orca-hy3",
-      "baseUrl": "https://api.orcarouter.ai/v1",
-      "model": "tencent/hy3-free",
-      "apiKeyEnv": "ORCA_API_KEY"
     },
     {
       "id": "nvidia-inkling",
@@ -71,6 +65,12 @@
       "baseUrl": "https://ollama.com/v1",
       "model": "gemma4:31b",
       "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
+      "id": "ollama-gptoss120b",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "gpt-oss:120b",
+      "apiKeyEnv": "OLLAMA_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -78,6 +78,7 @@
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
     "gemma4:31b",
+    "gpt-oss:120b",
     "hy3",
     "hy3-free",
     "laguna-s-2.1-free",
@@ -90,7 +91,6 @@
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b-free",
-    "tencent/hy3-free",
     "tencent/hy3:free",
     "thinkingmachines/inkling",
     "z-ai/glm-5.2"
