@@ -1,23 +1,17 @@
 {
   "order": [
-    "nvidia-minimaxm3",
     "ollama-minimaxm3",
     "zen-hy3",
     "kilo-hy3",
     "orca-hy3",
     "nvidia-inkling",
-    "openrouter-dots3notepreview",
     "kilo-dots3notepreview",
+    "pollinations-lagunas21",
+    "kilo-lagunas21",
     "zen-lagunas21",
-    "openrouter-lagunas21"
+    "kilo-openrouterfree"
   ],
   "chain": [
-    {
-      "id": "nvidia-minimaxm3",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "minimaxai/minimax-m3",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
     {
       "id": "ollama-minimaxm3",
       "baseUrl": "https://ollama.com/v1",
@@ -49,15 +43,21 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "openrouter-dots3notepreview",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "dots-studio/dots-3-note-preview:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
       "id": "kilo-dots3notepreview",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "dots-studio/dots-3-note-preview:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "pollinations-lagunas21",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "vendouple/laguna-s-2.1:free",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
+    },
+    {
+      "id": "kilo-lagunas21",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "poolside/laguna-s-2.1:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
@@ -67,10 +67,10 @@
       "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
     },
     {
-      "id": "openrouter-lagunas21",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "poolside/laguna-s-2.1:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
+      "id": "kilo-openrouterfree",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "openrouter/free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -85,6 +85,7 @@
     "minimax-m3",
     "minimaxai/minimax-m3",
     "nemotron-3-ultra-free",
+    "openrouter/free",
     "poolside/laguna-s-2.1:free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
@@ -92,6 +93,7 @@
     "tencent/hy3-free",
     "tencent/hy3:free",
     "thinkingmachines/inkling",
+    "vendouple/laguna-s-2.1:free",
     "z-ai/glm-5.2"
   ]
 }
