@@ -49,12 +49,25 @@ import time
 import urllib.error
 import urllib.request
 from collections.abc import Iterable
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 from common import _opener
 
 AA_BASE_URL = "https://artificialanalysis.ai/api/v2"
+
+# Disk cache for the Artificial Analysis models fetch. The API key is
+# capped at ~100 requests/day while the hourly CI cron would otherwise
+# paginate 4 pages per run (~96 requests/day); a committed cache under
+# docs/ persists across fresh GitHub Actions checkouts.
+AA_CACHE_TTL_HOURS = 24
+DEFAULT_AA_CACHE = (
+    Path(__file__).resolve().parent
+    / "docs"
+    / "availability"
+    / "aa_models_cache.json"
+)
 
 
 # ---------------------------------------------------------
@@ -491,6 +504,138 @@ def fetch_aa_models(
     return ArtificialAnalysisClient(api_key).get_all_models()
 
 
+def _trim_aa_model(model: dict[str, Any]) -> dict[str, Any]:
+    """Keep only the fields hermes_rank.py consumes from an AA model."""
+    return {
+        "slug": model.get("slug"),
+        "name": model.get("name"),
+        "evaluations": model.get("evaluations"),
+    }
+
+
+def load_aa_cache(
+    cache_path: str | Path,
+) -> tuple[list[dict[str, Any]], float | None] | None:
+    """
+    Load cached AA models when the cache file exists and is fresh.
+
+    Returns (models, index_version) on a valid cache within
+    AA_CACHE_TTL_HOURS, else None. Any read/parse/shape problem degrades
+    to None so the caller falls through to the network — never raises.
+    """
+    path = Path(cache_path)
+
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+
+    if not isinstance(data, dict):
+        return None
+
+    fetched_at = data.get("fetched_at")
+
+    if not isinstance(fetched_at, str):
+        return None
+
+    try:
+        fetched_dt = datetime.fromisoformat(fetched_at)
+    except ValueError:
+        return None
+
+    if fetched_dt.tzinfo is None:
+        fetched_dt = fetched_dt.replace(tzinfo=timezone.utc)
+
+    age = datetime.now(timezone.utc) - fetched_dt
+
+    # Future-dated cache (clock-skewed runner or hand-edit) must not be
+    # treated as fresh forever — treat as stale so AA refresh resumes.
+    if age.total_seconds() < 0:
+        return None
+
+    if age.total_seconds() > AA_CACHE_TTL_HOURS * 3600:
+        return None
+
+    models = data.get("models")
+
+    # Validate items too: a null/string entry (hand-edited or PR-injected
+    # cache — docs/ is committed in a public repo) would crash build_aa_lookup.
+    if not isinstance(models, list) or not all(
+        isinstance(m, dict) for m in models
+    ):
+        return None
+
+    return models, safe_float(data.get("intelligence_index_version"))
+
+
+def write_aa_cache(
+    cache_path: str | Path,
+    models: list[dict[str, Any]],
+    index_version: float | None,
+) -> None:
+    """
+    Persist trimmed AA models to the cache file.
+
+    Failures (unwritable directory, etc.) degrade to a warning — the
+    ranking must never crash because the cache could not be written.
+    """
+    path = Path(cache_path)
+
+    payload = {
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "intelligence_index_version": index_version,
+        "models": [_trim_aa_model(m) for m in models],
+    }
+
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(
+            json.dumps(payload, indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
+    except OSError as exc:
+        print(
+            f"WARNING: could not write AA cache {path}: {exc}",
+            file=sys.stderr,
+        )
+
+
+def get_aa_models(
+    api_key: str | None,
+    cache_path: str | Path | None = None,
+) -> tuple[list[dict[str, Any]], float | None]:
+    """
+    Return AA free-model data, preferring a fresh disk cache.
+
+    Order: fresh cache → network fetch (needs a key) → empty. A
+    missing/stale/corrupt cache falls through to the network; a missing
+    key with no usable cache returns ([], None) like fetch_aa_models.
+    """
+    if cache_path is None:
+        cache_path = DEFAULT_AA_CACHE
+
+    cached = load_aa_cache(cache_path)
+
+    if cached is not None:
+        models, version = cached
+        print(
+            f"Using cached Artificial Analysis data "
+            f"({len(models)} models, index v{version})"
+        )
+        return models, version
+
+    if not api_key:
+        return [], None
+
+    print("Downloading Artificial Analysis model data...")
+
+    models, version = fetch_aa_models(api_key)
+
+    write_aa_cache(cache_path, models, version)
+
+    return models, version
+
+
 # ---------------------------------------------------------
 # Model matching
 # ---------------------------------------------------------
@@ -755,6 +900,15 @@ def build_parser() -> argparse.ArgumentParser:
         help=(
             "Hide models whose score uses less than this "
             "fraction of available weights. Example: 0.50"
+        ),
+    )
+
+    parser.add_argument(
+        "--aa-cache",
+        default=str(DEFAULT_AA_CACHE),
+        help=(
+            "Path to the Artificial Analysis models cache "
+            "(default: docs/availability/aa_models_cache.json)"
         ),
     )
 
@@ -1058,19 +1212,20 @@ def main() -> int:
         "ARTIFICIAL_ANALYSIS_API_KEY"
     )
 
-    aa_models: list[dict[str, Any]] = []
-    aa_version: float | None = None
+    aa_models, aa_version = get_aa_models(
+        api_key,
+        args.aa_cache,
+    )
 
-    if api_key:
-        print(
-            "Downloading Artificial Analysis model data..."
-        )
-
-        aa_models, aa_version = fetch_aa_models(api_key)
-
+    if aa_models:
         print(
             f"Loaded {len(aa_models)} Artificial Analysis models "
             f"(index v{aa_version})"
+        )
+    elif api_key:
+        print(
+            "WARNING: Artificial Analysis returned no models. "
+            "AA metrics will be unavailable."
         )
     else:
         print(

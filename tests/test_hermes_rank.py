@@ -13,6 +13,7 @@ import json
 import sys
 import types
 import urllib.error
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import pytest
@@ -369,6 +370,8 @@ def test_main_min_coverage_filters(hermes, tmp_path, monkeypatch, capsys):
             "arena.csv",
             "--min-coverage",
             "0.05",
+            "--aa-cache",
+            str(tmp_path / "no-cache.json"),
         ],
     )
 
@@ -523,3 +526,195 @@ def test_aa_client_http_errors_raise_runtime_error(hermes, monkeypatch, code, he
         hermes.fetch_aa_models("test-key-123")
 
     assert fake.calls == 1
+
+
+# ── AA disk cache ─────────────────────────────────────────────────────────────
+
+
+def _write_aa_cache(path, fetched_at, models, version=4.1):
+    path.write_text(
+        json.dumps(
+            {
+                "fetched_at": fetched_at,
+                "intelligence_index_version": version,
+                "models": models,
+            }
+        )
+    )
+
+
+def test_aa_cache_fresh_skips_network(hermes, tmp_path, monkeypatch):
+    cache = tmp_path / "aa_cache.json"
+    _write_aa_cache(
+        cache,
+        datetime.now(timezone.utc).isoformat(),
+        [
+            {
+                "slug": "gpt-4o",
+                "name": "GPT-4o",
+                "evaluations": {
+                    "artificial_analysis_intelligence_index": 90
+                },
+            }
+        ],
+    )
+
+    class Boom:
+        def open(self, request, timeout=None):
+            raise AssertionError("network must not be called with fresh cache")
+
+    monkeypatch.setattr(hermes, "_opener", Boom())
+
+    models, version = hermes.get_aa_models("test-key-123", cache)
+
+    assert len(models) == 1
+    assert models[0]["slug"] == "gpt-4o"
+    assert version == pytest.approx(4.1)
+
+
+def test_aa_cache_stale_refetches_and_rewrites(hermes, tmp_path, monkeypatch):
+    cache = tmp_path / "aa_cache.json"
+    _write_aa_cache(
+        cache,
+        (datetime.now(timezone.utc) - timedelta(hours=48)).isoformat(),
+        [{"slug": "old", "name": "Old"}],
+    )
+    fake = FakeOpener(
+        [{"data": [{"slug": "new", "name": "New"}], "pagination": {"has_more": False}}]
+    )
+    monkeypatch.setattr(hermes, "_opener", fake)
+
+    models, version = hermes.get_aa_models("test-key-123", cache)
+
+    assert [m["slug"] for m in models] == ["new"]
+    assert len(fake.calls) == 1
+    data = json.loads(cache.read_text())
+    assert data["models"][0]["slug"] == "new"
+
+
+def test_aa_cache_missing_refetches_and_writes(hermes, tmp_path, monkeypatch):
+    cache = tmp_path / "aa_cache.json"
+    fake = FakeOpener(
+        [
+            {
+                "intelligence_index_version": "3.14",
+                "data": [{"slug": "a", "name": "A"}, {"slug": "b", "name": "B"}],
+                "pagination": {"has_more": False},
+            }
+        ]
+    )
+    monkeypatch.setattr(hermes, "_opener", fake)
+
+    models, version = hermes.get_aa_models("test-key-123", cache)
+
+    assert len(models) == 2
+    assert version == pytest.approx(3.14)
+    assert cache.exists()
+
+
+def test_aa_cache_write_format_trimmed(hermes, tmp_path, monkeypatch):
+    cache = tmp_path / "aa_cache.json"
+    fake = FakeOpener(
+        [
+            {
+                "intelligence_index_version": "3.14",
+                "data": [
+                    {
+                        "slug": "gpt-4o",
+                        "name": "GPT-4o",
+                        "model_creator": "OpenAI",
+                        "pricing": {"input": 0.0},
+                        "performance": {"x": 1},
+                        "evaluations": {
+                            "artificial_analysis_intelligence_index": 90
+                        },
+                        "unused_field": "drop me",
+                    }
+                ],
+                "pagination": {"has_more": False},
+            }
+        ]
+    )
+    monkeypatch.setattr(hermes, "_opener", fake)
+
+    hermes.get_aa_models("test-key-123", cache)
+
+    data = json.loads(cache.read_text())
+    datetime.fromisoformat(data["fetched_at"])  # ISO-8601 UTC
+    assert data["intelligence_index_version"] == pytest.approx(3.14)
+    assert data["models"] == [
+        {
+            "slug": "gpt-4o",
+            "name": "GPT-4o",
+            "evaluations": {"artificial_analysis_intelligence_index": 90},
+        }
+    ]
+
+
+def test_aa_cache_no_key_fresh_cache_used(hermes, tmp_path, monkeypatch):
+    monkeypatch.delenv("ARTIFICIAL_ANALYSIS_API_KEY", raising=False)
+    cache = tmp_path / "aa_cache.json"
+    _write_aa_cache(
+        cache,
+        datetime.now(timezone.utc).isoformat(),
+        [{"slug": "gpt-4o", "name": "GPT-4o"}],
+    )
+
+    class Boom:
+        def open(self, request, timeout=None):
+            raise AssertionError("network must not be called")
+
+    monkeypatch.setattr(hermes, "_opener", Boom())
+
+    models, version = hermes.get_aa_models(None, cache)
+
+    assert [m["slug"] for m in models] == ["gpt-4o"]
+    assert version == pytest.approx(4.1)
+
+
+def test_aa_cache_no_key_no_cache_empty(hermes, tmp_path, monkeypatch):
+    monkeypatch.delenv("ARTIFICIAL_ANALYSIS_API_KEY", raising=False)
+    assert hermes.get_aa_models(None, tmp_path / "nope.json") == ([], None)
+
+
+def test_aa_cache_corrupt_json_refetches(hermes, tmp_path, monkeypatch):
+    cache = tmp_path / "aa_cache.json"
+    cache.write_text("{not valid json")
+    fake = FakeOpener(
+        [{"data": [{"slug": "fresh", "name": "Fresh"}], "pagination": {"has_more": False}}]
+    )
+    monkeypatch.setattr(hermes, "_opener", fake)
+
+    models, version = hermes.get_aa_models("test-key-123", cache)
+
+    assert [m["slug"] for m in models] == ["fresh"]
+    assert len(fake.calls) == 1
+
+
+def test_aa_cache_missing_fetched_at_refetches(hermes, tmp_path, monkeypatch):
+    cache = tmp_path / "aa_cache.json"
+    cache.write_text(json.dumps({"models": [{"slug": "x", "name": "X"}]}))
+    fake = FakeOpener(
+        [{"data": [{"slug": "y", "name": "Y"}], "pagination": {"has_more": False}}]
+    )
+    monkeypatch.setattr(hermes, "_opener", fake)
+
+    models, version = hermes.get_aa_models("test-key-123", cache)
+
+    assert [m["slug"] for m in models] == ["y"]
+    assert len(fake.calls) == 1
+
+
+def test_aa_cache_write_failure_degrades_gracefully(hermes, tmp_path, monkeypatch):
+    blocker = tmp_path / "blocker"
+    blocker.write_text("i am a file")
+    cache = blocker / "aa_cache.json"
+    fake = FakeOpener(
+        [{"data": [{"slug": "a", "name": "A"}], "pagination": {"has_more": False}}]
+    )
+    monkeypatch.setattr(hermes, "_opener", fake)
+
+    models, version = hermes.get_aa_models("test-key-123", cache)
+
+    assert [m["slug"] for m in models] == ["a"]
+    assert not cache.exists()
