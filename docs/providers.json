@@ -6,10 +6,10 @@
     "groq-qwen36",
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
-    "ollama-minimaxm3",
-    "nvidia-minimaxm3",
-    "kilo-dots3notepreview",
-    "pollinations-lagunas21"
+    "nvidia-step37flash",
+    "kilo-step37flash",
+    "nvidia-nemotron3super120ba12b",
+    "kilo-nemotron3super120ba12b"
   ],
   "chain": [
     {
@@ -49,50 +49,51 @@
       "apiKeyEnv": "MISTRAL_API_KEY"
     },
     {
-      "id": "ollama-minimaxm3",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "minimax-m3",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
-      "id": "nvidia-minimaxm3",
+      "id": "nvidia-step37flash",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "minimaxai/minimax-m3",
+      "model": "stepfun-ai/step-3.7-flash",
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "kilo-dots3notepreview",
+      "id": "kilo-step37flash",
       "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "dots-studio/dots-3-note-preview:free",
+      "model": "stepfun/step-3.7-flash:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "pollinations-lagunas21",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "vendouple/laguna-s-2.1:free",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
+      "id": "nvidia-nemotron3super120ba12b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "kilo-nemotron3super120ba12b",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
-    "dots-studio/dots-3-note-preview:free",
     "hy3",
     "hy3-free",
     "laguna-s-2.1-free",
     "mimo-v2.5-free",
-    "minimax-m3",
     "minimaxai/minimax-m3",
     "mistral-medium-3-5",
     "mistral-medium-3.5",
     "nemotron-3-ultra-free",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "nvidia/nemotron-3-super-120b-a12b:free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b-free",
+    "stepfun-ai/step-3.7-flash",
+    "stepfun/step-3.7-flash:free",
     "tencent/hy3:free",
     "thinkingmachines/inkling",
-    "vendouple/laguna-s-2.1:free",
     "z-ai/glm-5.2"
   ]
 }
