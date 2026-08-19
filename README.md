@@ -1,6 +1,6 @@
 # Free-LLM Availability Dashboard
 
-A static [GitHub Pages](https://danissimode.github.io/litellm-free-models-prox-DNy/) site that tracks the live availability of **free-tier LLM models** across providers. It probes each provider's API directly (no proxy in between), aggregates uptime/latency, and renders the results as a static site under `docs/`.
+A static [GitHub Pages](https://krishnak2c.github.io/llm-availability-dashboard/) site that tracks the live availability of **free-tier LLM models** across providers. It probes each provider's API directly (no proxy in between), aggregates uptime/latency, and renders the results as a static site under `docs/`.
 
 ## What this is
 
