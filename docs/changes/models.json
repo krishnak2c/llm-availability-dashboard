@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20T09:34:08.716529+00:00",
+  "updated": "2026-08-20T10:29:49.560294+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -132,11 +132,18 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
           "limits": "varies per model",
-          "params_b": 7.0
+          "params_b": null
+        },
+        {
+          "id": "groq/compound",
+          "name": "groq/compound",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -165,18 +172,11 @@
           "params_b": 27.0
         },
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
           "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "groq/compound",
-          "name": "groq/compound",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
+          "params_b": 7.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -1019,13 +1019,6 @@
           "params_b": null
         },
         {
-          "id": "rodrigookk/claude-sonnet-4.6",
-          "name": "rodrigookk/claude-sonnet-4.6",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "gggff123/Gemini-3.7-Flash",
           "name": "gggff123/Gemini-3.7-Flash",
           "context": null,
@@ -1285,13 +1278,6 @@
           "params_b": null
         },
         {
-          "id": "muse-spark-1.2-contributor-free",
-          "name": "muse-spark-1.2-contributor-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "mimo-v2.5-free",
           "name": "mimo-v2.5-free",
           "context": null,
@@ -1341,18 +1327,25 @@
           "params_b": 31.0
         },
         {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "nemotron-3-super",
           "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         },
         {
           "id": "gpt-oss:20b",
@@ -1369,18 +1362,11 @@
           "params_b": 120.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "minimax-m3",
+          "name": "minimax-m3",
           "context": null,
           "limits": "free tier",
           "params_b": null
-        },
-        {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
         }
       ],
       "error": null
