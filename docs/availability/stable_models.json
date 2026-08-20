@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20T15:32:59.516213+00:00",
+  "updated": "2026-08-20T16:34:45.541356+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
@@ -26,13 +26,6 @@
           "params_b": 20.0
         },
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
           "id": "qwen/qwen3.6-27b",
           "name": "qwen/qwen3.6-27b",
           "context": 131072,
@@ -44,6 +37,13 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
         },
         {
           "id": "openai/gpt-oss-120b",
