@@ -6,10 +6,10 @@
     "groq-qwen36",
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
+    "nvidia-step37flash",
+    "kilo-step37flash",
     "nvidia-nemotron3super120ba12b",
-    "kilo-nemotron3super120ba12b",
-    "zen-nemotron35lightning",
-    "kilo-nemotron35lightning"
+    "kilo-nemotron3super120ba12b"
   ],
   "chain": [
     {
@@ -49,6 +49,18 @@
       "apiKeyEnv": "MISTRAL_API_KEY"
     },
     {
+      "id": "nvidia-step37flash",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "stepfun-ai/step-3.7-flash",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "kilo-step37flash",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "stepfun/step-3.7-flash:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
       "id": "nvidia-nemotron3super120ba12b",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "nvidia/nemotron-3-super-120b-a12b",
@@ -58,18 +70,6 @@
       "id": "kilo-nemotron3super120ba12b",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3-super-120b-a12b:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "zen-nemotron35lightning",
-      "baseUrl": "https://opencode.ai/zen/v1",
-      "model": "nemotron-3.5-lightning-free",
-      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
-    },
-    {
-      "id": "kilo-nemotron35lightning",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "nvidia/nemotron-3.5-lightning:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
@@ -85,13 +85,13 @@
     "mistral-medium-3-5",
     "mistral-medium-3.5",
     "nemotron-3-ultra-free",
-    "nemotron-3.5-lightning-free",
     "nvidia/nemotron-3-super-120b-a12b",
     "nvidia/nemotron-3-super-120b-a12b:free",
-    "nvidia/nemotron-3.5-lightning:free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b-free",
+    "stepfun-ai/step-3.7-flash",
+    "stepfun/step-3.7-flash:free",
     "tencent/hy3:free",
     "thinkingmachines/inkling",
     "z-ai/glm-5.2"

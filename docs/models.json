@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20T14:35:57.576945+00:00",
+  "updated": "2026-08-20T15:32:59.516213+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -132,17 +132,18 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
+          "id": "groq/compound",
+          "name": "groq/compound",
           "context": 131072,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
+          "params_b": null
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -158,13 +159,6 @@
           "params_b": 20.0
         },
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
           "id": "groq/compound-mini",
           "name": "groq/compound-mini",
           "context": 131072,
@@ -172,11 +166,17 @@
           "params_b": null
         },
         {
-          "id": "groq/compound",
-          "name": "groq/compound",
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
           "context": 131072,
           "limits": "varies per model",
-          "params_b": null
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -1136,6 +1136,13 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
+        },
+        {
+          "id": "grok-4.5",
+          "name": "grok-4.5",
+          "context": 500000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
         }
       ],
       "error": null
@@ -1313,13 +1320,6 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "nemotron-3-ultra",
           "name": "nemotron-3-ultra",
           "context": null,
@@ -1360,6 +1360,13 @@
           "context": null,
           "limits": "free tier",
           "params_b": 20.0
+        },
+        {
+          "id": "minimax-m3",
+          "name": "minimax-m3",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
