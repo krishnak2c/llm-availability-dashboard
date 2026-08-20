@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20T19:31:07.782873+00:00",
+  "updated": "2026-08-20T20:28:02.994778+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -550,6 +550,13 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
@@ -557,18 +564,11 @@
           "params_b": 20.0
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
+          "params_b": 31.0
         },
         {
           "id": "nemotron-3-ultra",
@@ -578,11 +578,11 @@
           "params_b": null
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
+          "params_b": 30.0
         }
       ],
       "error": null

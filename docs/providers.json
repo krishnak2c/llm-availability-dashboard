@@ -1,5 +1,7 @@
 {
   "order": [
+    "ollama-minimaxm3",
+    "nvidia-minimaxm3",
     "zen-hy3",
     "kilo-hy3",
     "nvidia-inkling",
@@ -7,11 +9,21 @@
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
     "nvidia-step37flash",
-    "kilo-step37flash",
-    "nvidia-nemotron3super120ba12b",
-    "kilo-nemotron3super120ba12b"
+    "kilo-step37flash"
   ],
   "chain": [
+    {
+      "id": "ollama-minimaxm3",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "minimax-m3",
+      "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
+      "id": "nvidia-minimaxm3",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "minimaxai/minimax-m3",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
     {
       "id": "zen-hy3",
       "baseUrl": "https://opencode.ai/zen/v1",
@@ -59,18 +71,6 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "stepfun/step-3.7-flash:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "nvidia-nemotron3super120ba12b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/nemotron-3-super-120b-a12b",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "kilo-nemotron3super120ba12b",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "nvidia/nemotron-3-super-120b-a12b:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -81,12 +81,11 @@
     "hy3-free",
     "laguna-s-2.1-free",
     "mimo-v2.5-free",
+    "minimax-m3",
     "minimaxai/minimax-m3",
     "mistral-medium-3-5",
     "mistral-medium-3.5",
     "nemotron-3-ultra-free",
-    "nvidia/nemotron-3-super-120b-a12b",
-    "nvidia/nemotron-3-super-120b-a12b:free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b-free",
