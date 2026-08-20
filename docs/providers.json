@@ -1,5 +1,6 @@
 {
   "order": [
+    "sambanova-minimaxm3",
     "ollama-minimaxm3",
     "nvidia-minimaxm3",
     "zen-hy3",
@@ -8,10 +9,15 @@
     "groq-qwen36",
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
-    "nvidia-step37flash",
-    "kilo-step37flash"
+    "nvidia-step37flash"
   ],
   "chain": [
+    {
+      "id": "sambanova-minimaxm3",
+      "baseUrl": "https://api.sambanova.ai/v1",
+      "model": "MiniMax-M3",
+      "apiKeyEnv": "SAMBANOVA_API_KEY"
+    },
     {
       "id": "ollama-minimaxm3",
       "baseUrl": "https://ollama.com/v1",
@@ -65,15 +71,10 @@
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "stepfun-ai/step-3.7-flash",
       "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "kilo-step37flash",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "stepfun/step-3.7-flash:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
+    "MiniMax-M3",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
@@ -90,7 +91,6 @@
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b-free",
     "stepfun-ai/step-3.7-flash",
-    "stepfun/step-3.7-flash:free",
     "tencent/hy3:free",
     "thinkingmachines/inkling",
     "z-ai/glm-5.2"
