@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T08:39:38.759519+00:00",
+  "updated": "2026-08-21T09:36:05.854596+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -277,13 +277,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": null
-        },
-        {
-          "id": "z-ai/glm-5.2",
-          "name": "z-ai/glm-5.2",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
         }
       ],
       "error": null
@@ -343,6 +336,17 @@
       "url": "https://developers.cloudflare.com/workers-ai/",
       "models": [
         {
+          "id": "@cf/zai-org/glm-4.7-flash",
+          "name": "@cf/zai-org/glm-4.7-flash",
+          "context": 131072,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": null
+        },
+        {
           "id": "@cf/google/gemma-4-26b-a4b-it",
           "name": "@cf/google/gemma-4-26b-a4b-it",
           "context": 256000,
@@ -367,6 +371,13 @@
       "name": "Pollinations",
       "url": "https://pollinations.ai",
       "models": [
+        {
+          "id": "rodrigookk/step-3.7-flash",
+          "name": "rodrigookk/step-3.7-flash",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
         {
           "id": "JustScriptzz/deepseek-v4-flash",
           "name": "JustScriptzz/deepseek-v4-flash",
@@ -578,6 +589,13 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
@@ -597,13 +615,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 20.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         },
         {
           "id": "nemotron-3-ultra",
