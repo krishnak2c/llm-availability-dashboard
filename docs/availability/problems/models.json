@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T15:32:48.346919+00:00",
+  "updated": "2026-08-21T16:34:06.627377+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -146,11 +146,17 @@
           "params_b": null
         },
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
           "context": 131072,
           "limits": "varies per model",
-          "params_b": null
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         },
         {
           "id": "allam-2-7b",
@@ -158,6 +164,13 @@
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
+        },
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -171,19 +184,6 @@
             "reasoning"
           ],
           "params_b": 120.0
-        },
-        {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -1177,6 +1177,13 @@
           "params_b": null
         },
         {
+          "id": "gpt-5.4-mini",
+          "name": "gpt-5.4-mini",
+          "context": 400000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "gpt-5.6-terra",
           "name": "gpt-5.6-terra",
           "context": 1000000,
@@ -1394,8 +1401,15 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -1408,13 +1422,6 @@
           "params_b": null
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
@@ -1422,11 +1429,11 @@
           "params_b": 120.0
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "minimax-m3",
+          "name": "minimax-m3",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
+          "params_b": null
         },
         {
           "id": "gpt-oss:20b",
@@ -1436,11 +1443,11 @@
           "params_b": 20.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 30.0
         }
       ],
       "error": null
