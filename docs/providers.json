@@ -2,8 +2,8 @@
   "order": [
     "ollama-minimaxm3",
     "nvidia-minimaxm3",
-    "zen-hy3",
     "kilo-hy3",
+    "zen-hy3",
     "nvidia-inkling",
     "groq-qwen36",
     "mistral-mistralmedium35",
@@ -25,16 +25,16 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "zen-hy3",
-      "baseUrl": "https://opencode.ai/zen/v1",
-      "model": "hy3-free",
-      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
-    },
-    {
       "id": "kilo-hy3",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "tencent/hy3:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "zen-hy3",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "hy3-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
     },
     {
       "id": "nvidia-inkling",

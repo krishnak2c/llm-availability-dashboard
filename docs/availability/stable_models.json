@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T12:46:06.632833+00:00",
+  "updated": "2026-08-21T13:44:24.556558+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -20,6 +20,13 @@
       "url": "https://console.groq.com",
       "models": [
         {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
           "id": "groq/compound-mini",
           "name": "groq/compound-mini",
           "context": 131072,
@@ -27,17 +34,17 @@
           "params_b": null
         },
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
           "context": 131072,
           "limits": "varies per model",
           "capabilities": [
             "function_calling",
             "tool_choice",
-            "response_schema",
+            "vision",
             "reasoning"
           ],
-          "params_b": 120.0
+          "params_b": 27.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -53,24 +60,17 @@
           "params_b": 20.0
         },
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
           "context": 131072,
           "limits": "varies per model",
           "capabilities": [
             "function_calling",
             "tool_choice",
-            "vision",
+            "response_schema",
             "reasoning"
           ],
-          "params_b": 27.0
+          "params_b": 120.0
         }
       ],
       "error": null
@@ -714,13 +714,6 @@
           "id": "vendouple/laguna-s-2.1:free",
           "name": "vendouple/laguna-s-2.1:free",
           "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "MarcosFRG/glm-4.6v-flash",
-          "name": "MarcosFRG/glm-4.6v-flash",
-          "context": 131072,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         }
