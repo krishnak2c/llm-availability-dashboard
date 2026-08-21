@@ -8,8 +8,8 @@
     "groq-qwen36",
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
-    "pollinations-rodrigookkstep37flash",
-    "nvidia-step37flash"
+    "nvidia-step37flash",
+    "kilo-step37flash"
   ],
   "chain": [
     {
@@ -61,16 +61,16 @@
       "apiKeyEnv": "MISTRAL_API_KEY"
     },
     {
-      "id": "pollinations-rodrigookkstep37flash",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "rodrigookk/step-3.7-flash",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
-    },
-    {
       "id": "nvidia-step37flash",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "stepfun-ai/step-3.7-flash",
       "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "kilo-step37flash",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "stepfun/step-3.7-flash:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -89,8 +89,8 @@
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b-free",
-    "rodrigookk/step-3.7-flash",
     "stepfun-ai/step-3.7-flash",
+    "stepfun/step-3.7-flash:free",
     "tencent/hy3:free",
     "thinkingmachines/inkling",
     "z-ai/glm-5.2"
