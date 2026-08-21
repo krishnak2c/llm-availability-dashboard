@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T14:34:34.799686+00:00",
+  "updated": "2026-08-21T15:32:48.346919+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -487,6 +487,13 @@
           "params_b": 20.0
         },
         {
+          "id": "meta-Llama-3.1-8B-Instruct-Turbo",
+          "name": "meta-Llama-3.1-8B-Instruct-Turbo",
+          "context": 128000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": 8.0
+        },
+        {
           "id": "minimax-m2.7",
           "name": "minimax-m2.7",
           "context": 180000,
@@ -592,8 +599,8 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -604,13 +611,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -625,6 +625,13 @@
           "context": null,
           "limits": "free tier",
           "params_b": 20.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null

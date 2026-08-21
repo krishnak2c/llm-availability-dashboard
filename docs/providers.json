@@ -1,7 +1,6 @@
 {
   "order": [
     "ollama-minimaxm3",
-    "nvidia-minimaxm3",
     "kilo-hy3",
     "zen-hy3",
     "nvidia-inkling",
@@ -9,7 +8,8 @@
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
     "nvidia-step37flash",
-    "kilo-step37flash"
+    "kilo-step37flash",
+    "openrouter-stealthoxalpha"
   ],
   "chain": [
     {
@@ -17,12 +17,6 @@
       "baseUrl": "https://ollama.com/v1",
       "model": "minimax-m3",
       "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
-      "id": "nvidia-minimaxm3",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "minimaxai/minimax-m3",
-      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "kilo-hy3",
@@ -71,6 +65,12 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "stepfun/step-3.7-flash:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-stealthoxalpha",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "stealth/ox-alpha",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -89,6 +89,7 @@
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b-free",
+    "stealth/ox-alpha",
     "stepfun-ai/step-3.7-flash",
     "stepfun/step-3.7-flash:free",
     "tencent/hy3:free",
