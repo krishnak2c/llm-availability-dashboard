@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T03:02:34.661168+00:00",
+  "updated": "2026-08-21T04:37:26.771908+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -136,6 +136,20 @@
           "name": "groq/compound",
           "context": 131072,
           "limits": "varies per model",
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "sambanova": {
+      "name": "SambaNova",
+      "url": "https://cloud.sambanova.ai",
+      "models": [
+        {
+          "id": "MiniMax-M3",
+          "name": "MiniMax-M3",
+          "context": 1048576,
+          "limits": "free tier",
           "params_b": null
         }
       ],
@@ -550,13 +564,6 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
@@ -564,8 +571,8 @@
           "params_b": 30.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -578,11 +585,18 @@
           "params_b": 20.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
         }
       ],
       "error": null
