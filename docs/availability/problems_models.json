@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T11:25:30.697604+00:00",
+  "updated": "2026-08-21T12:46:06.632833+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -354,6 +354,13 @@
       "url": "https://pollinations.ai",
       "models": [
         {
+          "id": "Catniti/agnes-2.0-flash",
+          "name": "Catniti/agnes-2.0-flash",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "rodrigookk/step-3.7-flash",
           "name": "rodrigookk/step-3.7-flash",
           "context": null,
@@ -520,6 +527,13 @@
           "context": 256000,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "nvidia/nemotron-3-super-120b-a12b:free",
+          "name": "NVIDIA: Nemotron 3 Super (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": 120.0
         }
       ],
       "error": null
@@ -564,18 +578,18 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         },
         {
           "id": "gpt-oss:20b",
@@ -585,8 +599,8 @@
           "params_b": 20.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
