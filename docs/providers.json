@@ -4,12 +4,12 @@
     "nvidia-minimaxm3",
     "kilo-hy3",
     "zen-hy3",
+    "kilo-inklingsmall",
+    "kilo-inkling",
     "nvidia-inkling",
     "groq-qwen36",
     "mistral-mistralmedium35",
-    "mistral-mistralmedium35",
-    "nvidia-step37flash",
-    "kilo-step37flash"
+    "mistral-mistralmedium35"
   ],
   "chain": [
     {
@@ -37,6 +37,18 @@
       "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
     },
     {
+      "id": "kilo-inklingsmall",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "thinkingmachines/inkling-small:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "kilo-inkling",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "thinkingmachines/inkling:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
       "id": "nvidia-inkling",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "thinkingmachines/inkling",
@@ -59,18 +71,6 @@
       "baseUrl": "https://api.mistral.ai/v1",
       "model": "mistral-medium-3.5",
       "apiKeyEnv": "MISTRAL_API_KEY"
-    },
-    {
-      "id": "nvidia-step37flash",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "stepfun-ai/step-3.7-flash",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "kilo-step37flash",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "stepfun/step-3.7-flash:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -89,10 +89,10 @@
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b-free",
-    "stepfun-ai/step-3.7-flash",
-    "stepfun/step-3.7-flash:free",
     "tencent/hy3:free",
     "thinkingmachines/inkling",
+    "thinkingmachines/inkling-small:free",
+    "thinkingmachines/inkling:free",
     "z-ai/glm-5.2"
   ]
 }
