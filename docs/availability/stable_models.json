@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T10:29:47.988529+00:00",
+  "updated": "2026-08-21T11:25:30.697604+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -20,17 +20,18 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
           "context": 131072,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 20.0
+          "params_b": null
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         },
         {
           "id": "qwen/qwen3.6-27b",
@@ -46,18 +47,17 @@
           "params_b": 27.0
         },
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
           "context": 131072,
           "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 20.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -106,6 +106,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 8.0
+        },
+        {
+          "id": "nvidia/llama-3.3-nemotron-super-49b-v1",
+          "name": "nvidia/llama-3.3-nemotron-super-49b-v1",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 49.0
         },
         {
           "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
@@ -566,6 +573,17 @@
           "context": 60000,
           "limits": "10k neurons/day",
           "params_b": 1.0
+        },
+        {
+          "id": "@cf/zai-org/glm-4.7-flash",
+          "name": "@cf/zai-org/glm-4.7-flash",
+          "context": 131072,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": null
         },
         {
           "id": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
