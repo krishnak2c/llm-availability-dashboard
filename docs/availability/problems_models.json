@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T07:41:40.234512+00:00",
+  "updated": "2026-08-21T08:39:38.759519+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -424,13 +424,6 @@
           "params_b": 30.0
         },
         {
-          "id": "morriszdweck/osaii-api-fast",
-          "name": "morriszdweck/osaii-api-fast",
-          "context": 262144,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "chirag-gamer/gpt-oss-120b",
           "name": "chirag-gamer/gpt-oss-120b",
           "context": null,
@@ -458,6 +451,13 @@
       "name": "LLM7",
       "url": "https://llm7.io",
       "models": [
+        {
+          "id": "DeepSeek-V4-Flash-0731",
+          "name": "DeepSeek-V4-Flash-0731",
+          "context": 400000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
         {
           "id": "codestral-latest",
           "name": "codestral-latest",
@@ -578,11 +578,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
+          "params_b": 30.0
         },
         {
           "id": "gemma4:31b",
@@ -592,22 +592,22 @@
           "params_b": 31.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
