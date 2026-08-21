@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T06:45:36.436083+00:00",
+  "updated": "2026-08-21T07:41:40.234512+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -27,13 +27,6 @@
           "params_b": 7.0
         },
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
           "context": 131072,
@@ -45,6 +38,19 @@
             "reasoning"
           ],
           "params_b": 20.0
+        },
+        {
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -60,17 +66,11 @@
           "params_b": 120.0
         },
         {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
           "context": 131072,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
+          "params_b": null
         }
       ],
       "error": null
