@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22T05:15:39.851064+00:00",
+  "updated": "2026-08-22T06:17:12.013388+00:00",
   "providers": {
     "llm7": {
       "deepseek-v4-flash": {
@@ -8,7 +8,7 @@
         "rate_limited_7d": 0,
         "down_reason_7d": null,
         "samples_7d": 0,
-        "samples_30d": 10,
+        "samples_30d": 9,
         "p50_latency_ms": null,
         "p95_latency_ms": null,
         "hourly_uptime": [
@@ -112,123 +112,13 @@
         "last_probe_ts": "2026-07-30T14:17:32.506507+00:00",
         "last_status": "auth_error"
       },
-      "codestral-latest": {
-        "uptime_7d": 0.628,
-        "uptime_30d": 0.7942,
-        "rate_limited_7d": 59,
-        "down_reason_7d": "rate_limited",
-        "samples_7d": 164,
-        "samples_30d": 685,
-        "p50_latency_ms": 820,
-        "p95_latency_ms": 4603,
-        "hourly_uptime": [
-          {
-            "ok": 4,
-            "total": 4
-          },
-          {
-            "ok": 0,
-            "total": 1
-          },
-          {
-            "ok": 4,
-            "total": 4
-          },
-          {
-            "ok": 5,
-            "total": 11
-          },
-          {
-            "ok": 6,
-            "total": 8
-          },
-          {
-            "ok": 9,
-            "total": 14
-          },
-          {
-            "ok": 3,
-            "total": 5
-          },
-          {
-            "ok": 4,
-            "total": 11
-          },
-          {
-            "ok": 3,
-            "total": 6
-          },
-          {
-            "ok": 4,
-            "total": 7
-          },
-          {
-            "ok": 4,
-            "total": 8
-          },
-          {
-            "ok": 4,
-            "total": 8
-          },
-          {
-            "ok": 4,
-            "total": 6
-          },
-          {
-            "ok": 5,
-            "total": 6
-          },
-          {
-            "ok": 5,
-            "total": 8
-          },
-          {
-            "ok": 5,
-            "total": 8
-          },
-          {
-            "ok": 6,
-            "total": 8
-          },
-          {
-            "ok": 4,
-            "total": 6
-          },
-          {
-            "ok": 4,
-            "total": 5
-          },
-          {
-            "ok": 4,
-            "total": 6
-          },
-          {
-            "ok": 5,
-            "total": 6
-          },
-          {
-            "ok": 4,
-            "total": 6
-          },
-          {
-            "ok": 3,
-            "total": 6
-          },
-          {
-            "ok": 4,
-            "total": 6
-          }
-        ],
-        "last_probe_ts": "2026-08-22T05:15:06.238527+00:00",
-        "last_status": "ok"
-      },
       "gpt-5.4": {
         "uptime_7d": 0.0,
         "uptime_30d": 0.0,
         "rate_limited_7d": 0,
         "down_reason_7d": "quota_exhausted",
         "samples_7d": 5,
-        "samples_30d": 26,
+        "samples_30d": 25,
         "p50_latency_ms": null,
         "p95_latency_ms": null,
         "hourly_uptime": [
@@ -332,13 +222,123 @@
         "last_probe_ts": "2026-08-21T11:14:07.054022+00:00",
         "last_status": "quota_exhausted"
       },
+      "codestral-latest": {
+        "uptime_7d": 0.638,
+        "uptime_30d": 0.7942,
+        "rate_limited_7d": 57,
+        "down_reason_7d": "rate_limited",
+        "samples_7d": 163,
+        "samples_30d": 685,
+        "p50_latency_ms": 820,
+        "p95_latency_ms": 4603,
+        "hourly_uptime": [
+          {
+            "ok": 4,
+            "total": 4
+          },
+          {
+            "ok": 0,
+            "total": 1
+          },
+          {
+            "ok": 4,
+            "total": 4
+          },
+          {
+            "ok": 5,
+            "total": 11
+          },
+          {
+            "ok": 6,
+            "total": 8
+          },
+          {
+            "ok": 9,
+            "total": 12
+          },
+          {
+            "ok": 4,
+            "total": 6
+          },
+          {
+            "ok": 4,
+            "total": 11
+          },
+          {
+            "ok": 3,
+            "total": 6
+          },
+          {
+            "ok": 4,
+            "total": 7
+          },
+          {
+            "ok": 4,
+            "total": 8
+          },
+          {
+            "ok": 4,
+            "total": 8
+          },
+          {
+            "ok": 4,
+            "total": 6
+          },
+          {
+            "ok": 5,
+            "total": 6
+          },
+          {
+            "ok": 5,
+            "total": 8
+          },
+          {
+            "ok": 5,
+            "total": 8
+          },
+          {
+            "ok": 6,
+            "total": 8
+          },
+          {
+            "ok": 4,
+            "total": 6
+          },
+          {
+            "ok": 4,
+            "total": 5
+          },
+          {
+            "ok": 4,
+            "total": 6
+          },
+          {
+            "ok": 5,
+            "total": 6
+          },
+          {
+            "ok": 4,
+            "total": 6
+          },
+          {
+            "ok": 3,
+            "total": 6
+          },
+          {
+            "ok": 4,
+            "total": 6
+          }
+        ],
+        "last_probe_ts": "2026-08-22T06:16:22.571807+00:00",
+        "last_status": "ok"
+      },
       "gpt-5.4-mini": {
         "uptime_7d": 0.0,
         "uptime_30d": 0.0,
         "rate_limited_7d": 0,
         "down_reason_7d": "quota_exhausted",
         "samples_7d": 5,
-        "samples_30d": 25,
+        "samples_30d": 24,
         "p50_latency_ms": null,
         "p95_latency_ms": null,
         "hourly_uptime": [
@@ -448,7 +448,7 @@
         "rate_limited_7d": 0,
         "down_reason_7d": "quota_exhausted",
         "samples_7d": 5,
-        "samples_30d": 26,
+        "samples_30d": 25,
         "p50_latency_ms": null,
         "p95_latency_ms": null,
         "hourly_uptime": [
@@ -553,11 +553,11 @@
         "last_status": "quota_exhausted"
       },
       "gpt-oss:20b": {
-        "uptime_7d": 0.189,
+        "uptime_7d": 0.1902,
         "uptime_30d": 0.0949,
-        "rate_limited_7d": 130,
+        "rate_limited_7d": 129,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 164,
+        "samples_7d": 163,
         "samples_30d": 685,
         "p50_latency_ms": 1279,
         "p95_latency_ms": 7517,
@@ -584,11 +584,11 @@
           },
           {
             "ok": 5,
-            "total": 14
+            "total": 12
           },
           {
             "ok": 0,
-            "total": 5
+            "total": 6
           },
           {
             "ok": 1,
@@ -659,8 +659,8 @@
             "total": 6
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:07.357211+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:22.603269+00:00",
+        "last_status": "rate_limited"
       },
       "claude-fable-5": {
         "uptime_7d": 0.0,
@@ -997,8 +997,8 @@
         "uptime_30d": 0.0,
         "rate_limited_7d": 0,
         "down_reason_7d": "quota_exhausted",
-        "samples_7d": 4,
-        "samples_30d": 24,
+        "samples_7d": 5,
+        "samples_30d": 25,
         "p50_latency_ms": null,
         "p95_latency_ms": null,
         "hourly_uptime": [
@@ -1028,7 +1028,7 @@
           },
           {
             "ok": 0,
-            "total": 0
+            "total": 1
           },
           {
             "ok": 0,
@@ -1099,7 +1099,7 @@
             "total": 0
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.178902+00:00",
+        "last_probe_ts": "2026-08-22T06:16:21.784127+00:00",
         "last_status": "quota_exhausted"
       },
       "kimi-k3": {
@@ -1543,12 +1543,12 @@
         "last_status": "quota_exhausted"
       },
       "gemini-3.1-flash-lite": {
-        "uptime_7d": 0.2866,
-        "uptime_30d": 0.1438,
-        "rate_limited_7d": 112,
+        "uptime_7d": 0.2883,
+        "uptime_30d": 0.1435,
+        "rate_limited_7d": 111,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 164,
-        "samples_30d": 626,
+        "samples_7d": 163,
+        "samples_30d": 627,
         "p50_latency_ms": 3123,
         "p95_latency_ms": 6420,
         "hourly_uptime": [
@@ -1574,11 +1574,11 @@
           },
           {
             "ok": 5,
-            "total": 14
+            "total": 12
           },
           {
             "ok": 2,
-            "total": 5
+            "total": 6
           },
           {
             "ok": 2,
@@ -1649,16 +1649,16 @@
             "total": 6
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:07.313474+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:22.361952+00:00",
+        "last_status": "rate_limited"
       },
       "minimax-m2.7": {
-        "uptime_7d": 0.5,
-        "uptime_30d": 0.0656,
-        "rate_limited_7d": 8,
+        "uptime_7d": 0.4706,
+        "uptime_30d": 0.0654,
+        "rate_limited_7d": 9,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 16,
-        "samples_30d": 381,
+        "samples_7d": 17,
+        "samples_30d": 382,
         "p50_latency_ms": 1123,
         "p95_latency_ms": 3163,
         "hourly_uptime": [
@@ -1688,7 +1688,7 @@
           },
           {
             "ok": 0,
-            "total": 0
+            "total": 1
           },
           {
             "ok": 0,
@@ -1759,7 +1759,7 @@
             "total": 1
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:07.643400+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.812060+00:00",
         "last_status": "rate_limited"
       },
       "flux-kontext-max": {
@@ -4403,12 +4403,12 @@
         "last_status": "auth_error"
       },
       "meta-Llama-3.1-8B-Instruct-Turbo": {
-        "uptime_7d": 0.5,
-        "uptime_30d": 0.3913,
-        "rate_limited_7d": 9,
+        "uptime_7d": 0.4737,
+        "uptime_30d": 0.375,
+        "rate_limited_7d": 10,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 18,
-        "samples_30d": 23,
+        "samples_7d": 19,
+        "samples_30d": 24,
         "p50_latency_ms": 1224,
         "p95_latency_ms": 2810,
         "hourly_uptime": [
@@ -4438,7 +4438,7 @@
           },
           {
             "ok": 0,
-            "total": 0
+            "total": 1
           },
           {
             "ok": 0,
@@ -4509,8 +4509,8 @@
             "total": 1
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:08.030734+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:22.755120+00:00",
+        "last_status": "rate_limited"
       },
       "mistral-Nemo-Instruct-2407": {
         "uptime_7d": 0.0,
@@ -5723,13 +5723,13 @@
         "last_status": "bad_response"
       },
       "DeepSeek-V4-Flash-0731": {
-        "uptime_7d": 0.7431,
-        "uptime_30d": 0.7386,
+        "uptime_7d": 0.7413,
+        "uptime_30d": 0.7403,
         "rate_limited_7d": 13,
         "down_reason_7d": "server_error",
-        "samples_7d": 144,
-        "samples_30d": 153,
-        "p50_latency_ms": 1402,
+        "samples_7d": 143,
+        "samples_30d": 154,
+        "p50_latency_ms": 1385,
         "p95_latency_ms": 10882,
         "hourly_uptime": [
           {
@@ -5753,12 +5753,12 @@
             "total": 7
           },
           {
-            "ok": 11,
-            "total": 13
+            "ok": 9,
+            "total": 11
           },
           {
-            "ok": 2,
-            "total": 4
+            "ok": 3,
+            "total": 5
           },
           {
             "ok": 7,
@@ -5829,7 +5829,7 @@
             "total": 5
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.189315+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.040383+00:00",
         "last_status": "ok"
       },
       "grok-4.6": {
@@ -6825,12 +6825,12 @@
     },
     "zen": {
       "deepseek-v4-flash-free": {
-        "uptime_7d": 0.5392,
-        "uptime_30d": 0.5392,
+        "uptime_7d": 0.534,
+        "uptime_30d": 0.534,
         "rate_limited_7d": 16,
         "down_reason_7d": "bad_response",
-        "samples_7d": 102,
-        "samples_30d": 102,
+        "samples_7d": 103,
+        "samples_30d": 103,
         "p50_latency_ms": 731,
         "p95_latency_ms": 5186,
         "hourly_uptime": [
@@ -6860,7 +6860,7 @@
           },
           {
             "ok": 2,
-            "total": 3
+            "total": 4
           },
           {
             "ok": 2,
@@ -6931,16 +6931,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:00.512728+00:00",
+        "last_probe_ts": "2026-08-22T06:16:21.360423+00:00",
         "last_status": "bad_response"
       },
       "mimo-v2.5-free": {
-        "uptime_7d": 0.7843,
-        "uptime_30d": 0.7843,
+        "uptime_7d": 0.7864,
+        "uptime_30d": 0.7864,
         "rate_limited_7d": 18,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 102,
-        "samples_30d": 102,
+        "samples_7d": 103,
+        "samples_30d": 103,
         "p50_latency_ms": 2238,
         "p95_latency_ms": 11061,
         "hourly_uptime": [
@@ -6969,8 +6969,8 @@
             "total": 10
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 3,
@@ -7041,17 +7041,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.760949+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.198215+00:00",
         "last_status": "ok"
       },
       "nemotron-3-ultra-free": {
-        "uptime_7d": 0.7941,
-        "uptime_30d": 0.7941,
+        "uptime_7d": 0.7961,
+        "uptime_30d": 0.7961,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 102,
-        "samples_30d": 102,
-        "p50_latency_ms": 960,
+        "samples_7d": 103,
+        "samples_30d": 103,
+        "p50_latency_ms": 913,
         "p95_latency_ms": 7411,
         "hourly_uptime": [
           {
@@ -7079,8 +7079,8 @@
             "total": 10
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 9,
@@ -7151,17 +7151,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.295784+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.658847+00:00",
         "last_status": "ok"
       },
       "hy3-free": {
-        "uptime_7d": 0.9902,
-        "uptime_30d": 0.9902,
+        "uptime_7d": 0.9903,
+        "uptime_30d": 0.9903,
         "rate_limited_7d": 0,
         "down_reason_7d": "server_error",
-        "samples_7d": 102,
-        "samples_30d": 102,
-        "p50_latency_ms": 2068,
+        "samples_7d": 103,
+        "samples_30d": 103,
+        "p50_latency_ms": 2053,
         "p95_latency_ms": 2678,
         "hourly_uptime": [
           {
@@ -7189,8 +7189,8 @@
             "total": 10
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 9,
@@ -7261,17 +7261,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.926805+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.145091+00:00",
         "last_status": "ok"
       },
       "nemotron-3.5-lightning-free": {
-        "uptime_7d": 0.9902,
-        "uptime_30d": 0.9902,
+        "uptime_7d": 0.9903,
+        "uptime_30d": 0.9903,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 102,
-        "samples_30d": 102,
-        "p50_latency_ms": 563,
+        "samples_7d": 103,
+        "samples_30d": 103,
+        "p50_latency_ms": 561,
         "p95_latency_ms": 3755,
         "hourly_uptime": [
           {
@@ -7299,8 +7299,8 @@
             "total": 10
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 9,
@@ -7371,17 +7371,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.369008+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.115720+00:00",
         "last_status": "ok"
       },
       "laguna-s-2.1-free": {
-        "uptime_7d": 0.8333,
-        "uptime_30d": 0.8333,
+        "uptime_7d": 0.835,
+        "uptime_30d": 0.835,
         "rate_limited_7d": 0,
         "down_reason_7d": "server_error",
-        "samples_7d": 102,
-        "samples_30d": 102,
-        "p50_latency_ms": 1061,
+        "samples_7d": 103,
+        "samples_30d": 103,
+        "p50_latency_ms": 1045,
         "p95_latency_ms": 2170,
         "hourly_uptime": [
           {
@@ -7409,8 +7409,8 @@
             "total": 10
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 8,
@@ -7481,7 +7481,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:05.612949+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.631325+00:00",
         "last_status": "ok"
       },
       "muse-spark-1.2-contributor-free": {
@@ -7599,9 +7599,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 33,
-        "samples_30d": 33,
-        "p50_latency_ms": 1160,
+        "samples_7d": 34,
+        "samples_30d": 34,
+        "p50_latency_ms": 1154,
         "p95_latency_ms": 2375,
         "hourly_uptime": [
           {
@@ -7629,8 +7629,8 @@
             "total": 2
           },
           {
-            "ok": 1,
-            "total": 1
+            "ok": 2,
+            "total": 2
           },
           {
             "ok": 1,
@@ -7701,7 +7701,7 @@
             "total": 2
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.917987+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.142552+00:00",
         "last_status": "ok"
       }
     },
@@ -8041,8 +8041,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 151,
         "p95_latency_ms": 789,
         "hourly_uptime": [
@@ -8071,8 +8071,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -8143,7 +8143,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.948724+00:00",
+        "last_probe_ts": "2026-08-22T06:16:21.968286+00:00",
         "last_status": "ok"
       },
       "canopylabs/orpheus-arabic-saudi": {
@@ -8261,9 +8261,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 179,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 176,
         "p95_latency_ms": 342,
         "hourly_uptime": [
           {
@@ -8291,8 +8291,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -8363,7 +8363,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:02.513026+00:00",
+        "last_probe_ts": "2026-08-22T06:16:21.685002+00:00",
         "last_status": "ok"
       },
       "allam-2-7b": {
@@ -8371,8 +8371,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 272,
         "p95_latency_ms": 391,
         "hourly_uptime": [
@@ -8401,8 +8401,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -8473,16 +8473,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.393971+00:00",
+        "last_probe_ts": "2026-08-22T06:16:21.553422+00:00",
         "last_status": "ok"
       },
       "groq/compound-mini": {
-        "uptime_7d": 0.9691,
-        "uptime_30d": 0.9691,
+        "uptime_7d": 0.9694,
+        "uptime_30d": 0.9694,
         "rate_limited_7d": 3,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 643,
         "p95_latency_ms": 1171,
         "hourly_uptime": [
@@ -8511,8 +8511,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -8583,7 +8583,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.144730+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.330991+00:00",
         "last_status": "ok"
       },
       "openai/gpt-oss-120b": {
@@ -8591,10 +8591,10 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 192,
-        "p95_latency_ms": 316,
+        "p95_latency_ms": 321,
         "hourly_uptime": [
           {
             "ok": 4,
@@ -8621,8 +8621,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -8693,16 +8693,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:02.361502+00:00",
+        "last_probe_ts": "2026-08-22T06:16:21.511549+00:00",
         "last_status": "ok"
       },
       "groq/compound": {
-        "uptime_7d": 0.2577,
-        "uptime_30d": 0.2577,
-        "rate_limited_7d": 34,
+        "uptime_7d": 0.2551,
+        "uptime_30d": 0.2551,
+        "rate_limited_7d": 35,
         "down_reason_7d": "bad_response",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 7408,
         "p95_latency_ms": 10239,
         "hourly_uptime": [
@@ -8732,7 +8732,7 @@
           },
           {
             "ok": 0,
-            "total": 3
+            "total": 4
           },
           {
             "ok": 1,
@@ -8803,8 +8803,8 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:13.883471+00:00",
-        "last_status": "bad_response"
+        "last_probe_ts": "2026-08-22T06:16:24.254926+00:00",
+        "last_status": "rate_limited"
       }
     },
     "nvidia": {
@@ -10019,12 +10019,12 @@
         "last_status": "not_found"
       },
       "deepseek-ai/deepseek-v4-flash-0731": {
-        "uptime_7d": 0.6804,
-        "uptime_30d": 0.6804,
+        "uptime_7d": 0.6735,
+        "uptime_30d": 0.6735,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 3448,
         "p95_latency_ms": 12458,
         "hourly_uptime": [
@@ -10054,7 +10054,7 @@
           },
           {
             "ok": 2,
-            "total": 3
+            "total": 4
           },
           {
             "ok": 2,
@@ -10125,8 +10125,8 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.166697+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:36.303181+00:00",
+        "last_status": "timeout"
       },
       "google/gemma-2b": {
         "uptime_7d": 0.0,
@@ -10459,13 +10459,13 @@
         "last_status": "not_found"
       },
       "google/diffusiongemma-26b-a4b-it": {
-        "uptime_7d": 0.8454,
-        "uptime_30d": 0.8454,
+        "uptime_7d": 0.8469,
+        "uptime_30d": 0.8469,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 1608,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 1731,
         "p95_latency_ms": 8292,
         "hourly_uptime": [
           {
@@ -10493,8 +10493,8 @@
             "total": 9
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 3,
@@ -10565,7 +10565,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:06.932839+00:00",
+        "last_probe_ts": "2026-08-22T06:16:27.851137+00:00",
         "last_status": "ok"
       },
       "google/recurrentgemma-2b": {
@@ -11229,12 +11229,12 @@
         "last_status": "not_found"
       },
       "meta/llama-3.1-70b-instruct": {
-        "uptime_7d": 0.8041,
-        "uptime_30d": 0.8041,
+        "uptime_7d": 0.7959,
+        "uptime_30d": 0.7959,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 823,
         "p95_latency_ms": 11672,
         "hourly_uptime": [
@@ -11264,7 +11264,7 @@
           },
           {
             "ok": 2,
-            "total": 3
+            "total": 4
           },
           {
             "ok": 3,
@@ -11335,18 +11335,18 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.423050+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:42.986456+00:00",
+        "last_status": "timeout"
       },
       "meta/llama-3.1-8b-instruct": {
-        "uptime_7d": 0.9381,
-        "uptime_30d": 0.9381,
+        "uptime_7d": 0.9388,
+        "uptime_30d": 0.9388,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 317,
-        "p95_latency_ms": 2224,
+        "p95_latency_ms": 1623,
         "hourly_uptime": [
           {
             "ok": 3,
@@ -11373,8 +11373,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -11445,16 +11445,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.655270+00:00",
+        "last_probe_ts": "2026-08-22T06:16:36.595341+00:00",
         "last_status": "ok"
       },
       "meta/llama-3.2-11b-vision-instruct": {
-        "uptime_7d": 0.8969,
-        "uptime_30d": 0.8969,
+        "uptime_7d": 0.898,
+        "uptime_30d": 0.898,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 386,
         "p95_latency_ms": 10016,
         "hourly_uptime": [
@@ -11483,8 +11483,8 @@
             "total": 9
           },
           {
-            "ok": 1,
-            "total": 3
+            "ok": 2,
+            "total": 4
           },
           {
             "ok": 2,
@@ -11555,7 +11555,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.842428+00:00",
+        "last_probe_ts": "2026-08-22T06:16:36.926975+00:00",
         "last_status": "ok"
       },
       "google/gemma-4-31b-it": {
@@ -11779,12 +11779,12 @@
         "last_status": "timeout"
       },
       "meta/llama-3.2-3b-instruct": {
-        "uptime_7d": 0.0309,
-        "uptime_30d": 0.0309,
+        "uptime_7d": 0.0306,
+        "uptime_30d": 0.0306,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 795,
         "p95_latency_ms": 2275,
         "hourly_uptime": [
@@ -11814,7 +11814,7 @@
           },
           {
             "ok": 0,
-            "total": 3
+            "total": 4
           },
           {
             "ok": 0,
@@ -11885,7 +11885,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:16.939981+00:00",
+        "last_probe_ts": "2026-08-22T06:16:52.050944+00:00",
         "last_status": "timeout"
       },
       "meta/llama-3.2-90b-vision-instruct": {
@@ -12219,13 +12219,13 @@
         "last_status": "not_found"
       },
       "meta/muse-glimmer-30b": {
-        "uptime_7d": 0.6701,
-        "uptime_30d": 0.6701,
+        "uptime_7d": 0.6735,
+        "uptime_30d": 0.6735,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 427,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 425,
         "p95_latency_ms": 2646,
         "hourly_uptime": [
           {
@@ -12253,8 +12253,8 @@
             "total": 9
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 3,
@@ -12325,7 +12325,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:07.190428+00:00",
+        "last_probe_ts": "2026-08-22T06:16:43.304507+00:00",
         "last_status": "ok"
       },
       "microsoft/kosmos-2": {
@@ -12659,12 +12659,12 @@
         "last_status": "not_found"
       },
       "minimaxai/minimax-m3": {
-        "uptime_7d": 0.6392,
-        "uptime_30d": 0.6392,
+        "uptime_7d": 0.6429,
+        "uptime_30d": 0.6429,
         "rate_limited_7d": 12,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 407,
         "p95_latency_ms": 7267,
         "hourly_uptime": [
@@ -12693,8 +12693,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 2,
@@ -12765,7 +12765,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:07.529075+00:00",
+        "last_probe_ts": "2026-08-22T06:16:43.656486+00:00",
         "last_status": "ok"
       },
       "mistralai/codestral-22b-instruct-v0.1": {
@@ -13873,8 +13873,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 300,
         "p95_latency_ms": 485,
         "hourly_uptime": [
@@ -13903,8 +13903,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -13975,7 +13975,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:08.173298+00:00",
+        "last_probe_ts": "2026-08-22T06:16:45.286059+00:00",
         "last_status": "ok"
       },
       "nvidia/llama-3.1-nemoguard-8b-content-safety": {
@@ -13983,8 +13983,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 265,
         "p95_latency_ms": 514,
         "hourly_uptime": [
@@ -14013,8 +14013,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -14085,18 +14085,18 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:08.343994+00:00",
+        "last_probe_ts": "2026-08-22T06:16:45.555775+00:00",
         "last_status": "ok"
       },
       "nvidia/llama-3.1-nemoguard-8b-topic-control": {
-        "uptime_7d": 0.9381,
-        "uptime_30d": 0.9381,
+        "uptime_7d": 0.9388,
+        "uptime_30d": 0.9388,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 243,
-        "p95_latency_ms": 406,
+        "p95_latency_ms": 387,
         "hourly_uptime": [
           {
             "ok": 3,
@@ -14123,8 +14123,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -14195,7 +14195,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:08.486261+00:00",
+        "last_probe_ts": "2026-08-22T06:16:45.818127+00:00",
         "last_status": "ok"
       },
       "nvidia/llama-3.1-nemotron-51b-instruct": {
@@ -14419,13 +14419,13 @@
         "last_status": "not_found"
       },
       "mistralai/mistral-nemotron": {
-        "uptime_7d": 0.5155,
-        "uptime_30d": 0.5155,
+        "uptime_7d": 0.5204,
+        "uptime_30d": 0.5204,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 289,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 290,
         "p95_latency_ms": 6641,
         "hourly_uptime": [
           {
@@ -14453,8 +14453,8 @@
             "total": 9
           },
           {
-            "ok": 0,
-            "total": 3
+            "ok": 1,
+            "total": 4
           },
           {
             "ok": 0,
@@ -14525,17 +14525,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:07.798968+00:00",
+        "last_probe_ts": "2026-08-22T06:16:43.997431+00:00",
         "last_status": "ok"
       },
       "nvidia/llama-3.1-nemotron-nano-vl-8b-v1": {
-        "uptime_7d": 0.9485,
-        "uptime_30d": 0.9485,
+        "uptime_7d": 0.949,
+        "uptime_30d": 0.949,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 337,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 333,
         "p95_latency_ms": 9617,
         "hourly_uptime": [
           {
@@ -14563,8 +14563,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -14635,18 +14635,18 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:08.662372+00:00",
+        "last_probe_ts": "2026-08-22T06:16:46.078436+00:00",
         "last_status": "ok"
       },
       "nvidia/llama-3.1-nemotron-safety-guard-8b-v3": {
-        "uptime_7d": 0.9897,
-        "uptime_30d": 0.9897,
+        "uptime_7d": 0.9898,
+        "uptime_30d": 0.9898,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 272,
-        "p95_latency_ms": 361,
+        "p95_latency_ms": 362,
         "hourly_uptime": [
           {
             "ok": 4,
@@ -14673,8 +14673,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -14745,7 +14745,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:08.842076+00:00",
+        "last_probe_ts": "2026-08-22T06:16:46.462504+00:00",
         "last_status": "ok"
       },
       "nvidia/llama-3.1-nemotron-ultra-253b-v1": {
@@ -14859,12 +14859,12 @@
         "last_status": "not_found"
       },
       "nvidia/llama-3.3-nemotron-super-49b-v1": {
-        "uptime_7d": 0.9072,
-        "uptime_30d": 0.9072,
+        "uptime_7d": 0.898,
+        "uptime_30d": 0.898,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 343,
         "p95_latency_ms": 8733,
         "hourly_uptime": [
@@ -14894,7 +14894,7 @@
           },
           {
             "ok": 3,
-            "total": 3
+            "total": 4
           },
           {
             "ok": 3,
@@ -14965,18 +14965,18 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:09.136126+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:53.461498+00:00",
+        "last_status": "server_error"
       },
       "nvidia/llama-3.3-nemotron-super-49b-v1.5": {
-        "uptime_7d": 0.9381,
-        "uptime_30d": 0.9381,
+        "uptime_7d": 0.9388,
+        "uptime_30d": 0.9388,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 334,
-        "p95_latency_ms": 12742,
+        "p95_latency_ms": 10370,
         "hourly_uptime": [
           {
             "ok": 3,
@@ -15003,8 +15003,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -15075,8 +15075,8 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:24.240413+00:00",
-        "last_status": "timeout"
+        "last_probe_ts": "2026-08-22T06:16:52.302409+00:00",
+        "last_status": "ok"
       },
       "nvidia/llama3-chatqa-1.5-70b": {
         "uptime_7d": 0.0,
@@ -15409,12 +15409,12 @@
         "last_status": "bad_response"
       },
       "nvidia/nemotron-3-nano-30b-a3b": {
-        "uptime_7d": 0.9897,
-        "uptime_30d": 0.9897,
+        "uptime_7d": 0.9898,
+        "uptime_30d": 0.9898,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 303,
         "p95_latency_ms": 412,
         "hourly_uptime": [
@@ -15443,8 +15443,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -15515,17 +15515,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:17.175962+00:00",
+        "last_probe_ts": "2026-08-22T06:16:52.660729+00:00",
         "last_status": "ok"
       },
       "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning": {
-        "uptime_7d": 0.8247,
-        "uptime_30d": 0.8247,
+        "uptime_7d": 0.8265,
+        "uptime_30d": 0.8265,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 1965,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 1940,
         "p95_latency_ms": 4380,
         "hourly_uptime": [
           {
@@ -15553,8 +15553,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -15625,16 +15625,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:20.188040+00:00",
+        "last_probe_ts": "2026-08-22T06:16:54.231311+00:00",
         "last_status": "ok"
       },
       "nvidia/nemotron-3-super-120b-a12b": {
-        "uptime_7d": 0.9897,
-        "uptime_30d": 0.9897,
+        "uptime_7d": 0.9898,
+        "uptime_30d": 0.9898,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 372,
         "p95_latency_ms": 4315,
         "hourly_uptime": [
@@ -15663,8 +15663,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -15735,7 +15735,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:21.222952+00:00",
+        "last_probe_ts": "2026-08-22T06:16:53.861257+00:00",
         "last_status": "ok"
       },
       "nvidia/llama-3.1-nemotron-nano-8b-v1": {
@@ -15849,12 +15849,12 @@
         "last_status": "timeout"
       },
       "nvidia/nemotron-3-ultra-550b-a55b": {
-        "uptime_7d": 0.8351,
-        "uptime_30d": 0.8351,
+        "uptime_7d": 0.8367,
+        "uptime_30d": 0.8367,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 730,
         "p95_latency_ms": 7022,
         "hourly_uptime": [
@@ -15883,8 +15883,8 @@
             "total": 9
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 3,
@@ -15955,17 +15955,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:21.606382+00:00",
+        "last_probe_ts": "2026-08-22T06:16:54.599713+00:00",
         "last_status": "ok"
       },
       "nvidia/nemotron-3.5-content-safety": {
-        "uptime_7d": 0.9794,
-        "uptime_30d": 0.9794,
+        "uptime_7d": 0.9796,
+        "uptime_30d": 0.9796,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 216,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 217,
         "p95_latency_ms": 341,
         "hourly_uptime": [
           {
@@ -15993,8 +15993,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -16065,17 +16065,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:21.774192+00:00",
+        "last_probe_ts": "2026-08-22T06:16:54.492879+00:00",
         "last_status": "ok"
       },
       "nvidia/nemotron-3.5-lightning-30b-a3b": {
-        "uptime_7d": 0.9794,
-        "uptime_30d": 0.9794,
+        "uptime_7d": 0.9796,
+        "uptime_30d": 0.9796,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 338,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 339,
         "p95_latency_ms": 6917,
         "hourly_uptime": [
           {
@@ -16103,8 +16103,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -16175,7 +16175,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:22.165039+00:00",
+        "last_probe_ts": "2026-08-22T06:16:54.844968+00:00",
         "last_status": "ok"
       },
       "nvidia/nemotron-4-340b-instruct": {
@@ -16399,13 +16399,13 @@
         "last_status": "not_found"
       },
       "nvidia/nemotron-nano-12b-v2-vl": {
-        "uptime_7d": 0.6495,
-        "uptime_30d": 0.6495,
+        "uptime_7d": 0.6531,
+        "uptime_30d": 0.6531,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 753,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 774,
         "p95_latency_ms": 10347,
         "hourly_uptime": [
           {
@@ -16433,8 +16433,8 @@
             "total": 9
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 2,
@@ -16505,7 +16505,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:22.442826+00:00",
+        "last_probe_ts": "2026-08-22T06:16:56.062868+00:00",
         "last_status": "ok"
       },
       "nvidia/nemotron-nano-3-30b-a3b": {
@@ -16953,8 +16953,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 220,
         "p95_latency_ms": 353,
         "hourly_uptime": [
@@ -16983,8 +16983,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -17055,7 +17055,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:22.635484+00:00",
+        "last_probe_ts": "2026-08-22T06:16:56.322271+00:00",
         "last_status": "ok"
       },
       "nvidia/riva-translate-4b-instruct": {
@@ -17173,8 +17173,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 226,
         "p95_latency_ms": 345,
         "hourly_uptime": [
@@ -17203,8 +17203,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -17275,7 +17275,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:22.767139+00:00",
+        "last_probe_ts": "2026-08-22T06:16:56.575832+00:00",
         "last_status": "ok"
       },
       "nvidia/riva-translate-4b-instruct-v2": {
@@ -17283,8 +17283,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 255,
         "p95_latency_ms": 386,
         "hourly_uptime": [
@@ -17313,8 +17313,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -17385,7 +17385,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:22.956446+00:00",
+        "last_probe_ts": "2026-08-22T06:16:56.847252+00:00",
         "last_status": "ok"
       },
       "nvidia/vila": {
@@ -17499,12 +17499,12 @@
         "last_status": "not_found"
       },
       "openai/gpt-oss-120b": {
-        "uptime_7d": 0.2371,
-        "uptime_30d": 0.2371,
+        "uptime_7d": 0.2347,
+        "uptime_30d": 0.2347,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 810,
         "p95_latency_ms": 5811,
         "hourly_uptime": [
@@ -17534,7 +17534,7 @@
           },
           {
             "ok": 2,
-            "total": 3
+            "total": 4
           },
           {
             "ok": 2,
@@ -17605,7 +17605,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:37.991220+00:00",
+        "last_probe_ts": "2026-08-22T06:17:11.929979+00:00",
         "last_status": "timeout"
       },
       "openai/gpt-oss-20b": {
@@ -17613,8 +17613,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 293,
         "p95_latency_ms": 2046,
         "hourly_uptime": [
@@ -17643,8 +17643,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -17715,16 +17715,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:24.455282+00:00",
+        "last_probe_ts": "2026-08-22T06:17:00.240362+00:00",
         "last_status": "ok"
       },
       "poolside/laguna-xs-2.1": {
-        "uptime_7d": 0.4124,
-        "uptime_30d": 0.4124,
+        "uptime_7d": 0.4184,
+        "uptime_30d": 0.4184,
         "rate_limited_7d": 0,
         "down_reason_7d": "server_error",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 367,
         "p95_latency_ms": 13588,
         "hourly_uptime": [
@@ -17753,8 +17753,8 @@
             "total": 9
           },
           {
-            "ok": 1,
-            "total": 3
+            "ok": 2,
+            "total": 4
           },
           {
             "ok": 2,
@@ -17825,16 +17825,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:39.493438+00:00",
-        "last_status": "timeout"
+        "last_probe_ts": "2026-08-22T06:17:04.024647+00:00",
+        "last_status": "ok"
       },
       "nvidia/nemotron-mini-4b-instruct": {
         "uptime_7d": 1.0,
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 250,
         "p95_latency_ms": 6376,
         "hourly_uptime": [
@@ -17863,8 +17863,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -17935,17 +17935,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:22.295773+00:00",
+        "last_probe_ts": "2026-08-22T06:16:59.931380+00:00",
         "last_status": "ok"
       },
       "stepfun-ai/step-3.7-flash": {
-        "uptime_7d": 0.9691,
-        "uptime_30d": 0.9691,
+        "uptime_7d": 0.9694,
+        "uptime_30d": 0.9694,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 484,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 503,
         "p95_latency_ms": 7296,
         "hourly_uptime": [
           {
@@ -17973,8 +17973,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -18045,17 +18045,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:39.397002+00:00",
+        "last_probe_ts": "2026-08-22T06:17:07.626124+00:00",
         "last_status": "ok"
       },
       "thinkingmachines/inkling": {
-        "uptime_7d": 0.9794,
-        "uptime_30d": 0.9794,
+        "uptime_7d": 0.9796,
+        "uptime_30d": 0.9796,
         "rate_limited_7d": 0,
         "down_reason_7d": "server_error",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 368,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 373,
         "p95_latency_ms": 1385,
         "hourly_uptime": [
           {
@@ -18083,8 +18083,8 @@
             "total": 9
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 3,
@@ -18155,7 +18155,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:39.736203+00:00",
+        "last_probe_ts": "2026-08-22T06:17:08.000054+00:00",
         "last_status": "ok"
       },
       "writer/palmyra-creative-122b": {
@@ -18819,12 +18819,12 @@
         "last_status": "bad_response"
       },
       "moonshotai/kimi-k3": {
-        "uptime_7d": 0.6744,
-        "uptime_30d": 0.6744,
+        "uptime_7d": 0.6818,
+        "uptime_30d": 0.6818,
         "rate_limited_7d": 0,
         "down_reason_7d": "not_found",
-        "samples_7d": 43,
-        "samples_30d": 43,
+        "samples_7d": 44,
+        "samples_30d": 44,
         "p50_latency_ms": 314,
         "p95_latency_ms": 13768,
         "hourly_uptime": [
@@ -18853,8 +18853,8 @@
             "total": 2
           },
           {
-            "ok": 1,
-            "total": 1
+            "ok": 2,
+            "total": 2
           },
           {
             "ok": 0,
@@ -18925,7 +18925,7 @@
             "total": 2
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:07.963543+00:00",
+        "last_probe_ts": "2026-08-22T06:16:44.871634+00:00",
         "last_status": "ok"
       }
     },
@@ -19267,8 +19267,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 400,
         "p95_latency_ms": 565,
         "hourly_uptime": [
@@ -19297,8 +19297,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -19369,7 +19369,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:00.711246+00:00",
+        "last_probe_ts": "2026-08-22T06:16:21.522636+00:00",
         "last_status": "ok"
       },
       "mistral-medium-2508": {
@@ -19377,9 +19377,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 342,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 338,
         "p95_latency_ms": 671,
         "hourly_uptime": [
           {
@@ -19407,8 +19407,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -19479,7 +19479,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:00.803936+00:00",
+        "last_probe_ts": "2026-08-22T06:16:21.523434+00:00",
         "last_status": "ok"
       },
       "codestral-2508": {
@@ -19487,8 +19487,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 323,
         "p95_latency_ms": 414,
         "hourly_uptime": [
@@ -19517,8 +19517,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -19589,7 +19589,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:00.979159+00:00",
+        "last_probe_ts": "2026-08-22T06:16:21.801960+00:00",
         "last_status": "ok"
       },
       "codestral-latest": {
@@ -19597,9 +19597,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 320,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 318,
         "p95_latency_ms": 590,
         "hourly_uptime": [
           {
@@ -19627,8 +19627,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -19699,7 +19699,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.189256+00:00",
+        "last_probe_ts": "2026-08-22T06:16:21.857095+00:00",
         "last_status": "ok"
       },
       "mistral-code-latest": {
@@ -19707,8 +19707,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 316,
         "p95_latency_ms": 453,
         "hourly_uptime": [
@@ -19737,8 +19737,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -19809,7 +19809,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.374968+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.128139+00:00",
         "last_status": "ok"
       },
       "mistral-code-fim-latest": {
@@ -19817,9 +19817,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 321,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 320,
         "p95_latency_ms": 512,
         "hourly_uptime": [
           {
@@ -19847,8 +19847,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -19919,17 +19919,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.548450+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.263730+00:00",
         "last_status": "ok"
       },
       "devstral-medium-latest": {
-        "uptime_7d": 0.9175,
-        "uptime_30d": 0.9175,
+        "uptime_7d": 0.9184,
+        "uptime_30d": 0.9184,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 346,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 345,
         "p95_latency_ms": 5348,
         "hourly_uptime": [
           {
@@ -19957,8 +19957,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -20029,17 +20029,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.990527+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.706090+00:00",
         "last_status": "ok"
       },
       "devstral-latest": {
-        "uptime_7d": 0.9072,
-        "uptime_30d": 0.9072,
+        "uptime_7d": 0.9082,
+        "uptime_30d": 0.9082,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 351,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 348,
         "p95_latency_ms": 9827,
         "hourly_uptime": [
           {
@@ -20067,8 +20067,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -20139,17 +20139,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:02.155150+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.867235+00:00",
         "last_status": "ok"
       },
       "mistral-code-agent-latest": {
-        "uptime_7d": 0.8763,
-        "uptime_30d": 0.8763,
+        "uptime_7d": 0.8776,
+        "uptime_30d": 0.8776,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 343,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 342,
         "p95_latency_ms": 6946,
         "hourly_uptime": [
           {
@@ -20177,8 +20177,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 2,
@@ -20249,7 +20249,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:02.341689+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.059601+00:00",
         "last_status": "ok"
       },
       "mistral-small-2603": {
@@ -20257,9 +20257,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 437,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 434,
         "p95_latency_ms": 826,
         "hourly_uptime": [
           {
@@ -20287,8 +20287,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -20359,7 +20359,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.127285+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.368214+00:00",
         "last_status": "ok"
       },
       "mistral-small-latest": {
@@ -20367,9 +20367,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 431,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 428,
         "p95_latency_ms": 752,
         "hourly_uptime": [
           {
@@ -20397,8 +20397,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -20469,17 +20469,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:02.794180+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.502231+00:00",
         "last_status": "ok"
       },
       "mistral-vibe-cli-fast": {
-        "uptime_7d": 0.9897,
-        "uptime_30d": 0.9897,
+        "uptime_7d": 0.9898,
+        "uptime_30d": 0.9898,
         "rate_limited_7d": 0,
         "down_reason_7d": "server_error",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 453,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 447,
         "p95_latency_ms": 735,
         "hourly_uptime": [
           {
@@ -20507,8 +20507,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -20579,17 +20579,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.169142+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.830928+00:00",
         "last_status": "ok"
       },
       "magistral-small-latest": {
-        "uptime_7d": 0.9897,
-        "uptime_30d": 0.9897,
+        "uptime_7d": 0.9898,
+        "uptime_30d": 0.9898,
         "rate_limited_7d": 0,
         "down_reason_7d": "server_error",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 436,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 435,
         "p95_latency_ms": 783,
         "hourly_uptime": [
           {
@@ -20617,8 +20617,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -20689,7 +20689,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.426574+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.942000+00:00",
         "last_status": "ok"
       },
       "voxtral-small-2507": {
@@ -20697,8 +20697,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 323,
         "p95_latency_ms": 437,
         "hourly_uptime": [
@@ -20727,8 +20727,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -20799,7 +20799,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.475814+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.124042+00:00",
         "last_status": "ok"
       },
       "voxtral-small-latest": {
@@ -20807,8 +20807,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 338,
         "p95_latency_ms": 435,
         "hourly_uptime": [
@@ -20837,8 +20837,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -20909,7 +20909,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.812874+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.332424+00:00",
         "last_status": "ok"
       },
       "labs-leanstral-1-5-1": {
@@ -21133,12 +21133,12 @@
         "last_status": "auth_error"
       },
       "mistral-large-2512": {
-        "uptime_7d": 0.9588,
-        "uptime_30d": 0.9588,
+        "uptime_7d": 0.9592,
+        "uptime_30d": 0.9592,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 464,
         "p95_latency_ms": 2425,
         "hourly_uptime": [
@@ -21167,8 +21167,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -21239,17 +21239,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.865465+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.628155+00:00",
         "last_status": "ok"
       },
       "mistral-large-latest": {
-        "uptime_7d": 0.9588,
-        "uptime_30d": 0.9588,
+        "uptime_7d": 0.9592,
+        "uptime_30d": 0.9592,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 449,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 448,
         "p95_latency_ms": 1630,
         "hourly_uptime": [
           {
@@ -21277,8 +21277,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -21349,7 +21349,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.154333+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.824326+00:00",
         "last_status": "ok"
       },
       "ministral-3b-2512": {
@@ -21357,8 +21357,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 323,
         "p95_latency_ms": 616,
         "hourly_uptime": [
@@ -21387,8 +21387,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -21459,7 +21459,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.585985+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.941451+00:00",
         "last_status": "ok"
       },
       "ministral-3b-latest": {
@@ -21467,8 +21467,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 313,
         "p95_latency_ms": 401,
         "hourly_uptime": [
@@ -21497,8 +21497,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -21569,7 +21569,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.437089+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.161887+00:00",
         "last_status": "ok"
       },
       "ministral-8b-2512": {
@@ -21577,8 +21577,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 335,
         "p95_latency_ms": 636,
         "hourly_uptime": [
@@ -21607,8 +21607,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -21679,7 +21679,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.700537+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.361771+00:00",
         "last_status": "ok"
       },
       "ministral-8b-latest": {
@@ -21687,9 +21687,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 323,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 322,
         "p95_latency_ms": 483,
         "hourly_uptime": [
           {
@@ -21717,8 +21717,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -21789,7 +21789,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.824057+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.484596+00:00",
         "last_status": "ok"
       },
       "ministral-14b-2512": {
@@ -21797,9 +21797,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 361,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 359,
         "p95_latency_ms": 645,
         "hourly_uptime": [
           {
@@ -21827,8 +21827,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -21899,7 +21899,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:05.124086+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.685006+00:00",
         "last_status": "ok"
       },
       "ministral-14b-latest": {
@@ -21907,9 +21907,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 349,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 347,
         "p95_latency_ms": 704,
         "hourly_uptime": [
           {
@@ -21937,8 +21937,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -22009,16 +22009,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:05.328440+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.936012+00:00",
         "last_status": "ok"
       },
       "mistral-medium-latest": {
-        "uptime_7d": 0.9897,
-        "uptime_30d": 0.9897,
+        "uptime_7d": 0.9898,
+        "uptime_30d": 0.9898,
         "rate_limited_7d": 0,
         "down_reason_7d": "server_error",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 352,
         "p95_latency_ms": 533,
         "hourly_uptime": [
@@ -22047,8 +22047,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -22119,7 +22119,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:05.385945+00:00",
+        "last_probe_ts": "2026-08-22T06:16:26.101726+00:00",
         "last_status": "ok"
       },
       "mistral-medium": {
@@ -22127,9 +22127,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 361,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 358,
         "p95_latency_ms": 562,
         "hourly_uptime": [
           {
@@ -22157,8 +22157,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -22229,7 +22229,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:05.757610+00:00",
+        "last_probe_ts": "2026-08-22T06:16:26.306288+00:00",
         "last_status": "ok"
       },
       "mistral-medium-3-5": {
@@ -22237,9 +22237,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 363,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 359,
         "p95_latency_ms": 508,
         "hourly_uptime": [
           {
@@ -22267,8 +22267,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -22339,7 +22339,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:05.778963+00:00",
+        "last_probe_ts": "2026-08-22T06:16:26.505073+00:00",
         "last_status": "ok"
       },
       "mistral-medium-3.5": {
@@ -22347,9 +22347,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 361,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 360,
         "p95_latency_ms": 641,
         "hourly_uptime": [
           {
@@ -22377,8 +22377,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -22449,7 +22449,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:06.088374+00:00",
+        "last_probe_ts": "2026-08-22T06:16:26.709315+00:00",
         "last_status": "ok"
       },
       "mistral-medium-3": {
@@ -22457,9 +22457,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 357,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 356,
         "p95_latency_ms": 620,
         "hourly_uptime": [
           {
@@ -22487,8 +22487,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -22559,7 +22559,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:06.222171+00:00",
+        "last_probe_ts": "2026-08-22T06:16:26.907388+00:00",
         "last_status": "ok"
       },
       "mistral-medium-2604": {
@@ -22567,8 +22567,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 367,
         "p95_latency_ms": 942,
         "hourly_uptime": [
@@ -22597,8 +22597,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -22669,7 +22669,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:06.392979+00:00",
+        "last_probe_ts": "2026-08-22T06:16:27.324654+00:00",
         "last_status": "ok"
       },
       "mistral-vibe-cli-latest": {
@@ -22677,8 +22677,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 362,
         "p95_latency_ms": 578,
         "hourly_uptime": [
@@ -22707,8 +22707,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -22779,7 +22779,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:06.631138+00:00",
+        "last_probe_ts": "2026-08-22T06:16:27.361119+00:00",
         "last_status": "ok"
       },
       "mistral-vibe-cli-with-tools": {
@@ -22787,8 +22787,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 363,
         "p95_latency_ms": 558,
         "hourly_uptime": [
@@ -22817,8 +22817,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -22889,7 +22889,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:06.828525+00:00",
+        "last_probe_ts": "2026-08-22T06:16:27.729197+00:00",
         "last_status": "ok"
       },
       "glm-5-2": {
@@ -24653,13 +24653,13 @@
         "last_status": "bad_response"
       },
       "devstral-2512": {
-        "uptime_7d": 0.9175,
-        "uptime_30d": 0.9175,
+        "uptime_7d": 0.9184,
+        "uptime_30d": 0.9184,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 347,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 344,
         "p95_latency_ms": 10525,
         "hourly_uptime": [
           {
@@ -24687,8 +24687,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -24759,7 +24759,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.776233+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.525346+00:00",
         "last_status": "ok"
       },
       "magistral-medium-latest": {
@@ -24767,8 +24767,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 66,
-        "samples_30d": 66,
+        "samples_7d": 67,
+        "samples_30d": 67,
         "p50_latency_ms": 364,
         "p95_latency_ms": 757,
         "hourly_uptime": [
@@ -24797,8 +24797,8 @@
             "total": 3
           },
           {
-            "ok": 2,
-            "total": 2
+            "ok": 3,
+            "total": 3
           },
           {
             "ok": 2,
@@ -24869,7 +24869,7 @@
             "total": 3
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:07.027779+00:00",
+        "last_probe_ts": "2026-08-22T06:16:27.702193+00:00",
         "last_status": "ok"
       }
     },
@@ -24879,8 +24879,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 575,
         "p95_latency_ms": 3066,
         "hourly_uptime": [
@@ -24909,8 +24909,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -24981,7 +24981,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:00.972323+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.918161+00:00",
         "last_status": "ok"
       },
       "@cf/google/gemma-2b-it-lora": {
@@ -24989,8 +24989,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 432,
         "p95_latency_ms": 846,
         "hourly_uptime": [
@@ -25019,8 +25019,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -25091,7 +25091,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:00.790318+00:00",
+        "last_probe_ts": "2026-08-22T06:16:21.818879+00:00",
         "last_status": "ok"
       },
       "@cf/meta/llama-3.2-3b-instruct": {
@@ -25099,8 +25099,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 254,
         "p95_latency_ms": 662,
         "hourly_uptime": [
@@ -25129,8 +25129,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -25201,16 +25201,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:00.969219+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.158265+00:00",
         "last_status": "ok"
       },
       "@cf/meta/llama-guard-3-8b": {
-        "uptime_7d": 0.9897,
-        "uptime_30d": 0.9897,
+        "uptime_7d": 0.9898,
+        "uptime_30d": 0.9898,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 261,
         "p95_latency_ms": 5266,
         "hourly_uptime": [
@@ -25239,8 +25239,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -25311,7 +25311,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.513145+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.422208+00:00",
         "last_status": "ok"
       },
       "@cf/mistral/mistral-7b-instruct-v0.2-lora": {
@@ -25319,9 +25319,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 415,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 410,
         "p95_latency_ms": 845,
         "hourly_uptime": [
           {
@@ -25349,8 +25349,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -25421,7 +25421,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.963065+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.760138+00:00",
         "last_status": "ok"
       },
       "@cf/moonshotai/kimi-k2.7-code": {
@@ -25539,8 +25539,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 231,
         "p95_latency_ms": 796,
         "hourly_uptime": [
@@ -25569,8 +25569,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -25641,7 +25641,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.796312+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.168405+00:00",
         "last_status": "ok"
       },
       "@cf/meta/llama-3.1-8b-instruct-fp8": {
@@ -25649,8 +25649,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 415,
         "p95_latency_ms": 1025,
         "hourly_uptime": [
@@ -25679,8 +25679,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -25751,7 +25751,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.475611+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.395429+00:00",
         "last_status": "ok"
       },
       "@cf/moonshotai/kimi-k2.6": {
@@ -25869,9 +25869,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 302,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 300,
         "p95_latency_ms": 495,
         "hourly_uptime": [
           {
@@ -25899,8 +25899,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -25971,7 +25971,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:02.212111+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.403065+00:00",
         "last_status": "ok"
       },
       "@cf/meta-llama/llama-2-7b-chat-hf-lora": {
@@ -25979,8 +25979,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 408,
         "p95_latency_ms": 751,
         "hourly_uptime": [
@@ -26009,8 +26009,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -26081,18 +26081,18 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.020703+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.845461+00:00",
         "last_status": "ok"
       },
       "@cf/zai-org/glm-4.7-flash": {
-        "uptime_7d": 0.9381,
-        "uptime_30d": 0.9381,
+        "uptime_7d": 0.9388,
+        "uptime_30d": 0.9388,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 342,
-        "p95_latency_ms": 4315,
+        "p95_latency_ms": 2891,
         "hourly_uptime": [
           {
             "ok": 3,
@@ -26119,8 +26119,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -26191,7 +26191,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:02.568481+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.737081+00:00",
         "last_status": "ok"
       },
       "@cf/ibm-granite/granite-4.0-h-micro": {
@@ -26199,8 +26199,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 335,
         "p95_latency_ms": 515,
         "hourly_uptime": [
@@ -26229,8 +26229,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -26301,7 +26301,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.487094+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.323081+00:00",
         "last_status": "ok"
       },
       "@cf/deepseek-ai/deepseek-v4-flash-0731": {
@@ -26419,10 +26419,10 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 290,
-        "p95_latency_ms": 1088,
+        "p95_latency_ms": 1324,
         "hourly_uptime": [
           {
             "ok": 4,
@@ -26449,8 +26449,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -26521,7 +26521,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.247125+00:00",
+        "last_probe_ts": "2026-08-22T06:16:34.049101+00:00",
         "last_status": "ok"
       },
       "@cf/zai-org/glm-5.2": {
@@ -26639,9 +26639,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 344,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 342,
         "p95_latency_ms": 4352,
         "hourly_uptime": [
           {
@@ -26669,8 +26669,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -26741,7 +26741,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.727312+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.591946+00:00",
         "last_status": "ok"
       },
       "@cf/aisingapore/gemma-sea-lion-v4-27b-it": {
@@ -26749,8 +26749,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 234,
         "p95_latency_ms": 611,
         "hourly_uptime": [
@@ -26779,8 +26779,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -26851,7 +26851,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.863804+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.197633+00:00",
         "last_status": "ok"
       },
       "@cf/nvidia/nemotron-3-120b-a12b": {
@@ -26859,9 +26859,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 442,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 440,
         "p95_latency_ms": 2717,
         "hourly_uptime": [
           {
@@ -26889,8 +26889,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -26961,7 +26961,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.866111+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.946820+00:00",
         "last_status": "ok"
       },
       "@cf/qwen/qwen3-30b-a3b-fp8": {
@@ -26969,9 +26969,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 276,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 273,
         "p95_latency_ms": 672,
         "hourly_uptime": [
           {
@@ -26999,8 +26999,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -27071,7 +27071,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.030493+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.377531+00:00",
         "last_status": "ok"
       },
       "@cf/google/gemma-7b-it-lora": {
@@ -27079,8 +27079,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 460,
         "p95_latency_ms": 629,
         "hourly_uptime": [
@@ -27109,8 +27109,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -27181,18 +27181,18 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.313112+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.900352+00:00",
         "last_status": "ok"
       },
       "@cf/google/gemma-4-26b-a4b-it": {
-        "uptime_7d": 0.9381,
-        "uptime_30d": 0.9381,
+        "uptime_7d": 0.9388,
+        "uptime_30d": 0.9388,
         "rate_limited_7d": 1,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 409,
-        "p95_latency_ms": 1172,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 410,
+        "p95_latency_ms": 1154,
         "hourly_uptime": [
           {
             "ok": 3,
@@ -27219,8 +27219,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -27291,7 +27291,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.247842+00:00",
+        "last_probe_ts": "2026-08-22T06:16:26.380381+00:00",
         "last_status": "ok"
       },
       "@cf/mistralai/mistral-small-3.1-24b-instruct": {
@@ -27299,8 +27299,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 339,
         "p95_latency_ms": 1198,
         "hourly_uptime": [
@@ -27329,8 +27329,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -27401,7 +27401,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.519615+00:00",
+        "last_probe_ts": "2026-08-22T06:16:26.564843+00:00",
         "last_status": "ok"
       },
       "@cf/deepseek-ai/deepseek-v4-pro-0813": {
@@ -27629,8 +27629,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 261,
         "p95_latency_ms": 722,
         "hourly_uptime": [
@@ -27659,8 +27659,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -27731,7 +27731,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.715515+00:00",
+        "last_probe_ts": "2026-08-22T06:16:27.152132+00:00",
         "last_status": "ok"
       },
       "@cf/meta/llama-4-scout-17b-16e-instruct": {
@@ -27739,8 +27739,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 345,
         "p95_latency_ms": 1549,
         "hourly_uptime": [
@@ -27769,8 +27769,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -27841,7 +27841,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.964984+00:00",
+        "last_probe_ts": "2026-08-22T06:16:27.502773+00:00",
         "last_status": "ok"
       },
       "@cf/qwen/qwq-32b": {
@@ -27849,8 +27849,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 252,
         "p95_latency_ms": 370,
         "hourly_uptime": [
@@ -27879,8 +27879,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -27951,16 +27951,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:05.179925+00:00",
+        "last_probe_ts": "2026-08-22T06:16:27.785174+00:00",
         "last_status": "ok"
       },
       "@cf/qwen/qwen3.8-27b": {
-        "uptime_7d": 0.9062,
-        "uptime_30d": 0.9062,
+        "uptime_7d": 0.9072,
+        "uptime_30d": 0.9072,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 96,
-        "samples_30d": 96,
+        "samples_7d": 97,
+        "samples_30d": 97,
         "p50_latency_ms": 407,
         "p95_latency_ms": 9302,
         "hourly_uptime": [
@@ -27989,8 +27989,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -28061,7 +28061,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:05.241530+00:00",
+        "last_probe_ts": "2026-08-22T06:16:26.868421+00:00",
         "last_status": "ok"
       }
     },
@@ -33347,12 +33347,12 @@
         "last_status": "quota_exhausted"
       },
       "chigwell/llm7-fast": {
-        "uptime_7d": 0.9691,
-        "uptime_30d": 0.9691,
+        "uptime_7d": 0.9694,
+        "uptime_30d": 0.9694,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 5344,
         "p95_latency_ms": 8521,
         "hourly_uptime": [
@@ -33381,8 +33381,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -33453,7 +33453,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:17.950688+00:00",
+        "last_probe_ts": "2026-08-22T06:16:34.594574+00:00",
         "last_status": "ok"
       },
       "chigwell/kimi-k2.7-code": {
@@ -35657,13 +35657,13 @@
         "last_status": "quota_exhausted"
       },
       "YoannDev90/muse-glimmer-30b:free": {
-        "uptime_7d": 0.6186,
-        "uptime_30d": 0.6186,
+        "uptime_7d": 0.6224,
+        "uptime_30d": 0.6224,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 4950,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 4933,
         "p95_latency_ms": 7136,
         "hourly_uptime": [
           {
@@ -35691,8 +35691,8 @@
             "total": 9
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 2,
@@ -35763,7 +35763,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:18.272782+00:00",
+        "last_probe_ts": "2026-08-22T06:16:37.266702+00:00",
         "last_status": "ok"
       },
       "morriszdweck/osaii-api-smart": {
@@ -36757,13 +36757,13 @@
         "last_status": "bad_response"
       },
       "chirag-gamer/gpt-oss-120b": {
-        "uptime_7d": 0.3158,
-        "uptime_30d": 0.3158,
+        "uptime_7d": 0.3229,
+        "uptime_30d": 0.3229,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 95,
-        "samples_30d": 95,
-        "p50_latency_ms": 6596,
+        "samples_7d": 96,
+        "samples_30d": 96,
+        "p50_latency_ms": 6624,
         "p95_latency_ms": 13563,
         "hourly_uptime": [
           {
@@ -36791,8 +36791,8 @@
             "total": 8
           },
           {
-            "ok": 1,
-            "total": 2
+            "ok": 2,
+            "total": 3
           },
           {
             "ok": 1,
@@ -36863,8 +36863,8 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:32.973819+00:00",
-        "last_status": "timeout"
+        "last_probe_ts": "2026-08-22T06:16:48.965134+00:00",
+        "last_status": "ok"
       },
       "vendouple/qwen3.8-max": {
         "uptime_7d": 0.0,
@@ -37417,13 +37417,13 @@
         "last_status": "quota_exhausted"
       },
       "vendouple/laguna-s-2.1:free": {
-        "uptime_7d": 0.9485,
-        "uptime_30d": 0.9485,
+        "uptime_7d": 0.949,
+        "uptime_30d": 0.949,
         "rate_limited_7d": 0,
         "down_reason_7d": "bad_response",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 4986,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 4969,
         "p95_latency_ms": 8042,
         "hourly_uptime": [
           {
@@ -37451,8 +37451,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -37523,7 +37523,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:21.692259+00:00",
+        "last_probe_ts": "2026-08-22T06:16:41.661446+00:00",
         "last_status": "ok"
       },
       "sharktide/inferenceport-ai-codestral-2508": {
@@ -38407,13 +38407,13 @@
         "last_status": "quota_exhausted"
       },
       "vendouple/muse-glimmer-30b:free": {
-        "uptime_7d": 0.6289,
-        "uptime_30d": 0.6289,
+        "uptime_7d": 0.6327,
+        "uptime_30d": 0.6327,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 5123,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 5092,
         "p95_latency_ms": 7486,
         "hourly_uptime": [
           {
@@ -38441,8 +38441,8 @@
             "total": 9
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 2,
@@ -38513,17 +38513,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:36.132266+00:00",
+        "last_probe_ts": "2026-08-22T06:16:52.994521+00:00",
         "last_status": "ok"
       },
       "YoannDev90/diffusiongemma-26b-a4b-it:free": {
-        "uptime_7d": 0.8041,
-        "uptime_30d": 0.8041,
+        "uptime_7d": 0.8061,
+        "uptime_30d": 0.8061,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
-        "p50_latency_ms": 6070,
+        "samples_7d": 98,
+        "samples_30d": 98,
+        "p50_latency_ms": 6096,
         "p95_latency_ms": 10507,
         "hourly_uptime": [
           {
@@ -38551,8 +38551,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -38623,7 +38623,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:36.514730+00:00",
+        "last_probe_ts": "2026-08-22T06:16:56.837965+00:00",
         "last_status": "ok"
       },
       "tomdacatto/gemma-4-31b-fast": {
@@ -42037,12 +42037,12 @@
         "last_status": "quota_exhausted"
       },
       "MarcosFRG/nemotron-3.5-lightning-30b": {
-        "uptime_7d": 0.1667,
-        "uptime_30d": 0.1667,
+        "uptime_7d": 0.1649,
+        "uptime_30d": 0.1649,
         "rate_limited_7d": 0,
         "down_reason_7d": "quota_exhausted",
-        "samples_7d": 96,
-        "samples_30d": 96,
+        "samples_7d": 97,
+        "samples_30d": 97,
         "p50_latency_ms": 12422,
         "p95_latency_ms": 13830,
         "hourly_uptime": [
@@ -42072,7 +42072,7 @@
           },
           {
             "ok": 0,
-            "total": 3
+            "total": 4
           },
           {
             "ok": 0,
@@ -42143,7 +42143,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:13.434875+00:00",
+        "last_probe_ts": "2026-08-22T06:16:29.604200+00:00",
         "last_status": "quota_exhausted"
       },
       "novastardev/olmo-3.1-32b": {
@@ -44567,12 +44567,12 @@
         "last_status": "quota_exhausted"
       },
       "gggff123/Gemini-3.7-Flash": {
-        "uptime_7d": 0.0164,
-        "uptime_30d": 0.0164,
+        "uptime_7d": 0.0161,
+        "uptime_30d": 0.0161,
         "rate_limited_7d": 0,
         "down_reason_7d": "quota_exhausted",
-        "samples_7d": 61,
-        "samples_30d": 61,
+        "samples_7d": 62,
+        "samples_30d": 62,
         "p50_latency_ms": 5907,
         "p95_latency_ms": 5907,
         "hourly_uptime": [
@@ -44602,7 +44602,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -44673,16 +44673,16 @@
             "total": 3
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:09.870512+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.889182+00:00",
         "last_status": "quota_exhausted"
       },
       "gggff123/Glm-5.3": {
-        "uptime_7d": 0.0164,
-        "uptime_30d": 0.0164,
+        "uptime_7d": 0.0161,
+        "uptime_30d": 0.0161,
         "rate_limited_7d": 0,
         "down_reason_7d": "quota_exhausted",
-        "samples_7d": 61,
-        "samples_30d": 61,
+        "samples_7d": 62,
+        "samples_30d": 62,
         "p50_latency_ms": 8765,
         "p95_latency_ms": 8765,
         "hourly_uptime": [
@@ -44712,7 +44712,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -44783,16 +44783,16 @@
             "total": 3
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:10.337929+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.506288+00:00",
         "last_status": "quota_exhausted"
       },
       "JustScriptzz/gpt-oss-120b": {
-        "uptime_7d": 0.082,
-        "uptime_30d": 0.082,
+        "uptime_7d": 0.0806,
+        "uptime_30d": 0.0806,
         "rate_limited_7d": 0,
         "down_reason_7d": "quota_exhausted",
-        "samples_7d": 61,
-        "samples_30d": 61,
+        "samples_7d": 62,
+        "samples_30d": 62,
         "p50_latency_ms": 4862,
         "p95_latency_ms": 6817,
         "hourly_uptime": [
@@ -44822,7 +44822,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -44893,7 +44893,7 @@
             "total": 3
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:10.806157+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.141101+00:00",
         "last_status": "quota_exhausted"
       },
       "JustScriptzz/minimax-m3-free": {
@@ -46547,13 +46547,13 @@
         "last_status": "quota_exhausted"
       },
       "Spit-fires/muse-glimmer": {
-        "uptime_7d": 0.9318,
-        "uptime_30d": 0.9318,
+        "uptime_7d": 0.9333,
+        "uptime_30d": 0.9333,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 44,
-        "samples_30d": 44,
-        "p50_latency_ms": 5090,
+        "samples_7d": 45,
+        "samples_30d": 45,
+        "p50_latency_ms": 5054,
         "p95_latency_ms": 6773,
         "hourly_uptime": [
           {
@@ -46581,8 +46581,8 @@
             "total": 2
           },
           {
-            "ok": 1,
-            "total": 1
+            "ok": 2,
+            "total": 2
           },
           {
             "ok": 1,
@@ -46653,7 +46653,7 @@
             "total": 2
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:14.310764+00:00",
+        "last_probe_ts": "2026-08-22T06:16:28.986221+00:00",
         "last_status": "ok"
       },
       "MarcosFRG/gpt-5.6-luna": {
@@ -47207,12 +47207,12 @@
         "last_status": "bad_response"
       },
       "MarcosFRG/glm-4.6v-flash": {
-        "uptime_7d": 0.8519,
-        "uptime_30d": 0.8519,
+        "uptime_7d": 0.8571,
+        "uptime_30d": 0.8571,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 27,
-        "samples_30d": 27,
+        "samples_7d": 28,
+        "samples_30d": 28,
         "p50_latency_ms": 7102,
         "p95_latency_ms": 12802,
         "hourly_uptime": [
@@ -47241,8 +47241,8 @@
             "total": 2
           },
           {
-            "ok": 1,
-            "total": 1
+            "ok": 2,
+            "total": 2
           },
           {
             "ok": 1,
@@ -47313,7 +47313,7 @@
             "total": 1
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:28.795042+00:00",
+        "last_probe_ts": "2026-08-22T06:16:46.958946+00:00",
         "last_status": "ok"
       },
       "JustScriptzz/muse-spark-1.2": {
@@ -47977,12 +47977,12 @@
         "last_status": "quota_exhausted"
       },
       "Catniti/agnes-2.0-flash": {
-        "uptime_7d": 0.0476,
-        "uptime_30d": 0.0476,
+        "uptime_7d": 0.0455,
+        "uptime_30d": 0.0455,
         "rate_limited_7d": 0,
         "down_reason_7d": "quota_exhausted",
-        "samples_7d": 21,
-        "samples_30d": 21,
+        "samples_7d": 22,
+        "samples_30d": 22,
         "p50_latency_ms": 4534,
         "p95_latency_ms": 4534,
         "hourly_uptime": [
@@ -48012,7 +48012,7 @@
           },
           {
             "ok": 0,
-            "total": 0
+            "total": 1
           },
           {
             "ok": 0,
@@ -48083,7 +48083,7 @@
             "total": 1
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:08.454512+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.264509+00:00",
         "last_status": "quota_exhausted"
       },
       "chigwell/claude-sonnet-4-6": {
@@ -48307,12 +48307,12 @@
         "last_status": "bad_response"
       },
       "vendouple/deepseek-v4-flash-0731": {
-        "uptime_7d": 0.0667,
-        "uptime_30d": 0.0667,
+        "uptime_7d": 0.0625,
+        "uptime_30d": 0.0625,
         "rate_limited_7d": 0,
         "down_reason_7d": "quota_exhausted",
-        "samples_7d": 15,
-        "samples_30d": 15,
+        "samples_7d": 16,
+        "samples_30d": 16,
         "p50_latency_ms": 4276,
         "p95_latency_ms": 4276,
         "hourly_uptime": [
@@ -48342,7 +48342,7 @@
           },
           {
             "ok": 0,
-            "total": 0
+            "total": 1
           },
           {
             "ok": 0,
@@ -48413,16 +48413,16 @@
             "total": 1
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:36.616683+00:00",
+        "last_probe_ts": "2026-08-22T06:16:53.709510+00:00",
         "last_status": "quota_exhausted"
       },
       "Lorodn4x/qwen3.8-max": {
-        "uptime_7d": 0.125,
-        "uptime_30d": 0.125,
+        "uptime_7d": 0.1111,
+        "uptime_30d": 0.1111,
         "rate_limited_7d": 0,
         "down_reason_7d": "quota_exhausted",
-        "samples_7d": 8,
-        "samples_30d": 8,
+        "samples_7d": 9,
+        "samples_30d": 9,
         "p50_latency_ms": 9405,
         "p95_latency_ms": 9405,
         "hourly_uptime": [
@@ -48452,7 +48452,7 @@
           },
           {
             "ok": 0,
-            "total": 0
+            "total": 1
           },
           {
             "ok": 0,
@@ -48523,7 +48523,7 @@
             "total": 1
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:07.996426+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.628249+00:00",
         "last_status": "quota_exhausted"
       },
       "rodrigookk/claude-opus-5": {
@@ -48637,12 +48637,12 @@
         "last_status": "bad_response"
       },
       "gggff123/gpt-5-nano": {
-        "uptime_7d": 1.0,
-        "uptime_30d": 1.0,
+        "uptime_7d": 0.5,
+        "uptime_30d": 0.5,
         "rate_limited_7d": 0,
-        "down_reason_7d": null,
-        "samples_7d": 1,
-        "samples_30d": 1,
+        "down_reason_7d": "quota_exhausted",
+        "samples_7d": 2,
+        "samples_30d": 2,
         "p50_latency_ms": 6456,
         "p95_latency_ms": 6456,
         "hourly_uptime": [
@@ -48672,7 +48672,7 @@
           },
           {
             "ok": 0,
-            "total": 0
+            "total": 1
           },
           {
             "ok": 0,
@@ -48743,18 +48743,18 @@
             "total": 0
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:06.974282+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:21.992918+00:00",
+        "last_status": "quota_exhausted"
       },
       "vendouple/gpt-5.6-luna": {
         "uptime_7d": 1.0,
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 1,
-        "samples_30d": 1,
+        "samples_7d": 2,
+        "samples_30d": 2,
         "p50_latency_ms": 12390,
-        "p95_latency_ms": 12390,
+        "p95_latency_ms": 12537,
         "hourly_uptime": [
           {
             "ok": 0,
@@ -48775,6 +48775,10 @@
           {
             "ok": 0,
             "total": 0
+          },
+          {
+            "ok": 1,
+            "total": 1
           },
           {
             "ok": 1,
@@ -48847,13 +48851,9 @@
           {
             "ok": 0,
             "total": 0
-          },
-          {
-            "ok": 0,
-            "total": 0
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:12.708319+00:00",
+        "last_probe_ts": "2026-08-22T06:16:33.528761+00:00",
         "last_status": "ok"
       }
     },
@@ -49409,12 +49409,12 @@
         "last_status": "bad_response"
       },
       "glm-4.5-flash": {
-        "uptime_7d": 0.9072,
-        "uptime_30d": 0.9072,
+        "uptime_7d": 0.9082,
+        "uptime_30d": 0.9082,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 97,
-        "samples_30d": 97,
+        "samples_7d": 98,
+        "samples_30d": 98,
         "p50_latency_ms": 1465,
         "p95_latency_ms": 7732,
         "hourly_uptime": [
@@ -49443,8 +49443,8 @@
             "total": 9
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 2,
@@ -49515,7 +49515,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.252767+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.250312+00:00",
         "last_status": "ok"
       }
     },
@@ -50181,12 +50181,12 @@
         "last_status": "quota_exhausted"
       },
       "MiniMax-M3": {
-        "uptime_7d": 0.0333,
-        "uptime_30d": 0.0333,
+        "uptime_7d": 0.0323,
+        "uptime_30d": 0.0323,
         "rate_limited_7d": 0,
         "down_reason_7d": "quota_exhausted",
-        "samples_7d": 30,
-        "samples_30d": 30,
+        "samples_7d": 31,
+        "samples_30d": 31,
         "p50_latency_ms": 1615,
         "p95_latency_ms": 1615,
         "hourly_uptime": [
@@ -50216,7 +50216,7 @@
           },
           {
             "ok": 0,
-            "total": 1
+            "total": 2
           },
           {
             "ok": 0,
@@ -50287,7 +50287,7 @@
             "total": 2
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:00.526235+00:00",
+        "last_probe_ts": "2026-08-22T06:16:21.472578+00:00",
         "last_status": "quota_exhausted"
       }
     },
@@ -54805,12 +54805,12 @@
     },
     "kilo": {
       "kilo-auto/free": {
-        "uptime_7d": 0.9362,
-        "uptime_30d": 0.9362,
+        "uptime_7d": 0.9368,
+        "uptime_30d": 0.9368,
         "rate_limited_7d": 0,
         "down_reason_7d": "server_error",
-        "samples_7d": 94,
-        "samples_30d": 94,
+        "samples_7d": 95,
+        "samples_30d": 95,
         "p50_latency_ms": 2159,
         "p95_latency_ms": 7181,
         "hourly_uptime": [
@@ -54839,8 +54839,8 @@
             "total": 8
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -54911,18 +54911,18 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:02.362732+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.317887+00:00",
         "last_status": "ok"
       },
       "poolside/laguna-s-2.1:free": {
-        "uptime_7d": 0.9681,
-        "uptime_30d": 0.9681,
+        "uptime_7d": 0.9684,
+        "uptime_30d": 0.9684,
         "rate_limited_7d": 3,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 94,
-        "samples_30d": 94,
+        "samples_7d": 95,
+        "samples_30d": 95,
         "p50_latency_ms": 1094,
-        "p95_latency_ms": 2030,
+        "p95_latency_ms": 2025,
         "hourly_uptime": [
           {
             "ok": 4,
@@ -54949,8 +54949,8 @@
             "total": 8
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -55021,7 +55021,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.731488+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.347683+00:00",
         "last_status": "ok"
       },
       "tencent/hy3:free": {
@@ -55029,9 +55029,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 94,
-        "samples_30d": 94,
-        "p50_latency_ms": 2389,
+        "samples_7d": 95,
+        "samples_30d": 95,
+        "p50_latency_ms": 2391,
         "p95_latency_ms": 2664,
         "hourly_uptime": [
           {
@@ -55059,8 +55059,8 @@
             "total": 8
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -55131,7 +55131,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.577925+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.982787+00:00",
         "last_status": "ok"
       },
       "dots-studio/dots-3-note-preview:free": {
@@ -55139,9 +55139,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 94,
-        "samples_30d": 94,
-        "p50_latency_ms": 937,
+        "samples_7d": 95,
+        "samples_30d": 95,
+        "p50_latency_ms": 938,
         "p95_latency_ms": 1290,
         "hourly_uptime": [
           {
@@ -55169,8 +55169,8 @@
             "total": 8
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -55241,17 +55241,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.619023+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.288478+00:00",
         "last_status": "ok"
       },
       "nvidia/nemotron-3.5-lightning:free": {
-        "uptime_7d": 0.9894,
-        "uptime_30d": 0.9894,
+        "uptime_7d": 0.9895,
+        "uptime_30d": 0.9895,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 94,
-        "samples_30d": 94,
-        "p50_latency_ms": 943,
+        "samples_7d": 95,
+        "samples_30d": 95,
+        "p50_latency_ms": 942,
         "p95_latency_ms": 5468,
         "hourly_uptime": [
           {
@@ -55279,8 +55279,8 @@
             "total": 8
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -55351,17 +55351,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:05.973480+00:00",
+        "last_probe_ts": "2026-08-22T06:16:26.109926+00:00",
         "last_status": "ok"
       },
       "stepfun/step-3.7-flash:free": {
-        "uptime_7d": 0.9468,
-        "uptime_30d": 0.9468,
+        "uptime_7d": 0.9474,
+        "uptime_30d": 0.9474,
         "rate_limited_7d": 0,
         "down_reason_7d": "server_error",
-        "samples_7d": 94,
-        "samples_30d": 94,
-        "p50_latency_ms": 2132,
+        "samples_7d": 95,
+        "samples_30d": 95,
+        "p50_latency_ms": 2128,
         "p95_latency_ms": 6802,
         "hourly_uptime": [
           {
@@ -55389,8 +55389,8 @@
             "total": 8
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -55461,16 +55461,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:02.094209+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.524468+00:00",
         "last_status": "ok"
       },
       "poolside/laguna-xs-2.1:free": {
-        "uptime_7d": 0.9468,
-        "uptime_30d": 0.9468,
+        "uptime_7d": 0.9474,
+        "uptime_30d": 0.9474,
         "rate_limited_7d": 5,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 94,
-        "samples_30d": 94,
+        "samples_7d": 95,
+        "samples_30d": 95,
         "p50_latency_ms": 912,
         "p95_latency_ms": 1914,
         "hourly_uptime": [
@@ -55499,8 +55499,8 @@
             "total": 8
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 3,
@@ -55571,7 +55571,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:07.737520+00:00",
+        "last_probe_ts": "2026-08-22T06:16:28.030183+00:00",
         "last_status": "ok"
       },
       "cohere/north-mini-code:free": {
@@ -55579,9 +55579,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 94,
-        "samples_30d": 94,
-        "p50_latency_ms": 945,
+        "samples_7d": 95,
+        "samples_30d": 95,
+        "p50_latency_ms": 947,
         "p95_latency_ms": 1252,
         "hourly_uptime": [
           {
@@ -55609,8 +55609,8 @@
             "total": 8
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -55681,16 +55681,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:08.299194+00:00",
+        "last_probe_ts": "2026-08-22T06:16:28.384834+00:00",
         "last_status": "ok"
       },
       "nvidia/nemotron-3.5-content-safety:free": {
-        "uptime_7d": 0.9894,
-        "uptime_30d": 0.9894,
+        "uptime_7d": 0.9895,
+        "uptime_30d": 0.9895,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 94,
-        "samples_30d": 94,
+        "samples_7d": 95,
+        "samples_30d": 95,
         "p50_latency_ms": 933,
         "p95_latency_ms": 1193,
         "hourly_uptime": [
@@ -55719,8 +55719,8 @@
             "total": 8
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -55791,7 +55791,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:08.645887+00:00",
+        "last_probe_ts": "2026-08-22T06:16:28.987465+00:00",
         "last_status": "ok"
       },
       "z-ai/glm-5.2:free": {
@@ -55905,12 +55905,12 @@
         "last_status": "rate_limited"
       },
       "nvidia/nemotron-3-ultra-550b-a55b:free": {
-        "uptime_7d": 0.8404,
-        "uptime_30d": 0.8404,
+        "uptime_7d": 0.8421,
+        "uptime_30d": 0.8421,
         "rate_limited_7d": 0,
         "down_reason_7d": "bad_response",
-        "samples_7d": 94,
-        "samples_30d": 94,
+        "samples_7d": 95,
+        "samples_30d": 95,
         "p50_latency_ms": 1017,
         "p95_latency_ms": 7600,
         "hourly_uptime": [
@@ -55939,8 +55939,8 @@
             "total": 8
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -56011,17 +56011,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:09.975283+00:00",
+        "last_probe_ts": "2026-08-22T06:16:29.340521+00:00",
         "last_status": "ok"
       },
       "nvidia/nemotron-3-super-120b-a12b:free": {
-        "uptime_7d": 0.9574,
-        "uptime_30d": 0.9574,
+        "uptime_7d": 0.9579,
+        "uptime_30d": 0.9579,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 94,
-        "samples_30d": 94,
-        "p50_latency_ms": 933,
+        "samples_7d": 95,
+        "samples_30d": 95,
+        "p50_latency_ms": 939,
         "p95_latency_ms": 2636,
         "hourly_uptime": [
           {
@@ -56049,8 +56049,8 @@
             "total": 8
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -56121,7 +56121,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:20.220987+00:00",
+        "last_probe_ts": "2026-08-22T06:16:30.283804+00:00",
         "last_status": "ok"
       },
       "openrouter/free": {
@@ -56129,8 +56129,8 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 94,
-        "samples_30d": 94,
+        "samples_7d": 95,
+        "samples_30d": 95,
         "p50_latency_ms": 1021,
         "p95_latency_ms": 4892,
         "hourly_uptime": [
@@ -56159,8 +56159,8 @@
             "total": 8
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -56231,16 +56231,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:11.249164+00:00",
+        "last_probe_ts": "2026-08-22T06:16:31.275965+00:00",
         "last_status": "ok"
       },
       "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
-        "uptime_7d": 0.8085,
-        "uptime_30d": 0.8085,
+        "uptime_7d": 0.8105,
+        "uptime_30d": 0.8105,
         "rate_limited_7d": 0,
         "down_reason_7d": "timeout",
-        "samples_7d": 94,
-        "samples_30d": 94,
+        "samples_7d": 95,
+        "samples_30d": 95,
         "p50_latency_ms": 2317,
         "p95_latency_ms": 6562,
         "hourly_uptime": [
@@ -56269,8 +56269,8 @@
             "total": 8
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 2,
@@ -56341,17 +56341,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:10.387277+00:00",
+        "last_probe_ts": "2026-08-22T06:16:32.775709+00:00",
         "last_status": "ok"
       },
       "liquid/lfm-2.5-2.6b:free": {
-        "uptime_7d": 0.9726,
-        "uptime_30d": 0.9726,
+        "uptime_7d": 0.973,
+        "uptime_30d": 0.973,
         "rate_limited_7d": 0,
         "down_reason_7d": "not_found",
-        "samples_7d": 73,
-        "samples_30d": 73,
-        "p50_latency_ms": 1099,
+        "samples_7d": 74,
+        "samples_30d": 74,
+        "p50_latency_ms": 1113,
         "p95_latency_ms": 5364,
         "hourly_uptime": [
           {
@@ -56379,8 +56379,8 @@
             "total": 3
           },
           {
-            "ok": 2,
-            "total": 2
+            "ok": 3,
+            "total": 3
           },
           {
             "ok": 2,
@@ -56451,7 +56451,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:06.487273+00:00",
+        "last_probe_ts": "2026-08-22T06:16:26.196732+00:00",
         "last_status": "ok"
       },
       "thinkingmachines/inkling-small:free": {
@@ -56459,10 +56459,10 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 8,
-        "samples_30d": 8,
+        "samples_7d": 9,
+        "samples_30d": 9,
         "p50_latency_ms": 915,
-        "p95_latency_ms": 1052,
+        "p95_latency_ms": 1256,
         "hourly_uptime": [
           {
             "ok": 1,
@@ -56489,8 +56489,8 @@
             "total": 1
           },
           {
-            "ok": 0,
-            "total": 0
+            "ok": 1,
+            "total": 1
           },
           {
             "ok": 0,
@@ -56561,7 +56561,7 @@
             "total": 1
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:06.896736+00:00",
+        "last_probe_ts": "2026-08-22T06:16:27.366285+00:00",
         "last_status": "ok"
       },
       "thinkingmachines/inkling:free": {
@@ -56569,9 +56569,9 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 8,
-        "samples_30d": 8,
-        "p50_latency_ms": 902,
+        "samples_7d": 9,
+        "samples_30d": 9,
+        "p50_latency_ms": 879,
         "p95_latency_ms": 1164,
         "hourly_uptime": [
           {
@@ -56599,8 +56599,8 @@
             "total": 1
           },
           {
-            "ok": 0,
-            "total": 0
+            "ok": 1,
+            "total": 1
           },
           {
             "ok": 0,
@@ -56671,18 +56671,18 @@
             "total": 1
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:07.389756+00:00",
+        "last_probe_ts": "2026-08-22T06:16:27.076769+00:00",
         "last_status": "ok"
       }
     },
     "ollama": {
       "gpt-oss:120b": {
-        "uptime_7d": 0.9674,
-        "uptime_30d": 0.9674,
+        "uptime_7d": 0.9677,
+        "uptime_30d": 0.9677,
         "rate_limited_7d": 3,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 92,
-        "samples_30d": 92,
+        "samples_7d": 93,
+        "samples_30d": 93,
         "p50_latency_ms": 429,
         "p95_latency_ms": 663,
         "hourly_uptime": [
@@ -56711,8 +56711,8 @@
             "total": 6
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -56783,17 +56783,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:00.890358+00:00",
+        "last_probe_ts": "2026-08-22T06:16:21.726743+00:00",
         "last_status": "ok"
       },
       "nemotron-3-nano:30b": {
-        "uptime_7d": 0.9565,
-        "uptime_30d": 0.9565,
+        "uptime_7d": 0.957,
+        "uptime_30d": 0.957,
         "rate_limited_7d": 3,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 92,
-        "samples_30d": 92,
-        "p50_latency_ms": 535,
+        "samples_7d": 93,
+        "samples_30d": 93,
+        "p50_latency_ms": 531,
         "p95_latency_ms": 1408,
         "hourly_uptime": [
           {
@@ -56821,8 +56821,8 @@
             "total": 6
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -56893,16 +56893,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.933198+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.254975+00:00",
         "last_status": "ok"
       },
       "gpt-oss:20b": {
-        "uptime_7d": 0.9565,
-        "uptime_30d": 0.9565,
+        "uptime_7d": 0.957,
+        "uptime_30d": 0.957,
         "rate_limited_7d": 3,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 92,
-        "samples_30d": 92,
+        "samples_7d": 93,
+        "samples_30d": 93,
         "p50_latency_ms": 623,
         "p95_latency_ms": 1629,
         "hourly_uptime": [
@@ -56931,8 +56931,8 @@
             "total": 6
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -57003,17 +57003,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.528975+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.977075+00:00",
         "last_status": "ok"
       },
       "nemotron-3-super": {
-        "uptime_7d": 0.9565,
-        "uptime_30d": 0.9565,
+        "uptime_7d": 0.957,
+        "uptime_30d": 0.957,
         "rate_limited_7d": 3,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 92,
-        "samples_30d": 92,
-        "p50_latency_ms": 688,
+        "samples_7d": 93,
+        "samples_30d": 93,
+        "p50_latency_ms": 684,
         "p95_latency_ms": 5862,
         "hourly_uptime": [
           {
@@ -57041,8 +57041,8 @@
             "total": 6
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 2,
@@ -57113,16 +57113,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:02.757947+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.805073+00:00",
         "last_status": "ok"
       },
       "nemotron-3-ultra": {
-        "uptime_7d": 0.8261,
-        "uptime_30d": 0.8261,
+        "uptime_7d": 0.828,
+        "uptime_30d": 0.828,
         "rate_limited_7d": 3,
         "down_reason_7d": "timeout",
-        "samples_7d": 92,
-        "samples_30d": 92,
+        "samples_7d": 93,
+        "samples_30d": 93,
         "p50_latency_ms": 1064,
         "p95_latency_ms": 7127,
         "hourly_uptime": [
@@ -57151,8 +57151,8 @@
             "total": 6
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 3,
@@ -57223,17 +57223,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.401026+00:00",
+        "last_probe_ts": "2026-08-22T06:16:26.698200+00:00",
         "last_status": "ok"
       },
       "minimax-m3": {
-        "uptime_7d": 0.9674,
-        "uptime_30d": 0.9674,
+        "uptime_7d": 0.9677,
+        "uptime_30d": 0.9677,
         "rate_limited_7d": 3,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 92,
-        "samples_30d": 92,
-        "p50_latency_ms": 1274,
+        "samples_7d": 93,
+        "samples_30d": 93,
+        "p50_latency_ms": 1264,
         "p95_latency_ms": 4415,
         "hourly_uptime": [
           {
@@ -57261,8 +57261,8 @@
             "total": 6
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -57333,16 +57333,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.636120+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.258798+00:00",
         "last_status": "ok"
       },
       "gemma4:31b": {
-        "uptime_7d": 0.9457,
-        "uptime_30d": 0.9457,
+        "uptime_7d": 0.9462,
+        "uptime_30d": 0.9462,
         "rate_limited_7d": 3,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 92,
-        "samples_30d": 92,
+        "samples_7d": 93,
+        "samples_30d": 93,
         "p50_latency_ms": 1890,
         "p95_latency_ms": 7818,
         "hourly_uptime": [
@@ -57371,8 +57371,8 @@
             "total": 6
           },
           {
-            "ok": 3,
-            "total": 3
+            "ok": 4,
+            "total": 4
           },
           {
             "ok": 3,
@@ -57443,19 +57443,19 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.018212+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.363452+00:00",
         "last_status": "ok"
       }
     },
     "orca": {
       "orcarouter/free": {
-        "uptime_7d": 0.4333,
-        "uptime_30d": 0.4333,
+        "uptime_7d": 0.4396,
+        "uptime_30d": 0.4396,
         "rate_limited_7d": 51,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 90,
-        "samples_30d": 90,
-        "p50_latency_ms": 1629,
+        "samples_7d": 91,
+        "samples_30d": 91,
+        "p50_latency_ms": 1652,
         "p95_latency_ms": 2362,
         "hourly_uptime": [
           {
@@ -57483,8 +57483,8 @@
             "total": 4
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 2,
@@ -57555,17 +57555,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:02.389504+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.188163+00:00",
         "last_status": "ok"
       },
       "deepseek/deepseek-v4-flash-free": {
-        "uptime_7d": 0.4333,
-        "uptime_30d": 0.4333,
+        "uptime_7d": 0.4396,
+        "uptime_30d": 0.4396,
         "rate_limited_7d": 51,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 90,
-        "samples_30d": 90,
-        "p50_latency_ms": 1446,
+        "samples_7d": 91,
+        "samples_30d": 91,
+        "p50_latency_ms": 1456,
         "p95_latency_ms": 2263,
         "hourly_uptime": [
           {
@@ -57593,8 +57593,8 @@
             "total": 4
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 2,
@@ -57665,17 +57665,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:02.926876+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.185091+00:00",
         "last_status": "ok"
       },
       "deepseek/deepseek-v4-pro-free": {
-        "uptime_7d": 0.4333,
-        "uptime_30d": 0.4333,
+        "uptime_7d": 0.4396,
+        "uptime_30d": 0.4396,
         "rate_limited_7d": 51,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 90,
-        "samples_30d": 90,
-        "p50_latency_ms": 1650,
+        "samples_7d": 91,
+        "samples_30d": 91,
+        "p50_latency_ms": 1653,
         "p95_latency_ms": 2576,
         "hourly_uptime": [
           {
@@ -57703,8 +57703,8 @@
             "total": 4
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 2,
@@ -57775,16 +57775,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.224775+00:00",
+        "last_probe_ts": "2026-08-22T06:16:25.294860+00:00",
         "last_status": "ok"
       },
       "qwen/qwen3.8-27b-free": {
-        "uptime_7d": 0.4333,
-        "uptime_30d": 0.4333,
+        "uptime_7d": 0.4396,
+        "uptime_30d": 0.4396,
         "rate_limited_7d": 51,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 90,
-        "samples_30d": 90,
+        "samples_7d": 91,
+        "samples_30d": 91,
         "p50_latency_ms": 1026,
         "p95_latency_ms": 10273,
         "hourly_uptime": [
@@ -57813,8 +57813,8 @@
             "total": 4
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 2,
@@ -57885,17 +57885,17 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.098193+00:00",
+        "last_probe_ts": "2026-08-22T06:16:24.172900+00:00",
         "last_status": "ok"
       },
       "tencent/hy3-free": {
-        "uptime_7d": 0.4333,
-        "uptime_30d": 0.4333,
+        "uptime_7d": 0.4396,
+        "uptime_30d": 0.4396,
         "rate_limited_7d": 51,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 90,
-        "samples_30d": 90,
-        "p50_latency_ms": 2600,
+        "samples_7d": 91,
+        "samples_30d": 91,
+        "p50_latency_ms": 2613,
         "p95_latency_ms": 3262,
         "hourly_uptime": [
           {
@@ -57923,8 +57923,8 @@
             "total": 4
           },
           {
-            "ok": 2,
-            "total": 3
+            "ok": 3,
+            "total": 4
           },
           {
             "ok": 2,
@@ -57995,18 +57995,18 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:07.408885+00:00",
+        "last_probe_ts": "2026-08-22T06:16:27.010636+00:00",
         "last_status": "ok"
       }
     },
     "openrouter": {
       "nvidia/nemotron-3.5-lightning:free": {
-        "uptime_7d": 0.2414,
-        "uptime_30d": 0.2414,
-        "rate_limited_7d": 66,
+        "uptime_7d": 0.2386,
+        "uptime_30d": 0.2386,
+        "rate_limited_7d": 67,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 327,
         "p95_latency_ms": 2121,
         "hourly_uptime": [
@@ -58036,7 +58036,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -58107,16 +58107,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.294003+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:21.466156+00:00",
+        "last_status": "rate_limited"
       },
       "poolside/laguna-s-2.1:free": {
-        "uptime_7d": 0.2184,
-        "uptime_30d": 0.2184,
-        "rate_limited_7d": 68,
+        "uptime_7d": 0.2159,
+        "uptime_30d": 0.2159,
+        "rate_limited_7d": 69,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 825,
         "p95_latency_ms": 1925,
         "hourly_uptime": [
@@ -58146,7 +58146,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -58217,16 +58217,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:02.611495+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:21.705454+00:00",
+        "last_status": "rate_limited"
       },
       "poolside/laguna-xs-2.1:free": {
-        "uptime_7d": 0.1839,
-        "uptime_30d": 0.1839,
-        "rate_limited_7d": 71,
+        "uptime_7d": 0.1818,
+        "uptime_30d": 0.1818,
+        "rate_limited_7d": 72,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 308,
         "p95_latency_ms": 608,
         "hourly_uptime": [
@@ -58256,7 +58256,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -58327,16 +58327,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.439507+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:21.857156+00:00",
+        "last_status": "rate_limited"
       },
       "dots-studio/dots-3-note-preview:free": {
-        "uptime_7d": 0.2414,
-        "uptime_30d": 0.2414,
-        "rate_limited_7d": 66,
+        "uptime_7d": 0.2386,
+        "uptime_30d": 0.2386,
+        "rate_limited_7d": 67,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 766,
         "p95_latency_ms": 1991,
         "hourly_uptime": [
@@ -58366,7 +58366,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -58437,16 +58437,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:00.988618+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:21.305722+00:00",
+        "last_status": "rate_limited"
       },
       "cohere/north-mini-code:free": {
-        "uptime_7d": 0.2414,
-        "uptime_30d": 0.2414,
-        "rate_limited_7d": 66,
+        "uptime_7d": 0.2386,
+        "uptime_30d": 0.2386,
+        "rate_limited_7d": 67,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 330,
         "p95_latency_ms": 627,
         "hourly_uptime": [
@@ -58476,7 +58476,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -58547,8 +58547,8 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.670120+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:22.044285+00:00",
+        "last_status": "rate_limited"
       },
       "z-ai/glm-5.2:free": {
         "uptime_7d": 0.0,
@@ -58661,12 +58661,12 @@
         "last_status": "rate_limited"
       },
       "nvidia/nemotron-3.5-content-safety:free": {
-        "uptime_7d": 0.2414,
-        "uptime_30d": 0.2414,
-        "rate_limited_7d": 66,
+        "uptime_7d": 0.2386,
+        "uptime_30d": 0.2386,
+        "rate_limited_7d": 67,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 206,
         "p95_latency_ms": 546,
         "hourly_uptime": [
@@ -58696,7 +58696,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -58767,16 +58767,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.833123+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:22.236936+00:00",
+        "last_status": "rate_limited"
       },
       "nvidia/nemotron-3-ultra-550b-a55b:free": {
-        "uptime_7d": 0.2414,
-        "uptime_30d": 0.2414,
-        "rate_limited_7d": 66,
+        "uptime_7d": 0.2386,
+        "uptime_30d": 0.2386,
+        "rate_limited_7d": 67,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 971,
         "p95_latency_ms": 62832,
         "hourly_uptime": [
@@ -58806,7 +58806,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -58877,16 +58877,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:11.851925+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:22.463227+00:00",
+        "last_status": "rate_limited"
       },
       "google/gemma-4-26b-a4b-it:free": {
-        "uptime_7d": 0.1149,
-        "uptime_30d": 0.1149,
-        "rate_limited_7d": 77,
+        "uptime_7d": 0.1136,
+        "uptime_30d": 0.1136,
+        "rate_limited_7d": 78,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 647,
         "p95_latency_ms": 6367,
         "hourly_uptime": [
@@ -58916,7 +58916,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -58987,16 +58987,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.919398+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.854082+00:00",
         "last_status": "rate_limited"
       },
       "google/gemma-4-31b-it:free": {
-        "uptime_7d": 0.0115,
-        "uptime_30d": 0.0115,
-        "rate_limited_7d": 86,
+        "uptime_7d": 0.0114,
+        "uptime_30d": 0.0114,
+        "rate_limited_7d": 87,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 396,
         "p95_latency_ms": 396,
         "hourly_uptime": [
@@ -59026,7 +59026,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -59097,7 +59097,7 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.010035+00:00",
+        "last_probe_ts": "2026-08-22T06:16:23.061064+00:00",
         "last_status": "rate_limited"
       },
       "google/lyria-3-pro-preview": {
@@ -59321,12 +59321,12 @@
         "last_status": "quota_exhausted"
       },
       "nvidia/nemotron-3-super-120b-a12b:free": {
-        "uptime_7d": 0.2414,
-        "uptime_30d": 0.2414,
-        "rate_limited_7d": 66,
+        "uptime_7d": 0.2386,
+        "uptime_30d": 0.2386,
+        "rate_limited_7d": 67,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 367,
         "p95_latency_ms": 897,
         "hourly_uptime": [
@@ -59356,7 +59356,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -59427,16 +59427,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.294770+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:23.256393+00:00",
+        "last_status": "rate_limited"
       },
       "openrouter/free": {
-        "uptime_7d": 0.2414,
-        "uptime_30d": 0.2414,
-        "rate_limited_7d": 66,
+        "uptime_7d": 0.2386,
+        "uptime_30d": 0.2386,
+        "rate_limited_7d": 67,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 470,
         "p95_latency_ms": 3574,
         "hourly_uptime": [
@@ -59466,7 +59466,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -59537,16 +59537,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:04.976345+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:23.512121+00:00",
+        "last_status": "rate_limited"
       },
       "nvidia/nemotron-3-nano-30b-a3b:free": {
-        "uptime_7d": 0.2414,
-        "uptime_30d": 0.2414,
-        "rate_limited_7d": 66,
+        "uptime_7d": 0.2386,
+        "uptime_30d": 0.2386,
+        "rate_limited_7d": 67,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 288,
         "p95_latency_ms": 835,
         "hourly_uptime": [
@@ -59576,7 +59576,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -59647,16 +59647,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:05.229561+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:23.663439+00:00",
+        "last_status": "rate_limited"
       },
       "nvidia/nemotron-nano-12b-v2-vl:free": {
-        "uptime_7d": 0.2069,
-        "uptime_30d": 0.2069,
-        "rate_limited_7d": 66,
+        "uptime_7d": 0.2045,
+        "uptime_30d": 0.2045,
+        "rate_limited_7d": 67,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 787,
         "p95_latency_ms": 30977,
         "hourly_uptime": [
@@ -59686,7 +59686,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -59757,16 +59757,16 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:05.487034+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:23.828281+00:00",
+        "last_status": "rate_limited"
       },
       "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
-        "uptime_7d": 0.2184,
-        "uptime_30d": 0.2184,
-        "rate_limited_7d": 66,
+        "uptime_7d": 0.2159,
+        "uptime_30d": 0.2159,
+        "rate_limited_7d": 67,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 2397,
         "p95_latency_ms": 5877,
         "hourly_uptime": [
@@ -59796,7 +59796,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -59867,8 +59867,8 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:03.831270+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:22.636288+00:00",
+        "last_status": "rate_limited"
       },
       "openai/gpt-oss-20b:free": {
         "uptime_7d": 0.1325,
@@ -59981,12 +59981,12 @@
         "last_status": "not_found"
       },
       "nvidia/nemotron-nano-9b-v2:free": {
-        "uptime_7d": 0.2414,
-        "uptime_30d": 0.2414,
-        "rate_limited_7d": 66,
+        "uptime_7d": 0.2386,
+        "uptime_30d": 0.2386,
+        "rate_limited_7d": 67,
         "down_reason_7d": "rate_limited",
-        "samples_7d": 87,
-        "samples_30d": 87,
+        "samples_7d": 88,
+        "samples_30d": 88,
         "p50_latency_ms": 289,
         "p95_latency_ms": 759,
         "hourly_uptime": [
@@ -60016,7 +60016,7 @@
           },
           {
             "ok": 0,
-            "total": 2
+            "total": 3
           },
           {
             "ok": 0,
@@ -60087,8 +60087,8 @@
             "total": 4
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:05.672326+00:00",
-        "last_status": "ok"
+        "last_probe_ts": "2026-08-22T06:16:24.042190+00:00",
+        "last_status": "rate_limited"
       },
       "liquid/lfm-2.5-2.6b:free": {
         "uptime_7d": 0.0,
@@ -60205,10 +60205,10 @@
         "uptime_30d": 1.0,
         "rate_limited_7d": 0,
         "down_reason_7d": null,
-        "samples_7d": 30,
-        "samples_30d": 30,
-        "p50_latency_ms": 1078,
-        "p95_latency_ms": 4200,
+        "samples_7d": 31,
+        "samples_30d": 31,
+        "p50_latency_ms": 1080,
+        "p95_latency_ms": 2014,
         "hourly_uptime": [
           {
             "ok": 2,
@@ -60235,8 +60235,8 @@
             "total": 2
           },
           {
-            "ok": 1,
-            "total": 1
+            "ok": 2,
+            "total": 2
           },
           {
             "ok": 1,
@@ -60307,7 +60307,7 @@
             "total": 2
           }
         ],
-        "last_probe_ts": "2026-08-22T05:15:01.289716+00:00",
+        "last_probe_ts": "2026-08-22T06:16:22.175065+00:00",
         "last_status": "ok"
       },
       "thinkingmachines/inkling-small:free": {
