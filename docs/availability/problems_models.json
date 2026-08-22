@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T23:23:25.219307+00:00",
+  "updated": "2026-08-22T01:12:20.128502+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -116,13 +116,6 @@
           "context": 128000,
           "limits": "20 req/min · 50 req/day",
           "params_b": 9.0
-        },
-        {
-          "id": "openai/gpt-oss-20b:free",
-          "name": "OpenAI: gpt-oss-20b (free)",
-          "context": 131072,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": 20.0
         }
       ],
       "error": null
@@ -246,6 +239,13 @@
         {
           "id": "nvidia/llama-3.3-nemotron-super-49b-v1",
           "name": "nvidia/llama-3.3-nemotron-super-49b-v1",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 49.0
+        },
+        {
+          "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+          "name": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
           "context": null,
           "limits": "40 req/min",
           "params_b": 49.0
@@ -631,18 +631,18 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
           "id": "nemotron-3-ultra",
           "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
         }
       ],
       "error": null
