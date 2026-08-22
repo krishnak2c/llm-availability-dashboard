@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22T08:29:07.510680+00:00",
+  "updated": "2026-08-22T09:26:00.314110+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -372,6 +372,20 @@
       "url": "https://pollinations.ai",
       "models": [
         {
+          "id": "vendouple/gpt-5.6-luna",
+          "name": "vendouple/gpt-5.6-luna",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "gggff123/gpt-5-nano",
+          "name": "gggff123/gpt-5-nano",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "Lorodn4x/qwen3.8-max",
           "name": "Lorodn4x/qwen3.8-max",
           "context": null,
@@ -547,6 +561,13 @@
           "params_b": null
         },
         {
+          "id": "thinkingmachines/inkling:free",
+          "name": "Thinking Machines: Inkling (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "poolside/laguna-xs-2.1:free",
           "name": "Poolside: Laguna XS 2.1 (free)",
           "context": 262144,
@@ -610,18 +631,18 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
