@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22T20:22:01.303113+00:00",
+  "updated": "2026-08-22T21:21:17.419286+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -379,6 +379,13 @@
       "url": "https://pollinations.ai",
       "models": [
         {
+          "id": "pegalink/ox-alpha-agent",
+          "name": "pegalink/ox-alpha-agent",
+          "context": 1000000,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "pegalink/gemini-3.5-flash-lite",
           "name": "pegalink/gemini-3.5-flash-lite",
           "context": 1000000,
@@ -463,20 +470,6 @@
           "params_b": 120.0
         },
         {
-          "id": "Spit-fires/muse-glimmer",
-          "name": "Spit-fires/muse-glimmer",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "MarcosFRG/nemotron-3.5-lightning-30b",
-          "name": "MarcosFRG/nemotron-3.5-lightning-30b",
-          "context": 1048576,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": 30.0
-        },
-        {
           "id": "YoannDev90/muse-glimmer-30b:free",
           "name": "YoannDev90/muse-glimmer-30b:free",
           "context": null,
@@ -494,13 +487,6 @@
           "id": "vendouple/qwen-3.8-max",
           "name": "vendouple/qwen-3.8-max",
           "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "MarcosFRG/glm-4.6v-flash",
-          "name": "MarcosFRG/glm-4.6v-flash",
-          "context": 131072,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
