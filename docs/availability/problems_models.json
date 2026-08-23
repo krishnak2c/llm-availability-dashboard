@@ -1,10 +1,17 @@
 {
-  "updated": "2026-08-23T22:20:45.072985+00:00",
+  "updated": "2026-08-23T23:20:40.089446+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
+        {
+          "id": "stealth/ox-alpha",
+          "name": "Ox Alpha",
+          "context": 1048576,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
         {
           "id": "dots-studio/dots-3-note-preview:free",
           "name": "Dots Studio: Dots3-Note Preview (free)",
@@ -364,6 +371,13 @@
       "name": "Pollinations",
       "url": "https://pollinations.ai",
       "models": [
+        {
+          "id": "rodrigookk/grok4.20",
+          "name": "rodrigookk/grok4.20",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
         {
           "id": "pegalink/gemini-3.7-flash-exp",
           "name": "pegalink/gemini-3.7-flash-exp",
