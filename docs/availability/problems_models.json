@@ -1,10 +1,17 @@
 {
-  "updated": "2026-08-24T17:30:38.102597+00:00",
+  "updated": "2026-08-24T18:39:22.562621+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
+        {
+          "id": "stealth/ox-alpha",
+          "name": "Ox Alpha",
+          "context": 1048576,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
         {
           "id": "dots-studio/dots-3-note-preview:free",
           "name": "Dots Studio: Dots3-Note Preview (free)",
@@ -491,13 +498,6 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "DeepSeek-V4-Flash-0731",
-          "name": "DeepSeek-V4-Flash-0731",
-          "context": 400000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "gemini-3.1-flash-lite",
           "name": "gemini-3.1-flash-lite",
           "context": 256000,
@@ -510,13 +510,6 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 8.0
-        },
-        {
-          "id": "minimax-m2.7",
-          "name": "minimax-m2.7",
-          "context": 180000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
         }
       ],
       "error": null
@@ -563,6 +556,13 @@
         {
           "id": "thinkingmachines/inkling:free",
           "name": "Thinking Machines: Inkling (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "poolside/laguna-xs-2.1:free",
+          "name": "Poolside: Laguna XS 2.1 (free)",
           "context": 262144,
           "limits": "free tier",
           "params_b": null

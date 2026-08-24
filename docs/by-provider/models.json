@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24T17:30:38.102597+00:00",
+  "updated": "2026-08-24T18:39:22.562621+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -111,6 +111,20 @@
       "url": "https://console.groq.com",
       "models": [
         {
+          "id": "groq/compound",
+          "name": "groq/compound",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
           "id": "groq/compound-mini",
           "name": "groq/compound-mini",
           "context": 131072,
@@ -131,13 +145,6 @@
           "params_b": 27.0
         },
         {
-          "id": "groq/compound",
-          "name": "groq/compound",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
           "context": 131072,
@@ -149,13 +156,6 @@
             "reasoning"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -995,6 +995,13 @@
       "url": "https://pollinations.ai",
       "models": [
         {
+          "id": "iotserver24/deepseek-fast",
+          "name": "iotserver24/deepseek-fast",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "MarcosFRG/qwen3.8-2.4t-a95b",
           "name": "MarcosFRG/qwen3.8-2.4t-a95b",
           "context": 1048576,
@@ -1163,13 +1170,6 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "DeepSeek-V4-Flash-0731",
-          "name": "DeepSeek-V4-Flash-0731",
-          "context": 400000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
@@ -1189,13 +1189,6 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 8.0
-        },
-        {
-          "id": "minimax-m2.7",
-          "name": "minimax-m2.7",
-          "context": 180000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
         }
       ],
       "error": null
@@ -1401,25 +1394,18 @@
           "params_b": null
         },
         {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
           "params_b": 20.0
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         },
         {
           "id": "minimax-m3",
@@ -1436,11 +1422,18 @@
           "params_b": 31.0
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
+          "params_b": null
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
         }
       ],
       "error": null

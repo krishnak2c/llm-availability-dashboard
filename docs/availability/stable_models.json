@@ -1,24 +1,17 @@
 {
-  "updated": "2026-08-24T17:30:38.102597+00:00",
+  "updated": "2026-08-24T18:39:22.562621+00:00",
   "providers": {
-    "openrouter": {
-      "name": "OpenRouter",
-      "url": "https://openrouter.ai",
-      "models": [
-        {
-          "id": "stealth/ox-alpha",
-          "name": "Ox Alpha",
-          "context": 1048576,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
         {
           "id": "groq/compound-mini",
           "name": "groq/compound-mini",
@@ -51,13 +44,6 @@
             "reasoning"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -763,13 +749,6 @@
           "params_b": null
         },
         {
-          "id": "poolside/laguna-xs-2.1:free",
-          "name": "Poolside: Laguna XS 2.1 (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "cohere/north-mini-code:free",
           "name": "Cohere: North Mini Code (free)",
           "context": 256000,
@@ -833,18 +812,18 @@
           "params_b": null
         },
         {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
           "params_b": 20.0
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
         },
         {
           "id": "minimax-m3",
@@ -861,11 +840,11 @@
           "params_b": 31.0
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
+          "params_b": 120.0
         }
       ],
       "error": null
