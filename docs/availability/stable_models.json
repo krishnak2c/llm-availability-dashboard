@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24T13:51:37.040152+00:00",
+  "updated": "2026-08-24T14:41:14.217634+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -19,26 +19,6 @@
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 20.0
-        },
         {
           "id": "qwen/qwen3.6-27b",
           "name": "qwen/qwen3.6-27b",
@@ -60,6 +40,13 @@
           "params_b": 7.0
         },
         {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
+        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -71,6 +58,19 @@
             "reasoning"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 20.0
         }
       ],
       "error": null
@@ -735,13 +735,6 @@
           "params_b": null
         },
         {
-          "id": "stepfun/step-3.7-flash:free",
-          "name": "StepFun: Step 3.7 Flash (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "tencent/hy3:free",
           "name": "Tencent: Hy3 (free)",
           "context": 262144,
@@ -840,6 +833,13 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
           "id": "minimax-m3",
           "name": "minimax-m3",
           "context": null,
@@ -852,13 +852,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
         },
         {
           "id": "nemotron-3-super",
@@ -875,11 +868,11 @@
           "params_b": 20.0
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
-          "params_b": 120.0
+          "params_b": 30.0
         }
       ],
       "error": null
