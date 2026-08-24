@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24T19:29:10.670918+00:00",
+  "updated": "2026-08-24T20:29:47.155870+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
@@ -26,17 +26,11 @@
           "params_b": 7.0
         },
         {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
           "context": 131072,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
+          "params_b": null
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -52,11 +46,17 @@
           "params_b": 20.0
         },
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
           "context": 131072,
           "limits": "varies per model",
-          "params_b": null
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         }
       ],
       "error": null
@@ -812,27 +812,6 @@
           "params_b": 30.0
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "minimax-m3",
           "name": "minimax-m3",
           "context": null,
@@ -845,6 +824,27 @@
           "context": null,
           "limits": "free tier",
           "params_b": 20.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
