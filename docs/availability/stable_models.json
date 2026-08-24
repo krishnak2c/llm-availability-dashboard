@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24T11:27:57.770520+00:00",
+  "updated": "2026-08-24T12:49:37.306849+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -19,6 +19,33 @@
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
+        {
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
         {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
@@ -44,33 +71,6 @@
             "reasoning"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
         }
       ],
       "error": null
@@ -840,11 +840,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
+          "params_b": 20.0
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -852,6 +852,13 @@
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         },
         {
           "id": "minimax-m3",
@@ -868,18 +875,11 @@
           "params_b": 120.0
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
+          "params_b": 31.0
         }
       ],
       "error": null
