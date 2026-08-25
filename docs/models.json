@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25T08:41:25.633322+00:00",
+  "updated": "2026-08-25T09:34:37.787332+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -18,6 +18,13 @@
           "context": 512000,
           "limits": "20 req/min · 50 req/day",
           "params_b": null
+        },
+        {
+          "id": "liquid/lfm-2.5-2.6b:free",
+          "name": "LiquidAI: LFM2.5-2.6B (free)",
+          "context": 65536,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 2.6
         },
         {
           "id": "nvidia/nemotron-3.5-lightning:free",
@@ -90,13 +97,6 @@
           "params_b": 26.0
         },
         {
-          "id": "google/gemma-4-31b-it:free",
-          "name": "Google: Gemma 4 31B (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": 31.0
-        },
-        {
           "id": "google/lyria-3-pro-preview",
           "name": "Google: Lyria 3 Pro Preview",
           "context": 1048576,
@@ -146,13 +146,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
           "id": "qwen/qwen3.6-27b",
           "name": "qwen/qwen3.6-27b",
           "context": 131072,
@@ -171,20 +164,6 @@
           "context": 4000,
           "limits": "varies per model",
           "mode": "audio_speech",
-          "params_b": null
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "groq/compound",
-          "name": "groq/compound",
-          "context": 131072,
-          "limits": "varies per model",
           "params_b": null
         },
         {
@@ -214,12 +193,33 @@
           "params_b": 20.0
         },
         {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
+        {
+          "id": "groq/compound",
+          "name": "groq/compound",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
+        {
           "id": "canopylabs/orpheus-v1-english",
           "name": "canopylabs/orpheus-v1-english",
           "context": 4000,
           "limits": "varies per model",
           "mode": "audio_speech",
           "params_b": null
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -228,13 +228,6 @@
       "name": "Cerebras",
       "url": "https://cloud.cerebras.ai",
       "models": [
-        {
-          "id": "gemma-4-31b",
-          "name": "gemma-4-31b",
-          "context": null,
-          "limits": "1M tokens/day",
-          "params_b": 31.0
-        },
         {
           "id": "gpt-oss-120b",
           "name": "gpt-oss-120b",
@@ -247,6 +240,13 @@
             "reasoning"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "gemma-4-31b",
+          "name": "gemma-4-31b",
+          "context": null,
+          "limits": "1M tokens/day",
+          "params_b": 31.0
         }
       ],
       "error": null
@@ -365,13 +365,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 7.0
-        },
-        {
-          "id": "baai/bge-m3",
-          "name": "baai/bge-m3",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
         },
         {
           "id": "bigcode/starcoder2-15b",
@@ -764,13 +757,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 8.0
-        },
-        {
-          "id": "nvidia/nemoretriever-parse",
-          "name": "nvidia/nemoretriever-parse",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
         },
         {
           "id": "nvidia/nemotron-3-nano-30b-a3b",
@@ -2878,25 +2864,18 @@
           "params_b": 31.0
         },
         {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "minimax-m3",
           "name": "minimax-m3",
           "context": null,
           "limits": "free tier",
           "params_b": null
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
         },
         {
           "id": "gpt-oss:120b",
@@ -2906,8 +2885,8 @@
           "params_b": 120.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -2918,6 +2897,13 @@
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
         }
       ],
       "error": null
