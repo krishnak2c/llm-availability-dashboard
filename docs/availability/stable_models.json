@@ -1,23 +1,10 @@
 {
-  "updated": "2026-08-25T21:27:37.418973+00:00",
+  "updated": "2026-08-25T22:26:56.503904+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
-        {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
-        },
         {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
@@ -32,6 +19,26 @@
           "params_b": 120.0
         },
         {
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
           "context": 131072,
@@ -43,13 +50,6 @@
             "reasoning"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
         },
         {
           "id": "groq/compound-mini",
@@ -823,6 +823,13 @@
           "params_b": 120.0
         },
         {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
           "id": "nemotron-3-super",
           "name": "nemotron-3-super",
           "context": null,
@@ -835,13 +842,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": null
-        },
-        {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
         },
         {
           "id": "gpt-oss:20b",
