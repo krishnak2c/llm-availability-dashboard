@@ -4,12 +4,12 @@
     "nvidia-minimaxm3",
     "kilo-hy3",
     "zen-hy3",
-    "nvidia-inkling",
     "groq-qwen36",
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
     "nvidia-step37flash",
-    "kilo-step37flash"
+    "kilo-step37flash",
+    "ollama-gemma431b"
   ],
   "chain": [
     {
@@ -35,12 +35,6 @@
       "baseUrl": "https://opencode.ai/zen/v1",
       "model": "hy3-free",
       "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
-    },
-    {
-      "id": "nvidia-inkling",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "thinkingmachines/inkling",
-      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "groq-qwen36",
@@ -71,12 +65,19 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "stepfun/step-3.7-flash:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "ollama-gemma431b",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "gemma4:31b",
+      "apiKeyEnv": "OLLAMA_API_KEY"
     }
   ],
   "modelAllowlist": [
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
+    "gemma4:31b",
     "hy3",
     "hy3-free",
     "laguna-s-2.1-free",
