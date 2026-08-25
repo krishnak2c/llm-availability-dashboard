@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25T14:44:09.538767+00:00",
+  "updated": "2026-08-25T15:41:40.682721+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -331,35 +331,17 @@
       ],
       "error": null
     },
-    "cloudflare": {
-      "name": "Cloudflare AI",
-      "url": "https://developers.cloudflare.com/workers-ai/",
-      "models": [
-        {
-          "id": "@cf/zai-org/glm-4.7-flash",
-          "name": "@cf/zai-org/glm-4.7-flash",
-          "context": 131072,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "@cf/qwen/qwen3.8-27b",
-          "name": "@cf/qwen/qwen3.8-27b",
-          "context": null,
-          "limits": "10k neurons/day",
-          "params_b": 27.0
-        }
-      ],
-      "error": null
-    },
     "pollinations": {
       "name": "Pollinations",
       "url": "https://pollinations.ai",
       "models": [
+        {
+          "id": "JustScriptzz/kimi-k2.7-code",
+          "name": "JustScriptzz/kimi-k2.7-code",
+          "context": 1000000,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
         {
           "id": "MarcosFRG/qwen3.8-2.4t-a95b",
           "name": "MarcosFRG/qwen3.8-2.4t-a95b",
