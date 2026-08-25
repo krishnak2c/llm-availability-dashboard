@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25T12:46:04.345426+00:00",
+  "updated": "2026-08-25T13:50:07.992216+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -76,20 +76,6 @@
           "params_b": 26.0
         },
         {
-          "id": "google/lyria-3-pro-preview",
-          "name": "Google: Lyria 3 Pro Preview",
-          "context": 1048576,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": null
-        },
-        {
-          "id": "google/lyria-3-clip-preview",
-          "name": "Google: Lyria 3 Clip Preview",
-          "context": 1048576,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": null
-        },
-        {
           "id": "minimax/minimax-m2.7:free",
           "name": "MiniMax: MiniMax M2.7 (free)",
           "context": 196608,
@@ -125,26 +111,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
           "id": "qwen/qwen3.6-27b",
           "name": "qwen/qwen3.6-27b",
           "context": 131072,
@@ -156,6 +122,20 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -171,11 +151,17 @@
           "params_b": 20.0
         },
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
           "limits": "varies per model",
-          "params_b": 7.0
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "groq/compound",
@@ -1471,18 +1457,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
+          "params_b": null
         },
         {
           "id": "gpt-oss:120b",
@@ -1492,15 +1471,8 @@
           "params_b": 120.0
         },
         {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -1513,11 +1485,25 @@
           "params_b": 20.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
+          "id": "minimax-m3",
+          "name": "minimax-m3",
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         }
       ],
       "error": null
