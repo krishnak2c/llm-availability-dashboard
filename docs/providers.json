@@ -4,8 +4,8 @@
     "nvidia-minimaxm3",
     "kilo-hy3",
     "zen-hy3",
-    "groq-qwen36",
     "kilo-minimaxminimaxm3",
+    "groq-qwen36",
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
     "nvidia-step37flash",
@@ -37,16 +37,16 @@
       "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
     },
     {
-      "id": "groq-qwen36",
-      "baseUrl": "https://api.groq.com/openai/v1",
-      "model": "qwen/qwen3.6-27b",
-      "apiKeyEnv": "GROQ_API_KEY"
-    },
-    {
       "id": "kilo-minimaxminimaxm3",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "minimax/minimax-m3:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "groq-qwen36",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "model": "qwen/qwen3.6-27b",
+      "apiKeyEnv": "GROQ_API_KEY"
     },
     {
       "id": "mistral-mistralmedium35",
