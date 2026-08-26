@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26T08:42:27.718061+00:00",
+  "updated": "2026-08-26T09:40:42.485134+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -153,32 +153,11 @@
           "params_b": 26.0
         },
         {
-          "id": "meta/llama-3.1-70b-instruct",
-          "name": "meta/llama-3.1-70b-instruct",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 70.0
-        },
-        {
           "id": "meta/llama-3.2-11b-vision-instruct",
           "name": "meta/llama-3.2-11b-vision-instruct",
           "context": null,
           "limits": "40 req/min",
           "params_b": 11.0
-        },
-        {
-          "id": "meta/llama-3.2-1b-instruct",
-          "name": "meta/llama-3.2-1b-instruct",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 1.0
-        },
-        {
-          "id": "meta/llama-3.2-3b-instruct",
-          "name": "meta/llama-3.2-3b-instruct",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 3.0
         },
         {
           "id": "meta/llama-3.2-90b-vision-instruct",
@@ -223,27 +202,6 @@
           "params_b": 8.0
         },
         {
-          "id": "nvidia/llama-3.1-nemotron-nano-vl-8b-v1",
-          "name": "nvidia/llama-3.1-nemotron-nano-vl-8b-v1",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 8.0
-        },
-        {
-          "id": "nvidia/llama-3.3-nemotron-super-49b-v1",
-          "name": "nvidia/llama-3.3-nemotron-super-49b-v1",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 49.0
-        },
-        {
-          "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
-          "name": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 49.0
-        },
-        {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
           "name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
           "context": null,
@@ -256,13 +214,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 550.0
-        },
-        {
-          "id": "nvidia/nemotron-nano-12b-v2-vl",
-          "name": "nvidia/nemotron-nano-12b-v2-vl",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 12.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -486,13 +437,6 @@
           "params_b": 120.0
         },
         {
-          "id": "chigwell/gemini-3.7-flash",
-          "name": "chigwell/gemini-3.7-flash",
-          "context": 1000000,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "Spit-fires/muse-glimmer",
           "name": "Spit-fires/muse-glimmer",
           "context": null,
@@ -647,6 +591,13 @@
           "params_b": null
         },
         {
+          "id": "poolside/laguna-s-2.1:free",
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "liquid/lfm-2.5-2.6b:free",
           "name": "LiquidAI: LFM2.5-2.6B (free)",
           "context": 65536,
@@ -731,18 +682,18 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
           "id": "nemotron-3-ultra",
           "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
         }
       ],
       "error": null

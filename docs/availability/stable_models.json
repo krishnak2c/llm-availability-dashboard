@@ -1,10 +1,17 @@
 {
-  "updated": "2026-08-26T08:42:27.718061+00:00",
+  "updated": "2026-08-26T09:40:42.485134+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
         {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
@@ -17,26 +24,6 @@
             "reasoning"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
         },
         {
           "id": "groq/compound-mini",
@@ -57,6 +44,19 @@
             "reasoning"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         }
       ],
       "error": null
@@ -65,13 +65,6 @@
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
-        {
-          "id": "meta/llama-3.1-8b-instruct",
-          "name": "meta/llama-3.1-8b-instruct",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 8.0
-        },
         {
           "id": "nvidia/ising-calibration-1.5-31b",
           "name": "nvidia/ising-calibration-1.5-31b",
@@ -120,20 +113,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 30.0
-        },
-        {
-          "id": "nvidia/nemotron-mini-4b-instruct",
-          "name": "nvidia/nemotron-mini-4b-instruct",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 4.0
-        },
-        {
-          "id": "nvidia/nvidia-nemotron-nano-9b-v2",
-          "name": "nvidia/nvidia-nemotron-nano-9b-v2",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 9.0
         },
         {
           "id": "nvidia/riva-translate-4b-instruct-v1.1",
@@ -677,13 +656,6 @@
           "params_b": null
         },
         {
-          "id": "poolside/laguna-s-2.1:free",
-          "name": "Poolside: Laguna S 2.1 (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "dots-studio/dots-3-note-preview:free",
           "name": "Dots Studio: Dots3-Note Preview (free)",
           "context": 512000,
@@ -775,6 +747,13 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
@@ -789,22 +768,15 @@
           "params_b": 30.0
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "minimax-m3",
+          "name": "minimax-m3",
           "context": null,
           "limits": "free tier",
           "params_b": null
