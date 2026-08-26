@@ -1,5 +1,6 @@
 {
   "order": [
+    "groq-qwen38",
     "ollama-minimaxm3",
     "nvidia-minimaxm3",
     "kilo-minimaxminimaxm3",
@@ -8,10 +9,15 @@
     "groq-qwen36",
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
-    "nvidia-step37flash",
-    "kilo-step37flash"
+    "nvidia-step37flash"
   ],
   "chain": [
+    {
+      "id": "groq-qwen38",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "model": "qwen/qwen3.8-27b",
+      "apiKeyEnv": "GROQ_API_KEY"
+    },
     {
       "id": "ollama-minimaxm3",
       "baseUrl": "https://ollama.com/v1",
@@ -65,12 +71,6 @@
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "stepfun-ai/step-3.7-flash",
       "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "kilo-step37flash",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "stepfun/step-3.7-flash:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -89,9 +89,9 @@
     "nemotron-3-ultra-free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
+    "qwen/qwen3.8-27b",
     "qwen/qwen3.8-27b-free",
     "stepfun-ai/step-3.7-flash",
-    "stepfun/step-3.7-flash:free",
     "tencent/hy3:free",
     "thinkingmachines/inkling",
     "z-ai/glm-5.2"
