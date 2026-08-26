@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26T10:34:26.800990+00:00",
+  "updated": "2026-08-26T11:29:10.684770+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -277,6 +277,19 @@
           "name": "devstral-2512",
           "context": null,
           "limits": "1 req/s · 1B tok/month",
+          "params_b": null
+        },
+        {
+          "id": "mistral-large-2512",
+          "name": "mistral-large-2512",
+          "context": 262144,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
           "params_b": null
         },
         {
