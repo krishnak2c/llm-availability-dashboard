@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26T04:38:53.382226+00:00",
+  "updated": "2026-08-26T05:33:44.209699+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
@@ -26,13 +26,6 @@
           "params_b": 7.0
         },
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -57,6 +50,13 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
         }
       ],
       "error": null
@@ -669,13 +669,6 @@
       "url": "https://pollinations.ai",
       "models": [
         {
-          "id": "Spit-fires/muse-glimmer",
-          "name": "Spit-fires/muse-glimmer",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "chigwell/llm7-fast",
           "name": "chigwell/llm7-fast",
           "context": null,
@@ -809,6 +802,13 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "minimax-m3",
+          "name": "minimax-m3",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
@@ -832,13 +832,6 @@
         {
           "id": "nemotron-3-super",
           "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
           "context": null,
           "limits": "free tier",
           "params_b": null
