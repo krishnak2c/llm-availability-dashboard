@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-27T04:18:09.048215+00:00",
+  "updated": "2026-08-27T16:07:30.274042+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -60,13 +60,6 @@
           "context": 256000,
           "limits": "20 req/min · 50 req/day",
           "params_b": 30.0
-        },
-        {
-          "id": "google/gemma-4-26b-a4b-it:free",
-          "name": "Google: Gemma 4 26B A4B  (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": 26.0
         },
         {
           "id": "minimax/minimax-m2.7:free",
@@ -450,6 +443,13 @@
           "params_b": 30.0
         },
         {
+          "id": "morriszdweck/osaii-api-smart",
+          "name": "morriszdweck/osaii-api-smart",
+          "context": 262144,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "morriszdweck/osaii-api-fast",
           "name": "morriszdweck/osaii-api-fast",
           "context": 262144,
@@ -474,6 +474,13 @@
           "id": "MarcosFRG/glm-4.6v-flash",
           "name": "MarcosFRG/glm-4.6v-flash",
           "context": 131072,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "sharktide/inferenceport-ai-gemini-2.5-flash",
+          "name": "sharktide/inferenceport-ai-gemini-2.5-flash",
+          "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -604,18 +611,18 @@
           "params_b": 550.0
         },
         {
-          "id": "minimax/minimax-m3:free",
-          "name": "MiniMax: MiniMax M3 (free)",
-          "context": 1048576,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
           "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
           "context": 256000,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "minimax/minimax-m3:free",
+          "name": "MiniMax: MiniMax M3 (free)",
+          "context": 1048576,
+          "limits": "free tier",
+          "params_b": null
         },
         {
           "id": "minimax/minimax-m2.7:free",
