@@ -1,10 +1,17 @@
 {
-  "updated": "2026-08-27T16:07:30.274042+00:00",
+  "updated": "2026-08-28T01:17:00.599965+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
         {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
@@ -17,6 +24,19 @@
             "reasoning"
           ],
           "params_b": 20.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "allam-2-7b",
@@ -44,26 +64,6 @@
             "reasoning"
           ],
           "params_b": 27.0
-        },
-        {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
         }
       ],
       "error": null
@@ -72,6 +72,13 @@
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
+        {
+          "id": "meta/muse-glimmer-30b",
+          "name": "meta/muse-glimmer-30b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 30.0
+        },
         {
           "id": "nvidia/ising-calibration-1.5-31b",
           "name": "nvidia/ising-calibration-1.5-31b",
@@ -650,13 +657,6 @@
           "params_b": null
         },
         {
-          "id": "nvidia/nemotron-3.5-lightning:free",
-          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "cohere/north-mini-code:free",
           "name": "Cohere: North Mini Code (free)",
           "context": 256000,
@@ -713,11 +713,18 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "minimax-m3",
+          "name": "minimax-m3",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
+          "params_b": null
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
         },
         {
           "id": "nemotron-3-super",
@@ -727,25 +734,11 @@
           "params_b": null
         },
         {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
+          "params_b": 30.0
         }
       ],
       "error": null
