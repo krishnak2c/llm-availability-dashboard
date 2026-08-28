@@ -3,13 +3,13 @@
     "groq-qwen38",
     "ollama-minimaxm3",
     "nvidia-minimaxm3",
-    "kilo-minimaxminimaxm3",
     "zen-hy3",
     "kilo-hy3",
+    "kilo-minimaxminimaxm3",
     "groq-qwen36",
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
-    "nvidia-step37flash"
+    "openrouter-inclusionailing30flashfin"
   ],
   "chain": [
     {
@@ -31,12 +31,6 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "kilo-minimaxminimaxm3",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "minimax/minimax-m3:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
       "id": "zen-hy3",
       "baseUrl": "https://opencode.ai/zen/v1",
       "model": "hy3-free",
@@ -46,6 +40,12 @@
       "id": "kilo-hy3",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "tencent/hy3:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "kilo-minimaxminimaxm3",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "minimax/minimax-m3:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
@@ -67,10 +67,10 @@
       "apiKeyEnv": "MISTRAL_API_KEY"
     },
     {
-      "id": "nvidia-step37flash",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "stepfun-ai/step-3.7-flash",
-      "apiKeyEnv": "NIM_API_KEY"
+      "id": "openrouter-inclusionailing30flashfin",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "inclusionai/ling-3.0-flash-fin:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -79,6 +79,7 @@
     "deepseek/deepseek-v4-pro-free",
     "hy3",
     "hy3-free",
+    "inclusionai/ling-3.0-flash-fin:free",
     "laguna-s-2.1-free",
     "mimo-v2.5-free",
     "minimax-m3",
@@ -91,7 +92,6 @@
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b",
     "qwen/qwen3.8-27b-free",
-    "stepfun-ai/step-3.7-flash",
     "tencent/hy3:free",
     "thinkingmachines/inkling",
     "z-ai/glm-5.2"

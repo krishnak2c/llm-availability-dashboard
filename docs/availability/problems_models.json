@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28T13:50:26.279733+00:00",
+  "updated": "2026-08-28T23:24:58.786710+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -113,6 +113,13 @@
         {
           "id": "deepseek-ai/deepseek-v4-flash-0731",
           "name": "deepseek-ai/deepseek-v4-flash-0731",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
+          "id": "deepseek-ai/deepseek-v4-pro-0813",
+          "name": "deepseek-ai/deepseek-v4-pro-0813",
           "context": null,
           "limits": "40 req/min",
           "params_b": null
@@ -422,13 +429,6 @@
           "params_b": 30.0
         },
         {
-          "id": "morriszdweck/osaii-api-smart",
-          "name": "morriszdweck/osaii-api-smart",
-          "context": 262144,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "vendouple/laguna-s-2.1:free",
           "name": "vendouple/laguna-s-2.1:free",
           "context": null,
@@ -484,6 +484,13 @@
       "name": "LLM7",
       "url": "https://llm7.io",
       "models": [
+        {
+          "id": "deepseek-v4-flash",
+          "name": "deepseek-v4-flash",
+          "context": 1048576,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
         {
           "id": "gemini-3.1-flash-lite",
           "name": "gemini-3.1-flash-lite",
@@ -641,6 +648,13 @@
         {
           "id": "nemotron-3.5-lightning-free",
           "name": "nemotron-3.5-lightning-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "laguna-s-2.1-free",
+          "name": "laguna-s-2.1-free",
           "context": null,
           "limits": "free tier",
           "params_b": null
