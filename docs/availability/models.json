@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28T01:17:00.599965+00:00",
+  "updated": "2026-08-28T13:50:26.279733+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -144,18 +144,18 @@
           "params_b": 120.0
         },
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
           "context": 131042,
           "limits": "varies per model",
           "params_b": 27.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         },
         {
           "id": "qwen/qwen3.6-27b",
@@ -356,13 +356,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": null
-        },
-        {
-          "id": "stepfun-ai/step-3.7-flash",
-          "name": "stepfun-ai/step-3.7-flash",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
         }
       ],
       "error": null
@@ -528,15 +521,25 @@
         {
           "id": "voxtral-small-2507",
           "name": "voxtral-small-2507",
-          "context": null,
+          "context": 32768,
           "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
           "params_b": null
         },
         {
           "id": "voxtral-small-latest",
           "name": "voxtral-small-2507",
-          "context": null,
+          "context": 32768,
           "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
           "params_b": null
         },
         {
@@ -568,15 +571,27 @@
         {
           "id": "ministral-3b-2512",
           "name": "ministral-3b-2512",
-          "context": null,
+          "context": 131072,
           "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
           "params_b": 3.0
         },
         {
           "id": "ministral-3b-latest",
           "name": "ministral-3b-2512",
-          "context": null,
+          "context": 131072,
           "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
           "params_b": 3.0
         },
         {
@@ -608,15 +623,27 @@
         {
           "id": "ministral-14b-2512",
           "name": "ministral-14b-2512",
-          "context": null,
+          "context": 262144,
           "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
           "params_b": 14.0
         },
         {
           "id": "ministral-14b-latest",
           "name": "ministral-14b-2512",
-          "context": null,
+          "context": 262144,
           "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
           "params_b": 14.0
         },
         {
@@ -668,8 +695,15 @@
         {
           "id": "mistral-medium-3",
           "name": "mistral-medium-latest",
-          "context": null,
+          "context": 262144,
           "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -931,13 +965,6 @@
       "url": "https://pollinations.ai",
       "models": [
         {
-          "id": "nemotron-3.5-lightning",
-          "name": "nemotron-3.5-lightning",
-          "context": 262144,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "MarcosFRG/qwen3.8-flash-next",
           "name": "MarcosFRG/qwen3.8-flash-next",
           "context": 1048576,
@@ -952,9 +979,16 @@
           "params_b": null
         },
         {
-          "id": "JustScriptzz/notion-agent",
-          "name": "JustScriptzz/notion-agent",
+          "id": "JustScriptzz/claude-opus-5",
+          "name": "JustScriptzz/claude-opus-5",
           "context": 1000000,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "JustScriptzz/claude-haiku-4-5",
+          "name": "JustScriptzz/claude-haiku-4-5",
+          "context": 195000,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -1050,6 +1084,13 @@
           "params_b": null
         },
         {
+          "id": "JustScriptzz/gemini-3.6-flash",
+          "name": "JustScriptzz/gemini-3.6-flash",
+          "context": 3000000,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "JustScriptzz/kimi-k3",
           "name": "JustScriptzz/kimi-k3",
           "context": 1000000,
@@ -1060,20 +1101,6 @@
           "id": "JustScriptzz/deepseek-v4-flash-0731",
           "name": "JustScriptzz/deepseek-v4-flash-0731",
           "context": 1310720,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "JustScriptzz/deepseek-v4-pro-0813",
-          "name": "JustScriptzz/deepseek-v4-pro-0813",
-          "context": 1048576,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "JustScriptzz/minimax-m3",
-          "name": "JustScriptzz/minimax-m3",
-          "context": 1000000,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -1090,13 +1117,6 @@
           "context": 131072,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": 120.0
-        },
-        {
-          "id": "Lorodn4x/minimax-m3",
-          "name": "Lorodn4x/minimax-m3",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
         },
         {
           "id": "Spit-fires/muse-glimmer",
@@ -1137,20 +1157,6 @@
           "id": "morriszdweck/osaii-api-smart",
           "name": "morriszdweck/osaii-api-smart",
           "context": 262144,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "morriszdweck/osaii-api-fast",
-          "name": "morriszdweck/osaii-api-fast",
-          "context": 262144,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "JustScriptzz/glm-5.2",
-          "name": "JustScriptzz/glm-5.2",
-          "context": 1000000,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -1498,25 +1504,18 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
           "params_b": 20.0
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         },
         {
           "id": "gpt-oss:120b",
@@ -1526,13 +1525,6 @@
           "params_b": 120.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
@@ -1540,11 +1532,25 @@
           "params_b": 31.0
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "minimax-m3",
+          "name": "minimax-m3",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null

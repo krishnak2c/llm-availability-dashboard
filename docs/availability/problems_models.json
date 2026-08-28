@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28T01:17:00.599965+00:00",
+  "updated": "2026-08-28T13:50:26.279733+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -429,13 +429,6 @@
           "params_b": null
         },
         {
-          "id": "morriszdweck/osaii-api-fast",
-          "name": "morriszdweck/osaii-api-fast",
-          "context": 262144,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "vendouple/laguna-s-2.1:free",
           "name": "vendouple/laguna-s-2.1:free",
           "context": null,
@@ -495,6 +488,13 @@
           "id": "gemini-3.1-flash-lite",
           "name": "gemini-3.1-flash-lite",
           "context": 256000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "gpt-oss",
+          "name": "gpt-oss",
+          "context": 131072,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -653,13 +653,6 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
@@ -672,6 +665,13 @@
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
