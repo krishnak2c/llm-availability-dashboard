@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29T19:39:59.323334+00:00",
+  "updated": "2026-08-29T22:24:42.820767+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -118,11 +118,18 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131042,
+          "id": "groq/compound",
+          "name": "groq/compound",
+          "context": 131072,
           "limits": "varies per model",
-          "params_b": 27.0
+          "params_b": null
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -136,6 +143,26 @@
             "reasoning"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 20.0
+        },
+        {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131042,
+          "limits": "varies per model",
+          "params_b": 27.0
         },
         {
           "id": "groq/compound-mini",
@@ -156,33 +183,6 @@
             "reasoning"
           ],
           "params_b": 27.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "groq/compound",
-          "name": "groq/compound",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 20.0
         }
       ],
       "error": null
@@ -808,13 +808,6 @@
           "params_b": 7.0
         },
         {
-          "id": "@cf/zai-org/glm-5.3",
-          "name": "@cf/zai-org/glm-5.3",
-          "context": null,
-          "limits": "10k neurons/day",
-          "params_b": null
-        },
-        {
           "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
           "name": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
           "context": 80000,
@@ -1224,13 +1217,6 @@
           "params_b": null
         },
         {
-          "id": "claude-fable-5",
-          "name": "claude-fable-5",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "claude-haiku-4-5",
           "name": "claude-haiku-4-5",
           "context": 200000,
@@ -1273,23 +1259,9 @@
           "params_b": null
         },
         {
-          "id": "gemini-3-flash",
-          "name": "gemini-3-flash",
-          "context": 1048576,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "gemini-3.1-flash-lite",
           "name": "gemini-3.1-flash-lite",
           "context": 256000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "glm-5.3",
-          "name": "glm-5.3",
-          "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -1301,30 +1273,9 @@
           "params_b": null
         },
         {
-          "id": "gpt-5.4-mini",
-          "name": "gpt-5.4-mini",
-          "context": 400000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "gpt-5.6-terra",
-          "name": "gpt-5.6-terra",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "gpt-oss",
           "name": "gpt-oss",
           "context": 131072,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "grok-4.6",
-          "name": "grok-4.6",
-          "context": 500000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -1574,15 +1525,8 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -1595,20 +1539,6 @@
           "params_b": null
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
@@ -1616,11 +1546,32 @@
           "params_b": 120.0
         },
         {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
+        },
+        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
+        },
+        {
+          "id": "minimax-m3",
+          "name": "minimax-m3",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
