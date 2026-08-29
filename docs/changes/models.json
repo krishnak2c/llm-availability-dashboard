@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29T16:59:11.805507+00:00",
+  "updated": "2026-08-29T19:39:59.323334+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -118,6 +118,33 @@
       "url": "https://console.groq.com",
       "models": [
         {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131042,
+          "limits": "varies per model",
+          "params_b": 27.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
+        },
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
+        {
           "id": "qwen/qwen3.6-27b",
           "name": "qwen/qwen3.6-27b",
           "context": 131072,
@@ -138,26 +165,6 @@
           "params_b": 7.0
         },
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
-        },
-        {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131042,
-          "limits": "varies per model",
-          "params_b": 27.0
-        },
-        {
           "id": "groq/compound",
           "name": "groq/compound",
           "context": 131072,
@@ -176,13 +183,6 @@
             "reasoning"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
         }
       ],
       "error": null
@@ -1000,13 +1000,6 @@
           "params_b": null
         },
         {
-          "id": "JustScriptzz/claude-opus-5",
-          "name": "JustScriptzz/claude-opus-5",
-          "context": 1000000,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "CloudCompile/moondream3.1",
           "name": "CloudCompile/moondream3.1",
           "context": 32768,
@@ -1017,6 +1010,13 @@
           "id": "JustScriptzz/kimi-k2.7-code",
           "name": "JustScriptzz/kimi-k2.7-code",
           "context": 262144,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "iotserver24/gpt-5-6-sol",
+          "name": "iotserver24/gpt-5-6-sol",
+          "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -1189,6 +1189,41 @@
       "url": "https://llm7.io",
       "models": [
         {
+          "id": "Inkling",
+          "name": "Inkling",
+          "context": 512000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "Inkling-Small",
+          "name": "Inkling-Small",
+          "context": 512000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "L3-8B-Lunaris-v1-Turbo",
+          "name": "L3-8B-Lunaris-v1-Turbo",
+          "context": 8000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": 8.0
+        },
+        {
+          "id": "XiaomiMiMo/MiMo-V2.5",
+          "name": "XiaomiMiMo/MiMo-V2.5",
+          "context": 256000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "XiaomiMiMo/MiMo-V2.5-Pro",
+          "name": "XiaomiMiMo/MiMo-V2.5-Pro",
+          "context": 1024000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "claude-fable-5",
           "name": "claude-fable-5",
           "context": 1000000,
@@ -1304,6 +1339,27 @@
           "id": "minimax-m2.7",
           "name": "minimax-m2.7",
           "context": 180000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "mistral-Nemo-Instruct-2407",
+          "name": "mistral-Nemo-Instruct-2407",
+          "context": 128000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "mistral-Small-24B-Instruct-2501",
+          "name": "mistral-Small-24B-Instruct-2501",
+          "context": 32000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": 24.0
+        },
+        {
+          "id": "seed-2.0-mini",
+          "name": "seed-2.0-mini",
+          "context": 250000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         }
@@ -1518,18 +1574,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
+          "params_b": 20.0
         },
         {
           "id": "minimax-m3",
@@ -1539,6 +1588,20 @@
           "params_b": null
         },
         {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
           "id": "nemotron-3-super",
           "name": "nemotron-3-super",
           "context": null,
@@ -1546,25 +1609,18 @@
           "params_b": null
         },
         {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
-        },
-        {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         }
       ],
       "error": null
