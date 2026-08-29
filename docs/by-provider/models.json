@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29T05:52:40.154766+00:00",
+  "updated": "2026-08-29T12:24:02.885091+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -131,17 +131,11 @@
           "params_b": 20.0
         },
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131042,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
+          "params_b": 27.0
         },
         {
           "id": "groq/compound-mini",
@@ -164,18 +158,17 @@
           "params_b": 27.0
         },
         {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131042,
-          "limits": "varies per model",
-          "params_b": 27.0
-        },
-        {
-          "id": "groq/compound",
-          "name": "groq/compound",
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
           "context": 131072,
           "limits": "varies per model",
-          "params_b": null
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "allam-2-7b",
@@ -183,6 +176,13 @@
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
+        },
+        {
+          "id": "groq/compound",
+          "name": "groq/compound",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
         }
       ],
       "error": null
@@ -197,7 +197,7 @@
       "name": "SambaNova",
       "url": "https://cloud.sambanova.ai",
       "models": [],
-      "error": null
+      "error": "GET https://api.sambanova.ai/v1/models → <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     "nvidia": {
       "name": "NVIDIA NIM",
@@ -986,6 +986,13 @@
       "url": "https://pollinations.ai",
       "models": [
         {
+          "id": "glm-5.3",
+          "name": "glm-5.3",
+          "context": 1048576,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "JustScriptzz/qwen-3.8-max",
           "name": "JustScriptzz/qwen-3.8-max",
           "context": 1000000,
@@ -1077,13 +1084,6 @@
           "params_b": null
         },
         {
-          "id": "JustScriptzz/gemini-3.6-flash",
-          "name": "JustScriptzz/gemini-3.6-flash",
-          "context": 3000000,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "JustScriptzz/kimi-k3",
           "name": "JustScriptzz/kimi-k3",
           "context": 1000000,
@@ -1117,6 +1117,13 @@
           "context": 1048576,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": 30.0
+        },
+        {
+          "id": "novastardev/olmo-3.1-32b",
+          "name": "novastardev/olmo-3.1-32b",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": 32.0
         },
         {
           "id": "chigwell/llm7-fast",
@@ -1259,6 +1266,13 @@
           "params_b": null
         },
         {
+          "id": "glm-5.3-flash",
+          "name": "glm-5.3-flash",
+          "context": 1048576,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "gpt-5.4",
           "name": "gpt-5.4",
           "context": 1050000,
@@ -1318,13 +1332,6 @@
           "id": "minimax-m2.7",
           "name": "minimax-m2.7",
           "context": 180000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
-          "context": 1048576,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         }
@@ -1490,13 +1497,6 @@
       "url": "https://opencode.ai/zen",
       "models": [
         {
-          "id": "muse-spark-1.2-contributor-free",
-          "name": "muse-spark-1.2-contributor-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "mimo-v2.5-free",
           "name": "mimo-v2.5-free",
           "context": null,
@@ -1546,29 +1546,8 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "nemotron-3-ultra",
           "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -1593,6 +1572,27 @@
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "minimax-m3",
+          "name": "minimax-m3",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
