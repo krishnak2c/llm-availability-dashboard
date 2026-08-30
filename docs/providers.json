@@ -5,11 +5,11 @@
     "zen-hy3",
     "kilo-hy3",
     "orca-hy3",
-    "nvidia-minimaxm3",
-    "ollama-minimaxm3",
-    "kilo-minimaxminimaxm3",
+    "kilo-inclusionailing30flashfin",
     "openrouter-inclusionailing30flashfin",
-    "kilo-inclusionailing30flashfin"
+    "zen-ling30flashfin",
+    "groq-qwen36",
+    "mistral-mistralmedium35"
   ],
   "chain": [
     {
@@ -43,21 +43,9 @@
       "apiKeyEnv": "ORCA_API_KEY"
     },
     {
-      "id": "nvidia-minimaxm3",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "minimaxai/minimax-m3",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "ollama-minimaxm3",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "minimax-m3",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
-      "id": "kilo-minimaxminimaxm3",
+      "id": "kilo-inclusionailing30flashfin",
       "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "minimax/minimax-m3:free",
+      "model": "inclusionai/ling-3.0-flash-fin:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
@@ -67,10 +55,22 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "kilo-inclusionailing30flashfin",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "inclusionai/ling-3.0-flash-fin:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
+      "id": "zen-ling30flashfin",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "ling-3.0-flash-fin-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+    },
+    {
+      "id": "groq-qwen36",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "model": "qwen/qwen3.6-27b",
+      "apiKeyEnv": "GROQ_API_KEY"
+    },
+    {
+      "id": "mistral-mistralmedium35",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "mistral-medium-3-5",
+      "apiKeyEnv": "MISTRAL_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -81,10 +81,10 @@
     "hy3-free",
     "inclusionai/ling-3.0-flash-fin:free",
     "laguna-s-2.1-free",
+    "ling-3.0-flash-fin-free",
     "mimo-v2.5-free",
-    "minimax-m3",
-    "minimax/minimax-m3:free",
     "minimaxai/minimax-m3",
+    "mistral-medium-3-5",
     "nemotron-3-ultra-free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
