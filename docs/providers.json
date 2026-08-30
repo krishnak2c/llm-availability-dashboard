@@ -2,8 +2,8 @@
   "order": [
     "groq-qwen38",
     "orca-qwen38",
-    "zen-hy3",
     "kilo-hy3",
+    "zen-hy3",
     "orca-hy3",
     "kilo-inclusionailing30flashfin",
     "openrouter-inclusionailing30flashfin",
@@ -25,16 +25,16 @@
       "apiKeyEnv": "ORCA_API_KEY"
     },
     {
-      "id": "zen-hy3",
-      "baseUrl": "https://opencode.ai/zen/v1",
-      "model": "hy3-free",
-      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
-    },
-    {
       "id": "kilo-hy3",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "tencent/hy3:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "zen-hy3",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "hy3-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
     },
     {
       "id": "orca-hy3",
