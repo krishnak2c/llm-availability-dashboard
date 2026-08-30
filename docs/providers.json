@@ -3,12 +3,12 @@
     "groq-qwen38",
     "orca-qwen38",
     "kilo-hy3",
-    "zen-hy3",
     "orca-hy3",
     "kilo-inclusionailing30flashfin",
     "openrouter-inclusionailing30flashfin",
-    "zen-ling30flashfin",
     "groq-qwen36",
+    "zen-ling30flashfin",
+    "mistral-mistralmedium35",
     "mistral-mistralmedium35"
   ],
   "chain": [
@@ -31,12 +31,6 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "zen-hy3",
-      "baseUrl": "https://opencode.ai/zen/v1",
-      "model": "hy3-free",
-      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
-    },
-    {
       "id": "orca-hy3",
       "baseUrl": "https://api.orcarouter.ai/v1",
       "model": "tencent/hy3-free",
@@ -55,21 +49,27 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "zen-ling30flashfin",
-      "baseUrl": "https://opencode.ai/zen/v1",
-      "model": "ling-3.0-flash-fin-free",
-      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
-    },
-    {
       "id": "groq-qwen36",
       "baseUrl": "https://api.groq.com/openai/v1",
       "model": "qwen/qwen3.6-27b",
       "apiKeyEnv": "GROQ_API_KEY"
     },
     {
+      "id": "zen-ling30flashfin",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "ling-3.0-flash-fin-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+    },
+    {
       "id": "mistral-mistralmedium35",
       "baseUrl": "https://api.mistral.ai/v1",
       "model": "mistral-medium-3-5",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "mistral-mistralmedium35",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "mistral-medium-3.5",
       "apiKeyEnv": "MISTRAL_API_KEY"
     }
   ],
@@ -85,6 +85,7 @@
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
     "mistral-medium-3-5",
+    "mistral-medium-3.5",
     "nemotron-3-ultra-free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
