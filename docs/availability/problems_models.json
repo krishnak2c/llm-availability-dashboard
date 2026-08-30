@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30T13:41:01.921503+00:00",
+  "updated": "2026-08-30T17:56:54.026983+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -332,13 +332,6 @@
           "id": "JustScriptzz/kimi-k2.7-code",
           "name": "JustScriptzz/kimi-k2.7-code",
           "context": 262144,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "pegalink/ox-alpha-agent",
-          "name": "pegalink/ox-alpha-agent",
-          "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -686,6 +679,20 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "minimax-m3",
+          "name": "minimax-m3",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
@@ -693,18 +700,11 @@
           "params_b": 31.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
+          "params_b": 120.0
         },
         {
           "id": "nemotron-3-super",
@@ -721,18 +721,11 @@
           "params_b": 20.0
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
+          "params_b": null
         }
       ],
       "error": null
