@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30T20:49:10.266738+00:00",
+  "updated": "2026-08-30T23:13:26.070661+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -217,18 +217,6 @@
       "models": [
         {
           "id": "devstral-2512",
-          "name": "devstral-2512",
-          "context": 256000,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "devstral-medium-latest",
           "name": "devstral-2512",
           "context": 256000,
           "limits": "1 req/s · 1B tok/month",
@@ -686,18 +674,18 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
+          "params_b": null
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "minimax-m3",
+          "name": "minimax-m3",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
+          "params_b": null
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -714,18 +702,18 @@
           "params_b": 120.0
         },
         {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 31.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 20.0
         }
       ],
       "error": null
