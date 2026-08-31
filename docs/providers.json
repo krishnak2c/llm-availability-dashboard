@@ -5,11 +5,11 @@
     "kilo-hy3",
     "orca-hy3",
     "kilo-inclusionailing30flashfin",
+    "openrouter-inclusionailing30flashfin",
     "groq-qwen36",
     "zen-ling30flashfin",
     "mistral-mistralmedium35",
-    "mistral-mistralmedium35",
-    "kilo-dots3notepreview"
+    "mistral-mistralmedium35"
   ],
   "chain": [
     {
@@ -43,6 +43,12 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
+      "id": "openrouter-inclusionailing30flashfin",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "inclusionai/ling-3.0-flash-fin:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
       "id": "groq-qwen36",
       "baseUrl": "https://api.groq.com/openai/v1",
       "model": "qwen/qwen3.6-27b",
@@ -65,19 +71,12 @@
       "baseUrl": "https://api.mistral.ai/v1",
       "model": "mistral-medium-3.5",
       "apiKeyEnv": "MISTRAL_API_KEY"
-    },
-    {
-      "id": "kilo-dots3notepreview",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "dots-studio/dots-3-note-preview:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
-    "dots-studio/dots-3-note-preview:free",
     "hy3",
     "hy3-free",
     "inclusionai/ling-3.0-flash-fin:free",
