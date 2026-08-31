@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31T10:46:23.944916+00:00",
+  "updated": "2026-08-31T17:55:12.829415+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -153,6 +153,13 @@
           "params_b": 90.0
         },
         {
+          "id": "meta/muse-glimmer-30b",
+          "name": "meta/muse-glimmer-30b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 30.0
+        },
+        {
           "id": "minimaxai/minimax-m3",
           "name": "minimaxai/minimax-m3",
           "context": null,
@@ -229,54 +236,6 @@
       "name": "Mistral",
       "url": "https://console.mistral.ai",
       "models": [
-        {
-          "id": "devstral-2512",
-          "name": "devstral-2512",
-          "context": 256000,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "devstral-medium-latest",
-          "name": "devstral-2512",
-          "context": 256000,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "devstral-latest",
-          "name": "devstral-2512",
-          "context": 256000,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-code-agent-latest",
-          "name": "devstral-2512",
-          "context": 256000,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        },
         {
           "id": "mistral-large-2512",
           "name": "mistral-large-2512",
@@ -567,6 +526,13 @@
           "params_b": null
         },
         {
+          "id": "minimax/minimax-m3:free",
+          "name": "MiniMax: MiniMax M3 (free)",
+          "context": 1048576,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "liquid/lfm-2.5-2.6b:free",
           "name": "LiquidAI: LFM2.5-2.6B (free)",
           "context": 65536,
@@ -614,13 +580,6 @@
           "context": 256000,
           "limits": "free tier",
           "params_b": 30.0
-        },
-        {
-          "id": "minimax/minimax-m3:free",
-          "name": "MiniMax: MiniMax M3 (free)",
-          "context": 1048576,
-          "limits": "free tier",
-          "params_b": null
         },
         {
           "id": "minimax/minimax-m2.7:free",
@@ -679,8 +638,29 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "minimax-m3",
+          "name": "minimax-m3",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -693,22 +673,8 @@
           "params_b": 20.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -719,13 +685,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
-        },
-        {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
         }
       ],
       "error": null

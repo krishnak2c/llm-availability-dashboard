@@ -9,8 +9,8 @@
     },
     "artificial_analysis_index_version": 4.1,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 74,
-    "ranked_count": 74,
+    "source_count": 71,
+    "ranked_count": 71,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
@@ -235,28 +235,6 @@
       "rank": 10
     },
     {
-      "provider": "NVIDIA NIM",
-      "provider_id": "nvidia",
-      "model_id": "nvidia/nemotron-3-super-120b-a12b",
-      "model_name": "nvidia/nemotron-3-super-120b-a12b",
-      "aa_slug": "nvidia-nemotron-3-super-120b-a12b",
-      "aa_name": "Nemotron 3 Super 120B A12B (Reasoning)",
-      "aa_match": "compact",
-      "agentic": 8.8,
-      "coding": 37.7,
-      "intelligence": 25.7,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 15.46,
-      "coding_norm": 49.25,
-      "intelligence_norm": 47.71,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 32.07,
-      "data_coverage": 80.0,
-      "rank": 11
-    },
-    {
       "provider": "Kilo Code",
       "provider_id": "kilo",
       "model_id": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -276,7 +254,7 @@
       "swebench_norm": null,
       "hermes_score": 32.07,
       "data_coverage": 80.0,
-      "rank": 12
+      "rank": 11
     },
     {
       "provider": "Kilo Code",
@@ -298,7 +276,7 @@
       "swebench_norm": null,
       "hermes_score": 23.67,
       "data_coverage": 80.0,
-      "rank": 13
+      "rank": 12
     },
     {
       "provider": "Cloudflare AI",
@@ -320,7 +298,7 @@
       "swebench_norm": null,
       "hermes_score": 23.26,
       "data_coverage": 15.0,
-      "rank": 14
+      "rank": 13
     },
     {
       "provider": "Mistral",
@@ -342,7 +320,7 @@
       "swebench_norm": null,
       "hermes_score": 21.47,
       "data_coverage": 15.0,
-      "rank": 15
+      "rank": 14
     },
     {
       "provider": "Mistral",
@@ -364,29 +342,7 @@
       "swebench_norm": null,
       "hermes_score": 21.47,
       "data_coverage": 15.0,
-      "rank": 16
-    },
-    {
-      "provider": "Mistral",
-      "provider_id": "mistral",
-      "model_id": "devstral-medium-latest",
-      "model_name": "devstral-2512",
-      "aa_slug": "devstral-medium",
-      "aa_name": "Devstral Medium",
-      "aa_match": "substring",
-      "agentic": null,
-      "coding": null,
-      "intelligence": 12.4,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": 21.27,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 21.27,
-      "data_coverage": 15.0,
-      "rank": 17
+      "rank": 15
     },
     {
       "provider": "Mistral",
@@ -408,7 +364,7 @@
       "swebench_norm": null,
       "hermes_score": 17.69,
       "data_coverage": 15.0,
-      "rank": 18
+      "rank": 16
     },
     {
       "provider": "Groq",
@@ -430,7 +386,7 @@
       "swebench_norm": null,
       "hermes_score": 13.56,
       "data_coverage": 80.0,
-      "rank": 19
+      "rank": 17
     },
     {
       "provider": "NVIDIA NIM",
@@ -452,7 +408,7 @@
       "swebench_norm": null,
       "hermes_score": 13.56,
       "data_coverage": 80.0,
-      "rank": 20
+      "rank": 18
     },
     {
       "provider": "Cloudflare AI",
@@ -474,7 +430,7 @@
       "swebench_norm": null,
       "hermes_score": 13.56,
       "data_coverage": 80.0,
-      "rank": 21
+      "rank": 19
     },
     {
       "provider": "NVIDIA NIM",
@@ -496,7 +452,7 @@
       "swebench_norm": null,
       "hermes_score": 10.93,
       "data_coverage": 15.0,
-      "rank": 22
+      "rank": 20
     },
     {
       "provider": "Cloudflare AI",
@@ -518,7 +474,7 @@
       "swebench_norm": null,
       "hermes_score": 10.34,
       "data_coverage": 15.0,
-      "rank": 23
+      "rank": 21
     },
     {
       "provider": "Mistral",
@@ -540,7 +496,7 @@
       "swebench_norm": null,
       "hermes_score": 5.17,
       "data_coverage": 15.0,
-      "rank": 24
+      "rank": 22
     },
     {
       "provider": "Mistral",
@@ -562,7 +518,7 @@
       "swebench_norm": null,
       "hermes_score": 5.17,
       "data_coverage": 15.0,
-      "rank": 25
+      "rank": 23
     },
     {
       "provider": "Mistral",
@@ -584,7 +540,7 @@
       "swebench_norm": null,
       "hermes_score": 5.17,
       "data_coverage": 15.0,
-      "rank": 26
+      "rank": 24
     },
     {
       "provider": "Cloudflare AI",
@@ -606,7 +562,7 @@
       "swebench_norm": null,
       "hermes_score": 3.21,
       "data_coverage": 80.0,
-      "rank": 27
+      "rank": 25
     },
     {
       "provider": "Mistral",
@@ -628,7 +584,7 @@
       "swebench_norm": null,
       "hermes_score": 2.98,
       "data_coverage": 15.0,
-      "rank": 28
+      "rank": 26
     },
     {
       "provider": "Mistral",
@@ -650,7 +606,7 @@
       "swebench_norm": null,
       "hermes_score": 2.98,
       "data_coverage": 15.0,
-      "rank": 29
+      "rank": 27
     },
     {
       "provider": "Mistral",
@@ -672,7 +628,7 @@
       "swebench_norm": null,
       "hermes_score": 2.98,
       "data_coverage": 15.0,
-      "rank": 30
+      "rank": 28
     },
     {
       "provider": "Mistral",
@@ -694,7 +650,7 @@
       "swebench_norm": null,
       "hermes_score": 2.98,
       "data_coverage": 15.0,
-      "rank": 31
+      "rank": 29
     },
     {
       "provider": "Mistral",
@@ -716,7 +672,7 @@
       "swebench_norm": null,
       "hermes_score": 2.98,
       "data_coverage": 15.0,
-      "rank": 32
+      "rank": 30
     },
     {
       "provider": "Mistral",
@@ -738,7 +694,7 @@
       "swebench_norm": null,
       "hermes_score": 2.98,
       "data_coverage": 15.0,
-      "rank": 33
+      "rank": 31
     },
     {
       "provider": "Mistral",
@@ -760,29 +716,7 @@
       "swebench_norm": null,
       "hermes_score": 2.98,
       "data_coverage": 15.0,
-      "rank": 34
-    },
-    {
-      "provider": "Groq",
-      "provider_id": "groq",
-      "model_id": "allam-2-7b",
-      "model_name": "allam-2-7b",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 35
+      "rank": 32
     },
     {
       "provider": "Groq",
@@ -804,13 +738,13 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 36
+      "rank": 33
     },
     {
-      "provider": "NVIDIA NIM",
-      "provider_id": "nvidia",
-      "model_id": "meta/llama-3.2-11b-vision-instruct",
-      "model_name": "meta/llama-3.2-11b-vision-instruct",
+      "provider": "Groq",
+      "provider_id": "groq",
+      "model_id": "allam-2-7b",
+      "model_name": "allam-2-7b",
       "aa_slug": null,
       "aa_name": null,
       "aa_match": "missing",
@@ -826,7 +760,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 37
+      "rank": 34
     },
     {
       "provider": "NVIDIA NIM",
@@ -848,7 +782,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 38
+      "rank": 35
     },
     {
       "provider": "NVIDIA NIM",
@@ -870,7 +804,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 39
+      "rank": 36
     },
     {
       "provider": "NVIDIA NIM",
@@ -892,7 +826,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 40
+      "rank": 37
     },
     {
       "provider": "NVIDIA NIM",
@@ -914,7 +848,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 41
+      "rank": 38
     },
     {
       "provider": "NVIDIA NIM",
@@ -936,7 +870,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 42
+      "rank": 39
     },
     {
       "provider": "NVIDIA NIM",
@@ -958,7 +892,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 43
+      "rank": 40
     },
     {
       "provider": "Mistral",
@@ -980,7 +914,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 44
+      "rank": 41
     },
     {
       "provider": "Mistral",
@@ -1002,7 +936,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 45
+      "rank": 42
     },
     {
       "provider": "Mistral",
@@ -1024,7 +958,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 46
+      "rank": 43
     },
     {
       "provider": "Mistral",
@@ -1046,7 +980,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 47
+      "rank": 44
     },
     {
       "provider": "Mistral",
@@ -1068,7 +1002,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 48
+      "rank": 45
     },
     {
       "provider": "Mistral",
@@ -1090,7 +1024,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 49
+      "rank": 46
     },
     {
       "provider": "Mistral",
@@ -1112,7 +1046,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 50
+      "rank": 47
     },
     {
       "provider": "Mistral",
@@ -1134,7 +1068,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 51
+      "rank": 48
     },
     {
       "provider": "Mistral",
@@ -1156,7 +1090,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 52
+      "rank": 49
     },
     {
       "provider": "Mistral",
@@ -1178,7 +1112,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 53
+      "rank": 50
     },
     {
       "provider": "Mistral",
@@ -1200,7 +1134,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 54
+      "rank": 51
     },
     {
       "provider": "Mistral",
@@ -1222,7 +1156,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 55
+      "rank": 52
     },
     {
       "provider": "Cloudflare AI",
@@ -1244,7 +1178,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 56
+      "rank": 53
     },
     {
       "provider": "Cloudflare AI",
@@ -1266,7 +1200,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 57
+      "rank": 54
     },
     {
       "provider": "Cloudflare AI",
@@ -1288,7 +1222,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 58
+      "rank": 55
     },
     {
       "provider": "Cloudflare AI",
@@ -1310,7 +1244,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 15.0,
-      "rank": 59
+      "rank": 56
     },
     {
       "provider": "Cloudflare AI",
@@ -1332,7 +1266,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 60
+      "rank": 57
     },
     {
       "provider": "Cloudflare AI",
@@ -1354,7 +1288,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 61
+      "rank": 58
     },
     {
       "provider": "Cloudflare AI",
@@ -1376,7 +1310,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 62
+      "rank": 59
     },
     {
       "provider": "Cloudflare AI",
@@ -1398,7 +1332,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 63
+      "rank": 60
     },
     {
       "provider": "Cloudflare AI",
@@ -1420,7 +1354,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 64
+      "rank": 61
     },
     {
       "provider": "Cloudflare AI",
@@ -1442,7 +1376,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 65
+      "rank": 62
     },
     {
       "provider": "Cloudflare AI",
@@ -1464,7 +1398,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 66
+      "rank": 63
     },
     {
       "provider": "Cloudflare AI",
@@ -1486,7 +1420,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 67
+      "rank": 64
     },
     {
       "provider": "Cloudflare AI",
@@ -1508,7 +1442,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 68
+      "rank": 65
     },
     {
       "provider": "Cloudflare AI",
@@ -1530,7 +1464,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 69
+      "rank": 66
     },
     {
       "provider": "Cloudflare AI",
@@ -1552,7 +1486,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 70
+      "rank": 67
     },
     {
       "provider": "LLM7",
@@ -1574,7 +1508,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 71
+      "rank": 68
     },
     {
       "provider": "Kilo Code",
@@ -1596,7 +1530,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 72
+      "rank": 69
     },
     {
       "provider": "Kilo Code",
@@ -1618,7 +1552,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 73
+      "rank": 70
     },
     {
       "provider": "Kilo Code",
@@ -1640,7 +1574,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 74
+      "rank": 71
     }
   ]
 }

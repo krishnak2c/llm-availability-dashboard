@@ -1,10 +1,24 @@
 {
-  "updated": "2026-08-31T10:46:23.944916+00:00",
+  "updated": "2026-08-31T17:55:12.829415+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
         {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
@@ -33,33 +47,6 @@
           "params_b": 27.0
         },
         {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 20.0
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
           "id": "qwen/qwen3.6-27b",
           "name": "qwen/qwen3.6-27b",
           "context": 131072,
@@ -71,6 +58,19 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 20.0
         }
       ],
       "error": null
@@ -79,13 +79,6 @@
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
-        {
-          "id": "meta/muse-glimmer-30b",
-          "name": "meta/muse-glimmer-30b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 30.0
-        },
         {
           "id": "nvidia/ising-calibration-1.5-31b",
           "name": "nvidia/ising-calibration-1.5-31b",
@@ -149,31 +142,6 @@
       "name": "Mistral",
       "url": "https://console.mistral.ai",
       "models": [
-        {
-          "id": "mistral-medium-2505",
-          "name": "mistral-medium-2505",
-          "context": 131072,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-medium-2508",
-          "name": "mistral-medium-2508",
-          "context": 131072,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision"
-          ],
-          "params_b": null
-        },
         {
           "id": "codestral-2508",
           "name": "codestral-2508",
@@ -714,13 +682,6 @@
       "name": "Kilo Code",
       "url": "https://kilo.code",
       "models": [
-        {
-          "id": "tencent/hy3:free",
-          "name": "Tencent: Hy3 (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
         {
           "id": "inclusionai/ling-3.0-flash-fin:free",
           "name": "Ling 3.0 Flash Fin (free)",
