@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31T03:59:40.325467+00:00",
+  "updated": "2026-08-31T10:46:23.944916+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -139,6 +139,13 @@
           "params_b": 26.0
         },
         {
+          "id": "meta/llama-3.2-11b-vision-instruct",
+          "name": "meta/llama-3.2-11b-vision-instruct",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 11.0
+        },
+        {
           "id": "meta/llama-3.2-90b-vision-instruct",
           "name": "meta/llama-3.2-90b-vision-instruct",
           "context": null,
@@ -181,6 +188,13 @@
           "params_b": 30.0
         },
         {
+          "id": "nvidia/nemotron-3-super-120b-a12b",
+          "name": "nvidia/nemotron-3-super-120b-a12b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 120.0
+        },
+        {
           "id": "nvidia/nemotron-3-ultra-550b-a55b",
           "name": "nvidia/nemotron-3-ultra-550b-a55b",
           "context": null,
@@ -217,6 +231,18 @@
       "models": [
         {
           "id": "devstral-2512",
+          "name": "devstral-2512",
+          "context": 256000,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "devstral-medium-latest",
           "name": "devstral-2512",
           "context": 256000,
           "limits": "1 req/s · 1B tok/month",
@@ -485,13 +511,6 @@
           "params_b": null
         },
         {
-          "id": "meta-Llama-3.1-8B-Instruct-Turbo",
-          "name": "meta-Llama-3.1-8B-Instruct-Turbo",
-          "context": 128000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": 8.0
-        },
-        {
           "id": "minimax-m2.7",
           "name": "minimax-m2.7",
           "context": 180000,
@@ -660,36 +679,8 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -702,11 +693,39 @@
           "params_b": 20.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
+          "id": "minimax-m3",
+          "name": "minimax-m3",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         }
       ],
       "error": null
