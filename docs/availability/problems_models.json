@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01T07:20:54.430918+00:00",
+  "updated": "2026-09-01T13:09:12.896462+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -568,18 +568,18 @@
           "params_b": 30.0
         },
         {
-          "id": "nvidia/nemotron-3-super-120b-a12b:free",
-          "name": "NVIDIA: Nemotron 3 Super (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
           "id": "minimax/minimax-m2.7:free",
           "name": "MiniMax: MiniMax M2.7 (free)",
           "context": 196608,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3-super-120b-a12b:free",
+          "name": "NVIDIA: Nemotron 3 Super (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": 120.0
         }
       ],
       "error": null
@@ -631,8 +631,8 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -652,8 +652,8 @@
           "params_b": 20.0
         },
         {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -673,8 +673,8 @@
           "params_b": 30.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "minimax-m3",
+          "name": "minimax-m3",
           "context": null,
           "limits": "free tier",
           "params_b": null
