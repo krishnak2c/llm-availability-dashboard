@@ -9,8 +9,8 @@
     },
     "artificial_analysis_index_version": 4.1,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 66,
-    "ranked_count": 66,
+    "source_count": 67,
+    "ranked_count": 67,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
@@ -193,6 +193,28 @@
     {
       "provider": "Kilo Code",
       "provider_id": "kilo",
+      "model_id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "model_name": "NVIDIA: Nemotron 3 Super (free)",
+      "aa_slug": "nvidia-nemotron-3-super-120b-a12b",
+      "aa_name": "Nemotron 3 Super 120B A12B (Reasoning)",
+      "aa_match": "substring",
+      "agentic": 8.8,
+      "coding": 37.7,
+      "intelligence": 25.7,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 15.46,
+      "coding_norm": 49.25,
+      "intelligence_norm": 47.71,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 32.07,
+      "data_coverage": 80.0,
+      "rank": 9
+    },
+    {
+      "provider": "Kilo Code",
+      "provider_id": "kilo",
       "model_id": "cohere/north-mini-code:free",
       "model_name": "Cohere: North Mini Code (free)",
       "aa_slug": "north-mini-code",
@@ -210,7 +232,7 @@
       "swebench_norm": null,
       "hermes_score": 23.67,
       "data_coverage": 80.0,
-      "rank": 9
+      "rank": 10
     },
     {
       "provider": "Cloudflare AI",
@@ -232,7 +254,7 @@
       "swebench_norm": null,
       "hermes_score": 23.26,
       "data_coverage": 15.0,
-      "rank": 10
+      "rank": 11
     },
     {
       "provider": "Mistral",
@@ -254,7 +276,7 @@
       "swebench_norm": null,
       "hermes_score": 21.47,
       "data_coverage": 15.0,
-      "rank": 11
+      "rank": 12
     },
     {
       "provider": "Mistral",
@@ -276,7 +298,7 @@
       "swebench_norm": null,
       "hermes_score": 21.47,
       "data_coverage": 15.0,
-      "rank": 12
+      "rank": 13
     },
     {
       "provider": "Mistral",
@@ -298,7 +320,7 @@
       "swebench_norm": null,
       "hermes_score": 17.69,
       "data_coverage": 15.0,
-      "rank": 13
+      "rank": 14
     },
     {
       "provider": "Groq",
@@ -320,7 +342,7 @@
       "swebench_norm": null,
       "hermes_score": 13.56,
       "data_coverage": 80.0,
-      "rank": 14
+      "rank": 15
     },
     {
       "provider": "NVIDIA NIM",
@@ -342,7 +364,7 @@
       "swebench_norm": null,
       "hermes_score": 13.56,
       "data_coverage": 80.0,
-      "rank": 15
+      "rank": 16
     },
     {
       "provider": "Cloudflare AI",
@@ -364,7 +386,7 @@
       "swebench_norm": null,
       "hermes_score": 13.56,
       "data_coverage": 80.0,
-      "rank": 16
+      "rank": 17
     },
     {
       "provider": "Cloudflare AI",
@@ -386,7 +408,7 @@
       "swebench_norm": null,
       "hermes_score": 10.34,
       "data_coverage": 15.0,
-      "rank": 17
+      "rank": 18
     },
     {
       "provider": "Mistral",
@@ -408,7 +430,7 @@
       "swebench_norm": null,
       "hermes_score": 5.17,
       "data_coverage": 15.0,
-      "rank": 18
+      "rank": 19
     },
     {
       "provider": "Mistral",
@@ -430,7 +452,7 @@
       "swebench_norm": null,
       "hermes_score": 5.17,
       "data_coverage": 15.0,
-      "rank": 19
+      "rank": 20
     },
     {
       "provider": "Mistral",
@@ -452,7 +474,7 @@
       "swebench_norm": null,
       "hermes_score": 5.17,
       "data_coverage": 15.0,
-      "rank": 20
+      "rank": 21
     },
     {
       "provider": "Cloudflare AI",
@@ -474,7 +496,7 @@
       "swebench_norm": null,
       "hermes_score": 3.21,
       "data_coverage": 80.0,
-      "rank": 21
+      "rank": 22
     },
     {
       "provider": "Mistral",
@@ -496,7 +518,7 @@
       "swebench_norm": null,
       "hermes_score": 2.98,
       "data_coverage": 15.0,
-      "rank": 22
+      "rank": 23
     },
     {
       "provider": "Mistral",
@@ -518,7 +540,7 @@
       "swebench_norm": null,
       "hermes_score": 2.98,
       "data_coverage": 15.0,
-      "rank": 23
+      "rank": 24
     },
     {
       "provider": "Mistral",
@@ -540,7 +562,7 @@
       "swebench_norm": null,
       "hermes_score": 2.98,
       "data_coverage": 15.0,
-      "rank": 24
+      "rank": 25
     },
     {
       "provider": "Mistral",
@@ -562,7 +584,7 @@
       "swebench_norm": null,
       "hermes_score": 2.98,
       "data_coverage": 15.0,
-      "rank": 25
+      "rank": 26
     },
     {
       "provider": "Mistral",
@@ -584,28 +606,6 @@
       "swebench_norm": null,
       "hermes_score": 2.98,
       "data_coverage": 15.0,
-      "rank": 26
-    },
-    {
-      "provider": "Groq",
-      "provider_id": "groq",
-      "model_id": "allam-2-7b",
-      "model_name": "allam-2-7b",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
       "rank": 27
     },
     {
@@ -631,6 +631,28 @@
       "rank": 28
     },
     {
+      "provider": "Groq",
+      "provider_id": "groq",
+      "model_id": "allam-2-7b",
+      "model_name": "allam-2-7b",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 29
+    },
+    {
       "provider": "NVIDIA NIM",
       "provider_id": "nvidia",
       "model_id": "meta/llama-3.2-11b-vision-instruct",
@@ -650,7 +672,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 29
+      "rank": 30
     },
     {
       "provider": "NVIDIA NIM",
@@ -672,7 +694,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 30
+      "rank": 31
     },
     {
       "provider": "NVIDIA NIM",
@@ -694,7 +716,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 31
+      "rank": 32
     },
     {
       "provider": "NVIDIA NIM",
@@ -716,7 +738,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 32
+      "rank": 33
     },
     {
       "provider": "NVIDIA NIM",
@@ -738,7 +760,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 33
+      "rank": 34
     },
     {
       "provider": "NVIDIA NIM",
@@ -760,7 +782,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 34
+      "rank": 35
     },
     {
       "provider": "NVIDIA NIM",
@@ -782,7 +804,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 35
+      "rank": 36
     },
     {
       "provider": "Mistral",
@@ -804,34 +826,12 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 36
-    },
-    {
-      "provider": "Mistral",
-      "provider_id": "mistral",
-      "model_id": "codestral-latest",
-      "model_name": "codestral-2508",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
       "rank": 37
     },
     {
       "provider": "Mistral",
       "provider_id": "mistral",
-      "model_id": "mistral-code-latest",
+      "model_id": "codestral-latest",
       "model_name": "codestral-2508",
       "aa_slug": null,
       "aa_name": null,
@@ -853,7 +853,7 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
-      "model_id": "mistral-code-fim-latest",
+      "model_id": "mistral-code-latest",
       "model_name": "codestral-2508",
       "aa_slug": null,
       "aa_name": null,
@@ -875,8 +875,8 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
-      "model_id": "voxtral-small-2507",
-      "model_name": "voxtral-small-2507",
+      "model_id": "mistral-code-fim-latest",
+      "model_name": "codestral-2508",
       "aa_slug": null,
       "aa_name": null,
       "aa_match": "missing",
@@ -897,7 +897,7 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
-      "model_id": "voxtral-small-latest",
+      "model_id": "voxtral-small-2507",
       "model_name": "voxtral-small-2507",
       "aa_slug": null,
       "aa_name": null,
@@ -919,8 +919,8 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
-      "model_id": "ministral-3b-2512",
-      "model_name": "ministral-3b-2512",
+      "model_id": "voxtral-small-latest",
+      "model_name": "voxtral-small-2507",
       "aa_slug": null,
       "aa_name": null,
       "aa_match": "missing",
@@ -941,7 +941,7 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
-      "model_id": "ministral-3b-latest",
+      "model_id": "ministral-3b-2512",
       "model_name": "ministral-3b-2512",
       "aa_slug": null,
       "aa_name": null,
@@ -963,8 +963,8 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
-      "model_id": "ministral-8b-2512",
-      "model_name": "ministral-8b-2512",
+      "model_id": "ministral-3b-latest",
+      "model_name": "ministral-3b-2512",
       "aa_slug": null,
       "aa_name": null,
       "aa_match": "missing",
@@ -985,7 +985,7 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
-      "model_id": "ministral-8b-latest",
+      "model_id": "ministral-8b-2512",
       "model_name": "ministral-8b-2512",
       "aa_slug": null,
       "aa_name": null,
@@ -1007,6 +1007,28 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
+      "model_id": "ministral-8b-latest",
+      "model_name": "ministral-8b-2512",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 46
+    },
+    {
+      "provider": "Mistral",
+      "provider_id": "mistral",
       "model_id": "ministral-14b-2512",
       "model_name": "ministral-14b-2512",
       "aa_slug": null,
@@ -1024,7 +1046,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 46
+      "rank": 47
     },
     {
       "provider": "Mistral",
@@ -1046,7 +1068,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 47
+      "rank": 48
     },
     {
       "provider": "Cloudflare AI",
@@ -1068,7 +1090,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 48
+      "rank": 49
     },
     {
       "provider": "Cloudflare AI",
@@ -1090,7 +1112,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 49
+      "rank": 50
     },
     {
       "provider": "Cloudflare AI",
@@ -1112,7 +1134,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 50
+      "rank": 51
     },
     {
       "provider": "Cloudflare AI",
@@ -1134,7 +1156,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 15.0,
-      "rank": 51
+      "rank": 52
     },
     {
       "provider": "Cloudflare AI",
@@ -1156,7 +1178,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 52
+      "rank": 53
     },
     {
       "provider": "Cloudflare AI",
@@ -1178,7 +1200,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 53
+      "rank": 54
     },
     {
       "provider": "Cloudflare AI",
@@ -1200,7 +1222,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 54
+      "rank": 55
     },
     {
       "provider": "Cloudflare AI",
@@ -1222,7 +1244,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 55
+      "rank": 56
     },
     {
       "provider": "Cloudflare AI",
@@ -1244,7 +1266,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 56
+      "rank": 57
     },
     {
       "provider": "Cloudflare AI",
@@ -1266,7 +1288,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 57
+      "rank": 58
     },
     {
       "provider": "Cloudflare AI",
@@ -1288,7 +1310,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 58
+      "rank": 59
     },
     {
       "provider": "Cloudflare AI",
@@ -1310,7 +1332,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 59
+      "rank": 60
     },
     {
       "provider": "Cloudflare AI",
@@ -1332,7 +1354,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 60
+      "rank": 61
     },
     {
       "provider": "Cloudflare AI",
@@ -1354,7 +1376,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 61
+      "rank": 62
     },
     {
       "provider": "Cloudflare AI",
@@ -1376,7 +1398,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 62
+      "rank": 63
     },
     {
       "provider": "LLM7",
@@ -1398,7 +1420,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 63
+      "rank": 64
     },
     {
       "provider": "Kilo Code",
@@ -1420,7 +1442,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 64
+      "rank": 65
     },
     {
       "provider": "Kilo Code",
@@ -1442,7 +1464,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 65
+      "rank": 66
     },
     {
       "provider": "Kilo Code",
@@ -1464,7 +1486,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 66
+      "rank": 67
     }
   ]
 }
