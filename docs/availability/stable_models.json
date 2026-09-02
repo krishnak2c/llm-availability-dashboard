@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02T18:25:07.577175+00:00",
+  "updated": "2026-09-02T22:58:35.956950+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
@@ -26,6 +26,13 @@
           "params_b": 7.0
         },
         {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
+        {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
           "context": 131042,
@@ -34,6 +41,19 @@
             "function_calling",
             "tool_choice",
             "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
+        {
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
             "vision",
             "reasoning"
           ],
@@ -51,26 +71,6 @@
             "reasoning"
           ],
           "params_b": 120.0
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
         }
       ],
       "error": null
@@ -92,6 +92,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 31.0
+        },
+        {
+          "id": "nvidia/llama-3.1-nemoguard-8b-content-safety",
+          "name": "nvidia/llama-3.1-nemoguard-8b-content-safety",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 8.0
         },
         {
           "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
@@ -526,6 +533,17 @@
           "params_b": 1.0
         },
         {
+          "id": "@cf/zai-org/glm-4.7-flash",
+          "name": "@cf/zai-org/glm-4.7-flash",
+          "context": 131072,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": null
+        },
+        {
           "id": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
           "name": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
           "context": 8192,
@@ -660,6 +678,13 @@
           "context": 32000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
+        },
+        {
+          "id": "gpt-oss",
+          "name": "gpt-oss",
+          "context": 131072,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
         }
       ],
       "error": null
@@ -702,6 +727,34 @@
           "context": 200000,
           "limits": "free tier",
           "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "orca": {
+      "name": "Orca Router",
+      "url": "https://orcarouter.ai",
+      "models": [
+        {
+          "id": "orcarouter/free",
+          "name": "orcarouter/free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "deepseek/deepseek-v4-flash-free",
+          "name": "DeepSeek: DeepSeek V4 Flash (Free)",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "qwen/qwen3.8-27b-free",
+          "name": "Qwen: Qwen3.8 27B (free)",
+          "context": 65536,
+          "limits": "free tier",
+          "params_b": 27.0
         }
       ],
       "error": null

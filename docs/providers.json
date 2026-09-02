@@ -3,13 +3,13 @@
     "groq-qwen38",
     "orca-qwen38",
     "kilo-inclusionailing30flashfin",
-    "openrouter-inclusionailing30flashfin",
     "groq-qwen36",
     "zen-ling30flashfin",
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
     "kilo-dots3notepreview",
-    "openrouter-dots3notepreview"
+    "kilo-openrouterfree",
+    "openrouter-openrouterfree"
   ],
   "chain": [
     {
@@ -29,12 +29,6 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "inclusionai/ling-3.0-flash-fin:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-inclusionailing30flashfin",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "inclusionai/ling-3.0-flash-fin:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "groq-qwen36",
@@ -67,9 +61,15 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "openrouter-dots3notepreview",
+      "id": "kilo-openrouterfree",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "openrouter/free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-openrouterfree",
       "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "dots-studio/dots-3-note-preview:free",
+      "model": "openrouter/free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
@@ -88,6 +88,7 @@
     "mistral-medium-3-5",
     "mistral-medium-3.5",
     "nemotron-3-ultra-free",
+    "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b",
