@@ -2,14 +2,14 @@
   "order": [
     "groq-qwen38",
     "orca-qwen38",
+    "orca-deepseekv4flash",
     "kilo-inclusionailing30flashfin",
+    "openrouter-inclusionailing30flashfin",
     "groq-qwen36",
     "zen-ling30flashfin",
     "mistral-mistralmedium35",
     "mistral-mistralmedium35",
-    "kilo-dots3notepreview",
-    "kilo-openrouterfree",
-    "openrouter-openrouterfree"
+    "kilo-dots3notepreview"
   ],
   "chain": [
     {
@@ -25,10 +25,22 @@
       "apiKeyEnv": "ORCA_API_KEY"
     },
     {
+      "id": "orca-deepseekv4flash",
+      "baseUrl": "https://api.orcarouter.ai/v1",
+      "model": "deepseek/deepseek-v4-flash-free",
+      "apiKeyEnv": "ORCA_API_KEY"
+    },
+    {
       "id": "kilo-inclusionailing30flashfin",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "inclusionai/ling-3.0-flash-fin:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-inclusionailing30flashfin",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "inclusionai/ling-3.0-flash-fin:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "groq-qwen36",
@@ -59,23 +71,12 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "dots-studio/dots-3-note-preview:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "kilo-openrouterfree",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "openrouter/free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-openrouterfree",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "openrouter/free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
+    "deepseek/deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
     "dots-studio/dots-3-note-preview:free",
     "hy3",
@@ -88,7 +89,6 @@
     "mistral-medium-3-5",
     "mistral-medium-3.5",
     "nemotron-3-ultra-free",
-    "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b",
