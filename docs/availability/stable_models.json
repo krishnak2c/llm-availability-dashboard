@@ -1,10 +1,51 @@
 {
-  "updated": "2026-09-03T18:19:59.207925+00:00",
+  "updated": "2026-09-03T22:57:56.050296+00:00",
   "providers": {
+    "openrouter": {
+      "name": "OpenRouter",
+      "url": "https://openrouter.ai",
+      "models": [
+        {
+          "id": "openrouter/free",
+          "name": "Free Models Router",
+          "context": 200000,
+          "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
         {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
@@ -18,6 +59,19 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -38,39 +92,6 @@
           "context": 131072,
           "limits": "varies per model",
           "params_b": null
-        },
-        {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
-        },
-        {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
         }
       ],
       "error": null
@@ -127,6 +148,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 4.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 20.0
         }
       ],
       "error": null
@@ -228,12 +256,13 @@
         {
           "id": "magistral-small-latest",
           "name": "mistral-small-2603",
-          "context": 40000,
+          "context": 262144,
           "limits": "1 req/s · 1B tok/month",
           "capabilities": [
             "function_calling",
             "tool_choice",
             "response_schema",
+            "vision",
             "reasoning"
           ],
           "params_b": null
@@ -357,11 +386,14 @@
         {
           "id": "mistral-medium",
           "name": "mistral-medium-latest",
-          "context": 32000,
+          "context": 262144,
           "limits": "1 req/s · 1B tok/month",
           "capabilities": [
+            "function_calling",
             "tool_choice",
-            "response_schema"
+            "response_schema",
+            "vision",
+            "reasoning"
           ],
           "params_b": null
         },
@@ -452,12 +484,13 @@
         {
           "id": "magistral-medium-latest",
           "name": "mistral-medium-latest",
-          "context": 40000,
+          "context": 262144,
           "limits": "1 req/s · 1B tok/month",
           "capabilities": [
             "function_calling",
             "tool_choice",
             "response_schema",
+            "vision",
             "reasoning"
           ],
           "params_b": null
@@ -678,6 +711,13 @@
           "context": 32000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
+        },
+        {
+          "id": "gpt-oss",
+          "name": "gpt-oss",
+          "context": 131072,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
         }
       ],
       "error": null
@@ -715,6 +755,13 @@
           "params_b": null
         },
         {
+          "id": "minimax/minimax-m2.7:free",
+          "name": "MiniMax: MiniMax M2.7 (free)",
+          "context": 196608,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "openrouter/free",
           "name": "OpenRouter Free Models Router",
           "context": 200000,
@@ -748,6 +795,13 @@
           "context": 65536,
           "limits": "free tier",
           "params_b": 27.0
+        },
+        {
+          "id": "tencent/hy3-free",
+          "name": "Tencent: Hy3 (Free)",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
