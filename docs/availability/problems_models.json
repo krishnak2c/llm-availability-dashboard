@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03T07:46:37.108144+00:00",
+  "updated": "2026-09-03T13:14:20.702579+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -81,6 +81,13 @@
           "context": 256000,
           "limits": "20 req/min · 50 req/day",
           "params_b": 30.0
+        },
+        {
+          "id": "google/gemma-4-26b-a4b-it:free",
+          "name": "Google: Gemma 4 26B A4B  (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 26.0
         },
         {
           "id": "minimax/minimax-m2.7:free",
@@ -221,13 +228,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 30.0
-        },
-        {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 120.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -487,13 +487,6 @@
           "params_b": 31.0
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
           "id": "nemotron-3-super",
           "name": "nemotron-3-super",
           "context": null,
@@ -508,13 +501,6 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
           "id": "minimax-m3",
           "name": "minimax-m3",
           "context": null,
@@ -522,11 +508,25 @@
           "params_b": null
         },
         {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
+        },
+        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         }
       ],
       "error": null
