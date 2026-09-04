@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03T22:57:56.050296+00:00",
+  "updated": "2026-09-04T02:53:36.799399+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -67,13 +67,6 @@
           "context": 1000000,
           "limits": "20 req/min · 50 req/day",
           "params_b": 550.0
-        },
-        {
-          "id": "minimax/minimax-m3:free",
-          "name": "MiniMax: MiniMax M3 (free)",
-          "context": 1048576,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": null
         },
         {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -251,6 +244,13 @@
           "params_b": null
         },
         {
+          "id": "gpt-oss",
+          "name": "gpt-oss",
+          "context": 131072,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "minimax-m2.7",
           "name": "minimax-m2.7",
           "context": 180000,
@@ -419,13 +419,6 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
@@ -433,22 +426,15 @@
           "params_b": 31.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -461,11 +447,25 @@
           "params_b": 20.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "minimax-m3",
+          "name": "minimax-m3",
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
         }
       ],
       "error": null
