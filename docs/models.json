@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T02:53:36.799399+00:00",
+  "updated": "2026-09-04T07:42:16.613433+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -125,27 +125,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "groq/compound",
-          "name": "groq/compound",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
           "id": "qwen/qwen3.6-27b",
           "name": "qwen/qwen3.6-27b",
           "context": 131072,
@@ -157,6 +136,13 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
         },
         {
           "id": "qwen/qwen3.8-27b",
@@ -173,6 +159,26 @@
           "params_b": 27.0
         },
         {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
+        },
+        {
+          "id": "groq/compound",
+          "name": "groq/compound",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
+        {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
           "context": 131072,
@@ -186,17 +192,11 @@
           "params_b": 20.0
         },
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -204,15 +204,7 @@
     "cerebras": {
       "name": "Cerebras",
       "url": "https://cloud.cerebras.ai",
-      "models": [
-        {
-          "id": "qwen-3.8-27b",
-          "name": "qwen-3.8-27b",
-          "context": null,
-          "limits": "1M tokens/day",
-          "params_b": 27.0
-        }
-      ],
+      "models": [],
       "error": null
     },
     "sambanova": {
@@ -936,36 +928,36 @@
       "url": "https://pollinations.ai",
       "models": [
         {
+          "id": "vendouple/claude-fable-5:free",
+          "name": "vendouple/claude-fable-5:free",
+          "context": 256000,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "vendouple/fable-5.1",
+          "name": "vendouple/fable-5.1",
+          "context": 256000,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "vendouple/gpt-5.6-sol",
+          "name": "vendouple/gpt-5.6-sol",
+          "context": 500000,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "solarnode-developement/M3",
+          "name": "solarnode-developement/M3",
+          "context": 1000000,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "JustScriptzz/gemini-3.7-flash",
           "name": "JustScriptzz/gemini-3.7-flash",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "Spit-fires/Qwen3.8-27B-Uncensored-NVFP4",
-          "name": "Spit-fires/Qwen3.8-27B-Uncensored-NVFP4",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": 27.0
-        },
-        {
-          "id": "NamanSoni78/gpt-5.4-nano",
-          "name": "NamanSoni78/gpt-5.4-nano",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "NamanSoni78/devin-ai",
-          "name": "NamanSoni78/devin-ai",
-          "context": 131000,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "NamanSoni78/gemini-3.8-flash",
-          "name": "NamanSoni78/gemini-3.8-flash",
           "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
@@ -985,18 +977,39 @@
           "params_b": null
         },
         {
-          "id": "MarcosFRG/deepseek-v4-pro-0813",
-          "name": "MarcosFRG/deepseek-v4-pro-0813",
-          "context": 1048576,
+          "id": "Catniti/kimi-k2.6",
+          "name": "Catniti/kimi-k2.6",
+          "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
         {
-          "id": "MarcosFRG/deepseek-v4-flash-0731",
-          "name": "MarcosFRG/deepseek-v4-flash-0731",
-          "context": 1048576,
+          "id": "Catniti/qwen3.7-flash",
+          "name": "Catniti/qwen3.7-flash",
+          "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
+        },
+        {
+          "id": "Catniti/auto-router-1",
+          "name": "Catniti/auto-router-1",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "Catniti/claude-sonnet-5",
+          "name": "Catniti/claude-sonnet-5",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "Catniti/gpt-oss-120b",
+          "name": "Catniti/gpt-oss-120b",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": 120.0
         },
         {
           "id": "vendouple/deepseek-v4-flash",
@@ -1023,13 +1036,6 @@
           "id": "deepseek-v4-flash",
           "name": "deepseek-v4-flash",
           "context": 1048576,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "deepseek-v4-pro",
-          "name": "deepseek-v4-pro",
-          "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -1209,13 +1215,6 @@
       "url": "https://opencode.ai/zen",
       "models": [
         {
-          "id": "muse-spark-1.2-contributor-free",
-          "name": "muse-spark-1.2-contributor-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "mimo-v2.5-free",
           "name": "mimo-v2.5-free",
           "context": null,
@@ -1258,25 +1257,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
+          "params_b": 120.0
         },
         {
           "id": "gpt-oss:20b",
@@ -1286,6 +1271,20 @@
           "params_b": 20.0
         },
         {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "minimax-m3",
           "name": "minimax-m3",
           "context": null,
@@ -1293,18 +1292,18 @@
           "params_b": null
         },
         {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
         }
       ],
       "error": null
