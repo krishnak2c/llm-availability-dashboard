@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T13:08:28.284946+00:00",
+  "updated": "2026-09-04T18:04:54.180124+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -34,46 +34,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 20.0
-        },
-        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -99,6 +59,46 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 20.0
+        },
+        {
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
         }
       ],
       "error": null
@@ -319,132 +319,6 @@
             "vision"
           ],
           "params_b": 14.0
-        },
-        {
-          "id": "mistral-medium-latest",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-medium",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-medium-3-5",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-medium-3.5",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-medium-3",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-medium-2604",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-vibe-cli-latest",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-vibe-cli-with-tools",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "magistral-medium-latest",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
         }
       ],
       "error": null
