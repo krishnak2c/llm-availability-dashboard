@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T18:04:54.180124+00:00",
+  "updated": "2026-09-04T22:46:02.275325+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -7,7 +7,7 @@
       "models": [
         {
           "id": "inclusionai/ling-3.0-flash-fin:free",
-          "name": "Ling 3.0 Flash Fin (free)",
+          "name": "inclusionAI: Ling 3.0 Flash Fin (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
           "params_b": null
@@ -95,6 +95,20 @@
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
           "params_b": 120.0
+        },
+        {
+          "id": "openrouter/free",
+          "name": "Free Models Router",
+          "context": 200000,
+          "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": null
         }
       ],
       "error": null
@@ -207,6 +221,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 30.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 20.0
         },
         {
           "id": "poolside/laguna-xs-2.1",
@@ -608,15 +629,36 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "minimax-m3",
+          "name": "minimax-m3",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -629,29 +671,36 @@
           "params_b": 20.0
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
-        },
+        }
+      ],
+      "error": null
+    },
+    "orca": {
+      "name": "Orca Router",
+      "url": "https://orcarouter.ai",
+      "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "orcarouter/free",
+          "name": "orcarouter/free",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
+          "params_b": null
         },
         {
-          "id": "minimax-m3",
-          "name": "minimax-m3",
+          "id": "qwen/qwen3.8-27b-free",
+          "name": "Qwen: Qwen3.8 27B (free)",
+          "context": 65536,
+          "limits": "free tier",
+          "params_b": 27.0
+        },
+        {
+          "id": "tencent/hy3-free",
+          "name": "Tencent: Hy3 (Free)",
           "context": null,
           "limits": "free tier",
           "params_b": null
