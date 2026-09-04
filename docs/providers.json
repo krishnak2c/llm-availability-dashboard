@@ -4,12 +4,12 @@
     "orca-qwen38",
     "orca-deepseekv4flash",
     "openrouter-minimaxminimaxm3",
+    "kilo-minimaxminimaxm3",
     "kilo-inclusionailing30flashfin",
     "openrouter-inclusionailing30flashfin",
     "groq-qwen36",
     "orca-hy3",
-    "nvidia-minimaxm3",
-    "zen-ling30flashfin"
+    "nvidia-minimaxm3"
   ],
   "chain": [
     {
@@ -35,6 +35,12 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "minimax/minimax-m3:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-minimaxminimaxm3",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "minimax/minimax-m3:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "kilo-inclusionailing30flashfin",
@@ -65,12 +71,6 @@
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "minimaxai/minimax-m3",
       "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "zen-ling30flashfin",
-      "baseUrl": "https://opencode.ai/zen/v1",
-      "model": "ling-3.0-flash-fin-free",
-      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -82,7 +82,6 @@
     "hy3-free",
     "inclusionai/ling-3.0-flash-fin:free",
     "laguna-s-2.1-free",
-    "ling-3.0-flash-fin-free",
     "mimo-v2.5-free",
     "minimax/minimax-m3:free",
     "minimaxai/minimax-m3",
