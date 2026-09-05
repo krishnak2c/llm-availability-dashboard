@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T12:21:37.876610+00:00",
+  "updated": "2026-09-05T17:08:17.242835+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -47,20 +47,6 @@
           "params_b": 27.0
         },
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -85,6 +71,20 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -523,6 +523,13 @@
       "name": "Kilo Code",
       "url": "https://kilo.code",
       "models": [
+        {
+          "id": "inclusionai/ling-3.0-flash-sante:free",
+          "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
         {
           "id": "inclusionai/ling-3.0-flash-fin:free",
           "name": "inclusionAI: Ling 3.0 Flash Fin (free)",

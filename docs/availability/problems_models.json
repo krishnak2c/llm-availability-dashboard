@@ -1,10 +1,17 @@
 {
-  "updated": "2026-09-05T12:21:37.876610+00:00",
+  "updated": "2026-09-05T17:08:17.242835+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
+        {
+          "id": "inclusionai/ling-3.0-flash-sante:free",
+          "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
         {
           "id": "inclusionai/ling-3.0-flash-fin:free",
           "name": "inclusionAI: Ling 3.0 Flash Fin (free)",
@@ -615,11 +622,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
+          "params_b": 20.0
         },
         {
           "id": "gemma4:31b",
@@ -629,13 +636,6 @@
           "params_b": 31.0
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
           "id": "nemotron-3-super",
           "name": "nemotron-3-super",
           "context": null,
@@ -643,18 +643,25 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
           "id": "nemotron-3-ultra",
           "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
         }
       ],
       "error": null
