@@ -2,14 +2,14 @@
   "order": [
     "groq-qwen38",
     "orca-qwen38",
-    "orca-deepseekv4flash",
     "openrouter-minimaxminimaxm3",
-    "kilo-minimaxminimaxm3",
     "kilo-inclusionailing30flashfin",
     "openrouter-inclusionailing30flashfin",
     "groq-qwen36",
     "nvidia-minimaxm3",
-    "zen-ling30flashfin"
+    "zen-ling30flashfin",
+    "kilo-inclusionailing30flashsante",
+    "openrouter-inclusionailing30flashsante"
   ],
   "chain": [
     {
@@ -25,22 +25,10 @@
       "apiKeyEnv": "ORCA_API_KEY"
     },
     {
-      "id": "orca-deepseekv4flash",
-      "baseUrl": "https://api.orcarouter.ai/v1",
-      "model": "deepseek/deepseek-v4-flash-free",
-      "apiKeyEnv": "ORCA_API_KEY"
-    },
-    {
       "id": "openrouter-minimaxminimaxm3",
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "minimax/minimax-m3:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
-      "id": "kilo-minimaxminimaxm3",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "minimax/minimax-m3:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "kilo-inclusionailing30flashfin",
@@ -71,16 +59,28 @@
       "baseUrl": "https://opencode.ai/zen/v1",
       "model": "ling-3.0-flash-fin-free",
       "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+    },
+    {
+      "id": "kilo-inclusionailing30flashsante",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "inclusionai/ling-3.0-flash-sante:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-inclusionailing30flashsante",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "inclusionai/ling-3.0-flash-sante:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
-    "deepseek/deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
     "hy3",
     "hy3-free",
     "inclusionai/ling-3.0-flash-fin:free",
+    "inclusionai/ling-3.0-flash-sante:free",
     "laguna-s-2.1-free",
     "ling-3.0-flash-fin-free",
     "mimo-v2.5-free",
