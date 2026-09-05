@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T07:25:15.304069+00:00",
+  "updated": "2026-09-05T12:21:37.876610+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -447,13 +447,6 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "deepseek-v4-flash",
-          "name": "deepseek-v4-flash",
-          "context": 1048576,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "gpt-oss",
           "name": "gpt-oss",
           "context": 131072,
@@ -622,18 +615,18 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         },
         {
           "id": "gpt-oss:20b",
@@ -650,18 +643,18 @@
           "params_b": null
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
