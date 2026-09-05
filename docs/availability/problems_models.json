@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T19:55:15.363549+00:00",
+  "updated": "2026-09-05T22:38:18.339773+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -622,13 +622,6 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
           "id": "nemotron-3-ultra",
           "name": "nemotron-3-ultra",
           "context": null,
@@ -636,11 +629,18 @@
           "params_b": null
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
+          "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -650,53 +650,18 @@
           "params_b": 30.0
         },
         {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
           "params_b": 20.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
-    "orca": {
-      "name": "Orca Router",
-      "url": "https://orcarouter.ai",
-      "models": [
-        {
-          "id": "orcarouter/free",
-          "name": "orcarouter/free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "deepseek/deepseek-v4-flash-free",
-          "name": "DeepSeek: DeepSeek V4 Flash (Free)",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "qwen/qwen3.8-27b-free",
-          "name": "Qwen: Qwen3.8 27B (free)",
-          "context": 65536,
-          "limits": "free tier",
-          "params_b": 27.0
-        },
-        {
-          "id": "tencent/hy3-free",
-          "name": "Tencent: Hy3 (Free)",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         }
       ],
       "error": null
