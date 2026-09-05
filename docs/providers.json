@@ -3,13 +3,13 @@
     "groq-qwen38",
     "orca-qwen38",
     "openrouter-minimaxminimaxm3",
-    "kilo-minimaxminimaxm3",
     "groq-qwen36",
+    "kilo-inclusionailing30flashsante",
     "kilo-inclusionailing30flashfin",
     "nvidia-minimaxm3",
     "zen-ling30flashfin",
-    "kilo-inclusionailing30flashsante",
-    "kilo-dots3notepreview"
+    "kilo-dots3notepreview",
+    "kilo-openrouterfree"
   ],
   "chain": [
     {
@@ -31,16 +31,16 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "kilo-minimaxminimaxm3",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "minimax/minimax-m3:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
       "id": "groq-qwen36",
       "baseUrl": "https://api.groq.com/openai/v1",
       "model": "qwen/qwen3.6-27b",
       "apiKeyEnv": "GROQ_API_KEY"
+    },
+    {
+      "id": "kilo-inclusionailing30flashsante",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "inclusionai/ling-3.0-flash-sante:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "kilo-inclusionailing30flashfin",
@@ -61,15 +61,15 @@
       "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
     },
     {
-      "id": "kilo-inclusionailing30flashsante",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "inclusionai/ling-3.0-flash-sante:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
       "id": "kilo-dots3notepreview",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "dots-studio/dots-3-note-preview:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "kilo-openrouterfree",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "openrouter/free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
@@ -88,6 +88,7 @@
     "minimax/minimax-m3:free",
     "minimaxai/minimax-m3",
     "nemotron-3-ultra-free",
+    "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b",
