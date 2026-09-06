@@ -1,6 +1,7 @@
 {
   "order": [
     "groq-qwen38",
+    "orca-qwen38",
     "openrouter-minimaxminimaxm3",
     "groq-qwen36",
     "kilo-inclusionailing30flashsante",
@@ -8,8 +9,7 @@
     "openrouter-inclusionailing30flashfin",
     "nvidia-minimaxm3",
     "zen-ling30flashfin",
-    "kilo-dots3notepreview",
-    "openrouter-dots3notepreview"
+    "kilo-dots3notepreview"
   ],
   "chain": [
     {
@@ -17,6 +17,12 @@
       "baseUrl": "https://api.groq.com/openai/v1",
       "model": "qwen/qwen3.8-27b",
       "apiKeyEnv": "GROQ_API_KEY"
+    },
+    {
+      "id": "orca-qwen38",
+      "baseUrl": "https://api.orcarouter.ai/v1",
+      "model": "qwen/qwen3.8-27b-free",
+      "apiKeyEnv": "ORCA_API_KEY"
     },
     {
       "id": "openrouter-minimaxminimaxm3",
@@ -65,12 +71,6 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "dots-studio/dots-3-note-preview:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-dots3notepreview",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "dots-studio/dots-3-note-preview:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
