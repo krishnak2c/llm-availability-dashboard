@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T12:36:23.357163+00:00",
+  "updated": "2026-09-06T17:29:58.300799+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -580,13 +580,6 @@
           "params_b": 2.6
         },
         {
-          "id": "nvidia/nemotron-3.5-lightning:free",
-          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "thinkingmachines/inkling-small:free",
           "name": "Thinking Machines: Inkling Small (free)",
           "context": 1048576,
@@ -678,6 +671,20 @@
           "params_b": 20.0
         },
         {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
@@ -697,20 +704,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
-        },
-        {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         }
       ],
       "error": null
