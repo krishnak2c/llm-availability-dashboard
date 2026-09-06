@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T22:38:18.339773+00:00",
+  "updated": "2026-09-06T02:54:21.512173+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -38,6 +38,11 @@
           "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
           "context": 1000000,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -45,6 +50,11 @@
           "name": "Poolside: Laguna S 2.1 (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -52,6 +62,11 @@
           "name": "Poolside: Laguna XS 2.1 (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -66,6 +81,10 @@
           "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
           "context": 128000,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "vision",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -73,6 +92,11 @@
           "name": "NVIDIA: Nemotron 3 Ultra (free)",
           "context": 1000000,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "reasoning"
+          ],
           "params_b": 550.0
         },
         {
@@ -80,6 +104,12 @@
           "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
           "context": 256000,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
           "params_b": 30.0
         },
         {
@@ -87,6 +117,13 @@
           "name": "Google: Gemma 4 26B A4B  (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
           "params_b": 26.0
         },
         {
@@ -94,6 +131,12 @@
           "name": "MiniMax: MiniMax M2.7 (free)",
           "context": 196608,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -101,6 +144,12 @@
           "name": "NVIDIA: Nemotron 3 Super (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
           "params_b": 120.0
         },
         {
@@ -622,11 +671,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 20.0
         },
         {
           "id": "gpt-oss:120b",
@@ -657,11 +706,46 @@
           "params_b": 31.0
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "orca": {
+      "name": "Orca Router",
+      "url": "https://orcarouter.ai",
+      "models": [
+        {
+          "id": "orcarouter/free",
+          "name": "orcarouter/free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "deepseek/deepseek-v4-flash-free",
+          "name": "DeepSeek: DeepSeek V4 Flash (Free)",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "qwen/qwen3.8-27b-free",
+          "name": "Qwen: Qwen3.8 27B (free)",
+          "context": 65536,
+          "limits": "free tier",
+          "params_b": 27.0
+        },
+        {
+          "id": "tencent/hy3-free",
+          "name": "Tencent: Hy3 (Free)",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null

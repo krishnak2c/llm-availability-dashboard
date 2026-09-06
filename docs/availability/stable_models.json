@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T22:38:18.339773+00:00",
+  "updated": "2026-09-06T02:54:21.512173+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -10,6 +10,13 @@
           "name": "MiniMax: MiniMax M3 (free)",
           "context": 1048576,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
           "params_b": null
         }
       ],
@@ -20,18 +27,17 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131042,
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
           "limits": "varies per model",
           "capabilities": [
             "function_calling",
             "tool_choice",
             "response_schema",
-            "vision",
             "reasoning"
           ],
-          "params_b": 27.0
+          "params_b": 20.0
         },
         {
           "id": "qwen/qwen3.6-27b",
@@ -41,6 +47,34 @@
           "capabilities": [
             "function_calling",
             "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131042,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
             "vision",
             "reasoning"
           ],
@@ -58,33 +92,6 @@
             "reasoning"
           ],
           "params_b": 120.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 20.0
         }
       ],
       "error": null

@@ -5,11 +5,11 @@
     "groq-qwen36",
     "kilo-inclusionailing30flashsante",
     "kilo-inclusionailing30flashfin",
+    "openrouter-inclusionailing30flashfin",
     "nvidia-minimaxm3",
     "zen-ling30flashfin",
     "kilo-dots3notepreview",
-    "kilo-openrouterfree",
-    "openrouter-openrouterfree"
+    "openrouter-dots3notepreview"
   ],
   "chain": [
     {
@@ -43,6 +43,12 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
+      "id": "openrouter-inclusionailing30flashfin",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "inclusionai/ling-3.0-flash-fin:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
       "id": "nvidia-minimaxm3",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "minimaxai/minimax-m3",
@@ -61,15 +67,9 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "kilo-openrouterfree",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "openrouter/free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-openrouterfree",
+      "id": "openrouter-dots3notepreview",
       "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "openrouter/free",
+      "model": "dots-studio/dots-3-note-preview:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
@@ -88,7 +88,6 @@
     "minimax/minimax-m3:free",
     "minimaxai/minimax-m3",
     "nemotron-3-ultra-free",
-    "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b",
