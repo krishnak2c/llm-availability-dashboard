@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T18:58:52.334121+00:00",
+  "updated": "2026-09-07T23:16:23.969090+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -161,32 +161,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 20.0
-        },
-        {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
           "context": 131042,
@@ -201,11 +175,30 @@
           "params_b": 27.0
         },
         {
-          "id": "groq/compound",
-          "name": "groq/compound",
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
           "context": 131072,
           "limits": "varies per model",
-          "params_b": null
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "groq/compound-mini",
@@ -222,8 +215,15 @@
           "params_b": 7.0
         },
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
+          "id": "groq/compound",
+          "name": "groq/compound",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
           "context": 131072,
           "limits": "varies per model",
           "capabilities": [
@@ -232,7 +232,7 @@
             "response_schema",
             "reasoning"
           ],
-          "params_b": 120.0
+          "params_b": 20.0
         }
       ],
       "error": null
@@ -971,6 +971,13 @@
           "params_b": null
         },
         {
+          "id": "z-ai/glm-5.3-flash",
+          "name": "z-ai/glm-5.3-flash",
+          "context": 1048576,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "nvidia/nemotron-3.5-lightning",
           "name": "nvidia/nemotron-3.5-lightning",
           "context": 262144,
@@ -1223,263 +1230,18 @@
           "params_b": 30.0
         },
         {
-          "id": "immature-yt/alara-nova-1",
-          "name": "immature-yt/alara-nova-1",
-          "context": null,
+          "id": "MarcosFRG/north-mini-code",
+          "name": "MarcosFRG/north-mini-code",
+          "context": 262144,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
         {
-          "id": "tomdacatto/gpt-6-astra",
-          "name": "tomdacatto/gpt-6-astra",
-          "context": 1000000,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/Lorbus-Qwen3.6-27B-int4-AutoRound",
-          "name": "AkshayCoder48/Lorbus-Qwen3.6-27B-int4-AutoRound",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": 27.0
-        },
-        {
-          "id": "AkshayCoder48/vexa",
-          "name": "AkshayCoder48/vexa",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/meta-search",
-          "name": "AkshayCoder48/meta-search",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/perplexity-search",
-          "name": "AkshayCoder48/perplexity-search",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/grok-search",
-          "name": "AkshayCoder48/grok-search",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/claude-search",
-          "name": "AkshayCoder48/claude-search",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/deepseek-search",
-          "name": "AkshayCoder48/deepseek-search",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/gemini-search",
-          "name": "AkshayCoder48/gemini-search",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/chatgpt-search",
-          "name": "AkshayCoder48/chatgpt-search",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/qwen",
-          "name": "AkshayCoder48/qwen",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/meta",
-          "name": "AkshayCoder48/meta",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/perplexity",
-          "name": "AkshayCoder48/perplexity",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/claude",
-          "name": "AkshayCoder48/claude",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/gemini",
-          "name": "AkshayCoder48/gemini",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/chatgpt",
-          "name": "AkshayCoder48/chatgpt",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/Qwen3.5-9B-Q4_K_M.gguf",
-          "name": "AkshayCoder48/Qwen3.5-9B-Q4_K_M.gguf",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": 9.0
-        },
-        {
-          "id": "AkshayCoder48/v3",
-          "name": "AkshayCoder48/v3",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/laguna-s-2.1-free",
-          "name": "AkshayCoder48/laguna-s-2.1-free",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/Nemo",
-          "name": "AkshayCoder48/Nemo",
-          "context": 32000,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/kilo-auto-small",
-          "name": "AkshayCoder48/kilo-auto-small",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/kilo-auto-free",
-          "name": "AkshayCoder48/kilo-auto-free",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/cohere-north-mini-code:free",
-          "name": "AkshayCoder48/cohere-north-mini-code:free",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/poolside-laguna-s-2.1:free",
-          "name": "AkshayCoder48/poolside-laguna-s-2.1:free",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/chat-model-reasoning-with-search",
-          "name": "AkshayCoder48/chat-model-reasoning-with-search",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/chat-model-reasoning",
-          "name": "AkshayCoder48/chat-model-reasoning",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/jollygen",
-          "name": "AkshayCoder48/jollygen",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/llama3-8b",
-          "name": "AkshayCoder48/llama3-8b",
+          "id": "tomdacatto/llama-3.1-8B",
+          "name": "tomdacatto/llama-3.1-8B",
           "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": 8.0
-        },
-        {
-          "id": "AkshayCoder48/midnight-rose",
-          "name": "AkshayCoder48/midnight-rose",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/L3-70B-Euryale-v2.1",
-          "name": "AkshayCoder48/L3-70B-Euryale-v2.1",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": 70.0
-        },
-        {
-          "id": "AkshayCoder48/deepseek-v3.1",
-          "name": "AkshayCoder48/deepseek-v3.1",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/gemini-3.1-flash-lite",
-          "name": "AkshayCoder48/gemini-3.1-flash-lite",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/gemini-3-flash",
-          "name": "AkshayCoder48/gemini-3-flash",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/gemini-2.5-flash",
-          "name": "AkshayCoder48/gemini-2.5-flash",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/gpt-4o-latest",
-          "name": "AkshayCoder48/gpt-4o-latest",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "AkshayCoder48/gpt-5",
-          "name": "AkshayCoder48/gpt-5",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
         }
       ],
       "error": null
@@ -1496,9 +1258,30 @@
           "params_b": null
         },
         {
+          "id": "chroma-v.46-flash",
+          "name": "chroma-v.46-flash",
+          "context": null,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "dark-beast-krea2",
+          "name": "dark-beast-krea2",
+          "context": null,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "gpt-5.6-sol",
+          "name": "gpt-5.6-sol",
+          "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -1699,18 +1482,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
+          "params_b": 120.0
         },
         {
           "id": "gemma4:31b",
@@ -1734,11 +1510,18 @@
           "params_b": 20.0
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
-          "params_b": 120.0
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         }
       ],
       "error": null
