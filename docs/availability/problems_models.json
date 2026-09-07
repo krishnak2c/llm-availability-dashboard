@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T22:40:49.104859+00:00",
+  "updated": "2026-09-07T02:51:34.532587+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -251,6 +251,13 @@
           "params_b": null
         },
         {
+          "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+          "name": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 8.0
+        },
+        {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
           "name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
           "context": null,
@@ -489,17 +496,6 @@
       "url": "https://developers.cloudflare.com/workers-ai/",
       "models": [
         {
-          "id": "@cf/zai-org/glm-4.7-flash",
-          "name": "@cf/zai-org/glm-4.7-flash",
-          "context": 131072,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
           "id": "@cf/qwen/qwen3.8-27b",
           "name": "@cf/qwen/qwen3.8-27b",
           "context": null,
@@ -675,6 +671,20 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
@@ -689,20 +699,6 @@
           "params_b": 30.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
           "id": "nemotron-3-ultra",
           "name": "nemotron-3-ultra",
           "context": null,
@@ -710,11 +706,11 @@
           "params_b": null
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
+          "params_b": null
         }
       ],
       "error": null
