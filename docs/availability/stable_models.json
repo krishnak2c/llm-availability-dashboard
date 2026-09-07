@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T07:55:15.461962+00:00",
+  "updated": "2026-09-07T14:46:26.287124+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -15,6 +15,19 @@
             "tool_choice",
             "response_schema",
             "vision",
+            "reasoning"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "minimax/minimax-m2.7:free",
+          "name": "MiniMax: MiniMax M2.7 (free)",
+          "context": 196608,
+          "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
             "reasoning"
           ],
           "params_b": null
@@ -40,18 +53,24 @@
           "params_b": 120.0
         },
         {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131042,
+          "id": "qwen/qwen3.6-27b",
+          "name": "qwen/qwen3.6-27b",
+          "context": 131072,
           "limits": "varies per model",
           "capabilities": [
             "function_calling",
             "tool_choice",
-            "response_schema",
             "vision",
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -67,31 +86,25 @@
           "params_b": 20.0
         },
         {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131042,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
+        {
           "id": "groq/compound-mini",
           "name": "groq/compound-mini",
           "context": 131072,
           "limits": "varies per model",
           "params_b": null
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
         }
       ],
       "error": null
@@ -524,6 +537,20 @@
       "url": "https://kilo.code",
       "models": [
         {
+          "id": "minimax/minimax-m2.7:free",
+          "name": "MiniMax: MiniMax M2.7 (free)",
+          "context": 196608,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "dots-studio/dots-3-note-preview:free",
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "context": 512000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "inclusionai/ling-3.0-flash-sante:free",
           "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
           "context": 262144,
@@ -534,13 +561,6 @@
           "id": "inclusionai/ling-3.0-flash-fin:free",
           "name": "inclusionAI: Ling 3.0 Flash Fin (free)",
           "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "dots-studio/dots-3-note-preview:free",
-          "name": "Dots Studio: Dots3-Note Preview (free)",
-          "context": 512000,
           "limits": "free tier",
           "params_b": null
         },
@@ -562,13 +582,6 @@
           "id": "nvidia/nemotron-3.5-content-safety:free",
           "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
           "context": 128000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "minimax/minimax-m2.7:free",
-          "name": "MiniMax: MiniMax M2.7 (free)",
-          "context": 196608,
           "limits": "free tier",
           "params_b": null
         },
