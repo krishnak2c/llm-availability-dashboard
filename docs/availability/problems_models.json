@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T14:46:26.287124+00:00",
+  "updated": "2026-09-07T18:58:52.334121+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -497,13 +497,6 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "gpt-oss",
-          "name": "gpt-oss",
-          "context": 131072,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "minimax-m2.7",
           "name": "minimax-m2.7",
           "context": 180000,
@@ -556,13 +549,6 @@
           "id": "poolside/laguna-s-2.1:free",
           "name": "Poolside: Laguna S 2.1 (free)",
           "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "minimax/minimax-m3:free",
-          "name": "MiniMax: MiniMax M3 (free)",
-          "context": 1048576,
           "limits": "free tier",
           "params_b": null
         },
@@ -658,11 +644,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
+          "params_b": 30.0
         },
         {
           "id": "nemotron-3-ultra",
@@ -672,18 +658,11 @@
           "params_b": null
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
+          "params_b": 31.0
         },
         {
           "id": "nemotron-3-super",
@@ -691,6 +670,13 @@
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
         },
         {
           "id": "gpt-oss:120b",
