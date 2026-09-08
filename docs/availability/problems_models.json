@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T23:16:23.969090+00:00",
+  "updated": "2026-09-08T03:01:36.070683+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -229,6 +229,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": null
+        },
+        {
+          "id": "nvidia/ising-calibration-1.5-31b",
+          "name": "nvidia/ising-calibration-1.5-31b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 31.0
         },
         {
           "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
@@ -623,11 +630,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
-          "params_b": 120.0
+          "params_b": null
         },
         {
           "id": "gemma4:31b",
@@ -644,18 +651,18 @@
           "params_b": null
         },
         {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
           "params_b": 20.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         },
         {
           "id": "nemotron-3-nano:30b",
