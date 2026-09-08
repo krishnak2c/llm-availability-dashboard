@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08T15:58:04.703318+00:00",
+  "updated": "2026-09-08T20:42:53.687147+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -243,13 +243,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 31.0
-        },
-        {
-          "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
-          "name": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 8.0
         },
         {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
@@ -644,32 +637,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         },
         {
           "id": "nemotron-3-super",
@@ -684,6 +656,27 @@
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null

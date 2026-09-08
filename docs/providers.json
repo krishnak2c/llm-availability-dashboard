@@ -1,10 +1,10 @@
 {
   "order": [
     "groq-qwen38",
-    "groq-qwen36",
     "kilo-inclusionailing30flashsante",
     "kilo-inclusionailing30flashfin",
     "openrouter-inclusionailing30flashfin",
+    "groq-qwen36",
     "kilo-dots3notepreview",
     "kilo-openrouterfree",
     "openrouter-openrouterfree",
@@ -16,12 +16,6 @@
       "id": "groq-qwen38",
       "baseUrl": "https://api.groq.com/openai/v1",
       "model": "qwen/qwen3.8-27b",
-      "apiKeyEnv": "GROQ_API_KEY"
-    },
-    {
-      "id": "groq-qwen36",
-      "baseUrl": "https://api.groq.com/openai/v1",
-      "model": "qwen/qwen3.6-27b",
       "apiKeyEnv": "GROQ_API_KEY"
     },
     {
@@ -41,6 +35,12 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "inclusionai/ling-3.0-flash-fin:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "groq-qwen36",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "model": "qwen/qwen3.6-27b",
+      "apiKeyEnv": "GROQ_API_KEY"
     },
     {
       "id": "kilo-dots3notepreview",
