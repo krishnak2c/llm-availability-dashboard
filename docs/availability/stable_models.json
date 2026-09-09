@@ -1,24 +1,10 @@
 {
-  "updated": "2026-09-09T10:44:42.229511+00:00",
+  "updated": "2026-09-09T15:54:06.903161+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
-        {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131042,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
-        },
         {
           "id": "allam-2-7b",
           "name": "allam-2-7b",
@@ -47,17 +33,18 @@
           "params_b": 120.0
         },
         {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131042,
           "limits": "varies per model",
           "capabilities": [
             "function_calling",
             "tool_choice",
             "response_schema",
+            "vision",
             "reasoning"
           ],
-          "params_b": 20.0
+          "params_b": 27.0
         },
         {
           "id": "qwen/qwen3.6-27b",
@@ -71,6 +58,19 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 20.0
         }
       ],
       "error": null
@@ -506,6 +506,13 @@
           "id": "dots-studio/dots-3-note-preview:free",
           "name": "Dots Studio: Dots3-Note Preview (free)",
           "context": 512000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nex-agi/nex-n2.5-mini:free",
+          "name": "Nex AGI: Nex-N2.5-Mini (free)",
+          "context": 262144,
           "limits": "free tier",
           "params_b": null
         },

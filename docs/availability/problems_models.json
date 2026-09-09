@@ -1,10 +1,24 @@
 {
-  "updated": "2026-09-09T10:44:42.229511+00:00",
+  "updated": "2026-09-09T15:54:06.903161+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
+        {
+          "id": "nex-agi/nex-n2.5-mini:free",
+          "name": "Nex AGI: Nex-N2.5-Mini (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "nex-agi/nex-n2.5-pro:free",
+          "name": "Nex AGI: Nex-N2.5-Pro (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
         {
           "id": "inclusionai/ling-3.0-flash-sante:free",
           "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
@@ -607,6 +621,13 @@
           "params_b": 550.0
         },
         {
+          "id": "nex-agi/nex-n2.5-pro:free",
+          "name": "Nex AGI: Nex-N2.5-Pro (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "thinkingmachines/inkling-small:free",
           "name": "Thinking Machines: Inkling Small (free)",
           "context": 1048576,
@@ -705,18 +726,18 @@
           "params_b": 31.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         },
         {
           "id": "nemotron-3-nano:30b",
