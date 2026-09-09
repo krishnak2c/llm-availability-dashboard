@@ -3,13 +3,13 @@
     "groq-qwen38",
     "kilo-inclusionailing30flashsante",
     "kilo-inclusionailing30flashfin",
-    "openrouter-inclusionailing30flashfin",
     "groq-qwen36",
     "kilo-nexaginexn25mini",
-    "openrouter-nexaginexn25mini",
     "kilo-dots3notepreview",
     "kilo-openrouterfree",
-    "openrouter-openrouterfree"
+    "groq-allam2",
+    "mistral-codestral",
+    "mistral-codestral"
   ],
   "chain": [
     {
@@ -31,12 +31,6 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "openrouter-inclusionailing30flashfin",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "inclusionai/ling-3.0-flash-fin:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
       "id": "groq-qwen36",
       "baseUrl": "https://api.groq.com/openai/v1",
       "model": "qwen/qwen3.6-27b",
@@ -47,12 +41,6 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nex-agi/nex-n2.5-mini:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-nexaginexn25mini",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "nex-agi/nex-n2.5-mini:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "kilo-dots3notepreview",
@@ -67,13 +55,28 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "openrouter-openrouterfree",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "openrouter/free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
+      "id": "groq-allam2",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "model": "allam-2-7b",
+      "apiKeyEnv": "GROQ_API_KEY"
+    },
+    {
+      "id": "mistral-codestral",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "codestral-2508",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "mistral-codestral",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "codestral-latest",
+      "apiKeyEnv": "MISTRAL_API_KEY"
     }
   ],
   "modelAllowlist": [
+    "allam-2-7b",
+    "codestral-2508",
+    "codestral-latest",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
