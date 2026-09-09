@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09T03:02:33.867367+00:00",
+  "updated": "2026-09-09T10:44:42.229511+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -127,6 +127,20 @@
           "params_b": 26.0
         },
         {
+          "id": "google/gemma-4-31b-it:free",
+          "name": "Google: Gemma 4 31B (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 31.0
+        },
+        {
           "id": "nvidia/nemotron-3-super-120b-a12b:free",
           "name": "NVIDIA: Nemotron 3 Super (free)",
           "context": 262144,
@@ -215,13 +229,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 30.0
-        },
-        {
-          "id": "minimaxai/minimax-m3",
-          "name": "minimaxai/minimax-m3",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
         },
         {
           "id": "mistralai/mistral-nemotron",
@@ -483,6 +490,46 @@
       "url": "https://developers.cloudflare.com/workers-ai/",
       "models": [
         {
+          "id": "@cf/moonshotai/kimi-k2.7-code",
+          "name": "@cf/moonshotai/kimi-k2.7-code",
+          "context": 262144,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "@cf/moonshotai/kimi-k2.6",
+          "name": "@cf/moonshotai/kimi-k2.6",
+          "context": 262144,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "@cf/deepseek-ai/deepseek-v4-flash-0731",
+          "name": "@cf/deepseek-ai/deepseek-v4-flash-0731",
+          "context": null,
+          "limits": "10k neurons/day",
+          "params_b": null
+        },
+        {
+          "id": "@cf/zai-org/glm-5.2",
+          "name": "@cf/zai-org/glm-5.2",
+          "context": 262144,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": null
+        },
+        {
           "id": "@cf/qwen/qwen3.8-27b",
           "name": "@cf/qwen/qwen3.8-27b",
           "context": null,
@@ -637,6 +684,13 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
@@ -658,11 +712,11 @@
           "params_b": null
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 120.0
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -670,13 +724,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
         }
       ],
       "error": null
