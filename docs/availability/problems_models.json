@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-11T13:13:23.287452+00:00",
+  "updated": "2026-09-11T18:09:46.674522+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -382,6 +382,69 @@
       ],
       "error": null
     },
+    "pollinations": {
+      "name": "Pollinations",
+      "url": "https://pollinations.ai",
+      "models": [
+        {
+          "id": "CloudCompile/auto",
+          "name": "CloudCompile/auto",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "CloudCompile/gemma-4-26b",
+          "name": "CloudCompile/gemma-4-26b",
+          "context": 262144,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": 26.0
+        },
+        {
+          "id": "CloudCompile/glm-5.3",
+          "name": "CloudCompile/glm-5.3",
+          "context": 1000500,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "NamanSoni78/gpt-5.4-nano",
+          "name": "NamanSoni78/gpt-5.4-nano",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "NamanSoni78/devin-ai",
+          "name": "NamanSoni78/devin-ai",
+          "context": 131000,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "NamanSoni78/gemini-3.8-flash",
+          "name": "NamanSoni78/gemini-3.8-flash",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "MarcosFRG/deepseek-v4-pro-0813",
+          "name": "MarcosFRG/deepseek-v4-pro-0813",
+          "context": 1048576,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "MarcosFRG/deepseek-v4-flash-0731",
+          "name": "MarcosFRG/deepseek-v4-flash-0731",
+          "context": 1048576,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
     "llm7": {
       "name": "LLM7",
       "url": "https://llm7.io",
@@ -429,13 +492,6 @@
           "params_b": null
         },
         {
-          "id": "stepfun/step-3.7-flash:free",
-          "name": "StepFun: Step 3.7 Flash (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "poolside/laguna-s-2.1:free",
           "name": "Poolside: Laguna S 2.1 (free)",
           "context": 262144,
@@ -464,13 +520,6 @@
           "params_b": null
         },
         {
-          "id": "thinkingmachines/inkling:free",
-          "name": "Thinking Machines: Inkling (free)",
-          "context": 1048576,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "poolside/laguna-xs-2.1:free",
           "name": "Poolside: Laguna XS 2.1 (free)",
           "context": 262144,
@@ -490,6 +539,13 @@
           "context": 262144,
           "limits": "free tier",
           "params_b": 120.0
+        },
+        {
+          "id": "stepfun/step-3.7-flash:free",
+          "name": "StepFun: Step 3.7 Flash (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
@@ -534,13 +590,6 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
@@ -548,18 +597,11 @@
           "params_b": 30.0
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
+          "params_b": 31.0
         },
         {
           "id": "gpt-oss:20b",
@@ -569,11 +611,25 @@
           "params_b": 20.0
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
+          "params_b": null
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
@@ -599,6 +655,13 @@
         {
           "id": "tencent/hy3-free",
           "name": "Tencent: Hy3 (Free)",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "z-ai/glm-5.3-flash-free",
+          "name": "Z.ai: GLM 5.3 Flash (Free)",
           "context": null,
           "limits": "free tier",
           "params_b": null
