@@ -4,12 +4,12 @@
     "kilo-inclusionailing30flashsante",
     "openrouter-inclusionailing30flashsante",
     "kilo-inclusionailing30flashfin",
+    "openrouter-inclusionailing30flashfin",
     "groq-qwen36",
     "kilo-inclusionailing30flashvl",
     "openrouter-inclusionailing30flashvl",
     "kilo-nexaginexn25mini",
-    "openrouter-nexaginexn25mini",
-    "kilo-openrouterfree"
+    "openrouter-nexaginexn25mini"
   ],
   "chain": [
     {
@@ -35,6 +35,12 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "inclusionai/ling-3.0-flash-fin:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-inclusionailing30flashfin",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "inclusionai/ling-3.0-flash-fin:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "groq-qwen36",
@@ -65,12 +71,6 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "nex-agi/nex-n2.5-mini:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
-      "id": "kilo-openrouterfree",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "openrouter/free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -87,7 +87,6 @@
     "minimaxai/minimax-m3",
     "nemotron-3-ultra-free",
     "nex-agi/nex-n2.5-mini:free",
-    "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-27b",
