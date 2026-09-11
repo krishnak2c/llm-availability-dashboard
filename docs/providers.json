@@ -2,14 +2,14 @@
   "order": [
     "groq-qwen38",
     "kilo-inclusionailing30flashsante",
+    "openrouter-inclusionailing30flashsante",
     "kilo-inclusionailing30flashfin",
+    "openrouter-inclusionailing30flashfin",
     "groq-qwen36",
     "kilo-inclusionailing30flashvl",
     "kilo-nexaginexn25mini",
-    "kilo-openrouterfree",
-    "groq-allam2",
-    "mistral-codestral",
-    "mistral-codestral"
+    "openrouter-nexaginexn25mini",
+    "kilo-openrouterfree"
   ],
   "chain": [
     {
@@ -25,10 +25,22 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
+      "id": "openrouter-inclusionailing30flashsante",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "inclusionai/ling-3.0-flash-sante:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
       "id": "kilo-inclusionailing30flashfin",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "inclusionai/ling-3.0-flash-fin:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-inclusionailing30flashfin",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "inclusionai/ling-3.0-flash-fin:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "groq-qwen36",
@@ -49,34 +61,19 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
+      "id": "openrouter-nexaginexn25mini",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "nex-agi/nex-n2.5-mini:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
       "id": "kilo-openrouterfree",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "openrouter/free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "groq-allam2",
-      "baseUrl": "https://api.groq.com/openai/v1",
-      "model": "allam-2-7b",
-      "apiKeyEnv": "GROQ_API_KEY"
-    },
-    {
-      "id": "mistral-codestral",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "codestral-2508",
-      "apiKeyEnv": "MISTRAL_API_KEY"
-    },
-    {
-      "id": "mistral-codestral",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "codestral-latest",
-      "apiKeyEnv": "MISTRAL_API_KEY"
     }
   ],
   "modelAllowlist": [
-    "allam-2-7b",
-    "codestral-2508",
-    "codestral-latest",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10T22:56:13.470194+00:00",
+  "updated": "2026-09-11T02:58:30.782767+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -310,195 +310,6 @@
       ],
       "error": null
     },
-    "mistral": {
-      "name": "Mistral",
-      "url": "https://console.mistral.ai",
-      "models": [
-        {
-          "id": "mistral-small-2603",
-          "name": "mistral-small-2603",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-small-latest",
-          "name": "mistral-small-2603",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-vibe-cli-fast",
-          "name": "mistral-small-2603",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "magistral-small-latest",
-          "name": "mistral-small-2603",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-medium-latest",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-medium",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-medium-3-5",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-medium-3.5",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-medium-3",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-medium-2604",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-vibe-cli-latest",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-vibe-cli-with-tools",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "magistral-medium-latest",
-          "name": "mistral-medium-latest",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
     "cloudflare": {
       "name": "Cloudflare AI",
       "url": "https://developers.cloudflare.com/workers-ai/",
@@ -639,6 +450,13 @@
           "params_b": null
         },
         {
+          "id": "nvidia/nemotron-3.5-lightning:free",
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "context": 1000000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "thinkingmachines/inkling-small:free",
           "name": "Thinking Machines: Inkling Small (free)",
           "context": 1048576,
@@ -716,18 +534,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
+          "params_b": 120.0
         },
         {
           "id": "gpt-oss:20b",
@@ -744,18 +555,25 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         }
       ],
       "error": null
