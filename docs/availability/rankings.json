@@ -9,11 +9,33 @@
     },
     "artificial_analysis_index_version": 4.3,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 55,
-    "ranked_count": 55,
+    "source_count": 69,
+    "ranked_count": 69,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "NamanSoni78/DeepSeek-V4.1-Flash",
+      "model_name": "NamanSoni78/DeepSeek-V4.1-Flash",
+      "aa_slug": "deepseek-v4-1-flash",
+      "aa_name": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+      "aa_match": "substring",
+      "agentic": null,
+      "coding": null,
+      "intelligence": 39.5,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": 100.0,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 100.0,
+      "data_coverage": 15.0,
+      "rank": 1
+    },
     {
       "provider": "Groq",
       "provider_id": "groq",
@@ -28,13 +50,35 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 100.0,
-      "coding_norm": 100.0,
-      "intelligence_norm": 100.0,
+      "coding_norm": 98.21,
+      "intelligence_norm": 83.77,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 100.0,
+      "hermes_score": 96.4,
       "data_coverage": 80.0,
-      "rank": 1
+      "rank": 2
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "Catniti/gemini-3.6-flash",
+      "model_name": "Catniti/gemini-3.6-flash",
+      "aa_slug": "gemini-3-6-flash",
+      "aa_name": "Gemini 3.6 Flash (high)",
+      "aa_match": "substring",
+      "agentic": 30.2,
+      "coding": 69.2,
+      "intelligence": 34.3,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 64.57,
+      "coding_norm": 100.0,
+      "intelligence_norm": 84.93,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 79.46,
+      "data_coverage": 80.0,
+      "rank": 3
     },
     {
       "provider": "Kilo Code",
@@ -50,13 +94,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 44.57,
-      "coding_norm": 71.03,
-      "intelligence_norm": 68.86,
+      "coding_norm": 69.76,
+      "intelligence_norm": 57.68,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 57.39,
+      "hermes_score": 54.9,
       "data_coverage": 80.0,
-      "rank": 2
+      "rank": 4
     },
     {
       "provider": "Kilo Code",
@@ -72,13 +116,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 44.57,
-      "coding_norm": 71.03,
-      "intelligence_norm": 68.86,
+      "coding_norm": 69.76,
+      "intelligence_norm": 57.68,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 57.39,
+      "hermes_score": 54.9,
       "data_coverage": 80.0,
-      "rank": 3
+      "rank": 5
     },
     {
       "provider": "Groq",
@@ -94,13 +138,35 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 42.61,
-      "coding_norm": 76.16,
-      "intelligence_norm": 58.48,
+      "coding_norm": 74.8,
+      "intelligence_norm": 48.99,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 56.07,
+      "hermes_score": 53.86,
       "data_coverage": 80.0,
-      "rank": 4
+      "rank": 6
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "Catniti/step-3.7-flash",
+      "model_name": "Catniti/step-3.7-flash",
+      "aa_slug": "step-3-7-flash",
+      "aa_name": "Step 3.7 Flash",
+      "aa_match": "substring",
+      "agentic": null,
+      "coding": 39.6,
+      "intelligence": 19.5,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": 51.87,
+      "intelligence_norm": 42.03,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 48.18,
+      "data_coverage": 40.0,
+      "rank": 7
     },
     {
       "provider": "Cloudflare AI",
@@ -116,13 +182,35 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": null,
-      "coding_norm": 52.32,
-      "intelligence_norm": 40.48,
+      "coding_norm": 51.38,
+      "intelligence_norm": 33.91,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 47.88,
+      "hermes_score": 44.83,
       "data_coverage": 40.0,
-      "rank": 5
+      "rank": 8
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "Catniti/deepseek-r1-free",
+      "model_name": "Catniti/deepseek-r1-free",
+      "aa_slug": "deepseek-r1",
+      "aa_name": "DeepSeek R1 0528 (May '25)",
+      "aa_match": "substring",
+      "agentic": null,
+      "coding": null,
+      "intelligence": 13.1,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": 23.48,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 23.48,
+      "data_coverage": 15.0,
+      "rank": 9
     },
     {
       "provider": "Groq",
@@ -138,13 +226,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 12.39,
-      "coding_norm": 37.58,
-      "intelligence_norm": 25.26,
+      "coding_norm": 36.91,
+      "intelligence_norm": 21.16,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 22.68,
+      "hermes_score": 21.7,
       "data_coverage": 80.0,
-      "rank": 6
+      "rank": 10
     },
     {
       "provider": "Cloudflare AI",
@@ -160,13 +248,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 12.39,
-      "coding_norm": 37.58,
-      "intelligence_norm": 25.26,
+      "coding_norm": 36.91,
+      "intelligence_norm": 21.16,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 22.68,
+      "hermes_score": 21.7,
       "data_coverage": 80.0,
-      "rank": 7
+      "rank": 11
     },
     {
       "provider": "Kilo Code",
@@ -182,13 +270,35 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 12.17,
-      "coding_norm": 31.62,
-      "intelligence_norm": 29.76,
+      "coding_norm": 31.06,
+      "intelligence_norm": 24.93,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 21.55,
+      "hermes_score": 20.47,
       "data_coverage": 80.0,
-      "rank": 8
+      "rank": 12
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "Catniti/north-mini-code",
+      "model_name": "Catniti/north-mini-code",
+      "aa_slug": "north-mini-code",
+      "aa_name": "North Mini Code",
+      "aa_match": "substring",
+      "agentic": 1.1,
+      "coding": 36.5,
+      "intelligence": 12.8,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 1.3,
+      "coding_norm": 46.83,
+      "intelligence_norm": 22.61,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 19.53,
+      "data_coverage": 80.0,
+      "rank": 13
     },
     {
       "provider": "Kilo Code",
@@ -204,13 +314,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 1.3,
-      "coding_norm": 47.68,
-      "intelligence_norm": 26.99,
+      "coding_norm": 46.83,
+      "intelligence_norm": 22.61,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 20.61,
+      "hermes_score": 19.53,
       "data_coverage": 80.0,
-      "rank": 9
+      "rank": 14
     },
     {
       "provider": "Cloudflare AI",
@@ -227,12 +337,12 @@
       "swebench": null,
       "agentic_norm": null,
       "coding_norm": null,
-      "intelligence_norm": 15.57,
+      "intelligence_norm": 13.04,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 15.57,
+      "hermes_score": 13.04,
       "data_coverage": 15.0,
-      "rank": 10
+      "rank": 15
     },
     {
       "provider": "Groq",
@@ -248,13 +358,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 1.96,
-      "coding_norm": 21.52,
-      "intelligence_norm": 13.84,
+      "coding_norm": 21.14,
+      "intelligence_norm": 11.59,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 10.3,
+      "hermes_score": 9.76,
       "data_coverage": 80.0,
-      "rank": 11
+      "rank": 16
     },
     {
       "provider": "Cloudflare AI",
@@ -270,13 +380,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 1.96,
-      "coding_norm": 21.52,
-      "intelligence_norm": 13.84,
+      "coding_norm": 21.14,
+      "intelligence_norm": 11.59,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 10.3,
+      "hermes_score": 9.76,
       "data_coverage": 80.0,
-      "rank": 12
+      "rank": 17
     },
     {
       "provider": "Cloudflare AI",
@@ -293,12 +403,12 @@
       "swebench": null,
       "agentic_norm": null,
       "coding_norm": null,
-      "intelligence_norm": 5.88,
+      "intelligence_norm": 4.93,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 5.88,
+      "hermes_score": 4.93,
       "data_coverage": 15.0,
-      "rank": 13
+      "rank": 18
     },
     {
       "provider": "Kilo Code",
@@ -315,12 +425,12 @@
       "swebench": null,
       "agentic_norm": null,
       "coding_norm": 0.0,
-      "intelligence_norm": 11.76,
+      "intelligence_norm": 9.86,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 4.41,
+      "hermes_score": 3.7,
       "data_coverage": 40.0,
-      "rank": 14
+      "rank": 19
     },
     {
       "provider": "Cloudflare AI",
@@ -336,13 +446,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 0.0,
-      "coding_norm": 0.83,
-      "intelligence_norm": 5.19,
+      "coding_norm": 0.81,
+      "intelligence_norm": 4.35,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 1.23,
+      "hermes_score": 1.07,
       "data_coverage": 80.0,
-      "rank": 15
+      "rank": 20
     },
     {
       "provider": "Groq",
@@ -364,7 +474,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 16
+      "rank": 21
     },
     {
       "provider": "Groq",
@@ -386,7 +496,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 17
+      "rank": 22
     },
     {
       "provider": "NVIDIA NIM",
@@ -408,7 +518,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 18
+      "rank": 23
     },
     {
       "provider": "NVIDIA NIM",
@@ -430,7 +540,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 19
+      "rank": 24
     },
     {
       "provider": "NVIDIA NIM",
@@ -452,7 +562,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 20
+      "rank": 25
     },
     {
       "provider": "NVIDIA NIM",
@@ -474,7 +584,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 21
+      "rank": 26
     },
     {
       "provider": "NVIDIA NIM",
@@ -496,7 +606,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 22
+      "rank": 27
     },
     {
       "provider": "Mistral",
@@ -518,7 +628,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 23
+      "rank": 28
     },
     {
       "provider": "Mistral",
@@ -540,7 +650,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 24
+      "rank": 29
     },
     {
       "provider": "Mistral",
@@ -562,7 +672,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 25
+      "rank": 30
     },
     {
       "provider": "Mistral",
@@ -584,7 +694,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 26
+      "rank": 31
     },
     {
       "provider": "Mistral",
@@ -606,7 +716,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 27
+      "rank": 32
     },
     {
       "provider": "Mistral",
@@ -628,7 +738,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 28
+      "rank": 33
     },
     {
       "provider": "Mistral",
@@ -650,7 +760,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 29
+      "rank": 34
     },
     {
       "provider": "Mistral",
@@ -672,7 +782,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 30
+      "rank": 35
     },
     {
       "provider": "Mistral",
@@ -694,7 +804,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 31
+      "rank": 36
     },
     {
       "provider": "Mistral",
@@ -716,7 +826,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 32
+      "rank": 37
     },
     {
       "provider": "Mistral",
@@ -738,7 +848,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 33
+      "rank": 38
     },
     {
       "provider": "Mistral",
@@ -760,7 +870,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 34
+      "rank": 39
     },
     {
       "provider": "Cloudflare AI",
@@ -782,7 +892,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 35
+      "rank": 40
     },
     {
       "provider": "Cloudflare AI",
@@ -804,7 +914,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 36
+      "rank": 41
     },
     {
       "provider": "Cloudflare AI",
@@ -826,7 +936,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 37
+      "rank": 42
     },
     {
       "provider": "Cloudflare AI",
@@ -848,7 +958,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 15.0,
-      "rank": 38
+      "rank": 43
     },
     {
       "provider": "Cloudflare AI",
@@ -870,7 +980,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 39
+      "rank": 44
     },
     {
       "provider": "Cloudflare AI",
@@ -892,7 +1002,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 40
+      "rank": 45
     },
     {
       "provider": "Cloudflare AI",
@@ -914,7 +1024,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 41
+      "rank": 46
     },
     {
       "provider": "Cloudflare AI",
@@ -936,7 +1046,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 42
+      "rank": 47
     },
     {
       "provider": "Cloudflare AI",
@@ -958,7 +1068,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 43
+      "rank": 48
     },
     {
       "provider": "Cloudflare AI",
@@ -980,7 +1090,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 44
+      "rank": 49
     },
     {
       "provider": "Cloudflare AI",
@@ -1002,7 +1112,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 45
+      "rank": 50
     },
     {
       "provider": "Cloudflare AI",
@@ -1024,7 +1134,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 46
+      "rank": 51
     },
     {
       "provider": "Cloudflare AI",
@@ -1046,7 +1156,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 47
+      "rank": 52
     },
     {
       "provider": "Cloudflare AI",
@@ -1068,7 +1178,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 48
+      "rank": 53
     },
     {
       "provider": "Cloudflare AI",
@@ -1090,7 +1200,205 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 49
+      "rank": 54
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "Catniti/nemotron-3-ultra",
+      "model_name": "Catniti/nemotron-3-ultra",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 55
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "Catniti/nemotron-3-super",
+      "model_name": "Catniti/nemotron-3-super",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 56
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "Catniti/minimax-m2.7",
+      "model_name": "Catniti/minimax-m2.7",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 57
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "Catniti/laguna-s-2.1",
+      "model_name": "Catniti/laguna-s-2.1",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 58
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "Catniti/claude-sonnet-4",
+      "model_name": "Catniti/claude-sonnet-4",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 59
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "Catniti/grok-4-fast",
+      "model_name": "Catniti/grok-4-fast",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 60
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "Catniti/gpt-5.4-mini",
+      "model_name": "Catniti/gpt-5.4-mini",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 61
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "Catniti/gpt-5.2",
+      "model_name": "Catniti/gpt-5.2",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 62
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "Catniti/kilo-auto",
+      "model_name": "Catniti/kilo-auto",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 63
     },
     {
       "provider": "LLM7",
@@ -1112,7 +1420,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 50
+      "rank": 64
     },
     {
       "provider": "Kilo Code",
@@ -1134,7 +1442,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 51
+      "rank": 65
     },
     {
       "provider": "Kilo Code",
@@ -1156,7 +1464,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 52
+      "rank": 66
     },
     {
       "provider": "Kilo Code",
@@ -1178,7 +1486,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 53
+      "rank": 67
     },
     {
       "provider": "Kilo Code",
@@ -1200,7 +1508,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 54
+      "rank": 68
     },
     {
       "provider": "Kilo Code",
@@ -1222,7 +1530,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 55
+      "rank": 69
     }
   ]
 }
