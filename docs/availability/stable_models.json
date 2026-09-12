@@ -1,23 +1,16 @@
 {
-  "updated": "2026-09-12T17:43:20.264248+00:00",
+  "updated": "2026-09-12T20:10:45.278079+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131042,
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
+          "params_b": 7.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -53,11 +46,18 @@
           "params_b": 20.0
         },
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131042,
           "limits": "varies per model",
-          "params_b": 7.0
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         },
         {
           "id": "qwen/qwen3.6-27b",
@@ -96,6 +96,13 @@
         {
           "id": "nvidia/nemotron-3.5-content-safety",
           "name": "nvidia/nemotron-3.5-content-safety",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-parse-2.0",
+          "name": "nvidia/nemotron-parse-2.0",
           "context": null,
           "limits": "40 req/min",
           "params_b": null
@@ -462,6 +469,20 @@
             "reasoning"
           ],
           "params_b": 32.0
+        }
+      ],
+      "error": null
+    },
+    "pollinations": {
+      "name": "Pollinations",
+      "url": "https://pollinations.ai",
+      "models": [
+        {
+          "id": "openai/gpt-6-astra",
+          "name": "openai/gpt-6-astra",
+          "context": 1050000,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
         }
       ],
       "error": null
