@@ -1,21 +1,27 @@
 {
   "order": [
-    "pollinations-namansoni78deepseekv41flash",
+    "pollinations-akshaycoder48claudeopus5",
+    "pollinations-akshaycoder48claudefable5",
     "groq-qwen38",
-    "pollinations-catnitigemini36flash",
+    "pollinations-akshaycoder48kimik3",
+    "pollinations-namansoni78deepseekv41flash",
+    "pollinations-akshaycoder48claudeopus48",
+    "pollinations-akshaycoder48claudesonnet5",
     "pollinations-tomdacattoqwen3827bfast",
-    "kilo-inclusionailing30flashsante",
-    "openrouter-inclusionailing30flashsante",
-    "kilo-inclusionailing30flashfin",
-    "openrouter-inclusionailing30flashfin",
-    "groq-qwen36",
-    "pollinations-catnitistep37flash"
+    "pollinations-akshaycoder48deepseekv4pro",
+    "pollinations-catnitigemini36flash"
   ],
   "chain": [
     {
-      "id": "pollinations-namansoni78deepseekv41flash",
+      "id": "pollinations-akshaycoder48claudeopus5",
       "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "NamanSoni78/DeepSeek-V4.1-Flash",
+      "model": "AkshayCoder48/claude-opus-5",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
+    },
+    {
+      "id": "pollinations-akshaycoder48claudefable5",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "AkshayCoder48/claude-fable-5",
       "apiKeyEnv": "POLLINATIONS_API_KEY"
     },
     {
@@ -25,9 +31,27 @@
       "apiKeyEnv": "GROQ_API_KEY"
     },
     {
-      "id": "pollinations-catnitigemini36flash",
+      "id": "pollinations-akshaycoder48kimik3",
       "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "Catniti/gemini-3.6-flash",
+      "model": "AkshayCoder48/kimi-k3",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
+    },
+    {
+      "id": "pollinations-namansoni78deepseekv41flash",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "NamanSoni78/DeepSeek-V4.1-Flash",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
+    },
+    {
+      "id": "pollinations-akshaycoder48claudeopus48",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "AkshayCoder48/claude-opus-4-8",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
+    },
+    {
+      "id": "pollinations-akshaycoder48claudesonnet5",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "AkshayCoder48/claude-sonnet-5",
       "apiKeyEnv": "POLLINATIONS_API_KEY"
     },
     {
@@ -37,53 +61,32 @@
       "apiKeyEnv": "POLLINATIONS_API_KEY"
     },
     {
-      "id": "kilo-inclusionailing30flashsante",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "inclusionai/ling-3.0-flash-sante:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-inclusionailing30flashsante",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "inclusionai/ling-3.0-flash-sante:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
-      "id": "kilo-inclusionailing30flashfin",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "inclusionai/ling-3.0-flash-fin:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-inclusionailing30flashfin",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "inclusionai/ling-3.0-flash-fin:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
-      "id": "groq-qwen36",
-      "baseUrl": "https://api.groq.com/openai/v1",
-      "model": "qwen/qwen3.6-27b",
-      "apiKeyEnv": "GROQ_API_KEY"
-    },
-    {
-      "id": "pollinations-catnitistep37flash",
+      "id": "pollinations-akshaycoder48deepseekv4pro",
       "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "Catniti/step-3.7-flash",
+      "model": "AkshayCoder48/deepseek-v4-pro",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
+    },
+    {
+      "id": "pollinations-catnitigemini36flash",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "Catniti/gemini-3.6-flash",
       "apiKeyEnv": "POLLINATIONS_API_KEY"
     }
   ],
   "modelAllowlist": [
+    "AkshayCoder48/claude-fable-5",
+    "AkshayCoder48/claude-opus-4-8",
+    "AkshayCoder48/claude-opus-5",
+    "AkshayCoder48/claude-sonnet-5",
+    "AkshayCoder48/deepseek-v4-pro",
+    "AkshayCoder48/kimi-k3",
     "Catniti/gemini-3.6-flash",
-    "Catniti/step-3.7-flash",
     "NamanSoni78/DeepSeek-V4.1-Flash",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
     "hy3",
     "hy3-free",
-    "inclusionai/ling-3.0-flash-fin:free",
-    "inclusionai/ling-3.0-flash-sante:free",
     "laguna-s-2.1-free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",

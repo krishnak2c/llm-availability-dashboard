@@ -9,11 +9,165 @@
     },
     "artificial_analysis_index_version": 4.3,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 69,
-    "ranked_count": 69,
+    "source_count": 81,
+    "ranked_count": 81,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "AkshayCoder48/claude-opus-5",
+      "model_name": "AkshayCoder48/claude-opus-5",
+      "aa_slug": "claude-opus-5",
+      "aa_name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+      "aa_match": "substring",
+      "agentic": 56.2,
+      "coding": 78.0,
+      "intelligence": 50.7,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 100.0,
+      "coding_norm": 100.0,
+      "intelligence_norm": 100.0,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 100.0,
+      "data_coverage": 80.0,
+      "rank": 1
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "AkshayCoder48/claude-fable-5",
+      "model_name": "AkshayCoder48/claude-fable-5",
+      "aa_slug": "claude-fable-5",
+      "aa_name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+      "aa_match": "substring",
+      "agentic": 51.0,
+      "coding": 76.5,
+      "intelligence": 49.7,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 90.66,
+      "coding_norm": 97.87,
+      "intelligence_norm": 97.81,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 94.26,
+      "data_coverage": 80.0,
+      "rank": 2
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "AkshayCoder48/kimi-k3",
+      "model_name": "AkshayCoder48/kimi-k3",
+      "aa_slug": "kimi-k3",
+      "aa_name": "Kimi K3 (max)",
+      "aa_match": "substring",
+      "agentic": 50.6,
+      "coding": 76.2,
+      "intelligence": 43.8,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 89.95,
+      "coding_norm": 97.44,
+      "intelligence_norm": 84.9,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 91.34,
+      "data_coverage": 80.0,
+      "rank": 3
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "AkshayCoder48/claude-opus-4-8",
+      "model_name": "AkshayCoder48/claude-opus-4-8",
+      "aa_slug": "claude-opus-4-8",
+      "aa_name": "Claude Opus 4.8 (Adaptive Reasoning, Max Effort)",
+      "aa_match": "substring",
+      "agentic": 42.6,
+      "coding": 74.3,
+      "intelligence": 42.0,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 75.58,
+      "coding_norm": 94.74,
+      "intelligence_norm": 80.96,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 82.58,
+      "data_coverage": 80.0,
+      "rank": 4
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "AkshayCoder48/claude-sonnet-5",
+      "model_name": "AkshayCoder48/claude-sonnet-5",
+      "aa_slug": "claude-sonnet-5",
+      "aa_name": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
+      "aa_match": "substring",
+      "agentic": 44.3,
+      "coding": 71.5,
+      "intelligence": 38.4,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 78.64,
+      "coding_norm": 90.75,
+      "intelligence_norm": 73.09,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 81.38,
+      "data_coverage": 80.0,
+      "rank": 5
+    },
+    {
+      "provider": "Groq",
+      "provider_id": "groq",
+      "model_id": "qwen/qwen3.8-27b",
+      "model_name": "qwen/qwen3.8-27b",
+      "aa_slug": "qwen3-8-27b",
+      "aa_name": "Qwen3.8 27B (xhigh)",
+      "aa_match": "substring",
+      "agentic": 46.5,
+      "coding": 68.1,
+      "intelligence": 33.9,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 82.59,
+      "coding_norm": 85.92,
+      "intelligence_norm": 63.24,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 80.0,
+      "data_coverage": 80.0,
+      "rank": 6
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "AkshayCoder48/deepseek-v4-pro",
+      "model_name": "AkshayCoder48/deepseek-v4-pro",
+      "aa_slug": "deepseek-v4-pro",
+      "aa_name": "DeepSeek V4 Pro 0813 (Reasoning, Max Effort)",
+      "aa_match": "substring",
+      "agentic": 42.3,
+      "coding": 68.8,
+      "intelligence": 36.3,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 75.04,
+      "coding_norm": 86.91,
+      "intelligence_norm": 68.49,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 77.52,
+      "data_coverage": 80.0,
+      "rank": 7
+    },
     {
       "provider": "Pollinations",
       "provider_id": "pollinations",
@@ -29,34 +183,12 @@
       "swebench": null,
       "agentic_norm": null,
       "coding_norm": null,
-      "intelligence_norm": 100.0,
+      "intelligence_norm": 75.49,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 100.0,
+      "hermes_score": 75.49,
       "data_coverage": 15.0,
-      "rank": 1
-    },
-    {
-      "provider": "Groq",
-      "provider_id": "groq",
-      "model_id": "qwen/qwen3.8-27b",
-      "model_name": "qwen/qwen3.8-27b",
-      "aa_slug": "qwen3-8-27b",
-      "aa_name": "Qwen3.8 27B (xhigh)",
-      "aa_match": "substring",
-      "agentic": 46.5,
-      "coding": 68.1,
-      "intelligence": 33.9,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 100.0,
-      "coding_norm": 98.21,
-      "intelligence_norm": 83.77,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 96.4,
-      "data_coverage": 80.0,
-      "rank": 2
+      "rank": 8
     },
     {
       "provider": "Pollinations",
@@ -71,14 +203,14 @@
       "intelligence": 34.3,
       "arena": null,
       "swebench": null,
-      "agentic_norm": 64.57,
-      "coding_norm": 100.0,
-      "intelligence_norm": 84.93,
+      "agentic_norm": 53.32,
+      "coding_norm": 87.48,
+      "intelligence_norm": 64.11,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 79.46,
+      "hermes_score": 66.02,
       "data_coverage": 80.0,
-      "rank": 3
+      "rank": 9
     },
     {
       "provider": "Kilo Code",
@@ -93,14 +225,14 @@
       "intelligence": 24.9,
       "arena": null,
       "swebench": null,
-      "agentic_norm": 44.57,
-      "coding_norm": 69.76,
-      "intelligence_norm": 57.68,
+      "agentic_norm": 36.8,
+      "coding_norm": 61.02,
+      "intelligence_norm": 43.54,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 54.9,
+      "hermes_score": 45.64,
       "data_coverage": 80.0,
-      "rank": 4
+      "rank": 10
     },
     {
       "provider": "Kilo Code",
@@ -115,14 +247,14 @@
       "intelligence": 24.9,
       "arena": null,
       "swebench": null,
-      "agentic_norm": 44.57,
-      "coding_norm": 69.76,
-      "intelligence_norm": 57.68,
+      "agentic_norm": 36.8,
+      "coding_norm": 61.02,
+      "intelligence_norm": 43.54,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 54.9,
+      "hermes_score": 45.64,
       "data_coverage": 80.0,
-      "rank": 5
+      "rank": 11
     },
     {
       "provider": "Groq",
@@ -137,14 +269,14 @@
       "intelligence": 21.9,
       "arena": null,
       "swebench": null,
-      "agentic_norm": 42.61,
-      "coding_norm": 74.8,
-      "intelligence_norm": 48.99,
+      "agentic_norm": 35.19,
+      "coding_norm": 65.43,
+      "intelligence_norm": 36.98,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 53.86,
+      "hermes_score": 44.98,
       "data_coverage": 80.0,
-      "rank": 6
+      "rank": 12
     },
     {
       "provider": "Pollinations",
@@ -160,13 +292,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": null,
-      "coding_norm": 51.87,
-      "intelligence_norm": 42.03,
+      "coding_norm": 45.38,
+      "intelligence_norm": 31.73,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 48.18,
+      "hermes_score": 40.26,
       "data_coverage": 40.0,
-      "rank": 7
+      "rank": 13
     },
     {
       "provider": "Cloudflare AI",
@@ -182,13 +314,57 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": null,
-      "coding_norm": 51.38,
-      "intelligence_norm": 33.91,
+      "coding_norm": 44.95,
+      "intelligence_norm": 25.6,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 44.83,
+      "hermes_score": 37.69,
       "data_coverage": 40.0,
-      "rank": 8
+      "rank": 14
+    },
+    {
+      "provider": "Groq",
+      "provider_id": "groq",
+      "model_id": "openai/gpt-oss-120b",
+      "model_name": "openai/gpt-oss-120b",
+      "aa_slug": "gpt-oss-120b",
+      "aa_name": "gpt-oss-120b (high)",
+      "aa_match": "exact",
+      "agentic": 6.2,
+      "coding": 30.4,
+      "intelligence": 12.3,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 10.23,
+      "coding_norm": 32.29,
+      "intelligence_norm": 15.97,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 18.2,
+      "data_coverage": 80.0,
+      "rank": 15
+    },
+    {
+      "provider": "Cloudflare AI",
+      "provider_id": "cloudflare",
+      "model_id": "@cf/openai/gpt-oss-120b",
+      "model_name": "@cf/openai/gpt-oss-120b",
+      "aa_slug": "gpt-oss-120b",
+      "aa_name": "gpt-oss-120b (high)",
+      "aa_match": "substring",
+      "agentic": 6.2,
+      "coding": 30.4,
+      "intelligence": 12.3,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 10.23,
+      "coding_norm": 32.29,
+      "intelligence_norm": 15.97,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 18.2,
+      "data_coverage": 80.0,
+      "rank": 16
     },
     {
       "provider": "Pollinations",
@@ -205,56 +381,12 @@
       "swebench": null,
       "agentic_norm": null,
       "coding_norm": null,
-      "intelligence_norm": 23.48,
+      "intelligence_norm": 17.72,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 23.48,
+      "hermes_score": 17.72,
       "data_coverage": 15.0,
-      "rank": 9
-    },
-    {
-      "provider": "Groq",
-      "provider_id": "groq",
-      "model_id": "openai/gpt-oss-120b",
-      "model_name": "openai/gpt-oss-120b",
-      "aa_slug": "gpt-oss-120b",
-      "aa_name": "gpt-oss-120b (high)",
-      "aa_match": "exact",
-      "agentic": 6.2,
-      "coding": 30.4,
-      "intelligence": 12.3,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 12.39,
-      "coding_norm": 36.91,
-      "intelligence_norm": 21.16,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 21.7,
-      "data_coverage": 80.0,
-      "rank": 10
-    },
-    {
-      "provider": "Cloudflare AI",
-      "provider_id": "cloudflare",
-      "model_id": "@cf/openai/gpt-oss-120b",
-      "model_name": "@cf/openai/gpt-oss-120b",
-      "aa_slug": "gpt-oss-120b",
-      "aa_name": "gpt-oss-120b (high)",
-      "aa_match": "substring",
-      "agentic": 6.2,
-      "coding": 30.4,
-      "intelligence": 12.3,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 12.39,
-      "coding_norm": 36.91,
-      "intelligence_norm": 21.16,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 21.7,
-      "data_coverage": 80.0,
-      "rank": 11
+      "rank": 17
     },
     {
       "provider": "Kilo Code",
@@ -269,14 +401,14 @@
       "intelligence": 13.6,
       "arena": null,
       "swebench": null,
-      "agentic_norm": 12.17,
-      "coding_norm": 31.06,
-      "intelligence_norm": 24.93,
+      "agentic_norm": 10.05,
+      "coding_norm": 27.17,
+      "intelligence_norm": 18.82,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 20.47,
+      "hermes_score": 17.05,
       "data_coverage": 80.0,
-      "rank": 12
+      "rank": 18
     },
     {
       "provider": "Pollinations",
@@ -291,14 +423,14 @@
       "intelligence": 12.8,
       "arena": null,
       "swebench": null,
-      "agentic_norm": 1.3,
-      "coding_norm": 46.83,
-      "intelligence_norm": 22.61,
+      "agentic_norm": 1.08,
+      "coding_norm": 40.97,
+      "intelligence_norm": 17.07,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 19.53,
+      "hermes_score": 16.54,
       "data_coverage": 80.0,
-      "rank": 13
+      "rank": 19
     },
     {
       "provider": "Kilo Code",
@@ -313,14 +445,14 @@
       "intelligence": 12.8,
       "arena": null,
       "swebench": null,
-      "agentic_norm": 1.3,
-      "coding_norm": 46.83,
-      "intelligence_norm": 22.61,
+      "agentic_norm": 1.08,
+      "coding_norm": 40.97,
+      "intelligence_norm": 17.07,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 19.53,
+      "hermes_score": 16.54,
       "data_coverage": 80.0,
-      "rank": 14
+      "rank": 20
     },
     {
       "provider": "Cloudflare AI",
@@ -337,12 +469,12 @@
       "swebench": null,
       "agentic_norm": null,
       "coding_norm": null,
-      "intelligence_norm": 13.04,
+      "intelligence_norm": 9.85,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 13.04,
+      "hermes_score": 9.85,
       "data_coverage": 15.0,
-      "rank": 15
+      "rank": 21
     },
     {
       "provider": "Groq",
@@ -357,14 +489,14 @@
       "intelligence": 9.0,
       "arena": null,
       "swebench": null,
-      "agentic_norm": 1.96,
-      "coding_norm": 21.14,
-      "intelligence_norm": 11.59,
+      "agentic_norm": 1.62,
+      "coding_norm": 18.49,
+      "intelligence_norm": 8.75,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 9.76,
+      "hermes_score": 8.23,
       "data_coverage": 80.0,
-      "rank": 16
+      "rank": 22
     },
     {
       "provider": "Cloudflare AI",
@@ -379,14 +511,14 @@
       "intelligence": 9.0,
       "arena": null,
       "swebench": null,
-      "agentic_norm": 1.96,
-      "coding_norm": 21.14,
-      "intelligence_norm": 11.59,
+      "agentic_norm": 1.62,
+      "coding_norm": 18.49,
+      "intelligence_norm": 8.75,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 9.76,
+      "hermes_score": 8.23,
       "data_coverage": 80.0,
-      "rank": 17
+      "rank": 23
     },
     {
       "provider": "Cloudflare AI",
@@ -403,12 +535,12 @@
       "swebench": null,
       "agentic_norm": null,
       "coding_norm": null,
-      "intelligence_norm": 4.93,
+      "intelligence_norm": 3.72,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 4.93,
+      "hermes_score": 3.72,
       "data_coverage": 15.0,
-      "rank": 18
+      "rank": 24
     },
     {
       "provider": "Kilo Code",
@@ -425,12 +557,12 @@
       "swebench": null,
       "agentic_norm": null,
       "coding_norm": 0.0,
-      "intelligence_norm": 9.86,
+      "intelligence_norm": 7.44,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 3.7,
+      "hermes_score": 2.79,
       "data_coverage": 40.0,
-      "rank": 19
+      "rank": 25
     },
     {
       "provider": "Cloudflare AI",
@@ -446,35 +578,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 0.0,
-      "coding_norm": 0.81,
-      "intelligence_norm": 4.35,
+      "coding_norm": 0.71,
+      "intelligence_norm": 3.28,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 1.07,
+      "hermes_score": 0.84,
       "data_coverage": 80.0,
-      "rank": 20
-    },
-    {
-      "provider": "Groq",
-      "provider_id": "groq",
-      "model_id": "groq/compound-mini",
-      "model_name": "groq/compound-mini",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 21
+      "rank": 26
     },
     {
       "provider": "Groq",
@@ -496,7 +606,29 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 22
+      "rank": 27
+    },
+    {
+      "provider": "Groq",
+      "provider_id": "groq",
+      "model_id": "groq/compound-mini",
+      "model_name": "groq/compound-mini",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 28
     },
     {
       "provider": "NVIDIA NIM",
@@ -518,7 +650,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 23
+      "rank": 29
     },
     {
       "provider": "NVIDIA NIM",
@@ -540,7 +672,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 24
+      "rank": 30
     },
     {
       "provider": "NVIDIA NIM",
@@ -562,7 +694,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 25
+      "rank": 31
     },
     {
       "provider": "NVIDIA NIM",
@@ -584,7 +716,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 26
+      "rank": 32
     },
     {
       "provider": "NVIDIA NIM",
@@ -606,7 +738,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 27
+      "rank": 33
     },
     {
       "provider": "Mistral",
@@ -628,7 +760,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 28
+      "rank": 34
     },
     {
       "provider": "Mistral",
@@ -650,7 +782,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 29
+      "rank": 35
     },
     {
       "provider": "Mistral",
@@ -672,7 +804,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 30
+      "rank": 36
     },
     {
       "provider": "Mistral",
@@ -694,7 +826,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 31
+      "rank": 37
     },
     {
       "provider": "Mistral",
@@ -716,7 +848,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 32
+      "rank": 38
     },
     {
       "provider": "Mistral",
@@ -738,7 +870,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 33
+      "rank": 39
     },
     {
       "provider": "Mistral",
@@ -760,7 +892,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 34
+      "rank": 40
     },
     {
       "provider": "Mistral",
@@ -782,7 +914,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 35
+      "rank": 41
     },
     {
       "provider": "Mistral",
@@ -804,7 +936,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 36
+      "rank": 42
     },
     {
       "provider": "Mistral",
@@ -826,7 +958,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 37
+      "rank": 43
     },
     {
       "provider": "Mistral",
@@ -848,7 +980,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 38
+      "rank": 44
     },
     {
       "provider": "Mistral",
@@ -870,7 +1002,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 39
+      "rank": 45
     },
     {
       "provider": "Cloudflare AI",
@@ -892,7 +1024,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 40
+      "rank": 46
     },
     {
       "provider": "Cloudflare AI",
@@ -914,7 +1046,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 41
+      "rank": 47
     },
     {
       "provider": "Cloudflare AI",
@@ -936,7 +1068,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 42
+      "rank": 48
     },
     {
       "provider": "Cloudflare AI",
@@ -958,7 +1090,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 15.0,
-      "rank": 43
+      "rank": 49
     },
     {
       "provider": "Cloudflare AI",
@@ -980,7 +1112,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 44
+      "rank": 50
     },
     {
       "provider": "Cloudflare AI",
@@ -1002,7 +1134,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 45
+      "rank": 51
     },
     {
       "provider": "Cloudflare AI",
@@ -1024,7 +1156,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 46
+      "rank": 52
     },
     {
       "provider": "Cloudflare AI",
@@ -1046,7 +1178,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 47
+      "rank": 53
     },
     {
       "provider": "Cloudflare AI",
@@ -1068,7 +1200,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 48
+      "rank": 54
     },
     {
       "provider": "Cloudflare AI",
@@ -1090,7 +1222,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 49
+      "rank": 55
     },
     {
       "provider": "Cloudflare AI",
@@ -1112,7 +1244,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 50
+      "rank": 56
     },
     {
       "provider": "Cloudflare AI",
@@ -1134,7 +1266,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 51
+      "rank": 57
     },
     {
       "provider": "Cloudflare AI",
@@ -1156,7 +1288,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 52
+      "rank": 58
     },
     {
       "provider": "Cloudflare AI",
@@ -1178,7 +1310,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 53
+      "rank": 59
     },
     {
       "provider": "Cloudflare AI",
@@ -1200,7 +1332,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 54
+      "rank": 60
     },
     {
       "provider": "Pollinations",
@@ -1222,7 +1354,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 55
+      "rank": 61
     },
     {
       "provider": "Pollinations",
@@ -1244,7 +1376,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 56
+      "rank": 62
     },
     {
       "provider": "Pollinations",
@@ -1266,7 +1398,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 57
+      "rank": 63
     },
     {
       "provider": "Pollinations",
@@ -1288,7 +1420,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 58
+      "rank": 64
     },
     {
       "provider": "Pollinations",
@@ -1310,7 +1442,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 59
+      "rank": 65
     },
     {
       "provider": "Pollinations",
@@ -1332,7 +1464,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 60
+      "rank": 66
     },
     {
       "provider": "Pollinations",
@@ -1354,7 +1486,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 61
+      "rank": 67
     },
     {
       "provider": "Pollinations",
@@ -1376,7 +1508,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 62
+      "rank": 68
     },
     {
       "provider": "Pollinations",
@@ -1398,7 +1530,139 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 63
+      "rank": 69
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "AkshayCoder48/grok-4-3",
+      "model_name": "AkshayCoder48/grok-4-3",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 70
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "AkshayCoder48/qwen3-coder-480b",
+      "model_name": "AkshayCoder48/qwen3-coder-480b",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 71
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "AkshayCoder48/glm-5-2",
+      "model_name": "AkshayCoder48/glm-5-2",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 72
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "AkshayCoder48/gpt-5-6-luna",
+      "model_name": "AkshayCoder48/gpt-5-6-luna",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 73
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "AkshayCoder48/gpt-5-4",
+      "model_name": "AkshayCoder48/gpt-5-4",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 74
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "AkshayCoder48/gpt-5-5",
+      "model_name": "AkshayCoder48/gpt-5-5",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 75
     },
     {
       "provider": "LLM7",
@@ -1420,7 +1684,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 64
+      "rank": 76
     },
     {
       "provider": "Kilo Code",
@@ -1442,7 +1706,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 65
+      "rank": 77
     },
     {
       "provider": "Kilo Code",
@@ -1464,7 +1728,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 66
+      "rank": 78
     },
     {
       "provider": "Kilo Code",
@@ -1486,7 +1750,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 67
+      "rank": 79
     },
     {
       "provider": "Kilo Code",
@@ -1508,7 +1772,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 68
+      "rank": 80
     },
     {
       "provider": "Kilo Code",
@@ -1530,7 +1794,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 69
+      "rank": 81
     }
   ]
 }

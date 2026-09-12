@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12T10:04:56.040965+00:00",
+  "updated": "2026-09-12T14:58:07.181543+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -313,6 +313,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": null
+        },
+        {
+          "id": "z-ai/glm-5.3-flash",
+          "name": "z-ai/glm-5.3-flash",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
         }
       ],
       "error": null
@@ -422,13 +429,6 @@
           "params_b": null
         },
         {
-          "id": "NamanSoni78/gpt-5.4-nano",
-          "name": "NamanSoni78/gpt-5.4-nano",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "NamanSoni78/devin-ai",
           "name": "NamanSoni78/devin-ai",
           "context": 131000,
@@ -436,16 +436,16 @@
           "params_b": null
         },
         {
-          "id": "NamanSoni78/gemini-3.8-flash",
-          "name": "NamanSoni78/gemini-3.8-flash",
-          "context": null,
+          "id": "MarcosFRG/glm-5.3-flash",
+          "name": "MarcosFRG/glm-5.3-flash",
+          "context": 1048576,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
         {
-          "id": "MarcosFRG/glm-5.3-flash",
-          "name": "MarcosFRG/glm-5.3-flash",
-          "context": 1048576,
+          "id": "iotserver24/gpt-5-6-sol",
+          "name": "iotserver24/gpt-5-6-sol",
+          "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -562,6 +562,13 @@
           "params_b": null
         },
         {
+          "id": "inclusionai/ling-3.0-flash-vl:free",
+          "name": "inclusionAI: Ling 3.0 Flash VL (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "thinkingmachines/inkling-small:free",
           "name": "Thinking Machines: Inkling Small (free)",
           "context": 1048576,
@@ -588,13 +595,6 @@
           "context": 262144,
           "limits": "free tier",
           "params_b": 120.0
-        },
-        {
-          "id": "stepfun/step-3.7-flash:free",
-          "name": "StepFun: Step 3.7 Flash (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
         }
       ],
       "error": null
@@ -639,6 +639,20 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
           "id": "nemotron-3-ultra",
           "name": "nemotron-3-ultra",
           "context": null,
@@ -653,20 +667,6 @@
           "params_b": 20.0
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
@@ -674,11 +674,11 @@
           "params_b": 30.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 120.0
         }
       ],
       "error": null
