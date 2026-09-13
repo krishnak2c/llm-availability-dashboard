@@ -1,10 +1,17 @@
 {
-  "updated": "2026-09-13T15:36:08.619761+00:00",
+  "updated": "2026-09-13T20:18:14.009993+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
         {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
@@ -17,34 +24,6 @@
             "reasoning"
           ],
           "params_b": 120.0
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        },
-        {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131042,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
         },
         {
           "id": "qwen/qwen3.6-27b",
@@ -71,6 +50,27 @@
             "reasoning"
           ],
           "params_b": 20.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131042,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         }
       ],
       "error": null
@@ -496,6 +496,13 @@
           "params_b": null
         },
         {
+          "id": "community/YoannDev90/kilocode-laguna-s-2.1:free",
+          "name": "community/YoannDev90/kilocode-laguna-s-2.1:free",
+          "context": 262000,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "community/ZapGaming/llama3.1-8b-ultrafast",
           "name": "community/ZapGaming/llama3.1-8b-ultrafast",
           "context": 6000,
@@ -737,13 +744,6 @@
           "id": "community/MarcosFRG/glm-5.3",
           "name": "community/MarcosFRG/glm-5.3",
           "context": 1310720,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "community/NamanSoni78/Claude-Sonnet-5",
-          "name": "community/NamanSoni78/Claude-Sonnet-5",
-          "context": 1048576,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -1240,6 +1240,13 @@
         {
           "id": "community/vendouple/qwen-3.8-max",
           "name": "community/vendouple/qwen-3.8-max",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "community/Catniti/qwen3.7-flash",
+          "name": "community/Catniti/qwen3.7-flash",
           "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
