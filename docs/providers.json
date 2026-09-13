@@ -1,17 +1,35 @@
 {
   "order": [
+    "pollinations-communityakshaycoder48claudeopus5",
+    "pollinations-communityakshaycoder48claude",
+    "pollinations-communitytomdacattoclaudeopus5",
     "pollinations-communitynamansoni78gpt6astrapro",
     "pollinations-communitynamansoni78gpt6astra",
-    "pollinations-gpt6astra",
-    "groq-qwen38",
-    "pollinations-communitymarcosfrgqwen38",
-    "pollinations-communitytomdacattoqwen3827bfast",
-    "pollinations-communitymarcosfrgqwen38flash",
-    "pollinations-communityvendoupleqwen38max",
-    "kilo-inclusionailing30flashsante",
-    "openrouter-inclusionailing30flashsante"
+    "pollinations-communityakshaycoder48claudefable5",
+    "pollinations-communityakshaycoder48kimik3",
+    "pollinations-communitynamansoni78kimik3",
+    "pollinations-communityjustscriptzzkimik3",
+    "pollinations-communityvendouplekimik3"
   ],
   "chain": [
+    {
+      "id": "pollinations-communityakshaycoder48claudeopus5",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "community/AkshayCoder48/claude-opus-5",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
+    },
+    {
+      "id": "pollinations-communityakshaycoder48claude",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "community/AkshayCoder48/claude",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
+    },
+    {
+      "id": "pollinations-communitytomdacattoclaudeopus5",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "community/tomdacatto/claude-opus-5",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
+    },
     {
       "id": "pollinations-communitynamansoni78gpt6astrapro",
       "baseUrl": "https://gen.pollinations.ai/v1",
@@ -25,75 +43,58 @@
       "apiKeyEnv": "POLLINATIONS_API_KEY"
     },
     {
-      "id": "pollinations-gpt6astra",
+      "id": "pollinations-communityakshaycoder48claudefable5",
       "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "openai/gpt-6-astra",
+      "model": "community/AkshayCoder48/claude-fable-5",
       "apiKeyEnv": "POLLINATIONS_API_KEY"
     },
     {
-      "id": "groq-qwen38",
-      "baseUrl": "https://api.groq.com/openai/v1",
-      "model": "qwen/qwen3.8-27b",
-      "apiKeyEnv": "GROQ_API_KEY"
-    },
-    {
-      "id": "pollinations-communitymarcosfrgqwen38",
+      "id": "pollinations-communityakshaycoder48kimik3",
       "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "community/MarcosFRG/qwen3.8-27b",
+      "model": "community/AkshayCoder48/kimi-k3",
       "apiKeyEnv": "POLLINATIONS_API_KEY"
     },
     {
-      "id": "pollinations-communitytomdacattoqwen3827bfast",
+      "id": "pollinations-communitynamansoni78kimik3",
       "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "community/tomdacatto/qwen-3.8-27B-fast",
+      "model": "community/NamanSoni78/kimi-k3",
       "apiKeyEnv": "POLLINATIONS_API_KEY"
     },
     {
-      "id": "pollinations-communitymarcosfrgqwen38flash",
+      "id": "pollinations-communityjustscriptzzkimik3",
       "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "community/MarcosFRG/qwen3.8-flash",
+      "model": "community/JustScriptzz/kimi-k3",
       "apiKeyEnv": "POLLINATIONS_API_KEY"
     },
     {
-      "id": "pollinations-communityvendoupleqwen38max",
+      "id": "pollinations-communityvendouplekimik3",
       "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "community/vendouple/qwen-3.8-max",
+      "model": "community/vendouple/kimi-k3",
       "apiKeyEnv": "POLLINATIONS_API_KEY"
-    },
-    {
-      "id": "kilo-inclusionailing30flashsante",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "inclusionai/ling-3.0-flash-sante:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-inclusionailing30flashsante",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "inclusionai/ling-3.0-flash-sante:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
-    "community/MarcosFRG/qwen3.8-27b",
-    "community/MarcosFRG/qwen3.8-flash",
+    "community/AkshayCoder48/claude",
+    "community/AkshayCoder48/claude-fable-5",
+    "community/AkshayCoder48/claude-opus-5",
+    "community/AkshayCoder48/kimi-k3",
+    "community/JustScriptzz/kimi-k3",
     "community/NamanSoni78/gpt-6-astra",
     "community/NamanSoni78/gpt-6-astra-pro",
-    "community/tomdacatto/qwen-3.8-27B-fast",
-    "community/vendouple/qwen-3.8-max",
+    "community/NamanSoni78/kimi-k3",
+    "community/tomdacatto/claude-opus-5",
+    "community/vendouple/kimi-k3",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
     "hy3",
     "hy3-free",
-    "inclusionai/ling-3.0-flash-sante:free",
     "laguna-s-2.1-free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
     "nemotron-3-ultra-free",
-    "openai/gpt-6-astra",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
-    "qwen/qwen3.8-27b",
     "qwen/qwen3.8-27b-free",
     "thinkingmachines/inkling",
     "z-ai/glm-5.2"
