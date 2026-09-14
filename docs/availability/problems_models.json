@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14T17:40:35.609981+00:00",
+  "updated": "2026-09-14T21:27:51.651797+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -329,6 +329,13 @@
       "url": "https://developers.cloudflare.com/workers-ai/",
       "models": [
         {
+          "id": "@cf/meta/llama-guard-3-8b",
+          "name": "@cf/meta/llama-guard-3-8b",
+          "context": 131072,
+          "limits": "10k neurons/day",
+          "params_b": 8.0
+        },
+        {
           "id": "@cf/moonshotai/kimi-k2.7-code",
           "name": "@cf/moonshotai/kimi-k2.7-code",
           "context": 262144,
@@ -520,6 +527,13 @@
           "params_b": 31.0
         },
         {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
@@ -539,13 +553,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         }
       ],
       "error": null
