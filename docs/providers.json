@@ -5,11 +5,11 @@
     "pollinations-communitynamansoni78gpt6astrapro",
     "pollinations-communitynamansoni78gpt6astra",
     "pollinations-communityvendouplegpt6astra",
-    "pollinations-communitynamansoni78kimik3",
     "pollinations-communityvendouplekimik3",
     "pollinations-gpt6astra",
     "pollinations-communityvendoupleqwen38max",
-    "pollinations-communityvendouplegemini38flash"
+    "pollinations-communityvendouplegemini38flash",
+    "pollinations-communitynamansoni78claudesonnet5"
   ],
   "chain": [
     {
@@ -43,12 +43,6 @@
       "apiKeyEnv": "POLLINATIONS_API_KEY"
     },
     {
-      "id": "pollinations-communitynamansoni78kimik3",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "community/NamanSoni78/kimi-k3",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
-    },
-    {
       "id": "pollinations-communityvendouplekimik3",
       "baseUrl": "https://gen.pollinations.ai/v1",
       "model": "community/vendouple/kimi-k3",
@@ -71,13 +65,19 @@
       "baseUrl": "https://gen.pollinations.ai/v1",
       "model": "community/vendouple/gemini-3.8-flash",
       "apiKeyEnv": "POLLINATIONS_API_KEY"
+    },
+    {
+      "id": "pollinations-communitynamansoni78claudesonnet5",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "community/NamanSoni78/Claude-Sonnet-5",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
     }
   ],
   "modelAllowlist": [
     "community/Catniti/gpt-6-astra",
+    "community/NamanSoni78/Claude-Sonnet-5",
     "community/NamanSoni78/gpt-6-astra",
     "community/NamanSoni78/gpt-6-astra-pro",
-    "community/NamanSoni78/kimi-k3",
     "community/tomdacatto/claude-opus-5",
     "community/vendouple/gemini-3.8-flash",
     "community/vendouple/gpt-6-astra",
