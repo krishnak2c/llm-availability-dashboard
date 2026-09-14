@@ -9,33 +9,11 @@
     },
     "artificial_analysis_index_version": 4.3,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 189,
-    "ranked_count": 189,
+    "source_count": 157,
+    "ranked_count": 157,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/claude-opus-5",
-      "model_name": "community/AkshayCoder48/claude-opus-5",
-      "aa_slug": "claude-opus-5",
-      "aa_name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-      "aa_match": "substring",
-      "agentic": 56.2,
-      "coding": 78.0,
-      "intelligence": 50.7,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 100.0,
-      "coding_norm": 100.0,
-      "intelligence_norm": 95.61,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 99.18,
-      "data_coverage": 80.0,
-      "rank": 1
-    },
     {
       "provider": "Pollinations",
       "provider_id": "pollinations",
@@ -56,7 +34,7 @@
       "swebench_norm": null,
       "hermes_score": 99.18,
       "data_coverage": 80.0,
-      "rank": 2
+      "rank": 1
     },
     {
       "provider": "Pollinations",
@@ -78,7 +56,7 @@
       "swebench_norm": null,
       "hermes_score": 95.29,
       "data_coverage": 80.0,
-      "rank": 3
+      "rank": 2
     },
     {
       "provider": "Pollinations",
@@ -100,7 +78,7 @@
       "swebench_norm": null,
       "hermes_score": 95.29,
       "data_coverage": 80.0,
-      "rank": 4
+      "rank": 3
     },
     {
       "provider": "Pollinations",
@@ -122,51 +100,29 @@
       "swebench_norm": null,
       "hermes_score": 95.29,
       "data_coverage": 80.0,
+      "rank": 4
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "community/vendouple/gpt-6-astra",
+      "model_name": "community/vendouple/gpt-6-astra",
+      "aa_slug": "gpt-6-astra",
+      "aa_name": "GPT-6 Astra (max)",
+      "aa_match": "substring",
+      "agentic": 51.5,
+      "coding": 76.9,
+      "intelligence": 52.8,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 91.56,
+      "coding_norm": 98.44,
+      "intelligence_norm": 100.0,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 95.29,
+      "data_coverage": 80.0,
       "rank": 5
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/claude-fable-5",
-      "model_name": "community/AkshayCoder48/claude-fable-5",
-      "aa_slug": "claude-fable-5",
-      "aa_name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
-      "aa_match": "substring",
-      "agentic": 51.0,
-      "coding": 76.5,
-      "intelligence": 49.7,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 90.66,
-      "coding_norm": 97.87,
-      "intelligence_norm": 93.51,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 93.45,
-      "data_coverage": 80.0,
-      "rank": 6
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/kimi-k3",
-      "model_name": "community/AkshayCoder48/kimi-k3",
-      "aa_slug": "kimi-k3",
-      "aa_name": "Kimi K3 (max)",
-      "aa_match": "substring",
-      "agentic": 50.6,
-      "coding": 76.2,
-      "intelligence": 43.8,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 89.95,
-      "coding_norm": 97.44,
-      "intelligence_norm": 81.17,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 90.64,
-      "data_coverage": 80.0,
-      "rank": 7
     },
     {
       "provider": "Pollinations",
@@ -188,13 +144,13 @@
       "swebench_norm": null,
       "hermes_score": 90.64,
       "data_coverage": 80.0,
-      "rank": 8
+      "rank": 6
     },
     {
       "provider": "Pollinations",
       "provider_id": "pollinations",
-      "model_id": "community/JustScriptzz/kimi-k3",
-      "model_name": "community/JustScriptzz/kimi-k3",
+      "model_id": "community/vendouple/kimi-k3",
+      "model_name": "community/vendouple/kimi-k3",
       "aa_slug": "kimi-k3",
       "aa_name": "Kimi K3 (max)",
       "aa_match": "substring",
@@ -210,7 +166,7 @@
       "swebench_norm": null,
       "hermes_score": 90.64,
       "data_coverage": 80.0,
-      "rank": 9
+      "rank": 7
     },
     {
       "provider": "Pollinations",
@@ -232,7 +188,7 @@
       "swebench_norm": null,
       "hermes_score": 86.42,
       "data_coverage": 80.0,
-      "rank": 10
+      "rank": 8
     },
     {
       "provider": "Pollinations",
@@ -254,13 +210,13 @@
       "swebench_norm": null,
       "hermes_score": 81.14,
       "data_coverage": 80.0,
-      "rank": 11
+      "rank": 9
     },
     {
       "provider": "Pollinations",
       "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/claude-sonnet-5",
-      "model_name": "community/AkshayCoder48/claude-sonnet-5",
+      "model_id": "community/NamanSoni78/Claude-Sonnet-5",
+      "model_name": "community/NamanSoni78/Claude-Sonnet-5",
       "aa_slug": "claude-sonnet-5",
       "aa_name": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
       "aa_match": "substring",
@@ -276,7 +232,7 @@
       "swebench_norm": null,
       "hermes_score": 80.78,
       "data_coverage": 80.0,
-      "rank": 12
+      "rank": 10
     },
     {
       "provider": "Pollinations",
@@ -298,7 +254,7 @@
       "swebench_norm": null,
       "hermes_score": 80.78,
       "data_coverage": 80.0,
-      "rank": 13
+      "rank": 11
     },
     {
       "provider": "Groq",
@@ -320,7 +276,7 @@
       "swebench_norm": null,
       "hermes_score": 79.48,
       "data_coverage": 80.0,
-      "rank": 14
+      "rank": 12
     },
     {
       "provider": "Pollinations",
@@ -342,7 +298,7 @@
       "swebench_norm": null,
       "hermes_score": 79.48,
       "data_coverage": 80.0,
-      "rank": 15
+      "rank": 13
     },
     {
       "provider": "Pollinations",
@@ -364,7 +320,7 @@
       "swebench_norm": null,
       "hermes_score": 79.48,
       "data_coverage": 80.0,
-      "rank": 16
+      "rank": 14
     },
     {
       "provider": "Pollinations",
@@ -386,51 +342,7 @@
       "swebench_norm": null,
       "hermes_score": 78.31,
       "data_coverage": 80.0,
-      "rank": 17
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/deepseek-v4-pro",
-      "model_name": "community/AkshayCoder48/deepseek-v4-pro",
-      "aa_slug": "deepseek-v4-pro",
-      "aa_name": "DeepSeek V4 Pro 0813 (Reasoning, Max Effort)",
-      "aa_match": "substring",
-      "agentic": 42.3,
-      "coding": 68.8,
-      "intelligence": 36.3,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 75.04,
-      "coding_norm": 86.91,
-      "intelligence_norm": 65.48,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 76.96,
-      "data_coverage": 80.0,
-      "rank": 18
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/JustScriptzz/deepseek-v4-pro",
-      "model_name": "community/JustScriptzz/deepseek-v4-pro",
-      "aa_slug": "deepseek-v4-pro",
-      "aa_name": "DeepSeek V4 Pro 0813 (Reasoning, Max Effort)",
-      "aa_match": "substring",
-      "agentic": 42.3,
-      "coding": 68.8,
-      "intelligence": 36.3,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 75.04,
-      "coding_norm": 86.91,
-      "intelligence_norm": 65.48,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 76.96,
-      "data_coverage": 80.0,
-      "rank": 19
+      "rank": 15
     },
     {
       "provider": "Pollinations",
@@ -452,7 +364,7 @@
       "swebench_norm": null,
       "hermes_score": 76.96,
       "data_coverage": 80.0,
-      "rank": 20
+      "rank": 16
     },
     {
       "provider": "Pollinations",
@@ -474,7 +386,7 @@
       "swebench_norm": null,
       "hermes_score": 76.96,
       "data_coverage": 80.0,
-      "rank": 21
+      "rank": 17
     },
     {
       "provider": "Pollinations",
@@ -496,7 +408,7 @@
       "swebench_norm": null,
       "hermes_score": 76.96,
       "data_coverage": 80.0,
-      "rank": 22
+      "rank": 18
     },
     {
       "provider": "Pollinations",
@@ -518,7 +430,7 @@
       "swebench_norm": null,
       "hermes_score": 75.85,
       "data_coverage": 80.0,
-      "rank": 23
+      "rank": 19
     },
     {
       "provider": "Pollinations",
@@ -540,7 +452,7 @@
       "swebench_norm": null,
       "hermes_score": 75.85,
       "data_coverage": 80.0,
-      "rank": 24
+      "rank": 20
     },
     {
       "provider": "Pollinations",
@@ -562,7 +474,7 @@
       "swebench_norm": null,
       "hermes_score": 72.18,
       "data_coverage": 15.0,
-      "rank": 25
+      "rank": 21
     },
     {
       "provider": "Pollinations",
@@ -584,51 +496,7 @@
       "swebench_norm": null,
       "hermes_score": 72.18,
       "data_coverage": 15.0,
-      "rank": 26
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/Catniti/gemini-3.6-flash",
-      "model_name": "community/Catniti/gemini-3.6-flash",
-      "aa_slug": "gemini-3-6-flash",
-      "aa_name": "Gemini 3.6 Flash (high)",
-      "aa_match": "substring",
-      "agentic": 30.2,
-      "coding": 69.2,
-      "intelligence": 34.3,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 53.32,
-      "coding_norm": 87.48,
-      "intelligence_norm": 61.3,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 65.49,
-      "data_coverage": 80.0,
-      "rank": 27
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/gemini-3.6-flash",
-      "model_name": "community/AkshayCoder48/gemini-3.6-flash",
-      "aa_slug": "gemini-3-6-flash",
-      "aa_name": "Gemini 3.6 Flash (high)",
-      "aa_match": "substring",
-      "agentic": 30.2,
-      "coding": 69.2,
-      "intelligence": 34.3,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 53.32,
-      "coding_norm": 87.48,
-      "intelligence_norm": 61.3,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 65.49,
-      "data_coverage": 80.0,
-      "rank": 28
+      "rank": 22
     },
     {
       "provider": "Pollinations",
@@ -650,29 +518,7 @@
       "swebench_norm": null,
       "hermes_score": 59.48,
       "data_coverage": 80.0,
-      "rank": 29
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/gggff123/Inkling",
-      "model_name": "community/gggff123/Inkling",
-      "aa_slug": "inkling",
-      "aa_name": "Inkling (xhigh)",
-      "aa_match": "substring",
-      "agentic": 24.3,
-      "coding": 52.1,
-      "intelligence": 25.5,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 42.73,
-      "coding_norm": 63.16,
-      "intelligence_norm": 42.89,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 49.14,
-      "data_coverage": 80.0,
-      "rank": 30
+      "rank": 23
     },
     {
       "provider": "Kilo Code",
@@ -694,7 +540,7 @@
       "swebench_norm": null,
       "hermes_score": 45.28,
       "data_coverage": 80.0,
-      "rank": 31
+      "rank": 24
     },
     {
       "provider": "Kilo Code",
@@ -716,7 +562,7 @@
       "swebench_norm": null,
       "hermes_score": 45.28,
       "data_coverage": 80.0,
-      "rank": 32
+      "rank": 25
     },
     {
       "provider": "Pollinations",
@@ -738,7 +584,7 @@
       "swebench_norm": null,
       "hermes_score": 44.77,
       "data_coverage": 15.0,
-      "rank": 33
+      "rank": 26
     },
     {
       "provider": "Groq",
@@ -760,29 +606,7 @@
       "swebench_norm": null,
       "hermes_score": 44.67,
       "data_coverage": 80.0,
-      "rank": 34
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/Lorbus-Qwen3.6-27B-int4-AutoRound",
-      "model_name": "community/AkshayCoder48/Lorbus-Qwen3.6-27B-int4-AutoRound",
-      "aa_slug": "qwen3-6-27b",
-      "aa_name": "Qwen3.6 27B (Reasoning)",
-      "aa_match": "substring",
-      "agentic": 20.1,
-      "coding": 53.7,
-      "intelligence": 21.9,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 35.19,
-      "coding_norm": 65.43,
-      "intelligence_norm": 35.36,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 44.67,
-      "data_coverage": 80.0,
-      "rank": 35
+      "rank": 27
     },
     {
       "provider": "Pollinations",
@@ -804,7 +628,7 @@
       "swebench_norm": null,
       "hermes_score": 44.67,
       "data_coverage": 80.0,
-      "rank": 36
+      "rank": 28
     },
     {
       "provider": "Pollinations",
@@ -826,29 +650,7 @@
       "swebench_norm": null,
       "hermes_score": 43.78,
       "data_coverage": 80.0,
-      "rank": 37
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/gggff123/step-3.7-flash",
-      "model_name": "community/gggff123/step-3.7-flash",
-      "aa_slug": "step-3-7-flash",
-      "aa_name": "Step 3.7 Flash",
-      "aa_match": "substring",
-      "agentic": null,
-      "coding": 39.6,
-      "intelligence": 19.5,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": 45.38,
-      "intelligence_norm": 30.33,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 39.74,
-      "data_coverage": 40.0,
-      "rank": 38
+      "rank": 29
     },
     {
       "provider": "Kilo Code",
@@ -870,7 +672,7 @@
       "swebench_norm": null,
       "hermes_score": 39.74,
       "data_coverage": 40.0,
-      "rank": 39
+      "rank": 30
     },
     {
       "provider": "Cloudflare AI",
@@ -892,7 +694,7 @@
       "swebench_norm": null,
       "hermes_score": 37.27,
       "data_coverage": 40.0,
-      "rank": 40
+      "rank": 31
     },
     {
       "provider": "Pollinations",
@@ -914,7 +716,7 @@
       "swebench_norm": null,
       "hermes_score": 32.47,
       "data_coverage": 80.0,
-      "rank": 41
+      "rank": 32
     },
     {
       "provider": "Pollinations",
@@ -936,7 +738,7 @@
       "swebench_norm": null,
       "hermes_score": 32.47,
       "data_coverage": 80.0,
-      "rank": 42
+      "rank": 33
     },
     {
       "provider": "Pollinations",
@@ -958,29 +760,7 @@
       "swebench_norm": null,
       "hermes_score": 32.47,
       "data_coverage": 80.0,
-      "rank": 43
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/gemini-3-flash",
-      "model_name": "community/AkshayCoder48/gemini-3-flash",
-      "aa_slug": "gemini-3-flash",
-      "aa_name": "Gemini 3 Flash Preview (Non-reasoning)",
-      "aa_match": "substring",
-      "agentic": null,
-      "coding": null,
-      "intelligence": 17.9,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": 26.99,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 26.99,
-      "data_coverage": 15.0,
-      "rank": 44
+      "rank": 34
     },
     {
       "provider": "Pollinations",
@@ -1002,29 +782,7 @@
       "swebench_norm": null,
       "hermes_score": 26.99,
       "data_coverage": 15.0,
-      "rank": 45
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/vendouple/gemma-4-31b-sdft-heretic-rp",
-      "model_name": "community/vendouple/gemma-4-31b-sdft-heretic-rp",
-      "aa_slug": "gemma-4-31b",
-      "aa_name": "Gemma 4 31B (Reasoning)",
-      "aa_match": "substring",
-      "agentic": 6.7,
-      "coding": 43.4,
-      "intelligence": 15.4,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 11.13,
-      "coding_norm": 50.78,
-      "intelligence_norm": 21.76,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 25.51,
-      "data_coverage": 80.0,
-      "rank": 46
+      "rank": 35
     },
     {
       "provider": "Pollinations",
@@ -1046,7 +804,7 @@
       "swebench_norm": null,
       "hermes_score": 25.51,
       "data_coverage": 80.0,
-      "rank": 47
+      "rank": 36
     },
     {
       "provider": "Pollinations",
@@ -1068,7 +826,7 @@
       "swebench_norm": null,
       "hermes_score": 25.51,
       "data_coverage": 80.0,
-      "rank": 48
+      "rank": 37
     },
     {
       "provider": "Pollinations",
@@ -1090,51 +848,7 @@
       "swebench_norm": null,
       "hermes_score": 25.51,
       "data_coverage": 80.0,
-      "rank": 49
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/Qwen3.5-9B-Q4_K_M.gguf",
-      "model_name": "community/AkshayCoder48/Qwen3.5-9B-Q4_K_M.gguf",
-      "aa_slug": "qwen3-5-9b",
-      "aa_name": "Qwen3.5 9B (Reasoning)",
-      "aa_match": "substring",
-      "agentic": null,
-      "coding": 28.7,
-      "intelligence": 13.7,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": 29.87,
-      "intelligence_norm": 18.2,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 25.5,
-      "data_coverage": 40.0,
-      "rank": 50
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/gpt-o4-mini-no-login",
-      "model_name": "community/AkshayCoder48/gpt-o4-mini-no-login",
-      "aa_slug": "o4-mini",
-      "aa_name": "o4-mini (high)",
-      "aa_match": "substring",
-      "agentic": null,
-      "coding": null,
-      "intelligence": 16.7,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": 24.48,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 24.48,
-      "data_coverage": 15.0,
-      "rank": 51
+      "rank": 38
     },
     {
       "provider": "Pollinations",
@@ -1156,29 +870,7 @@
       "swebench_norm": null,
       "hermes_score": 22.18,
       "data_coverage": 15.0,
-      "rank": 52
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/gemini-3.1-flash-lite",
-      "model_name": "community/AkshayCoder48/gemini-3.1-flash-lite",
-      "aa_slug": "gemini-3-1-flash-lite-preview",
-      "aa_name": "Gemini 3.1 Flash-Lite",
-      "aa_match": "substring",
-      "agentic": 3.2,
-      "coding": 34.7,
-      "intelligence": 16.0,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 4.85,
-      "coding_norm": 38.41,
-      "intelligence_norm": 23.01,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 18.74,
-      "data_coverage": 80.0,
-      "rank": 53
+      "rank": 39
     },
     {
       "provider": "Pollinations",
@@ -1200,7 +892,7 @@
       "swebench_norm": null,
       "hermes_score": 18.74,
       "data_coverage": 80.0,
-      "rank": 54
+      "rank": 40
     },
     {
       "provider": "Groq",
@@ -1222,7 +914,7 @@
       "swebench_norm": null,
       "hermes_score": 18.07,
       "data_coverage": 80.0,
-      "rank": 55
+      "rank": 41
     },
     {
       "provider": "Cloudflare AI",
@@ -1244,7 +936,7 @@
       "swebench_norm": null,
       "hermes_score": 18.07,
       "data_coverage": 80.0,
-      "rank": 56
+      "rank": 42
     },
     {
       "provider": "Pollinations",
@@ -1266,7 +958,7 @@
       "swebench_norm": null,
       "hermes_score": 18.07,
       "data_coverage": 80.0,
-      "rank": 57
+      "rank": 43
     },
     {
       "provider": "Pollinations",
@@ -1288,51 +980,7 @@
       "swebench_norm": null,
       "hermes_score": 16.89,
       "data_coverage": 80.0,
-      "rank": 58
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/MarcosFRG/north-mini-code",
-      "model_name": "community/MarcosFRG/north-mini-code",
-      "aa_slug": "north-mini-code",
-      "aa_name": "North Mini Code",
-      "aa_match": "substring",
-      "agentic": 1.1,
-      "coding": 36.5,
-      "intelligence": 12.8,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 1.08,
-      "coding_norm": 40.97,
-      "intelligence_norm": 16.32,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 16.4,
-      "data_coverage": 80.0,
-      "rank": 59
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/cohere-north-mini-code:free",
-      "model_name": "community/AkshayCoder48/cohere-north-mini-code:free",
-      "aa_slug": "north-mini-code",
-      "aa_name": "North Mini Code",
-      "aa_match": "substring",
-      "agentic": 1.1,
-      "coding": 36.5,
-      "intelligence": 12.8,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 1.08,
-      "coding_norm": 40.97,
-      "intelligence_norm": 16.32,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 16.4,
-      "data_coverage": 80.0,
-      "rank": 60
+      "rank": 44
     },
     {
       "provider": "Kilo Code",
@@ -1354,29 +1002,29 @@
       "swebench_norm": null,
       "hermes_score": 16.4,
       "data_coverage": 80.0,
-      "rank": 61
+      "rank": 45
     },
     {
       "provider": "Pollinations",
       "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/gemini-2.5-flash",
-      "model_name": "community/AkshayCoder48/gemini-2.5-flash",
-      "aa_slug": "gemini-2-5-flash",
-      "aa_name": "Gemini 2.5 Flash (Non-reasoning)",
+      "model_id": "community/ZapGaming/mercury-2.5-ultrafast",
+      "model_name": "community/ZapGaming/mercury-2.5-ultrafast",
+      "aa_slug": "mercury-2",
+      "aa_name": "Mercury 2",
       "aa_match": "substring",
-      "agentic": null,
-      "coding": null,
-      "intelligence": 9.9,
+      "agentic": 4.0,
+      "coding": 31.1,
+      "intelligence": 11.5,
       "arena": null,
       "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": 10.25,
+      "agentic_norm": 6.28,
+      "coding_norm": 33.29,
+      "intelligence_norm": 13.6,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 10.25,
-      "data_coverage": 15.0,
-      "rank": 62
+      "hermes_score": 16.09,
+      "data_coverage": 80.0,
+      "rank": 46
     },
     {
       "provider": "Pollinations",
@@ -1398,7 +1046,7 @@
       "swebench_norm": null,
       "hermes_score": 10.25,
       "data_coverage": 15.0,
-      "rank": 63
+      "rank": 47
     },
     {
       "provider": "Cloudflare AI",
@@ -1420,7 +1068,7 @@
       "swebench_norm": null,
       "hermes_score": 9.41,
       "data_coverage": 15.0,
-      "rank": 64
+      "rank": 48
     },
     {
       "provider": "Groq",
@@ -1442,7 +1090,7 @@
       "swebench_norm": null,
       "hermes_score": 8.16,
       "data_coverage": 80.0,
-      "rank": 65
+      "rank": 49
     },
     {
       "provider": "Cloudflare AI",
@@ -1464,7 +1112,7 @@
       "swebench_norm": null,
       "hermes_score": 8.16,
       "data_coverage": 80.0,
-      "rank": 66
+      "rank": 50
     },
     {
       "provider": "Pollinations",
@@ -1486,7 +1134,7 @@
       "swebench_norm": null,
       "hermes_score": 8.16,
       "data_coverage": 80.0,
-      "rank": 67
+      "rank": 51
     },
     {
       "provider": "Cloudflare AI",
@@ -1508,7 +1156,7 @@
       "swebench_norm": null,
       "hermes_score": 3.56,
       "data_coverage": 15.0,
-      "rank": 68
+      "rank": 52
     },
     {
       "provider": "Kilo Code",
@@ -1530,7 +1178,7 @@
       "swebench_norm": null,
       "hermes_score": 2.67,
       "data_coverage": 40.0,
-      "rank": 69
+      "rank": 53
     },
     {
       "provider": "Cloudflare AI",
@@ -1552,29 +1200,7 @@
       "swebench_norm": null,
       "hermes_score": 0.81,
       "data_coverage": 80.0,
-      "rank": 70
-    },
-    {
-      "provider": "Groq",
-      "provider_id": "groq",
-      "model_id": "allam-2-7b",
-      "model_name": "allam-2-7b",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 71
+      "rank": 54
     },
     {
       "provider": "Groq",
@@ -1596,7 +1222,29 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 72
+      "rank": 55
+    },
+    {
+      "provider": "Groq",
+      "provider_id": "groq",
+      "model_id": "allam-2-7b",
+      "model_name": "allam-2-7b",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 56
     },
     {
       "provider": "NVIDIA NIM",
@@ -1618,7 +1266,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 73
+      "rank": 57
     },
     {
       "provider": "NVIDIA NIM",
@@ -1640,7 +1288,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 74
+      "rank": 58
     },
     {
       "provider": "NVIDIA NIM",
@@ -1662,7 +1310,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 75
+      "rank": 59
     },
     {
       "provider": "NVIDIA NIM",
@@ -1684,7 +1332,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 76
+      "rank": 60
     },
     {
       "provider": "NVIDIA NIM",
@@ -1706,7 +1354,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 77
+      "rank": 61
     },
     {
       "provider": "Mistral",
@@ -1728,7 +1376,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 78
+      "rank": 62
     },
     {
       "provider": "Mistral",
@@ -1750,7 +1398,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 79
+      "rank": 63
     },
     {
       "provider": "Mistral",
@@ -1772,7 +1420,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 80
+      "rank": 64
     },
     {
       "provider": "Mistral",
@@ -1794,7 +1442,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 81
+      "rank": 65
     },
     {
       "provider": "Mistral",
@@ -1816,7 +1464,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 82
+      "rank": 66
     },
     {
       "provider": "Mistral",
@@ -1838,7 +1486,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 83
+      "rank": 67
     },
     {
       "provider": "Mistral",
@@ -1860,7 +1508,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 84
+      "rank": 68
     },
     {
       "provider": "Mistral",
@@ -1882,7 +1530,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 85
+      "rank": 69
     },
     {
       "provider": "Mistral",
@@ -1904,7 +1552,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 86
+      "rank": 70
     },
     {
       "provider": "Mistral",
@@ -1926,7 +1574,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 87
+      "rank": 71
     },
     {
       "provider": "Mistral",
@@ -1948,7 +1596,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 88
+      "rank": 72
     },
     {
       "provider": "Mistral",
@@ -1970,7 +1618,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 89
+      "rank": 73
     },
     {
       "provider": "Cloudflare AI",
@@ -1992,7 +1640,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 90
+      "rank": 74
     },
     {
       "provider": "Cloudflare AI",
@@ -2014,7 +1662,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 91
+      "rank": 75
     },
     {
       "provider": "Cloudflare AI",
@@ -2036,7 +1684,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 92
+      "rank": 76
     },
     {
       "provider": "Cloudflare AI",
@@ -2058,7 +1706,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 15.0,
-      "rank": 93
+      "rank": 77
     },
     {
       "provider": "Cloudflare AI",
@@ -2080,7 +1728,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 94
+      "rank": 78
     },
     {
       "provider": "Cloudflare AI",
@@ -2102,7 +1750,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 95
+      "rank": 79
     },
     {
       "provider": "Cloudflare AI",
@@ -2124,7 +1772,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 96
+      "rank": 80
     },
     {
       "provider": "Cloudflare AI",
@@ -2146,7 +1794,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 97
+      "rank": 81
     },
     {
       "provider": "Cloudflare AI",
@@ -2168,7 +1816,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 98
+      "rank": 82
     },
     {
       "provider": "Cloudflare AI",
@@ -2190,7 +1838,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 99
+      "rank": 83
     },
     {
       "provider": "Cloudflare AI",
@@ -2212,7 +1860,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 100
+      "rank": 84
     },
     {
       "provider": "Cloudflare AI",
@@ -2234,7 +1882,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 101
+      "rank": 85
     },
     {
       "provider": "Cloudflare AI",
@@ -2256,7 +1904,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 102
+      "rank": 86
     },
     {
       "provider": "Cloudflare AI",
@@ -2278,7 +1926,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 103
+      "rank": 87
     },
     {
       "provider": "Cloudflare AI",
@@ -2300,7 +1948,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 104
+      "rank": 88
     },
     {
       "provider": "Cloudflare AI",
@@ -2322,7 +1970,95 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 105
+      "rank": 89
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "community/pegalink/sensenova-6.8-flash-lite",
+      "model_name": "community/pegalink/sensenova-6.8-flash-lite",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 90
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "community/pollinations-router/midijourney",
+      "model_name": "community/pollinations-router/midijourney",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 91
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "community/NamanSoni78/Glm-5.3-Thinking-Max",
+      "model_name": "community/NamanSoni78/Glm-5.3-Thinking-Max",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 92
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "community/ZapGaming/llama3.1-8b-xturbo",
+      "model_name": "community/ZapGaming/llama3.1-8b-xturbo",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 93
     },
     {
       "provider": "Pollinations",
@@ -2344,7 +2080,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 106
+      "rank": 94
     },
     {
       "provider": "Pollinations",
@@ -2366,117 +2102,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 107
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/Catniti/minimax-m2.7",
-      "model_name": "community/Catniti/minimax-m2.7",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 108
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/Catniti/claude-sonnet-4",
-      "model_name": "community/Catniti/claude-sonnet-4",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 109
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/Catniti/grok-4-fast",
-      "model_name": "community/Catniti/grok-4-fast",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 110
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/Catniti/gpt-5.4-mini",
-      "model_name": "community/Catniti/gpt-5.4-mini",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 111
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/Catniti/gpt-5.2",
-      "model_name": "community/Catniti/gpt-5.2",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 112
+      "rank": 95
     },
     {
       "provider": "Pollinations",
@@ -2498,7 +2124,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 113
+      "rank": 96
     },
     {
       "provider": "Pollinations",
@@ -2520,7 +2146,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 114
+      "rank": 97
     },
     {
       "provider": "Pollinations",
@@ -2542,7 +2168,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 115
+      "rank": 98
     },
     {
       "provider": "Pollinations",
@@ -2564,7 +2190,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 116
+      "rank": 99
     },
     {
       "provider": "Pollinations",
@@ -2586,7 +2212,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 117
+      "rank": 100
     },
     {
       "provider": "Pollinations",
@@ -2608,7 +2234,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 118
+      "rank": 101
     },
     {
       "provider": "Pollinations",
@@ -2630,7 +2256,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 119
+      "rank": 102
     },
     {
       "provider": "Pollinations",
@@ -2652,7 +2278,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 120
+      "rank": 103
     },
     {
       "provider": "Pollinations",
@@ -2674,51 +2300,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 121
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/glm-5-2",
-      "model_name": "community/AkshayCoder48/glm-5-2",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 122
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/claude-opus-4-8",
-      "model_name": "community/AkshayCoder48/claude-opus-4-8",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 123
+      "rank": 104
     },
     {
       "provider": "Pollinations",
@@ -2740,13 +2322,13 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 124
+      "rank": 105
     },
     {
       "provider": "Pollinations",
       "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/gpt-5-4",
-      "model_name": "community/AkshayCoder48/gpt-5-4",
+      "model_id": "community/AkshayCoder48/grok-4-6",
+      "model_name": "community/AkshayCoder48/grok-4-6",
       "aa_slug": null,
       "aa_name": null,
       "aa_match": "missing",
@@ -2762,13 +2344,13 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 125
+      "rank": 106
     },
     {
       "provider": "Pollinations",
       "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/gpt-5-5",
-      "model_name": "community/AkshayCoder48/gpt-5-5",
+      "model_id": "community/vendouple/fable-5.1",
+      "model_name": "community/vendouple/fable-5.1",
       "aa_slug": null,
       "aa_name": null,
       "aa_match": "missing",
@@ -2784,7 +2366,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 126
+      "rank": 107
     },
     {
       "provider": "Pollinations",
@@ -2806,7 +2388,51 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 127
+      "rank": 108
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "community/vendouple/gpt-5.6-sol",
+      "model_name": "community/vendouple/gpt-5.6-sol",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 109
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "community/NamanSoni78/gpt-5.4-nano",
+      "model_name": "community/NamanSoni78/gpt-5.4-nano",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 110
     },
     {
       "provider": "Pollinations",
@@ -2828,7 +2454,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 128
+      "rank": 111
     },
     {
       "provider": "Pollinations",
@@ -2850,7 +2476,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 129
+      "rank": 112
     },
     {
       "provider": "Pollinations",
@@ -2872,7 +2498,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 130
+      "rank": 113
     },
     {
       "provider": "Pollinations",
@@ -2894,7 +2520,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 131
+      "rank": 114
     },
     {
       "provider": "Pollinations",
@@ -2916,7 +2542,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 132
+      "rank": 115
     },
     {
       "provider": "Pollinations",
@@ -2938,29 +2564,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 133
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/gpt-5.6-sol",
-      "model_name": "community/AkshayCoder48/gpt-5.6-sol",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 134
+      "rank": 116
     },
     {
       "provider": "Pollinations",
@@ -2982,13 +2586,13 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 135
+      "rank": 117
     },
     {
       "provider": "Pollinations",
       "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/vexa",
-      "model_name": "community/AkshayCoder48/vexa",
+      "model_id": "community/NamanSoni78/nemotron-3-ultra-550b-a55b",
+      "model_name": "community/NamanSoni78/nemotron-3-ultra-550b-a55b",
       "aa_slug": null,
       "aa_name": null,
       "aa_match": "missing",
@@ -3004,13 +2608,13 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 136
+      "rank": 118
     },
     {
       "provider": "Pollinations",
       "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/v3",
-      "model_name": "community/AkshayCoder48/v3",
+      "model_id": "community/NamanSoni78/GPT-5.5-xHigh",
+      "model_name": "community/NamanSoni78/GPT-5.5-xHigh",
       "aa_slug": null,
       "aa_name": null,
       "aa_match": "missing",
@@ -3026,271 +2630,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 137
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/Nemo",
-      "model_name": "community/AkshayCoder48/Nemo",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 138
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/kilo-auto-small",
-      "model_name": "community/AkshayCoder48/kilo-auto-small",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 139
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/kilo-auto-free",
-      "model_name": "community/AkshayCoder48/kilo-auto-free",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 140
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/poolside-laguna-s-2.1:free",
-      "model_name": "community/AkshayCoder48/poolside-laguna-s-2.1:free",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 141
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/chat-model-reasoning-with-search",
-      "model_name": "community/AkshayCoder48/chat-model-reasoning-with-search",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 142
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/chat-model-reasoning",
-      "model_name": "community/AkshayCoder48/chat-model-reasoning",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 143
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/jollygen",
-      "model_name": "community/AkshayCoder48/jollygen",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 144
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/gpt-5.4-mini-no-login",
-      "model_name": "community/AkshayCoder48/gpt-5.4-mini-no-login",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 145
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/llama3-8b",
-      "model_name": "community/AkshayCoder48/llama3-8b",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 146
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/midnight-rose",
-      "model_name": "community/AkshayCoder48/midnight-rose",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 147
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/L3-70B-Euryale-v2.1",
-      "model_name": "community/AkshayCoder48/L3-70B-Euryale-v2.1",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 148
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/AkshayCoder48/gpt-4o-latest",
-      "model_name": "community/AkshayCoder48/gpt-4o-latest",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 149
+      "rank": 119
     },
     {
       "provider": "Pollinations",
@@ -3312,7 +2652,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 150
+      "rank": 120
     },
     {
       "provider": "Pollinations",
@@ -3334,7 +2674,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 151
+      "rank": 121
     },
     {
       "provider": "Pollinations",
@@ -3356,7 +2696,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 152
+      "rank": 122
     },
     {
       "provider": "Pollinations",
@@ -3378,7 +2718,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 153
+      "rank": 123
     },
     {
       "provider": "Pollinations",
@@ -3400,7 +2740,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 154
+      "rank": 124
     },
     {
       "provider": "Pollinations",
@@ -3422,7 +2762,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 155
+      "rank": 125
     },
     {
       "provider": "Pollinations",
@@ -3444,7 +2784,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 156
+      "rank": 126
     },
     {
       "provider": "Pollinations",
@@ -3466,51 +2806,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 157
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/iotserver24/deepseek-fast",
-      "model_name": "community/iotserver24/deepseek-fast",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 158
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/iotserver24/gpt-5-6-sol",
-      "model_name": "community/iotserver24/gpt-5-6-sol",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 159
+      "rank": 127
     },
     {
       "provider": "Pollinations",
@@ -3532,7 +2828,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 160
+      "rank": 128
     },
     {
       "provider": "Pollinations",
@@ -3554,7 +2850,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 161
+      "rank": 129
     },
     {
       "provider": "Pollinations",
@@ -3576,7 +2872,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 162
+      "rank": 130
     },
     {
       "provider": "Pollinations",
@@ -3598,7 +2894,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 163
+      "rank": 131
     },
     {
       "provider": "Pollinations",
@@ -3620,7 +2916,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 164
+      "rank": 132
     },
     {
       "provider": "Pollinations",
@@ -3642,7 +2938,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 165
+      "rank": 133
     },
     {
       "provider": "Pollinations",
@@ -3664,7 +2960,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 166
+      "rank": 134
     },
     {
       "provider": "Pollinations",
@@ -3686,7 +2982,29 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 167
+      "rank": 135
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "community/vendouple/glm-5.3",
+      "model_name": "community/vendouple/glm-5.3",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 136
     },
     {
       "provider": "Pollinations",
@@ -3708,7 +3026,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 168
+      "rank": 137
     },
     {
       "provider": "Pollinations",
@@ -3730,7 +3048,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 169
+      "rank": 138
     },
     {
       "provider": "Pollinations",
@@ -3752,7 +3070,29 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 170
+      "rank": 139
+    },
+    {
+      "provider": "Pollinations",
+      "provider_id": "pollinations",
+      "model_id": "community/pollinations-router/polli",
+      "model_name": "community/pollinations-router/polli",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 140
     },
     {
       "provider": "Pollinations",
@@ -3774,7 +3114,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 171
+      "rank": 141
     },
     {
       "provider": "Pollinations",
@@ -3796,51 +3136,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 172
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/JustScriptzz/glm-5-2",
-      "model_name": "community/JustScriptzz/glm-5-2",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 173
-    },
-    {
-      "provider": "Pollinations",
-      "provider_id": "pollinations",
-      "model_id": "community/Catniti/qwen3.7-flash",
-      "model_name": "community/Catniti/qwen3.7-flash",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 174
+      "rank": 142
     },
     {
       "provider": "Pollinations",
@@ -3862,7 +3158,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 175
+      "rank": 143
     },
     {
       "provider": "Pollinations",
@@ -3884,7 +3180,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 176
+      "rank": 144
     },
     {
       "provider": "Pollinations",
@@ -3906,7 +3202,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 177
+      "rank": 145
     },
     {
       "provider": "Pollinations",
@@ -3928,7 +3224,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 178
+      "rank": 146
     },
     {
       "provider": "Pollinations",
@@ -3950,7 +3246,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 179
+      "rank": 147
     },
     {
       "provider": "Pollinations",
@@ -3972,7 +3268,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 180
+      "rank": 148
     },
     {
       "provider": "Pollinations",
@@ -3994,7 +3290,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 181
+      "rank": 149
     },
     {
       "provider": "Pollinations",
@@ -4016,7 +3312,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 182
+      "rank": 150
     },
     {
       "provider": "Pollinations",
@@ -4038,7 +3334,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 183
+      "rank": 151
     },
     {
       "provider": "Pollinations",
@@ -4060,7 +3356,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 184
+      "rank": 152
     },
     {
       "provider": "LLM7",
@@ -4082,7 +3378,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 185
+      "rank": 153
     },
     {
       "provider": "Kilo Code",
@@ -4104,7 +3400,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 186
+      "rank": 154
     },
     {
       "provider": "Kilo Code",
@@ -4126,7 +3422,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 187
+      "rank": 155
     },
     {
       "provider": "Kilo Code",
@@ -4148,7 +3444,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 188
+      "rank": 156
     },
     {
       "provider": "Kilo Code",
@@ -4170,7 +3466,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 189
+      "rank": 157
     }
   ]
 }
