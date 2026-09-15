@@ -1,10 +1,17 @@
 {
-  "updated": "2026-09-15T11:03:21.561002+00:00",
+  "updated": "2026-09-15T16:14:01.326557+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "groq/compound-mini",
+          "name": "groq/compound-mini",
+          "context": 131072,
+          "limits": "varies per model",
+          "params_b": null
+        },
         {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
@@ -19,11 +26,11 @@
           "params_b": 120.0
         },
         {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": 131072,
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
           "limits": "varies per model",
-          "params_b": null
+          "params_b": 7.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -51,13 +58,6 @@
             "reasoning"
           ],
           "params_b": 27.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
         }
       ],
       "error": null
@@ -465,6 +465,13 @@
           "params_b": null
         },
         {
+          "id": "community/CloudCompile/pollinations-code-agent-but-weird",
+          "name": "community/CloudCompile/pollinations-code-agent-but-weird",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "community/pegalink/jimmy",
           "name": "community/pegalink/jimmy",
           "context": 6000,
@@ -482,13 +489,6 @@
           "id": "community/pollinations-router/midijourney",
           "name": "community/pollinations-router/midijourney",
           "context": 1050000,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "community/NamanSoni78/Glm-5.3-Thinking-Max",
-          "name": "community/NamanSoni78/Glm-5.3-Thinking-Max",
-          "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -521,13 +521,6 @@
           "params_b": 26.0
         },
         {
-          "id": "community/NamanSoni78/gpt-6-astra-pro",
-          "name": "community/NamanSoni78/gpt-6-astra-pro",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "community/vendouple/deepseek-v3.2",
           "name": "community/vendouple/deepseek-v3.2",
           "context": 500000,
@@ -545,6 +538,13 @@
           "id": "community/immature-yt/alara-nova-1",
           "name": "community/immature-yt/alara-nova-1",
           "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "community/smplstuff/title-generator",
+          "name": "community/smplstuff/title-generator",
+          "context": 400000,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -636,13 +636,6 @@
           "id": "community/YoannDev90/qwen3.7-flash",
           "name": "community/YoannDev90/qwen3.7-flash",
           "context": 991000,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "community/YoannDev90/poolside-laguna-s-2.1:free",
-          "name": "community/YoannDev90/poolside-laguna-s-2.1:free",
-          "context": 262000,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
