@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16T10:50:03.948485+00:00",
+  "updated": "2026-09-16T16:06:58.617138+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -367,9 +367,30 @@
       "url": "https://pollinations.ai",
       "models": [
         {
+          "id": "community/JustScriptzz/grok-4.6",
+          "name": "community/JustScriptzz/grok-4.6",
+          "context": 500000,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "community/vendouple/glm-5.3",
+          "name": "community/vendouple/glm-5.3",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "community/sharktide/inferenceport-ai-lightning-text-v2-expanded-knowledge",
           "name": "community/sharktide/inferenceport-ai-lightning-text-v2-expanded-knowledge",
           "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "community/vendouple/gpt-6-astra",
+          "name": "community/vendouple/gpt-6-astra",
+          "context": 1000000,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -528,13 +549,6 @@
           "params_b": null
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
           "id": "nemotron-3-super",
           "name": "nemotron-3-super",
           "context": null,
@@ -542,18 +556,25 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
         }
       ],
       "error": null
