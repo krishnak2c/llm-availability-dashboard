@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15T23:23:37.538545+00:00",
+  "updated": "2026-09-16T03:18:08.620959+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -259,13 +259,6 @@
           "params_b": null
         },
         {
-          "id": "nvidia/ising-calibration-1.5-31b",
-          "name": "nvidia/ising-calibration-1.5-31b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 31.0
-        },
-        {
           "id": "nvidia/llama-3.1-nemoguard-8b-content-safety",
           "name": "nvidia/llama-3.1-nemoguard-8b-content-safety",
           "context": null,
@@ -515,6 +508,20 @@
           "params_b": null
         },
         {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
@@ -534,20 +541,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 20.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
         }
       ],
       "error": null
