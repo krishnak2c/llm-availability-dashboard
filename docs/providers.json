@@ -4,12 +4,12 @@
     "pollinations-communitycatnitigpt6astra",
     "pollinations-communitynamansoni78gpt6astrapro",
     "pollinations-gpt6astra",
+    "pollinations-communitycatnitikimik3",
     "pollinations-communityvendouplegpt6astra",
     "pollinations-communityvendouplekimik3",
     "pollinations-communityvendoupleqwen38max",
     "pollinations-kimik3",
-    "pollinations-communitynamansoni78claudesonnet5",
-    "groq-qwen38"
+    "pollinations-communitynamansoni78claudesonnet5"
   ],
   "chain": [
     {
@@ -34,6 +34,12 @@
       "id": "pollinations-gpt6astra",
       "baseUrl": "https://gen.pollinations.ai/v1",
       "model": "openai/gpt-6-astra",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
+    },
+    {
+      "id": "pollinations-communitycatnitikimik3",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "community/Catniti/kimi-k3",
       "apiKeyEnv": "POLLINATIONS_API_KEY"
     },
     {
@@ -65,16 +71,11 @@
       "baseUrl": "https://gen.pollinations.ai/v1",
       "model": "community/NamanSoni78/Claude-Sonnet-5",
       "apiKeyEnv": "POLLINATIONS_API_KEY"
-    },
-    {
-      "id": "groq-qwen38",
-      "baseUrl": "https://api.groq.com/openai/v1",
-      "model": "qwen/qwen3.8-27b",
-      "apiKeyEnv": "GROQ_API_KEY"
     }
   ],
   "modelAllowlist": [
     "community/Catniti/gpt-6-astra",
+    "community/Catniti/kimi-k3",
     "community/NamanSoni78/Claude-Sonnet-5",
     "community/NamanSoni78/gpt-6-astra-pro",
     "community/tomdacatto/claude-opus-5",
@@ -94,7 +95,6 @@
     "openai/gpt-6-astra",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
-    "qwen/qwen3.8-27b",
     "qwen/qwen3.8-27b-free",
     "thinkingmachines/inkling",
     "z-ai/glm-5.2"
