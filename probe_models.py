@@ -33,10 +33,9 @@ PROBES_JSONL = DOCS / "probes.jsonl"
 AVAIL_JSON = DOCS / "availability.json"
 ARCHIVE_DIR = DOCS / "probes-archive"
 
-PROBE_TIMEOUT = 15
+PROBE_TIMEOUT = 10
 PER_PROVIDER_CONCURRENCY = 2
-PER_PROBE_PAUSE_S = 0.2
-ROUND_ROBIN_BUCKETS = 1  # every run probes every model
+ROUND_ROBIN_BUCKETS = 4  # every run probes every 4th model (bucketed round-robin)
 WATCH_LIST_FAILS = 3
 
 # ── Provider probe configs ────────────────────────────────────────────────────
@@ -555,7 +554,6 @@ def main():
             futures = []
             for mid in model_ids:
                 futures.append(ex.submit(probe_one, provider, mid))
-                time.sleep(PER_PROBE_PAUSE_S)
             counts = defaultdict(int)
             for fut in futures:
                 row = fut.result()
