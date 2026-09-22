@@ -1,33 +1,21 @@
 {
   "order": [
-    "pollinations-communitytomdacattoclaudeopus5",
     "pollinations-communitynamansoni78gpt6astrapro",
-    "pollinations-communityvendouplegpt6astra",
     "pollinations-gpt6astra",
     "pollinations-communityvendouplekimik3",
     "pollinations-kimik3",
     "pollinations-communityvendoupleqwen38max",
     "pollinations-qwen3824ta95b",
     "pollinations-communitynamansoni78claudesonnet5",
-    "pollinations-communityvendouplegemini38flash"
+    "pollinations-communityvendouplegemini38flash",
+    "groq-qwen38",
+    "pollinations-communitymarcosfrgqwen38"
   ],
   "chain": [
-    {
-      "id": "pollinations-communitytomdacattoclaudeopus5",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "community/tomdacatto/claude-opus-5",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
-    },
     {
       "id": "pollinations-communitynamansoni78gpt6astrapro",
       "baseUrl": "https://gen.pollinations.ai/v1",
       "model": "community/NamanSoni78/gpt-6-astra-pro",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
-    },
-    {
-      "id": "pollinations-communityvendouplegpt6astra",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "community/vendouple/gpt-6-astra",
       "apiKeyEnv": "POLLINATIONS_API_KEY"
     },
     {
@@ -71,14 +59,25 @@
       "baseUrl": "https://gen.pollinations.ai/v1",
       "model": "community/vendouple/gemini-3.8-flash",
       "apiKeyEnv": "POLLINATIONS_API_KEY"
+    },
+    {
+      "id": "groq-qwen38",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "model": "qwen/qwen3.8-27b",
+      "apiKeyEnv": "GROQ_API_KEY"
+    },
+    {
+      "id": "pollinations-communitymarcosfrgqwen38",
+      "baseUrl": "https://gen.pollinations.ai/v1",
+      "model": "community/MarcosFRG/qwen3.8-27b",
+      "apiKeyEnv": "POLLINATIONS_API_KEY"
     }
   ],
   "modelAllowlist": [
+    "community/MarcosFRG/qwen3.8-27b",
     "community/NamanSoni78/Claude-Sonnet-5",
     "community/NamanSoni78/gpt-6-astra-pro",
-    "community/tomdacatto/claude-opus-5",
     "community/vendouple/gemini-3.8-flash",
-    "community/vendouple/gpt-6-astra",
     "community/vendouple/kimi-k3",
     "community/vendouple/qwen-3.8-max",
     "deepseek-ai/deepseek-v4-flash-0731",
@@ -95,6 +94,7 @@
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
     "qwen/qwen3.8-2.4t-a95b",
+    "qwen/qwen3.8-27b",
     "qwen/qwen3.8-27b-free",
     "thinkingmachines/inkling",
     "z-ai/glm-5.2"
