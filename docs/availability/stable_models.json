@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T16:15:46.775016+00:00",
+  "updated": "2026-09-22T20:52:45.986557+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
@@ -735,6 +735,13 @@
           "params_b": 30.0
         },
         {
+          "id": "community/NamanSoni78/gpt-5.4-nano",
+          "name": "community/NamanSoni78/gpt-5.4-nano",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "community/AkshayCoder48/free-voice",
           "name": "community/AkshayCoder48/free-voice",
           "context": 128000,
@@ -773,6 +780,13 @@
           "id": "community/AkshayCoder48/grok-4-3",
           "name": "community/AkshayCoder48/grok-4-3",
           "context": 1000000,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
+          "id": "community/Lorodn4x/auto-rotator-alpha",
+          "name": "community/Lorodn4x/auto-rotator-alpha",
+          "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -903,13 +917,6 @@
           "params_b": null
         },
         {
-          "id": "community/vendouple/deepseek-v3.2",
-          "name": "community/vendouple/deepseek-v3.2",
-          "context": 500000,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "community/tomdacatto/llama-3.1-8B",
           "name": "community/tomdacatto/llama-3.1-8B",
           "context": null,
@@ -1022,13 +1029,6 @@
           "params_b": null
         },
         {
-          "id": "community/chigwell/claude-haiku-4-5",
-          "name": "community/chigwell/claude-haiku-4-5",
-          "context": 200000,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "community/JustScriptzz/kimi-k2-7-code",
           "name": "community/JustScriptzz/kimi-k2-7-code",
           "context": 262144,
@@ -1085,13 +1085,6 @@
           "params_b": 120.0
         },
         {
-          "id": "community/JustScriptzz/moondream-3.1",
-          "name": "community/JustScriptzz/moondream-3.1",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "community/JustScriptzz/agnes-2.5-flash",
           "name": "community/JustScriptzz/agnes-2.5-flash",
           "context": null,
@@ -1106,6 +1099,13 @@
           "params_b": null
         },
         {
+          "id": "community/Lorodn4x/deepseek-v4-pro-0813",
+          "name": "community/Lorodn4x/deepseek-v4-pro-0813",
+          "context": null,
+          "limits": "free tier — token from enter.pollinations.ai",
+          "params_b": null
+        },
+        {
           "id": "community/Spit-fires/muse-glimmer",
           "name": "community/Spit-fires/muse-glimmer",
           "context": null,
@@ -1116,20 +1116,6 @@
           "id": "community/MarcosFRG/deepseek-v4-pro-0813",
           "name": "community/MarcosFRG/deepseek-v4-pro-0813",
           "context": 1048576,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "community/vendouple/gemini-3.8-flash",
-          "name": "community/vendouple/gemini-3.8-flash",
-          "context": 1000000,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "community/vendouple/glm-5.3",
-          "name": "community/vendouple/glm-5.3",
-          "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -1193,20 +1179,6 @@
           "id": "community/morriszdweck/osaii-api-fast",
           "name": "community/morriszdweck/osaii-api-fast",
           "context": 262144,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "community/vendouple/kimi-k3",
-          "name": "community/vendouple/kimi-k3",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "community/vendouple/qwen-3.8-max",
-          "name": "community/vendouple/qwen-3.8-max",
-          "context": null,
           "limits": "free tier — token from enter.pollinations.ai",
           "params_b": null
         },
@@ -1302,13 +1274,6 @@
           "params_b": 31.0
         },
         {
-          "id": "community/vendouple/deepseek-v4-pro",
-          "name": "community/vendouple/deepseek-v4-pro",
-          "context": 1000000,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
           "id": "community/MarcosFRG/gemini-3.1-flash-lite",
           "name": "community/MarcosFRG/gemini-3.1-flash-lite",
           "context": 1048576,
@@ -1393,11 +1358,46 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
         }
       ],
       "error": null
