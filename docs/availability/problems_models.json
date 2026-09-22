@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17T03:23:57.872601+00:00",
+  "updated": "2026-09-22T16:06:16.497336+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -10,6 +10,12 @@
           "name": "inclusionAI: Ling 3.0 Flash VL (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "vision",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -17,6 +23,13 @@
           "name": "Nex AGI: Nex-N2.5-Mini (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -24,6 +37,13 @@
           "name": "Nex AGI: Nex-N2.5-Pro (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -31,6 +51,11 @@
           "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -38,6 +63,11 @@
           "name": "inclusionAI: Ling 3.0 Flash Fin (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -45,6 +75,13 @@
           "name": "Dots Studio: Dots3-Note Preview (free)",
           "context": 512000,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -52,6 +89,12 @@
           "name": "LiquidAI: LFM2.5-2.6B (free)",
           "context": 65536,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
           "params_b": 2.6
         },
         {
@@ -95,6 +138,11 @@
           "name": "Cohere: North Mini Code (free)",
           "context": 256000,
           "limits": "20 req/min · 50 req/day",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -103,9 +151,6 @@
           "context": 32768,
           "limits": "20 req/min · 50 req/day",
           "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
             "reasoning"
           ],
           "params_b": null
@@ -204,31 +249,10 @@
       ],
       "error": null
     },
-    "groq": {
-      "name": "Groq",
-      "url": "https://console.groq.com",
-      "models": [
-        {
-          "id": "groq/compound",
-          "name": "groq/compound",
-          "context": 131072,
-          "limits": "varies per model",
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
     "nvidia": {
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
-        {
-          "id": "deepseek-ai/deepseek-v4-flash-0731",
-          "name": "deepseek-ai/deepseek-v4-flash-0731",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
-        },
         {
           "id": "google/diffusiongemma-26b-a4b-it",
           "name": "google/diffusiongemma-26b-a4b-it",
@@ -242,13 +266,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 31.0
-        },
-        {
-          "id": "meta/llama-3.2-11b-vision-instruct",
-          "name": "meta/llama-3.2-11b-vision-instruct",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 11.0
         },
         {
           "id": "meta/muse-glimmer-30b",
@@ -265,13 +282,6 @@
           "params_b": null
         },
         {
-          "id": "moonshotai/kimi-k3",
-          "name": "moonshotai/kimi-k3",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
-        },
-        {
           "id": "nvidia/ising-calibration-1.5-31b",
           "name": "nvidia/ising-calibration-1.5-31b",
           "context": null,
@@ -281,6 +291,13 @@
         {
           "id": "nvidia/llama-3.1-nemoguard-8b-content-safety",
           "name": "nvidia/llama-3.1-nemoguard-8b-content-safety",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 8.0
+        },
+        {
+          "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+          "name": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
           "context": null,
           "limits": "40 req/min",
           "params_b": 8.0
@@ -328,6 +345,13 @@
           "params_b": null
         },
         {
+          "id": "z-ai/glm-5.3",
+          "name": "z-ai/glm-5.3",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
           "id": "z-ai/glm-5.3-flash",
           "name": "z-ai/glm-5.3-flash",
           "context": null,
@@ -342,57 +366,11 @@
       "url": "https://developers.cloudflare.com/workers-ai/",
       "models": [
         {
-          "id": "@cf/meta/llama-guard-3-8b",
-          "name": "@cf/meta/llama-guard-3-8b",
-          "context": 131072,
-          "limits": "10k neurons/day",
-          "params_b": 8.0
-        },
-        {
-          "id": "@cf/google/gemma-4-26b-a4b-it",
-          "name": "@cf/google/gemma-4-26b-a4b-it",
-          "context": 256000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": 26.0
-        },
-        {
           "id": "@cf/qwen/qwen3.8-27b",
           "name": "@cf/qwen/qwen3.8-27b",
           "context": null,
           "limits": "10k neurons/day",
           "params_b": 27.0
-        }
-      ],
-      "error": null
-    },
-    "pollinations": {
-      "name": "Pollinations",
-      "url": "https://pollinations.ai",
-      "models": [
-        {
-          "id": "community/vendouple/glm-5.3",
-          "name": "community/vendouple/glm-5.3",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "community/sharktide/inferenceport-ai-lightning-text-v2-expanded-knowledge",
-          "name": "community/sharktide/inferenceport-ai-lightning-text-v2-expanded-knowledge",
-          "context": null,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
-        },
-        {
-          "id": "community/vendouple/gpt-6-astra",
-          "name": "community/vendouple/gpt-6-astra",
-          "context": 1000000,
-          "limits": "free tier — token from enter.pollinations.ai",
-          "params_b": null
         }
       ],
       "error": null
@@ -465,6 +443,13 @@
           "params_b": 550.0
         },
         {
+          "id": "dots-studio/dots-3-note-preview:free",
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "context": 512000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "nex-agi/nex-n2.5-pro:free",
           "name": "Nex AGI: Nex-N2.5-Pro (free)",
           "context": 262144,
@@ -484,6 +469,27 @@
           "context": 262144,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "inclusionai/ling-3.0-flash-sante:free",
+          "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "inclusionai/ling-3.0-flash-fin:free",
+          "name": "inclusionAI: Ling 3.0 Flash Fin (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "liquid/lfm-2.5-2.6b:free",
+          "name": "LiquidAI: LFM2.5-2.6B (free)",
+          "context": 65536,
+          "limits": "free tier",
+          "params_b": 2.6
         },
         {
           "id": "nvidia/nemotron-3.5-lightning:free",
@@ -507,6 +513,20 @@
           "params_b": null
         },
         {
+          "id": "cohere/north-mini-code:free",
+          "name": "Cohere: North Mini Code (free)",
+          "context": 256000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3.5-content-safety:free",
+          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+          "context": 128000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
           "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
           "context": 256000,
@@ -519,6 +539,20 @@
           "context": 262144,
           "limits": "free tier",
           "params_b": 120.0
+        },
+        {
+          "id": "openrouter/free",
+          "name": "OpenRouter Free Models Router",
+          "context": 200000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "stepfun/step-3.7-flash:free",
+          "name": "StepFun: Step 3.7 Flash (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
@@ -528,6 +562,13 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
@@ -535,18 +576,11 @@
           "params_b": 30.0
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
+          "params_b": null
         },
         {
           "id": "gemma4:31b",
@@ -556,53 +590,11 @@
           "params_b": 31.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
-    "orca": {
-      "name": "Orca Router",
-      "url": "https://orcarouter.ai",
-      "models": [
-        {
-          "id": "orcarouter/free",
-          "name": "orcarouter/free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "deepseek/deepseek-v4-flash-free",
-          "name": "DeepSeek: DeepSeek V4 Flash (Free)",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "tencent/hy3-free",
-          "name": "Tencent: Hy3 (Free)",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "z-ai/glm-5.3-flash-free",
-          "name": "Z.ai: GLM 5.3 Flash (Free)",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
+          "params_b": 20.0
         }
       ],
       "error": null
