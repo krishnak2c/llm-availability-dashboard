@@ -9,7 +9,22 @@
     "mistral-voxtralsmall",
     "mistral-voxtralsmall",
     "mistral-ministral",
-    "mistral-ministral"
+    "mistral-ministral",
+    "mistral-ministral",
+    "mistral-ministral",
+    "mistral-ministral",
+    "mistral-ministral",
+    "kilo-inclusionailing30flashfin",
+    "openrouter-inclusionailing30flashfin",
+    "kilo-inclusionailing30flashsante",
+    "openrouter-inclusionailing30flashsante",
+    "ollama-nemotron3nano30b",
+    "kilo-openrouterfree",
+    "openrouter-openrouterfree",
+    "kilo-dots3notepreview",
+    "openrouter-dots3notepreview",
+    "ollama-nemotron3super",
+    "kilo-northminicode"
   ],
   "chain": [
     {
@@ -71,25 +86,126 @@
       "baseUrl": "https://api.mistral.ai/v1",
       "model": "ministral-3b-latest",
       "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "mistral-ministral",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "ministral-14b-2512",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "mistral-ministral",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "ministral-14b-latest",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "mistral-ministral",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "ministral-8b-2512",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "mistral-ministral",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "ministral-8b-latest",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "kilo-inclusionailing30flashfin",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "inclusionai/ling-3.0-flash-fin:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-inclusionailing30flashfin",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "inclusionai/ling-3.0-flash-fin:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-inclusionailing30flashsante",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "inclusionai/ling-3.0-flash-sante:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-inclusionailing30flashsante",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "inclusionai/ling-3.0-flash-sante:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "ollama-nemotron3nano30b",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "nemotron-3-nano:30b",
+      "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
+      "id": "kilo-openrouterfree",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "openrouter/free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-openrouterfree",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "openrouter/free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-dots3notepreview",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "dots-studio/dots-3-note-preview:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-dots3notepreview",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "dots-studio/dots-3-note-preview:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "ollama-nemotron3super",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "nemotron-3-super",
+      "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
+      "id": "kilo-northminicode",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "cohere/north-mini-code:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
     "codestral-2508",
     "codestral-latest",
+    "cohere/north-mini-code:free",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
+    "dots-studio/dots-3-note-preview:free",
     "hy3",
     "hy3-free",
+    "inclusionai/ling-3.0-flash-fin:free",
+    "inclusionai/ling-3.0-flash-sante:free",
     "laguna-s-2.1-free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
+    "ministral-14b-2512",
+    "ministral-14b-latest",
     "ministral-3b-2512",
     "ministral-3b-latest",
+    "ministral-8b-2512",
+    "ministral-8b-latest",
     "mistral-code-fim-latest",
     "mistral-code-latest",
+    "nemotron-3-nano:30b",
+    "nemotron-3-super",
     "nemotron-3-ultra-free",
     "nvidia/nemotron-parse-2.0",
+    "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",
     "thinkingmachines/inkling",
