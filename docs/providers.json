@@ -1,13 +1,9 @@
 {
   "order": [
-    "nvidia-nemotronparse20",
     "mistral-codestral",
     "mistral-codestral",
     "llm7-codestral",
     "mistral-mistralcode",
-    "mistral-mistralcodefim",
-    "mistral-voxtralsmall",
-    "mistral-voxtralsmall",
     "mistral-ministral",
     "mistral-ministral",
     "mistral-ministral",
@@ -24,15 +20,13 @@
     "kilo-dots3notepreview",
     "openrouter-dots3notepreview",
     "ollama-nemotron3super",
-    "kilo-northminicode"
+    "kilo-northminicode",
+    "openrouter-northminicode",
+    "kilo-step37flash",
+    "kilo-nexaginexn25mini",
+    "openrouter-nexaginexn25mini"
   ],
   "chain": [
-    {
-      "id": "nvidia-nemotronparse20",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/nemotron-parse-2.0",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
     {
       "id": "mistral-codestral",
       "baseUrl": "https://api.mistral.ai/v1",
@@ -55,24 +49,6 @@
       "id": "mistral-mistralcode",
       "baseUrl": "https://api.mistral.ai/v1",
       "model": "mistral-code-latest",
-      "apiKeyEnv": "MISTRAL_API_KEY"
-    },
-    {
-      "id": "mistral-mistralcodefim",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "mistral-code-fim-latest",
-      "apiKeyEnv": "MISTRAL_API_KEY"
-    },
-    {
-      "id": "mistral-voxtralsmall",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "voxtral-small-2507",
-      "apiKeyEnv": "MISTRAL_API_KEY"
-    },
-    {
-      "id": "mistral-voxtralsmall",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "voxtral-small-latest",
       "apiKeyEnv": "MISTRAL_API_KEY"
     },
     {
@@ -176,6 +152,30 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "cohere/north-mini-code:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-northminicode",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "cohere/north-mini-code:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-step37flash",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "stepfun/step-3.7-flash:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "kilo-nexaginexn25mini",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "nex-agi/nex-n2.5-mini:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-nexaginexn25mini",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "nex-agi/nex-n2.5-mini:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -199,18 +199,16 @@
     "ministral-3b-latest",
     "ministral-8b-2512",
     "ministral-8b-latest",
-    "mistral-code-fim-latest",
     "mistral-code-latest",
     "nemotron-3-nano:30b",
     "nemotron-3-super",
     "nemotron-3-ultra-free",
-    "nvidia/nemotron-parse-2.0",
+    "nex-agi/nex-n2.5-mini:free",
     "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",
+    "stepfun/step-3.7-flash:free",
     "thinkingmachines/inkling",
-    "voxtral-small-2507",
-    "voxtral-small-latest",
     "z-ai/glm-5.2"
   ]
 }
