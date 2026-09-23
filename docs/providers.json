@@ -1,53 +1,17 @@
 {
   "order": [
-    "pollinations-communitynamansoni78gpt6astrapro",
-    "pollinations-gpt6astra",
-    "pollinations-kimik3",
-    "pollinations-communityvendoupleqwen38max",
-    "pollinations-qwen3824ta95b",
-    "pollinations-communityvendouplegemini38flash",
     "groq-qwen38",
-    "pollinations-communitymarcosfrgqwen38",
-    "pollinations-communitysharktideinferenceportaiqwen38",
-    "pollinations-communitymarcosfrgdeepseekv4pro"
+    "groq-allam2",
+    "nvidia-nemotronparse20",
+    "mistral-codestral",
+    "mistral-codestral",
+    "llm7-codestral",
+    "mistral-mistralcode",
+    "mistral-mistralcodefim",
+    "mistral-voxtralsmall",
+    "mistral-voxtralsmall"
   ],
   "chain": [
-    {
-      "id": "pollinations-communitynamansoni78gpt6astrapro",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "community/NamanSoni78/gpt-6-astra-pro",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
-    },
-    {
-      "id": "pollinations-gpt6astra",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "openai/gpt-6-astra",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
-    },
-    {
-      "id": "pollinations-kimik3",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "moonshotai/kimi-k3",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
-    },
-    {
-      "id": "pollinations-communityvendoupleqwen38max",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "community/vendouple/qwen-3.8-max",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
-    },
-    {
-      "id": "pollinations-qwen3824ta95b",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "qwen/qwen3.8-2.4t-a95b",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
-    },
-    {
-      "id": "pollinations-communityvendouplegemini38flash",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "community/vendouple/gemini-3.8-flash",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
-    },
     {
       "id": "groq-qwen38",
       "baseUrl": "https://api.groq.com/openai/v1",
@@ -55,31 +19,64 @@
       "apiKeyEnv": "GROQ_API_KEY"
     },
     {
-      "id": "pollinations-communitymarcosfrgqwen38",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "community/MarcosFRG/qwen3.8-27b",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
+      "id": "groq-allam2",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "model": "allam-2-7b",
+      "apiKeyEnv": "GROQ_API_KEY"
     },
     {
-      "id": "pollinations-communitysharktideinferenceportaiqwen38",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "community/sharktide/inferenceport-ai-qwen-3.8-27b",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
+      "id": "nvidia-nemotronparse20",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "nvidia/nemotron-parse-2.0",
+      "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "pollinations-communitymarcosfrgdeepseekv4pro",
-      "baseUrl": "https://gen.pollinations.ai/v1",
-      "model": "community/MarcosFRG/deepseek-v4-pro-0813",
-      "apiKeyEnv": "POLLINATIONS_API_KEY"
+      "id": "mistral-codestral",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "codestral-2508",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "mistral-codestral",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "codestral-latest",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "llm7-codestral",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "codestral-latest",
+      "apiKeyEnv": "LLM7_API_KEY"
+    },
+    {
+      "id": "mistral-mistralcode",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "mistral-code-latest",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "mistral-mistralcodefim",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "mistral-code-fim-latest",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "mistral-voxtralsmall",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "voxtral-small-2507",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "mistral-voxtralsmall",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "voxtral-small-latest",
+      "apiKeyEnv": "MISTRAL_API_KEY"
     }
   ],
   "modelAllowlist": [
-    "community/MarcosFRG/deepseek-v4-pro-0813",
-    "community/MarcosFRG/qwen3.8-27b",
-    "community/NamanSoni78/gpt-6-astra-pro",
-    "community/sharktide/inferenceport-ai-qwen-3.8-27b",
-    "community/vendouple/gemini-3.8-flash",
-    "community/vendouple/qwen-3.8-max",
+    "allam-2-7b",
+    "codestral-2508",
+    "codestral-latest",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
@@ -88,15 +85,17 @@
     "laguna-s-2.1-free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
-    "moonshotai/kimi-k3",
+    "mistral-code-fim-latest",
+    "mistral-code-latest",
     "nemotron-3-ultra-free",
-    "openai/gpt-6-astra",
+    "nvidia/nemotron-parse-2.0",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.6-27b",
-    "qwen/qwen3.8-2.4t-a95b",
     "qwen/qwen3.8-27b",
     "qwen/qwen3.8-27b-free",
     "thinkingmachines/inkling",
+    "voxtral-small-2507",
+    "voxtral-small-latest",
     "z-ai/glm-5.2"
   ]
 }
