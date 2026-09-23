@@ -2014,6 +2014,11 @@ RELAY_CHAIN = [
 
 RELAY_TOP_N = 10  # dynamic chain length (fallback chain also has 10 entries)
 
+# Dashboard provider keys excluded from the relay chain (providers.json).
+# Excluded providers are still probed and shown on the dashboard — they just
+# never appear in the relay order/chain/allowlist. Remove the key to restore.
+RELAY_EXCLUDED_PROVIDERS = {"groq"}
+
 # Dashboard PROVIDERS env name → relay Vercel env name when they differ.
 # The relay's Vercel project uses NIM_API_KEY; the dashboard provider entry
 # is named NVIDIA_NIM_API_KEY. All other env names match on both sides.
@@ -2081,6 +2086,25 @@ RELAY_AVAIL_MAP = {
 }
 
 
+def _relay_entry_provider_key(entry):
+    """Dashboard provider key serving a static RELAY_CHAIN entry (via RELAY_AVAIL_MAP).
+
+    Returns None when the entry's model is unmapped — callers treat that as
+    \"keep\" (fail open for unknown entries).
+    """
+    avail_key = RELAY_AVAIL_MAP.get(entry.get("model", ""))
+    return avail_key[0] if avail_key else None
+
+
+def _relay_excluded_provider_models():
+    """Relay model strings mapped to excluded providers (via RELAY_AVAIL_MAP)."""
+    return {
+        model
+        for model, (prov_key, _model_key) in RELAY_AVAIL_MAP.items()
+        if prov_key in RELAY_EXCLUDED_PROVIDERS
+    }
+
+
 def build_relay_providers_json(avail):
     """Build the providers.json payload for the Vercel relay.
 
@@ -2096,7 +2120,13 @@ def build_relay_providers_json(avail):
     (stable sort).
     """
     scored = []
-    for entry in RELAY_CHAIN:
+    excluded_models = _relay_excluded_provider_models()
+    live_chain = [
+        e
+        for e in RELAY_CHAIN
+        if _relay_entry_provider_key(e) not in RELAY_EXCLUDED_PROVIDERS
+    ]
+    for entry in live_chain:
         stats = {}
         avail_key = RELAY_AVAIL_MAP.get(entry["model"])
         if avail_key:
@@ -2119,8 +2149,10 @@ def build_relay_providers_json(avail):
     scored.sort(key=lambda t: t[1], reverse=True)
     return {
         "order": [item[0] for item in scored],
-        "chain": [dict(e) for e in RELAY_CHAIN],
-        "modelAllowlist": list(RELAY_ALLOWLIST),
+        "chain": [dict(e) for e in live_chain],
+        "modelAllowlist": [
+            m for m in RELAY_ALLOWLIST if m not in excluded_models
+        ],
     }
 
 
@@ -2295,6 +2327,8 @@ def select_dynamic_chain(benchmarks, avail_data, stable_data, top_n=10):
         probe_cfg = PROVIDER_PROBES.get(prov_key)
         if not probe_cfg or probe_cfg.get("style") != "openai":
             continue  # not OpenAI-compatible (/v1/chat/completions)
+        if prov_key in RELAY_EXCLUDED_PROVIDERS:
+            continue  # dashboard-only: never selected into the relay chain
         prov_entry = providers_by_key.get(prov_key)
         if not prov_entry:
             continue
@@ -2403,7 +2437,10 @@ def main():
         else None
     )
     if chain is not None and len(chain) >= 4:
-        allowlist = sorted(set(e["model"] for e in chain) | set(RELAY_ALLOWLIST))
+        allowlist = sorted(
+            set(e["model"] for e in chain)
+            | (set(RELAY_ALLOWLIST) - _relay_excluded_provider_models())
+        )
         relay_payload = {
             "order": [e["id"] for e in chain],
             "chain": chain,

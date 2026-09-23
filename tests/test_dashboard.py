@@ -353,19 +353,21 @@ class TestSelectDynamicChain:
         assert {e["model"] for e in chain} == {"hy3"}
         assert {e["apiKeyEnv"] for e in chain} == {"KILOCODE_API_KEY", "OPENCODE_ZEN_API_KEY"}
 
-    def test_groups_ranked_by_best_score_desc(self, generate_site):
+    def test_groups_ranked_by_best_score_desc(self, generate_site, monkeypatch):
         """Distinct models: the higher-total model's group appears first."""
         gs = generate_site
+        monkeypatch.setattr(gs, "RELAY_EXCLUDED_PROVIDERS", set())
         stable = _stable({"kilo": ["hy3"], "groq": ["qwen3"]})
         avail = _avail({"kilo": {"hy3": self.HEALTHY}, "groq": {"qwen3": self.WEAK}})
         chain = gs.select_dynamic_chain({"hy3": 100, "qwen3": 100}, avail, stable)
         ids = [e["id"] for e in chain]
         assert ids == ["kilo-hy3", "groq-qwen3"]  # 90 > 50
 
-    def test_straggler_duplicate_dropped(self, generate_site):
+    def test_straggler_duplicate_dropped(self, generate_site, monkeypatch):
         """A weak duplicate (< half the group's best score) is dropped and
         does not displace a healthy distinct model from another group."""
         gs = generate_site
+        monkeypatch.setattr(gs, "RELAY_EXCLUDED_PROVIDERS", set())
         stable = _stable({"kilo": ["hy3"], "zen": ["hy3"], "groq": ["qwen3"]})
         avail = _avail(
             {
@@ -378,6 +380,27 @@ class TestSelectDynamicChain:
         ids = [e["id"] for e in chain]
         assert "zen-hy3" not in ids  # 5 < 0.5 * 90 → dropped
         assert ids == ["kilo-hy3", "groq-qwen3"]  # healthy distinct model not displaced
+
+    def test_excluded_providers_skipped_in_dynamic_chain(self, generate_site):
+        """Providers in RELAY_EXCLUDED_PROVIDERS stay on the dashboard but
+        are never selected into the relay chain."""
+        gs = generate_site
+        assert gs.RELAY_EXCLUDED_PROVIDERS  # the knob under test is non-empty
+        stable = _stable({"groq": ["qwen3"], "kilo": ["hy3"]})
+        avail = _avail({"groq": {"qwen3": self.HEALTHY}, "kilo": {"hy3": self.HEALTHY}})
+        chain = gs.select_dynamic_chain({"qwen3": 100, "hy3": 100}, avail, stable)
+        ids = [e["id"] for e in chain]
+        assert "groq-qwen3" not in ids
+        assert ids == ["kilo-hy3"]
+
+    def test_static_fallback_excludes_providers(self, generate_site):
+        """build_relay_providers_json drops excluded providers from order,
+        chain, and allowlist."""
+        gs = generate_site
+        payload = gs.build_relay_providers_json({})
+        ids = payload["order"] + [e["id"] for e in payload["chain"]]
+        assert not any("groq" in i for i in ids)
+        assert "qwen/qwen3.6-27b" not in payload["modelAllowlist"]
 
     def test_top_n_truncates_mid_group(self, generate_site):
         """top_n cut lands mid-group: exactly top_n entries, earlier groups
