@@ -2012,7 +2012,7 @@ RELAY_CHAIN = [
     {"id": "groq-qwen36", "baseUrl": "https://api.groq.com/openai/v1", "model": "qwen/qwen3.6-27b", "apiKeyEnv": "GROQ_API_KEY"},
 ]
 
-RELAY_TOP_N = 10  # dynamic chain length (fallback chain also has 10 entries)
+RELAY_TOP_N = 25  # dynamic chain length (fallback chain entries)
 
 # Dashboard provider keys excluded from the relay chain (providers.json).
 # Excluded providers are still probed and shown on the dashboard — they just
