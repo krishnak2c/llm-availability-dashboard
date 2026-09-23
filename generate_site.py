@@ -843,15 +843,6 @@ PROVIDERS = [
         "key_url": "https://dash.cloudflare.com/profile/api-tokens",
     },
     {
-        "key": "pollinations",
-        "label": "Pollinations",
-        "env": "POLLINATIONS_API_KEY",
-        "fetch": fetch_pollinations,
-        "color": "#ec4899",
-        "url": "https://pollinations.ai",
-        "key_url": "https://enter.pollinations.ai",
-    },
-    {
         "key": "kluster",
         "label": "Kluster AI",
         "env": "KLUSTER_API_KEY",

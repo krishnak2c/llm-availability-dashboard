@@ -116,12 +116,6 @@ PROVIDER_PROBES = {
         "auth": "bearer",
         "style": "cloudflare",
     },
-    "pollinations": {
-        "env": "POLLINATIONS_API_KEY",
-        "url": "https://gen.pollinations.ai/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
     "kluster": {
         "env": "KLUSTER_API_KEY",
         "url": "https://api.kluster.ai/v1/chat/completions",
