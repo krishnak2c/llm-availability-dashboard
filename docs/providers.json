@@ -1,7 +1,5 @@
 {
   "order": [
-    "groq-qwen38",
-    "groq-allam2",
     "nvidia-nemotronparse20",
     "mistral-codestral",
     "mistral-codestral",
@@ -9,21 +7,11 @@
     "mistral-mistralcode",
     "mistral-mistralcodefim",
     "mistral-voxtralsmall",
-    "mistral-voxtralsmall"
+    "mistral-voxtralsmall",
+    "mistral-ministral",
+    "mistral-ministral"
   ],
   "chain": [
-    {
-      "id": "groq-qwen38",
-      "baseUrl": "https://api.groq.com/openai/v1",
-      "model": "qwen/qwen3.8-27b",
-      "apiKeyEnv": "GROQ_API_KEY"
-    },
-    {
-      "id": "groq-allam2",
-      "baseUrl": "https://api.groq.com/openai/v1",
-      "model": "allam-2-7b",
-      "apiKeyEnv": "GROQ_API_KEY"
-    },
     {
       "id": "nvidia-nemotronparse20",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
@@ -71,10 +59,21 @@
       "baseUrl": "https://api.mistral.ai/v1",
       "model": "voxtral-small-latest",
       "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "mistral-ministral",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "ministral-3b-2512",
+      "apiKeyEnv": "MISTRAL_API_KEY"
+    },
+    {
+      "id": "mistral-ministral",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "model": "ministral-3b-latest",
+      "apiKeyEnv": "MISTRAL_API_KEY"
     }
   ],
   "modelAllowlist": [
-    "allam-2-7b",
     "codestral-2508",
     "codestral-latest",
     "deepseek-ai/deepseek-v4-flash-0731",
@@ -85,13 +84,13 @@
     "laguna-s-2.1-free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
+    "ministral-3b-2512",
+    "ministral-3b-latest",
     "mistral-code-fim-latest",
     "mistral-code-latest",
     "nemotron-3-ultra-free",
     "nvidia/nemotron-parse-2.0",
     "poolside/laguna-xs-2.1",
-    "qwen/qwen3.6-27b",
-    "qwen/qwen3.8-27b",
     "qwen/qwen3.8-27b-free",
     "thinkingmachines/inkling",
     "voxtral-small-2507",
