@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T13:27:14.218189+00:00",
+  "updated": "2026-09-23T16:05:25.667851+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -302,6 +302,14 @@
           "params_b": 7.0
         },
         {
+          "id": "canopylabs/orpheus-v1-english",
+          "name": "canopylabs/orpheus-v1-english",
+          "context": 4000,
+          "limits": "varies per model",
+          "mode": "audio_speech",
+          "params_b": null
+        },
+        {
           "id": "canopylabs/orpheus-arabic-saudi",
           "name": "canopylabs/orpheus-arabic-saudi",
           "context": 4000,
@@ -321,14 +329,6 @@
             "reasoning"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "canopylabs/orpheus-v1-english",
-          "name": "canopylabs/orpheus-v1-english",
-          "context": 4000,
-          "limits": "varies per model",
-          "mode": "audio_speech",
-          "params_b": null
         },
         {
           "id": "qwen/qwen3.8-27b",
@@ -1827,6 +1827,13 @@
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "space-bunny-free",
+          "name": "space-bunny-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
@@ -1836,11 +1843,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
+          "params_b": 31.0
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -1850,18 +1857,11 @@
           "params_b": 30.0
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
+          "params_b": 20.0
         },
         {
           "id": "gpt-oss:120b",
@@ -1869,6 +1869,13 @@
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         },
         {
           "id": "nemotron-3-ultra",
