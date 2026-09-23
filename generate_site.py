@@ -2035,7 +2035,7 @@ RELAY_PROVIDER_PREFERENCE = {"zen": 0, "nvidia": 1}
 NON_CHAT_KEYWORDS = (
     "nemoguard", "safety", "guard", "topic-control", "nano-vl", "vision",
     "calibration", "ising", "glimmer", "embed", "riva", "moderation",
-    "classifier",
+    "classifier", "parse", "voxtral", "fim",
 )
 
 RELAY_ALLOWLIST = [

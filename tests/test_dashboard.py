@@ -402,6 +402,26 @@ class TestSelectDynamicChain:
         assert not any("groq" in i for i in ids)
         assert "qwen/qwen3.6-27b" not in payload["modelAllowlist"]
 
+    def test_non_chat_models_skipped_in_dynamic_chain(self, generate_site):
+        """Models matching NON_CHAT_KEYWORDS (parse/voxtral/fim/...) are never
+        selected into the relay chain, even when healthy."""
+        gs = generate_site
+        assert {"parse", "voxtral", "fim"} <= set(gs.NON_CHAT_KEYWORDS)
+        stable = _stable({"nvidia": ["nemotron-parse", "chatmodel"]})
+        avail = _avail(
+            {
+                "nvidia": {
+                    "nemotron-parse": self.HEALTHY,
+                    "chatmodel": self.HEALTHY,
+                }
+            }
+        )
+        chain = gs.select_dynamic_chain(
+            {"nemotron-parse": 100, "chatmodel": 100}, avail, stable
+        )
+        ids = [e["id"] for e in chain]
+        assert ids == ["nvidia-chatmodel"]
+
     def test_top_n_truncates_mid_group(self, generate_site):
         """top_n cut lands mid-group: exactly top_n entries, earlier groups
         fully emitted."""
