@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T11:06:07.767458+00:00",
+  "updated": "2026-09-24T14:18:16.546054+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -283,13 +283,6 @@
           "params_b": 8.0
         },
         {
-          "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
-          "name": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 8.0
-        },
-        {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
           "name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
           "context": null,
@@ -352,6 +345,27 @@
       "name": "Cloudflare AI",
       "url": "https://developers.cloudflare.com/workers-ai/",
       "models": [
+        {
+          "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+          "name": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+          "context": 80000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "reasoning"
+          ],
+          "params_b": 32.0
+        },
+        {
+          "id": "@cf/zai-org/glm-4.7-flash",
+          "name": "@cf/zai-org/glm-4.7-flash",
+          "context": 131072,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": null
+        },
         {
           "id": "@cf/qwen/qwen3.8-27b",
           "name": "@cf/qwen/qwen3.8-27b",

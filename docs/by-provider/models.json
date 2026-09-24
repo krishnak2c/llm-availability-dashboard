@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T11:06:07.767458+00:00",
+  "updated": "2026-09-24T14:18:16.546054+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -268,17 +268,11 @@
           "params_b": 27.0
         },
         {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 20.0
+          "params_b": 7.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -294,11 +288,17 @@
           "params_b": 120.0
         },
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
           "limits": "varies per model",
-          "params_b": 7.0
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 20.0
         }
       ],
       "error": null
@@ -890,9 +890,23 @@
           "params_b": null
         },
         {
-          "id": "claude-haiku-4-5",
-          "name": "claude-haiku-4-5",
-          "context": 200000,
+          "id": "anthropic/claude-sonnet-4-5",
+          "name": "anthropic/claude-sonnet-4-5",
+          "context": null,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "anthropic/claude-sonnet-4-6",
+          "name": "anthropic/claude-sonnet-4-6",
+          "context": null,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "anthropic/claude-sonnet-5",
+          "name": "anthropic/claude-sonnet-5",
+          "context": null,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -1107,18 +1121,11 @@
           "params_b": null
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
+          "params_b": 120.0
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -1128,11 +1135,18 @@
           "params_b": 30.0
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": 120.0
+          "params_b": 20.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
         },
         {
           "id": "nemotron-3-super",
@@ -1148,790 +1162,6 @@
       "name": "Orca Router",
       "url": "https://orcarouter.ai",
       "models": [],
-      "error": null
-    },
-    "unorouter": {
-      "name": "UnoRouter",
-      "url": "https://unorouter.com",
-      "models": [
-        {
-          "id": "absolutereality:free",
-          "name": "absolutereality:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "agnes-2.0-flash:free",
-          "name": "agnes-2.0-flash:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "albedobase-xl-31:free",
-          "name": "albedobase-xl-31:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "albedobase-xl-sdxl:free",
-          "name": "albedobase-xl-sdxl:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "allam-2-7b:free",
-          "name": "allam-2-7b:free",
-          "context": 4096,
-          "limits": "free tier",
-          "params_b": 7.0
-        },
-        {
-          "id": "amponyxl:free",
-          "name": "amponyxl:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "anything-v5:free",
-          "name": "anything-v5:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "aura-1:free",
-          "name": "aura-1:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "bge-multilingual-gemma2:free",
-          "name": "bge-multilingual-gemma2:free",
-          "context": 8192,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "codestral-latest:free",
-          "name": "codestral-latest:free",
-          "context": 256000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "cyberrealistic-pony:free",
-          "name": "cyberrealistic-pony:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "deepseek-r1-distill-qwen-32b:free",
-          "name": "deepseek-r1-distill-qwen-32b:free",
-          "context": 80000,
-          "limits": "free tier",
-          "params_b": 32.0
-        },
-        {
-          "id": "deliberate:free",
-          "name": "deliberate:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "diffusiongemma-26b-a4b-it:free",
-          "name": "diffusiongemma-26b-a4b-it:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": 26.0
-        },
-        {
-          "id": "dots-3-note-preview:free",
-          "name": "dots-3-note-preview:free",
-          "context": 512000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "dreamshaper:free",
-          "name": "dreamshaper:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "flat-2d-animerge:free",
-          "name": "flat-2d-animerge:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "flux.1-schnell:free",
-          "name": "flux.1-schnell:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "fustercluck:free",
-          "name": "fustercluck:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gemini-1.5-flash:free",
-          "name": "gemini-1.5-flash:free",
-          "context": 24576,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gemini-3.1-flash-lite:free",
-          "name": "gemini-3.1-flash-lite:free",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gemini-3.5-flash-lite:free",
-          "name": "gemini-3.5-flash-lite:free",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gemini-3.6-flash:free",
-          "name": "gemini-3.6-flash:free",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gemini-embedding-001:free",
-          "name": "gemini-embedding-001:free",
-          "context": 2000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gemini-embedding-2:free",
-          "name": "gemini-embedding-2:free",
-          "context": 8200,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gemini-flash-lite-latest:free",
-          "name": "gemini-flash-lite-latest:free",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gemini-robotics-er-2-preview:free",
-          "name": "gemini-robotics-er-2-preview:free",
-          "context": 131072,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gemma-4-26b:free",
-          "name": "gemma-4-26b:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": 26.0
-        },
-        {
-          "id": "glm-4.5-flash:free",
-          "name": "glm-4.5-flash:free",
-          "context": 131100,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "glm-4.7-flash:free",
-          "name": "glm-4.7-flash:free",
-          "context": 128000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "glm-5.3-flash-search:free",
-          "name": "glm-5.3-flash-search:free",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gpt-4o:free",
-          "name": "gpt-4o:free",
-          "context": 128000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gpt-oss-20b:free",
-          "name": "gpt-oss-20b:free",
-          "context": 128000,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
-          "id": "gpt-oss-safeguard-20b:free",
-          "name": "gpt-oss-safeguard-20b:free",
-          "context": 131072,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
-          "id": "granite-4.0-micro:free",
-          "name": "granite-4.0-micro:free",
-          "context": 131000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "grok-beta:free",
-          "name": "grok-beta:free",
-          "context": 24576,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "icbinp-i-cant-believe-its-not-photography:free",
-          "name": "icbinp-i-cant-believe-its-not-photography:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "ising-calibration-1.5-31b:free",
-          "name": "ising-calibration-1.5-31b:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "jina-code-embeddings-0.5b:free",
-          "name": "jina-code-embeddings-0.5b:free",
-          "context": 32768,
-          "limits": "free tier",
-          "params_b": 0.5
-        },
-        {
-          "id": "jina-code-embeddings-1.5b:free",
-          "name": "jina-code-embeddings-1.5b:free",
-          "context": 32768,
-          "limits": "free tier",
-          "params_b": 1.5
-        },
-        {
-          "id": "jina-embeddings-v3:free",
-          "name": "jina-embeddings-v3:free",
-          "context": 8192,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "jina-embeddings-v4:free",
-          "name": "jina-embeddings-v4:free",
-          "context": 32768,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "jina-embeddings-v5-omni-nano:free",
-          "name": "jina-embeddings-v5-omni-nano:free",
-          "context": 8192,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "jina-embeddings-v5-omni-small:free",
-          "name": "jina-embeddings-v5-omni-small:free",
-          "context": 32768,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "jina-embeddings-v5-text-nano:free",
-          "name": "jina-embeddings-v5-text-nano:free",
-          "context": 8192,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "jina-embeddings-v5-text-small:free",
-          "name": "jina-embeddings-v5-text-small:free",
-          "context": 32768,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "juggernaut-xl:free",
-          "name": "juggernaut-xl:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "k2-horizon:free",
-          "name": "k2-horizon:free",
-          "context": 524288,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "kimi-k3:free",
-          "name": "kimi-k3:free",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "l3.3-ms-nevoria-70b:free",
-          "name": "l3.3-ms-nevoria-70b:free",
-          "context": 131072,
-          "limits": "free tier",
-          "params_b": 70.0
-        },
-        {
-          "id": "laguna-s-2.1:free",
-          "name": "laguna-s-2.1:free",
-          "context": 1048576,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "laguna-xs-2.1:free",
-          "name": "laguna-xs-2.1:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "leanstral-1-5:free",
-          "name": "leanstral-1-5:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "lfm-2.5-2.6b:free",
-          "name": "lfm-2.5-2.6b:free",
-          "context": 128000,
-          "limits": "free tier",
-          "params_b": 2.6
-        },
-        {
-          "id": "ling-3.0-flash-fin:free",
-          "name": "ling-3.0-flash-fin:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "ling-3.0-flash-sante:free",
-          "name": "ling-3.0-flash-sante:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "llama-3.2-11b-vision:free",
-          "name": "llama-3.2-11b-vision:free",
-          "context": 128000,
-          "limits": "free tier",
-          "params_b": 11.0
-        },
-        {
-          "id": "llama-4-maverick-17b-128e-instruct:free",
-          "name": "llama-4-maverick-17b-128e-instruct:free",
-          "context": 128000,
-          "limits": "free tier",
-          "params_b": 17.0
-        },
-        {
-          "id": "manta-flash-1.0:free",
-          "name": "manta-flash-1.0:free",
-          "context": 16384,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "manta-mini-1.0:free",
-          "name": "manta-mini-1.0:free",
-          "context": 8192,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "mistral-7b-instruct:free",
-          "name": "mistral-7b-instruct:free",
-          "context": 24576,
-          "limits": "free tier",
-          "params_b": 7.0
-        },
-        {
-          "id": "mistral-nemotron:free",
-          "name": "mistral-nemotron:free",
-          "context": 128000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "mistral-small:free",
-          "name": "mistral-small:free",
-          "context": 128000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "muse-glimmer-30b:free",
-          "name": "muse-glimmer-30b:free",
-          "context": 131072,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "name": "nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-super-120b-a12b:free",
-          "name": "nemotron-3-super-120b-a12b:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
-          "id": "nemotron-3-ultra-550b-a55b:free",
-          "name": "nemotron-3-ultra-550b-a55b:free",
-          "context": 1048576,
-          "limits": "free tier",
-          "params_b": 550.0
-        },
-        {
-          "id": "nemotron-3.5-lightning-30b-a3b:free",
-          "name": "nemotron-3.5-lightning-30b-a3b:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3.5-lightning:free",
-          "name": "nemotron-3.5-lightning:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nemotron-nano-12b-v2-vl:free",
-          "name": "nemotron-nano-12b-v2-vl:free",
-          "context": 131072,
-          "limits": "free tier",
-          "params_b": 12.0
-        },
-        {
-          "id": "nemotron-nano-9b-v2:free",
-          "name": "nemotron-nano-9b-v2:free",
-          "context": 131072,
-          "limits": "free tier",
-          "params_b": 9.0
-        },
-        {
-          "id": "nex-n2.5-mini:free",
-          "name": "nex-n2.5-mini:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nex-n2.5-pro:free",
-          "name": "nex-n2.5-pro:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "north-mini-code:free",
-          "name": "north-mini-code:free",
-          "context": 256000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nova-3:free",
-          "name": "nova-3:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nova-anime-xl:free",
-          "name": "nova-anime-xl:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nova-furry-pony:free",
-          "name": "nova-furry-pony:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "ntr-mix-il-noob-xl:free",
-          "name": "ntr-mix-il-noob-xl:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "prefect-pony:free",
-          "name": "prefect-pony:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "quiet-goodnight-xl:free",
-          "name": "quiet-goodnight-xl:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "qwen-sea-lion-v4-32b-it:free",
-          "name": "qwen-sea-lion-v4-32b-it:free",
-          "context": 32768,
-          "limits": "free tier",
-          "params_b": 32.0
-        },
-        {
-          "id": "qwen-sea-lion-v4.5-27b-it:free",
-          "name": "qwen-sea-lion-v4.5-27b-it:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": 27.0
-        },
-        {
-          "id": "qwen2.5-coder-32b:free",
-          "name": "qwen2.5-coder-32b:free",
-          "context": 131100,
-          "limits": "free tier",
-          "params_b": 32.0
-        },
-        {
-          "id": "qwen2.5-vl-7b-instruct-awq:free",
-          "name": "qwen2.5-vl-7b-instruct-awq:free",
-          "context": 131100,
-          "limits": "free tier",
-          "params_b": 7.0
-        },
-        {
-          "id": "qwen3-next-80b-a3b-instruct:free",
-          "name": "qwen3-next-80b-a3b-instruct:free",
-          "context": 131100,
-          "limits": "free tier",
-          "params_b": 80.0
-        },
-        {
-          "id": "qwen3.5-122b-a10b:free",
-          "name": "qwen3.5-122b-a10b:free",
-          "context": 262100,
-          "limits": "free tier",
-          "params_b": 122.0
-        },
-        {
-          "id": "qwen3.5-4b:free",
-          "name": "qwen3.5-4b:free",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": 4.0
-        },
-        {
-          "id": "qwen3.6-35b-a3b:free",
-          "name": "qwen3.6-35b-a3b:free",
-          "context": 262100,
-          "limits": "free tier",
-          "params_b": 35.0
-        },
-        {
-          "id": "qwen3:free",
-          "name": "qwen3:free",
-          "context": 24576,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "qwq-32b:free",
-          "name": "qwq-32b:free",
-          "context": 131100,
-          "limits": "free tier",
-          "params_b": 32.0
-        },
-        {
-          "id": "rev-animated:free",
-          "name": "rev-animated:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "riva-translate-4b-instruct-v2:free",
-          "name": "riva-translate-4b-instruct-v2:free",
-          "context": 8192,
-          "limits": "free tier",
-          "params_b": 4.0
-        },
-        {
-          "id": "sea-lion-e5-embedding-600m:free",
-          "name": "sea-lion-e5-embedding-600m:free",
-          "context": 512,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "sea-lion-modernbert-embedding-300m:free",
-          "name": "sea-lion-modernbert-embedding-300m:free",
-          "context": 512,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "sea-lion-modernbert-embedding-600m:free",
-          "name": "sea-lion-modernbert-embedding-600m:free",
-          "context": 512,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "seed-oss-36b:free",
-          "name": "seed-oss-36b:free",
-          "context": 524288,
-          "limits": "free tier",
-          "params_b": 36.0
-        },
-        {
-          "id": "sensenova-6.8-flash-lite:free",
-          "name": "sensenova-6.8-flash-lite:free",
-          "context": 262100,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "sonar:free",
-          "name": "sonar:free",
-          "context": 128000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "space-bunny-alpha:free",
-          "name": "space-bunny-alpha:free",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "step-3.7-flash:free",
-          "name": "step-3.7-flash:free",
-          "context": 256000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "swamponyxl:free",
-          "name": "swamponyxl:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "swe-1-6-slow:free",
-          "name": "swe-1-6-slow:free",
-          "context": 6400,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "tunix-pony:free",
-          "name": "tunix-pony:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "typhoon-v2.5-30b-a3b-instruct:free",
-          "name": "typhoon-v2.5-30b-a3b-instruct:free",
-          "context": 131072,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "villanova-2b-2512-preview-apnea-ft:free",
-          "name": "villanova-2b-2512-preview-apnea-ft:free",
-          "context": 32768,
-          "limits": "free tier",
-          "params_b": 2.0
-        },
-        {
-          "id": "wai-cute-pony:free",
-          "name": "wai-cute-pony:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "wai-nsfw-illustrious-sdxl:free",
-          "name": "wai-nsfw-illustrious-sdxl:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "whisper-large-v3-turbo:free",
-          "name": "whisper-large-v3-turbo:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "whisper-large-v3:free",
-          "name": "whisper-large-v3:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "whisper-tiny-en:free",
-          "name": "whisper-tiny-en:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "whisper:free",
-          "name": "whisper:free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        }
-      ],
       "error": null
     }
   }
