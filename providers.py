@@ -342,22 +342,6 @@ PROVIDERS = [
         "key_url": "https://www.orcarouter.ai/console/billing",
         "fetch": "custom:fetch_orca",
     },
-    {
-        "key": "unorouter",
-        "label": "UnoRouter",
-        "env": "UNOROUTER_API_KEY",
-        "probe_url": "https://api.unorouter.com/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-        "anonymous_ok": False,
-        "models_url": "https://api.unorouter.com/v1/models",
-        "models_auth": "bearer",
-        "free_suffixes": (":free", "-free", "/free"),
-        "color": "#f472b6",
-        "url": "https://unorouter.com",
-        "key_url": "https://unorouter.com",
-        "fetch": "generic",
-    },
 ]
 
 

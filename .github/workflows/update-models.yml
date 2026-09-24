@@ -59,7 +59,6 @@ jobs:
           OPENCODE_ZEN_API_KEY: ${{ secrets.OPENCODE_ZEN_API_KEY }}
           OLLAMA_API_KEY:       ${{ secrets.OLLAMA_API_KEY }}
           ORCA_API_KEY:         ${{ secrets.ORCA_API_KEY }}
-          UNOROUTER_API_KEY:     ${{ secrets.UNOROUTER_API_KEY }}
         run: python generate_site.py
 
       - name: Publish providers.json to relay repo
