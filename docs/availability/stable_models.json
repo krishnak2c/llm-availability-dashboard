@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T21:04:25.630837+00:00",
+  "updated": "2026-09-24T03:07:33.903478+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
@@ -20,6 +20,19 @@
           "params_b": 27.0
         },
         {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
+        },
+        {
           "id": "allam-2-7b",
           "name": "allam-2-7b",
           "context": 4096,
@@ -38,19 +51,6 @@
             "reasoning"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
         }
       ],
       "error": null
@@ -291,16 +291,6 @@
           "params_b": 7.0
         },
         {
-          "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-          "name": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-          "context": 80000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "reasoning"
-          ],
-          "params_b": 32.0
-        },
-        {
           "id": "@cf/meta/llama-3.1-8b-instruct-fp8",
           "name": "@cf/meta/llama-3.1-8b-instruct-fp8",
           "context": 32000,
@@ -313,17 +303,6 @@
           "context": 60000,
           "limits": "10k neurons/day",
           "params_b": 1.0
-        },
-        {
-          "id": "@cf/zai-org/glm-4.7-flash",
-          "name": "@cf/zai-org/glm-4.7-flash",
-          "context": 131072,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": null
         },
         {
           "id": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
@@ -469,11 +448,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 30.0
         },
         {
           "id": "gemma4:31b",
@@ -483,18 +462,18 @@
           "params_b": 31.0
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null

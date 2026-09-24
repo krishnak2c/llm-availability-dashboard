@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T21:04:25.630837+00:00",
+  "updated": "2026-09-24T03:07:33.903478+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -359,6 +359,27 @@
       "name": "Cloudflare AI",
       "url": "https://developers.cloudflare.com/workers-ai/",
       "models": [
+        {
+          "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+          "name": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+          "context": 80000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "reasoning"
+          ],
+          "params_b": 32.0
+        },
+        {
+          "id": "@cf/zai-org/glm-4.7-flash",
+          "name": "@cf/zai-org/glm-4.7-flash",
+          "context": 131072,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": null
+        },
         {
           "id": "@cf/qwen/qwen3.8-27b",
           "name": "@cf/qwen/qwen3.8-27b",
