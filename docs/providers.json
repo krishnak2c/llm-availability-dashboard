@@ -1,15 +1,7 @@
 {
   "order": [
-    "mistral-codestral",
-    "mistral-codestral",
+    "openrouter-stealthspacebunnyalpha",
     "llm7-codestral",
-    "mistral-mistralcode",
-    "mistral-ministral",
-    "mistral-ministral",
-    "mistral-ministral",
-    "mistral-ministral",
-    "mistral-ministral",
-    "mistral-ministral",
     "kilo-inclusionailing30flashfin",
     "openrouter-inclusionailing30flashfin",
     "kilo-inclusionailing30flashsante",
@@ -24,68 +16,28 @@
     "openrouter-openrouterfree",
     "kilo-step37flash",
     "kilo-nexaginexn25mini",
-    "openrouter-nexaginexn25mini"
+    "openrouter-nexaginexn25mini",
+    "kilo-liquidlfm25",
+    "openrouter-liquidlfm25",
+    "nvidia-nemotron3super120ba12b",
+    "kilo-nemotron3super120ba12b",
+    "openrouter-nemotron3super120ba12b",
+    "kilo-nexaginexn25pro",
+    "openrouter-nexaginexn25pro",
+    "nvidia-diffusiongemma26ba4bit"
   ],
   "chain": [
     {
-      "id": "mistral-codestral",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "codestral-2508",
-      "apiKeyEnv": "MISTRAL_API_KEY"
-    },
-    {
-      "id": "mistral-codestral",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "codestral-latest",
-      "apiKeyEnv": "MISTRAL_API_KEY"
+      "id": "openrouter-stealthspacebunnyalpha",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "stealth/space-bunny-alpha",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "llm7-codestral",
       "baseUrl": "https://api.llm7.io/v1",
       "model": "codestral-latest",
       "apiKeyEnv": "LLM7_API_KEY"
-    },
-    {
-      "id": "mistral-mistralcode",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "mistral-code-latest",
-      "apiKeyEnv": "MISTRAL_API_KEY"
-    },
-    {
-      "id": "mistral-ministral",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "ministral-3b-2512",
-      "apiKeyEnv": "MISTRAL_API_KEY"
-    },
-    {
-      "id": "mistral-ministral",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "ministral-3b-latest",
-      "apiKeyEnv": "MISTRAL_API_KEY"
-    },
-    {
-      "id": "mistral-ministral",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "ministral-14b-2512",
-      "apiKeyEnv": "MISTRAL_API_KEY"
-    },
-    {
-      "id": "mistral-ministral",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "ministral-14b-latest",
-      "apiKeyEnv": "MISTRAL_API_KEY"
-    },
-    {
-      "id": "mistral-ministral",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "ministral-8b-2512",
-      "apiKeyEnv": "MISTRAL_API_KEY"
-    },
-    {
-      "id": "mistral-ministral",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "model": "ministral-8b-latest",
-      "apiKeyEnv": "MISTRAL_API_KEY"
     },
     {
       "id": "kilo-inclusionailing30flashfin",
@@ -176,37 +128,83 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "nex-agi/nex-n2.5-mini:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-liquidlfm25",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-liquidlfm25",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "nvidia-nemotron3super120ba12b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "kilo-nemotron3super120ba12b",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-nemotron3super120ba12b",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-nexaginexn25pro",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "nex-agi/nex-n2.5-pro:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-nexaginexn25pro",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "nex-agi/nex-n2.5-pro:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "nvidia-diffusiongemma26ba4bit",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "google/diffusiongemma-26b-a4b-it",
+      "apiKeyEnv": "NIM_API_KEY"
     }
   ],
   "modelAllowlist": [
-    "codestral-2508",
     "codestral-latest",
     "cohere/north-mini-code:free",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
     "dots-studio/dots-3-note-preview:free",
+    "google/diffusiongemma-26b-a4b-it",
     "hy3",
     "hy3-free",
     "inclusionai/ling-3.0-flash-fin:free",
     "inclusionai/ling-3.0-flash-sante:free",
     "laguna-s-2.1-free",
+    "liquid/lfm-2.5-2.6b:free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
-    "ministral-14b-2512",
-    "ministral-14b-latest",
-    "ministral-3b-2512",
-    "ministral-3b-latest",
-    "ministral-8b-2512",
-    "ministral-8b-latest",
-    "mistral-code-latest",
     "nemotron-3-nano:30b",
     "nemotron-3-super",
     "nemotron-3-ultra-free",
     "nex-agi/nex-n2.5-mini:free",
+    "nex-agi/nex-n2.5-pro:free",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "nvidia/nemotron-3-super-120b-a12b:free",
     "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",
+    "stealth/space-bunny-alpha",
     "stepfun/step-3.7-flash:free",
     "thinkingmachines/inkling",
     "z-ai/glm-5.2"
