@@ -165,6 +165,12 @@ PROVIDER_PROBES = {
         "auth": "bearer",
         "style": "openai",
     },
+    "unorouter": {
+        "env": "UNOROUTER_API_KEY",
+        "url": "https://api.unorouter.com/v1/chat/completions",
+        "auth": "bearer",
+        "style": "openai",
+    },
 }
 
 

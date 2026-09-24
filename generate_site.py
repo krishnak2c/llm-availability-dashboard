@@ -574,6 +574,32 @@ def fetch_orca(key):
     return out
 
 
+def fetch_unorouter(key):
+    # UnoRouter gateway /v1/models lists all routed models; free ones carry a
+    # `:free` suffix (e.g. `qwen/qwen3.8-27b:free`). Also accept `-free`/`/free`
+    # variants in case the convention changes.
+    headers = {"Authorization": f"Bearer {key}"} if key else {}
+    data = _get("https://api.unorouter.com/v1/models", headers=headers)
+    items = data.get("data", []) if isinstance(data, dict) else data
+    out = []
+    for m in items:
+        mid = m.get("id", "")
+        if not mid:
+            continue
+        if not (mid.endswith(":free") or mid.endswith("-free") or mid.endswith("/free")):
+            continue
+        ctx = m.get("context_length") or m.get("max_output_tokens") or m.get("context_window")
+        out.append(
+            {
+                "id": mid,
+                "name": m.get("name") or mid,
+                "context": ctx if isinstance(ctx, int) else None,
+                "limits": "free tier",
+            }
+        )
+    return out
+
+
 # ── LiteLLM model metadata enrichment ────────────────────────────────────────
 # https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json
 
@@ -915,6 +941,15 @@ PROVIDERS = [
         "color": "#f97316",
         "url": "https://orcarouter.ai",
         "key_url": "https://www.orcarouter.ai/console/billing",
+    },
+    {
+        "key": "unorouter",
+        "label": "UnoRouter",
+        "env": "UNOROUTER_API_KEY",
+        "fetch": fetch_unorouter,
+        "color": "#f472b6",
+        "url": "https://unorouter.com",
+        "key_url": "https://unorouter.com",
     },
 ]
 

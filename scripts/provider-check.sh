@@ -110,6 +110,7 @@ probe ModelScope    "https://api-inference.modelscope.cn/v1/models" "Authorizati
 probe "Kilo Code"   "https://api.kilo.ai/api/gateway/models"      "Authorization: Bearer $KILOCODE_API_KEY"      KILOCODE_API_KEY
 probe "OpenCode Zen" "https://opencode.ai/zen/v1/models"          ""                                            OPENCODE_ZEN_API_KEY optional
 probe "Ollama Cloud" "https://ollama.com/v1/models"               "Authorization: Bearer $OLLAMA_API_KEY"        OLLAMA_API_KEY
+probe "UnoRouter" "https://api.unorouter.com/v1/models"          "Authorization: Bearer $UNOROUTER_API_KEY"     UNOROUTER_API_KEY
 
 echo
 echo "== provider result: OK=$OK SKIPPED=$SKIPPED AUTH=$AUTH RATE=$RATE UNREACHABLE=$UNREACH SERVER=$SERVER =="
