@@ -35,3 +35,7 @@ CI (`ci.yml`) runs: `ruff check .` → `pytest -v` → `compileall`. Run all thr
 - **`classify()` semantics:** 200 + error field → classified by error text (`model_not_found` → not_found, rate/quota → rate_limited); 200 without recognized shape → `ok` unless JSON parse fails/empty → `bad_response`; other 4xx → `bad_response`. Don't "improve" these without updating tests.
 - **Testing quirks:** unit tests `importlib`-load `common.py` and `probe_models.py` directly (monkeypatched env, `tmp_path` for rotation) — they need no live network and must stay offline-safe. `test_probe_help_runs` shells out to `probe_models.py --help`; keep the CLI surface stable. Cloudflare probes require `CLOUDFLARE_ACCOUNT_ID` (tests assert `build_request` returns `None` without it).
 - **Workflow convention:** when a PR is created for this repo, merge it (squash) and let the deploy workflow run — do not stop at draft stage.
+
+## Adding a provider
+
+`providers.py` is the single registry: add ONE dict entry (key, label, env, probe_url, auth, style, anonymous_ok, models_url, models_auth, free_suffixes, color, url, key_url, fetch) and it flows into `probe_models.py`, `generate_site.py`, and `scripts/provider-check.sh` automatically. Because GitHub Actions can't enumerate secrets, also add a `KEY:` line to each of `.github/workflows/update-models.yml` and `.github/workflows/probe.yml`, a `KEY=` line to `.env.example`, and create the secret in the GitHub and Vercel UIs — nothing else.

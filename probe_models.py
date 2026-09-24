@@ -25,6 +25,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from common import _opener
+from providers import PROVIDERS as _REGISTRY
 
 ROOT = Path(__file__).parent
 DOCS = ROOT / "docs"
@@ -44,133 +45,14 @@ WATCH_LIST_FAILS = 3
 # `style` distinguishes payload formats.
 
 PROVIDER_PROBES = {
-    "openrouter": {
-        "env": "OPENROUTER_API_KEY",
-        "url": "https://openrouter.ai/api/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "groq": {
-        "env": "GROQ_API_KEY",
-        "url": "https://api.groq.com/openai/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "cerebras": {
-        "env": "CEREBRAS_API_KEY",
-        "url": "https://api.cerebras.ai/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "sambanova": {
-        "env": "SAMBANOVA_API_KEY",
-        "url": "https://api.sambanova.ai/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "together": {
-        "env": "TOGETHER_API_KEY",
-        "url": "https://api.together.ai/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "nvidia": {
-        "env": "NVIDIA_NIM_API_KEY",
-        "url": "https://integrate.api.nvidia.com/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "huggingface": {
-        "env": "HF_TOKEN",
-        "url": "https://router.huggingface.co/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "mistral": {
-        "env": "MISTRAL_API_KEY",
-        "url": "https://api.mistral.ai/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "github": {
-        "env": "GH_MODELS_TOKEN",
-        "url": "https://models.inference.ai.azure.com/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "cohere": {
-        "env": "COHERE_API_KEY",
-        "url": "https://api.cohere.com/v2/chat",
-        "auth": "bearer",
-        "style": "cohere_v2",
-    },
-    "gemini": {
-        "env": "GEMINI_API_KEY",
-        "url": "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-        "auth": "x-goog",
-        "style": "gemini",
-    },
-    "cloudflare": {
-        "env": "CLOUDFLARE_API_KEY",
-        "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/{model}",
-        "auth": "bearer",
-        "style": "cloudflare",
-    },
-    "kluster": {
-        "env": "KLUSTER_API_KEY",
-        "url": "https://api.kluster.ai/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "llm7": {
-        "env": "LLM7_API_KEY",
-        "url": "https://api.llm7.io/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-        "anonymous_ok": True,
-    },
-    "zai": {
-        "env": "ZAI_API_KEY",
-        "url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "modelscope": {
-        "env": "MODELSCOPE_API_KEY",
-        "url": "https://api-inference.modelscope.cn/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "kilo": {
-        "env": "KILOCODE_API_KEY",
-        "url": "https://api.kilo.ai/api/gateway/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "zen": {
-        "env": "OPENCODE_ZEN_API_KEY",
-        "url": "https://opencode.ai/zen/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "ollama": {
-        "env": "OLLAMA_API_KEY",
-        "url": "https://ollama.com/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "orca": {
-        "env": "ORCA_API_KEY",
-        "url": "https://api.orcarouter.ai/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
-    "unorouter": {
-        "env": "UNOROUTER_API_KEY",
-        "url": "https://api.unorouter.com/v1/chat/completions",
-        "auth": "bearer",
-        "style": "openai",
-    },
+    p["key"]: {
+        "env": p["env"],
+        "url": p["probe_url"],
+        "auth": p["auth"],
+        "style": p["style"],
+        **({"anonymous_ok": True} if p["anonymous_ok"] else {}),
+    }
+    for p in _REGISTRY
 }
 
 

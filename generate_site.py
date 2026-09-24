@@ -5,6 +5,7 @@ Runs standalone (no LiteLLM needed) — used by GitHub Actions to build the site
 """
 
 import concurrent.futures
+import functools
 import json
 import os
 import re
@@ -15,6 +16,7 @@ from pathlib import Path
 
 from common import _is_free, _opener
 from probe_models import PROVIDER_PROBES
+import providers as _providers
 
 OUT_DIR = Path(__file__).parent / "docs"
 OUT_DIR.mkdir(exist_ok=True)
@@ -574,19 +576,24 @@ def fetch_orca(key):
     return out
 
 
-def fetch_unorouter(key):
-    # UnoRouter gateway /v1/models lists all routed models; free ones carry a
-    # `:free` suffix (e.g. `qwen/qwen3.8-27b:free`). Also accept `-free`/`/free`
-    # variants in case the convention changes.
-    headers = {"Authorization": f"Bearer {key}"} if key else {}
-    data = _get("https://api.unorouter.com/v1/models", headers=headers)
+def fetch_generic_models(key, models_url, models_auth="bearer", free_suffixes=None, getter=_get):
+    """Generic OpenAI-style /models fetcher driven by a providers.py registry entry.
+
+    Sends a bearer header when a key is present and the provider's models_auth
+    allows it; filters model ids by `free_suffixes` when configured.
+    `getter` is injectable for offline tests (defaults to the network getter).
+    """
+    headers = {}
+    if key and models_auth in ("bearer", "optional"):
+        headers["Authorization"] = f"Bearer {key}"
+    data = getter(models_url, headers=headers)
     items = data.get("data", []) if isinstance(data, dict) else data
     out = []
     for m in items:
         mid = m.get("id", "")
         if not mid:
             continue
-        if not (mid.endswith(":free") or mid.endswith("-free") or mid.endswith("/free")):
+        if free_suffixes and not any(mid.endswith(s) for s in free_suffixes):
             continue
         ctx = m.get("context_length") or m.get("max_output_tokens") or m.get("context_window")
         out.append(
@@ -759,198 +766,35 @@ def get_tags(model_id, context=None, capabilities=None):
     return tags
 
 
+def _resolve_fetch(p):
+    """Map a registry `fetch` spec to a callable.
+
+    "generic" -> the generic OpenAI-style models fetcher (configured from the
+    entry's models_url/models_auth/free_suffixes); "custom:<name>" -> the named
+    fetch_* function defined above.
+    """
+    if p["fetch"] == "generic":
+        return functools.partial(
+            fetch_generic_models,
+            models_url=p["models_url"],
+            models_auth=p["models_auth"],
+            free_suffixes=p["free_suffixes"],
+        )
+    return globals()[p["fetch"].removeprefix("custom:")]
+
+
 PROVIDERS = [
     {
-        "key": "openrouter",
-        "label": "OpenRouter",
-        "env": "OPENROUTER_API_KEY",
-        "fetch": fetch_openrouter,
-        "color": "#6366f1",
-        "url": "https://openrouter.ai",
-        "key_url": "https://openrouter.ai/keys",
-    },
-    {
-        "key": "groq",
-        "label": "Groq",
-        "env": "GROQ_API_KEY",
-        "fetch": fetch_groq,
-        "color": "#f59e0b",
-        "url": "https://console.groq.com",
-        "key_url": "https://console.groq.com/keys",
-    },
-    {
-        "key": "cerebras",
-        "label": "Cerebras",
-        "env": "CEREBRAS_API_KEY",
-        "fetch": fetch_cerebras,
-        "color": "#10b981",
-        "url": "https://cloud.cerebras.ai",
-        "key_url": "https://cloud.cerebras.ai/platform",
-    },
-    {
-        "key": "gemini",
-        "label": "Gemini",
-        "env": "GEMINI_API_KEY",
-        "fetch": fetch_gemini,
-        "color": "#3b82f6",
-        "url": "https://aistudio.google.com",
-        "key_url": "https://aistudio.google.com/apikey",
-    },
-    {
-        "key": "sambanova",
-        "label": "SambaNova",
-        "env": "SAMBANOVA_API_KEY",
-        "fetch": fetch_sambanova,
-        "color": "#8b5cf6",
-        "url": "https://cloud.sambanova.ai",
-        "key_url": "https://cloud.sambanova.ai/",
-    },
-    {
-        "key": "cohere",
-        "label": "Cohere",
-        "env": "COHERE_API_KEY",
-        "fetch": fetch_cohere,
-        "color": "#ec4899",
-        "url": "https://cohere.com",
-        "key_url": "https://dashboard.cohere.com/api-keys",
-    },
-    {
-        "key": "together",
-        "label": "Together AI",
-        "env": "TOGETHER_API_KEY",
-        "fetch": fetch_together,
-        "color": "#14b8a6",
-        "url": "https://api.together.ai",
-        "key_url": "https://api.together.ai/settings/api-keys",
-    },
-    {
-        "key": "nvidia",
-        "label": "NVIDIA NIM",
-        "env": "NVIDIA_NIM_API_KEY",
-        "fetch": fetch_nvidia,
-        "color": "#22c55e",
-        "url": "https://build.nvidia.com",
-        "key_url": "https://build.nvidia.com/",
-    },
-    {
-        "key": "huggingface",
-        "label": "HuggingFace",
-        "env": "HF_TOKEN",
-        "fetch": fetch_huggingface,
-        "color": "#f97316",
-        "url": "https://huggingface.co",
-        "key_url": "https://huggingface.co/settings/tokens",
-    },
-    {
-        "key": "mistral",
-        "label": "Mistral",
-        "env": "MISTRAL_API_KEY",
-        "fetch": fetch_mistral,
-        "color": "#0ea5e9",
-        "url": "https://console.mistral.ai",
-        "key_url": "https://console.mistral.ai/api-keys/",
-    },
-    {
-        "key": "github",
-        "label": "GitHub Models",
-        "env": "GH_MODELS_TOKEN",
-        "fetch": fetch_github,
-        "color": "#e2e8f0",
-        "url": "https://github.com/marketplace/models",
-        "key_url": "https://github.com/settings/tokens",
-    },
-    {
-        "key": "cloudflare",
-        "label": "Cloudflare AI",
-        "env": "CLOUDFLARE_API_KEY",
-        "fetch": fetch_cloudflare,
-        "color": "#f6821f",
-        "url": "https://developers.cloudflare.com/workers-ai/",
-        "key_url": "https://dash.cloudflare.com/profile/api-tokens",
-    },
-    {
-        "key": "kluster",
-        "label": "Kluster AI",
-        "env": "KLUSTER_API_KEY",
-        "fetch": fetch_kluster,
-        "color": "#a855f7",
-        "url": "https://kluster.ai",
-        "key_url": "https://platform.kluster.ai/apikeys",
-    },
-    {
-        "key": "llm7",
-        "label": "LLM7",
-        "env": "LLM7_API_KEY",
-        "fetch": fetch_llm7,
-        "color": "#facc15",
-        "url": "https://llm7.io",
-        "key_url": "https://token.llm7.io",
-        "anonymous_ok": True,
-    },
-    {
-        "key": "zai",
-        "label": "Z.ai (GLM)",
-        "env": "ZAI_API_KEY",
-        "fetch": fetch_zai,
-        "color": "#0ea5e9",
-        "url": "https://open.bigmodel.cn",
-        "key_url": "https://open.bigmodel.cn/usercenter/apikeys",
-    },
-    {
-        "key": "modelscope",
-        "label": "ModelScope",
-        "env": "MODELSCOPE_API_KEY",
-        "fetch": fetch_modelscope,
-        "color": "#3b82f6",
-        "url": "https://modelscope.cn",
-        "key_url": "https://modelscope.cn/my/myaccesstoken",
-    },
-    {
-        "key": "kilo",
-        "label": "Kilo Code",
-        "env": "KILOCODE_API_KEY",
-        "fetch": fetch_kilo,
-        "color": "#f59e0b",
-        "url": "https://kilo.code",
-        "key_url": "https://kilo.code",
-    },
-    {
-        "key": "zen",
-        "label": "OpenCode Zen",
-        "env": "OPENCODE_ZEN_API_KEY",
-        "fetch": fetch_zen,
-        "color": "#7c3aed",
-        "url": "https://opencode.ai/zen",
-        "key_url": "https://opencode.ai/settings/api-keys",
-        "anonymous_ok": True,
-    },
-    {
-        "key": "ollama",
-        "label": "Ollama Cloud",
-        "env": "OLLAMA_API_KEY",
-        "fetch": fetch_ollama,
-        "color": "#22c55e",
-        "url": "https://ollama.com",
-        "key_url": "https://ollama.com/settings/keys",
-    },
-    {
-        "key": "orca",
-        "label": "Orca Router",
-        "env": "ORCA_API_KEY",
-        "fetch": fetch_orca,
-        "color": "#f97316",
-        "url": "https://orcarouter.ai",
-        "key_url": "https://www.orcarouter.ai/console/billing",
-    },
-    {
-        "key": "unorouter",
-        "label": "UnoRouter",
-        "env": "UNOROUTER_API_KEY",
-        "fetch": fetch_unorouter,
-        "color": "#f472b6",
-        "url": "https://unorouter.com",
-        "key_url": "https://unorouter.com",
-    },
+        "key": p["key"],
+        "label": p["label"],
+        "env": p["env"],
+        "fetch": _resolve_fetch(p),
+        "color": p["color"],
+        "url": p["url"],
+        "key_url": p["key_url"],
+        **({"anonymous_ok": True} if p["anonymous_ok"] else {}),
+    }
+    for p in _providers.PROVIDERS
 ]
 
 

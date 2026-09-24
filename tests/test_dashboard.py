@@ -459,3 +459,99 @@ class TestSelectDynamicChain:
         assert gs.select_dynamic_chain({}, {}, {"providers": {}}) == []  # no avail
         assert gs.select_dynamic_chain({}, {"providers": {}}, {}) == []  # no stable
         assert gs.select_dynamic_chain({}, {"providers": {}}, {"providers": {}}) == []  # no candidates
+
+
+# ── providers.py registry ─────────────────────────────────────────────────────
+
+
+@pytest.fixture(scope="module")
+def providers():
+    return load_module("providers", "providers.py")
+
+
+def _workflow_secret_keys(path):
+    """Env vars passed through as `KEY: ${{ secrets.KEY }}` in a workflow."""
+    text = path.read_text()
+    return set(
+        re.findall(r"^\s+([A-Z0-9_]+):\s*\${{ secrets\.[A-Z0-9_]+ }}\s*$", text, re.M)
+    )
+
+
+def test_registry_env_vars_documented(providers):
+    """Every registry env var must have a KEY= line in .env.example."""
+    template = ENV_EXAMPLE.read_text()
+    missing = [
+        p["env"]
+        for p in providers.PROVIDERS
+        if not re.search(rf"^{re.escape(p['env'])}=.*$", template, re.M)
+    ]
+    assert not missing, f"registry env vars missing from .env.example: {missing}"
+
+
+def test_registry_env_vars_in_workflows(providers):
+    """Every registry env var must be passed through in both workflow files."""
+    workflows = [
+        REPO / ".github" / "workflows" / "update-models.yml",
+        REPO / ".github" / "workflows" / "probe.yml",
+    ]
+    for wf in workflows:
+        keys = _workflow_secret_keys(wf)
+        missing = [p["env"] for p in providers.PROVIDERS if p["env"] not in keys]
+        assert not missing, f"{wf.name} missing registry secrets: {missing}"
+
+
+def test_registry_drives_probe_and_site(providers, probe, generate_site):
+    """Registry keys are the single source of truth for probe + site wiring."""
+    reg_keys = {p["key"] for p in providers.PROVIDERS}
+    assert set(probe.PROVIDER_PROBES) == reg_keys
+    assert {p["key"] for p in generate_site.PROVIDERS} == reg_keys
+
+
+def test_fetch_generic_models_offline(generate_site):
+    """Generic fetcher filters by suffix and normalizes context (offline)."""
+    seen = {}
+
+    def fake_getter(url, headers):
+        seen["url"] = url
+        seen["headers"] = headers
+        return {
+            "data": [
+                {"id": "x:free", "context_length": 8000},
+                {"id": "paid-1349", "context_length": 100},
+                {"id": "y:free", "max_output_tokens": 4096},
+                {"id": "z", "name": "Zed"},
+            ]
+        }
+
+    out = generate_site.fetch_generic_models(
+        "k-123",
+        "https://api.example.com/v1/models",
+        models_auth="bearer",
+        free_suffixes=(":free",),
+        getter=fake_getter,
+    )
+    assert [m["id"] for m in out] == ["x:free", "y:free"]
+    assert seen["headers"] == {"Authorization": "Bearer k-123"}
+    assert out[0]["context"] == 8000
+    assert out[1]["context"] == 4096
+    assert out[0]["name"] == "x:free"  # falls back to id
+    assert all(m["limits"] == "free tier" for m in out)
+
+
+def test_fetch_generic_models_optional_no_key(generate_site):
+    """models_auth='optional' with no key sends no bearer header."""
+    seen = {}
+
+    def fake_getter(url, headers):
+        seen["headers"] = headers
+        return {"data": [{"id": "m:free", "context_length": 2048}]}
+
+    out = generate_site.fetch_generic_models(
+        "",
+        "https://api.example.com/v1/models",
+        models_auth="optional",
+        free_suffixes=(":free",),
+        getter=fake_getter,
+    )
+    assert len(out) == 1 and out[0]["id"] == "m:free"
+    assert seen["headers"] == {}

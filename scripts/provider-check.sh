@@ -76,41 +76,31 @@ probe() {
 echo "== Free-LLM availability dashboard provider checks =="
 echo
 
-probe OpenRouter   "https://openrouter.ai/api/v1/models"          "Authorization: Bearer $OPENROUTER_API_KEY"   OPENROUTER_API_KEY
-probe Groq         "https://api.groq.com/openai/v1/models"        "Authorization: Bearer $GROQ_API_KEY"         GROQ_API_KEY
-probe Cerebras     "https://api.cerebras.ai/v1/models"            "Authorization: Bearer $CEREBRAS_API_KEY"     CEREBRAS_API_KEY
-probe SambaNova    "https://api.sambanova.ai/v1/models"           "Authorization: Bearer $SAMBANOVA_API_KEY"    SAMBANOVA_API_KEY
-probe "NVIDIA NIM" "https://integrate.api.nvidia.com/v1/models"   "Authorization: Bearer $NVIDIA_NIM_API_KEY"   NVIDIA_NIM_API_KEY
-probe Cohere       "https://api.cohere.com/v2/models"             "Authorization: Bearer $COHERE_API_KEY"       COHERE_API_KEY
-probe HuggingFace  "https://router.huggingface.co/v1/models"      "Authorization: Bearer $HF_TOKEN"             HF_TOKEN
-probe Mistral      "https://api.mistral.ai/v1/models"             "Authorization: Bearer $MISTRAL_API_KEY"      MISTRAL_API_KEY
-probe "GitHub"     "https://models.inference.ai.azure.com/models" "Authorization: Bearer $GH_MODELS_TOKEN"      GH_MODELS_TOKEN
-probe Together     "https://api.together.ai/v1/models"            "Authorization: Bearer $TOGETHER_API_KEY"     TOGETHER_API_KEY
+# Drive the probes from the single providers.py registry. providers.py emits
+# one line per provider: label|models_url|header|env_var|optional.
+# header carries a literal "$KEY" token that is swapped for the real key below.
+while IFS='|' read -r label url hdr envvar optional; do
+  [[ -z "$label" ]] && continue
 
-# Gemini uses x-goog-api-key
-if [[ -n "${GEMINI_API_KEY:-}" ]]; then
-  probe Gemini      "https://generativelanguage.googleapis.com/v1beta/models" "x-goog-api-key: $GEMINI_API_KEY" GEMINI_API_KEY
-else
-  echo "  [SKIPPED]  Gemini  (GEMINI_API_KEY not set)"; SKIPPED=$((SKIPPED+1))
-fi
+  # Cloudflare needs an account id substituted into the URL
+  if [[ "$url" == *'{account}'* ]]; then
+    if [[ -z "${CLOUDFLARE_ACCOUNT_ID:-}" ]]; then
+      echo "  [SKIPPED]  $label  (CLOUDFLARE_API_KEY/ACCOUNT_ID not set)"; SKIPPED=$((SKIPPED+1))
+      continue
+    fi
+    url="${url//\{account\}/$CLOUDFLARE_ACCOUNT_ID}"
+  fi
 
-# Cloudflare needs an account id
-if [[ -n "${CLOUDFLARE_API_KEY:-}" && -n "${CLOUDFLARE_ACCOUNT_ID:-}" ]]; then
-  probe Cloudflare "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/ai/models/search?per_page=5" \
-                   "Authorization: Bearer $CLOUDFLARE_API_KEY" CLOUDFLARE_API_KEY
-else
-  echo "  [SKIPPED]  Cloudflare (CLOUDFLARE_API_KEY/ACCOUNT_ID not set)"; SKIPPED=$((SKIPPED+1))
-fi
+  key="${!envvar:-}"
+  if [[ -n "$key" ]]; then
+    hdr="${hdr//\$\{KEY\}/$key}"
+  fi
+  probe "$label" "$url" "$hdr" "$envvar" "$optional"
+done < <(python3 providers.py)
 
-probe Pollinations  "https://gen.pollinations.ai/v1/models"        ""                                            POLLINATIONS_API_KEY optional
-probe Kluster       "https://api.kluster.ai/v1/models"            "Authorization: Bearer $KLUSTER_API_KEY"       KLUSTER_API_KEY
-probe LLM7          "https://api.llm7.io/v1/models"               ""                                            LLM7_API_KEY         optional
-probe "Z.ai"        "https://open.bigmodel.cn/api/paas/v4/models" "Authorization: Bearer $ZAI_API_KEY"           ZAI_API_KEY
-probe ModelScope    "https://api-inference.modelscope.cn/v1/models" "Authorization: Bearer $MODELSCAPE_API_KEY"  MODELSCAPE_API_KEY
-probe "Kilo Code"   "https://api.kilo.ai/api/gateway/models"      "Authorization: Bearer $KILOCODE_API_KEY"      KILOCODE_API_KEY
-probe "OpenCode Zen" "https://opencode.ai/zen/v1/models"          ""                                            OPENCODE_ZEN_API_KEY optional
-probe "Ollama Cloud" "https://ollama.com/v1/models"               "Authorization: Bearer $OLLAMA_API_KEY"        OLLAMA_API_KEY
-probe "UnoRouter" "https://api.unorouter.com/v1/models"          "Authorization: Bearer $UNOROUTER_API_KEY"     UNOROUTER_API_KEY
+# Legacy anonymous check: pollinations stays out of probes + site (disabled),
+# but keep the connectivity line so keyless reachability is still visible.
+probe "Pollinations" "https://gen.pollinations.ai/v1/models" "" "POLLINATIONS_API_KEY" "optional"
 
 echo
 echo "== provider result: OK=$OK SKIPPED=$SKIPPED AUTH=$AUTH RATE=$RATE UNREACHABLE=$UNREACH SERVER=$SERVER =="
