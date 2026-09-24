@@ -2017,7 +2017,7 @@ RELAY_TOP_N = 25  # dynamic chain length (fallback chain entries)
 # Dashboard provider keys excluded from the relay chain (providers.json).
 # Excluded providers are still probed and shown on the dashboard — they just
 # never appear in the relay order/chain/allowlist. Remove the key to restore.
-RELAY_EXCLUDED_PROVIDERS = {"groq"}
+RELAY_EXCLUDED_PROVIDERS = {"groq", "mistral"}
 
 # Dashboard PROVIDERS env name → relay Vercel env name when they differ.
 # The relay's Vercel project uses NIM_API_KEY; the dashboard provider entry
