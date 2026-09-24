@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T16:29:24.656507+00:00",
+  "updated": "2026-09-24T21:08:14.405186+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -346,6 +346,13 @@
       "url": "https://developers.cloudflare.com/workers-ai/",
       "models": [
         {
+          "id": "@cf/google/gemma-2b-it-lora",
+          "name": "@cf/google/gemma-2b-it-lora",
+          "context": 8192,
+          "limits": "10k neurons/day",
+          "params_b": 2.0
+        },
+        {
           "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
           "name": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
           "context": 80000,
@@ -367,11 +374,28 @@
           "params_b": null
         },
         {
+          "id": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
+          "name": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
+          "context": 8192,
+          "limits": "10k neurons/day",
+          "params_b": 7.0
+        },
+        {
           "id": "@cf/qwen/qwen3.8-27b",
           "name": "@cf/qwen/qwen3.8-27b",
           "context": null,
           "limits": "10k neurons/day",
           "params_b": 27.0
+        },
+        {
+          "id": "@cf/qwen/qwq-32b",
+          "name": "@cf/qwen/qwq-32b",
+          "context": 24000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "reasoning"
+          ],
+          "params_b": 32.0
         }
       ],
       "error": null

@@ -11,20 +11,20 @@
     "ollama-nemotron3super",
     "kilo-step37flash",
     "kilo-northminicode",
-    "openrouter-northminicode",
-    "kilo-openrouterfree",
-    "openrouter-openrouterfree",
     "kilo-nexaginexn25mini",
     "openrouter-nexaginexn25mini",
+    "kilo-liquidlfm25",
+    "openrouter-liquidlfm25",
+    "kilo-openrouterfree",
     "nvidia-nemotron3super120ba12b",
     "kilo-nemotron3super120ba12b",
     "openrouter-nemotron3super120ba12b",
-    "kilo-liquidlfm25",
-    "openrouter-liquidlfm25",
+    "nvidia-diffusiongemma26ba4bit",
     "kilo-nexaginexn25pro",
     "openrouter-nexaginexn25pro",
-    "nvidia-diffusiongemma26ba4bit",
-    "ollama-nemotron3ultra"
+    "ollama-nemotron3ultra",
+    "kilo-nemotron35lightning",
+    "openrouter-nemotron35lightning"
   ],
   "chain": [
     {
@@ -94,24 +94,6 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "openrouter-northminicode",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "cohere/north-mini-code:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
-      "id": "kilo-openrouterfree",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "openrouter/free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-openrouterfree",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "openrouter/free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
       "id": "kilo-nexaginexn25mini",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nex-agi/nex-n2.5-mini:free",
@@ -122,6 +104,24 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "nex-agi/nex-n2.5-mini:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-liquidlfm25",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-liquidlfm25",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-openrouterfree",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "openrouter/free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "nvidia-nemotron3super120ba12b",
@@ -142,16 +142,10 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "kilo-liquidlfm25",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "liquid/lfm-2.5-2.6b:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-liquidlfm25",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "liquid/lfm-2.5-2.6b:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
+      "id": "nvidia-diffusiongemma26ba4bit",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "google/diffusiongemma-26b-a4b-it",
+      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "kilo-nexaginexn25pro",
@@ -166,16 +160,22 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "nvidia-diffusiongemma26ba4bit",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "google/diffusiongemma-26b-a4b-it",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
       "id": "ollama-nemotron3ultra",
       "baseUrl": "https://ollama.com/v1",
       "model": "nemotron-3-ultra",
       "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
+      "id": "kilo-nemotron35lightning",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-nemotron35lightning",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -202,6 +202,7 @@
     "nex-agi/nex-n2.5-pro:free",
     "nvidia/nemotron-3-super-120b-a12b",
     "nvidia/nemotron-3-super-120b-a12b:free",
+    "nvidia/nemotron-3.5-lightning:free",
     "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",
