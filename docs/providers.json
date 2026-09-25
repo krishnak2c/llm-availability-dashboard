@@ -3,15 +3,16 @@
     "openrouter-stealthspacebunnyalpha",
     "llm7-codestral",
     "kilo-inclusionailing30flashsante",
+    "openrouter-inclusionailing30flashsante",
     "ollama-nemotron3nano30b",
     "kilo-inclusionailing30flashfin",
     "kilo-dots3notepreview",
     "openrouter-dots3notepreview",
-    "ollama-nemotron3super",
     "kilo-step37flash",
-    "kilo-northminicode",
+    "ollama-nemotron3super",
     "kilo-liquidlfm25",
     "openrouter-liquidlfm25",
+    "kilo-northminicode",
     "kilo-nexaginexn25mini",
     "openrouter-nexaginexn25mini",
     "kilo-openrouterfree",
@@ -23,8 +24,7 @@
     "openrouter-nexaginexn25pro",
     "ollama-nemotron3ultra",
     "nvidia-nemotron35lightning30ba3b",
-    "ollama-gemma431b",
-    "kilo-nemotron35lightning"
+    "ollama-gemma431b"
   ],
   "chain": [
     {
@@ -44,6 +44,12 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "inclusionai/ling-3.0-flash-sante:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-inclusionailing30flashsante",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "inclusionai/ling-3.0-flash-sante:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "ollama-nemotron3nano30b",
@@ -70,22 +76,16 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "ollama-nemotron3super",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "nemotron-3-super",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
       "id": "kilo-step37flash",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "stepfun/step-3.7-flash:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "kilo-northminicode",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "cohere/north-mini-code:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
+      "id": "ollama-nemotron3super",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "nemotron-3-super",
+      "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
       "id": "kilo-liquidlfm25",
@@ -98,6 +98,12 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "liquid/lfm-2.5-2.6b:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-northminicode",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "cohere/north-mini-code:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "kilo-nexaginexn25mini",
@@ -170,12 +176,6 @@
       "baseUrl": "https://ollama.com/v1",
       "model": "gemma4:31b",
       "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
-      "id": "kilo-nemotron35lightning",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "nvidia/nemotron-3.5-lightning:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -204,7 +204,6 @@
     "nvidia/nemotron-3-super-120b-a12b",
     "nvidia/nemotron-3-super-120b-a12b:free",
     "nvidia/nemotron-3.5-lightning-30b-a3b",
-    "nvidia/nemotron-3.5-lightning:free",
     "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",

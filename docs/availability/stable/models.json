@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T03:24:10.436593+00:00",
+  "updated": "2026-09-25T11:07:43.994605+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -254,19 +254,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
-        },
-        {
           "id": "allam-2-7b",
           "name": "allam-2-7b",
           "context": 4096,
@@ -285,6 +272,19 @@
             "reasoning"
           ],
           "params_b": 20.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "qwen/qwen3.8-27b",
@@ -319,13 +319,6 @@
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
-        {
-          "id": "deepseek-ai/deepseek-v4.1-flash",
-          "name": "deepseek-ai/deepseek-v4.1-flash",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
-        },
         {
           "id": "google/diffusiongemma-26b-a4b-it",
           "name": "google/diffusiongemma-26b-a4b-it",
@@ -841,13 +834,6 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "DeepSeek-V4.1-Flash",
-          "name": "DeepSeek-V4.1-Flash",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "GLM-5.3-Flash",
           "name": "GLM-5.3-Flash",
           "context": 400000,
@@ -935,13 +921,6 @@
           "id": "gemini-3.7-flash",
           "name": "gemini-3.7-flash",
           "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "jev-latest",
-          "name": "jev-latest",
-          "context": 64000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -1128,18 +1107,18 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
         },
         {
           "id": "gpt-oss:20b",
@@ -1156,18 +1135,18 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
