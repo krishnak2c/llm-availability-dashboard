@@ -1,38 +1,10 @@
 {
-  "updated": "2026-09-25T11:07:43.994605+00:00",
+  "updated": "2026-09-25T16:30:53.171518+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
-        {
-          "id": "nex-agi/nex-n2.5-mini:free",
-          "name": "Nex AGI: Nex-N2.5-Mini (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "nex-agi/nex-n2.5-pro:free",
-          "name": "Nex AGI: Nex-N2.5-Pro (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
         {
           "id": "inclusionai/ling-3.0-flash-sante:free",
           "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
@@ -135,7 +107,7 @@
         {
           "id": "z-ai/glm-5.2:free",
           "name": "Z.ai: GLM 5.2 (free)",
-          "context": 32768,
+          "context": 131072,
           "limits": "20 req/min · 50 req/day",
           "capabilities": [
             "reasoning"
@@ -478,20 +450,6 @@
           "id": "dots-studio/dots-3-note-preview:free",
           "name": "Dots Studio: Dots3-Note Preview (free)",
           "context": 512000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nex-agi/nex-n2.5-pro:free",
-          "name": "Nex AGI: Nex-N2.5-Pro (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nex-agi/nex-n2.5-mini:free",
-          "name": "Nex AGI: Nex-N2.5-Mini (free)",
-          "context": 262144,
           "limits": "free tier",
           "params_b": null
         },

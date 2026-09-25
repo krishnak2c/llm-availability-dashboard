@@ -13,9 +13,9 @@
     "kilo-liquidlfm25",
     "openrouter-liquidlfm25",
     "kilo-northminicode",
+    "kilo-openrouterfree",
     "kilo-nexaginexn25mini",
     "openrouter-nexaginexn25mini",
-    "kilo-openrouterfree",
     "nvidia-diffusiongemma26ba4bit",
     "nvidia-nemotron3super120ba12b",
     "kilo-nemotron3super120ba12b",
@@ -106,6 +106,12 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
+      "id": "kilo-openrouterfree",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "openrouter/free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
       "id": "kilo-nexaginexn25mini",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nex-agi/nex-n2.5-mini:free",
@@ -116,12 +122,6 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "nex-agi/nex-n2.5-mini:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
-      "id": "kilo-openrouterfree",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "openrouter/free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "nvidia-diffusiongemma26ba4bit",
