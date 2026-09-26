@@ -37797,3 +37797,34 @@
 {"ts": "2026-09-26T18:05:58.024118+00:00", "provider": "nvidia", "model": "nvidia/llama-3.1-nemoguard-8b-content-safety", "status": "timeout", "http": null, "latency_ms": 10055, "err": "The read operation timed out"}
 {"ts": "2026-09-26T18:06:05.755232+00:00", "provider": "nvidia", "model": "poolside/laguna-xs-2.1", "status": "timeout", "http": null, "latency_ms": 10055, "err": "The read operation timed out"}
 {"ts": "2026-09-26T18:06:08.084193+00:00", "provider": "nvidia", "model": "z-ai/glm-5.3", "status": "timeout", "http": null, "latency_ms": 10059, "err": "The read operation timed out"}
+{"ts": "2026-09-26T21:38:20.868189+00:00", "provider": "openrouter", "model": "poolside/laguna-s-2.1:free", "status": "rate_limited", "http": 429, "latency_ms": 199, "err": null}
+{"ts": "2026-09-26T21:38:20.920112+00:00", "provider": "groq", "model": "qwen/qwen3.8-27b", "status": "ok", "http": 200, "latency_ms": 250, "err": null}
+{"ts": "2026-09-26T21:38:20.921378+00:00", "provider": "openrouter", "model": "cohere/north-mini-code:free", "status": "rate_limited", "http": 429, "latency_ms": 251, "err": null}
+{"ts": "2026-09-26T21:38:20.938852+00:00", "provider": "cloudflare", "model": "@cf/openai/gpt-oss-120b", "status": "rate_limited", "http": 429, "latency_ms": 228, "err": null}
+{"ts": "2026-09-26T21:38:20.958160+00:00", "provider": "cloudflare", "model": "@cf/meta/llama-3.2-3b-instruct", "status": "rate_limited", "http": 429, "latency_ms": 246, "err": null}
+{"ts": "2026-09-26T21:38:20.972344+00:00", "provider": "openrouter", "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "status": "rate_limited", "http": 429, "latency_ms": 104, "err": null}
+{"ts": "2026-09-26T21:38:21.017419+00:00", "provider": "mistral", "model": "mistral-code-fim-latest", "status": "ok", "http": 200, "latency_ms": 345, "err": null}
+{"ts": "2026-09-26T21:38:21.021946+00:00", "provider": "mistral", "model": "mistral-code-latest", "status": "ok", "http": 200, "latency_ms": 350, "err": null}
+{"ts": "2026-09-26T21:38:21.023616+00:00", "provider": "openrouter", "model": "google/gemma-4-26b-a4b-it:free", "status": "rate_limited", "http": 429, "latency_ms": 102, "err": null}
+{"ts": "2026-09-26T21:38:21.073918+00:00", "provider": "openrouter", "model": "nvidia/nemotron-3-super-120b-a12b:free", "status": "rate_limited", "http": 429, "latency_ms": 101, "err": null}
+{"ts": "2026-09-26T21:38:21.082197+00:00", "provider": "cloudflare", "model": "@cf/meta/llama-guard-3-8b", "status": "rate_limited", "http": 429, "latency_ms": 143, "err": null}
+{"ts": "2026-09-26T21:38:21.096068+00:00", "provider": "cloudflare", "model": "@cf/mistral/mistral-7b-instruct-v0.2-lora", "status": "rate_limited", "http": 429, "latency_ms": 137, "err": null}
+{"ts": "2026-09-26T21:38:21.127741+00:00", "provider": "llm7", "model": "Voxtral-Mini-3B-2507", "status": "bad_response", "http": 400, "latency_ms": 454, "err": "{\"error\":{\"message\":\"Model 'Voxtral-Mini-3B-2507' does not support this endpoint.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"unsupported_model_feature\"}}"}
+{"ts": "2026-09-26T21:38:21.139122+00:00", "provider": "nvidia", "model": "google/gemma-4-31b-it", "status": "ok", "http": 200, "latency_ms": 468, "err": null}
+{"ts": "2026-09-26T21:38:21.157003+00:00", "provider": "nvidia", "model": "nvidia/llama-3.1-nemoguard-8b-content-safety", "status": "ok", "http": 200, "latency_ms": 485, "err": null}
+{"ts": "2026-09-26T21:38:21.162757+00:00", "provider": "openrouter", "model": "openrouter/free", "status": "rate_limited", "http": 429, "latency_ms": 139, "err": null}
+{"ts": "2026-09-26T21:38:21.251585+00:00", "provider": "cloudflare", "model": "@cf/meta/llama-3.1-8b-instruct-fp8", "status": "rate_limited", "http": 429, "latency_ms": 169, "err": null}
+{"ts": "2026-09-26T21:38:21.252716+00:00", "provider": "cloudflare", "model": "@cf/qwen/qwen2.5-coder-32b-instruct", "status": "rate_limited", "http": 429, "latency_ms": 156, "err": null}
+{"ts": "2026-09-26T21:38:21.281631+00:00", "provider": "kilo", "model": "cohere/north-mini-code:free", "status": "ok", "http": 200, "latency_ms": 572, "err": null}
+{"ts": "2026-09-26T21:38:21.350080+00:00", "provider": "ollama", "model": "nemotron-3-super", "status": "ok", "http": 200, "latency_ms": 636, "err": null}
+{"ts": "2026-09-26T21:38:21.373757+00:00", "provider": "cloudflare", "model": "@cf/meta/llama-4-scout-17b-16e-instruct", "status": "rate_limited", "http": 429, "latency_ms": 120, "err": null}
+{"ts": "2026-09-26T21:38:21.382213+00:00", "provider": "cloudflare", "model": "@cf/google/gemma-7b-it-lora", "status": "rate_limited", "http": 429, "latency_ms": 130, "err": null}
+{"ts": "2026-09-26T21:38:21.390739+00:00", "provider": "nvidia", "model": "nvidia/nemotron-parse-2.0", "status": "ok", "http": 200, "latency_ms": 251, "err": null}
+{"ts": "2026-09-26T21:38:21.585325+00:00", "provider": "zai", "model": "glm-4.5-flash", "status": "ok", "http": 200, "latency_ms": 872, "err": null}
+{"ts": "2026-09-26T21:38:21.608912+00:00", "provider": "zen", "model": "space-bunny-free", "status": "ok", "http": 200, "latency_ms": 898, "err": null}
+{"ts": "2026-09-26T21:38:21.790396+00:00", "provider": "mistral", "model": "ministral-3b-2512", "status": "ok", "http": 200, "latency_ms": 772, "err": null}
+{"ts": "2026-09-26T21:38:21.812917+00:00", "provider": "kilo", "model": "poolside/laguna-s-2.1:free", "status": "ok", "http": 200, "latency_ms": 1138, "err": null}
+{"ts": "2026-09-26T21:38:22.176087+00:00", "provider": "llm7", "model": "mistral-Nemo-Instruct-2407", "status": "ok", "http": 200, "latency_ms": 1048, "err": null}
+{"ts": "2026-09-26T21:38:23.041235+00:00", "provider": "kilo", "model": "openrouter/free", "status": "ok", "http": 200, "latency_ms": 1228, "err": null}
+{"ts": "2026-09-26T21:38:23.108298+00:00", "provider": "llm7", "model": "GLM-5.3-Flash", "status": "ok", "http": 200, "latency_ms": 2435, "err": null}
+{"ts": "2026-09-26T21:38:24.812100+00:00", "provider": "kilo", "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "status": "ok", "http": 200, "latency_ms": 3530, "err": null}
