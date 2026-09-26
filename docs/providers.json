@@ -15,13 +15,13 @@
     "openrouter-northminicode",
     "ollama-nemotron3super",
     "nvidia-diffusiongemma26ba4bit",
-    "kilo-openrouterfree",
-    "openrouter-openrouterfree",
     "nvidia-nemotron3super120ba12b",
     "kilo-nemotron3super120ba12b",
     "openrouter-nemotron3super120ba12b",
-    "ollama-nemotron3ultra",
+    "kilo-openrouterfree",
+    "openrouter-openrouterfree",
     "zen-spacebunny",
+    "ollama-nemotron3ultra",
     "nvidia-nemotron35lightning30ba3b",
     "kilo-nemotron35lightning",
     "ollama-gemma431b"
@@ -118,18 +118,6 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "kilo-openrouterfree",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "openrouter/free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-openrouterfree",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "openrouter/free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
       "id": "nvidia-nemotron3super120ba12b",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "nvidia/nemotron-3-super-120b-a12b",
@@ -148,16 +136,28 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "ollama-nemotron3ultra",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "nemotron-3-ultra",
-      "apiKeyEnv": "OLLAMA_API_KEY"
+      "id": "kilo-openrouterfree",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "openrouter/free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-openrouterfree",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "openrouter/free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "zen-spacebunny",
       "baseUrl": "https://opencode.ai/zen/v1",
       "model": "space-bunny-free",
       "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+    },
+    {
+      "id": "ollama-nemotron3ultra",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "nemotron-3-ultra",
+      "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
       "id": "nvidia-nemotron35lightning30ba3b",

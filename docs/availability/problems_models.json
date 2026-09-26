@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26T03:30:16.671618+00:00",
+  "updated": "2026-09-26T10:48:14.744638+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -273,6 +273,13 @@
           "params_b": 30.0
         },
         {
+          "id": "nvidia/riva-translate-4b-instruct-v2",
+          "name": "nvidia/riva-translate-4b-instruct-v2",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 4.0
+        },
+        {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
           "context": null,
@@ -523,20 +530,34 @@
       ],
       "error": null
     },
+    "zen": {
+      "name": "OpenCode Zen",
+      "url": "https://opencode.ai/zen",
+      "models": [
+        {
+          "id": "space-bunny-free",
+          "name": "space-bunny-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
     "ollama": {
       "name": "Ollama Cloud",
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
