@@ -10,6 +10,7 @@
     "kilo-dots3notepreview",
     "openrouter-dots3notepreview",
     "kilo-step37flash",
+    "ollama-gptoss120b",
     "ollama-nemotron3super",
     "nvidia-diffusiongemma26ba4bit",
     "kilo-northminicode",
@@ -23,8 +24,7 @@
     "ollama-nemotron3ultra",
     "kilo-nemotron3nanoomni30ba3breasoning",
     "nvidia-nemotron3nanoomni30ba3breasoning",
-    "kilo-nemotron35lightning",
-    "llm7-mistralnemoinstruct"
+    "kilo-nemotron35lightning"
   ],
   "chain": [
     {
@@ -86,6 +86,12 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "stepfun/step-3.7-flash:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "ollama-gptoss120b",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "gpt-oss:120b",
+      "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
       "id": "ollama-nemotron3super",
@@ -170,12 +176,6 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3.5-lightning:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "llm7-mistralnemoinstruct",
-      "baseUrl": "https://api.llm7.io/v1",
-      "model": "mistral-Nemo-Instruct-2407",
-      "apiKeyEnv": "LLM7_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -186,6 +186,7 @@
     "deepseek/deepseek-v4-pro-free",
     "dots-studio/dots-3-note-preview:free",
     "google/diffusiongemma-26b-a4b-it",
+    "gpt-oss:120b",
     "gpt-oss:20b",
     "hy3",
     "hy3-free",
@@ -194,7 +195,6 @@
     "laguna-s-2.1-free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
-    "mistral-Nemo-Instruct-2407",
     "nemotron-3-nano:30b",
     "nemotron-3-super",
     "nemotron-3-ultra",
