@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27T16:23:01.811365+00:00",
+  "updated": "2026-09-27T20:52:16.786209+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -278,6 +278,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 30.0
+        },
+        {
+          "id": "nvidia/nemotron-parse-2.0",
+          "name": "nvidia/nemotron-parse-2.0",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
         },
         {
           "id": "nvidia/riva-translate-4b-instruct-v2",
@@ -707,6 +714,13 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
@@ -716,13 +730,6 @@
         {
           "id": "nemotron-3-super",
           "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
