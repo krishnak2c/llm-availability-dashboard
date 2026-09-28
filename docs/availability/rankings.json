@@ -9,8 +9,8 @@
     },
     "artificial_analysis_index_version": 4.3,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 24,
-    "ranked_count": 24,
+    "source_count": 27,
+    "ranked_count": 27,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
@@ -37,6 +37,50 @@
       "rank": 1
     },
     {
+      "provider": "Kilo Code",
+      "provider_id": "kilo",
+      "model_id": "inclusionai/ling-3.0-flash-sante:free",
+      "model_name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+      "aa_slug": "ling-3-0-flash",
+      "aa_name": "Ling 3.0 Flash",
+      "aa_match": "substring",
+      "agentic": null,
+      "coding": 50.6,
+      "intelligence": 24.9,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": 63.08,
+      "intelligence_norm": 64.37,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 63.56,
+      "data_coverage": 40.0,
+      "rank": 2
+    },
+    {
+      "provider": "Kilo Code",
+      "provider_id": "kilo",
+      "model_id": "stepfun/step-3.7-flash:free",
+      "model_name": "StepFun: Step 3.7 Flash (free)",
+      "aa_slug": "step-3-7-flash",
+      "aa_name": "Step 3.7 Flash",
+      "aa_match": "exact",
+      "agentic": null,
+      "coding": 39.6,
+      "intelligence": 19.5,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": 39.87,
+      "intelligence_norm": 42.51,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 40.86,
+      "data_coverage": 40.0,
+      "rank": 3
+    },
+    {
       "provider": "Ollama Cloud",
       "provider_id": "ollama",
       "model_id": "gemma4:31b",
@@ -56,7 +100,7 @@
       "swebench_norm": null,
       "hermes_score": 25.92,
       "data_coverage": 80.0,
-      "rank": 2
+      "rank": 4
     },
     {
       "provider": "Groq",
@@ -78,7 +122,7 @@
       "swebench_norm": null,
       "hermes_score": 11.17,
       "data_coverage": 80.0,
-      "rank": 3
+      "rank": 5
     },
     {
       "provider": "OpenRouter",
@@ -100,7 +144,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 4
+      "rank": 6
     },
     {
       "provider": "Groq",
@@ -122,7 +166,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 5
+      "rank": 7
     },
     {
       "provider": "Groq",
@@ -144,7 +188,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 80.0,
-      "rank": 6
+      "rank": 8
     },
     {
       "provider": "NVIDIA NIM",
@@ -166,7 +210,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 7
+      "rank": 9
     },
     {
       "provider": "NVIDIA NIM",
@@ -188,7 +232,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 8
+      "rank": 10
     },
     {
       "provider": "NVIDIA NIM",
@@ -210,7 +254,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 9
+      "rank": 11
     },
     {
       "provider": "Mistral",
@@ -232,56 +276,12 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 10
-    },
-    {
-      "provider": "Mistral",
-      "provider_id": "mistral",
-      "model_id": "codestral-latest",
-      "model_name": "codestral-2508",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 11
-    },
-    {
-      "provider": "Mistral",
-      "provider_id": "mistral",
-      "model_id": "mistral-code-latest",
-      "model_name": "codestral-2508",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
       "rank": 12
     },
     {
       "provider": "Mistral",
       "provider_id": "mistral",
-      "model_id": "mistral-code-fim-latest",
+      "model_id": "codestral-latest",
       "model_name": "codestral-2508",
       "aa_slug": null,
       "aa_name": null,
@@ -303,6 +303,50 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
+      "model_id": "mistral-code-latest",
+      "model_name": "codestral-2508",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 14
+    },
+    {
+      "provider": "Mistral",
+      "provider_id": "mistral",
+      "model_id": "mistral-code-fim-latest",
+      "model_name": "codestral-2508",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 15
+    },
+    {
+      "provider": "Mistral",
+      "provider_id": "mistral",
       "model_id": "voxtral-small-2507",
       "model_name": "voxtral-small-2507",
       "aa_slug": null,
@@ -320,7 +364,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 14
+      "rank": 16
     },
     {
       "provider": "Mistral",
@@ -342,7 +386,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 15
+      "rank": 17
     },
     {
       "provider": "Mistral",
@@ -364,7 +408,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 16
+      "rank": 18
     },
     {
       "provider": "Mistral",
@@ -386,7 +430,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 17
+      "rank": 19
     },
     {
       "provider": "Mistral",
@@ -408,7 +452,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 18
+      "rank": 20
     },
     {
       "provider": "Mistral",
@@ -430,7 +474,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 19
+      "rank": 21
     },
     {
       "provider": "Mistral",
@@ -452,7 +496,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 20
+      "rank": 22
     },
     {
       "provider": "Mistral",
@@ -474,7 +518,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 21
+      "rank": 23
     },
     {
       "provider": "LLM7",
@@ -496,7 +540,29 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 22
+      "rank": 24
+    },
+    {
+      "provider": "Kilo Code",
+      "provider_id": "kilo",
+      "model_id": "dots-studio/dots-3-note-preview:free",
+      "model_name": "Dots Studio: Dots3-Note Preview (free)",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 25
     },
     {
       "provider": "Ollama Cloud",
@@ -518,7 +584,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 23
+      "rank": 26
     },
     {
       "provider": "Ollama Cloud",
@@ -540,7 +606,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 80.0,
-      "rank": 24
+      "rank": 27
     }
   ]
 }
