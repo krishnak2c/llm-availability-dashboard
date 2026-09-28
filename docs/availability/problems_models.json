@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28T03:36:48.057564+00:00",
+  "updated": "2026-09-28T12:53:44.844279+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -217,18 +217,18 @@
           "params_b": 31.0
         },
         {
+          "id": "meta/llama-3.2-11b-vision-instruct",
+          "name": "meta/llama-3.2-11b-vision-instruct",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 11.0
+        },
+        {
           "id": "meta/muse-glimmer-30b",
           "name": "meta/muse-glimmer-30b",
           "context": null,
           "limits": "40 req/min",
           "params_b": 30.0
-        },
-        {
-          "id": "mistralai/mistral-nemotron",
-          "name": "mistralai/mistral-nemotron",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
         },
         {
           "id": "nvidia/ising-calibration-1.5-31b",
@@ -630,6 +630,13 @@
           "params_b": null
         },
         {
+          "id": "nvidia/nemotron-3.5-content-safety:free",
+          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+          "context": 128000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
           "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
           "context": 256000,
@@ -672,6 +679,20 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
           "id": "nemotron-3-ultra",
           "name": "nemotron-3-ultra",
           "context": null,
@@ -684,13 +705,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         }
       ],
       "error": null

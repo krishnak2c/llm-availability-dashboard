@@ -9,8 +9,8 @@
     },
     "artificial_analysis_index_version": 4.3,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 27,
-    "ranked_count": 27,
+    "source_count": 30,
+    "ranked_count": 30,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
@@ -93,12 +93,12 @@
       "intelligence": 19.0,
       "arena": null,
       "swebench": null,
-      "agentic_norm": 6.73,
+      "agentic_norm": 6.94,
       "coding_norm": 47.89,
       "intelligence_norm": 40.49,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 25.92,
+      "hermes_score": 26.02,
       "data_coverage": 80.0,
       "rank": 4
     },
@@ -115,14 +115,80 @@
       "intelligence": 11.6,
       "arena": null,
       "swebench": null,
-      "agentic_norm": 5.61,
+      "agentic_norm": 5.82,
       "coding_norm": 20.46,
       "intelligence_norm": 10.53,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 11.17,
+      "hermes_score": 11.28,
       "data_coverage": 80.0,
       "rank": 5
+    },
+    {
+      "provider": "Kilo Code",
+      "provider_id": "kilo",
+      "model_id": "cohere/north-mini-code:free",
+      "model_name": "Cohere: North Mini Code (free)",
+      "aa_slug": "north-mini-code",
+      "aa_name": "North Mini Code",
+      "aa_match": "substring",
+      "agentic": 1.1,
+      "coding": 36.5,
+      "intelligence": 9.9,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 0.0,
+      "coding_norm": 33.33,
+      "intelligence_norm": 3.64,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 11.1,
+      "data_coverage": 80.0,
+      "rank": 6
+    },
+    {
+      "provider": "Groq",
+      "provider_id": "groq",
+      "model_id": "openai/gpt-oss-20b",
+      "model_name": "openai/gpt-oss-20b",
+      "aa_slug": "gpt-oss-20b",
+      "aa_name": "gpt-oss-20b (high)",
+      "aa_match": "exact",
+      "agentic": 1.2,
+      "coding": 20.7,
+      "intelligence": 9.0,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 0.22,
+      "coding_norm": 0.0,
+      "intelligence_norm": 0.0,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.11,
+      "data_coverage": 80.0,
+      "rank": 7
+    },
+    {
+      "provider": "Ollama Cloud",
+      "provider_id": "ollama",
+      "model_id": "gpt-oss:20b",
+      "model_name": "gpt-oss:20b",
+      "aa_slug": "gpt-oss-20b",
+      "aa_name": "gpt-oss-20b (high)",
+      "aa_match": "compact",
+      "agentic": 1.2,
+      "coding": 20.7,
+      "intelligence": 9.0,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": 0.22,
+      "coding_norm": 0.0,
+      "intelligence_norm": 0.0,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.11,
+      "data_coverage": 80.0,
+      "rank": 8
     },
     {
       "provider": "OpenRouter",
@@ -144,7 +210,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 6
+      "rank": 9
     },
     {
       "provider": "Groq",
@@ -166,29 +232,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 7
-    },
-    {
-      "provider": "Groq",
-      "provider_id": "groq",
-      "model_id": "openai/gpt-oss-20b",
-      "model_name": "openai/gpt-oss-20b",
-      "aa_slug": "gpt-oss-20b",
-      "aa_name": "gpt-oss-20b (high)",
-      "aa_match": "exact",
-      "agentic": 1.2,
-      "coding": 20.7,
-      "intelligence": 9.0,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 0.0,
-      "coding_norm": 0.0,
-      "intelligence_norm": 0.0,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 80.0,
-      "rank": 8
+      "rank": 10
     },
     {
       "provider": "NVIDIA NIM",
@@ -210,7 +254,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 9
+      "rank": 11
     },
     {
       "provider": "NVIDIA NIM",
@@ -232,7 +276,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 10
+      "rank": 12
     },
     {
       "provider": "NVIDIA NIM",
@@ -254,7 +298,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 11
+      "rank": 13
     },
     {
       "provider": "Mistral",
@@ -276,56 +320,12 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 12
-    },
-    {
-      "provider": "Mistral",
-      "provider_id": "mistral",
-      "model_id": "codestral-latest",
-      "model_name": "codestral-2508",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 13
-    },
-    {
-      "provider": "Mistral",
-      "provider_id": "mistral",
-      "model_id": "mistral-code-latest",
-      "model_name": "codestral-2508",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
       "rank": 14
     },
     {
       "provider": "Mistral",
       "provider_id": "mistral",
-      "model_id": "mistral-code-fim-latest",
+      "model_id": "codestral-latest",
       "model_name": "codestral-2508",
       "aa_slug": null,
       "aa_name": null,
@@ -347,6 +347,50 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
+      "model_id": "mistral-code-latest",
+      "model_name": "codestral-2508",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 16
+    },
+    {
+      "provider": "Mistral",
+      "provider_id": "mistral",
+      "model_id": "mistral-code-fim-latest",
+      "model_name": "codestral-2508",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 17
+    },
+    {
+      "provider": "Mistral",
+      "provider_id": "mistral",
       "model_id": "voxtral-small-2507",
       "model_name": "voxtral-small-2507",
       "aa_slug": null,
@@ -364,7 +408,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 16
+      "rank": 18
     },
     {
       "provider": "Mistral",
@@ -386,7 +430,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 17
+      "rank": 19
     },
     {
       "provider": "Mistral",
@@ -408,7 +452,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 18
+      "rank": 20
     },
     {
       "provider": "Mistral",
@@ -430,7 +474,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 19
+      "rank": 21
     },
     {
       "provider": "Mistral",
@@ -452,7 +496,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 20
+      "rank": 22
     },
     {
       "provider": "Mistral",
@@ -474,7 +518,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 21
+      "rank": 23
     },
     {
       "provider": "Mistral",
@@ -496,7 +540,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 22
+      "rank": 24
     },
     {
       "provider": "Mistral",
@@ -518,7 +562,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 23
+      "rank": 25
     },
     {
       "provider": "LLM7",
@@ -540,7 +584,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 24
+      "rank": 26
     },
     {
       "provider": "Kilo Code",
@@ -562,7 +606,51 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 25
+      "rank": 27
+    },
+    {
+      "provider": "Kilo Code",
+      "provider_id": "kilo",
+      "model_id": "inclusionai/ling-3.0-flash-fin:free",
+      "model_name": "inclusionAI: Ling 3.0 Flash Fin (free)",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 28
+    },
+    {
+      "provider": "Kilo Code",
+      "provider_id": "kilo",
+      "model_id": "nvidia/nemotron-3.5-content-safety:free",
+      "model_name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 29
     },
     {
       "provider": "Ollama Cloud",
@@ -584,29 +672,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 26
-    },
-    {
-      "provider": "Ollama Cloud",
-      "provider_id": "ollama",
-      "model_id": "gpt-oss:20b",
-      "model_name": "gpt-oss:20b",
-      "aa_slug": "gpt-oss-20b",
-      "aa_name": "gpt-oss-20b (high)",
-      "aa_match": "compact",
-      "agentic": 1.2,
-      "coding": 20.7,
-      "intelligence": 9.0,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 0.0,
-      "coding_norm": 0.0,
-      "intelligence_norm": 0.0,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 80.0,
-      "rank": 27
+      "rank": 30
     }
   ]
 }
