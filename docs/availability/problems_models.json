@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T04:12:11.846396+00:00",
+  "updated": "2026-09-29T12:07:03.948473+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -210,13 +210,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 11.0
-        },
-        {
-          "id": "meta/muse-glimmer-30b",
-          "name": "meta/muse-glimmer-30b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 30.0
         },
         {
           "id": "nvidia/ising-calibration-1.5-31b",
@@ -660,15 +653,22 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -679,13 +679,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
-        },
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
         }
       ],
       "error": null
