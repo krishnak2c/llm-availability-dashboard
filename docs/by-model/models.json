@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28T21:03:24.194469+00:00",
+  "updated": "2026-09-29T04:12:11.846396+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -204,19 +204,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 20.0
-        },
-        {
           "id": "allam-2-7b",
           "name": "allam-2-7b",
           "context": 4096,
@@ -249,6 +236,19 @@
             "reasoning"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 20.0
         }
       ],
       "error": null
@@ -791,13 +791,6 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "Voxtral-Small-24B-2507",
-          "name": "Voxtral-Small-24B-2507",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": 24.0
-        },
-        {
           "id": "anthropic/claude-opus-4-8",
           "name": "anthropic/claude-opus-4-8",
           "context": null,
@@ -1029,20 +1022,6 @@
           "params_b": 20.0
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
           "id": "nemotron-3-ultra",
           "name": "nemotron-3-ultra",
           "context": null,
@@ -1055,6 +1034,20 @@
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
         },
         {
           "id": "nemotron-3-nano:30b",

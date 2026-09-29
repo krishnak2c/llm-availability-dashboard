@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28T21:03:24.194469+00:00",
+  "updated": "2026-09-29T04:12:11.846396+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -25,19 +25,6 @@
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 20.0
-        },
         {
           "id": "allam-2-7b",
           "name": "allam-2-7b",
@@ -71,6 +58,19 @@
             "reasoning"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 20.0
         }
       ],
       "error": null
