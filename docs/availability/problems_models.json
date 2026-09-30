@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T17:36:00.107309+00:00",
+  "updated": "2026-09-30T21:51:56.047643+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -520,9 +520,9 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "minimax-m2.7",
-          "name": "minimax-m2.7",
-          "context": 180000,
+          "id": "GLM-5.3-Flash",
+          "name": "GLM-5.3-Flash",
+          "context": 400000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         }
@@ -576,6 +576,13 @@
           "params_b": 2.6
         },
         {
+          "id": "nvidia/nemotron-3.5-lightning:free",
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "context": 1000000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "thinkingmachines/inkling-small:free",
           "name": "Thinking Machines: Inkling Small (free)",
           "context": 1048576,
@@ -614,20 +621,6 @@
           "id": "openrouter/free",
           "name": "OpenRouter Free Models Router",
           "context": 200000,
-          "limits": "free tier",
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
-    "zen": {
-      "name": "OpenCode Zen",
-      "url": "https://opencode.ai/zen",
-      "models": [
-        {
-          "id": "space-bunny-free",
-          "name": "space-bunny-free",
-          "context": null,
           "limits": "free tier",
           "params_b": null
         }
