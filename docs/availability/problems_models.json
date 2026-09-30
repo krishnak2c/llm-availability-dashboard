@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T00:03:30.758438+00:00",
+  "updated": "2026-09-30T09:18:17.163872+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -190,13 +190,6 @@
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
-        {
-          "id": "google/diffusiongemma-26b-a4b-it",
-          "name": "google/diffusiongemma-26b-a4b-it",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 26.0
-        },
         {
           "id": "google/gemma-4-31b-it",
           "name": "google/gemma-4-31b-it",
@@ -583,13 +576,6 @@
           "params_b": 2.6
         },
         {
-          "id": "nvidia/nemotron-3.5-lightning:free",
-          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "thinkingmachines/inkling-small:free",
           "name": "Thinking Machines: Inkling Small (free)",
           "context": 1048576,
@@ -641,20 +627,6 @@
         {
           "id": "space-bunny-free",
           "name": "space-bunny-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
-    "ollama": {
-      "name": "Ollama Cloud",
-      "url": "https://ollama.com",
-      "models": [
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
