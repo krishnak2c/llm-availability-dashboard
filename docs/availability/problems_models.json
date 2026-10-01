@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T04:07:12.923593+00:00",
+  "updated": "2026-10-01T12:25:51.490893+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -240,13 +240,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 550.0
-        },
-        {
-          "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
-          "name": "nvidia/nemotron-3.5-lightning-30b-a3b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 30.0
         },
         {
           "id": "nvidia/riva-translate-4b-instruct-v2",
@@ -504,6 +497,13 @@
           "id": "GLM-5.3-Flash",
           "name": "GLM-5.3-Flash",
           "context": 400000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "minimax-m2.7",
+          "name": "minimax-m2.7",
+          "context": 180000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         }
