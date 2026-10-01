@@ -1,10 +1,17 @@
 {
-  "updated": "2026-10-01T12:25:51.490893+00:00",
+  "updated": "2026-10-01T20:05:47.634793+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
+        {
+          "id": "apodex/apodex-1.1-mini:free",
+          "name": "Apodex: Apodex 1.1 Mini (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
         {
           "id": "stealth/space-bunny-alpha",
           "name": "Space Bunny Alpha",
@@ -220,26 +227,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 20.0
-        },
-        {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
           "context": 131072,
@@ -267,6 +254,13 @@
           "params_b": 120.0
         },
         {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
           "id": "canopylabs/orpheus-v1-english",
           "name": "canopylabs/orpheus-v1-english",
           "context": 4000,
@@ -281,6 +275,19 @@
           "limits": "varies per model",
           "mode": "audio_speech",
           "params_b": null
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 20.0
         }
       ],
       "error": null
@@ -343,18 +350,6 @@
             "response_schema"
           ],
           "params_b": 70.0
-        },
-        {
-          "id": "MiniMax-M2.7",
-          "name": "MiniMax-M2.7",
-          "context": 196608,
-          "limits": "free tier",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "reasoning"
-          ],
-          "params_b": null
         },
         {
           "id": "gemma-4-31B-it",
@@ -1260,6 +1255,13 @@
           "params_b": 1.0
         },
         {
+          "id": "@cf/cloudflare/clef",
+          "name": "@cf/cloudflare/clef",
+          "context": null,
+          "limits": "10k neurons/day",
+          "params_b": null
+        },
+        {
           "id": "@cf/zai-org/glm-4.7-flash",
           "name": "@cf/zai-org/glm-4.7-flash",
           "context": 131072,
@@ -1412,6 +1414,13 @@
             "function_calling"
           ],
           "params_b": 17.0
+        },
+        {
+          "id": "@cf/cloudflare/clef-flash",
+          "name": "@cf/cloudflare/clef-flash",
+          "context": null,
+          "limits": "10k neurons/day",
+          "params_b": null
         },
         {
           "id": "@cf/qwen/qwq-32b",
@@ -1634,6 +1643,13 @@
           "params_b": null
         },
         {
+          "id": "apodex/apodex-1.1-mini:free",
+          "name": "Apodex: Apodex 1.1 Mini (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "inclusionai/ling-3.0-flash-sante:free",
           "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
           "context": 262144,
@@ -1725,6 +1741,13 @@
       "url": "https://opencode.ai/zen",
       "models": [
         {
+          "id": "fledge-alpha-free",
+          "name": "fledge-alpha-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "mimo-v2.6-flash-free",
           "name": "mimo-v2.6-flash-free",
           "context": null,
@@ -1753,25 +1776,18 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
+        },
+        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
-        },
-        {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         },
         {
           "id": "nemotron-3-ultra",
@@ -1788,11 +1804,18 @@
           "params_b": 31.0
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
+          "params_b": 30.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
