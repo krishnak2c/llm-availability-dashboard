@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T21:51:56.047643+00:00",
+  "updated": "2026-10-01T04:07:12.923593+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -59,18 +59,6 @@
         {
           "id": "poolside/laguna-s-2.1:free",
           "name": "Poolside: Laguna S 2.1 (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "poolside/laguna-xs-2.1:free",
-          "name": "Poolside: Laguna XS 2.1 (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
           "capabilities": [
@@ -259,13 +247,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 30.0
-        },
-        {
-          "id": "nvidia/nemotron-parse-2.0",
-          "name": "nvidia/nemotron-parse-2.0",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
         },
         {
           "id": "nvidia/riva-translate-4b-instruct-v2",
@@ -524,20 +505,6 @@
           "name": "GLM-5.3-Flash",
           "context": 400000,
           "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
-    "zai": {
-      "name": "Z.ai (GLM)",
-      "url": "https://open.bigmodel.cn",
-      "models": [
-        {
-          "id": "glm-4.5-flash",
-          "name": "GLM-4.5-Flash",
-          "context": null,
-          "limits": "free Flash tier",
           "params_b": null
         }
       ],
