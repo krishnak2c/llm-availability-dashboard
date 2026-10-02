@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T17:26:48.765134+00:00",
+  "updated": "2026-10-02T21:48:40.815247+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -226,6 +226,13 @@
       "url": "https://console.groq.com",
       "models": [
         {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -264,13 +271,6 @@
             "reasoning"
           ],
           "params_b": 27.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
         }
       ],
       "error": null
@@ -343,13 +343,6 @@
         {
           "id": "nvidia/llama-3.1-nemoguard-8b-content-safety",
           "name": "nvidia/llama-3.1-nemoguard-8b-content-safety",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 8.0
-        },
-        {
-          "id": "nvidia/llama-3.1-nemoguard-8b-topic-control",
-          "name": "nvidia/llama-3.1-nemoguard-8b-topic-control",
           "context": null,
           "limits": "40 req/min",
           "params_b": 8.0
@@ -862,62 +855,6 @@
           "params_b": null
         },
         {
-          "id": "anthropic/claude-haiku-4-5",
-          "name": "anthropic/claude-haiku-4-5",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "anthropic/claude-opus-4-5",
-          "name": "anthropic/claude-opus-4-5",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "anthropic/claude-opus-4-6",
-          "name": "anthropic/claude-opus-4-6",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "anthropic/claude-opus-4-7",
-          "name": "anthropic/claude-opus-4-7",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "anthropic/claude-opus-4-8",
-          "name": "anthropic/claude-opus-4-8",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "anthropic/claude-sonnet-4-5",
-          "name": "anthropic/claude-sonnet-4-5",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "anthropic/claude-sonnet-4-6",
-          "name": "anthropic/claude-sonnet-4-6",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "anthropic/claude-sonnet-5",
-          "name": "anthropic/claude-sonnet-5",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "claude-opus-5-5",
           "name": "claude-opus-5-5",
           "context": 1000000,
@@ -928,6 +865,13 @@
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "gemini-3.6-flash-high",
+          "name": "gemini-3.6-flash-high",
+          "context": null,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -1016,8 +960,8 @@
           "params_b": null
         },
         {
-          "id": "poolside/laguna-s-2.1:free",
-          "name": "Poolside: Laguna S 2.1 (free)",
+          "id": "stepfun/step-3.7-flash:free",
+          "name": "StepFun: Step 3.7 Flash (free)",
           "context": 262144,
           "limits": "free tier",
           "params_b": null
@@ -1033,6 +977,13 @@
           "id": "dots-studio/dots-3-note-preview:free",
           "name": "Dots Studio: Dots3-Note Preview (free)",
           "context": 512000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "poolside/laguna-s-2.1:free",
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "context": 262144,
           "limits": "free tier",
           "params_b": null
         },
@@ -1119,13 +1070,6 @@
           "context": 200000,
           "limits": "free tier",
           "params_b": null
-        },
-        {
-          "id": "stepfun/step-3.7-flash:free",
-          "name": "StepFun: Step 3.7 Flash (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
         }
       ],
       "error": null
@@ -1144,13 +1088,6 @@
         {
           "id": "fledge-alpha-free",
           "name": "fledge-alpha-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "mimo-v2.6-flash-free",
-          "name": "mimo-v2.6-flash-free",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -1191,13 +1128,6 @@
           "params_b": null
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
           "id": "nemotron-3-ultra",
           "name": "nemotron-3-ultra",
           "context": null,
@@ -1205,18 +1135,25 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
         }
       ],
       "error": null
@@ -1224,22 +1161,7 @@
     "orca": {
       "name": "Orca Router",
       "url": "https://orcarouter.ai",
-      "models": [
-        {
-          "id": "orca/orcaverify-text1.0-free",
-          "name": "Orca: OrcaVerify Text 1.0 (Free)",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "tencent/hy4-preview-free",
-          "name": "Tencent: Hy4 preview (Free)",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        }
-      ],
+      "models": [],
       "error": null
     }
   }
