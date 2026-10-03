@@ -23,8 +23,8 @@
     "kilo-liquidlfm25",
     "openrouter-liquidlfm25",
     "kilo-nemotron3super120ba12b",
-    "llm7-mistralnemoinstruct",
-    "ollama-nemotron3ultra"
+    "nvidia-nemotron3super120ba12b",
+    "llm7-mistralnemoinstruct"
   ],
   "chain": [
     {
@@ -166,16 +166,16 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
+      "id": "nvidia-nemotron3super120ba12b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
       "id": "llm7-mistralnemoinstruct",
       "baseUrl": "https://api.llm7.io/v1",
       "model": "mistral-Nemo-Instruct-2407",
       "apiKeyEnv": "LLM7_API_KEY"
-    },
-    {
-      "id": "ollama-nemotron3ultra",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "nemotron-3-ultra",
-      "apiKeyEnv": "OLLAMA_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -196,8 +196,8 @@
     "mistral-Nemo-Instruct-2407",
     "nemotron-3-nano:30b",
     "nemotron-3-super",
-    "nemotron-3-ultra",
     "nemotron-3-ultra-free",
+    "nvidia/nemotron-3-super-120b-a12b",
     "nvidia/nemotron-3-super-120b-a12b:free",
     "nvidia/nemotron-3-ultra-550b-a55b",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
