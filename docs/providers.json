@@ -12,18 +12,18 @@
     "llm7-codestral",
     "kilo-dots3notepreview",
     "openrouter-dots3notepreview",
+    "kilo-openrouterfree",
+    "openrouter-openrouterfree",
     "zen-spacebunny",
     "openrouter-qwen38",
     "kilo-qwen38",
     "ollama-nemotron3super",
     "ollama-nemotron3nano30b",
     "kilo-kiloautofree",
-    "kilo-openrouterfree",
-    "openrouter-openrouterfree",
-    "kilo-nemotron3super120ba12b",
-    "llm7-mistralnemoinstruct",
     "kilo-liquidlfm25",
     "openrouter-liquidlfm25",
+    "kilo-nemotron3super120ba12b",
+    "llm7-mistralnemoinstruct",
     "ollama-nemotron3ultra"
   ],
   "chain": [
@@ -100,6 +100,18 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
+      "id": "kilo-openrouterfree",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "openrouter/free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-openrouterfree",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "openrouter/free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
       "id": "zen-spacebunny",
       "baseUrl": "https://opencode.ai/zen/v1",
       "model": "space-bunny-free",
@@ -136,15 +148,15 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "kilo-openrouterfree",
+      "id": "kilo-liquidlfm25",
       "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "openrouter/free",
+      "model": "liquid/lfm-2.5-2.6b:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "openrouter-openrouterfree",
+      "id": "openrouter-liquidlfm25",
       "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "openrouter/free",
+      "model": "liquid/lfm-2.5-2.6b:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
@@ -158,18 +170,6 @@
       "baseUrl": "https://api.llm7.io/v1",
       "model": "mistral-Nemo-Instruct-2407",
       "apiKeyEnv": "LLM7_API_KEY"
-    },
-    {
-      "id": "kilo-liquidlfm25",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "liquid/lfm-2.5-2.6b:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-liquidlfm25",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "liquid/lfm-2.5-2.6b:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "ollama-nemotron3ultra",
