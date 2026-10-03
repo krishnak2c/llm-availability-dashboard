@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T03:46:42.893284+00:00",
+  "updated": "2026-10-03T11:05:11.302965+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -228,32 +228,11 @@
           "params_b": 30.0
         },
         {
-          "id": "nvidia/nemotron-3-super-120b-a12b",
-          "name": "nvidia/nemotron-3-super-120b-a12b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 120.0
-        },
-        {
-          "id": "nvidia/nemotron-3-ultra-550b-a55b",
-          "name": "nvidia/nemotron-3-ultra-550b-a55b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 550.0
-        },
-        {
           "id": "nvidia/riva-translate-4b-instruct-v2",
           "name": "nvidia/riva-translate-4b-instruct-v2",
           "context": null,
           "limits": "40 req/min",
           "params_b": 4.0
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 20.0
         },
         {
           "id": "poolside/laguna-xs-2.1",
@@ -515,13 +494,6 @@
       "url": "https://kilo.code",
       "models": [
         {
-          "id": "kilo-auto/free",
-          "name": "Auto Free",
-          "context": 256000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
           "name": "NVIDIA: Nemotron 3 Ultra (free)",
           "context": 1000000,
@@ -546,13 +518,6 @@
           "id": "nvidia/nemotron-3.5-lightning:free",
           "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
           "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "thinkingmachines/inkling-small:free",
-          "name": "Thinking Machines: Inkling Small (free)",
-          "context": 1048576,
           "limits": "free tier",
           "params_b": null
         },
