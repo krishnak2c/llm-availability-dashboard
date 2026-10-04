@@ -2,10 +2,10 @@
   "order": [
     "kilo-inclusionailing30flashsante",
     "openrouter-inclusionailing30flashsante",
+    "kilo-step37flash",
     "nvidia-nemotron3ultra550ba55b",
     "kilo-nemotron3ultra550ba55b",
     "openrouter-nemotron3ultra550ba55b",
-    "kilo-step37flash",
     "openrouter-apodexapodex11mini",
     "kilo-apodexapodex11mini",
     "openrouter-stealthspacebunnyalpha",
@@ -40,6 +40,12 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
+      "id": "kilo-step37flash",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "stepfun/step-3.7-flash:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
       "id": "nvidia-nemotron3ultra550ba55b",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -56,12 +62,6 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
-      "id": "kilo-step37flash",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "stepfun/step-3.7-flash:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "openrouter-apodexapodex11mini",
