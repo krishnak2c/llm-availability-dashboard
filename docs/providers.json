@@ -19,12 +19,12 @@
     "zen-spacebunny",
     "openrouter-qwen38",
     "kilo-qwen38",
-    "kilo-nemotron3super120ba12b",
-    "nvidia-nemotron3super120ba12b",
     "ollama-nemotron3super",
     "kilo-kiloautofree",
     "llm7-mistralnemoinstruct",
-    "ollama-nemotron3ultra"
+    "ollama-nemotron3ultra",
+    "ollama-gemma431b",
+    "nvidia-glm53flash"
   ],
   "chain": [
     {
@@ -142,18 +142,6 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "kilo-nemotron3super120ba12b",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "nvidia/nemotron-3-super-120b-a12b:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "nvidia-nemotron3super120ba12b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/nemotron-3-super-120b-a12b",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
       "id": "ollama-nemotron3super",
       "baseUrl": "https://ollama.com/v1",
       "model": "nemotron-3-super",
@@ -176,6 +164,18 @@
       "baseUrl": "https://ollama.com/v1",
       "model": "nemotron-3-ultra",
       "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
+      "id": "ollama-gemma431b",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "gemma4:31b",
+      "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
+      "id": "nvidia-glm53flash",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "z-ai/glm-5.3-flash",
+      "apiKeyEnv": "NIM_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -185,6 +185,7 @@
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
     "dots-studio/dots-3-note-preview:free",
+    "gemma4:31b",
     "hy3",
     "hy3-free",
     "inclusionai/ling-3.0-flash-sante:free",
@@ -198,8 +199,6 @@
     "nemotron-3-super",
     "nemotron-3-ultra",
     "nemotron-3-ultra-free",
-    "nvidia/nemotron-3-super-120b-a12b",
-    "nvidia/nemotron-3-super-120b-a12b:free",
     "nvidia/nemotron-3-ultra-550b-a55b",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "openrouter/free",
@@ -210,6 +209,7 @@
     "stealth/space-bunny-alpha",
     "stepfun/step-3.7-flash:free",
     "thinkingmachines/inkling",
-    "z-ai/glm-5.2"
+    "z-ai/glm-5.2",
+    "z-ai/glm-5.3-flash"
   ]
 }
