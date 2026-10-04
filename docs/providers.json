@@ -10,21 +10,21 @@
     "kilo-apodexapodex11mini",
     "openrouter-stealthspacebunnyalpha",
     "llm7-codestral",
+    "llm7-nemotron3nano30b",
+    "ollama-nemotron3nano30b",
     "kilo-dots3notepreview",
     "openrouter-dots3notepreview",
     "kilo-openrouterfree",
     "openrouter-openrouterfree",
+    "kilo-liquidlfm25",
+    "openrouter-liquidlfm25",
     "zen-spacebunny",
     "openrouter-qwen38",
     "kilo-qwen38",
     "ollama-nemotron3super",
-    "ollama-nemotron3nano30b",
     "kilo-kiloautofree",
-    "kilo-liquidlfm25",
-    "openrouter-liquidlfm25",
-    "kilo-nemotron3super120ba12b",
-    "nvidia-nemotron3super120ba12b",
-    "llm7-mistralnemoinstruct"
+    "llm7-mistralnemoinstruct",
+    "kilo-nemotron3super120ba12b"
   ],
   "chain": [
     {
@@ -88,6 +88,18 @@
       "apiKeyEnv": "LLM7_API_KEY"
     },
     {
+      "id": "llm7-nemotron3nano30b",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "nemotron-3-nano:30b",
+      "apiKeyEnv": "LLM7_API_KEY"
+    },
+    {
+      "id": "ollama-nemotron3nano30b",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "nemotron-3-nano:30b",
+      "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
       "id": "kilo-dots3notepreview",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "dots-studio/dots-3-note-preview:free",
@@ -109,6 +121,18 @@
       "id": "openrouter-openrouterfree",
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "openrouter/free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-liquidlfm25",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-liquidlfm25",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "liquid/lfm-2.5-2.6b:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
@@ -136,46 +160,22 @@
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
-      "id": "ollama-nemotron3nano30b",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "nemotron-3-nano:30b",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
       "id": "kilo-kiloautofree",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "kilo-auto/free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "kilo-liquidlfm25",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "liquid/lfm-2.5-2.6b:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-liquidlfm25",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "liquid/lfm-2.5-2.6b:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
+      "id": "llm7-mistralnemoinstruct",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "mistral-Nemo-Instruct-2407",
+      "apiKeyEnv": "LLM7_API_KEY"
     },
     {
       "id": "kilo-nemotron3super120ba12b",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3-super-120b-a12b:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "nvidia-nemotron3super120ba12b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/nemotron-3-super-120b-a12b",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "llm7-mistralnemoinstruct",
-      "baseUrl": "https://api.llm7.io/v1",
-      "model": "mistral-Nemo-Instruct-2407",
-      "apiKeyEnv": "LLM7_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -197,7 +197,6 @@
     "nemotron-3-nano:30b",
     "nemotron-3-super",
     "nemotron-3-ultra-free",
-    "nvidia/nemotron-3-super-120b-a12b",
     "nvidia/nemotron-3-super-120b-a12b:free",
     "nvidia/nemotron-3-ultra-550b-a55b",
     "nvidia/nemotron-3-ultra-550b-a55b:free",

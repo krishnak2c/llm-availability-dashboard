@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04T04:17:32.241581+00:00",
+  "updated": "2026-10-04T11:46:25.624282+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -238,6 +238,20 @@
           "params_b": 7.0
         },
         {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
+        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -262,20 +276,6 @@
             "reasoning"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
         }
       ],
       "error": null
@@ -848,6 +848,13 @@
           "params_b": null
         },
         {
+          "id": "Voxtral-Mini-3B-2507",
+          "name": "Voxtral-Mini-3B-2507",
+          "context": null,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": 3.0
+        },
+        {
           "id": "anthropic/claude-haiku-4-5",
           "name": "anthropic/claude-haiku-4-5",
           "context": null,
@@ -871,6 +878,13 @@
         {
           "id": "anthropic/claude-opus-4-7",
           "name": "anthropic/claude-opus-4-7",
+          "context": null,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "anthropic/claude-opus-4-8",
+          "name": "anthropic/claude-opus-4-8",
           "context": null,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
@@ -918,6 +932,13 @@
           "params_b": null
         },
         {
+          "id": "glm-5.2",
+          "name": "glm-5.2",
+          "context": 976000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "gpt-6-sol",
           "name": "gpt-6-sol",
           "context": 1000000,
@@ -939,6 +960,20 @@
           "params_b": 20.0
         },
         {
+          "id": "kimi-k2.6",
+          "name": "kimi-k2.6",
+          "context": 262000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "kimi-k2.7-code",
+          "name": "kimi-k2.7-code",
+          "context": 256000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "minimax-m2.7",
           "name": "minimax-m2.7",
           "context": 180000,
@@ -951,6 +986,13 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
+        },
+        {
+          "id": "mistral-large-3:675b",
+          "name": "mistral-large-3:675b",
+          "context": 256000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": 675.0
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -1114,6 +1156,13 @@
           "params_b": null
         },
         {
+          "id": "longcat-2.5-preview-free",
+          "name": "longcat-2.5-preview-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "space-bunny-free",
           "name": "space-bunny-free",
           "context": null,
@@ -1128,11 +1177,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 20.0
         },
         {
           "id": "gemma4:31b",
@@ -1142,11 +1191,11 @@
           "params_b": 31.0
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
+          "params_b": null
         },
         {
           "id": "nemotron-3-ultra",
