@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06T12:44:28.602931+00:00",
+  "updated": "2026-10-06T19:58:16.479418+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -217,13 +217,6 @@
           "params_b": 20.0
         },
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -249,6 +242,13 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -841,27 +841,6 @@
           "params_b": null
         },
         {
-          "id": "gemini-3.6-flash-high",
-          "name": "gemini-3.6-flash-high",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "glm-5.2",
-          "name": "glm-5.2",
-          "context": 976000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "gpt-6-sol",
-          "name": "gpt-6-sol",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "gpt-6.1-sol",
           "name": "gpt-6.1-sol",
           "context": 1000000,
@@ -874,20 +853,6 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
-        },
-        {
-          "id": "kimi-k2.6",
-          "name": "kimi-k2.6",
-          "context": 262000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "kimi-k2.7-code",
-          "name": "kimi-k2.7-code",
-          "context": 256000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
         },
         {
           "id": "minimax-m2.7",
@@ -909,13 +874,6 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
-        },
-        {
-          "id": "mistral-large-3:675b",
-          "name": "mistral-large-3:675b",
-          "context": 256000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": 675.0
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -976,13 +934,6 @@
         {
           "id": "poolside/laguna-s-2.1:free",
           "name": "Poolside: Laguna S 2.1 (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "apodex/apodex-1.1-mini:free",
-          "name": "Apodex: Apodex 1.1 Mini (free)",
           "context": 262144,
           "limits": "free tier",
           "params_b": null
@@ -1100,11 +1051,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
+          "params_b": 20.0
         },
         {
           "id": "nemotron-3-super",
@@ -1114,18 +1065,18 @@
           "params_b": null
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
         },
         {
           "id": "nemotron-3-ultra",
@@ -1135,11 +1086,11 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
+          "params_b": 30.0
         }
       ],
       "error": null
@@ -1165,6 +1116,13 @@
         {
           "id": "tencent/hy3-free",
           "name": "Tencent: Hy3 (Free)",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "tencent/hy4-preview-free",
+          "name": "Tencent: Hy4 preview (Free)",
           "context": null,
           "limits": "free tier",
           "params_b": null
