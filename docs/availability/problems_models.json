@@ -1,37 +1,10 @@
 {
-  "updated": "2026-10-07T00:21:14.648616+00:00",
+  "updated": "2026-10-07T09:47:19.719782+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
-        {
-          "id": "dots-studio/dots-3-note-preview:free",
-          "name": "Dots Studio: Dots3-Note Preview (free)",
-          "context": 512000,
-          "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "liquid/lfm-2.5-2.6b:free",
-          "name": "LiquidAI: LFM2.5-2.6B (free)",
-          "context": 65536,
-          "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 2.6
-        },
         {
           "id": "nvidia/nemotron-3.5-lightning:free",
           "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
@@ -43,56 +16,6 @@
             "reasoning"
           ],
           "params_b": null
-        },
-        {
-          "id": "poolside/laguna-s-2.1:free",
-          "name": "Poolside: Laguna S 2.1 (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "nvidia/nemotron-3.5-content-safety:free",
-          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-          "context": 128000,
-          "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "vision",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
-          "context": 256000,
-          "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 30.0
-        },
-        {
-          "id": "google/gemma-4-26b-a4b-it:free",
-          "name": "Google: Gemma 4 26B A4B  (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 26.0
         },
         {
           "id": "google/gemma-4-31b-it:free",
@@ -107,19 +30,6 @@
             "reasoning"
           ],
           "params_b": 31.0
-        },
-        {
-          "id": "nvidia/nemotron-3-super-120b-a12b:free",
-          "name": "NVIDIA: Nemotron 3 Super (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
         }
       ],
       "error": null
@@ -136,39 +46,11 @@
           "params_b": 31.0
         },
         {
-          "id": "moonshotai/kimi-k3",
-          "name": "moonshotai/kimi-k3",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
-        },
-        {
-          "id": "nvidia/ising-calibration-1.5-31b",
-          "name": "nvidia/ising-calibration-1.5-31b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 31.0
-        },
-        {
           "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
           "name": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
           "context": null,
           "limits": "40 req/min",
           "params_b": 8.0
-        },
-        {
-          "id": "poolside/laguna-xs-2.1",
-          "name": "poolside/laguna-xs-2.1",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
-        },
-        {
-          "id": "z-ai/glm-5.3",
-          "name": "z-ai/glm-5.3",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
         },
         {
           "id": "z-ai/glm-5.3-flash",
@@ -185,43 +67,11 @@
       "url": "https://developers.cloudflare.com/workers-ai/",
       "models": [
         {
-          "id": "@cf/openai/gpt-oss-120b",
-          "name": "@cf/openai/gpt-oss-120b",
-          "context": 128000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": 120.0
-        },
-        {
           "id": "@cf/google/gemma-2b-it-lora",
           "name": "@cf/google/gemma-2b-it-lora",
           "context": 8192,
           "limits": "10k neurons/day",
           "params_b": 2.0
-        },
-        {
-          "id": "@cf/meta/llama-3.2-3b-instruct",
-          "name": "@cf/meta/llama-3.2-3b-instruct",
-          "context": 80000,
-          "limits": "10k neurons/day",
-          "params_b": 3.0
-        },
-        {
-          "id": "@cf/meta/llama-guard-3-8b",
-          "name": "@cf/meta/llama-guard-3-8b",
-          "context": 131072,
-          "limits": "10k neurons/day",
-          "params_b": 8.0
-        },
-        {
-          "id": "@cf/mistral/mistral-7b-instruct-v0.2-lora",
-          "name": "@cf/mistral/mistral-7b-instruct-v0.2-lora",
-          "context": 15000,
-          "limits": "10k neurons/day",
-          "params_b": 7.0
         },
         {
           "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
@@ -232,13 +82,6 @@
             "reasoning"
           ],
           "params_b": 32.0
-        },
-        {
-          "id": "@cf/meta/llama-3.1-8b-instruct-fp8",
-          "name": "@cf/meta/llama-3.1-8b-instruct-fp8",
-          "context": 32000,
-          "limits": "10k neurons/day",
-          "params_b": 8.0
         },
         {
           "id": "@cf/meta/llama-3.2-1b-instruct",
@@ -276,13 +119,6 @@
           "params_b": null
         },
         {
-          "id": "@cf/qwen/qwen2.5-coder-32b-instruct",
-          "name": "@cf/qwen/qwen2.5-coder-32b-instruct",
-          "context": 32768,
-          "limits": "10k neurons/day",
-          "params_b": 32.0
-        },
-        {
           "id": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
           "name": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
           "context": 128000,
@@ -301,13 +137,6 @@
           "params_b": 30.0
         },
         {
-          "id": "@cf/google/gemma-7b-it-lora",
-          "name": "@cf/google/gemma-7b-it-lora",
-          "context": 3500,
-          "limits": "10k neurons/day",
-          "params_b": 7.0
-        },
-        {
           "id": "@cf/qwen/qwen3.8-27b",
           "name": "@cf/qwen/qwen3.8-27b",
           "context": null,
@@ -324,16 +153,6 @@
             "reasoning"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "@cf/meta/llama-4-scout-17b-16e-instruct",
-          "name": "@cf/meta/llama-4-scout-17b-16e-instruct",
-          "context": 131000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling"
-          ],
-          "params_b": 17.0
         },
         {
           "id": "@cf/qwen/qwq-32b",
@@ -360,9 +179,9 @@
           "params_b": null
         },
         {
-          "id": "minimax-m2.7",
-          "name": "minimax-m2.7",
-          "context": 180000,
+          "id": "minimax-m3",
+          "name": "minimax-m3",
+          "context": 512000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         }
@@ -373,6 +192,20 @@
       "name": "Kilo Code",
       "url": "https://kilo.code",
       "models": [
+        {
+          "id": "kilo-auto/free",
+          "name": "Auto Free",
+          "context": 256000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "context": 1000000,
+          "limits": "free tier",
+          "params_b": 550.0
+        },
         {
           "id": "nvidia/nemotron-3.5-lightning:free",
           "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
@@ -386,13 +219,6 @@
           "context": 262144,
           "limits": "free tier",
           "params_b": null
-        },
-        {
-          "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
-          "context": 256000,
-          "limits": "free tier",
-          "params_b": 30.0
         }
       ],
       "error": null
