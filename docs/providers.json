@@ -13,18 +13,18 @@
     "openrouter-dots3notepreview",
     "kilo-northminicode",
     "openrouter-northminicode",
+    "zen-spacebunny",
     "kilo-openrouterfree",
     "openrouter-openrouterfree",
-    "zen-spacebunny",
     "kilo-liquidlfm25",
     "openrouter-liquidlfm25",
     "nvidia-gptoss",
     "ollama-nemotron3nano30b",
     "ollama-gptoss20b",
-    "zai-glm45flash",
+    "ollama-gptoss120b",
     "ollama-gemma431b",
-    "nvidia-diffusiongemma26ba4bit",
-    "llm7-minimaxm27"
+    "zai-glm45flash",
+    "nvidia-diffusiongemma26ba4bit"
   ],
   "chain": [
     {
@@ -106,6 +106,12 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
+      "id": "zen-spacebunny",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "model": "space-bunny-free",
+      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
+    },
+    {
       "id": "kilo-openrouterfree",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "openrouter/free",
@@ -116,12 +122,6 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "openrouter/free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
-      "id": "zen-spacebunny",
-      "baseUrl": "https://opencode.ai/zen/v1",
-      "model": "space-bunny-free",
-      "apiKeyEnv": "OPENCODE_ZEN_API_KEY"
     },
     {
       "id": "kilo-liquidlfm25",
@@ -154,10 +154,10 @@
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
-      "id": "zai-glm45flash",
-      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
-      "model": "glm-4.5-flash",
-      "apiKeyEnv": "ZAI_API_KEY"
+      "id": "ollama-gptoss120b",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "gpt-oss:120b",
+      "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
       "id": "ollama-gemma431b",
@@ -166,16 +166,16 @@
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
+      "id": "zai-glm45flash",
+      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+      "model": "glm-4.5-flash",
+      "apiKeyEnv": "ZAI_API_KEY"
+    },
+    {
       "id": "nvidia-diffusiongemma26ba4bit",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "google/diffusiongemma-26b-a4b-it",
       "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "llm7-minimaxm27",
-      "baseUrl": "https://api.llm7.io/v1",
-      "model": "minimax-m2.7",
-      "apiKeyEnv": "LLM7_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -189,6 +189,7 @@
     "gemma4:31b",
     "glm-4.5-flash",
     "google/diffusiongemma-26b-a4b-it",
+    "gpt-oss:120b",
     "gpt-oss:20b",
     "hy3",
     "hy3-free",
@@ -196,7 +197,6 @@
     "laguna-s-2.1-free",
     "liquid/lfm-2.5-2.6b:free",
     "mimo-v2.5-free",
-    "minimax-m2.7",
     "minimaxai/minimax-m3",
     "nemotron-3-nano:30b",
     "nemotron-3-ultra",

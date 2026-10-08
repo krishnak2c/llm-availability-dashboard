@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08T00:42:10.615040+00:00",
+  "updated": "2026-10-08T09:57:59.994459+00:00",
   "providers": {
     "nvidia": {
       "name": "NVIDIA NIM",
@@ -11,6 +11,20 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 31.0
+        },
+        {
+          "id": "meta/muse-glimmer-30b",
+          "name": "meta/muse-glimmer-30b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 30.0
+        },
+        {
+          "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
+          "name": "nvidia/nemotron-3.5-lightning-30b-a3b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 30.0
         }
       ],
       "error": null
@@ -84,6 +98,13 @@
           "context": 512000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": 1000000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": 30.0
         }
       ],
       "error": null
@@ -105,13 +126,6 @@
           "context": 1000000,
           "limits": "free tier",
           "params_b": 550.0
-        },
-        {
-          "id": "poolside/laguna-xs-2.1:free",
-          "name": "Poolside: Laguna XS 2.1 (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
         }
       ],
       "error": null
