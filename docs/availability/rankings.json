@@ -9,8 +9,8 @@
     },
     "artificial_analysis_index_version": 4.3,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 14,
-    "ranked_count": 14,
+    "source_count": 12,
+    "ranked_count": 12,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
@@ -125,28 +125,6 @@
       "rank": 5
     },
     {
-      "provider": "NVIDIA NIM",
-      "provider_id": "nvidia",
-      "model_id": "meta/muse-glimmer-30b",
-      "model_name": "meta/muse-glimmer-30b",
-      "aa_slug": "muse-glimmer",
-      "aa_name": "Muse Glimmer (High)",
-      "aa_match": "substring",
-      "agentic": 8.5,
-      "coding": 49.0,
-      "intelligence": 17.5,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 38.62,
-      "coding_norm": 94.65,
-      "intelligence_norm": 61.15,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 60.36,
-      "data_coverage": 80.0,
-      "rank": 6
-    },
-    {
       "provider": "Ollama Cloud",
       "provider_id": "ollama",
       "model_id": "gemma4:31b",
@@ -166,7 +144,7 @@
       "swebench_norm": null,
       "hermes_score": 39.35,
       "data_coverage": 80.0,
-      "rank": 7
+      "rank": 6
     },
     {
       "provider": "NVIDIA NIM",
@@ -188,7 +166,7 @@
       "swebench_norm": null,
       "hermes_score": 24.22,
       "data_coverage": 80.0,
-      "rank": 8
+      "rank": 7
     },
     {
       "provider": "Groq",
@@ -210,29 +188,7 @@
       "swebench_norm": null,
       "hermes_score": 20.26,
       "data_coverage": 80.0,
-      "rank": 9
-    },
-    {
-      "provider": "NVIDIA NIM",
-      "provider_id": "nvidia",
-      "model_id": "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "model_name": "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "aa_slug": "nemotron-3-5-lightning",
-      "aa_name": "Nemotron 3.5 Lightning",
-      "aa_match": "substring",
-      "agentic": 3.5,
-      "coding": 26.8,
-      "intelligence": 12.9,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 12.17,
-      "coding_norm": 20.4,
-      "intelligence_norm": 28.06,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 17.72,
-      "data_coverage": 80.0,
-      "rank": 10
+      "rank": 8
     },
     {
       "provider": "Groq",
@@ -254,7 +210,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 80.0,
-      "rank": 11
+      "rank": 9
     },
     {
       "provider": "NVIDIA NIM",
@@ -276,7 +232,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 80.0,
-      "rank": 12
+      "rank": 10
     },
     {
       "provider": "Mistral",
@@ -298,7 +254,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 13
+      "rank": 11
     },
     {
       "provider": "Ollama Cloud",
@@ -320,7 +276,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 14
+      "rank": 12
     }
   ]
 }

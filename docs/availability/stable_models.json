@@ -1,22 +1,10 @@
 {
-  "updated": "2026-10-08T09:57:59.994459+00:00",
+  "updated": "2026-10-08T18:24:40.079839+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
-        {
-          "id": "inclusionai/ling-3.0-flash-sante:free",
-          "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "reasoning"
-          ],
-          "params_b": null
-        },
         {
           "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
           "name": "NVIDIA: Nemotron 3 Ultra (free)",
@@ -112,44 +100,23 @@
       ],
       "error": null
     },
-    "kilo": {
-      "name": "Kilo Code",
-      "url": "https://kilo.code",
-      "models": [
-        {
-          "id": "inclusionai/ling-3.0-flash-sante:free",
-          "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "stepfun/step-3.7-flash:free",
-          "name": "StepFun: Step 3.7 Flash (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
     "ollama": {
       "name": "Ollama Cloud",
       "url": "https://ollama.com",
       "models": [
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
         {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
         }
       ],
       "error": null
