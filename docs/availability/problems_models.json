@@ -1,39 +1,6 @@
 {
-  "updated": "2026-10-07T18:25:44.262436+00:00",
+  "updated": "2026-10-08T00:42:10.615040+00:00",
   "providers": {
-    "openrouter": {
-      "name": "OpenRouter",
-      "url": "https://openrouter.ai",
-      "models": [
-        {
-          "id": "nvidia/nemotron-3.5-lightning:free",
-          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
-          "context": 1000000,
-          "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "google/gemma-4-31b-it:free",
-          "name": "Google: Gemma 4 31B (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 31.0
-        }
-      ],
-      "error": null
-    },
     "nvidia": {
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
@@ -44,20 +11,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 31.0
-        },
-        {
-          "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
-          "name": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 8.0
-        },
-        {
-          "id": "z-ai/glm-5.3-flash",
-          "name": "z-ai/glm-5.3-flash",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
         }
       ],
       "error": null
@@ -84,13 +37,6 @@
           "params_b": 32.0
         },
         {
-          "id": "@cf/meta/llama-3.2-1b-instruct",
-          "name": "@cf/meta/llama-3.2-1b-instruct",
-          "context": 60000,
-          "limits": "10k neurons/day",
-          "params_b": 1.0
-        },
-        {
           "id": "@cf/zai-org/glm-4.7-flash",
           "name": "@cf/zai-org/glm-4.7-flash",
           "context": 131072,
@@ -107,52 +53,6 @@
           "context": 8192,
           "limits": "10k neurons/day",
           "params_b": 7.0
-        },
-        {
-          "id": "@cf/ibm-granite/granite-4.0-h-micro",
-          "name": "@cf/ibm-granite/granite-4.0-h-micro",
-          "context": 131000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
-          "name": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
-          "context": 128000,
-          "limits": "10k neurons/day",
-          "params_b": 27.0
-        },
-        {
-          "id": "@cf/qwen/qwen3-30b-a3b-fp8",
-          "name": "@cf/qwen/qwen3-30b-a3b-fp8",
-          "context": 32768,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": 30.0
-        },
-        {
-          "id": "@cf/qwen/qwen3.8-27b",
-          "name": "@cf/qwen/qwen3.8-27b",
-          "context": null,
-          "limits": "10k neurons/day",
-          "params_b": 27.0
-        },
-        {
-          "id": "@cf/openai/gpt-oss-20b",
-          "name": "@cf/openai/gpt-oss-20b",
-          "context": 128000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": 20.0
         },
         {
           "id": "@cf/qwen/qwq-32b",
@@ -205,13 +105,6 @@
           "context": 1000000,
           "limits": "free tier",
           "params_b": 550.0
-        },
-        {
-          "id": "nvidia/nemotron-3.5-lightning:free",
-          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
         },
         {
           "id": "poolside/laguna-xs-2.1:free",
