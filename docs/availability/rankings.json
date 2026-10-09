@@ -9,8 +9,8 @@
     },
     "artificial_analysis_index_version": 4.3,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 9,
-    "ranked_count": 9,
+    "source_count": 14,
+    "ranked_count": 14,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
@@ -125,6 +125,28 @@
       "rank": 5
     },
     {
+      "provider": "Cloudflare AI",
+      "provider_id": "cloudflare",
+      "model_id": "@cf/qwen/qwq-32b",
+      "model_name": "@cf/qwen/qwq-32b",
+      "aa_slug": "qwq-32b",
+      "aa_name": "QwQ 32B",
+      "aa_match": "substring",
+      "agentic": null,
+      "coding": null,
+      "intelligence": 9.5,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": 3.6,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 3.6,
+      "data_coverage": 15.0,
+      "rank": 6
+    },
+    {
       "provider": "Groq",
       "provider_id": "groq",
       "model_id": "openai/gpt-oss-20b",
@@ -144,7 +166,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 80.0,
-      "rank": 6
+      "rank": 7
     },
     {
       "provider": "NVIDIA NIM",
@@ -166,7 +188,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 80.0,
-      "rank": 7
+      "rank": 8
     },
     {
       "provider": "Mistral",
@@ -188,7 +210,95 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 8
+      "rank": 9
+    },
+    {
+      "provider": "Cloudflare AI",
+      "provider_id": "cloudflare",
+      "model_id": "@cf/google/gemma-2b-it-lora",
+      "model_name": "@cf/google/gemma-2b-it-lora",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 10
+    },
+    {
+      "provider": "Cloudflare AI",
+      "provider_id": "cloudflare",
+      "model_id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+      "model_name": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 11
+    },
+    {
+      "provider": "Cloudflare AI",
+      "provider_id": "cloudflare",
+      "model_id": "@cf/zai-org/glm-4.7-flash",
+      "model_name": "@cf/zai-org/glm-4.7-flash",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 12
+    },
+    {
+      "provider": "Cloudflare AI",
+      "provider_id": "cloudflare",
+      "model_id": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
+      "model_name": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 13
     },
     {
       "provider": "Ollama Cloud",
@@ -210,7 +320,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 9
+      "rank": 14
     }
   ]
 }
