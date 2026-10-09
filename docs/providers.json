@@ -14,6 +14,7 @@
     "nvidia-gptoss",
     "ollama-gemma431b",
     "ollama-nemotron3nano30b",
+    "llm7-nemotron3nano30b",
     "ollama-gptoss20b",
     "ollama-gptoss120b",
     "zai-glm45flash",
@@ -23,8 +24,7 @@
     "kilo-dots3notepreview",
     "openrouter-liquidlfm25",
     "llm7-mistralnemoinstruct",
-    "openrouter-nemotron35lightning",
-    "kilo-nemotron35lightning"
+    "openrouter-nemotron35lightning"
   ],
   "chain": [
     {
@@ -112,6 +112,12 @@
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
+      "id": "llm7-nemotron3nano30b",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "nemotron-3-nano:30b",
+      "apiKeyEnv": "LLM7_API_KEY"
+    },
+    {
       "id": "ollama-gptoss20b",
       "baseUrl": "https://ollama.com/v1",
       "model": "gpt-oss:20b",
@@ -170,12 +176,6 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "nvidia/nemotron-3.5-lightning:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
-      "id": "kilo-nemotron35lightning",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "nvidia/nemotron-3.5-lightning:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T00:57:42.989752+00:00",
+  "updated": "2026-10-09T10:01:40.173448+00:00",
   "providers": {
     "nvidia": {
       "name": "NVIDIA NIM",
@@ -22,69 +22,10 @@
       ],
       "error": null
     },
-    "cloudflare": {
-      "name": "Cloudflare AI",
-      "url": "https://developers.cloudflare.com/workers-ai/",
-      "models": [
-        {
-          "id": "@cf/google/gemma-2b-it-lora",
-          "name": "@cf/google/gemma-2b-it-lora",
-          "context": 8192,
-          "limits": "10k neurons/day",
-          "params_b": 2.0
-        },
-        {
-          "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-          "name": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-          "context": 80000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "reasoning"
-          ],
-          "params_b": 32.0
-        },
-        {
-          "id": "@cf/zai-org/glm-4.7-flash",
-          "name": "@cf/zai-org/glm-4.7-flash",
-          "context": 131072,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
-          "name": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
-          "context": 8192,
-          "limits": "10k neurons/day",
-          "params_b": 7.0
-        },
-        {
-          "id": "@cf/qwen/qwq-32b",
-          "name": "@cf/qwen/qwq-32b",
-          "context": 24000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "reasoning"
-          ],
-          "params_b": 32.0
-        }
-      ],
-      "error": null
-    },
     "llm7": {
       "name": "LLM7",
       "url": "https://llm7.io",
       "models": [
-        {
-          "id": "GLM-5.3-Flash",
-          "name": "GLM-5.3-Flash",
-          "context": 400000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
         {
           "id": "minimax-m3",
           "name": "minimax-m3",
