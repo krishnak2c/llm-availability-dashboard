@@ -19,12 +19,12 @@
     "ollama-gptoss120b",
     "zai-glm45flash",
     "nvidia-diffusiongemma26ba4bit",
-    "llm7-minimaxm27",
     "openrouter-dots3notepreview",
     "kilo-dots3notepreview",
     "openrouter-liquidlfm25",
     "llm7-mistralnemoinstruct",
-    "openrouter-nemotron35lightning"
+    "openrouter-nemotron35lightning",
+    "kilo-nemotron35lightning"
   ],
   "chain": [
     {
@@ -142,12 +142,6 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "llm7-minimaxm27",
-      "baseUrl": "https://api.llm7.io/v1",
-      "model": "minimax-m2.7",
-      "apiKeyEnv": "LLM7_API_KEY"
-    },
-    {
       "id": "openrouter-dots3notepreview",
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "dots-studio/dots-3-note-preview:free",
@@ -176,6 +170,12 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "nvidia/nemotron-3.5-lightning:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-nemotron35lightning",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -196,7 +196,6 @@
     "laguna-s-2.1-free",
     "liquid/lfm-2.5-2.6b:free",
     "mimo-v2.5-free",
-    "minimax-m2.7",
     "minimaxai/minimax-m3",
     "mistral-Nemo-Instruct-2407",
     "nemotron-3-nano:30b",
