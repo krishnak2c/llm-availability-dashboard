@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08T18:24:40.079839+00:00",
+  "updated": "2026-10-09T00:57:42.989752+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -216,11 +216,17 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
           "limits": "varies per model",
-          "params_b": 7.0
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -234,27 +240,6 @@
             "reasoning"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "canopylabs/orpheus-v1-english",
-          "name": "canopylabs/orpheus-v1-english",
-          "context": 4000,
-          "limits": "varies per model",
-          "mode": "audio_speech",
-          "params_b": null
-        },
-        {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
         },
         {
           "id": "canopylabs/orpheus-arabic-saudi",
@@ -277,6 +262,21 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "canopylabs/orpheus-v1-english",
+          "name": "canopylabs/orpheus-v1-english",
+          "context": 4000,
+          "limits": "varies per model",
+          "mode": "audio_speech",
+          "params_b": null
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -440,6 +440,13 @@
           "params_b": 6.7
         },
         {
+          "id": "deepseek-ai/deepseek-v4.1-flash",
+          "name": "deepseek-ai/deepseek-v4.1-flash",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
           "id": "google/codegemma-1.1-7b",
           "name": "google/codegemma-1.1-7b",
           "context": null,
@@ -487,13 +494,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 4.0
-        },
-        {
-          "id": "google/gemma-4-31b-it",
-          "name": "google/gemma-4-31b-it",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 31.0
         },
         {
           "id": "google/recurrentgemma-2b",
@@ -1648,6 +1648,14 @@
           "params_b": 17.0
         },
         {
+          "id": "@cf/cloudflare/clef-flash",
+          "name": "@cf/cloudflare/clef-flash",
+          "context": 65536,
+          "limits": "10k neurons/day",
+          "mode": "evaluation",
+          "params_b": null
+        },
+        {
           "id": "@cf/qwen/qwq-32b",
           "name": "@cf/qwen/qwq-32b",
           "context": 24000,
@@ -1668,6 +1676,13 @@
           "id": "DeepSeek-V4-Flash-0731",
           "name": "DeepSeek-V4-Flash-0731",
           "context": 400000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "DeepSeek-V4.1-Flash",
+          "name": "DeepSeek-V4.1-Flash",
+          "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -1784,13 +1799,6 @@
           "params_b": null
         },
         {
-          "id": "gemini-3.1-flash-lite",
-          "name": "gemini-3.1-flash-lite",
-          "context": 256000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "gemini-3.8-flash-high",
           "name": "gemini-3.8-flash-high",
           "context": 1000000,
@@ -1826,6 +1834,13 @@
           "params_b": null
         },
         {
+          "id": "gpt-5.6-luna",
+          "name": "gpt-5.6-luna",
+          "context": null,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "gpt-5.6-sol",
           "name": "gpt-5.6-sol",
           "context": 1000000,
@@ -1842,6 +1857,13 @@
         {
           "id": "gpt-6-astra",
           "name": "gpt-6-astra",
+          "context": 1000000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "gpt-6.1-sol",
+          "name": "gpt-6.1-sol",
           "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
@@ -1864,6 +1886,13 @@
           "id": "grok-4.6",
           "name": "grok-4.6",
           "context": 500000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "jev-latest",
+          "name": "jev-latest",
+          "context": 64000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -2155,15 +2184,15 @@
           "params_b": null
         },
         {
-          "id": "muse-spark-1.2-contributor-free",
-          "name": "muse-spark-1.2-contributor-free",
+          "id": "mimo-v2.6-flash-free",
+          "name": "mimo-v2.6-flash-free",
           "context": null,
           "limits": "free tier",
           "params_b": null
         },
         {
-          "id": "muse-spark-1.3-contributor-free",
-          "name": "muse-spark-1.3-contributor-free",
+          "id": "muse-spark-1.2-contributor-free",
+          "name": "muse-spark-1.2-contributor-free",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -2197,25 +2226,18 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
+          "params_b": 30.0
         },
         {
           "id": "gpt-oss:120b",
@@ -2232,6 +2254,13 @@
           "params_b": 31.0
         },
         {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
+        },
+        {
           "id": "minimax-m3",
           "name": "minimax-m3",
           "context": null,
@@ -2239,8 +2268,8 @@
           "params_b": null
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -2253,20 +2282,6 @@
       "url": "https://orcarouter.ai",
       "models": [
         {
-          "id": "orcarouter/free",
-          "name": "orcarouter/free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "deepseek/deepseek-v4-flash-free",
-          "name": "DeepSeek: DeepSeek V4 Flash (Free)",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "orca/orcaverify-text1.0-free",
           "name": "Orca: OrcaVerify Text 1.0 (Free)",
           "context": null,
@@ -2274,15 +2289,8 @@
           "params_b": null
         },
         {
-          "id": "tencent/hy3-free",
-          "name": "Tencent: Hy3 (Free)",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "z-ai/glm-5.3-flash-free",
-          "name": "Z.ai: GLM 5.3 Flash (Free)",
+          "id": "tencent/hy4-preview-free",
+          "name": "Tencent: Hy4 preview (Free)",
           "context": null,
           "limits": "free tier",
           "params_b": null

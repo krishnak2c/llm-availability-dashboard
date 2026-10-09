@@ -9,8 +9,8 @@
     },
     "artificial_analysis_index_version": 4.3,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 12,
-    "ranked_count": 12,
+    "source_count": 9,
+    "ranked_count": 9,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
@@ -28,11 +28,11 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 100.0,
-      "coding_norm": 95.65,
+      "coding_norm": 100.0,
       "intelligence_norm": 100.0,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 98.64,
+      "hermes_score": 100.0,
       "data_coverage": 80.0,
       "rank": 1
     },
@@ -50,79 +50,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 100.0,
-      "coding_norm": 95.65,
+      "coding_norm": 100.0,
       "intelligence_norm": 100.0,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 98.64,
+      "hermes_score": 100.0,
       "data_coverage": 80.0,
       "rank": 2
-    },
-    {
-      "provider": "OpenRouter",
-      "provider_id": "openrouter",
-      "model_id": "inclusionai/ling-3.0-flash-sante:free",
-      "model_name": "inclusionAI: Ling 3.0 Flash Sante (free)",
-      "aa_slug": "ling-3-0-flash",
-      "aa_name": "Ling 3.0 Flash",
-      "aa_match": "substring",
-      "agentic": 19.3,
-      "coding": 50.6,
-      "intelligence": 20.1,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 95.77,
-      "coding_norm": 100.0,
-      "intelligence_norm": 79.86,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 94.11,
-      "data_coverage": 80.0,
-      "rank": 3
-    },
-    {
-      "provider": "Kilo Code",
-      "provider_id": "kilo",
-      "model_id": "inclusionai/ling-3.0-flash-sante:free",
-      "model_name": "inclusionAI: Ling 3.0 Flash Sante (free)",
-      "aa_slug": "ling-3-0-flash",
-      "aa_name": "Ling 3.0 Flash",
-      "aa_match": "substring",
-      "agentic": 19.3,
-      "coding": 50.6,
-      "intelligence": 20.1,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 95.77,
-      "coding_norm": 100.0,
-      "intelligence_norm": 79.86,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 94.11,
-      "data_coverage": 80.0,
-      "rank": 4
-    },
-    {
-      "provider": "Kilo Code",
-      "provider_id": "kilo",
-      "model_id": "stepfun/step-3.7-flash:free",
-      "model_name": "StepFun: Step 3.7 Flash (free)",
-      "aa_slug": "step-3-7-flash",
-      "aa_name": "Step 3.7 Flash",
-      "aa_match": "exact",
-      "agentic": null,
-      "coding": 39.6,
-      "intelligence": 19.5,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": 63.21,
-      "intelligence_norm": 75.54,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 67.83,
-      "data_coverage": 40.0,
-      "rank": 5
     },
     {
       "provider": "Ollama Cloud",
@@ -138,13 +72,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 15.87,
-      "coding_norm": 75.92,
+      "coding_norm": 79.37,
       "intelligence_norm": 41.01,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 39.35,
+      "hermes_score": 40.43,
       "data_coverage": 80.0,
-      "rank": 6
+      "rank": 3
     },
     {
       "provider": "NVIDIA NIM",
@@ -160,13 +94,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 2.65,
-      "coding_norm": 56.86,
+      "coding_norm": 59.44,
       "intelligence_norm": 27.34,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 24.22,
+      "hermes_score": 25.02,
       "data_coverage": 80.0,
-      "rank": 7
+      "rank": 4
     },
     {
       "provider": "Groq",
@@ -182,13 +116,13 @@
       "arena": null,
       "swebench": null,
       "agentic_norm": 13.23,
-      "coding_norm": 32.44,
+      "coding_norm": 33.92,
       "intelligence_norm": 18.71,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 20.26,
+      "hermes_score": 20.72,
       "data_coverage": 80.0,
-      "rank": 8
+      "rank": 5
     },
     {
       "provider": "Groq",
@@ -210,7 +144,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 80.0,
-      "rank": 9
+      "rank": 6
     },
     {
       "provider": "NVIDIA NIM",
@@ -232,7 +166,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 80.0,
-      "rank": 10
+      "rank": 7
     },
     {
       "provider": "Mistral",
@@ -254,7 +188,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 11
+      "rank": 8
     },
     {
       "provider": "Ollama Cloud",
@@ -276,7 +210,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 12
+      "rank": 9
     }
   ]
 }
