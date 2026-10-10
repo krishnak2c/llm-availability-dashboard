@@ -1,10 +1,17 @@
 {
-  "updated": "2026-10-10T04:18:15.621360+00:00",
+  "updated": "2026-10-10T11:54:00.957331+00:00",
   "providers": {
     "nvidia": {
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
+        {
+          "id": "meta/llama-3.2-90b-vision-instruct",
+          "name": "meta/llama-3.2-90b-vision-instruct",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 90.0
+        },
         {
           "id": "meta/muse-glimmer-30b",
           "name": "meta/muse-glimmer-30b",
