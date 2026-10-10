@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T16:57:27.774000+00:00",
+  "updated": "2026-10-10T21:08:51.974523+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -97,19 +97,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 20.0
-        },
-        {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
           "context": 131072,
@@ -124,11 +111,17 @@
           "params_b": 27.0
         },
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
           "limits": "varies per model",
-          "params_b": 7.0
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 20.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -142,6 +135,13 @@
             "reasoning"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -214,13 +214,6 @@
         {
           "id": "nvidia/llama-3.1-nemoguard-8b-content-safety",
           "name": "nvidia/llama-3.1-nemoguard-8b-content-safety",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 8.0
-        },
-        {
-          "id": "nvidia/llama-3.1-nemoguard-8b-topic-control",
-          "name": "nvidia/llama-3.1-nemoguard-8b-topic-control",
           "context": null,
           "limits": "40 req/min",
           "params_b": 8.0
@@ -726,6 +719,34 @@
           "params_b": null
         },
         {
+          "id": "anthropic/claude-opus-4-6",
+          "name": "anthropic/claude-opus-4-6",
+          "context": null,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "anthropic/claude-opus-4-7",
+          "name": "anthropic/claude-opus-4-7",
+          "context": null,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "anthropic/claude-sonnet-4-6",
+          "name": "anthropic/claude-sonnet-4-6",
+          "context": null,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "anthropic/claude-sonnet-5",
+          "name": "anthropic/claude-sonnet-5",
+          "context": null,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "claude-opus-5-5",
           "name": "claude-opus-5-5",
           "context": 1000000,
@@ -873,13 +894,6 @@
           "params_b": null
         },
         {
-          "id": "thinkingmachines/inkling-small:free",
-          "name": "Thinking Machines: Inkling Small (free)",
-          "context": 1048576,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "poolside/laguna-xs-2.1:free",
           "name": "Poolside: Laguna XS 2.1 (free)",
           "context": 262144,
@@ -964,6 +978,27 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
@@ -978,32 +1013,11 @@
           "params_b": 120.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
         }
       ],
       "error": null
@@ -1011,15 +1025,7 @@
     "orca": {
       "name": "Orca Router",
       "url": "https://orcarouter.ai",
-      "models": [
-        {
-          "id": "orca/orcaverify-text1.0-free",
-          "name": "Orca: OrcaVerify Text 1.0 (Free)",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        }
-      ],
+      "models": [],
       "error": null
     }
   }

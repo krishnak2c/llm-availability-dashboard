@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T16:57:27.774000+00:00",
+  "updated": "2026-10-10T21:08:51.974523+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -95,75 +95,23 @@
       ],
       "error": null
     },
-    "cloudflare": {
-      "name": "Cloudflare AI",
-      "url": "https://developers.cloudflare.com/workers-ai/",
-      "models": [
-        {
-          "id": "@cf/google/gemma-2b-it-lora",
-          "name": "@cf/google/gemma-2b-it-lora",
-          "context": 8192,
-          "limits": "10k neurons/day",
-          "params_b": 2.0
-        },
-        {
-          "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-          "name": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-          "context": 80000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "reasoning"
-          ],
-          "params_b": 32.0
-        },
-        {
-          "id": "@cf/zai-org/glm-4.7-flash",
-          "name": "@cf/zai-org/glm-4.7-flash",
-          "context": 131072,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
-          "name": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
-          "context": 8192,
-          "limits": "10k neurons/day",
-          "params_b": 7.0
-        },
-        {
-          "id": "@cf/qwen/qwq-32b",
-          "name": "@cf/qwen/qwq-32b",
-          "context": 24000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "reasoning"
-          ],
-          "params_b": 32.0
-        }
-      ],
-      "error": null
-    },
     "ollama": {
       "name": "Ollama Cloud",
       "url": "https://ollama.com",
       "models": [
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
         {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
         }
       ],
       "error": null
