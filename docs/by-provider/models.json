@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T22:26:05.749631+00:00",
+  "updated": "2026-10-10T04:18:15.621360+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -10,11 +10,6 @@
           "name": "inclusionAI: Ling 3.1 Flash",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "reasoning"
-          ],
           "params_b": null
         },
         {
@@ -22,12 +17,6 @@
           "name": "Apodex: Apodex 1.1 Mini (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
           "params_b": null
         },
         {
@@ -35,13 +24,6 @@
           "name": "Dots Studio: Dots3-Note Preview (free)",
           "context": 512000,
           "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
           "params_b": null
         },
         {
@@ -49,12 +31,6 @@
           "name": "LiquidAI: LFM2.5-2.6B (free)",
           "context": 65536,
           "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
           "params_b": 2.6
         },
         {
@@ -62,11 +38,6 @@
           "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
           "context": 1000000,
           "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "reasoning"
-          ],
           "params_b": null
         },
         {
@@ -74,11 +45,6 @@
           "name": "Poolside: Laguna S 2.1 (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "reasoning"
-          ],
           "params_b": null
         },
         {
@@ -86,11 +52,6 @@
           "name": "Poolside: Laguna XS 2.1 (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "reasoning"
-          ],
           "params_b": null
         },
         {
@@ -98,11 +59,6 @@
           "name": "Cohere: North Mini Code (free)",
           "context": 256000,
           "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "reasoning"
-          ],
           "params_b": null
         },
         {
@@ -110,10 +66,6 @@
           "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
           "context": 128000,
           "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "vision",
-            "reasoning"
-          ],
           "params_b": null
         },
         {
@@ -121,11 +73,6 @@
           "name": "NVIDIA: Nemotron 3 Ultra (free)",
           "context": 1000000,
           "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "reasoning"
-          ],
           "params_b": 550.0
         },
         {
@@ -133,12 +80,6 @@
           "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
           "context": 256000,
           "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "vision",
-            "reasoning"
-          ],
           "params_b": 30.0
         },
         {
@@ -160,12 +101,6 @@
           "name": "NVIDIA: Nemotron 3 Super (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
           "params_b": 120.0
         },
         {
@@ -183,20 +118,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
-        },
-        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -208,21 +129,6 @@
             "reasoning"
           ],
           "params_b": 120.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "canopylabs/orpheus-v1-english",
-          "name": "canopylabs/orpheus-v1-english",
-          "context": 4000,
-          "limits": "varies per model",
-          "mode": "audio_speech",
-          "params_b": null
         },
         {
           "id": "canopylabs/orpheus-arabic-saudi",
@@ -244,6 +150,35 @@
             "reasoning"
           ],
           "params_b": 20.0
+        },
+        {
+          "id": "canopylabs/orpheus-v1-english",
+          "name": "canopylabs/orpheus-v1-english",
+          "context": 4000,
+          "limits": "varies per model",
+          "mode": "audio_speech",
+          "params_b": null
+        },
+        {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -1803,20 +1738,6 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
@@ -1824,11 +1745,11 @@
           "params_b": 120.0
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
+          "params_b": 30.0
         },
         {
           "id": "nemotron-3-super",
@@ -1843,6 +1764,20 @@
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
         }
       ],
       "error": null
