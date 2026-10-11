@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11T03:57:34.870858+00:00",
+  "updated": "2026-10-11T12:06:21.337989+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -111,13 +111,6 @@
           "params_b": 27.0
         },
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -142,6 +135,13 @@
             "reasoning"
           ],
           "params_b": 20.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -162,13 +162,6 @@
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
-        {
-          "id": "deepseek-ai/deepseek-v4.1-flash",
-          "name": "deepseek-ai/deepseek-v4.1-flash",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
-        },
         {
           "id": "google/diffusiongemma-26b-a4b-it",
           "name": "google/diffusiongemma-26b-a4b-it",
@@ -210,13 +203,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 31.0
-        },
-        {
-          "id": "nvidia/llama-3.1-nemoguard-8b-content-safety",
-          "name": "nvidia/llama-3.1-nemoguard-8b-content-safety",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 8.0
         },
         {
           "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
@@ -705,13 +691,6 @@
           "params_b": null
         },
         {
-          "id": "DeepSeek-V4.1-Flash",
-          "name": "DeepSeek-V4.1-Flash",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "GLM-5.3-Flash",
           "name": "GLM-5.3-Flash",
           "context": 400000,
@@ -719,36 +698,15 @@
           "params_b": null
         },
         {
-          "id": "anthropic/claude-opus-4-6",
-          "name": "anthropic/claude-opus-4-6",
-          "context": null,
+          "id": "anthropic/claude-sonnet-5-5",
+          "name": "anthropic/claude-sonnet-5-5",
+          "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
         {
-          "id": "anthropic/claude-opus-4-7",
-          "name": "anthropic/claude-opus-4-7",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "anthropic/claude-sonnet-4-6",
-          "name": "anthropic/claude-sonnet-4-6",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "anthropic/claude-sonnet-5",
-          "name": "anthropic/claude-sonnet-5",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "claude-opus-5-5",
-          "name": "claude-opus-5-5",
+          "id": "claude-haiku-5-5",
+          "name": "claude-haiku-5-5",
           "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
@@ -768,20 +726,6 @@
           "params_b": null
         },
         {
-          "id": "gemini-3.6-flash-high",
-          "name": "gemini-3.6-flash-high",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "gemini-3.7-flash",
-          "name": "gemini-3.7-flash",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": 262000,
@@ -789,25 +733,11 @@
           "params_b": 31.0
         },
         {
-          "id": "gpt-5.6-luna",
-          "name": "gpt-5.6-luna",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
-        },
-        {
-          "id": "jev-latest",
-          "name": "jev-latest",
-          "context": 64000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
         },
         {
           "id": "minimax-m3",
@@ -950,13 +880,6 @@
           "params_b": null
         },
         {
-          "id": "jev-1.13-free",
-          "name": "jev-1.13-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "step-5-preview-free",
           "name": "step-5-preview-free",
           "context": null,
@@ -985,13 +908,6 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
@@ -999,11 +915,11 @@
           "params_b": 30.0
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
+          "params_b": 20.0
         },
         {
           "id": "gpt-oss:120b",
@@ -1018,6 +934,13 @@
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
         }
       ],
       "error": null
