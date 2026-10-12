@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12T10:12:34.924067+00:00",
+  "updated": "2026-10-12T20:53:28.079817+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -104,13 +104,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
           "context": 131072,
@@ -124,17 +117,11 @@
           "params_b": 20.0
         },
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
+          "params_b": 7.0
         },
         {
           "id": "qwen/qwen3.8-27b",
@@ -149,6 +136,19 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
         }
       ],
       "error": null
@@ -592,8 +592,9 @@
         {
           "id": "@cf/cloudflare/clef-omni",
           "name": "@cf/cloudflare/clef-omni",
-          "context": null,
+          "context": 64000,
           "limits": "10k neurons/day",
+          "mode": "evaluation",
           "params_b": null
         },
         {
@@ -874,30 +875,9 @@
           "params_b": null
         },
         {
-          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "name": "NVIDIA: Nemotron 3 Ultra (free)",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": 550.0
-        },
-        {
-          "id": "nvidia/nemotron-3-super-120b-a12b:free",
-          "name": "NVIDIA: Nemotron 3 Super (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
           "id": "dots-studio/dots-3-note-preview:free",
           "name": "Dots Studio: Dots3-Note Preview (free)",
           "context": 512000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "poolside/laguna-s-2.1:free",
-          "name": "Poolside: Laguna S 2.1 (free)",
-          "context": 262144,
           "limits": "free tier",
           "params_b": null
         },
@@ -912,6 +892,13 @@
           "id": "nvidia/nemotron-3.5-lightning:free",
           "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
           "context": 1000000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "poolside/laguna-s-2.1:free",
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "context": 262144,
           "limits": "free tier",
           "params_b": null
         },
@@ -937,11 +924,25 @@
           "params_b": null
         },
         {
+          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "context": 1000000,
+          "limits": "free tier",
+          "params_b": 550.0
+        },
+        {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
           "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
           "context": 256000,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "nvidia/nemotron-3-super-120b-a12b:free",
+          "name": "NVIDIA: Nemotron 3 Super (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": 120.0
         },
         {
           "id": "openrouter/free",
@@ -1000,11 +1001,11 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
+          "params_b": 120.0
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -1014,11 +1015,11 @@
           "params_b": 30.0
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": 120.0
+          "params_b": 20.0
         },
         {
           "id": "gemma4:31b",
