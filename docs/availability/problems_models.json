@@ -1,6 +1,20 @@
 {
-  "updated": "2026-10-14T00:08:05.855690+00:00",
+  "updated": "2026-10-14T08:22:44.329096+00:00",
   "providers": {
+    "openrouter": {
+      "name": "OpenRouter",
+      "url": "https://openrouter.ai",
+      "models": [
+        {
+          "id": "poolside/laguna-xs-2.1:free",
+          "name": "Poolside: Laguna XS 2.1 (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
     "nvidia": {
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
