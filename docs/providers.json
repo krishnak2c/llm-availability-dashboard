@@ -16,15 +16,15 @@
     "kilo-openrouterfree",
     "openrouter-openrouterfree",
     "nvidia-gptoss",
-    "nvidia-nemotron35lightning30ba3b",
-    "kilo-nemotron35lightning",
-    "openrouter-nemotron35lightning",
     "zai-glm45flash",
     "openrouter-dots3notepreview",
     "kilo-dots3notepreview",
     "openrouter-liquidlfm25",
     "kilo-liquidlfm25",
-    "nvidia-glm53"
+    "nvidia-glm53",
+    "kilo-lagunas21",
+    "kilo-kiloautofree",
+    "openrouter-nemotron3nanoomni30ba3breasoning"
   ],
   "chain": [
     {
@@ -124,24 +124,6 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "nvidia-nemotron35lightning30ba3b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "kilo-nemotron35lightning",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "nvidia/nemotron-3.5-lightning:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-nemotron35lightning",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "nvidia/nemotron-3.5-lightning:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
       "id": "zai-glm45flash",
       "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
       "model": "glm-4.5-flash",
@@ -176,6 +158,24 @@
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "z-ai/glm-5.3",
       "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "kilo-lagunas21",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "poolside/laguna-s-2.1:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "kilo-kiloautofree",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "kilo-auto/free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-nemotron3nanoomni30ba3breasoning",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -191,6 +191,7 @@
     "gpt-oss:20b",
     "hy3",
     "hy3-free",
+    "kilo-auto/free",
     "laguna-s-2.1-free",
     "liquid/lfm-2.5-2.6b:free",
     "mimo-v2.5-free",
@@ -198,12 +199,12 @@
     "nemotron-3-nano:30b",
     "nemotron-3-ultra",
     "nemotron-3-ultra-free",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
     "nvidia/nemotron-3-ultra-550b-a55b",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
-    "nvidia/nemotron-3.5-lightning-30b-a3b",
-    "nvidia/nemotron-3.5-lightning:free",
     "openai/gpt-oss-20b",
     "openrouter/free",
+    "poolside/laguna-s-2.1:free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",
     "thinkingmachines/inkling",
