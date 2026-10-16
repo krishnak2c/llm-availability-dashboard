@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T10:41:09.877206+00:00",
+  "updated": "2026-10-16T16:04:04.594657+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -53,6 +53,13 @@
           "context": 256000,
           "limits": "20 req/min · 50 req/day",
           "params_b": 30.0
+        },
+        {
+          "id": "nvidia/nemotron-3-super-120b-a12b:free",
+          "name": "NVIDIA: Nemotron 3 Super (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 120.0
         }
       ],
       "error": null
