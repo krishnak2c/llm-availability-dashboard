@@ -165,6 +165,25 @@ def test_classify_200_with_error_field(probe):
     assert probe.classify(200, json.dumps({"error": "rate limit exceeded"}), None) == "rate_limited"
 
 
+def test_classify_200_error_auth_keywords(probe):
+    """Auth-flavored error text inside a 200 → auth_error (not bad_response)."""
+    assert probe.classify(200, json.dumps({"error": "invalid api key"}), None) == "auth_error"
+    assert probe.classify(200, json.dumps({"error": {"message": "unauthorized"}}), None) == "auth_error"
+    assert probe.classify(200, json.dumps({"error": "forbidden: bad credentials"}), None) == "auth_error"
+    assert probe.classify(200, json.dumps({"error": "authentication failed"}), None) == "auth_error"
+
+
+def test_classify_200_error_quota_keywords(probe):
+    """Billing-flavored error text inside a 200 → quota_exhausted."""
+    assert probe.classify(200, json.dumps({"error": "billing limit reached"}), None) == "quota_exhausted"
+    assert probe.classify(200, json.dumps({"error": "insufficient credits"}), None) == "quota_exhausted"
+    assert probe.classify(200, json.dumps({"error": "Payment Required (402)"}), None) == "quota_exhausted"
+
+
+def test_classify_200_error_unrecognized_still_bad_response(probe):
+    assert probe.classify(200, json.dumps({"error": "something weird"}), None) == "bad_response"
+
+
 def test_bucket_and_run_index(probe):
     from datetime import datetime
 
@@ -275,6 +294,15 @@ def test_build_request_gemini_style(probe, monkeypatch):
     assert "contents" in payload
 
 
+def test_build_request_gemini_no_key_omits_header(probe, monkeypatch):
+    """x-goog auth with no key sends no header (mirrors bearer behavior)."""
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    cfg = probe.PROVIDER_PROBES["gemini"]
+    url, headers, body = probe.build_request("gemini", cfg, "gemini-2.0-flash", "aabb")
+    assert "x-goog-api-key" not in headers
+    assert "generateContent" in url
+
+
 def test_build_request_cloudflare_requires_account(probe, monkeypatch):
     monkeypatch.delenv("CLOUDFLARE_ACCOUNT_ID", raising=False)
     cfg = probe.PROVIDER_PROBES["cloudflare"]
@@ -304,7 +332,7 @@ def test_env_example_has_provider_keys():
         "NVIDIA_NIM_API_KEY",
         "CLOUDFLARE_API_KEY",
         "CLOUDFLARE_ACCOUNT_ID",
-        "MODELSCAPE_API_KEY",
+        "MODELSCOPE_API_KEY",
         "KILOCODE_API_KEY",
         "OPENCODE_ZEN_API_KEY",
         "OLLAMA_API_KEY",

@@ -1,21 +1,16 @@
 import urllib.request
 
+# Auth headers stripped on cross-host redirects (compared case-insensitively).
+_STRIPPED_HEADERS = frozenset({"authorization", "x-goog-api-key", "x-api-key"})
+
 
 class SafeRedirectHandler(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         new_req = super().redirect_request(req, fp, code, msg, headers, newurl)
-        if new_req is not None:
-            old_host = req.host
-            new_host = new_req.host
-            if old_host != new_host:
-                for header in ["Authorization", "x-goog-api-key", "x-api-key"]:
-                    if header.title() in new_req.unredirected_hdrs:
-                        del new_req.unredirected_hdrs[header.title()]
-                    if header in new_req.unredirected_hdrs:
-                        del new_req.unredirected_hdrs[header]
-                    for k in list(new_req.headers.keys()):
-                        if k.lower() == header.lower():
-                            del new_req.headers[k]
+        if new_req is not None and req.host != new_req.host:
+            for hdrs in (new_req.unredirected_hdrs, new_req.headers):
+                for k in [k for k in hdrs if k.lower() in _STRIPPED_HEADERS]:
+                    del hdrs[k]
         return new_req
 
 

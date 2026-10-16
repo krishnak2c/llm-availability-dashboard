@@ -263,6 +263,14 @@ def percentile_normalize(
     """
     result: dict[str, float | None] = {}
 
+    # Hoisted: the fallback min/max over the whole dict is the same for
+    # every key, so compute it once instead of per-key inside the loop.
+    valid_all = [x for x in values.values() if x is not None]
+    if valid_all:
+        glo, ghi = min(valid_all), max(valid_all)
+    else:
+        glo = ghi = None
+
     for k, v in values.items():
         if v is None:
             result[k] = None
@@ -271,13 +279,11 @@ def percentile_normalize(
         if ranges is not None and k in ranges:
             lo, hi = ranges[k]
         else:
-            valid = [x for x in values.values() if x is not None]
-
-            if not valid:
+            if not valid_all:
                 result[k] = None
                 continue
 
-            lo, hi = min(valid), max(valid)
+            lo, hi = glo, ghi
 
         if hi == lo:
             result[k] = 50.0

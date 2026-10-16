@@ -4,9 +4,11 @@ Probes each (provider, model) listed in docs/models.json with a minimal
 chat-completions request and records the result to docs/probes.jsonl.
 Regenerates docs/availability.json (rolling 7d/30d aggregates).
 
-Every cron run probes every model. Models that failed their last 3
-probes are still flagged on the watch list (currently informational —
-no special handling beyond the `watching` field in availability.json).
+Probe cadence is bucketed round-robin: each hourly cron run
+(`probe.yml`) probes every 4th model (ROUND_ROBIN_BUCKETS=4, so each
+model is probed roughly every 4h). Models that failed their last
+WATCH_LIST_FAILS=3 probes are on the watch list and are probed on
+every run regardless of bucket.
 """
 
 import gzip
@@ -67,7 +69,8 @@ def build_request(provider, cfg, model_id, nonce):
         if key:
             headers["Authorization"] = f"Bearer {key}"
     elif cfg["auth"] == "x-goog":
-        headers["x-goog-api-key"] = key
+        if key:
+            headers["x-goog-api-key"] = key
 
     style = cfg["style"]
     if style in ("openai", "cohere_v2"):
@@ -144,6 +147,20 @@ def classify(http_status, body_text, exc):
                     return "not_found"
                 if "rate" in err or "quota" in err:
                     return "rate_limited"
+                if (
+                    "auth" in err
+                    or "api key" in err
+                    or "unauthorized" in err
+                    or "forbidden" in err
+                ):
+                    return "auth_error"
+                if (
+                    "billing" in err
+                    or "credit" in err
+                    or "402" in err
+                    or "quota" in err
+                ):
+                    return "quota_exhausted"
                 return "bad_response"
             if (
                 "choices" in data
@@ -323,7 +340,9 @@ def aggregate_and_rotate(probes_path, keep_days=30):
             path = ARCHIVE_DIR / f"{ym}.jsonl.gz"
             with gzip.open(path, "ab") as g:
                 g.write("".join(lines).encode())
-        probes_path.write_text("".join(keep_lines))
+        tmp_path = probes_path.with_suffix(probes_path.suffix + ".tmp")
+        tmp_path.write_text("".join(keep_lines))
+        os.replace(tmp_path, probes_path)
 
     out = defaultdict(dict)
     for (provider, model), b in bucket.items():
@@ -400,66 +419,66 @@ def main():
 
     write_lock = threading.Lock()
     PROBES_JSONL.parent.mkdir(parents=True, exist_ok=True)
-    out_f = PROBES_JSONL.open("a")
 
-    def probe_one(provider, model_id):
-        cfg = PROVIDER_PROBES[provider]
-        nonce = secrets.token_hex(4)
-        built = build_request(provider, cfg, model_id, nonce)
-        if built is None:
-            return None
-        url, headers, body = built
-        http, body_text, exc, latency = do_probe(url, headers, body)
-        status = classify(http, body_text, exc)
-        err = None
-        if status not in ("ok", "rate_limited") and body_text:
-            err = body_text[:200]
-        elif exc is not None:
-            err = str(exc)[:200]
-        row = {
-            "ts": datetime.now(timezone.utc).isoformat(),
-            "provider": provider,
-            "model": model_id,
-            "status": status,
-            "http": http,
-            "latency_ms": latency,
-            "err": err,
-        }
-        line = json.dumps(row, ensure_ascii=False) + "\n"
-        with write_lock:
-            out_f.write(line)
-            out_f.flush()
-        return row
+    with PROBES_JSONL.open("a") as out_f:
 
-    def run_provider(provider, model_ids):
-        with ThreadPoolExecutor(max_workers=PER_PROVIDER_CONCURRENCY) as ex:
-            futures = []
-            for mid in model_ids:
-                futures.append(ex.submit(probe_one, provider, mid))
-            counts = defaultdict(int)
-            for fut in futures:
-                row = fut.result()
-                if row:
-                    counts[row["status"]] += 1
-            print(f"  [{provider}] " + " ".join(f"{k}={v}" for k, v in counts.items()))
+        def probe_one(provider, model_id):
+            cfg = PROVIDER_PROBES[provider]
+            nonce = secrets.token_hex(4)
+            built = build_request(provider, cfg, model_id, nonce)
+            if built is None:
+                return None
+            url, headers, body = built
+            http, body_text, exc, latency = do_probe(url, headers, body)
+            status = classify(http, body_text, exc)
+            err = None
+            if status not in ("ok", "rate_limited") and body_text:
+                err = body_text[:200]
+            elif exc is not None:
+                err = str(exc)[:200]
+            row = {
+                "ts": datetime.now(timezone.utc).isoformat(),
+                "provider": provider,
+                "model": model_id,
+                "status": status,
+                "http": http,
+                "latency_ms": latency,
+                "err": err,
+            }
+            line = json.dumps(row, ensure_ascii=False) + "\n"
+            with write_lock:
+                out_f.write(line)
+                out_f.flush()
+            return row
 
-    # Run providers in parallel; each provider has its own pool.
-    threads = []
-    for provider, model_ids in by_provider.items():
-        t = threading.Thread(
-            target=run_provider, args=(provider, model_ids), daemon=True
-        )
-        t.start()
-        threads.append(t)
-    for t in threads:
-        t.join()
+        def run_provider(provider, model_ids):
+            with ThreadPoolExecutor(max_workers=PER_PROVIDER_CONCURRENCY) as ex:
+                futures = []
+                for mid in model_ids:
+                    futures.append(ex.submit(probe_one, provider, mid))
+                counts = defaultdict(int)
+                for fut in futures:
+                    row = fut.result()
+                    if row:
+                        counts[row["status"]] += 1
+                print(f"  [{provider}] " + " ".join(f"{k}={v}" for k, v in counts.items()))
 
-    out_f.close()
+        # Run providers in parallel; each provider has its own pool.
+        threads = []
+        for provider, model_ids in by_provider.items():
+            t = threading.Thread(
+                target=run_provider, args=(provider, model_ids), daemon=True
+            )
+            t.start()
+            threads.append(t)
+        for t in threads:
+            t.join()
 
     # Rotate older entries off the live file and regenerate aggregate.
     avail = aggregate_and_rotate(PROBES_JSONL, keep_days=30)
 
-    AVAIL_JSON.write_text(
+    _avail_tmp = AVAIL_JSON.with_suffix(AVAIL_JSON.suffix + ".tmp")
+    _avail_tmp.write_text(
         json.dumps(
             {
                 "updated": datetime.now(timezone.utc).isoformat(),
@@ -469,6 +488,7 @@ def main():
             ensure_ascii=False,
         )
     )
+    os.replace(_avail_tmp, AVAIL_JSON)
     print(f"Wrote {AVAIL_JSON.relative_to(ROOT)}")
 
 
