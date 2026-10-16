@@ -1,14 +1,49 @@
 {
-  "updated": "2026-10-16T10:16:36.412817+00:00",
+  "updated": "2026-10-16T10:38:22.587327+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
         {
+          "id": "nvidia/nemotron-3.5-super-vl:free",
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "context": 1000000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "dots-studio/dots-3-note-preview:free",
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "context": 512000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "liquid/lfm-2.5-2.6b:free",
+          "name": "LiquidAI: LFM2.5-2.6B (free)",
+          "context": 65536,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 2.6
+        },
+        {
+          "id": "poolside/laguna-s-2.1:free",
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
           "id": "poolside/laguna-xs-2.1:free",
           "name": "Poolside: Laguna XS 2.1 (free)",
           "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3.5-content-safety:free",
+          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+          "context": 128000,
           "limits": "20 req/min · 50 req/day",
           "params_b": null
         },
@@ -26,6 +61,13 @@
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
+        {
+          "id": "google/diffusiongemma-26b-a4b-it",
+          "name": "google/diffusiongemma-26b-a4b-it",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 26.0
+        },
         {
           "id": "google/gemma-4-31b-it",
           "name": "google/gemma-4-31b-it",
@@ -48,11 +90,39 @@
           "params_b": 30.0
         },
         {
+          "id": "nvidia/ising-calibration-1.5-31b",
+          "name": "nvidia/ising-calibration-1.5-31b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 31.0
+        },
+        {
+          "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+          "name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 30.0
+        },
+        {
           "id": "nvidia/riva-translate-4b-instruct-v2",
           "name": "nvidia/riva-translate-4b-instruct-v2",
           "context": null,
           "limits": "40 req/min",
           "params_b": 4.0
+        },
+        {
+          "id": "poolside/laguna-xs-2.1",
+          "name": "poolside/laguna-xs-2.1",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
+          "id": "z-ai/glm-5.3",
+          "name": "z-ai/glm-5.3",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
         }
       ],
       "error": null
@@ -191,6 +261,20 @@
           "params_b": null
         },
         {
+          "id": "codestral-latest",
+          "name": "codestral-latest",
+          "context": 32000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "minimax-m2.7",
+          "name": "minimax-m2.7",
+          "context": 180000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "mistral-Nemo-Instruct-2407",
           "name": "mistral-Nemo-Instruct-2407",
           "context": 128000,
@@ -215,6 +299,34 @@
           "id": "kilo-auto/free",
           "name": "Auto Free",
           "context": 256000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3.5-super-vl:free",
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "context": 1000000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "dots-studio/dots-3-note-preview:free",
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "context": 512000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "liquid/lfm-2.5-2.6b:free",
+          "name": "LiquidAI: LFM2.5-2.6B (free)",
+          "context": 65536,
+          "limits": "free tier",
+          "params_b": 2.6
+        },
+        {
+          "id": "poolside/laguna-s-2.1:free",
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "context": 262144,
           "limits": "free tier",
           "params_b": null
         },

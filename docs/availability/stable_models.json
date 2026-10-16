@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T10:16:36.412817+00:00",
+  "updated": "2026-10-16T10:38:22.587327+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -20,6 +20,13 @@
           "params_b": 550.0
         },
         {
+          "id": "nvidia/nemotron-3-super-120b-a12b:free",
+          "name": "NVIDIA: Nemotron 3 Super (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 120.0
+        },
+        {
           "id": "openrouter/free",
           "name": "Free Models Router",
           "context": 200000,
@@ -34,19 +41,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 120.0
-        },
-        {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
           "context": 131072,
@@ -59,6 +53,19 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -80,6 +87,13 @@
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
+        {
+          "id": "meta/llama-3.2-11b-vision-instruct",
+          "name": "meta/llama-3.2-11b-vision-instruct",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 11.0
+        },
         {
           "id": "nvidia/nemotron-3-super-120b-a12b",
           "name": "nvidia/nemotron-3-super-120b-a12b",
@@ -123,6 +137,18 @@
       "url": "https://console.mistral.ai",
       "models": [
         {
+          "id": "codestral-latest",
+          "name": "codestral-2508",
+          "context": 128000,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
+          "params_b": null
+        },
+        {
           "id": "mistral-code-latest",
           "name": "codestral-2508",
           "context": 128000,
@@ -145,6 +171,19 @@
             "response_schema"
           ],
           "params_b": null
+        },
+        {
+          "id": "ministral-14b-latest",
+          "name": "ministral-14b-2512",
+          "context": 262144,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
+          "params_b": 14.0
         },
         {
           "id": "ministral-3b-2512",
@@ -193,11 +232,25 @@
       "url": "https://kilo.code",
       "models": [
         {
+          "id": "nvidia/nemotron-3.5-content-safety:free",
+          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+          "context": 128000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
           "name": "NVIDIA: Nemotron 3 Ultra (free)",
           "context": 1000000,
           "limits": "free tier",
           "params_b": 550.0
+        },
+        {
+          "id": "nvidia/nemotron-3-super-120b-a12b:free",
+          "name": "NVIDIA: Nemotron 3 Super (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": 120.0
         },
         {
           "id": "openrouter/free",
@@ -214,6 +267,20 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
@@ -226,13 +293,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         }
       ],
       "error": null
