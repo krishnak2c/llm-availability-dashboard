@@ -1,23 +1,10 @@
 {
-  "updated": "2026-10-17T17:45:08.255809+00:00",
+  "updated": "2026-10-17T20:06:06.076663+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning"
-          ],
-          "params_b": 20.0
-        },
         {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
@@ -31,6 +18,19 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning"
+          ],
+          "params_b": 20.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -74,6 +74,13 @@
           "params_b": 30.0
         },
         {
+          "id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "name": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 120.0
+        },
+        {
           "id": "nvidia/nemotron-parse-2.0",
           "name": "nvidia/nemotron-parse-2.0",
           "context": null,
@@ -86,6 +93,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 20.0
+        },
+        {
+          "id": "stepfun-ai/step-5-preview",
+          "name": "stepfun-ai/step-5-preview",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
         }
       ],
       "error": null
@@ -171,20 +185,6 @@
       ],
       "error": null
     },
-    "zai": {
-      "name": "Z.ai (GLM)",
-      "url": "https://open.bigmodel.cn",
-      "models": [
-        {
-          "id": "glm-4.5-flash",
-          "name": "GLM-4.5-Flash",
-          "context": null,
-          "limits": "free Flash tier",
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
     "kilo": {
       "name": "Kilo Code",
       "url": "https://kilo.code",
@@ -211,11 +211,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
+          "params_b": 31.0
         },
         {
           "id": "nemotron-3-super",
@@ -225,18 +225,18 @@
           "params_b": null
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
           "id": "nemotron-3-ultra",
           "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         }
       ],
       "error": null

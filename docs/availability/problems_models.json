@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T17:45:08.255809+00:00",
+  "updated": "2026-10-17T20:06:06.076663+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -322,6 +322,20 @@
           "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 30.0
+        }
+      ],
+      "error": null
+    },
+    "zai": {
+      "name": "Z.ai (GLM)",
+      "url": "https://open.bigmodel.cn",
+      "models": [
+        {
+          "id": "glm-4.5-flash",
+          "name": "GLM-4.5-Flash",
+          "context": null,
+          "limits": "free Flash tier",
+          "params_b": null
         }
       ],
       "error": null

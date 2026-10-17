@@ -13,12 +13,12 @@
     "openrouter-openrouterfree",
     "llm7-codestral",
     "nvidia-diffusiongemma26ba4bit",
+    "kilo-northminicode",
+    "openrouter-northminicode",
     "kilo-liquidlfm25",
     "openrouter-liquidlfm25",
     "kilo-nemotron35supervl",
     "openrouter-nemotron35supervl",
-    "kilo-northminicode",
-    "openrouter-northminicode",
     "nvidia-nemotron3ultra550ba55b",
     "kilo-nemotron3ultra550ba55b",
     "openrouter-nemotron3ultra550ba55b",
@@ -106,6 +106,18 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
+      "id": "kilo-northminicode",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "cohere/north-mini-code:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-northminicode",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "cohere/north-mini-code:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
       "id": "kilo-liquidlfm25",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "liquid/lfm-2.5-2.6b:free",
@@ -127,18 +139,6 @@
       "id": "openrouter-nemotron35supervl",
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "nvidia/nemotron-3.5-super-vl:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
-      "id": "kilo-northminicode",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "cohere/north-mini-code:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-northminicode",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "cohere/north-mini-code:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
