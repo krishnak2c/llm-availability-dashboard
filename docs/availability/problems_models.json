@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T23:14:20.405043+00:00",
+  "updated": "2026-10-17T02:58:00.908223+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -53,6 +53,13 @@
           "context": 128000,
           "limits": "20 req/min · 50 req/day",
           "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "context": 1000000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 550.0
         },
         {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -123,6 +130,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 30.0
+        },
+        {
+          "id": "nvidia/nemotron-3-ultra-550b-a55b",
+          "name": "nvidia/nemotron-3-ultra-550b-a55b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 550.0
         },
         {
           "id": "nvidia/riva-translate-4b-instruct-v2",
@@ -364,6 +378,13 @@
           "context": 128000,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "context": 1000000,
+          "limits": "free tier",
+          "params_b": 550.0
         },
         {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
