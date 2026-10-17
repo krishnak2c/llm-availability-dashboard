@@ -9,8 +9,8 @@
     },
     "artificial_analysis_index_version": 4.3,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 21,
-    "ranked_count": 21,
+    "source_count": 22,
+    "ranked_count": 22,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
@@ -37,6 +37,28 @@
       "rank": 1
     },
     {
+      "provider": "NVIDIA NIM",
+      "provider_id": "nvidia",
+      "model_id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "model_name": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "aa_slug": "nemotron-3-5-super-vl",
+      "aa_name": "Nemotron 3.5 Super VL",
+      "aa_match": "substring",
+      "agentic": null,
+      "coding": null,
+      "intelligence": 26.5,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": 70.85,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 70.85,
+      "data_coverage": 15.0,
+      "rank": 2
+    },
+    {
       "provider": "Ollama Cloud",
       "provider_id": "ollama",
       "model_id": "gemma4:31b",
@@ -56,28 +78,6 @@
       "swebench_norm": null,
       "hermes_score": 22.66,
       "data_coverage": 80.0,
-      "rank": 2
-    },
-    {
-      "provider": "Z.ai (GLM)",
-      "provider_id": "zai",
-      "model_id": "glm-4.5-flash",
-      "model_name": "GLM-4.5-Flash",
-      "aa_slug": "glm-4.5",
-      "aa_name": "GLM-4.5 (Reasoning)",
-      "aa_match": "substring",
-      "agentic": null,
-      "coding": null,
-      "intelligence": 12.8,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": 15.38,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 15.38,
-      "data_coverage": 15.0,
       "rank": 3
     },
     {
@@ -257,10 +257,10 @@
       "rank": 11
     },
     {
-      "provider": "Mistral",
-      "provider_id": "mistral",
-      "model_id": "codestral-latest",
-      "model_name": "codestral-2508",
+      "provider": "NVIDIA NIM",
+      "provider_id": "nvidia",
+      "model_id": "stepfun-ai/step-5-preview",
+      "model_name": "stepfun-ai/step-5-preview",
       "aa_slug": null,
       "aa_name": null,
       "aa_match": "missing",
@@ -281,7 +281,7 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
-      "model_id": "mistral-code-latest",
+      "model_id": "codestral-latest",
       "model_name": "codestral-2508",
       "aa_slug": null,
       "aa_name": null,
@@ -303,7 +303,7 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
-      "model_id": "mistral-code-fim-latest",
+      "model_id": "mistral-code-latest",
       "model_name": "codestral-2508",
       "aa_slug": null,
       "aa_name": null,
@@ -325,6 +325,28 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
+      "model_id": "mistral-code-fim-latest",
+      "model_name": "codestral-2508",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 15
+    },
+    {
+      "provider": "Mistral",
+      "provider_id": "mistral",
       "model_id": "ministral-14b-latest",
       "model_name": "ministral-14b-2512",
       "aa_slug": null,
@@ -342,7 +364,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 15
+      "rank": 16
     },
     {
       "provider": "Mistral",
@@ -364,7 +386,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 16
+      "rank": 17
     },
     {
       "provider": "Mistral",
@@ -386,35 +408,13 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 17
+      "rank": 18
     },
     {
       "provider": "Kilo Code",
       "provider_id": "kilo",
       "model_id": "openrouter/free",
       "model_name": "OpenRouter Free Models Router",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 18
-    },
-    {
-      "provider": "Ollama Cloud",
-      "provider_id": "ollama",
-      "model_id": "nemotron-3-nano:30b",
-      "model_name": "nemotron-3-nano:30b",
       "aa_slug": null,
       "aa_name": null,
       "aa_match": "missing",
@@ -475,6 +475,28 @@
       "hermes_score": 0.0,
       "data_coverage": 0.0,
       "rank": 21
+    },
+    {
+      "provider": "Ollama Cloud",
+      "provider_id": "ollama",
+      "model_id": "nemotron-3-nano:30b",
+      "model_name": "nemotron-3-nano:30b",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 22
     }
   ]
 }
