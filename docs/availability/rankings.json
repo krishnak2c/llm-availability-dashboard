@@ -9,8 +9,8 @@
     },
     "artificial_analysis_index_version": 4.3,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 21,
-    "ranked_count": 21,
+    "source_count": 20,
+    "ranked_count": 20,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
@@ -215,28 +215,6 @@
     {
       "provider": "NVIDIA NIM",
       "provider_id": "nvidia",
-      "model_id": "openai/gpt-oss-20b",
-      "model_name": "openai/gpt-oss-20b",
-      "aa_slug": "gpt-oss-20b",
-      "aa_name": "gpt-oss-20b (High)",
-      "aa_match": "exact",
-      "agentic": 1.2,
-      "coding": 20.7,
-      "intelligence": 9.0,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": 0.0,
-      "coding_norm": 0.0,
-      "intelligence_norm": 0.0,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 80.0,
-      "rank": 10
-    },
-    {
-      "provider": "NVIDIA NIM",
-      "provider_id": "nvidia",
       "model_id": "stepfun-ai/step-5-preview",
       "model_name": "stepfun-ai/step-5-preview",
       "aa_slug": null,
@@ -254,7 +232,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 11
+      "rank": 10
     },
     {
       "provider": "Mistral",
@@ -276,7 +254,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 12
+      "rank": 11
     },
     {
       "provider": "Mistral",
@@ -298,7 +276,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 13
+      "rank": 12
     },
     {
       "provider": "Mistral",
@@ -320,7 +298,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 14
+      "rank": 13
     },
     {
       "provider": "Mistral",
@@ -342,7 +320,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 15
+      "rank": 14
     },
     {
       "provider": "Mistral",
@@ -364,7 +342,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 16
+      "rank": 15
     },
     {
       "provider": "Mistral",
@@ -386,7 +364,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 17
+      "rank": 16
     },
     {
       "provider": "Kilo Code",
@@ -408,51 +386,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 18
-    },
-    {
-      "provider": "Ollama Cloud",
-      "provider_id": "ollama",
-      "model_id": "nemotron-3-nano:30b",
-      "model_name": "nemotron-3-nano:30b",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 19
-    },
-    {
-      "provider": "Ollama Cloud",
-      "provider_id": "ollama",
-      "model_id": "nemotron-3-super",
-      "model_name": "nemotron-3-super",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 20
+      "rank": 17
     },
     {
       "provider": "Ollama Cloud",
@@ -474,7 +408,51 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 21
+      "rank": 18
+    },
+    {
+      "provider": "Ollama Cloud",
+      "provider_id": "ollama",
+      "model_id": "nemotron-3-super",
+      "model_name": "nemotron-3-super",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 19
+    },
+    {
+      "provider": "Ollama Cloud",
+      "provider_id": "ollama",
+      "model_id": "nemotron-3-nano:30b",
+      "model_name": "nemotron-3-nano:30b",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 20
     }
   ]
 }
