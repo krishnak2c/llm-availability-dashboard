@@ -10,21 +10,21 @@
     "ollama-gptoss120b",
     "ollama-nemotron3super",
     "ollama-nemotron3ultra",
-    "llm7-codestral",
     "kilo-openrouterfree",
     "openrouter-openrouterfree",
     "nvidia-diffusiongemma26ba4bit",
-    "kilo-northminicode",
-    "openrouter-northminicode",
     "kilo-liquidlfm25",
     "openrouter-liquidlfm25",
+    "kilo-northminicode",
+    "openrouter-northminicode",
     "openrouter-nemotron35lightning",
     "kilo-nemotron35lightning",
     "nvidia-gptoss",
     "kilo-dots3notepreview",
     "openrouter-dots3notepreview",
     "nvidia-nemotron35lightning30ba3b",
-    "kilo-kiloautofree"
+    "kilo-kiloautofree",
+    "kilo-lagunas21"
   ],
   "chain": [
     {
@@ -88,12 +88,6 @@
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
-      "id": "llm7-codestral",
-      "baseUrl": "https://api.llm7.io/v1",
-      "model": "codestral-latest",
-      "apiKeyEnv": "LLM7_API_KEY"
-    },
-    {
       "id": "kilo-openrouterfree",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "openrouter/free",
@@ -112,18 +106,6 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "kilo-northminicode",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "cohere/north-mini-code:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-northminicode",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "cohere/north-mini-code:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
       "id": "kilo-liquidlfm25",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "liquid/lfm-2.5-2.6b:free",
@@ -133,6 +115,18 @@
       "id": "openrouter-liquidlfm25",
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "liquid/lfm-2.5-2.6b:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-northminicode",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "cohere/north-mini-code:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-northminicode",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "cohere/north-mini-code:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
@@ -176,10 +170,15 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "kilo-auto/free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "kilo-lagunas21",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "poolside/laguna-s-2.1:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
-    "codestral-latest",
     "cohere/north-mini-code:free",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
@@ -205,6 +204,7 @@
     "nvidia/nemotron-3.5-super-vl:free",
     "openai/gpt-oss-20b",
     "openrouter/free",
+    "poolside/laguna-s-2.1:free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",
     "stepfun-ai/step-5-preview",
