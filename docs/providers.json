@@ -10,16 +10,16 @@
     "ollama-gptoss120b",
     "ollama-nemotron3super",
     "ollama-nemotron3ultra",
-    "kilo-openrouterfree",
-    "openrouter-openrouterfree",
     "nvidia-diffusiongemma26ba4bit",
     "kilo-liquidlfm25",
     "openrouter-liquidlfm25",
     "kilo-northminicode",
     "openrouter-northminicode",
+    "kilo-openrouterfree",
+    "openrouter-openrouterfree",
+    "nvidia-gptoss",
     "openrouter-nemotron35lightning",
     "kilo-nemotron35lightning",
-    "nvidia-gptoss",
     "kilo-dots3notepreview",
     "openrouter-dots3notepreview",
     "nvidia-nemotron35lightning30ba3b",
@@ -88,18 +88,6 @@
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
-      "id": "kilo-openrouterfree",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "openrouter/free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-openrouterfree",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "openrouter/free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
       "id": "nvidia-diffusiongemma26ba4bit",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "google/diffusiongemma-26b-a4b-it",
@@ -130,6 +118,24 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
+      "id": "kilo-openrouterfree",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "openrouter/free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-openrouterfree",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "openrouter/free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "nvidia-gptoss",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "openai/gpt-oss-20b",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
       "id": "openrouter-nemotron35lightning",
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "nvidia/nemotron-3.5-lightning:free",
@@ -140,12 +146,6 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3.5-lightning:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "nvidia-gptoss",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "openai/gpt-oss-20b",
-      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "kilo-dots3notepreview",
