@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T12:08:55.617384+00:00",
+  "updated": "2026-10-19T20:21:05.410167+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -427,6 +427,27 @@
           "context": 200000,
           "limits": "free tier",
           "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "ollama": {
+      "name": "Ollama Cloud",
+      "url": "https://ollama.com",
+      "models": [
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
         }
       ],
       "error": null

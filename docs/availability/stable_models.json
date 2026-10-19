@@ -1,24 +1,10 @@
 {
-  "updated": "2026-10-19T12:08:55.617384+00:00",
+  "updated": "2026-10-19T20:21:05.410167+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
-        {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
-        },
         {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
@@ -44,6 +30,20 @@
             "reasoning"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         }
       ],
       "error": null
@@ -190,29 +190,15 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
