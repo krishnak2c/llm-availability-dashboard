@@ -3,25 +3,25 @@
     "nvidia-nemotron35supervl120ba12b",
     "kilo-nemotron35supervl",
     "openrouter-nemotron35supervl",
-    "openrouter-xingchenagixing4029ba4b",
     "nvidia-step5",
     "ollama-gptoss20b",
     "llm7-gptoss20b",
+    "ollama-beam",
     "ollama-gptoss120b",
     "ollama-nemotron3super",
     "ollama-nemotron3ultra",
     "ollama-nemotron3nano30b",
     "nvidia-diffusiongemma26ba4bit",
-    "nvidia-gptoss",
     "kilo-northminicode",
     "openrouter-northminicode",
+    "nvidia-gptoss",
     "kilo-liquidlfm25",
     "openrouter-liquidlfm25",
-    "nvidia-nemotron35lightning30ba3b",
-    "kilo-openrouterfree",
-    "openrouter-openrouterfree",
     "openrouter-nemotron35lightning",
     "kilo-nemotron35lightning",
+    "kilo-openrouterfree",
+    "openrouter-openrouterfree",
+    "nvidia-nemotron35lightning30ba3b",
     "kilo-dots3notepreview",
     "openrouter-dots3notepreview",
     "kilo-kiloautofree"
@@ -46,12 +46,6 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "openrouter-xingchenagixing4029ba4b",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "xingchen-agi/xing4.0-29b-a4b:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
       "id": "nvidia-step5",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "stepfun-ai/step-5-preview",
@@ -68,6 +62,12 @@
       "baseUrl": "https://api.llm7.io/v1",
       "model": "gpt-oss:20b",
       "apiKeyEnv": "LLM7_API_KEY"
+    },
+    {
+      "id": "ollama-beam",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "beam",
+      "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
       "id": "ollama-gptoss120b",
@@ -100,12 +100,6 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "nvidia-gptoss",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "openai/gpt-oss-20b",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
       "id": "kilo-northminicode",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "cohere/north-mini-code:free",
@@ -116,6 +110,12 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "cohere/north-mini-code:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "nvidia-gptoss",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "openai/gpt-oss-20b",
+      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "kilo-liquidlfm25",
@@ -130,10 +130,16 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "nvidia-nemotron35lightning30ba3b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "apiKeyEnv": "NIM_API_KEY"
+      "id": "openrouter-nemotron35lightning",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-nemotron35lightning",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "kilo-openrouterfree",
@@ -148,16 +154,10 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "openrouter-nemotron35lightning",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "nvidia/nemotron-3.5-lightning:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
-      "id": "kilo-nemotron35lightning",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "nvidia/nemotron-3.5-lightning:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
+      "id": "nvidia-nemotron35lightning30ba3b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "kilo-dots3notepreview",
@@ -179,6 +179,7 @@
     }
   ],
   "modelAllowlist": [
+    "beam",
     "cohere/north-mini-code:free",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
@@ -208,7 +209,6 @@
     "qwen/qwen3.8-27b-free",
     "stepfun-ai/step-5-preview",
     "thinkingmachines/inkling",
-    "xingchen-agi/xing4.0-29b-a4b:free",
     "z-ai/glm-5.2"
   ]
 }

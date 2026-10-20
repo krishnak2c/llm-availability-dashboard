@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T20:21:05.410167+00:00",
+  "updated": "2026-10-20T00:06:04.282248+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -237,6 +237,13 @@
           "params_b": 8.0
         },
         {
+          "id": "@cf/meta/llama-3.2-1b-instruct",
+          "name": "@cf/meta/llama-3.2-1b-instruct",
+          "context": 60000,
+          "limits": "10k neurons/day",
+          "params_b": 1.0
+        },
+        {
           "id": "@cf/zai-org/glm-4.7-flash",
           "name": "@cf/zai-org/glm-4.7-flash",
           "context": 131072,
@@ -255,6 +262,16 @@
           "params_b": 7.0
         },
         {
+          "id": "@cf/ibm-granite/granite-4.0-h-micro",
+          "name": "@cf/ibm-granite/granite-4.0-h-micro",
+          "context": 131000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling"
+          ],
+          "params_b": null
+        },
+        {
           "id": "@cf/qwen/qwen2.5-coder-32b-instruct",
           "name": "@cf/qwen/qwen2.5-coder-32b-instruct",
           "context": 32768,
@@ -262,11 +279,47 @@
           "params_b": 32.0
         },
         {
+          "id": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
+          "name": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
+          "context": 128000,
+          "limits": "10k neurons/day",
+          "params_b": 27.0
+        },
+        {
+          "id": "@cf/qwen/qwen3-30b-a3b-fp8",
+          "name": "@cf/qwen/qwen3-30b-a3b-fp8",
+          "context": 32768,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": 30.0
+        },
+        {
           "id": "@cf/google/gemma-7b-it-lora",
           "name": "@cf/google/gemma-7b-it-lora",
           "context": 3500,
           "limits": "10k neurons/day",
           "params_b": 7.0
+        },
+        {
+          "id": "@cf/qwen/qwen3.8-27b",
+          "name": "@cf/qwen/qwen3.8-27b",
+          "context": null,
+          "limits": "10k neurons/day",
+          "params_b": 27.0
+        },
+        {
+          "id": "@cf/openai/gpt-oss-20b",
+          "name": "@cf/openai/gpt-oss-20b",
+          "context": 128000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": 20.0
         },
         {
           "id": "@cf/meta/llama-4-scout-17b-16e-instruct",
@@ -385,6 +438,13 @@
           "context": 65536,
           "limits": "free tier",
           "params_b": 2.6
+        },
+        {
+          "id": "nvidia/nemotron-3.5-lightning:free",
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "context": 1000000,
+          "limits": "free tier",
+          "params_b": null
         },
         {
           "id": "poolside/laguna-s-2.1:free",
