@@ -11,6 +11,7 @@ WATCH_LIST_FAILS=3 probes are on the watch list and are probed on
 every run regardless of bucket.
 """
 
+import argparse
 import gzip
 import hashlib
 import json
@@ -379,7 +380,31 @@ def aggregate_and_rotate(probes_path, keep_days=30):
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 
-def main():
+def parse_args(argv=None):
+    """Parse CLI arguments for the probe script.
+
+    No arguments (the historical invocation) runs one probe round. ``--help``
+    prints usage and exits 0 before any probing, network I/O, or file write.
+    Unknown flags exit non-zero via argparse's error path.
+    """
+    parser = argparse.ArgumentParser(
+        prog="probe_models.py",
+        description=(
+            "Probe the models listed in docs/models.json and append results to "
+            "docs/probes.jsonl (regenerating docs/availability.json). "
+            "With no arguments a probe round runs and writes into docs/ — this is "
+            "the default and matches the cron workflow. --help prints this message "
+            "and exits without probing, without any network call, and without "
+            "writing any file."
+        ),
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv=None):
+    # Parse before touching models.json, the network, or docs/ so --help never probes.
+    parse_args(argv)
+
     if not MODELS_JSON.exists():
         print("docs/models.json missing — run generate_site.py first", file=sys.stderr)
         sys.exit(1)

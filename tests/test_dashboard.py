@@ -10,6 +10,7 @@ policy invariants that keep the repo honest:
 
 import importlib.util
 import json
+import os
 import re
 import subprocess
 import sys
@@ -20,6 +21,8 @@ import pytest
 
 REPO = Path(__file__).resolve().parent.parent
 ENV_EXAMPLE = REPO / ".env.example"
+DOCS_PROBES = REPO / "docs" / "probes.jsonl"
+DOCS_AVAIL = REPO / "docs" / "availability.json"
 
 
 def load_module(name, path):
@@ -215,8 +218,12 @@ def test_aggregate_and_rotate_empty(probe, tmp_path):
     assert probe.aggregate_and_rotate(tmp_path / "missing.jsonl") == {}
 
 
-def test_aggregate_and_rotate_basic(probe, tmp_path):
+def test_aggregate_and_rotate_basic(probe, tmp_path, monkeypatch):
     from datetime import datetime, timedelta, timezone
+
+    # ARCHIVE_DIR is module-global; redirect it so rotation writes stay in tmp_path
+    # instead of appending to the repo's docs/probes-archive/.
+    monkeypatch.setattr(probe, "ARCHIVE_DIR", tmp_path / "probes-archive")
 
     probes = tmp_path / "probes.jsonl"
     now = datetime.now(timezone.utc)
@@ -309,13 +316,56 @@ def test_build_request_cloudflare_requires_account(probe, monkeypatch):
     assert probe.build_request("cloudflare", cfg, "some-model", "cccc") is None
 
 
-def test_probe_help_runs():
-    result = subprocess.run(
-        [sys.executable, str(REPO / "probe_models.py"), "--help"],
+def _docs_probe_artifacts():
+    """Snapshot size+mtime of the files a probe run appends to / rewrites."""
+    return {
+        path: ((path.stat().st_size, path.stat().st_mtime_ns) if path.exists() else None)
+        for path in (DOCS_PROBES, DOCS_AVAIL)
+    }
+
+
+def _run_probe_cli(*args, cwd):
+    """Run probe_models.py from `cwd` with provider keys stripped (no live calls)."""
+    env = dict(os.environ)
+    env.pop("LLM7_API_KEY", None)
+    return subprocess.run(
+        [sys.executable, str(REPO / "probe_models.py"), *args],
         capture_output=True,
         text=True,
+        cwd=cwd,
+        env=env,
+        timeout=120,
     )
+
+
+def test_probe_help_runs(tmp_path):
+    result = _run_probe_cli("--help", cwd=tmp_path)
     assert result.returncode == 0
+    assert not (tmp_path / "docs").exists()
+
+
+def test_probe_help_prints_usage_and_writes_nothing(tmp_path):
+    """--help must be offline-safe: usage on stdout, no docs/ mutation."""
+    before = _docs_probe_artifacts()
+    result = _run_probe_cli("--help", cwd=tmp_path)
+    assert result.returncode == 0
+    assert "usage" in result.stdout.lower()
+    assert _docs_probe_artifacts() == before
+    assert not (tmp_path / "docs").exists()
+
+
+def test_probe_unknown_flag_fails_without_probing(tmp_path):
+    before = _docs_probe_artifacts()
+    result = _run_probe_cli("--definitely-not-a-flag", cwd=tmp_path)
+    assert result.returncode != 0
+    assert result.stderr.strip()
+    assert _docs_probe_artifacts() == before
+    assert not (tmp_path / "docs").exists()
+
+
+def test_probe_parse_args_default_is_probe_round(probe):
+    """No argv means a probe round (historical default preserved, no --help exit)."""
+    assert probe.parse_args([]) is not None
 
 
 # ── .env.example shape ────────────────────────────────────────────────────────
