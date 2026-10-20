@@ -1,8 +1,11 @@
 name: Probe model availability
 
 on:
+  # Backstop only: cron-job.org is the primary hourly trigger (it POSTs
+  # workflow_dispatch at :17 UTC). GitHub's scheduler drops/delays runs under
+  # load — especially at the top of the hour — so this stays sparse and off-peak.
   schedule:
-    - cron: "0 * * * *"
+    - cron: "17 */6 * * *"
   workflow_dispatch:
 
 permissions:

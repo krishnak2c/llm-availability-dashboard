@@ -2,7 +2,9 @@ name: Update free models list
 
 on:
   schedule:
-    - cron: "0 */3 * * *"   # every 3 hours
+    # Off the top of the hour: GitHub documents top-of-hour as peak load where
+    # scheduled runs are dropped or delayed.
+    - cron: "13 */3 * * *"   # every 3 hours
   push:
     branches: [main]
     paths:
