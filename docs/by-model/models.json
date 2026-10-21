@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T04:43:08.038870+00:00",
+  "updated": "2026-10-21T11:45:55.889827+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -111,13 +111,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -156,6 +149,13 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -474,34 +474,6 @@
           "params_b": null
         },
         {
-          "id": "voxtral-mini-transcribe-3",
-          "name": "Voxtral Mini Transcribe 3.0",
-          "context": null,
-          "limits": "1 req/s · 1B tok/month",
-          "params_b": null
-        },
-        {
-          "id": "voxtral-mini-transcribe-3-0",
-          "name": "Voxtral Mini Transcribe 3.0",
-          "context": null,
-          "limits": "1 req/s · 1B tok/month",
-          "params_b": null
-        },
-        {
-          "id": "voxtral-mini-transcribe-realtime-3",
-          "name": "Voxtral Mini Transcribe Realtime 3.0",
-          "context": null,
-          "limits": "1 req/s · 1B tok/month",
-          "params_b": null
-        },
-        {
-          "id": "voxtral-mini-transcribe-realtime-3-0",
-          "name": "Voxtral Mini Transcribe Realtime 3.0",
-          "context": null,
-          "limits": "1 req/s · 1B tok/month",
-          "params_b": null
-        },
-        {
           "id": "voxtral-small-transcribe-3",
           "name": "Voxtral Small Transcribe 3.0",
           "context": null,
@@ -576,13 +548,6 @@
           "params_b": 7.0
         },
         {
-          "id": "@cf/utter-project/eurollm-9b-it",
-          "name": "@cf/utter-project/eurollm-9b-it",
-          "context": null,
-          "limits": "10k neurons/day",
-          "params_b": 9.0
-        },
-        {
           "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
           "name": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
           "context": 80000,
@@ -633,24 +598,6 @@
             "function_calling"
           ],
           "params_b": null
-        },
-        {
-          "id": "@cf/cloudflare/clairic",
-          "name": "@cf/cloudflare/clairic",
-          "context": 65536,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "vision"
-          ],
-          "mode": "extraction",
-          "params_b": null
-        },
-        {
-          "id": "@cf/swiss-ai/apertus-v1.5-8b",
-          "name": "@cf/swiss-ai/apertus-v1.5-8b",
-          "context": null,
-          "limits": "10k neurons/day",
-          "params_b": 8.0
         },
         {
           "id": "@cf/qwen/qwen2.5-coder-32b-instruct",
@@ -730,65 +677,9 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "DeepSeek-V4-Flash-0731",
-          "name": "DeepSeek-V4-Flash-0731",
-          "context": 400000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "GLM-5.3-Flash",
-          "name": "GLM-5.3-Flash",
-          "context": 400000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "anthropic/claude-opus-4-8",
-          "name": "anthropic/claude-opus-4-8",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "gemini-3.1-pro",
-          "name": "gemini-3.1-pro",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "gemini-4-argon",
-          "name": "gemini-4-argon",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "gemini-nano-banana-2.1",
-          "name": "gemini-nano-banana-2.1",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "glm-5.2",
-          "name": "glm-5.2",
-          "context": 976000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "gpt-6-sol",
-          "name": "gpt-6-sol",
-          "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -798,20 +689,6 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
-        },
-        {
-          "id": "kimi-k2.6",
-          "name": "kimi-k2.6",
-          "context": 262000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "kimi-k2.7-code",
-          "name": "kimi-k2.7-code",
-          "context": 256000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
         },
         {
           "id": "minimax-m2.7",
@@ -826,13 +703,6 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
-        },
-        {
-          "id": "mistral-large-3:675b",
-          "name": "mistral-large-3:675b",
-          "context": 256000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": 675.0
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -982,20 +852,6 @@
           "params_b": null
         },
         {
-          "id": "jev-1.13-free",
-          "name": "jev-1.13-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "longcat-2.5-preview-free",
-          "name": "longcat-2.5-preview-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "glm-5.3-flash-free",
           "name": "glm-5.3-flash-free",
           "context": null,
@@ -1017,18 +873,18 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         },
         {
           "id": "nemotron-3-ultra",
@@ -1038,13 +894,6 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
@@ -1052,11 +901,18 @@
           "params_b": 20.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         },
         {
           "id": "minimax-m3.1-flash",

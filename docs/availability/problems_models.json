@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T04:43:08.038870+00:00",
+  "updated": "2026-10-21T11:45:55.889827+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -174,6 +174,20 @@
           "params_b": 30.0
         },
         {
+          "id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "name": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 120.0
+        },
+        {
+          "id": "nvidia/nemotron-parse-2.0",
+          "name": "nvidia/nemotron-parse-2.0",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
           "id": "nvidia/riva-translate-4b-instruct-v2",
           "name": "nvidia/riva-translate-4b-instruct-v2",
           "context": null,
@@ -197,6 +211,13 @@
         {
           "id": "z-ai/glm-5.3",
           "name": "z-ai/glm-5.3",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
+          "id": "z-ai/glm-5.3-flash",
+          "name": "z-ai/glm-5.3-flash",
           "context": null,
           "limits": "40 req/min",
           "params_b": null
@@ -377,20 +398,6 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "DeepSeek-V4-Flash-0731",
-          "name": "DeepSeek-V4-Flash-0731",
-          "context": 400000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "GLM-5.3-Flash",
-          "name": "GLM-5.3-Flash",
-          "context": 400000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
@@ -454,6 +461,13 @@
           "params_b": null
         },
         {
+          "id": "xingchen-agi/xing4.0-29b-a4b:free",
+          "name": "XingChen: Xing4.0 29B A4B (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": 29.0
+        },
+        {
           "id": "dots-studio/dots-3-note-preview:free",
           "name": "Dots Studio: Dots3-Note Preview (free)",
           "context": 512000,
@@ -477,6 +491,13 @@
         {
           "id": "poolside/laguna-s-2.1:free",
           "name": "Poolside: Laguna S 2.1 (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "poolside/laguna-xs-2.1:free",
+          "name": "Poolside: Laguna XS 2.1 (free)",
           "context": 262144,
           "limits": "free tier",
           "params_b": null
@@ -524,18 +545,18 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         }
       ],
       "error": null

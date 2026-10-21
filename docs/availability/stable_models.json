@@ -1,17 +1,10 @@
 {
-  "updated": "2026-10-21T04:43:08.038870+00:00",
+  "updated": "2026-10-21T11:45:55.889827+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
         {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
@@ -51,6 +44,13 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -69,20 +69,6 @@
         {
           "id": "nvidia/nemotron-3.5-content-safety",
           "name": "nvidia/nemotron-3.5-content-safety",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
-        },
-        {
-          "id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
-          "name": "nvidia/nemotron-3.5-super-vl-120b-a12b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 120.0
-        },
-        {
-          "id": "nvidia/nemotron-parse-2.0",
-          "name": "nvidia/nemotron-parse-2.0",
           "context": null,
           "limits": "40 req/min",
           "params_b": null
@@ -287,18 +273,18 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
-          "params_b": 120.0
+          "params_b": null
         },
         {
           "id": "gpt-oss:20b",
@@ -308,11 +294,11 @@
           "params_b": 20.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 120.0
         }
       ],
       "error": null
