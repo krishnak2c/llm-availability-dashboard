@@ -1,12 +1,12 @@
 {
   "order": [
+    "ollama-minimaxm31flash",
     "openrouter-minimaxminimaxm31flash",
     "kilo-minimaxminimaxm31flash",
     "nvidia-step5",
     "ollama-gptoss20b",
     "llm7-gptoss20b",
     "ollama-beam",
-    "ollama-minimaxm31flash",
     "ollama-nemotron3super",
     "ollama-nemotron3ultra",
     "ollama-nemotron3nano30b",
@@ -27,6 +27,12 @@
     "kilo-lagunas21"
   ],
   "chain": [
+    {
+      "id": "ollama-minimaxm31flash",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "minimax-m3.1-flash",
+      "apiKeyEnv": "OLLAMA_API_KEY"
+    },
     {
       "id": "openrouter-minimaxminimaxm31flash",
       "baseUrl": "https://openrouter.ai/api/v1",
@@ -61,12 +67,6 @@
       "id": "ollama-beam",
       "baseUrl": "https://ollama.com/v1",
       "model": "beam",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
-      "id": "ollama-minimaxm31flash",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "minimax-m3.1-flash",
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
