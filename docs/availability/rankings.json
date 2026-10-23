@@ -9,33 +9,11 @@
     },
     "artificial_analysis_index_version": 4.3,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 26,
-    "ranked_count": 26,
+    "source_count": 25,
+    "ranked_count": 25,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
-    {
-      "provider": "Ollama Cloud",
-      "provider_id": "ollama",
-      "model_id": "minimax-m3.1-flash",
-      "model_name": "minimax-m3.1-flash",
-      "aa_slug": "minimax-m3-1-flash",
-      "aa_name": "MiniMax-M3.1-Flash",
-      "aa_match": "exact",
-      "agentic": null,
-      "coding": null,
-      "intelligence": 42.7,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": 100.0,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 100.0,
-      "data_coverage": 15.0,
-      "rank": 1
-    },
     {
       "provider": "Groq",
       "provider_id": "groq",
@@ -51,12 +29,12 @@
       "swebench": null,
       "agentic_norm": 100.0,
       "coding_norm": 100.0,
-      "intelligence_norm": 73.29,
+      "intelligence_norm": 100.0,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 94.99,
+      "hermes_score": 100.0,
       "data_coverage": 80.0,
-      "rank": 2
+      "rank": 1
     },
     {
       "provider": "Groq",
@@ -73,12 +51,12 @@
       "swebench": null,
       "agentic_norm": 5.61,
       "coding_norm": 20.46,
-      "intelligence_norm": 7.72,
+      "intelligence_norm": 10.53,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 10.64,
+      "hermes_score": 11.17,
       "data_coverage": 80.0,
-      "rank": 3
+      "rank": 2
     },
     {
       "provider": "Ollama Cloud",
@@ -95,11 +73,33 @@
       "swebench": null,
       "agentic_norm": 5.61,
       "coding_norm": 20.46,
-      "intelligence_norm": 7.72,
+      "intelligence_norm": 10.53,
       "arena_norm": null,
       "swebench_norm": null,
-      "hermes_score": 10.64,
+      "hermes_score": 11.17,
       "data_coverage": 80.0,
+      "rank": 3
+    },
+    {
+      "provider": "Groq",
+      "provider_id": "groq",
+      "model_id": "allam-2-7b",
+      "model_name": "allam-2-7b",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
       "rank": 4
     },
     {
@@ -125,28 +125,6 @@
       "rank": 5
     },
     {
-      "provider": "Groq",
-      "provider_id": "groq",
-      "model_id": "allam-2-7b",
-      "model_name": "allam-2-7b",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 6
-    },
-    {
       "provider": "NVIDIA NIM",
       "provider_id": "nvidia",
       "model_id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
@@ -166,7 +144,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 7
+      "rank": 6
     },
     {
       "provider": "NVIDIA NIM",
@@ -188,7 +166,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 8
+      "rank": 7
     },
     {
       "provider": "NVIDIA NIM",
@@ -210,7 +188,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 9
+      "rank": 8
     },
     {
       "provider": "Mistral",
@@ -232,7 +210,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 10
+      "rank": 9
     },
     {
       "provider": "Mistral",
@@ -254,7 +232,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 11
+      "rank": 10
     },
     {
       "provider": "Mistral",
@@ -276,7 +254,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 12
+      "rank": 11
     },
     {
       "provider": "Mistral",
@@ -298,7 +276,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 13
+      "rank": 12
     },
     {
       "provider": "Mistral",
@@ -320,7 +298,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 14
+      "rank": 13
     },
     {
       "provider": "Mistral",
@@ -342,7 +320,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 15
+      "rank": 14
     },
     {
       "provider": "Mistral",
@@ -364,7 +342,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 16
+      "rank": 15
     },
     {
       "provider": "Mistral",
@@ -386,7 +364,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 17
+      "rank": 16
     },
     {
       "provider": "Mistral",
@@ -408,7 +386,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 18
+      "rank": 17
     },
     {
       "provider": "Mistral",
@@ -430,7 +408,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 19
+      "rank": 18
     },
     {
       "provider": "Mistral",
@@ -452,7 +430,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 20
+      "rank": 19
     },
     {
       "provider": "Mistral",
@@ -474,7 +452,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 21
+      "rank": 20
     },
     {
       "provider": "LLM7",
@@ -496,7 +474,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 80.0,
-      "rank": 22
+      "rank": 21
     },
     {
       "provider": "Kilo Code",
@@ -518,13 +496,35 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 23
+      "rank": 22
     },
     {
       "provider": "Ollama Cloud",
       "provider_id": "ollama",
       "model_id": "nemotron-3-super",
       "model_name": "nemotron-3-super",
+      "aa_slug": null,
+      "aa_name": null,
+      "aa_match": "missing",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
+      "rank": 23
+    },
+    {
+      "provider": "Ollama Cloud",
+      "provider_id": "ollama",
+      "model_id": "nemotron-3-ultra",
+      "model_name": "nemotron-3-ultra",
       "aa_slug": null,
       "aa_name": null,
       "aa_match": "missing",
@@ -563,28 +563,6 @@
       "hermes_score": 0.0,
       "data_coverage": 80.0,
       "rank": 25
-    },
-    {
-      "provider": "Ollama Cloud",
-      "provider_id": "ollama",
-      "model_id": "nemotron-3-ultra",
-      "model_name": "nemotron-3-ultra",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 26
     }
   ]
 }

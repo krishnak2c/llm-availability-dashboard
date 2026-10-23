@@ -1,6 +1,5 @@
 {
   "order": [
-    "ollama-minimaxm31flash",
     "nvidia-step5",
     "ollama-gptoss20b",
     "llm7-gptoss20b",
@@ -24,15 +23,10 @@
     "nvidia-diffusiongemma26ba4bit",
     "kilo-lagunas21",
     "nvidia-nemotron3ultra550ba55b",
-    "kilo-nemotron3ultra550ba55b"
+    "kilo-nemotron3ultra550ba55b",
+    "zai-glm45flash"
   ],
   "chain": [
-    {
-      "id": "ollama-minimaxm31flash",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "minimax-m3.1-flash",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
     {
       "id": "nvidia-step5",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
@@ -176,6 +170,12 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "zai-glm45flash",
+      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+      "model": "glm-4.5-flash",
+      "apiKeyEnv": "ZAI_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -186,6 +186,7 @@
     "deepseek/deepseek-v4-pro-free",
     "dots-studio/dots-3-note-preview:free",
     "gemma4:31b",
+    "glm-4.5-flash",
     "google/diffusiongemma-26b-a4b-it",
     "gpt-oss:20b",
     "hy3",
@@ -194,7 +195,6 @@
     "laguna-s-2.1-free",
     "liquid/lfm-2.5-2.6b:free",
     "mimo-v2.5-free",
-    "minimax-m3.1-flash",
     "minimaxai/minimax-m3",
     "nemotron-3-nano:30b",
     "nemotron-3-super",
