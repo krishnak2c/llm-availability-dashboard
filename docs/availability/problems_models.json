@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T08:57:05.797457+00:00",
+  "updated": "2026-10-27T15:20:32.614445+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -81,13 +81,6 @@
           "context": 256000,
           "limits": "20 req/min · 50 req/day",
           "params_b": 30.0
-        },
-        {
-          "id": "nvidia/nemotron-3-super-120b-a12b:free",
-          "name": "NVIDIA: Nemotron 3 Super (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": 120.0
         },
         {
           "id": "openrouter/free",
@@ -524,13 +517,6 @@
           "params_b": 30.0
         },
         {
-          "id": "nvidia/nemotron-3-super-120b-a12b:free",
-          "name": "NVIDIA: Nemotron 3 Super (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
           "id": "openrouter/free",
           "name": "OpenRouter Free Models Router",
           "context": 200000,
@@ -545,18 +531,18 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         }
       ],
       "error": null
