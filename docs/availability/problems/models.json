@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T20:15:23.662713+00:00",
+  "updated": "2026-10-29T00:54:00.575452+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -146,6 +146,14 @@
       "url": "https://console.groq.com",
       "models": [
         {
+          "id": "canopylabs/orpheus-v1-english",
+          "name": "canopylabs/orpheus-v1-english",
+          "context": 4000,
+          "limits": "varies per model",
+          "mode": "audio_speech",
+          "params_b": null
+        },
+        {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
           "context": 131072,
@@ -160,27 +168,18 @@
           "params_b": 27.0
         },
         {
-          "id": "canopylabs/orpheus-arabic-saudi",
-          "name": "canopylabs/orpheus-arabic-saudi",
-          "context": 4000,
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
           "limits": "varies per model",
-          "mode": "audio_speech",
-          "params_b": null
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "canopylabs/orpheus-v1-english",
-          "name": "canopylabs/orpheus-v1-english",
-          "context": 4000,
-          "limits": "varies per model",
-          "mode": "audio_speech",
-          "params_b": null
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -197,18 +196,19 @@
           "params_b": 20.0
         },
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 120.0
+          "params_b": 7.0
+        },
+        {
+          "id": "canopylabs/orpheus-arabic-saudi",
+          "name": "canopylabs/orpheus-arabic-saudi",
+          "context": 4000,
+          "limits": "varies per model",
+          "mode": "audio_speech",
+          "params_b": null
         }
       ],
       "error": null
@@ -2383,11 +2383,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
+          "params_b": null
         },
         {
           "id": "gpt-oss:120b",
@@ -2395,6 +2395,20 @@
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         },
         {
           "id": "minimax-m3",
@@ -2416,20 +2430,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         },
         {
           "id": "beam",
