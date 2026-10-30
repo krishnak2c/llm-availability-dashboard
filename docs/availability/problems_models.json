@@ -1,6 +1,95 @@
 {
-  "updated": "2026-10-30T09:58:10.927340+00:00",
+  "updated": "2026-10-30T17:59:36.474225+00:00",
   "providers": {
+    "openrouter": {
+      "name": "OpenRouter",
+      "url": "https://openrouter.ai",
+      "models": [
+        {
+          "id": "google/gemma-4-31b-it:free",
+          "name": "Google: Gemma 4 31B (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 31.0
+        }
+      ],
+      "error": null
+    },
+    "cloudflare": {
+      "name": "Cloudflare AI",
+      "url": "https://developers.cloudflare.com/workers-ai/",
+      "models": [
+        {
+          "id": "@cf/moonshotai/kimi-k2.7-code",
+          "name": "@cf/moonshotai/kimi-k2.7-code",
+          "context": 262144,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "@cf/zai-org/glm-5.3",
+          "name": "@cf/zai-org/glm-5.3",
+          "context": null,
+          "limits": "10k neurons/day",
+          "params_b": null
+        },
+        {
+          "id": "@cf/zai-org/glm-5.3-flash",
+          "name": "@cf/zai-org/glm-5.3-flash",
+          "context": null,
+          "limits": "10k neurons/day",
+          "params_b": null
+        },
+        {
+          "id": "@cf/moonshotai/kimi-k2.6",
+          "name": "@cf/moonshotai/kimi-k2.6",
+          "context": 262144,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "@cf/deepseek-ai/deepseek-v4-flash-0731",
+          "name": "@cf/deepseek-ai/deepseek-v4-flash-0731",
+          "context": null,
+          "limits": "10k neurons/day",
+          "params_b": null
+        },
+        {
+          "id": "@cf/zai-org/glm-5.2",
+          "name": "@cf/zai-org/glm-5.2",
+          "context": 262144,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "@cf/deepseek-ai/deepseek-v4-pro-0813",
+          "name": "@cf/deepseek-ai/deepseek-v4-pro-0813",
+          "context": null,
+          "limits": "10k neurons/day",
+          "params_b": null
+        },
+        {
+          "id": "@cf/deepseek-ai/deepseek-v4.1-flash-1017",
+          "name": "@cf/deepseek-ai/deepseek-v4.1-flash-1017",
+          "context": null,
+          "limits": "10k neurons/day",
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
     "kilo": {
       "name": "Kilo Code",
       "url": "https://kilo.code",
