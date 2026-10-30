@@ -1,16 +1,65 @@
 {
-  "updated": "2026-10-30T17:59:36.474225+00:00",
+  "updated": "2026-10-30T22:17:05.436655+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
         {
+          "id": "xingchen-agi/xing4.0-29b-a4b:free",
+          "name": "XingChen: Xing4.0 29B A4B (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 29.0
+        },
+        {
+          "id": "liquid/lfm-2.5-2.6b:free",
+          "name": "LiquidAI: LFM2.5-2.6B (free)",
+          "context": 65536,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 2.6
+        },
+        {
+          "id": "poolside/laguna-xs-2.1:free",
+          "name": "Poolside: Laguna XS 2.1 (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "google/gemma-4-26b-a4b-it:free",
+          "name": "Google: Gemma 4 26B A4B  (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 26.0
+        },
+        {
           "id": "google/gemma-4-31b-it:free",
           "name": "Google: Gemma 4 31B (free)",
           "context": 262144,
           "limits": "20 req/min · 50 req/day",
           "params_b": 31.0
+        }
+      ],
+      "error": null
+    },
+    "nvidia": {
+      "name": "NVIDIA NIM",
+      "url": "https://build.nvidia.com",
+      "models": [
+        {
+          "id": "nvidia/nemotron-3.5-content-safety",
+          "name": "nvidia/nemotron-3.5-content-safety",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
+          "name": "nvidia/nemotron-3.5-lightning-30b-a3b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 30.0
         }
       ],
       "error": null
@@ -94,6 +143,13 @@
       "name": "Kilo Code",
       "url": "https://kilo.code",
       "models": [
+        {
+          "id": "kilo-auto/free",
+          "name": "Auto Free",
+          "context": 256000,
+          "limits": "free tier",
+          "params_b": null
+        },
         {
           "id": "xingchen-agi/xing4.0-29b-a4b:free",
           "name": "XingChen: Xing4.0 29B A4B (free)",

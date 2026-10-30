@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T17:59:36.474225+00:00",
+  "updated": "2026-10-30T22:17:05.436655+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -69,13 +69,6 @@
           "params_b": null
         },
         {
-          "id": "nvidia/nemotron-3.5-content-safety:free",
-          "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-          "context": 128000,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": null
-        },
-        {
           "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
           "name": "NVIDIA: Nemotron 3 Ultra (free)",
           "context": 1000000,
@@ -118,27 +111,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 120.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
           "context": 131072,
@@ -151,6 +123,27 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -191,20 +184,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 26.0
-        },
-        {
-          "id": "google/gemma-4-31b-it",
-          "name": "google/gemma-4-31b-it",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 31.0
-        },
-        {
-          "id": "meta/llama-3.2-11b-vision-instruct",
-          "name": "meta/llama-3.2-11b-vision-instruct",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 11.0
         },
         {
           "id": "meta/llama-3.2-90b-vision-instruct",
@@ -261,13 +240,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 30.0
-        },
-        {
-          "id": "nvidia/nemotron-3-super-120b-a12b",
-          "name": "nvidia/nemotron-3-super-120b-a12b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 120.0
         },
         {
           "id": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -473,36 +445,6 @@
           "params_b": 8.0
         },
         {
-          "id": "mistral-large-4",
-          "name": "mistral-large-4",
-          "context": 1048576,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-large-4-0",
-          "name": "mistral-large-4",
-          "context": 1048576,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": null
-        },
-        {
           "id": "voxtral-small-2507",
           "name": "Voxtral Small Transcribe",
           "context": 32768,
@@ -524,22 +466,6 @@
             "tool_choice",
             "response_schema"
           ],
-          "params_b": null
-        },
-        {
-          "id": "voxtral-small-transcribe-3-0",
-          "name": "Voxtral Small Transcribe 3.0",
-          "context": null,
-          "limits": "1 req/s · 1B tok/month",
-          "mode": "audio_transcription",
-          "params_b": null
-        },
-        {
-          "id": "voxtral-mini-tts-3",
-          "name": "Voxtral Mini TTS 3.0",
-          "context": null,
-          "limits": "1 req/s · 1B tok/month",
-          "mode": "audio_speech",
           "params_b": null
         }
       ],
@@ -1010,6 +936,13 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
@@ -1024,13 +957,6 @@
           "params_b": null
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
@@ -1038,11 +964,11 @@
           "params_b": 31.0
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
+          "params_b": null
         },
         {
           "id": "gpt-oss:120b",
