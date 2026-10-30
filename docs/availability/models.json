@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T18:27:35.242569+00:00",
+  "updated": "2026-10-30T00:57:44.718248+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -146,12 +146,18 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "canopylabs/orpheus-v1-english",
-          "name": "canopylabs/orpheus-v1-english",
-          "context": 4000,
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
           "limits": "varies per model",
-          "mode": "audio_speech",
-          "params_b": null
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "canopylabs/orpheus-arabic-saudi",
@@ -160,6 +166,28 @@
           "limits": "varies per model",
           "mode": "audio_speech",
           "params_b": null
+        },
+        {
+          "id": "canopylabs/orpheus-v1-english",
+          "name": "canopylabs/orpheus-v1-english",
+          "context": 4000,
+          "limits": "varies per model",
+          "mode": "audio_speech",
+          "params_b": null
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 20.0
         },
         {
           "id": "qwen/qwen3.8-27b",
@@ -181,34 +209,6 @@
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 20.0
-        },
-        {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 120.0
         }
       ],
       "error": null
@@ -2420,15 +2420,8 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -2441,11 +2434,11 @@
           "params_b": 20.0
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
-          "params_b": 120.0
+          "params_b": 30.0
         },
         {
           "id": "minimax-m3",
@@ -2455,18 +2448,25 @@
           "params_b": null
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 120.0
+        },
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
         },
         {
           "id": "beam",
