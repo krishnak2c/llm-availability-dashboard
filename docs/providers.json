@@ -19,11 +19,12 @@
     "nvidia-gptoss",
     "kilo-northminicode",
     "openrouter-northminicode",
-    "openrouter-nemotron35lightning",
-    "kilo-nemotron35lightning",
     "kilo-dots3notepreview",
     "openrouter-dots3notepreview",
-    "openrouter-lagunas21"
+    "openrouter-nemotron35lightning",
+    "kilo-nemotron35lightning",
+    "zai-glm45flash",
+    "llm7-codestral"
   ],
   "chain": [
     {
@@ -141,18 +142,6 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "openrouter-nemotron35lightning",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "nvidia/nemotron-3.5-lightning:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
-      "id": "kilo-nemotron35lightning",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "nvidia/nemotron-3.5-lightning:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
       "id": "kilo-dots3notepreview",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "dots-studio/dots-3-note-preview:free",
@@ -165,20 +154,40 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "openrouter-lagunas21",
+      "id": "openrouter-nemotron35lightning",
       "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "poolside/laguna-s-2.1:free",
+      "model": "nvidia/nemotron-3.5-lightning:free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "kilo-nemotron35lightning",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "zai-glm45flash",
+      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+      "model": "glm-4.5-flash",
+      "apiKeyEnv": "ZAI_API_KEY"
+    },
+    {
+      "id": "llm7-codestral",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "codestral-latest",
+      "apiKeyEnv": "LLM7_API_KEY"
     }
   ],
   "modelAllowlist": [
     "beam",
+    "codestral-latest",
     "cohere/north-mini-code:free",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
     "dots-studio/dots-3-note-preview:free",
     "gemma4:31b",
+    "glm-4.5-flash",
     "gpt-oss:120b",
     "gpt-oss:20b",
     "hy3",
@@ -197,7 +206,6 @@
     "nvidia/nemotron-3.5-lightning:free",
     "openai/gpt-oss-20b",
     "openrouter/free",
-    "poolside/laguna-s-2.1:free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",
     "thinkingmachines/inkling",

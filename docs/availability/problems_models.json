@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T05:37:15.868844+00:00",
+  "updated": "2026-10-31T06:43:25.725368+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -13,11 +13,25 @@
           "params_b": 29.0
         },
         {
+          "id": "nvidia/nemotron-3.5-super-vl:free",
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "context": 1000000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
           "id": "liquid/lfm-2.5-2.6b:free",
           "name": "LiquidAI: LFM2.5-2.6B (free)",
           "context": 65536,
           "limits": "20 req/min · 50 req/day",
           "params_b": 2.6
+        },
+        {
+          "id": "poolside/laguna-s-2.1:free",
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
         },
         {
           "id": "poolside/laguna-xs-2.1:free",
@@ -48,11 +62,32 @@
       "url": "https://build.nvidia.com",
       "models": [
         {
+          "id": "google/diffusiongemma-26b-a4b-it",
+          "name": "google/diffusiongemma-26b-a4b-it",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 26.0
+        },
+        {
           "id": "meta/llama-3.2-90b-vision-instruct",
           "name": "meta/llama-3.2-90b-vision-instruct",
           "context": null,
           "limits": "40 req/min",
           "params_b": 90.0
+        },
+        {
+          "id": "mistralai/mistral-large-4-1t-a52b",
+          "name": "mistralai/mistral-large-4-1t-a52b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/ising-calibration-1.5-31b",
+          "name": "nvidia/ising-calibration-1.5-31b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 31.0
         },
         {
           "id": "nvidia/nemotron-3.5-content-safety",
@@ -88,6 +123,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 4.0
+        },
+        {
+          "id": "poolside/laguna-xs-2.1",
+          "name": "poolside/laguna-xs-2.1",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
         },
         {
           "id": "stepfun-ai/step-5-preview",
@@ -186,6 +228,13 @@
           "params_b": null
         },
         {
+          "id": "nvidia/nemotron-3.5-super-vl:free",
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "context": 1000000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "xingchen-agi/xing4.0-29b-a4b:free",
           "name": "XingChen: Xing4.0 29B A4B (free)",
           "context": 262144,
@@ -198,6 +247,13 @@
           "context": 65536,
           "limits": "free tier",
           "params_b": 2.6
+        },
+        {
+          "id": "poolside/laguna-s-2.1:free",
+          "name": "Poolside: Laguna S 2.1 (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
         },
         {
           "id": "poolside/laguna-xs-2.1:free",
