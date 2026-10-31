@@ -67,6 +67,10 @@ jobs:
         env:
           REPO_PAT: ${{ secrets.RELAY_REPO_PAT }}
         run: |
+          if ! python scripts/verify_relay_chain.py docs/providers.json; then
+            echo "Relay chain failed liveness check — not publishing; the relay keeps its current chain."
+            exit 0
+          fi
           git clone https://x-access-token:${REPO_PAT}@github.com/krishnak2c/vercel-ai-failover-relay.git /tmp/relay
           cp docs/providers.json /tmp/relay/providers.json
           git -C /tmp/relay config user.name "gha-bot"

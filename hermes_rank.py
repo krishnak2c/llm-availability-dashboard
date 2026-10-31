@@ -942,6 +942,15 @@ def load_inputs(
 
     print(f"Loaded {len(models)} models from {models_path}")
 
+    if not models:
+        # An empty input produces an empty rankings.json, which pushes
+        # generate_site.py back onto the static RELAY_CHAIN. Say so loudly.
+        print(
+            f"WARNING: {models_path} has no models — rankings will be empty "
+            f"and the dashboard will fall back to the static relay chain.",
+            file=sys.stderr,
+        )
+
     arena = load_csv(args.arena)
     swebench = load_csv(args.swebench)
 

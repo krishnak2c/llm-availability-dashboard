@@ -2035,6 +2035,201 @@ def build_relay_providers_json(avail):
     }
 
 
+# ── Relay liveness gate (applies to BOTH the static fallback and dynamic chain) ─
+#
+# providers.json is the relay's failover order: every entry in it must be a
+# model that probe data proves alive. The static RELAY_CHAIN is a frozen list
+# from months ago, so "publish whatever the static list says" can ship an
+# all-dead chain (2026-10-28 incident: all 9 entries served 410/400/429).
+# This gate is the hard stop: unknown is treated as dead, and a chain with too
+# few survivors is not published at all — the previous providers.json stands.
+
+# Probe outcomes that prove a model is unusable right now.
+RELAY_DEAD_STATUSES = (
+    "auth_error",
+    "not_found",
+    "rate_limited",
+    "quota_exhausted",
+    "bad_response",
+)
+
+# Residents of the chain must clear this bar; below it we keep the old file.
+RELAY_MIN_LIVE_ENTRIES = 4
+
+# uptime_7d == 0 only counts as proof of death with at least this many probes.
+RELAY_DEAD_MIN_SAMPLES = 3
+
+
+def _relay_entry_stats(entry, avail):
+    """Availability stats for a relay chain entry, or None when it is unprobed.
+
+    Resolution order:
+      1. RELAY_AVAIL_MAP — the existing static-entry mapping to the dashboard
+         (provider, model) pair that actually probes the model.
+      2. the provider key encoded in the entry id (`<provider>-<norm>`), which
+         is how select_dynamic_chain names dynamic entries.
+
+    Resolution is deliberately provider-exact: a record for the same model on a
+    DIFFERENT provider does not prove this entry's upstream is alive, and
+    accepting it is how a dead zen/orca/NVIDIA entry stays in the chain.
+
+    An empty/missing stats dict returns None: "no record" must be
+    distinguishable from "recorded healthy".
+    """
+    avail = avail or {}
+    model = entry.get("model") or ""
+    mapped = RELAY_AVAIL_MAP.get(model)
+    if mapped:
+        stats = (avail.get(mapped[0]) or {}).get(mapped[1])
+        if stats:
+            return stats
+    entry_id = entry.get("id") or ""
+    # Longest provider key first so "openrouter-" wins over a "open-" sibling.
+    for prov_key in sorted(avail, key=len, reverse=True):
+        if entry_id.startswith(f"{prov_key}-"):
+            stats = (avail.get(prov_key) or {}).get(model)
+            if stats:
+                return stats
+    return None
+
+
+def _relay_entry_dead_reason(entry, avail):
+    """Why a chain entry must not be published, or None when it is alive.
+
+    Decision table (first match wins):
+      no availability record at all        → drop ("unknown" is not healthy)
+      last_status in RELAY_DEAD_STATUSES   → drop (auth/404/429/quota/bad body)
+      uptime_7d == 0 and samples_7d >= 3   → drop (proven down)
+      everything else                      → keep, including
+                                             samples_7d == 0 + last_status == "ok"
+                                             (one probe ran and succeeded)
+    """
+    stats = _relay_entry_stats(entry, avail)
+    if not stats:
+        return "no availability record"
+    status = stats.get("last_status")
+    if status in RELAY_DEAD_STATUSES:
+        return f"last_status={status}"
+    uptime_7d = stats.get("uptime_7d")
+    samples_7d = stats.get("samples_7d") or 0
+    if uptime_7d is not None and uptime_7d == 0 and samples_7d >= RELAY_DEAD_MIN_SAMPLES:
+        return f"uptime_7d=0 over {samples_7d} samples"
+    return None
+
+
+def apply_relay_liveness_gate(payload, avail, min_live=RELAY_MIN_LIVE_ENTRIES):
+    """Drop dead/unproven entries from a relay payload.
+
+    Returns (payload_or_None, kept_ids, dropped) where dropped is a list of
+    (entry_id, reason) pairs. payload_or_None is None when fewer than
+    `min_live` entries survive: the caller must then leave the previously
+    published providers.json untouched rather than publish a 1-3 entry chain.
+
+    `order` is recomputed from the survivors (original relative order) and
+    `modelAllowlist` keeps its own order while dropping models whose only
+    chain entry was removed; surviving models are always allowlisted.
+    """
+    chain = payload.get("chain") or []
+    keep = []
+    dropped = []
+    for entry in chain:
+        reason = _relay_entry_dead_reason(entry, avail)
+        if reason:
+            dropped.append((entry.get("id") or entry.get("model") or "?", reason))
+        else:
+            keep.append(entry)
+
+    kept_models = {e.get("model") for e in keep if e.get("model")}
+    dead_models = {e.get("model") for e in chain if e.get("model")} - kept_models
+    allowlist = [
+        m for m in (payload.get("modelAllowlist") or []) if m not in dead_models
+    ]
+    for entry in keep:  # survivors must stay allowlisted, deterministic order
+        model = entry.get("model")
+        if model and model not in allowlist:
+            allowlist.append(model)
+
+    if len(keep) < min_live:
+        return None, [e.get("id") for e in keep], dropped
+
+    return (
+        {
+            "order": [e["id"] for e in keep],
+            "chain": [dict(e) for e in keep],
+            "modelAllowlist": allowlist,
+        },
+        [e["id"] for e in keep],
+        dropped,
+    )
+
+
+def write_relay_payload(out_dir, relay_payload, avail, min_live=RELAY_MIN_LIVE_ENTRIES):
+    """Gate the relay payload, then publish docs/providers.json (or keep it).
+
+    Returns the published payload, or None when the gate refused to publish.
+    Logs every dropped entry with its reason so the cron output is auditable.
+    """
+    gated, kept_ids, dropped = apply_relay_liveness_gate(relay_payload, avail, min_live)
+    for entry_id, reason in dropped:
+        print(f"  [relay] dropped {entry_id}: {reason}")
+    path = Path(out_dir) / "providers.json"
+    if gated is None:
+        noun = "entry" if len(kept_ids) == 1 else "entries"
+        print(
+            f"WARNING: relay chain has only {len(kept_ids)} live {noun} "
+            f"(minimum {min_live}); keeping the previously published "
+            f"docs/providers.json unchanged"
+        )
+        return None
+    path.write_text(
+        json.dumps(gated, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    print(f"Written docs/providers.json (order: {', '.join(gated['order'])})")
+    return gated
+
+
+def _count_models(payload):
+    """Model dicts across all providers in a models.json-shaped payload."""
+    try:
+        return sum(
+            len(p.get("models") or [])
+            for p in (payload.get("providers") or {}).values()
+        )
+    except Exception:
+        return 0
+
+
+def write_stable_models(path, stable):
+    """Publish stable_models.json without emptying the ranking pipeline's input.
+
+    hermes_rank.py reads this file on the NEXT run; overwriting it with
+    `providers: {}` silently drives rankings.json to `ranking: []`, which drops
+    the site back onto the stale static RELAY_CHAIN (2026-10-28 incident: probes
+    stalled for a week, samples_7d never reached the n >= 5 filter bar, every
+    model fell out, and a fully dead chain shipped). So: keep the last good
+    file when the new set is empty, and say so loudly.
+
+    Returns (written, n_models_in_new_set).
+    """
+    n_stable = _count_models(stable)
+    if n_stable == 0:
+        try:
+            previous = _count_models(json.loads(Path(path).read_text()))
+        except Exception:
+            previous = 0
+        if previous:
+            print(
+                f"WARNING: 0 models passed the stable filter (uptime_7d >= 0.95 "
+                f"with samples_7d >= 5) — probe data is probably missing/stale. "
+                f"Keeping the previous stable_models.json ({previous} models) "
+                f"so rankings.json is not emptied."
+            )
+            return False, n_stable
+    Path(path).write_text(json.dumps(stable, indent=2, ensure_ascii=False))
+    print(f"Written docs/availability/stable_models.json ({n_stable} models)")
+    return True, n_stable
+
+
 # ── Dynamic relay chain selection (top-N best stable OpenAI-compatible models) ─
 
 # Provider-qualified prefixes stripped from model ids before matching benchmarks.
@@ -2325,10 +2520,10 @@ def main():
             "chain": chain,
             "modelAllowlist": allowlist,
         }
-    (OUT_DIR / "providers.json").write_text(
-        json.dumps(relay_payload, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
-    print(f"Written docs/providers.json (order: {', '.join(relay_payload['order'])})")
+    # Liveness gate covers both paths above: never publish a chain that
+    # availability.json proves dead, and keep the previous providers.json when
+    # fewer than RELAY_MIN_LIVE_ENTRIES entries survive.
+    write_relay_payload(OUT_DIR, relay_payload, avail_providers)
 
     # Self-correcting layer: drop models that probe data confirms are broken.
     # A model is dropped when uptime_7d == 0 with samples_7d >= MIN_SAMPLES.
@@ -2424,15 +2619,11 @@ def main():
     avail_subdir.mkdir(parents=True, exist_ok=True)
     stable = _filtered_json(lambda u: u >= 0.95)
     problems = _filtered_json(lambda u: 0.0 <= u < 0.95)
-    (avail_subdir / "stable_models.json").write_text(
-        json.dumps(stable, indent=2, ensure_ascii=False)
-    )
+    n_problems = sum(len(p["models"]) for p in problems["providers"].values())
+    write_stable_models(avail_subdir / "stable_models.json", stable)
     (avail_subdir / "problems_models.json").write_text(
         json.dumps(problems, indent=2, ensure_ascii=False)
     )
-    n_stable = sum(len(p["models"]) for p in stable["providers"].values())
-    n_problems = sum(len(p["models"]) for p in problems["providers"].values())
-    print(f"Written docs/availability/stable_models.json ({n_stable} models)")
     print(f"Written docs/availability/problems_models.json ({n_problems} models)")
 
     # Compute per-provider deltas (with full id sets for history)
