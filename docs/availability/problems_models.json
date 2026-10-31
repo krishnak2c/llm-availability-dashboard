@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T22:17:05.436655+00:00",
+  "updated": "2026-10-31T05:37:15.868844+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -48,6 +48,13 @@
       "url": "https://build.nvidia.com",
       "models": [
         {
+          "id": "meta/llama-3.2-90b-vision-instruct",
+          "name": "meta/llama-3.2-90b-vision-instruct",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 90.0
+        },
+        {
           "id": "nvidia/nemotron-3.5-content-safety",
           "name": "nvidia/nemotron-3.5-content-safety",
           "context": null,
@@ -60,6 +67,34 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 30.0
+        },
+        {
+          "id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "name": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 120.0
+        },
+        {
+          "id": "nvidia/nemotron-parse-2.0",
+          "name": "nvidia/nemotron-parse-2.0",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/riva-translate-4b-instruct-v2",
+          "name": "nvidia/riva-translate-4b-instruct-v2",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 4.0
+        },
+        {
+          "id": "stepfun-ai/step-5-preview",
+          "name": "stepfun-ai/step-5-preview",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
         }
       ],
       "error": null
@@ -156,6 +191,27 @@
           "context": 262144,
           "limits": "free tier",
           "params_b": 29.0
+        },
+        {
+          "id": "liquid/lfm-2.5-2.6b:free",
+          "name": "LiquidAI: LFM2.5-2.6B (free)",
+          "context": 65536,
+          "limits": "free tier",
+          "params_b": 2.6
+        },
+        {
+          "id": "poolside/laguna-xs-2.1:free",
+          "name": "Poolside: Laguna XS 2.1 (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+          "context": 256000,
+          "limits": "free tier",
+          "params_b": 30.0
         }
       ],
       "error": null
