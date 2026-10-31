@@ -1,6 +1,5 @@
 {
   "order": [
-    "ollama-nemotron3ultra",
     "nvidia-nemotron3ultra550ba55b",
     "openrouter-nemotron3ultra550ba55b",
     "kilo-nemotron3ultra550ba55b",
@@ -9,6 +8,7 @@
     "ollama-gptoss20b",
     "llm7-gptoss20b",
     "ollama-nemotron3super",
+    "ollama-nemotron3ultra",
     "ollama-gptoss120b",
     "ollama-beam",
     "ollama-nemotron3nano30b",
@@ -19,20 +19,14 @@
     "nvidia-gptoss",
     "kilo-northminicode",
     "openrouter-northminicode",
-    "kilo-dots3notepreview",
-    "openrouter-dots3notepreview",
     "openrouter-nemotron35lightning",
     "kilo-nemotron35lightning",
+    "kilo-dots3notepreview",
+    "openrouter-dots3notepreview",
     "zai-glm45flash",
     "llm7-codestral"
   ],
   "chain": [
-    {
-      "id": "ollama-nemotron3ultra",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "nemotron-3-ultra",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
     {
       "id": "nvidia-nemotron3ultra550ba55b",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
@@ -79,6 +73,12 @@
       "id": "ollama-nemotron3super",
       "baseUrl": "https://ollama.com/v1",
       "model": "nemotron-3-super",
+      "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
+      "id": "ollama-nemotron3ultra",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "nemotron-3-ultra",
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
@@ -142,18 +142,6 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "kilo-dots3notepreview",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "dots-studio/dots-3-note-preview:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-dots3notepreview",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "dots-studio/dots-3-note-preview:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
       "id": "openrouter-nemotron35lightning",
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "nvidia/nemotron-3.5-lightning:free",
@@ -164,6 +152,18 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3.5-lightning:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "kilo-dots3notepreview",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "dots-studio/dots-3-note-preview:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-dots3notepreview",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "dots-studio/dots-3-note-preview:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "zai-glm45flash",
