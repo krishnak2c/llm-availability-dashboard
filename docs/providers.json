@@ -3,7 +3,6 @@
     "nvidia-nemotron3ultra550ba55b",
     "openrouter-nemotron3ultra550ba55b",
     "kilo-nemotron3ultra550ba55b",
-    "nvidia-minimaxm31flash",
     "nvidia-nemotron35bolte4b",
     "ollama-gptoss20b",
     "llm7-gptoss20b",
@@ -16,7 +15,6 @@
     "ollama-gemma431b",
     "openrouter-openrouterfree",
     "kilo-openrouterfree",
-    "nvidia-gptoss",
     "kilo-northminicode",
     "openrouter-northminicode",
     "openrouter-nemotron35lightning",
@@ -24,7 +22,9 @@
     "kilo-dots3notepreview",
     "openrouter-dots3notepreview",
     "zai-glm45flash",
-    "llm7-codestral"
+    "llm7-codestral",
+    "nvidia-nemotron35lightning30ba3b",
+    "nvidia-gptoss"
   ],
   "chain": [
     {
@@ -44,12 +44,6 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "nvidia-minimaxm31flash",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "minimaxai/minimax-m3.1-flash",
-      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "nvidia-nemotron35bolte4b",
@@ -124,12 +118,6 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "nvidia-gptoss",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "openai/gpt-oss-20b",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
       "id": "kilo-northminicode",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "cohere/north-mini-code:free",
@@ -176,6 +164,18 @@
       "baseUrl": "https://api.llm7.io/v1",
       "model": "codestral-latest",
       "apiKeyEnv": "LLM7_API_KEY"
+    },
+    {
+      "id": "nvidia-nemotron35lightning30ba3b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "nvidia-gptoss",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "openai/gpt-oss-20b",
+      "apiKeyEnv": "NIM_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -195,7 +195,6 @@
     "laguna-s-2.1-free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
-    "minimaxai/minimax-m3.1-flash",
     "nemotron-3-nano:30b",
     "nemotron-3-super",
     "nemotron-3-ultra",
@@ -203,6 +202,7 @@
     "nvidia/nemotron-3-ultra-550b-a55b",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "nvidia/nemotron-3.5-bolt-e4b",
+    "nvidia/nemotron-3.5-lightning-30b-a3b",
     "nvidia/nemotron-3.5-lightning:free",
     "openai/gpt-oss-20b",
     "openrouter/free",

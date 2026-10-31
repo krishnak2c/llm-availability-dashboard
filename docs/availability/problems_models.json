@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T12:24:00.689619+00:00",
+  "updated": "2026-10-31T19:17:07.281115+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -25,20 +25,6 @@
           "context": 65536,
           "limits": "20 req/min · 50 req/day",
           "params_b": 2.6
-        },
-        {
-          "id": "poolside/laguna-s-2.1:free",
-          "name": "Poolside: Laguna S 2.1 (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": null
-        },
-        {
-          "id": "poolside/laguna-xs-2.1:free",
-          "name": "Poolside: Laguna XS 2.1 (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": null
         },
         {
           "id": "google/gemma-4-26b-a4b-it:free",
@@ -74,6 +60,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 90.0
+        },
+        {
+          "id": "minimaxai/minimax-m3.1-flash",
+          "name": "minimaxai/minimax-m3.1-flash",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
         },
         {
           "id": "mistralai/mistral-large-4-1t-a52b",
@@ -123,6 +116,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 4.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 20.0
         },
         {
           "id": "poolside/laguna-xs-2.1",
@@ -207,6 +207,13 @@
           "params_b": null
         },
         {
+          "id": "@cf/qwen/qwen3.8-27b",
+          "name": "@cf/qwen/qwen3.8-27b",
+          "context": null,
+          "limits": "10k neurons/day",
+          "params_b": 27.0
+        },
+        {
           "id": "@cf/deepseek-ai/deepseek-v4.1-flash-1017",
           "name": "@cf/deepseek-ai/deepseek-v4.1-flash-1017",
           "context": null,
@@ -247,20 +254,6 @@
           "context": 65536,
           "limits": "free tier",
           "params_b": 2.6
-        },
-        {
-          "id": "poolside/laguna-s-2.1:free",
-          "name": "Poolside: Laguna S 2.1 (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "poolside/laguna-xs-2.1:free",
-          "name": "Poolside: Laguna XS 2.1 (free)",
-          "context": 262144,
-          "limits": "free tier",
-          "params_b": null
         },
         {
           "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
