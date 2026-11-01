@@ -1,31 +1,10 @@
 {
-  "updated": "2026-11-01T13:18:08.962204+00:00",
+  "updated": "2026-11-01T19:38:22.964719+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 120.0
-        },
         {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
@@ -53,6 +32,27 @@
             "prompt_caching"
           ],
           "params_b": 20.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 120.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -317,17 +317,6 @@
           "params_b": 1.0
         },
         {
-          "id": "@cf/zai-org/glm-4.7-flash",
-          "name": "@cf/zai-org/glm-4.7-flash",
-          "context": 131072,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": null
-        },
-        {
           "id": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
           "name": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
           "context": 8192,
@@ -360,17 +349,6 @@
           "context": 32768,
           "limits": "10k neurons/day",
           "params_b": 32.0
-        },
-        {
-          "id": "@cf/nvidia/nemotron-3-120b-a12b",
-          "name": "@cf/nvidia/nemotron-3-120b-a12b",
-          "context": 256000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": 120.0
         },
         {
           "id": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
@@ -445,16 +423,6 @@
             "function_calling"
           ],
           "params_b": 17.0
-        },
-        {
-          "id": "@cf/qwen/qwq-32b",
-          "name": "@cf/qwen/qwq-32b",
-          "context": 24000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "reasoning"
-          ],
-          "params_b": 32.0
         }
       ],
       "error": null
@@ -463,13 +431,6 @@
       "name": "LLM7",
       "url": "https://llm7.io",
       "models": [
-        {
-          "id": "codestral-latest",
-          "name": "codestral-latest",
-          "context": 32000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
         {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
@@ -490,20 +451,6 @@
           "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 30.0
-        }
-      ],
-      "error": null
-    },
-    "zai": {
-      "name": "Z.ai (GLM)",
-      "url": "https://open.bigmodel.cn",
-      "models": [
-        {
-          "id": "glm-4.5-flash",
-          "name": "GLM-4.5-Flash",
-          "context": null,
-          "limits": "free Flash tier",
-          "params_b": null
         }
       ],
       "error": null
@@ -541,11 +488,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
+          "params_b": 20.0
         },
         {
           "id": "nemotron-3-ultra",
@@ -555,11 +502,11 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
+          "params_b": 31.0
         },
         {
           "id": "gpt-oss:120b",
@@ -569,18 +516,18 @@
           "params_b": 120.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         },
         {
           "id": "beam",

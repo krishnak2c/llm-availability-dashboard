@@ -1,11 +1,12 @@
 {
   "order": [
     "nvidia-nemotron3ultra550ba55b",
+    "kilo-nemotron3ultra550ba55b",
     "ollama-gptoss20b",
     "llm7-gptoss20b",
-    "ollama-nemotron3super",
     "ollama-nemotron3ultra",
     "ollama-gptoss120b",
+    "ollama-nemotron3super",
     "ollama-beam",
     "ollama-nemotron3nano30b",
     "llm7-nemotron3nano30b",
@@ -13,15 +14,17 @@
     "kilo-northminicode",
     "kilo-nemotron35lightning",
     "kilo-dots3notepreview",
-    "zai-glm45flash",
-    "llm7-codestral",
     "nvidia-nemotron35lightning30ba3b",
     "kilo-kiloautofree",
     "nvidia-mistrallarge41ta52b",
     "kilo-openrouterfree",
     "nvidia-nemotron35supervl120ba12b",
+    "zai-glm45flash",
     "llm7-mistralnemoinstruct",
-    "nvidia-nemotron3nanoomni30ba3breasoning"
+    "llm7-codestral",
+    "nvidia-nemotron3nanoomni30ba3breasoning",
+    "kilo-nemotron3nanoomni30ba3breasoning",
+    "kilo-nemotron35supervl"
   ],
   "chain": [
     {
@@ -29,6 +32,12 @@
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "nvidia/nemotron-3-ultra-550b-a55b",
       "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "kilo-nemotron3ultra550ba55b",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "ollama-gptoss20b",
@@ -43,12 +52,6 @@
       "apiKeyEnv": "LLM7_API_KEY"
     },
     {
-      "id": "ollama-nemotron3super",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "nemotron-3-super",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
       "id": "ollama-nemotron3ultra",
       "baseUrl": "https://ollama.com/v1",
       "model": "nemotron-3-ultra",
@@ -58,6 +61,12 @@
       "id": "ollama-gptoss120b",
       "baseUrl": "https://ollama.com/v1",
       "model": "gpt-oss:120b",
+      "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
+      "id": "ollama-nemotron3super",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "nemotron-3-super",
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
@@ -103,18 +112,6 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "zai-glm45flash",
-      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
-      "model": "glm-4.5-flash",
-      "apiKeyEnv": "ZAI_API_KEY"
-    },
-    {
-      "id": "llm7-codestral",
-      "baseUrl": "https://api.llm7.io/v1",
-      "model": "codestral-latest",
-      "apiKeyEnv": "LLM7_API_KEY"
-    },
-    {
       "id": "nvidia-nemotron35lightning30ba3b",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
@@ -145,9 +142,21 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
+      "id": "zai-glm45flash",
+      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+      "model": "glm-4.5-flash",
+      "apiKeyEnv": "ZAI_API_KEY"
+    },
+    {
       "id": "llm7-mistralnemoinstruct",
       "baseUrl": "https://api.llm7.io/v1",
       "model": "mistral-Nemo-Instruct-2407",
+      "apiKeyEnv": "LLM7_API_KEY"
+    },
+    {
+      "id": "llm7-codestral",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "codestral-latest",
       "apiKeyEnv": "LLM7_API_KEY"
     },
     {
@@ -155,6 +164,18 @@
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
       "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "kilo-nemotron3nanoomni30ba3breasoning",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "kilo-nemotron35supervl",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -182,10 +203,13 @@
     "nemotron-3-ultra",
     "nemotron-3-ultra-free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
     "nvidia/nemotron-3-ultra-550b-a55b",
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
     "nvidia/nemotron-3.5-lightning-30b-a3b",
     "nvidia/nemotron-3.5-lightning:free",
     "nvidia/nemotron-3.5-super-vl-120b-a12b",
+    "nvidia/nemotron-3.5-super-vl:free",
     "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",
