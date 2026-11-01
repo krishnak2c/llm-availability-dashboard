@@ -6,9 +6,9 @@
     "nvidia-nemotron35bolte4b",
     "ollama-gptoss20b",
     "llm7-gptoss20b",
+    "ollama-nemotron3super",
     "ollama-gptoss120b",
     "ollama-nemotron3ultra",
-    "ollama-nemotron3super",
     "ollama-beam",
     "ollama-nemotron3nano30b",
     "llm7-nemotron3nano30b",
@@ -64,6 +64,12 @@
       "apiKeyEnv": "LLM7_API_KEY"
     },
     {
+      "id": "ollama-nemotron3super",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "nemotron-3-super",
+      "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
       "id": "ollama-gptoss120b",
       "baseUrl": "https://ollama.com/v1",
       "model": "gpt-oss:120b",
@@ -73,12 +79,6 @@
       "id": "ollama-nemotron3ultra",
       "baseUrl": "https://ollama.com/v1",
       "model": "nemotron-3-ultra",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
-      "id": "ollama-nemotron3super",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "nemotron-3-super",
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
