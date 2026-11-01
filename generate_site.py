@@ -1911,6 +1911,13 @@ RELAY_KEY_ALIASES = {"NVIDIA_NIM_API_KEY": "NIM_API_KEY"}
 # and NVIDIA carried the whole 8s timeout waste while openrouter had none.
 RELAY_PROVIDER_PREFERENCE = {"zen": 0, "openrouter": 1, "nvidia": 2}
 
+# Measured relay traffic (docs/relay-latency.json, written by
+# scripts/relay_latency_feedback.py). When fresh, real p50 latency overrides
+# the static preference above inside a same-model provider group.
+RELAY_LATENCY_PATH = OUT_DIR / "relay-latency.json"
+RELAY_LATENCY_FRESH_HOURS = 24
+RELAY_LATENCY_MIN_SAMPLES = 3
+
 # Model ids matching any of these are guard/safety/vision/image/embedding
 # models — useless in a chat relay. The stable list 'capabilities' field is
 # None for most models, so keyword filtering is the reliable filter.
@@ -2373,6 +2380,41 @@ def lookup_quality(bench, norm):
     return None
 
 
+def _relay_latency_p50s(path=None, now=None):
+    """(provider, model) → p50_ms from a fresh relay-latency.json.
+
+    Returns {} when the file is missing/unreadable, its generated_at is older
+    than RELAY_LATENCY_FRESH_HOURS, or the record has fewer than
+    RELAY_LATENCY_MIN_SAMPLES real traffic samples. Callers then fall back to
+    the static RELAY_PROVIDER_PREFERENCE order.
+    """
+    p = Path(path) if path is not None else RELAY_LATENCY_PATH
+    try:
+        payload = json.loads(p.read_text(encoding="utf-8"))
+        generated = datetime.fromisoformat(
+            str(payload.get("generated_at_utc", "")).replace("Z", "+00:00")
+        )
+    except Exception:
+        return {}
+    if generated.tzinfo is None:
+        generated = generated.replace(tzinfo=timezone.utc)
+    now = now or datetime.now(timezone.utc)
+    if (now - generated).total_seconds() > RELAY_LATENCY_FRESH_HOURS * 3600:
+        return {}
+    out = {}
+    for provider, models in (payload.get("providers") or {}).items():
+        if not isinstance(models, dict):
+            continue
+        for model, record in models.items():
+            if not isinstance(record, dict):
+                continue
+            p50 = record.get("p50_ms")
+            n = record.get("n") or 0
+            if n >= RELAY_LATENCY_MIN_SAMPLES and isinstance(p50, (int, float)):
+                out[(provider, model)] = float(p50)
+    return out
+
+
 def select_dynamic_chain(benchmarks, avail_data, stable_data, top_n=10):
     """Select the top-N relay chain entries from stable, OpenAI-compatible models.
 
@@ -2435,20 +2477,35 @@ def select_dynamic_chain(benchmarks, avail_data, stable_data, top_n=10):
                 "model": model_id,
                 "apiKeyEnv": api_key_env,
             }
-            groups.setdefault(norm, []).append((total, pref, entry))
+            groups.setdefault(norm, []).append((total, pref, entry, prov_key))
 
     # Within each model group: availability DESC, provider preference as
-    # tiebreaker (zen=0, openrouter=1, nvidia=2, others=99).
+    # tiebreaker (zen=0, openrouter=1, nvidia=2, others=99). When
+    # docs/relay-latency.json is fresh, measured p50 latency (lower first)
+    # overrides that static order; providers with no fresh record rank after
+    # any that do and keep the static preference fallback among themselves.
+    latency_p50 = _relay_latency_p50s()
     for g in groups.values():
         group_max = max(t[0] for t in g)
-        g.sort(key=lambda t: (-t[0], t[1]))
+        if any((t[3], t[2]["model"]) in latency_p50 for t in g):
+
+            def _latency_order(t):
+                _total, pref, entry, prov_key = t
+                p50 = latency_p50.get((prov_key, entry["model"]))
+                if p50 is None:
+                    return (1, 0.0, pref, -_total)
+                return (0, p50, pref, -_total)
+
+            g.sort(key=_latency_order)
+        else:
+            g.sort(key=lambda t: (-t[0], t[1]))
         # Drop weak duplicates (< half the group's best score) before flattening.
         g[:] = [t for t in g if t[0] >= 0.5 * group_max]
     # Groups ranked by their best score DESC (stable), then flattened.
     ranked_groups = sorted(groups.values(), key=lambda g: max(t[0] for t in g), reverse=True)
     out = []
     for g in ranked_groups:
-        for total, _, entry in g:
+        for _total, _pref, entry, _prov_key in g:
             out.append(entry)
             if len(out) >= top_n:
                 return out
