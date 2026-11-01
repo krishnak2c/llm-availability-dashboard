@@ -6,9 +6,9 @@
     "nvidia-nemotron35bolte4b",
     "ollama-gptoss20b",
     "llm7-gptoss20b",
-    "ollama-nemotron3super",
-    "ollama-nemotron3ultra",
     "ollama-gptoss120b",
+    "ollama-nemotron3ultra",
+    "ollama-nemotron3super",
     "ollama-beam",
     "ollama-nemotron3nano30b",
     "llm7-nemotron3nano30b",
@@ -18,13 +18,13 @@
     "kilo-northminicode",
     "openrouter-northminicode",
     "kilo-nemotron35lightning",
+    "openrouter-nemotron35lightning",
     "kilo-dots3notepreview",
     "openrouter-dots3notepreview",
     "zai-glm45flash",
     "llm7-codestral",
     "nvidia-nemotron35lightning30ba3b",
-    "kilo-kiloautofree",
-    "openrouter-nemotron3nanoomni30ba3breasoning"
+    "kilo-kiloautofree"
   ],
   "chain": [
     {
@@ -64,9 +64,9 @@
       "apiKeyEnv": "LLM7_API_KEY"
     },
     {
-      "id": "ollama-nemotron3super",
+      "id": "ollama-gptoss120b",
       "baseUrl": "https://ollama.com/v1",
-      "model": "nemotron-3-super",
+      "model": "gpt-oss:120b",
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
@@ -76,9 +76,9 @@
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
-      "id": "ollama-gptoss120b",
+      "id": "ollama-nemotron3super",
       "baseUrl": "https://ollama.com/v1",
-      "model": "gpt-oss:120b",
+      "model": "nemotron-3-super",
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
@@ -136,6 +136,12 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
+      "id": "openrouter-nemotron35lightning",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
       "id": "kilo-dots3notepreview",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "dots-studio/dots-3-note-preview:free",
@@ -170,12 +176,6 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "kilo-auto/free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "openrouter-nemotron3nanoomni30ba3breasoning",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -200,7 +200,6 @@
     "nemotron-3-super",
     "nemotron-3-ultra",
     "nemotron-3-ultra-free",
-    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
     "nvidia/nemotron-3-ultra-550b-a55b",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "nvidia/nemotron-3.5-bolt-e4b",
