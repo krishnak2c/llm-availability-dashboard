@@ -17,14 +17,14 @@
     "kilo-openrouterfree",
     "kilo-northminicode",
     "openrouter-northminicode",
-    "openrouter-nemotron35lightning",
     "kilo-nemotron35lightning",
     "kilo-dots3notepreview",
     "openrouter-dots3notepreview",
     "zai-glm45flash",
     "llm7-codestral",
     "nvidia-nemotron35lightning30ba3b",
-    "nvidia-gptoss"
+    "kilo-kiloautofree",
+    "openrouter-nemotron3nanoomni30ba3breasoning"
   ],
   "chain": [
     {
@@ -130,12 +130,6 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "openrouter-nemotron35lightning",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "nvidia/nemotron-3.5-lightning:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
       "id": "kilo-nemotron35lightning",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3.5-lightning:free",
@@ -172,10 +166,16 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "nvidia-gptoss",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "openai/gpt-oss-20b",
-      "apiKeyEnv": "NIM_API_KEY"
+      "id": "kilo-kiloautofree",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "kilo-auto/free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "openrouter-nemotron3nanoomni30ba3breasoning",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -192,6 +192,7 @@
     "gpt-oss:20b",
     "hy3",
     "hy3-free",
+    "kilo-auto/free",
     "laguna-s-2.1-free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
@@ -199,12 +200,12 @@
     "nemotron-3-super",
     "nemotron-3-ultra",
     "nemotron-3-ultra-free",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
     "nvidia/nemotron-3-ultra-550b-a55b",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "nvidia/nemotron-3.5-bolt-e4b",
     "nvidia/nemotron-3.5-lightning-30b-a3b",
     "nvidia/nemotron-3.5-lightning:free",
-    "openai/gpt-oss-20b",
     "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",

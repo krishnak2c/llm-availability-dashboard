@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T19:17:07.281115+00:00",
+  "updated": "2026-11-01T00:06:49.046352+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -25,6 +25,13 @@
           "context": 65536,
           "limits": "20 req/min · 50 req/day",
           "params_b": 2.6
+        },
+        {
+          "id": "nvidia/nemotron-3.5-lightning:free",
+          "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+          "context": 1000000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
         },
         {
           "id": "google/gemma-4-26b-a4b-it:free",
