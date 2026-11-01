@@ -1904,9 +1904,12 @@ RELAY_EXCLUDED_PROVIDERS = {"groq", "mistral"}
 RELAY_KEY_ALIASES = {"NVIDIA_NIM_API_KEY": "NIM_API_KEY"}
 
 # Provider preference when the SAME model is served by multiple providers:
-# opencode (zen) first, nvidia nim second, any other provider after.
+# opencode (zen) first, openrouter second, nvidia nim third, any others after.
 # Lower value = earlier in the chain for the same normalized model id.
-RELAY_PROVIDER_PREFERENCE = {"zen": 0, "nvidia": 1}
+# openrouter ahead of nvidia (2026-11-01): relay production traffic measured
+# nemotron-3-ultra-550b at p50 561ms via openrouter vs 3556ms via NVIDIA,
+# and NVIDIA carried the whole 8s timeout waste while openrouter had none.
+RELAY_PROVIDER_PREFERENCE = {"zen": 0, "openrouter": 1, "nvidia": 2}
 
 # Model ids matching any of these are guard/safety/vision/image/embedding
 # models — useless in a chat relay. The stable list 'capabilities' field is
@@ -2435,7 +2438,7 @@ def select_dynamic_chain(benchmarks, avail_data, stable_data, top_n=10):
             groups.setdefault(norm, []).append((total, pref, entry))
 
     # Within each model group: availability DESC, provider preference as
-    # tiebreaker (zen=0, nvidia=1, others=99).
+    # tiebreaker (zen=0, openrouter=1, nvidia=2, others=99).
     for g in groups.values():
         group_max = max(t[0] for t in g)
         g.sort(key=lambda t: (-t[0], t[1]))
