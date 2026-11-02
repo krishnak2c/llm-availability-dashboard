@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T10:59:24.380161+00:00",
+  "updated": "2026-11-02T21:42:02.239019+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -104,6 +104,13 @@
           "params_b": 27.0
         },
         {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -116,13 +123,6 @@
             "prompt_caching"
           ],
           "params_b": 120.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -747,13 +747,6 @@
           "params_b": null
         },
         {
-          "id": "GLM-5.3-Flash",
-          "name": "GLM-5.3-Flash",
-          "context": 400000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
@@ -798,6 +791,13 @@
         {
           "id": "glm-4.5-flash",
           "name": "GLM-4.5-Flash",
+          "context": null,
+          "limits": "free Flash tier",
+          "params_b": null
+        },
+        {
+          "id": "glm-5.3-flashx-legal",
+          "name": "glm-5.3-flashx-legal",
           "context": null,
           "limits": "free Flash tier",
           "params_b": null
@@ -893,13 +893,6 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
           "id": "nemotron-3-super",
           "name": "nemotron-3-super",
           "context": null,
@@ -921,11 +914,11 @@
           "params_b": 20.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 120.0
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -933,6 +926,13 @@
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         },
         {
           "id": "beam",

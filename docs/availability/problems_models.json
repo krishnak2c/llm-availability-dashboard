@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T10:59:24.380161+00:00",
+  "updated": "2026-11-02T21:42:02.239019+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -139,13 +139,6 @@
           "params_b": null
         },
         {
-          "id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
-          "name": "nvidia/nemotron-3.5-super-vl-120b-a12b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 120.0
-        },
-        {
           "id": "nvidia/nemotron-parse-2.0",
           "name": "nvidia/nemotron-parse-2.0",
           "context": null,
@@ -167,13 +160,6 @@
           "params_b": 20.0
         },
         {
-          "id": "poolside/laguna-xs-2.1",
-          "name": "poolside/laguna-xs-2.1",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
-        },
-        {
           "id": "stepfun-ai/step-5-preview",
           "name": "stepfun-ai/step-5-preview",
           "context": null,
@@ -187,6 +173,38 @@
       "name": "Cloudflare AI",
       "url": "https://developers.cloudflare.com/workers-ai/",
       "models": [
+        {
+          "id": "@cf/openai/gpt-oss-120b",
+          "name": "@cf/openai/gpt-oss-120b",
+          "context": 128000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": 120.0
+        },
+        {
+          "id": "@cf/meta/llama-3.2-3b-instruct",
+          "name": "@cf/meta/llama-3.2-3b-instruct",
+          "context": 80000,
+          "limits": "10k neurons/day",
+          "params_b": 3.0
+        },
+        {
+          "id": "@cf/meta/llama-guard-3-8b",
+          "name": "@cf/meta/llama-guard-3-8b",
+          "context": 131072,
+          "limits": "10k neurons/day",
+          "params_b": 8.0
+        },
+        {
+          "id": "@cf/mistral/mistral-7b-instruct-v0.2-lora",
+          "name": "@cf/mistral/mistral-7b-instruct-v0.2-lora",
+          "context": 15000,
+          "limits": "10k neurons/day",
+          "params_b": 7.0
+        },
         {
           "id": "@cf/moonshotai/kimi-k2.7-code",
           "name": "@cf/moonshotai/kimi-k2.7-code",
@@ -206,11 +224,25 @@
           "params_b": null
         },
         {
+          "id": "@cf/meta/llama-3.1-8b-instruct-fp8",
+          "name": "@cf/meta/llama-3.1-8b-instruct-fp8",
+          "context": 32000,
+          "limits": "10k neurons/day",
+          "params_b": 8.0
+        },
+        {
           "id": "@cf/zai-org/glm-5.3-flash",
           "name": "@cf/zai-org/glm-5.3-flash",
           "context": null,
           "limits": "10k neurons/day",
           "params_b": null
+        },
+        {
+          "id": "@cf/meta/llama-3.2-1b-instruct",
+          "name": "@cf/meta/llama-3.2-1b-instruct",
+          "context": 60000,
+          "limits": "10k neurons/day",
+          "params_b": 1.0
         },
         {
           "id": "@cf/moonshotai/kimi-k2.6",
@@ -235,11 +267,28 @@
           "params_b": null
         },
         {
+          "id": "@cf/ibm-granite/granite-4.0-h-micro",
+          "name": "@cf/ibm-granite/granite-4.0-h-micro",
+          "context": 131000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling"
+          ],
+          "params_b": null
+        },
+        {
           "id": "@cf/deepseek-ai/deepseek-v4-flash-0731",
           "name": "@cf/deepseek-ai/deepseek-v4-flash-0731",
           "context": null,
           "limits": "10k neurons/day",
           "params_b": null
+        },
+        {
+          "id": "@cf/qwen/qwen2.5-coder-32b-instruct",
+          "name": "@cf/qwen/qwen2.5-coder-32b-instruct",
+          "context": 32768,
+          "limits": "10k neurons/day",
+          "params_b": 32.0
         },
         {
           "id": "@cf/zai-org/glm-5.2",
@@ -262,6 +311,31 @@
             "reasoning"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
+          "name": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
+          "context": 128000,
+          "limits": "10k neurons/day",
+          "params_b": 27.0
+        },
+        {
+          "id": "@cf/qwen/qwen3-30b-a3b-fp8",
+          "name": "@cf/qwen/qwen3-30b-a3b-fp8",
+          "context": 32768,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": 30.0
+        },
+        {
+          "id": "@cf/google/gemma-7b-it-lora",
+          "name": "@cf/google/gemma-7b-it-lora",
+          "context": 3500,
+          "limits": "10k neurons/day",
+          "params_b": 7.0
         },
         {
           "id": "@cf/deepseek-ai/deepseek-v4-pro-0813",
@@ -290,6 +364,37 @@
           "context": null,
           "limits": "10k neurons/day",
           "params_b": null
+        },
+        {
+          "id": "@cf/openai/gpt-oss-20b",
+          "name": "@cf/openai/gpt-oss-20b",
+          "context": 128000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": 20.0
+        },
+        {
+          "id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+          "name": "@cf/meta/llama-4-scout-17b-16e-instruct",
+          "context": 131000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling"
+          ],
+          "params_b": 17.0
+        },
+        {
+          "id": "@cf/qwen/qwq-32b",
+          "name": "@cf/qwen/qwq-32b",
+          "context": 24000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "reasoning"
+          ],
+          "params_b": 32.0
         }
       ],
       "error": null
@@ -304,20 +409,27 @@
           "context": 32000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
-        }
-      ],
-      "error": null
-    },
-    "zai": {
-      "name": "Z.ai (GLM)",
-      "url": "https://open.bigmodel.cn",
-      "models": [
+        },
         {
-          "id": "glm-4.5-flash",
-          "name": "GLM-4.5-Flash",
-          "context": null,
-          "limits": "free Flash tier",
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": 128000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": 20.0
+        },
+        {
+          "id": "minimax-m2.7",
+          "name": "minimax-m2.7",
+          "context": 180000,
+          "limits": "anonymous · 30 req/min with token",
           "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": 1000000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": 30.0
         }
       ],
       "error": null
@@ -360,27 +472,6 @@
           "context": 256000,
           "limits": "free tier",
           "params_b": 30.0
-        },
-        {
-          "id": "openrouter/free",
-          "name": "OpenRouter Free Models Router",
-          "context": 200000,
-          "limits": "free tier",
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
-    "ollama": {
-      "name": "Ollama Cloud",
-      "url": "https://ollama.com",
-      "models": [
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         }
       ],
       "error": null
