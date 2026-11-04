@@ -1,10 +1,17 @@
 {
-  "updated": "2026-11-04T06:15:50.950049+00:00",
+  "updated": "2026-11-04T17:13:27.529995+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
+        {
+          "id": "stealth/crouton-alpha",
+          "name": "Crouton Alpha",
+          "context": 1048576,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
         {
           "id": "xingchen-agi/xing4.0-29b-a4b:free",
           "name": "XingChen: Xing4.0 29B A4B (free)",
@@ -97,6 +104,13 @@
           "params_b": 26.0
         },
         {
+          "id": "google/gemma-4-31b-it",
+          "name": "google/gemma-4-31b-it",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 31.0
+        },
+        {
           "id": "meta/llama-3.2-90b-vision-instruct",
           "name": "meta/llama-3.2-90b-vision-instruct",
           "context": null,
@@ -132,13 +146,6 @@
           "params_b": null
         },
         {
-          "id": "nvidia/nemotron-3.5-content-safety",
-          "name": "nvidia/nemotron-3.5-content-safety",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
-        },
-        {
           "id": "nvidia/nemotron-parse-2.0",
           "name": "nvidia/nemotron-parse-2.0",
           "context": null,
@@ -165,6 +172,26 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "mistral": {
+      "name": "Mistral",
+      "url": "https://console.mistral.ai",
+      "models": [
+        {
+          "id": "ministral-14b-latest",
+          "name": "ministral-14b-2512",
+          "context": 262144,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
+          "params_b": 14.0
         }
       ],
       "error": null
