@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T23:20:44.648892+00:00",
+  "updated": "2026-11-04T06:15:50.950049+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -97,6 +97,13 @@
       "url": "https://console.groq.com",
       "models": [
         {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
           "context": 131072,
@@ -109,13 +116,6 @@
             "prompt_caching"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
         },
         {
           "id": "qwen/qwen3.8-27b",
@@ -172,6 +172,13 @@
           "params_b": 26.0
         },
         {
+          "id": "google/gemma-4-31b-it",
+          "name": "google/gemma-4-31b-it",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 31.0
+        },
+        {
           "id": "meta/llama-3.2-90b-vision-instruct",
           "name": "meta/llama-3.2-90b-vision-instruct",
           "context": null,
@@ -226,6 +233,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 30.0
+        },
+        {
+          "id": "nvidia/nemotron-3-super-120b-a12b",
+          "name": "nvidia/nemotron-3-super-120b-a12b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 120.0
         },
         {
           "id": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -887,6 +901,13 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
+        },
+        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
@@ -901,11 +922,11 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": 20.0
+          "params_b": 120.0
         },
         {
           "id": "gemma4:31b",
@@ -920,13 +941,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": null
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
         },
         {
           "id": "beam",
