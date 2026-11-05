@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T17:23:27.812023+00:00",
+  "updated": "2026-11-05T23:37:35.494471+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -540,6 +540,20 @@
           "context": null,
           "limits": "free Flash tier",
           "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "kilo": {
+      "name": "Kilo Code",
+      "url": "https://kilo.code",
+      "models": [
+        {
+          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "context": 1000000,
+          "limits": "free tier",
+          "params_b": 550.0
         }
       ],
       "error": null
