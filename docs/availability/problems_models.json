@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T23:39:05.364814+00:00",
+  "updated": "2026-11-05T06:42:36.036798+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -172,26 +172,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": null
-        }
-      ],
-      "error": null
-    },
-    "mistral": {
-      "name": "Mistral",
-      "url": "https://console.mistral.ai",
-      "models": [
-        {
-          "id": "ministral-14b-latest",
-          "name": "ministral-14b-2512",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision"
-          ],
-          "params_b": 14.0
         }
       ],
       "error": null
@@ -548,13 +528,6 @@
       "name": "Kilo Code",
       "url": "https://kilo.code",
       "models": [
-        {
-          "id": "nvidia/nemotron-3.5-super-vl:free",
-          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
         {
           "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
           "name": "NVIDIA: Nemotron 3 Ultra (free)",
