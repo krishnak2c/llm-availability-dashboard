@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T23:37:35.494471+00:00",
+  "updated": "2026-11-06T06:38:57.416329+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -554,6 +554,20 @@
           "context": 1000000,
           "limits": "free tier",
           "params_b": 550.0
+        }
+      ],
+      "error": null
+    },
+    "ollama": {
+      "name": "Ollama Cloud",
+      "url": "https://ollama.com",
+      "models": [
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
