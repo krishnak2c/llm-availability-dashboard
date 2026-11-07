@@ -11,20 +11,20 @@
     "kilo-dots3notepreview",
     "ollama-beam",
     "ollama-nemotron3nano30b",
+    "llm7-nemotron3nano30b",
     "kilo-kiloautofree",
     "kilo-northminicode",
     "openrouter-northminicode",
-    "ollama-nemotron3super",
     "kilo-openrouterfree",
     "openrouter-openrouterfree",
+    "ollama-nemotron3super",
     "kilo-nemotron3nanoomni30ba3breasoning",
     "nvidia-nemotron3nanoomni30ba3breasoning",
     "openrouter-nemotron3nanoomni30ba3breasoning",
-    "openrouter-stealthcroutonalpha",
     "nvidia-lagunaxs21",
+    "openrouter-stealthcroutonalpha",
     "nvidia-nemotron35bolte4b",
-    "nvidia-mistrallarge41ta52b",
-    "nvidia-minimaxm31flash"
+    "nvidia-mistrallarge41ta52b"
   ],
   "chain": [
     {
@@ -94,6 +94,12 @@
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
+      "id": "llm7-nemotron3nano30b",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "nemotron-3-nano:30b",
+      "apiKeyEnv": "LLM7_API_KEY"
+    },
+    {
       "id": "kilo-kiloautofree",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "kilo-auto/free",
@@ -112,12 +118,6 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "ollama-nemotron3super",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "nemotron-3-super",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
       "id": "kilo-openrouterfree",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "openrouter/free",
@@ -128,6 +128,12 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "model": "openrouter/free",
       "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "ollama-nemotron3super",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "nemotron-3-super",
+      "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
       "id": "kilo-nemotron3nanoomni30ba3breasoning",
@@ -148,16 +154,16 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "openrouter-stealthcroutonalpha",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "stealth/crouton-alpha",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
-    },
-    {
       "id": "nvidia-lagunaxs21",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "poolside/laguna-xs-2.1",
       "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "openrouter-stealthcroutonalpha",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "stealth/crouton-alpha",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "nvidia-nemotron35bolte4b",
@@ -169,12 +175,6 @@
       "id": "nvidia-mistrallarge41ta52b",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "mistralai/mistral-large-4-1t-a52b",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "nvidia-minimaxm31flash",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "minimaxai/minimax-m3.1-flash",
       "apiKeyEnv": "NIM_API_KEY"
     }
   ],
@@ -193,7 +193,6 @@
     "laguna-s-2.1-free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
-    "minimaxai/minimax-m3.1-flash",
     "mistralai/mistral-large-4-1t-a52b",
     "nemotron-3-nano:30b",
     "nemotron-3-super",

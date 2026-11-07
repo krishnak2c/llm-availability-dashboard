@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T05:55:34.871735+00:00",
+  "updated": "2026-11-07T12:57:05.735086+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -186,26 +186,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": null
-        }
-      ],
-      "error": null
-    },
-    "mistral": {
-      "name": "Mistral",
-      "url": "https://console.mistral.ai",
-      "models": [
-        {
-          "id": "ministral-14b-latest",
-          "name": "ministral-14b-2512",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision"
-          ],
-          "params_b": 14.0
         }
       ],
       "error": null
@@ -500,13 +480,6 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "DeepSeek-V4-Flash-0731",
-          "name": "DeepSeek-V4-Flash-0731",
-          "context": 400000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
@@ -519,13 +492,6 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
-        },
-        {
-          "id": "minimax-m2.7",
-          "name": "minimax-m2.7",
-          "context": 180000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
         },
         {
           "id": "mistral-Nemo-Instruct-2407",
@@ -553,34 +519,6 @@
           "name": "GLM-4.5-Flash",
           "context": null,
           "limits": "free Flash tier",
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
-    "kilo": {
-      "name": "Kilo Code",
-      "url": "https://kilo.code",
-      "models": [
-        {
-          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "name": "NVIDIA: Nemotron 3 Ultra (free)",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": 550.0
-        }
-      ],
-      "error": null
-    },
-    "ollama": {
-      "name": "Ollama Cloud",
-      "url": "https://ollama.com",
-      "models": [
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
           "params_b": null
         }
       ],
