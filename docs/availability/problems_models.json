@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T12:57:05.735086+00:00",
+  "updated": "2026-11-07T19:24:40.045519+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -9,6 +9,13 @@
           "id": "stealth/crouton-alpha",
           "name": "Crouton Alpha",
           "context": 1048576,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "recursive/flint-v1.0:free",
+          "name": "Recursive: Flint (free)",
+          "context": 262144,
           "limits": "20 req/min · 50 req/day",
           "params_b": null
         },
@@ -186,6 +193,26 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "mistral": {
+      "name": "Mistral",
+      "url": "https://console.mistral.ai",
+      "models": [
+        {
+          "id": "ministral-14b-latest",
+          "name": "ministral-14b-2512",
+          "context": 262144,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
+          "params_b": 14.0
         }
       ],
       "error": null
@@ -520,6 +547,20 @@
           "context": null,
           "limits": "free Flash tier",
           "params_b": null
+        }
+      ],
+      "error": null
+    },
+    "kilo": {
+      "name": "Kilo Code",
+      "url": "https://kilo.code",
+      "models": [
+        {
+          "id": "liquid/lfm-3-1.7b:free",
+          "name": "LiquidAI: LFM3-1.7B (free)",
+          "context": 262144,
+          "limits": "free tier",
+          "params_b": 1.7
         }
       ],
       "error": null
