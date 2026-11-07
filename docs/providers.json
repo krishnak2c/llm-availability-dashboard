@@ -7,24 +7,24 @@
     "ollama-nemotron3ultra",
     "ollama-gptoss20b",
     "llm7-gptoss20b",
-    "ollama-beam",
     "ollama-gptoss120b",
     "kilo-dots3notepreview",
+    "ollama-beam",
     "ollama-nemotron3nano30b",
-    "llm7-nemotron3nano30b",
     "kilo-kiloautofree",
     "kilo-northminicode",
+    "openrouter-northminicode",
     "ollama-nemotron3super",
     "kilo-openrouterfree",
-    "nvidia-nemotron3nanoomni30ba3breasoning",
+    "openrouter-openrouterfree",
     "kilo-nemotron3nanoomni30ba3breasoning",
+    "nvidia-nemotron3nanoomni30ba3breasoning",
+    "openrouter-nemotron3nanoomni30ba3breasoning",
     "openrouter-stealthcroutonalpha",
     "nvidia-lagunaxs21",
     "nvidia-nemotron35bolte4b",
     "nvidia-mistrallarge41ta52b",
-    "nvidia-minimaxm31flash",
-    "zai-glm45flash",
-    "nvidia-diffusiongemma26ba4bit"
+    "nvidia-minimaxm31flash"
   ],
   "chain": [
     {
@@ -70,12 +70,6 @@
       "apiKeyEnv": "LLM7_API_KEY"
     },
     {
-      "id": "ollama-beam",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "beam",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
       "id": "ollama-gptoss120b",
       "baseUrl": "https://ollama.com/v1",
       "model": "gpt-oss:120b",
@@ -88,16 +82,16 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
+      "id": "ollama-beam",
+      "baseUrl": "https://ollama.com/v1",
+      "model": "beam",
+      "apiKeyEnv": "OLLAMA_API_KEY"
+    },
+    {
       "id": "ollama-nemotron3nano30b",
       "baseUrl": "https://ollama.com/v1",
       "model": "nemotron-3-nano:30b",
       "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
-      "id": "llm7-nemotron3nano30b",
-      "baseUrl": "https://api.llm7.io/v1",
-      "model": "nemotron-3-nano:30b",
-      "apiKeyEnv": "LLM7_API_KEY"
     },
     {
       "id": "kilo-kiloautofree",
@@ -112,6 +106,12 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
+      "id": "openrouter-northminicode",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "cohere/north-mini-code:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
       "id": "ollama-nemotron3super",
       "baseUrl": "https://ollama.com/v1",
       "model": "nemotron-3-super",
@@ -124,16 +124,28 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "nvidia-nemotron3nanoomni30ba3breasoning",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
-      "apiKeyEnv": "NIM_API_KEY"
+      "id": "openrouter-openrouterfree",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "openrouter/free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "kilo-nemotron3nanoomni30ba3breasoning",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "nvidia-nemotron3nanoomni30ba3breasoning",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "openrouter-nemotron3nanoomni30ba3breasoning",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "openrouter-stealthcroutonalpha",
@@ -164,18 +176,6 @@
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "minimaxai/minimax-m3.1-flash",
       "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "zai-glm45flash",
-      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
-      "model": "glm-4.5-flash",
-      "apiKeyEnv": "ZAI_API_KEY"
-    },
-    {
-      "id": "nvidia-diffusiongemma26ba4bit",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "google/diffusiongemma-26b-a4b-it",
-      "apiKeyEnv": "NIM_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -185,8 +185,6 @@
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
     "dots-studio/dots-3-note-preview:free",
-    "glm-4.5-flash",
-    "google/diffusiongemma-26b-a4b-it",
     "gpt-oss:120b",
     "gpt-oss:20b",
     "hy3",
