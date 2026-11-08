@@ -9,8 +9,8 @@
     },
     "artificial_analysis_index_version": 5.0,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 39,
-    "ranked_count": 39,
+    "source_count": 38,
+    "ranked_count": 38,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
@@ -215,10 +215,10 @@
     {
       "provider": "Groq",
       "provider_id": "groq",
-      "model_id": "openai/gpt-oss-20b",
-      "model_name": "openai/gpt-oss-20b",
-      "aa_slug": "gpt-oss-20b",
-      "aa_name": "gpt-oss-20b (High)",
+      "model_id": "openai/gpt-oss-120b",
+      "model_name": "openai/gpt-oss-120b",
+      "aa_slug": "gpt-oss-120b",
+      "aa_name": "gpt-oss-120b (High)",
       "aa_match": "exact",
       "agentic": null,
       "coding": null,
@@ -237,10 +237,10 @@
     {
       "provider": "Groq",
       "provider_id": "groq",
-      "model_id": "openai/gpt-oss-120b",
-      "model_name": "openai/gpt-oss-120b",
-      "aa_slug": "gpt-oss-120b",
-      "aa_name": "gpt-oss-120b (High)",
+      "model_id": "openai/gpt-oss-20b",
+      "model_name": "openai/gpt-oss-20b",
+      "aa_slug": "gpt-oss-20b",
+      "aa_name": "gpt-oss-20b (High)",
       "aa_match": "exact",
       "agentic": null,
       "coding": null,
@@ -479,28 +479,6 @@
     {
       "provider": "Mistral",
       "provider_id": "mistral",
-      "model_id": "ministral-14b-latest",
-      "model_name": "ministral-14b-2512",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 22
-    },
-    {
-      "provider": "Mistral",
-      "provider_id": "mistral",
       "model_id": "ministral-3b-2512",
       "model_name": "ministral-3b-2512",
       "aa_slug": null,
@@ -518,7 +496,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 23
+      "rank": 22
     },
     {
       "provider": "Mistral",
@@ -540,7 +518,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 24
+      "rank": 23
     },
     {
       "provider": "Mistral",
@@ -562,7 +540,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 25
+      "rank": 24
     },
     {
       "provider": "Mistral",
@@ -584,7 +562,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 26
+      "rank": 25
     },
     {
       "provider": "Mistral",
@@ -606,7 +584,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 27
+      "rank": 26
     },
     {
       "provider": "Mistral",
@@ -628,7 +606,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 28
+      "rank": 27
     },
     {
       "provider": "Kilo Code",
@@ -650,7 +628,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 29
+      "rank": 28
     },
     {
       "provider": "Kilo Code",
@@ -672,7 +650,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 30
+      "rank": 29
     },
     {
       "provider": "Kilo Code",
@@ -694,7 +672,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 15.0,
-      "rank": 31
+      "rank": 30
     },
     {
       "provider": "Kilo Code",
@@ -716,7 +694,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 32
+      "rank": 31
     },
     {
       "provider": "Kilo Code",
@@ -738,7 +716,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 33
+      "rank": 32
     },
     {
       "provider": "Ollama Cloud",
@@ -760,13 +738,35 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
+      "rank": 33
+    },
+    {
+      "provider": "Ollama Cloud",
+      "provider_id": "ollama",
+      "model_id": "gpt-oss:20b",
+      "model_name": "gpt-oss:20b",
+      "aa_slug": "gpt-oss-20b",
+      "aa_name": "gpt-oss-20b (High)",
+      "aa_match": "compact",
+      "agentic": null,
+      "coding": null,
+      "intelligence": null,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": null,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 0.0,
       "rank": 34
     },
     {
       "provider": "Ollama Cloud",
       "provider_id": "ollama",
-      "model_id": "nemotron-3-super",
-      "model_name": "nemotron-3-super",
+      "model_id": "nemotron-3-nano:30b",
+      "model_name": "nemotron-3-nano:30b",
       "aa_slug": null,
       "aa_name": null,
       "aa_match": "missing",
@@ -809,30 +809,8 @@
     {
       "provider": "Ollama Cloud",
       "provider_id": "ollama",
-      "model_id": "gpt-oss:20b",
-      "model_name": "gpt-oss:20b",
-      "aa_slug": "gpt-oss-20b",
-      "aa_name": "gpt-oss-20b (High)",
-      "aa_match": "compact",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 37
-    },
-    {
-      "provider": "Ollama Cloud",
-      "provider_id": "ollama",
-      "model_id": "nemotron-3-nano:30b",
-      "model_name": "nemotron-3-nano:30b",
+      "model_id": "nemotron-3-super",
+      "model_name": "nemotron-3-super",
       "aa_slug": null,
       "aa_name": null,
       "aa_match": "missing",
@@ -848,7 +826,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 38
+      "rank": 37
     },
     {
       "provider": "Ollama Cloud",
@@ -870,7 +848,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 39
+      "rank": 38
     }
   ]
 }
