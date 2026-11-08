@@ -7,19 +7,19 @@
     "ollama-gptoss20b",
     "llm7-gptoss20b",
     "ollama-gptoss120b",
-    "kilo-dots3notepreview",
     "ollama-beam",
     "ollama-nemotron3nano30b",
     "llm7-nemotron3nano30b",
     "kilo-kiloautofree",
     "kilo-northminicode",
+    "kilo-dots3notepreview",
     "kilo-openrouterfree",
     "ollama-nemotron3super",
     "kilo-nemotron3nanoomni30ba3breasoning",
     "nvidia-nemotron3nanoomni30ba3breasoning",
     "ollama-nemotron3ultra",
-    "nvidia-lagunaxs21",
     "nvidia-nemotron35bolte4b",
+    "nvidia-lagunaxs21",
     "openrouter-stealthcroutonalpha",
     "nvidia-minimaxm31flash",
     "nvidia-mistrallarge41ta52b",
@@ -70,12 +70,6 @@
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
-      "id": "kilo-dots3notepreview",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "dots-studio/dots-3-note-preview:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
       "id": "ollama-beam",
       "baseUrl": "https://ollama.com/v1",
       "model": "beam",
@@ -103,6 +97,12 @@
       "id": "kilo-northminicode",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "cohere/north-mini-code:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "kilo-dots3notepreview",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "dots-studio/dots-3-note-preview:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
@@ -136,15 +136,15 @@
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
-      "id": "nvidia-lagunaxs21",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "poolside/laguna-xs-2.1",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
       "id": "nvidia-nemotron35bolte4b",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "nvidia/nemotron-3.5-bolt-e4b",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "nvidia-lagunaxs21",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "poolside/laguna-xs-2.1",
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
