@@ -23,8 +23,8 @@
     "nvidia-lagunaxs21",
     "openrouter-stealthcroutonalpha",
     "nvidia-minimaxm31flash",
-    "nvidia-mistrallarge41ta52b",
-    "nvidia-diffusiongemma26ba4bit"
+    "nvidia-diffusiongemma26ba4bit",
+    "nvidia-mistrallarge41ta52b"
   ],
   "chain": [
     {
@@ -166,15 +166,15 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "nvidia-mistrallarge41ta52b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "mistralai/mistral-large-4-1t-a52b",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
       "id": "nvidia-diffusiongemma26ba4bit",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "google/diffusiongemma-26b-a4b-it",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "nvidia-mistrallarge41ta52b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "mistralai/mistral-large-4-1t-a52b",
       "apiKeyEnv": "NIM_API_KEY"
     }
   ],
