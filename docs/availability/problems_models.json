@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T06:21:39.699373+00:00",
+  "updated": "2026-11-09T19:46:51.153442+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -158,13 +158,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": null
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 20.0
         },
         {
           "id": "stepfun-ai/step-5-preview",
@@ -512,13 +505,6 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
-        },
-        {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": 30.0
         }
       ],
       "error": null
@@ -547,6 +533,20 @@
           "context": 262144,
           "limits": "free tier",
           "params_b": 1.7
+        }
+      ],
+      "error": null
+    },
+    "ollama": {
+      "name": "Ollama Cloud",
+      "url": "https://ollama.com",
+      "models": [
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         }
       ],
       "error": null
