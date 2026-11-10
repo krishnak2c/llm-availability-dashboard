@@ -2,27 +2,26 @@
   "order": [
     "nvidia-nemotron35supervl120ba12b",
     "kilo-nemotron35supervl",
-    "nvidia-nemotron3ultra550ba55b",
     "kilo-nemotron3ultra550ba55b",
-    "ollama-gptoss20b",
-    "llm7-gptoss20b",
-    "ollama-gptoss120b",
-    "ollama-beam",
-    "kilo-kiloautofree",
+    "nvidia-nemotron3ultra550ba55b",
     "kilo-northminicode",
+    "nvidia-nemotron35bolte4b",
+    "kilo-kiloautofree",
     "kilo-openrouterfree",
-    "ollama-nemotron3super",
+    "openrouter-openrouterfree",
     "kilo-nemotron3nanoomni30ba3breasoning",
     "nvidia-nemotron3nanoomni30ba3breasoning",
-    "nvidia-nemotron35bolte4b",
-    "ollama-nemotron3ultra",
+    "ollama-nemotron3super",
     "kilo-dots3notepreview",
     "nvidia-lagunaxs21",
-    "openrouter-stealthcroutonalpha",
     "nvidia-minimaxm31flash",
     "nvidia-diffusiongemma26ba4bit",
     "llm7-mistralnemoinstruct",
-    "zai-glm45flash"
+    "llm7-gptoss20b",
+    "nvidia-mistrallarge41ta52b",
+    "zai-glm45flash",
+    "llm7-codestral",
+    "nvidia-step5"
   ],
   "chain": [
     {
@@ -38,51 +37,33 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "nvidia-nemotron3ultra550ba55b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/nemotron-3-ultra-550b-a55b",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
       "id": "kilo-nemotron3ultra550ba55b",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "ollama-gptoss20b",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "gpt-oss:20b",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
-      "id": "llm7-gptoss20b",
-      "baseUrl": "https://api.llm7.io/v1",
-      "model": "gpt-oss:20b",
-      "apiKeyEnv": "LLM7_API_KEY"
-    },
-    {
-      "id": "ollama-gptoss120b",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "gpt-oss:120b",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
-      "id": "ollama-beam",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "beam",
-      "apiKeyEnv": "OLLAMA_API_KEY"
-    },
-    {
-      "id": "kilo-kiloautofree",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "kilo-auto/free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
+      "id": "nvidia-nemotron3ultra550ba55b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "kilo-northminicode",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "cohere/north-mini-code:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "nvidia-nemotron35bolte4b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "nvidia/nemotron-3.5-bolt-e4b",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "kilo-kiloautofree",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "kilo-auto/free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
@@ -92,10 +73,10 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "ollama-nemotron3super",
-      "baseUrl": "https://ollama.com/v1",
-      "model": "nemotron-3-super",
-      "apiKeyEnv": "OLLAMA_API_KEY"
+      "id": "openrouter-openrouterfree",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "openrouter/free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "kilo-nemotron3nanoomni30ba3breasoning",
@@ -110,15 +91,9 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "nvidia-nemotron35bolte4b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/nemotron-3.5-bolt-e4b",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "ollama-nemotron3ultra",
+      "id": "ollama-nemotron3super",
       "baseUrl": "https://ollama.com/v1",
-      "model": "nemotron-3-ultra",
+      "model": "nemotron-3-super",
       "apiKeyEnv": "OLLAMA_API_KEY"
     },
     {
@@ -132,12 +107,6 @@
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "poolside/laguna-xs-2.1",
       "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "openrouter-stealthcroutonalpha",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "stealth/crouton-alpha",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "nvidia-minimaxm31flash",
@@ -158,14 +127,38 @@
       "apiKeyEnv": "LLM7_API_KEY"
     },
     {
+      "id": "llm7-gptoss20b",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "gpt-oss:20b",
+      "apiKeyEnv": "LLM7_API_KEY"
+    },
+    {
+      "id": "nvidia-mistrallarge41ta52b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "mistralai/mistral-large-4-1t-a52b",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
       "id": "zai-glm45flash",
       "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
       "model": "glm-4.5-flash",
       "apiKeyEnv": "ZAI_API_KEY"
+    },
+    {
+      "id": "llm7-codestral",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "codestral-latest",
+      "apiKeyEnv": "LLM7_API_KEY"
+    },
+    {
+      "id": "nvidia-step5",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "stepfun-ai/step-5-preview",
+      "apiKeyEnv": "NIM_API_KEY"
     }
   ],
   "modelAllowlist": [
-    "beam",
+    "codestral-latest",
     "cohere/north-mini-code:free",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
@@ -173,7 +166,6 @@
     "dots-studio/dots-3-note-preview:free",
     "glm-4.5-flash",
     "google/diffusiongemma-26b-a4b-it",
-    "gpt-oss:120b",
     "gpt-oss:20b",
     "hy3",
     "hy3-free",
@@ -183,8 +175,8 @@
     "minimaxai/minimax-m3",
     "minimaxai/minimax-m3.1-flash",
     "mistral-Nemo-Instruct-2407",
+    "mistralai/mistral-large-4-1t-a52b",
     "nemotron-3-super",
-    "nemotron-3-ultra",
     "nemotron-3-ultra-free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -196,7 +188,7 @@
     "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",
-    "stealth/crouton-alpha",
+    "stepfun-ai/step-5-preview",
     "thinkingmachines/inkling",
     "z-ai/glm-5.2"
   ]

@@ -1,17 +1,10 @@
 {
-  "updated": "2026-11-09T19:46:51.153442+00:00",
+  "updated": "2026-11-10T03:33:23.482828+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
-        {
-          "id": "stealth/crouton-alpha",
-          "name": "Crouton Alpha",
-          "context": 1048576,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": null
-        },
         {
           "id": "recursive/flint-v1.0:free",
           "name": "Recursive: Flint (free)",
@@ -547,6 +540,13 @@
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null

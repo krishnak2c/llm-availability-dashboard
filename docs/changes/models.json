@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-09T19:46:51.153442+00:00",
+  "updated": "2026-11-10T03:33:23.482828+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
         {
-          "id": "stealth/crouton-alpha",
-          "name": "Crouton Alpha",
+          "id": "thinkingmachines/inkling-2-small:free",
+          "name": "Thinking Machines: Inkling 2 Small (free)",
           "context": 1048576,
           "limits": "20 req/min · 50 req/day",
           "params_b": null
@@ -104,6 +104,20 @@
       "url": "https://console.groq.com",
       "models": [
         {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
+        {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
           "context": 131072,
@@ -137,20 +151,6 @@
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
-        },
-        {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
         }
       ],
       "error": null
@@ -775,13 +775,6 @@
           "params_b": 20.0
         },
         {
-          "id": "mimo-v2.6-pro",
-          "name": "mimo-v2.6-pro",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "mistral-Nemo-Instruct-2407",
           "name": "mistral-Nemo-Instruct-2407",
           "context": 128000,
@@ -820,6 +813,13 @@
           "id": "nvidia/nemotron-3.5-super-vl:free",
           "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
           "context": 1000000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "thinkingmachines/inkling-2-small:free",
+          "name": "Thinking Machines: Inkling 2 Small (free)",
+          "context": 1048576,
           "limits": "free tier",
           "params_b": null
         },
@@ -880,8 +880,8 @@
       "url": "https://opencode.ai/zen",
       "models": [
         {
-          "id": "longcat-2.5-free",
-          "name": "longcat-2.5-free",
+          "id": "minimax-m3.1-flash-free",
+          "name": "minimax-m3.1-flash-free",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -893,20 +893,6 @@
       "name": "Ollama Cloud",
       "url": "https://ollama.com",
       "models": [
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
         {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
@@ -936,8 +922,15 @@
           "params_b": null
         },
         {
-          "id": "beam",
-          "name": "beam",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
