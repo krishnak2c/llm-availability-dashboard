@@ -13,13 +13,14 @@
     "kilo-dots3notepreview",
     "nvidia-lagunaxs21",
     "nvidia-minimaxm31flash",
-    "nvidia-diffusiongemma26ba4bit",
     "llm7-mistralnemoinstruct",
+    "nvidia-diffusiongemma26ba4bit",
     "llm7-gptoss20b",
     "llm7-codestral",
     "nvidia-mistrallarge41ta52b",
     "nvidia-step5",
-    "kilo-nemotron35lightning"
+    "zai-glm45flash",
+    "kilo-liquidlfm3"
   ],
   "chain": [
     {
@@ -101,16 +102,16 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "nvidia-diffusiongemma26ba4bit",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "google/diffusiongemma-26b-a4b-it",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
       "id": "llm7-mistralnemoinstruct",
       "baseUrl": "https://api.llm7.io/v1",
       "model": "mistral-Nemo-Instruct-2407",
       "apiKeyEnv": "LLM7_API_KEY"
+    },
+    {
+      "id": "nvidia-diffusiongemma26ba4bit",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "google/diffusiongemma-26b-a4b-it",
+      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "llm7-gptoss20b",
@@ -137,9 +138,15 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "kilo-nemotron35lightning",
+      "id": "zai-glm45flash",
+      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+      "model": "glm-4.5-flash",
+      "apiKeyEnv": "ZAI_API_KEY"
+    },
+    {
+      "id": "kilo-liquidlfm3",
       "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "nvidia/nemotron-3.5-lightning:free",
+      "model": "liquid/lfm-3-1.7b:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     }
   ],
@@ -150,12 +157,14 @@
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
     "dots-studio/dots-3-note-preview:free",
+    "glm-4.5-flash",
     "google/diffusiongemma-26b-a4b-it",
     "gpt-oss:20b",
     "hy3",
     "hy3-free",
     "kilo-auto/free",
     "laguna-s-2.1-free",
+    "liquid/lfm-3-1.7b:free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
     "minimaxai/minimax-m3.1-flash",
@@ -167,7 +176,6 @@
     "nvidia/nemotron-3-ultra-550b-a55b",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "nvidia/nemotron-3.5-bolt-e4b",
-    "nvidia/nemotron-3.5-lightning:free",
     "nvidia/nemotron-3.5-super-vl-120b-a12b",
     "nvidia/nemotron-3.5-super-vl:free",
     "openrouter/free",
