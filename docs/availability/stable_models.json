@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T21:17:00.420968+00:00",
+  "updated": "2026-11-11T06:11:31.054622+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
@@ -319,6 +319,13 @@
           "context": 80000,
           "limits": "10k neurons/day",
           "params_b": 3.0
+        },
+        {
+          "id": "@cf/meta/llama-guard-3-8b",
+          "name": "@cf/meta/llama-guard-3-8b",
+          "context": 131072,
+          "limits": "10k neurons/day",
+          "params_b": 8.0
         },
         {
           "id": "@cf/mistral/mistral-7b-instruct-v0.2-lora",
