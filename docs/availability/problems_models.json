@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T06:11:31.054622+00:00",
+  "updated": "2026-11-11T14:26:55.736195+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -116,6 +116,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 90.0
+        },
+        {
+          "id": "meta/muse-glimmer-30b",
+          "name": "meta/muse-glimmer-30b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 30.0
         },
         {
           "id": "minimaxai/minimax-m3.1-flash",
@@ -305,27 +312,6 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
@@ -340,11 +326,32 @@
           "params_b": 31.0
         },
         {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        },
+        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
