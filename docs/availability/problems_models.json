@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T21:55:40.651321+00:00",
+  "updated": "2026-11-12T07:07:14.106893+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -319,6 +319,13 @@
       "url": "https://kilo.code",
       "models": [
         {
+          "id": "baidu/ernie-5.5-flash-preview:free",
+          "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+          "context": 1024000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "liquid/lfm-3-1.7b:free",
           "name": "LiquidAI: LFM3-1.7B (free)",
           "context": 262144,
@@ -333,18 +340,11 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
           "context": null,
           "limits": "free tier",
           "params_b": null
-        },
-        {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -354,13 +354,6 @@
           "params_b": 30.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
@@ -368,11 +361,25 @@
           "params_b": 120.0
         },
         {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "gemma4:31b",
           "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
           "params_b": 31.0
+        },
+        {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
         }
       ],
       "error": null

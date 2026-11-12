@@ -1,13 +1,20 @@
 {
-  "updated": "2026-11-11T21:55:40.651321+00:00",
+  "updated": "2026-11-12T07:07:14.106893+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
           "context": 131072,
           "limits": "varies per model",
           "capabilities": [
@@ -17,14 +24,7 @@
             "reasoning",
             "prompt_caching"
           ],
-          "params_b": 120.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
+          "params_b": 20.0
         },
         {
           "id": "qwen/qwen3.8-27b",
@@ -41,8 +41,8 @@
           "params_b": 27.0
         },
         {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
           "context": 131072,
           "limits": "varies per model",
           "capabilities": [
@@ -52,7 +52,7 @@
             "reasoning",
             "prompt_caching"
           ],
-          "params_b": 20.0
+          "params_b": 120.0
         }
       ],
       "error": null

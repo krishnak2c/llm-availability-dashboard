@@ -12,16 +12,17 @@
     "nvidia-nemotron3nanoomni30ba3breasoning",
     "kilo-dots3notepreview",
     "nvidia-minimaxm31flash",
-    "llm7-mistralnemoinstruct",
-    "nvidia-lagunaxs21",
-    "llm7-codestral",
-    "nvidia-diffusiongemma26ba4bit",
     "kilo-baiduernie55flashpreview",
+    "llm7-mistralnemoinstruct",
+    "llm7-codestral",
+    "nvidia-lagunaxs21",
+    "nvidia-diffusiongemma26ba4bit",
     "nvidia-mistrallarge41ta52b",
     "nvidia-step5",
     "zai-glm45flash",
     "kilo-liquidlfm3",
-    "kilo-nemotron35lightning"
+    "kilo-nemotron35lightning",
+    "nvidia-nemotron35lightning30ba3b"
   ],
   "chain": [
     {
@@ -97,9 +98,21 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
+      "id": "kilo-baiduernie55flashpreview",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "baidu/ernie-5.5-flash-preview:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
       "id": "llm7-mistralnemoinstruct",
       "baseUrl": "https://api.llm7.io/v1",
       "model": "mistral-Nemo-Instruct-2407",
+      "apiKeyEnv": "LLM7_API_KEY"
+    },
+    {
+      "id": "llm7-codestral",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "codestral-latest",
       "apiKeyEnv": "LLM7_API_KEY"
     },
     {
@@ -109,22 +122,10 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "llm7-codestral",
-      "baseUrl": "https://api.llm7.io/v1",
-      "model": "codestral-latest",
-      "apiKeyEnv": "LLM7_API_KEY"
-    },
-    {
       "id": "nvidia-diffusiongemma26ba4bit",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "google/diffusiongemma-26b-a4b-it",
       "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "kilo-baiduernie55flashpreview",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "baidu/ernie-5.5-flash-preview:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "nvidia-mistrallarge41ta52b",
@@ -155,6 +156,12 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3.5-lightning:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "nvidia-nemotron35lightning30ba3b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "apiKeyEnv": "NIM_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -183,6 +190,7 @@
     "nvidia/nemotron-3-ultra-550b-a55b",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
     "nvidia/nemotron-3.5-bolt-e4b",
+    "nvidia/nemotron-3.5-lightning-30b-a3b",
     "nvidia/nemotron-3.5-lightning:free",
     "nvidia/nemotron-3.5-super-vl-120b-a12b",
     "nvidia/nemotron-3.5-super-vl:free",
