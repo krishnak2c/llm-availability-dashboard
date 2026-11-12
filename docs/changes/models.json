@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T07:07:14.106893+00:00",
+  "updated": "2026-11-12T17:34:26.289767+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -62,13 +62,6 @@
           "params_b": 30.0
         },
         {
-          "id": "google/gemma-4-26b-a4b-it:free",
-          "name": "Google: Gemma 4 26B A4B  (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": 26.0
-        },
-        {
           "id": "google/gemma-4-31b-it:free",
           "name": "Google: Gemma 4 31B (free)",
           "context": 262144,
@@ -90,13 +83,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
           "context": 131072,
@@ -111,20 +97,6 @@
           "params_b": 20.0
         },
         {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
-        },
-        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -137,6 +109,27 @@
             "prompt_caching"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         }
       ],
       "error": null
@@ -163,13 +156,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": null
-        },
-        {
-          "id": "google/diffusiongemma-26b-a4b-it",
-          "name": "google/diffusiongemma-26b-a4b-it",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 26.0
         },
         {
           "id": "google/gemma-4-31b-it",
@@ -429,6 +415,19 @@
             "vision"
           ],
           "params_b": 8.0
+        },
+        {
+          "id": "mistral-large-latest",
+          "name": "mistral-large-4",
+          "context": 262144,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
+          "params_b": null
         },
         {
           "id": "voxtral-small-2507",
@@ -872,6 +871,13 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "gpt-oss:20b",
+          "name": "gpt-oss:20b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 20.0
+        },
+        {
           "id": "nemotron-3-ultra",
           "name": "nemotron-3-ultra",
           "context": null,
@@ -879,11 +885,11 @@
           "params_b": null
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
+          "params_b": 31.0
         },
         {
           "id": "gpt-oss:120b",
@@ -900,18 +906,11 @@
           "params_b": null
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
+          "params_b": 30.0
         }
       ],
       "error": null

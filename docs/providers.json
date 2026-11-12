@@ -4,25 +4,24 @@
     "nvidia-nemotron35supervl120ba12b",
     "kilo-nemotron3ultra550ba55b",
     "nvidia-nemotron3ultra550ba55b",
-    "kilo-northminicode",
     "kilo-openrouterfree",
     "nvidia-nemotron35bolte4b",
     "kilo-kiloautofree",
     "kilo-nemotron3nanoomni30ba3breasoning",
     "nvidia-nemotron3nanoomni30ba3breasoning",
     "kilo-dots3notepreview",
-    "nvidia-minimaxm31flash",
+    "kilo-northminicode",
     "kilo-baiduernie55flashpreview",
+    "nvidia-minimaxm31flash",
     "llm7-mistralnemoinstruct",
     "llm7-codestral",
     "nvidia-lagunaxs21",
-    "nvidia-diffusiongemma26ba4bit",
-    "nvidia-mistrallarge41ta52b",
     "nvidia-step5",
-    "zai-glm45flash",
+    "nvidia-mistrallarge41ta52b",
     "kilo-liquidlfm3",
-    "kilo-nemotron35lightning",
-    "nvidia-nemotron35lightning30ba3b"
+    "zai-glm45flash",
+    "nvidia-nemotron35lightning30ba3b",
+    "kilo-nemotron35lightning"
   ],
   "chain": [
     {
@@ -48,12 +47,6 @@
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "nvidia/nemotron-3-ultra-550b-a55b",
       "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "kilo-northminicode",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "cohere/north-mini-code:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "kilo-openrouterfree",
@@ -92,16 +85,22 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "nvidia-minimaxm31flash",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "minimaxai/minimax-m3.1-flash",
-      "apiKeyEnv": "NIM_API_KEY"
+      "id": "kilo-northminicode",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "cohere/north-mini-code:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "kilo-baiduernie55flashpreview",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "baidu/ernie-5.5-flash-preview:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "nvidia-minimaxm31flash",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "minimaxai/minimax-m3.1-flash",
+      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "llm7-mistralnemoinstruct",
@@ -122,9 +121,9 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "nvidia-diffusiongemma26ba4bit",
+      "id": "nvidia-step5",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "google/diffusiongemma-26b-a4b-it",
+      "model": "stepfun-ai/step-5-preview",
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
@@ -134,10 +133,10 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "nvidia-step5",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "stepfun-ai/step-5-preview",
-      "apiKeyEnv": "NIM_API_KEY"
+      "id": "kilo-liquidlfm3",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "liquid/lfm-3-1.7b:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "zai-glm45flash",
@@ -146,22 +145,16 @@
       "apiKeyEnv": "ZAI_API_KEY"
     },
     {
-      "id": "kilo-liquidlfm3",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "liquid/lfm-3-1.7b:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
+      "id": "nvidia-nemotron35lightning30ba3b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "kilo-nemotron35lightning",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3.5-lightning:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "nvidia-nemotron35lightning30ba3b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
-      "apiKeyEnv": "NIM_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -173,7 +166,6 @@
     "deepseek/deepseek-v4-pro-free",
     "dots-studio/dots-3-note-preview:free",
     "glm-4.5-flash",
-    "google/diffusiongemma-26b-a4b-it",
     "hy3",
     "hy3-free",
     "kilo-auto/free",
