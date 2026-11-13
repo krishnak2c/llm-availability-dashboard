@@ -1,10 +1,17 @@
 {
-  "updated": "2026-11-13T06:41:10.118156+00:00",
+  "updated": "2026-11-13T17:11:23.376715+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
+        {
+          "id": "particle-ai/particle-1:free",
+          "name": "Particle AI: Particle-1 (free)",
+          "context": 1048576,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
         {
           "id": "recursive/flint-v1.0:free",
           "name": "Recursive: Flint (free)",
@@ -25,13 +32,6 @@
           "context": 512000,
           "limits": "20 req/min · 50 req/day",
           "params_b": null
-        },
-        {
-          "id": "liquid/lfm-2.5-2.6b:free",
-          "name": "LiquidAI: LFM2.5-2.6B (free)",
-          "context": 65536,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": 2.6
         },
         {
           "id": "nvidia/nemotron-3.5-lightning:free",
@@ -188,6 +188,13 @@
       "url": "https://developers.cloudflare.com/workers-ai/",
       "models": [
         {
+          "id": "@cf/thinkingmachines/inkling-2-small",
+          "name": "@cf/thinkingmachines/inkling-2-small",
+          "context": null,
+          "limits": "10k neurons/day",
+          "params_b": null
+        },
+        {
           "id": "@cf/meta/llama-guard-3-8b",
           "name": "@cf/meta/llama-guard-3-8b",
           "context": 131072,
@@ -284,6 +291,13 @@
       "url": "https://llm7.io",
       "models": [
         {
+          "id": "DeepSeek-V4-Flash-0731",
+          "name": "DeepSeek-V4-Flash-0731",
+          "context": 400000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
@@ -296,6 +310,13 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
+        },
+        {
+          "id": "minimax-m2.7",
+          "name": "minimax-m2.7",
+          "context": 180000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
         },
         {
           "id": "mistral-Nemo-Instruct-2407",
@@ -331,6 +352,13 @@
           "context": 262144,
           "limits": "free tier",
           "params_b": 1.7
+        },
+        {
+          "id": "particle-ai/particle-1:free",
+          "name": "Particle AI: Particle-1 (free)",
+          "context": 1048576,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
@@ -340,15 +368,15 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 31.0
         },
         {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
           "context": null,
           "limits": "free tier",
           "params_b": null
@@ -368,18 +396,18 @@
           "params_b": 120.0
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
           "id": "nemotron-3-nano:30b",
           "name": "nemotron-3-nano:30b",
           "context": null,
           "limits": "free tier",
           "params_b": 30.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
