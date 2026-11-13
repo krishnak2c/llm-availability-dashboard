@@ -1,24 +1,10 @@
 {
-  "updated": "2026-11-12T23:36:36.668890+00:00",
+  "updated": "2026-11-13T06:41:10.118156+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
-        {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
-        },
         {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
@@ -53,6 +39,20 @@
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
+        },
+        {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         }
       ],
       "error": null
@@ -303,13 +303,6 @@
           "params_b": 32.0
         },
         {
-          "id": "@cf/meta/llama-3.1-8b-instruct-fp8",
-          "name": "@cf/meta/llama-3.1-8b-instruct-fp8",
-          "context": 32000,
-          "limits": "10k neurons/day",
-          "params_b": 8.0
-        },
-        {
           "id": "@cf/meta/llama-3.2-1b-instruct",
           "name": "@cf/meta/llama-3.2-1b-instruct",
           "context": 60000,
@@ -426,13 +419,6 @@
           "params_b": null
         },
         {
-          "id": "@cf/qwen/qwen3.8-27b",
-          "name": "@cf/qwen/qwen3.8-27b",
-          "context": null,
-          "limits": "10k neurons/day",
-          "params_b": 27.0
-        },
-        {
           "id": "@cf/openai/gpt-oss-20b",
           "name": "@cf/openai/gpt-oss-20b",
           "context": 128000,
@@ -481,6 +467,13 @@
           "id": "nvidia/nemotron-3.5-super-vl:free",
           "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
           "context": 1000000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "baidu/ernie-5.5-flash-preview:free",
+          "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+          "context": 1024000,
           "limits": "free tier",
           "params_b": null
         },
