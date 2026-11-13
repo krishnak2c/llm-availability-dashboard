@@ -9,21 +9,21 @@
     "kilo-nemotron3nanoomni30ba3breasoning",
     "nvidia-nemotron3nanoomni30ba3breasoning",
     "kilo-kiloautofree",
+    "kilo-baiduernie55flashpreview",
     "kilo-dots3notepreview",
     "kilo-northminicode",
-    "kilo-baiduernie55flashpreview",
     "kilo-particleaiparticle1",
     "nvidia-minimaxm31flash",
     "llm7-mistralnemoinstruct",
-    "llm7-codestral",
     "nvidia-lagunaxs21",
-    "nvidia-mistrallarge41ta52b",
     "kilo-liquidlfm3",
+    "nvidia-mistrallarge41ta52b",
     "nvidia-step5",
     "zai-glm45flash",
     "llm7-gptoss20b",
     "nvidia-nemotron35lightning30ba3b",
-    "kilo-nemotron35lightning"
+    "kilo-nemotron35lightning",
+    "llm7-deepseekv4flash"
   ],
   "chain": [
     {
@@ -81,6 +81,12 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
+      "id": "kilo-baiduernie55flashpreview",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "baidu/ernie-5.5-flash-preview:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
       "id": "kilo-dots3notepreview",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "dots-studio/dots-3-note-preview:free",
@@ -90,12 +96,6 @@
       "id": "kilo-northminicode",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "cohere/north-mini-code:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "kilo-baiduernie55flashpreview",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "baidu/ernie-5.5-flash-preview:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
@@ -117,21 +117,9 @@
       "apiKeyEnv": "LLM7_API_KEY"
     },
     {
-      "id": "llm7-codestral",
-      "baseUrl": "https://api.llm7.io/v1",
-      "model": "codestral-latest",
-      "apiKeyEnv": "LLM7_API_KEY"
-    },
-    {
       "id": "nvidia-lagunaxs21",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "poolside/laguna-xs-2.1",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "nvidia-mistrallarge41ta52b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "mistralai/mistral-large-4-1t-a52b",
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
@@ -139,6 +127,12 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "liquid/lfm-3-1.7b:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "nvidia-mistrallarge41ta52b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "mistralai/mistral-large-4-1t-a52b",
+      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "nvidia-step5",
@@ -169,11 +163,17 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3.5-lightning:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "llm7-deepseekv4flash",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "DeepSeek-V4-Flash-0731",
+      "apiKeyEnv": "LLM7_API_KEY"
     }
   ],
   "modelAllowlist": [
+    "DeepSeek-V4-Flash-0731",
     "baidu/ernie-5.5-flash-preview:free",
-    "codestral-latest",
     "cohere/north-mini-code:free",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
