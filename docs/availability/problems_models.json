@@ -1,10 +1,17 @@
 {
-  "updated": "2026-11-14T15:47:53.597339+00:00",
+  "updated": "2026-11-14T22:21:22.129388+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
+        {
+          "id": "inclusionai/ling-3.2-flash:free",
+          "name": "inclusionAI: Ling 3.2 Flash (free)",
+          "context": 1048576,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
         {
           "id": "particle-ai/particle-1:free",
           "name": "Particle AI: Particle-1 (free)",
@@ -367,6 +374,13 @@
       "url": "https://kilo.code",
       "models": [
         {
+          "id": "kilo-auto/free",
+          "name": "Auto Free",
+          "context": 256000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "liquid/lfm-3-1.7b:free",
           "name": "LiquidAI: LFM3-1.7B (free)",
           "context": 262144,
@@ -380,6 +394,13 @@
       "name": "Ollama Cloud",
       "url": "https://ollama.com",
       "models": [
+        {
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 31.0
+        },
         {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
@@ -395,11 +416,11 @@
           "params_b": null
         },
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
-          "params_b": 31.0
+          "params_b": 120.0
         },
         {
           "id": "nemotron-3-nano:30b",
@@ -414,13 +435,6 @@
           "context": null,
           "limits": "free tier",
           "params_b": null
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
         }
       ],
       "error": null
