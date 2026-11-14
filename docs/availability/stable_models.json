@@ -1,10 +1,31 @@
 {
-  "updated": "2026-11-14T06:18:14.494986+00:00",
+  "updated": "2026-11-14T15:47:53.597339+00:00",
   "providers": {
+    "openrouter": {
+      "name": "OpenRouter",
+      "url": "https://openrouter.ai",
+      "models": [
+        {
+          "id": "inclusionai/ling-3.2-flash:free",
+          "name": "inclusionAI: Ling 3.2 Flash (free)",
+          "context": 1048576,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
         {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
@@ -18,13 +39,6 @@
             "prompt_caching"
           ],
           "params_b": 120.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
         },
         {
           "id": "qwen/qwen3.8-27b",
@@ -328,16 +342,6 @@
           "params_b": 7.0
         },
         {
-          "id": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-          "name": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-          "context": 24000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling"
-          ],
-          "params_b": 70.0
-        },
-        {
           "id": "@cf/ibm-granite/granite-4.0-h-micro",
           "name": "@cf/ibm-granite/granite-4.0-h-micro",
           "context": 131000,
@@ -430,16 +434,6 @@
           "params_b": 20.0
         },
         {
-          "id": "@cf/meta/llama-4-scout-17b-16e-instruct",
-          "name": "@cf/meta/llama-4-scout-17b-16e-instruct",
-          "context": 131000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling"
-          ],
-          "params_b": 17.0
-        },
-        {
           "id": "@cf/qwen/qwq-32b",
           "name": "@cf/qwen/qwq-32b",
           "context": 24000,
@@ -474,6 +468,13 @@
           "id": "baidu/ernie-5.5-flash-preview:free",
           "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
           "context": 1024000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "particle-ai/particle-1:free",
+          "name": "Particle AI: Particle-1 (free)",
+          "context": 1048576,
           "limits": "free tier",
           "params_b": null
         },
