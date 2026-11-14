@@ -4,17 +4,19 @@
     "nvidia-nemotron35supervl120ba12b",
     "kilo-nemotron3ultra550ba55b",
     "nvidia-nemotron3ultra550ba55b",
+    "openrouter-inclusionailing32flash",
     "kilo-openrouterfree",
     "nvidia-nemotron35bolte4b",
     "kilo-nemotron3nanoomni30ba3breasoning",
     "nvidia-nemotron3nanoomni30ba3breasoning",
-    "kilo-kiloautofree",
     "kilo-baiduernie55flashpreview",
     "kilo-dots3notepreview",
     "kilo-northminicode",
+    "kilo-kiloautofree",
     "kilo-particleaiparticle1",
     "nvidia-minimaxm31flash",
     "llm7-mistralnemoinstruct",
+    "llm7-codestral",
     "nvidia-lagunaxs21",
     "kilo-liquidlfm3",
     "nvidia-mistrallarge41ta52b",
@@ -22,8 +24,7 @@
     "zai-glm45flash",
     "llm7-gptoss20b",
     "nvidia-nemotron35lightning30ba3b",
-    "kilo-nemotron35lightning",
-    "llm7-deepseekv4flash"
+    "kilo-nemotron35lightning"
   ],
   "chain": [
     {
@@ -51,6 +52,12 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
+      "id": "openrouter-inclusionailing32flash",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "inclusionai/ling-3.2-flash:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
       "id": "kilo-openrouterfree",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "openrouter/free",
@@ -75,12 +82,6 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "kilo-kiloautofree",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "kilo-auto/free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
       "id": "kilo-baiduernie55flashpreview",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "baidu/ernie-5.5-flash-preview:free",
@@ -99,6 +100,12 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
+      "id": "kilo-kiloautofree",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "kilo-auto/free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
       "id": "kilo-particleaiparticle1",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "particle-ai/particle-1:free",
@@ -114,6 +121,12 @@
       "id": "llm7-mistralnemoinstruct",
       "baseUrl": "https://api.llm7.io/v1",
       "model": "mistral-Nemo-Instruct-2407",
+      "apiKeyEnv": "LLM7_API_KEY"
+    },
+    {
+      "id": "llm7-codestral",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "codestral-latest",
       "apiKeyEnv": "LLM7_API_KEY"
     },
     {
@@ -163,17 +176,11 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3.5-lightning:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "llm7-deepseekv4flash",
-      "baseUrl": "https://api.llm7.io/v1",
-      "model": "DeepSeek-V4-Flash-0731",
-      "apiKeyEnv": "LLM7_API_KEY"
     }
   ],
   "modelAllowlist": [
-    "DeepSeek-V4-Flash-0731",
     "baidu/ernie-5.5-flash-preview:free",
+    "codestral-latest",
     "cohere/north-mini-code:free",
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
@@ -183,6 +190,7 @@
     "gpt-oss:20b",
     "hy3",
     "hy3-free",
+    "inclusionai/ling-3.2-flash:free",
     "kilo-auto/free",
     "laguna-s-2.1-free",
     "liquid/lfm-3-1.7b:free",
