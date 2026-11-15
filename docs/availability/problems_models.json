@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T22:21:22.129388+00:00",
+  "updated": "2026-11-15T06:25:39.859683+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -11,6 +11,13 @@
           "context": 1048576,
           "limits": "20 req/min · 50 req/day",
           "params_b": null
+        },
+        {
+          "id": "liquid/lfm-3-1.7b:free",
+          "name": "LiquidAI: LFM3-1.7B (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 1.7
         },
         {
           "id": "particle-ai/particle-1:free",
@@ -332,6 +339,13 @@
           "params_b": null
         },
         {
+          "id": "glm-5.3-flash",
+          "name": "glm-5.3-flash",
+          "context": null,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": 128000,
@@ -386,6 +400,13 @@
           "context": 262144,
           "limits": "free tier",
           "params_b": 1.7
+        },
+        {
+          "id": "particle-ai/particle-1:free",
+          "name": "Particle AI: Particle-1 (free)",
+          "context": 1048576,
+          "limits": "free tier",
+          "params_b": null
         }
       ],
       "error": null
@@ -395,18 +416,25 @@
       "url": "https://ollama.com",
       "models": [
         {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": null,
           "limits": "free tier",
           "params_b": 20.0
+        },
+        {
+          "id": "nemotron-3-ultra",
+          "name": "nemotron-3-ultra",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
         },
         {
           "id": "nemotron-3-super",
@@ -423,18 +451,11 @@
           "params_b": 120.0
         },
         {
-          "id": "nemotron-3-nano:30b",
-          "name": "nemotron-3-nano:30b",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": 30.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
+          "params_b": 31.0
         }
       ],
       "error": null
