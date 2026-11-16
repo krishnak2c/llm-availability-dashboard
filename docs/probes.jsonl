@@ -33078,3 +33078,37 @@
 {"ts": "2026-11-16T02:30:35.150905+00:00", "provider": "nvidia", "model": "nvidia/riva-translate-4b-instruct-v2", "status": "ok", "http": 200, "latency_ms": 273, "err": null}
 {"ts": "2026-11-16T02:30:35.332194+00:00", "provider": "nvidia", "model": "poolside/laguna-xs-2.1", "status": "ok", "http": 200, "latency_ms": 181, "err": null}
 {"ts": "2026-11-16T02:30:37.630473+00:00", "provider": "nvidia", "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning", "status": "ok", "http": 200, "latency_ms": 3018, "err": null}
+{"ts": "2026-11-16T03:00:16.686139+00:00", "provider": "ollama", "model": "gpt-oss:20b", "status": "quota_exhausted", "http": 402, "latency_ms": 104, "err": "{\"error\":{\"message\":\"Add usage credits or subscribe and save up to 66%: https://ollama.com/plans (ref: d5e77eab-5385-4f02-8339-1cae2f272224)\",\"type\":\"api_error\",\"param\":null,\"code\":null}}\n"}
+{"ts": "2026-11-16T03:00:16.688139+00:00", "provider": "ollama", "model": "nemotron-3-super", "status": "quota_exhausted", "http": 402, "latency_ms": 106, "err": "{\"error\":{\"message\":\"Add usage credits or subscribe and save up to 66%: https://ollama.com/plans (ref: c46efa81-26cd-45fd-af2a-cf8a03f84242)\",\"type\":\"api_error\",\"param\":null,\"code\":null}}\n"}
+{"ts": "2026-11-16T03:00:16.721281+00:00", "provider": "openrouter", "model": "google/gemma-4-31b-it:free", "status": "rate_limited", "http": 429, "latency_ms": 210, "err": null}
+{"ts": "2026-11-16T03:00:16.787458+00:00", "provider": "ollama", "model": "nemotron-3-nano:30b", "status": "bad_response", "http": 410, "latency_ms": 101, "err": "{\"error\":{\"message\":\"nemotron-3-nano:30b was retired on November 9, 2026. Try glm-5.3-flash:cloud. (ref: 2c17f1ed-af1d-489f-bb3d-b9917bd8b694)\",\"type\":\"api_error\",\"param\":null,\"code\":null}}\n"}
+{"ts": "2026-11-16T03:00:16.793911+00:00", "provider": "ollama", "model": "gpt-oss:120b", "status": "quota_exhausted", "http": 402, "latency_ms": 105, "err": "{\"error\":{\"message\":\"Add usage credits or subscribe and save up to 66%: https://ollama.com/plans (ref: aa0118b8-8a03-4c15-9af8-4cd34014dfaa)\",\"type\":\"api_error\",\"param\":null,\"code\":null}}\n"}
+{"ts": "2026-11-16T03:00:16.831900+00:00", "provider": "groq", "model": "allam-2-7b", "status": "ok", "http": 200, "latency_ms": 320, "err": null}
+{"ts": "2026-11-16T03:00:16.834567+00:00", "provider": "openrouter", "model": "nvidia/nemotron-3.5-lightning:free", "status": "ok", "http": 200, "latency_ms": 324, "err": null}
+{"ts": "2026-11-16T03:00:16.867014+00:00", "provider": "mistral", "model": "ministral-14b-2512", "status": "ok", "http": 200, "latency_ms": 354, "err": null}
+{"ts": "2026-11-16T03:00:16.876343+00:00", "provider": "mistral", "model": "codestral-2508", "status": "ok", "http": 200, "latency_ms": 364, "err": null}
+{"ts": "2026-11-16T03:00:16.904323+00:00", "provider": "ollama", "model": "gemma4:31b", "status": "quota_exhausted", "http": 402, "latency_ms": 110, "err": "{\"error\":{\"message\":\"Add usage credits or subscribe and save up to 66%: https://ollama.com/plans (ref: 7d6d4e51-69cf-4e20-9a29-7c57249c5f57)\",\"type\":\"api_error\",\"param\":null,\"code\":null}}\n"}
+{"ts": "2026-11-16T03:00:16.911081+00:00", "provider": "ollama", "model": "nemotron-3-ultra", "status": "quota_exhausted", "http": 402, "latency_ms": 123, "err": "{\"error\":{\"message\":\"Add usage credits or subscribe and save up to 66%: https://ollama.com/plans (ref: 619217cb-d6aa-4a46-b7ce-0f4f7c744346)\",\"type\":\"api_error\",\"param\":null,\"code\":null}}\n"}
+{"ts": "2026-11-16T03:00:17.083174+00:00", "provider": "kilo", "model": "nvidia/nemotron-3.5-lightning:free", "status": "ok", "http": 200, "latency_ms": 503, "err": null}
+{"ts": "2026-11-16T03:00:17.163690+00:00", "provider": "mistral", "model": "ministral-8b-2512", "status": "ok", "http": 200, "latency_ms": 287, "err": null}
+{"ts": "2026-11-16T03:00:17.450292+00:00", "provider": "mistral", "model": "ministral-8b-latest", "status": "ok", "http": 200, "latency_ms": 286, "err": null}
+{"ts": "2026-11-16T03:00:17.697443+00:00", "provider": "mistral", "model": "voxtral-small-latest", "status": "ok", "http": 200, "latency_ms": 247, "err": null}
+{"ts": "2026-11-16T03:00:17.960203+00:00", "provider": "mistral", "model": "ministral-3b-latest", "status": "ok", "http": 200, "latency_ms": 1093, "err": null}
+{"ts": "2026-11-16T03:00:18.101609+00:00", "provider": "kilo", "model": "baidu/ernie-5.5-flash-preview:free", "status": "ok", "http": 200, "latency_ms": 1523, "err": null}
+{"ts": "2026-11-16T03:00:18.547408+00:00", "provider": "cloudflare", "model": "@cf/zai-org/glm-5.3", "status": "ok", "http": 200, "latency_ms": 1966, "err": null}
+{"ts": "2026-11-16T03:00:18.758428+00:00", "provider": "cloudflare", "model": "@cf/meta/llama-3.2-1b-instruct", "status": "ok", "http": 200, "latency_ms": 210, "err": null}
+{"ts": "2026-11-16T03:00:19.134258+00:00", "provider": "cloudflare", "model": "@cf/zai-org/glm-5.3-flash", "status": "ok", "http": 200, "latency_ms": 2553, "err": null}
+{"ts": "2026-11-16T03:00:20.083066+00:00", "provider": "cloudflare", "model": "@cf/ibm-granite/granite-4.0-h-micro", "status": "ok", "http": 200, "latency_ms": 948, "err": null}
+{"ts": "2026-11-16T03:00:20.740855+00:00", "provider": "llm7", "model": "gpt-oss:20b", "status": "ok", "http": 200, "latency_ms": 4159, "err": null}
+{"ts": "2026-11-16T03:00:21.082592+00:00", "provider": "cloudflare", "model": "@cf/moonshotai/kimi-k2.6", "status": "ok", "http": 200, "latency_ms": 2324, "err": null}
+{"ts": "2026-11-16T03:00:21.664010+00:00", "provider": "cloudflare", "model": "@cf/deepseek-ai/deepseek-v4-flash-0731", "status": "ok", "http": 200, "latency_ms": 1580, "err": null}
+{"ts": "2026-11-16T03:00:21.787828+00:00", "provider": "cloudflare", "model": "@cf/aisingapore/gemma-sea-lion-v4-27b-it", "status": "ok", "http": 200, "latency_ms": 123, "err": null}
+{"ts": "2026-11-16T03:00:21.903442+00:00", "provider": "cloudflare", "model": "@cf/qwen/qwen3-30b-a3b-fp8", "status": "ok", "http": 200, "latency_ms": 115, "err": null}
+{"ts": "2026-11-16T03:00:22.144011+00:00", "provider": "cloudflare", "model": "@cf/qwen/qwen3.8-27b", "status": "ok", "http": 200, "latency_ms": 240, "err": null}
+{"ts": "2026-11-16T03:00:22.368375+00:00", "provider": "cloudflare", "model": "@cf/openai/gpt-oss-20b", "status": "ok", "http": 200, "latency_ms": 224, "err": null}
+{"ts": "2026-11-16T03:00:22.553126+00:00", "provider": "cloudflare", "model": "@cf/zai-org/glm-5.2", "status": "ok", "http": 200, "latency_ms": 1470, "err": null}
+{"ts": "2026-11-16T03:00:26.599810+00:00", "provider": "nvidia", "model": "deepseek-ai/deepseek-v4.1-flash", "status": "timeout", "http": null, "latency_ms": 10088, "err": "The read operation timed out"}
+{"ts": "2026-11-16T03:00:26.599895+00:00", "provider": "nvidia", "model": "google/gemma-4-31b-it", "status": "timeout", "http": null, "latency_ms": 10087, "err": "The read operation timed out"}
+{"ts": "2026-11-16T03:00:26.763801+00:00", "provider": "nvidia", "model": "meta/llama-guard-4-12b", "status": "ok", "http": 200, "latency_ms": 163, "err": null}
+{"ts": "2026-11-16T03:00:26.987084+00:00", "provider": "nvidia", "model": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3", "status": "ok", "http": 200, "latency_ms": 386, "err": null}
+{"ts": "2026-11-16T03:00:36.782003+00:00", "provider": "nvidia", "model": "z-ai/glm-5.3-flash", "status": "timeout", "http": null, "latency_ms": 10018, "err": "The read operation timed out"}
