@@ -1,30 +1,30 @@
 {
-  "updated": "2026-11-16T06:23:57.485589+00:00",
+  "updated": "2026-11-16T19:34:10.968527+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
           "context": 131072,
           "limits": "varies per model",
           "capabilities": [
             "function_calling",
             "tool_choice",
             "response_schema",
-            "vision",
-            "reasoning"
+            "reasoning",
+            "prompt_caching"
           ],
-          "params_b": 27.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
+          "params_b": 120.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -41,18 +41,18 @@
           "params_b": 20.0
         },
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
           "context": 131072,
           "limits": "varies per model",
           "capabilities": [
             "function_calling",
             "tool_choice",
             "response_schema",
-            "reasoning",
-            "prompt_caching"
+            "vision",
+            "reasoning"
           ],
-          "params_b": 120.0
+          "params_b": 27.0
         }
       ],
       "error": null
@@ -61,13 +61,6 @@
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
-        {
-          "id": "meta/llama-guard-4-12b",
-          "name": "meta/llama-guard-4-12b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 12.0
-        },
         {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
           "name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
@@ -437,13 +430,6 @@
       "url": "https://kilo.code",
       "models": [
         {
-          "id": "nvidia/nemotron-3.5-super-vl:free",
-          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
-          "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
           "id": "baidu/ernie-5.5-flash-preview:free",
           "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
           "context": 1024000,
@@ -451,9 +437,9 @@
           "params_b": null
         },
         {
-          "id": "particle-ai/particle-1:free",
-          "name": "Particle AI: Particle-1 (free)",
-          "context": 1048576,
+          "id": "nvidia/nemotron-3.5-super-vl:free",
+          "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+          "context": 1000000,
           "limits": "free tier",
           "params_b": null
         },
@@ -468,13 +454,6 @@
           "id": "nvidia/nemotron-3.5-lightning:free",
           "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
           "context": 1000000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "cohere/north-mini-code:free",
-          "name": "Cohere: North Mini Code (free)",
-          "context": 256000,
           "limits": "free tier",
           "params_b": null
         },

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T06:23:57.485589+00:00",
+  "updated": "2026-11-16T19:34:10.968527+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -111,13 +111,6 @@
           "params_b": 31.0
         },
         {
-          "id": "meta/llama-3.2-90b-vision-instruct",
-          "name": "meta/llama-3.2-90b-vision-instruct",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 90.0
-        },
-        {
           "id": "meta/muse-glimmer-30b",
           "name": "meta/muse-glimmer-30b",
           "context": null,
@@ -167,13 +160,6 @@
           "params_b": 120.0
         },
         {
-          "id": "nvidia/nemotron-parse-2.0",
-          "name": "nvidia/nemotron-parse-2.0",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
-        },
-        {
           "id": "poolside/laguna-xs-2.1",
           "name": "poolside/laguna-xs-2.1",
           "context": null,
@@ -204,8 +190,13 @@
         {
           "id": "@cf/thinkingmachines/inkling-2-small",
           "name": "@cf/thinkingmachines/inkling-2-small",
-          "context": null,
+          "context": 1048576,
           "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "vision",
+            "reasoning"
+          ],
           "params_b": null
         },
         {
@@ -402,6 +393,20 @@
           "params_b": 1.7
         },
         {
+          "id": "particle-ai/particle-1:free",
+          "name": "Particle AI: Particle-1 (free)",
+          "context": 1048576,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "cohere/north-mini-code:free",
+          "name": "Cohere: North Mini Code (free)",
+          "context": 256000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
           "name": "NVIDIA: Nemotron 3 Ultra (free)",
           "context": 1000000,
@@ -416,18 +421,18 @@
       "url": "https://ollama.com",
       "models": [
         {
+          "id": "nemotron-3-super",
+          "name": "nemotron-3-super",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "gpt-oss:120b",
           "name": "gpt-oss:120b",
           "context": null,
           "limits": "free tier",
           "params_b": 120.0
-        },
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
         },
         {
           "id": "gpt-oss:20b",
@@ -437,11 +442,11 @@
           "params_b": 20.0
         },
         {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
+          "id": "gemma4:31b",
+          "name": "gemma4:31b",
           "context": null,
           "limits": "free tier",
-          "params_b": null
+          "params_b": 31.0
         },
         {
           "id": "nemotron-3-ultra",
