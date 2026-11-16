@@ -1,24 +1,10 @@
 {
-  "updated": "2026-11-15T22:46:29.465646+00:00",
+  "updated": "2026-11-16T06:23:57.485589+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 20.0
-        },
         {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
@@ -39,6 +25,20 @@
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 20.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -447,6 +447,13 @@
           "id": "baidu/ernie-5.5-flash-preview:free",
           "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
           "context": 1024000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "particle-ai/particle-1:free",
+          "name": "Particle AI: Particle-1 (free)",
+          "context": 1048576,
           "limits": "free tier",
           "params_b": null
         },
