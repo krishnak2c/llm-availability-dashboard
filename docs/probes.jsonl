@@ -34827,3 +34827,33 @@
 {"ts": "2026-11-17T08:00:29.063511+00:00", "provider": "llm7", "model": "muse-spark-open", "status": "timeout", "http": null, "latency_ms": 10023, "err": "The read operation timed out"}
 {"ts": "2026-11-17T08:00:29.107448+00:00", "provider": "nvidia", "model": "z-ai/glm-5.3-flash", "status": "timeout", "http": null, "latency_ms": 10059, "err": "The read operation timed out"}
 {"ts": "2026-11-17T08:00:29.220361+00:00", "provider": "llm7", "model": "mimo-v2.6-pro", "status": "quota_exhausted", "http": 402, "latency_ms": 10180, "err": "{\"error\":{\"message\":\"Insufficient balance. Please top up your balance to continue.\",\"type\":\"insufficient_quota\",\"param\":null,\"code\":\"insufficient_balance\"}}"}
+{"ts": "2026-11-17T08:30:22.579740+00:00", "provider": "zen", "model": "longcat-2.5-free", "status": "rate_limited", "http": 429, "latency_ms": 133, "err": null}
+{"ts": "2026-11-17T08:30:22.588257+00:00", "provider": "zen", "model": "hy4-flash-free", "status": "rate_limited", "http": 429, "latency_ms": 142, "err": null}
+{"ts": "2026-11-17T08:30:22.610216+00:00", "provider": "openrouter", "model": "nvidia/nemotron-3-ultra-550b-a55b:free", "status": "rate_limited", "http": 429, "latency_ms": 170, "err": null}
+{"ts": "2026-11-17T08:30:22.623680+00:00", "provider": "openrouter", "model": "particle-ai/particle-1:free", "status": "rate_limited", "http": 429, "latency_ms": 184, "err": null}
+{"ts": "2026-11-17T08:30:22.672278+00:00", "provider": "openrouter", "model": "google/gemma-4-31b-it:free", "status": "rate_limited", "http": 429, "latency_ms": 61, "err": null}
+{"ts": "2026-11-17T08:30:22.713125+00:00", "provider": "groq", "model": "openai/gpt-oss-20b", "status": "ok", "http": 200, "latency_ms": 272, "err": null}
+{"ts": "2026-11-17T08:30:22.714703+00:00", "provider": "groq", "model": "openai/gpt-oss-120b", "status": "ok", "http": 200, "latency_ms": 274, "err": null}
+{"ts": "2026-11-17T08:30:22.814048+00:00", "provider": "mistral", "model": "voxtral-mini-tts-3-1", "status": "bad_response", "http": 400, "latency_ms": 369, "err": "{\"object\":\"error\",\"message\":\"Invalid model: voxtral-mini-tts-3-1\",\"type\":\"invalid_model\",\"param\":null,\"code\":\"1500\",\"raw_status_code\":400}"}
+{"ts": "2026-11-17T08:30:22.885420+00:00", "provider": "mistral", "model": "voxtral-small-2507", "status": "ok", "http": 200, "latency_ms": 441, "err": null}
+{"ts": "2026-11-17T08:30:23.080538+00:00", "provider": "cloudflare", "model": "@cf/google/gemma-2b-it-lora", "status": "ok", "http": 200, "latency_ms": 635, "err": null}
+{"ts": "2026-11-17T08:30:23.094673+00:00", "provider": "kilo", "model": "particle-ai/particle-1:free", "status": "ok", "http": 200, "latency_ms": 647, "err": null}
+{"ts": "2026-11-17T08:30:23.579169+00:00", "provider": "llm7", "model": "DeepSeek-V4-Flash-0731", "status": "rate_limited", "http": 429, "latency_ms": 1132, "err": null}
+{"ts": "2026-11-17T08:30:23.910508+00:00", "provider": "kilo", "model": "nvidia/nemotron-3-ultra-550b-a55b:free", "status": "ok", "http": 200, "latency_ms": 815, "err": null}
+{"ts": "2026-11-17T08:30:23.922050+00:00", "provider": "llm7", "model": "mimo-v2.6-pro", "status": "quota_exhausted", "http": 402, "latency_ms": 342, "err": "{\"error\":{\"message\":\"Insufficient balance. Please top up your balance to continue.\",\"type\":\"insufficient_quota\",\"param\":null,\"code\":\"insufficient_balance\"}}"}
+{"ts": "2026-11-17T08:30:24.532502+00:00", "provider": "nvidia", "model": "meta/muse-glimmer-30b", "status": "ok", "http": 200, "latency_ms": 2090, "err": null}
+{"ts": "2026-11-17T08:30:24.578073+00:00", "provider": "cloudflare", "model": "@cf/moonshotai/kimi-k2.7-code", "status": "ok", "http": 200, "latency_ms": 1497, "err": null}
+{"ts": "2026-11-17T08:30:24.725288+00:00", "provider": "llm7", "model": "muse-spark-open", "status": "quota_exhausted", "http": 402, "latency_ms": 803, "err": "{\"error\":{\"message\":\"Insufficient balance. Please top up your balance to continue.\",\"type\":\"insufficient_quota\",\"param\":null,\"code\":\"insufficient_balance\"}}"}
+{"ts": "2026-11-17T08:30:24.909905+00:00", "provider": "cloudflare", "model": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b", "status": "ok", "http": 200, "latency_ms": 331, "err": null}
+{"ts": "2026-11-17T08:30:25.028657+00:00", "provider": "nvidia", "model": "nvidia/nemotron-3-ultra-550b-a55b", "status": "ok", "http": 200, "latency_ms": 496, "err": null}
+{"ts": "2026-11-17T08:30:25.209995+00:00", "provider": "cloudflare", "model": "@cf/zai-org/glm-4.7-flash", "status": "ok", "http": 200, "latency_ms": 299, "err": null}
+{"ts": "2026-11-17T08:30:25.220370+00:00", "provider": "cloudflare", "model": "@cf/thinkingmachines/inkling-2-small", "status": "ok", "http": 200, "latency_ms": 2775, "err": null}
+{"ts": "2026-11-17T08:30:25.283209+00:00", "provider": "nvidia", "model": "nvidia/nemotron-3.5-lightning-30b-a3b", "status": "ok", "http": 200, "latency_ms": 254, "err": null}
+{"ts": "2026-11-17T08:30:25.356570+00:00", "provider": "cloudflare", "model": "@cf/deepseek-ai/deepseek-v4-pro-0813", "status": "auth_error", "http": 403, "latency_ms": 136, "err": "{\"errors\":[{\"message\":\"AiError: Model @cf/deepseek-ai/deepseek-v4-pro-0813 is not available on the Workers Free plan: Model @cf/deepseek-ai/deepseek-v4-pro-0813 is not available on the Workers Free pl"}
+{"ts": "2026-11-17T08:30:25.428797+00:00", "provider": "kilo", "model": "kilo-auto/free", "status": "ok", "http": 200, "latency_ms": 2981, "err": null}
+{"ts": "2026-11-17T08:30:25.468305+00:00", "provider": "cloudflare", "model": "@cf/meta-llama/llama-2-7b-chat-hf-lora", "status": "ok", "http": 200, "latency_ms": 258, "err": null}
+{"ts": "2026-11-17T08:30:25.540962+00:00", "provider": "cloudflare", "model": "@cf/qwen/qwq-32b", "status": "ok", "http": 200, "latency_ms": 184, "err": null}
+{"ts": "2026-11-17T08:30:32.505233+00:00", "provider": "llm7", "model": "glm-5.3-flash", "status": "timeout", "http": null, "latency_ms": 10058, "err": "The read operation timed out"}
+{"ts": "2026-11-17T08:30:32.549029+00:00", "provider": "nvidia", "model": "nvidia/ising-calibration-1.5-31b", "status": "timeout", "http": null, "latency_ms": 10106, "err": "The read operation timed out"}
+{"ts": "2026-11-17T08:30:35.369296+00:00", "provider": "nvidia", "model": "openai/gpt-oss-20b", "status": "timeout", "http": null, "latency_ms": 10085, "err": "The read operation timed out"}
+{"ts": "2026-11-17T08:30:42.635075+00:00", "provider": "nvidia", "model": "z-ai/glm-5.3-flash", "status": "timeout", "http": null, "latency_ms": 10085, "err": "The read operation timed out"}
