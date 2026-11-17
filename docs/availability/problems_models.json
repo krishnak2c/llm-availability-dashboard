@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T19:34:10.968527+00:00",
+  "updated": "2026-11-17T03:50:07.345983+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -96,13 +96,6 @@
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
-        {
-          "id": "deepseek-ai/deepseek-v4.1-flash",
-          "name": "deepseek-ai/deepseek-v4.1-flash",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
-        },
         {
           "id": "google/gemma-4-31b-it",
           "name": "google/gemma-4-31b-it",
@@ -412,48 +405,6 @@
           "context": 1000000,
           "limits": "free tier",
           "params_b": 550.0
-        }
-      ],
-      "error": null
-    },
-    "ollama": {
-      "name": "Ollama Cloud",
-      "url": "https://ollama.com",
-      "models": [
-        {
-          "id": "nemotron-3-super",
-          "name": "nemotron-3-super",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 120.0
-        },
-        {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 20.0
-        },
-        {
-          "id": "gemma4:31b",
-          "name": "gemma4:31b",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 31.0
-        },
-        {
-          "id": "nemotron-3-ultra",
-          "name": "nemotron-3-ultra",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
         }
       ],
       "error": null
