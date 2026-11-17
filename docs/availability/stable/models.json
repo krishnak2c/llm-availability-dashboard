@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T03:50:07.345983+00:00",
+  "updated": "2026-11-17T15:57:09.453604+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -8,6 +8,13 @@
         {
           "id": "inclusionai/ling-3.2-flash:free",
           "name": "inclusionAI: Ling 3.2 Flash (free)",
+          "context": 1048576,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "thinkingmachines/inkling-2-small:free",
+          "name": "Thinking Machines: Inkling 2 Small (free)",
           "context": 1048576,
           "limits": "20 req/min · 50 req/day",
           "params_b": null
@@ -97,25 +104,18 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
           "context": 131072,
           "limits": "varies per model",
           "capabilities": [
             "function_calling",
             "tool_choice",
             "response_schema",
-            "vision",
-            "reasoning"
+            "reasoning",
+            "prompt_caching"
           ],
-          "params_b": 27.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
+          "params_b": 20.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -132,18 +132,25 @@
           "params_b": 120.0
         },
         {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
           "context": 131072,
           "limits": "varies per model",
           "capabilities": [
             "function_calling",
             "tool_choice",
             "response_schema",
-            "reasoning",
-            "prompt_caching"
+            "vision",
+            "reasoning"
           ],
-          "params_b": 20.0
+          "params_b": 27.0
         }
       ],
       "error": null
@@ -431,13 +438,6 @@
             "tool_choice",
             "response_schema"
           ],
-          "params_b": null
-        },
-        {
-          "id": "voxtral-mini-tts-3-1",
-          "name": "Voxtral Mini TTS 3.1",
-          "context": null,
-          "limits": "1 req/s · 1B tok/month",
           "params_b": null
         }
       ],
@@ -759,9 +759,23 @@
           "params_b": null
         },
         {
+          "id": "deepseek-v4-flash-0731-fast",
+          "name": "deepseek-v4-flash-0731-fast",
+          "context": 1000000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "gemma-4-uncensored",
+          "name": "gemma-4-uncensored",
+          "context": 256000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "glm-5.3-flash",
           "name": "glm-5.3-flash",
-          "context": null,
+          "context": 1048576,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -780,13 +794,6 @@
           "params_b": 20.0
         },
         {
-          "id": "mimo-v2.6-pro",
-          "name": "mimo-v2.6-pro",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "minimax-m2.7",
           "name": "minimax-m2.7",
           "context": 180000,
@@ -801,9 +808,9 @@
           "params_b": null
         },
         {
-          "id": "muse-spark-open",
-          "name": "muse-spark-open",
-          "context": 1000000,
+          "id": "qwen-3-8-flash",
+          "name": "qwen-3-8-flash",
+          "context": 1048576,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         }
@@ -911,22 +918,7 @@
     "zen": {
       "name": "OpenCode Zen",
       "url": "https://opencode.ai/zen",
-      "models": [
-        {
-          "id": "longcat-2.5-free",
-          "name": "longcat-2.5-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "hy4-flash-free",
-          "name": "hy4-flash-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        }
-      ],
+      "models": [],
       "error": null
     },
     "ollama": {

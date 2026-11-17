@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T03:50:07.345983+00:00",
+  "updated": "2026-11-17T15:57:09.453604+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -151,6 +151,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 120.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 20.0
         },
         {
           "id": "poolside/laguna-xs-2.1",
@@ -325,9 +332,16 @@
         {
           "id": "glm-5.3-flash",
           "name": "glm-5.3-flash",
-          "context": null,
+          "context": 1048576,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
+        },
+        {
+          "id": "gpt-oss:120b",
+          "name": "gpt-oss:120b",
+          "context": 131000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": 120.0
         },
         {
           "id": "gpt-oss:20b",
@@ -389,13 +403,6 @@
           "id": "particle-ai/particle-1:free",
           "name": "Particle AI: Particle-1 (free)",
           "context": 1048576,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "cohere/north-mini-code:free",
-          "name": "Cohere: North Mini Code (free)",
-          "context": 256000,
           "limits": "free tier",
           "params_b": null
         },
