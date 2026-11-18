@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T11:37:16.866172+00:00",
+  "updated": "2026-11-18T20:28:31.744762+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -146,18 +146,6 @@
           "params_b": 550.0
         },
         {
-          "id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
-          "name": "nvidia/nemotron-3.5-super-vl-120b-a12b",
-          "context": null,
-          "limits": "40 req/min",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": 120.0
-        },
-        {
           "id": "poolside/laguna-xs-2.1",
           "name": "poolside/laguna-xs-2.1",
           "context": null,
@@ -262,6 +250,16 @@
           "params_b": 70.0
         },
         {
+          "id": "@cf/ibm-granite/granite-4.0-h-micro",
+          "name": "@cf/ibm-granite/granite-4.0-h-micro",
+          "context": 131000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling"
+          ],
+          "params_b": null
+        },
+        {
           "id": "@cf/deepseek-ai/deepseek-v4-flash-0731",
           "name": "@cf/deepseek-ai/deepseek-v4-flash-0731",
           "context": null,
@@ -318,18 +316,18 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "DeepSeek-V4-Flash-0731",
-          "name": "DeepSeek-V4-Flash-0731",
-          "context": 400000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
+        },
+        {
+          "id": "gemma-3-27b",
+          "name": "gemma-3-27b",
+          "context": 262144,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": 27.0
         },
         {
           "id": "glm-5.3-flash",
@@ -351,13 +349,6 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
-        },
-        {
-          "id": "minimax-m2.7",
-          "name": "minimax-m2.7",
-          "context": 180000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
         },
         {
           "id": "mistral-Nemo-Instruct-2407",

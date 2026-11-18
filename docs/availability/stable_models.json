@@ -1,24 +1,10 @@
 {
-  "updated": "2026-11-18T11:37:16.866172+00:00",
+  "updated": "2026-11-18T20:28:31.744762+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
-        {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 120.0
-        },
         {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
@@ -34,6 +20,27 @@
           "params_b": 27.0
         },
         {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 120.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
           "context": 131072,
@@ -46,13 +53,6 @@
             "prompt_caching"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
         }
       ],
       "error": null
@@ -86,6 +86,18 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 30.0
+        },
+        {
+          "id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "name": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "context": null,
+          "limits": "40 req/min",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "nvidia/riva-translate-4b-instruct-v2",
@@ -178,7 +190,7 @@
         {
           "id": "ministral-3b-2512",
           "name": "ministral-3b-2512",
-          "context": 131072,
+          "context": 262144,
           "limits": "1 req/s · 1B tok/month",
           "capabilities": [
             "function_calling",
@@ -191,7 +203,7 @@
         {
           "id": "ministral-3b-latest",
           "name": "ministral-3b-2512",
-          "context": 131072,
+          "context": 262144,
           "limits": "1 req/s · 1B tok/month",
           "capabilities": [
             "function_calling",
@@ -324,16 +336,6 @@
           "context": 8192,
           "limits": "10k neurons/day",
           "params_b": 7.0
-        },
-        {
-          "id": "@cf/ibm-granite/granite-4.0-h-micro",
-          "name": "@cf/ibm-granite/granite-4.0-h-micro",
-          "context": 131000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling"
-          ],
-          "params_b": null
         },
         {
           "id": "@cf/qwen/qwen2.5-coder-32b-instruct",
