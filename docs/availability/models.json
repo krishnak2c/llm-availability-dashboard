@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T15:57:09.453604+00:00",
+  "updated": "2026-11-18T00:56:35.823961+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -8,13 +8,6 @@
         {
           "id": "inclusionai/ling-3.2-flash:free",
           "name": "inclusionAI: Ling 3.2 Flash (free)",
-          "context": 1048576,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": null
-        },
-        {
-          "id": "thinkingmachines/inkling-2-small:free",
-          "name": "Thinking Machines: Inkling 2 Small (free)",
           "context": 1048576,
           "limits": "20 req/min · 50 req/day",
           "params_b": null
@@ -104,6 +97,27 @@
       "url": "https://console.groq.com",
       "models": [
         {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
+        {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
           "context": 131072,
@@ -130,27 +144,6 @@
             "prompt_caching"
           ],
           "params_b": 120.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
         }
       ],
       "error": null
@@ -159,7 +152,7 @@
       "name": "Cerebras",
       "url": "https://cloud.cerebras.ai",
       "models": [],
-      "error": null
+      "error": "GET https://api.cerebras.ai/v1/models → HTTP Error 429: Too Many Requests"
     },
     "sambanova": {
       "name": "SambaNova",
@@ -759,23 +752,44 @@
           "params_b": null
         },
         {
-          "id": "deepseek-v4-flash-0731-fast",
-          "name": "deepseek-v4-flash-0731-fast",
-          "context": 1000000,
+          "id": "flux-2-pro",
+          "name": "flux-2-pro",
+          "context": null,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
         {
-          "id": "gemma-4-uncensored",
-          "name": "gemma-4-uncensored",
-          "context": 256000,
+          "id": "gemma-3-27b",
+          "name": "gemma-3-27b",
+          "context": 262144,
           "limits": "anonymous · 30 req/min with token",
-          "params_b": null
+          "params_b": 27.0
         },
         {
           "id": "glm-5.3-flash",
           "name": "glm-5.3-flash",
           "context": 1048576,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "gpt-6.1-terra",
+          "name": "gpt-6.1-terra",
+          "context": 1000000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "gpt-6.2-astra",
+          "name": "gpt-6.2-astra",
+          "context": 1000000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "gpt-6.2-sol",
+          "name": "gpt-6.2-sol",
+          "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -806,13 +820,6 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
-        },
-        {
-          "id": "qwen-3-8-flash",
-          "name": "qwen-3-8-flash",
-          "context": 1048576,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
         }
       ],
       "error": null
@@ -824,6 +831,13 @@
         {
           "id": "glm-4.5-flash",
           "name": "GLM-4.5-Flash",
+          "context": null,
+          "limits": "free Flash tier",
+          "params_b": null
+        },
+        {
+          "id": "glm-5.3-flashx-legal",
+          "name": "glm-5.3-flashx-legal",
           "context": null,
           "limits": "free Flash tier",
           "params_b": null
