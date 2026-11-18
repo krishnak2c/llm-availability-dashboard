@@ -36131,3 +36131,31 @@
 {"ts": "2026-11-18T06:00:26.997493+00:00", "provider": "nvidia", "model": "openai/gpt-oss-20b", "status": "timeout", "http": null, "latency_ms": 10028, "err": "The read operation timed out"}
 {"ts": "2026-11-18T06:00:30.559304+00:00", "provider": "llm7", "model": "minimax-m2.7", "status": "timeout", "http": null, "latency_ms": 10030, "err": "The read operation timed out"}
 {"ts": "2026-11-18T06:00:32.780977+00:00", "provider": "nvidia", "model": "z-ai/glm-5.3-flash", "status": "timeout", "http": null, "latency_ms": 10020, "err": "The read operation timed out"}
+{"ts": "2026-11-18T06:30:30.809042+00:00", "provider": "cloudflare", "model": "@cf/nvidia/nemotron-3-120b-a12b", "status": "ok", "http": 200, "latency_ms": 367, "err": null}
+{"ts": "2026-11-18T06:30:30.868720+00:00", "provider": "openrouter", "model": "nvidia/nemotron-3.5-super-vl:free", "status": "ok", "http": 200, "latency_ms": 432, "err": null}
+{"ts": "2026-11-18T06:30:30.903177+00:00", "provider": "mistral", "model": "ministral-14b-latest", "status": "ok", "http": 200, "latency_ms": 464, "err": null}
+{"ts": "2026-11-18T06:30:30.989331+00:00", "provider": "zai", "model": "glm-5.3-flashx-legal", "status": "rate_limited", "http": 429, "latency_ms": 545, "err": null}
+{"ts": "2026-11-18T06:30:31.147222+00:00", "provider": "mistral", "model": "codestral-latest", "status": "ok", "http": 200, "latency_ms": 709, "err": null}
+{"ts": "2026-11-18T06:30:31.217343+00:00", "provider": "cloudflare", "model": "@cf/google/gemma-4-26b-a4b-it", "status": "ok", "http": 200, "latency_ms": 408, "err": null}
+{"ts": "2026-11-18T06:30:31.225876+00:00", "provider": "kilo", "model": "nvidia/nemotron-3.5-super-vl:free", "status": "ok", "http": 200, "latency_ms": 781, "err": null}
+{"ts": "2026-11-18T06:30:31.553119+00:00", "provider": "cloudflare", "model": "@cf/mistralai/mistral-small-3.1-24b-instruct", "status": "ok", "http": 200, "latency_ms": 335, "err": null}
+{"ts": "2026-11-18T06:30:31.775936+00:00", "provider": "openrouter", "model": "dots-studio/dots-3-note-preview:free", "status": "ok", "http": 200, "latency_ms": 907, "err": null}
+{"ts": "2026-11-18T06:30:31.780495+00:00", "provider": "cloudflare", "model": "@cf/daily-co/phonellm-mini-alpha-2", "status": "ok", "http": 200, "latency_ms": 227, "err": null}
+{"ts": "2026-11-18T06:30:31.817466+00:00", "provider": "openrouter", "model": "inclusionai/ling-3.2-flash:free", "status": "ok", "http": 200, "latency_ms": 1382, "err": null}
+{"ts": "2026-11-18T06:30:31.867723+00:00", "provider": "openrouter", "model": "google/gemma-4-31b-it:free", "status": "rate_limited", "http": 429, "latency_ms": 91, "err": null}
+{"ts": "2026-11-18T06:30:31.958517+00:00", "provider": "cloudflare", "model": "@cf/deepseek-ai/deepseek-v4.1-flash-1017", "status": "auth_error", "http": 403, "latency_ms": 177, "err": "{\"errors\":[{\"message\":\"AiError: Model @cf/deepseek-ai/deepseek-v4.1-flash-1017 is not available on the Workers Free plan: Model @cf/deepseek-ai/deepseek-v4.1-flash-1017 is not available on the Workers"}
+{"ts": "2026-11-18T06:30:32.356973+00:00", "provider": "kilo", "model": "dots-studio/dots-3-note-preview:free", "status": "ok", "http": 200, "latency_ms": 1912, "err": null}
+{"ts": "2026-11-18T06:30:33.749847+00:00", "provider": "llm7", "model": "flux-2-pro", "status": "bad_response", "http": 400, "latency_ms": 3306, "err": "{\"error\":{\"message\":\"Model 'flux-2-pro' does not support chat endpoints.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"unsupported_model_feature\"}}"}
+{"ts": "2026-11-18T06:30:35.088353+00:00", "provider": "llm7", "model": "gpt-6.1-terra", "status": "quota_exhausted", "http": 402, "latency_ms": 1338, "err": "{\"error\":{\"message\":\"Insufficient balance. Please top up your balance to continue.\",\"type\":\"insufficient_quota\",\"param\":null,\"code\":\"insufficient_balance\"}}"}
+{"ts": "2026-11-18T06:30:35.217169+00:00", "provider": "llm7", "model": "codestral-latest", "status": "ok", "http": 200, "latency_ms": 4774, "err": null}
+{"ts": "2026-11-18T06:30:37.283775+00:00", "provider": "llm7", "model": "gpt-6.2-sol", "status": "quota_exhausted", "http": 402, "latency_ms": 2195, "err": "{\"error\":{\"message\":\"Insufficient balance. Please top up your balance to continue.\",\"type\":\"insufficient_quota\",\"param\":null,\"code\":\"insufficient_balance\"}}"}
+{"ts": "2026-11-18T06:30:40.479075+00:00", "provider": "cloudflare", "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast", "status": "timeout", "http": null, "latency_ms": 10038, "err": "The read operation timed out"}
+{"ts": "2026-11-18T06:30:40.546299+00:00", "provider": "nvidia", "model": "mistralai/mistral-large-4-1t-a52b", "status": "timeout", "http": null, "latency_ms": 10108, "err": "The read operation timed out"}
+{"ts": "2026-11-18T06:30:40.552430+00:00", "provider": "nvidia", "model": "minimaxai/minimax-m3.1-flash", "status": "timeout", "http": null, "latency_ms": 10115, "err": "The read operation timed out"}
+{"ts": "2026-11-18T06:30:40.828138+00:00", "provider": "nvidia", "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning", "status": "ok", "http": 200, "latency_ms": 275, "err": null}
+{"ts": "2026-11-18T06:30:40.958401+00:00", "provider": "nvidia", "model": "nvidia/ising-calibration-1.5-31b", "status": "ok", "http": 200, "latency_ms": 411, "err": null}
+{"ts": "2026-11-18T06:30:41.125693+00:00", "provider": "nvidia", "model": "nvidia/riva-translate-4b-instruct-v2", "status": "ok", "http": 200, "latency_ms": 297, "err": null}
+{"ts": "2026-11-18T06:30:41.327373+00:00", "provider": "nvidia", "model": "poolside/laguna-xs-2.1", "status": "ok", "http": 200, "latency_ms": 201, "err": null}
+{"ts": "2026-11-18T06:30:42.930776+00:00", "provider": "llm7", "model": "minimax-m2.7", "status": "ok", "http": 200, "latency_ms": 7713, "err": null}
+{"ts": "2026-11-18T06:30:51.116662+00:00", "provider": "nvidia", "model": "openai/gpt-oss-20b", "status": "timeout", "http": null, "latency_ms": 10158, "err": "The read operation timed out"}
+{"ts": "2026-11-18T06:30:51.435991+00:00", "provider": "nvidia", "model": "z-ai/glm-5.3-flash", "status": "timeout", "http": null, "latency_ms": 10108, "err": "The read operation timed out"}
