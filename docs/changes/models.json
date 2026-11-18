@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T00:56:35.823961+00:00",
+  "updated": "2026-11-18T11:37:16.866172+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -76,13 +76,6 @@
           "params_b": 30.0
         },
         {
-          "id": "google/gemma-4-31b-it:free",
-          "name": "Google: Gemma 4 31B (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": 31.0
-        },
-        {
           "id": "openrouter/free",
           "name": "Free Models Router",
           "context": 200000,
@@ -97,11 +90,18 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
           "limits": "varies per model",
-          "params_b": 7.0
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "qwen/qwen3.8-27b",
@@ -132,18 +132,11 @@
           "params_b": 20.0
         },
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 120.0
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -152,7 +145,7 @@
       "name": "Cerebras",
       "url": "https://cloud.cerebras.ai",
       "models": [],
-      "error": "GET https://api.cerebras.ai/v1/models → HTTP Error 429: Too Many Requests"
+      "error": null
     },
     "sambanova": {
       "name": "SambaNova",
@@ -183,11 +176,25 @@
           "name": "minimaxai/minimax-m3.1-flash",
           "context": null,
           "limits": "40 req/min",
+          "capabilities": [
+            "function_calling"
+          ],
           "params_b": null
         },
         {
           "id": "mistralai/mistral-large-4-1t-a52b",
           "name": "mistralai/mistral-large-4-1t-a52b",
+          "context": null,
+          "limits": "40 req/min",
+          "capabilities": [
+            "function_calling",
+            "tool_choice"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "moonshotai/kimi-k3.1-pro",
+          "name": "moonshotai/kimi-k3.1-pro",
           "context": null,
           "limits": "40 req/min",
           "params_b": null
@@ -225,6 +232,11 @@
           "name": "nvidia/nemotron-3.5-bolt-e4b",
           "context": null,
           "limits": "40 req/min",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
           "params_b": null
         },
         {
@@ -239,6 +251,11 @@
           "name": "nvidia/nemotron-3.5-super-vl-120b-a12b",
           "context": null,
           "limits": "40 req/min",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
           "params_b": 120.0
         },
         {
@@ -247,13 +264,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 4.0
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 20.0
         },
         {
           "id": "poolside/laguna-xs-2.1",
@@ -267,6 +277,10 @@
           "name": "stepfun-ai/step-5-preview",
           "context": null,
           "limits": "40 req/min",
+          "capabilities": [
+            "function_calling",
+            "tool_choice"
+          ],
           "params_b": null
         },
         {
@@ -745,16 +759,16 @@
           "params_b": null
         },
         {
-          "id": "codestral-latest",
-          "name": "codestral-latest",
-          "context": 32000,
+          "id": "claude-fable-5-2",
+          "name": "claude-fable-5-2",
+          "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
         {
-          "id": "flux-2-pro",
-          "name": "flux-2-pro",
-          "context": null,
+          "id": "codestral-latest",
+          "name": "codestral-latest",
+          "context": 32000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -769,27 +783,6 @@
           "id": "glm-5.3-flash",
           "name": "glm-5.3-flash",
           "context": 1048576,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "gpt-6.1-terra",
-          "name": "gpt-6.1-terra",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "gpt-6.2-astra",
-          "name": "gpt-6.2-astra",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "gpt-6.2-sol",
-          "name": "gpt-6.2-sol",
-          "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -831,13 +824,6 @@
         {
           "id": "glm-4.5-flash",
           "name": "GLM-4.5-Flash",
-          "context": null,
-          "limits": "free Flash tier",
-          "params_b": null
-        },
-        {
-          "id": "glm-5.3-flashx-legal",
-          "name": "glm-5.3-flashx-legal",
           "context": null,
           "limits": "free Flash tier",
           "params_b": null

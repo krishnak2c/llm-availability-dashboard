@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T00:56:35.823961+00:00",
+  "updated": "2026-11-18T11:37:16.866172+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -76,13 +76,6 @@
           "params_b": 30.0
         },
         {
-          "id": "google/gemma-4-31b-it:free",
-          "name": "Google: Gemma 4 31B (free)",
-          "context": 262144,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": 31.0
-        },
-        {
           "id": "openrouter/free",
           "name": "Free Models Router",
           "context": 200000,
@@ -115,6 +108,9 @@
           "name": "minimaxai/minimax-m3.1-flash",
           "context": null,
           "limits": "40 req/min",
+          "capabilities": [
+            "function_calling"
+          ],
           "params_b": null
         },
         {
@@ -122,6 +118,10 @@
           "name": "mistralai/mistral-large-4-1t-a52b",
           "context": null,
           "limits": "40 req/min",
+          "capabilities": [
+            "function_calling",
+            "tool_choice"
+          ],
           "params_b": null
         },
         {
@@ -150,14 +150,12 @@
           "name": "nvidia/nemotron-3.5-super-vl-120b-a12b",
           "context": null,
           "limits": "40 req/min",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
           "params_b": 120.0
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 20.0
         },
         {
           "id": "poolside/laguna-xs-2.1",
@@ -171,6 +169,10 @@
           "name": "stepfun-ai/step-5-preview",
           "context": null,
           "limits": "40 req/min",
+          "capabilities": [
+            "function_calling",
+            "tool_choice"
+          ],
           "params_b": null
         },
         {
