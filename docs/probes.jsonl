@@ -1,43 +1,3 @@
-{"ts": "2026-10-20T21:36:06.895087+00:00", "provider": "groq", "model": "qwen/qwen3.8-27b", "status": "ok", "http": 200, "latency_ms": 178, "err": null}
-{"ts": "2026-10-20T21:36:06.985642+00:00", "provider": "nvidia", "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning", "status": "server_error", "http": 503, "latency_ms": 268, "err": "{\"error\":{\"message\":\"ResourceExhausted: Worker local total request limit reached (16/16)\",\"type\":\"Service Unavailable\",\"code\":503}}"}
-{"ts": "2026-10-20T21:36:07.012040+00:00", "provider": "cloudflare", "model": "@cf/openai/gpt-oss-120b", "status": "ok", "http": 200, "latency_ms": 290, "err": null}
-{"ts": "2026-10-20T21:36:07.041369+00:00", "provider": "cloudflare", "model": "@cf/meta/llama-3.2-3b-instruct", "status": "ok", "http": 200, "latency_ms": 318, "err": null}
-{"ts": "2026-10-20T21:36:07.070018+00:00", "provider": "mistral", "model": "mistral-code-latest", "status": "ok", "http": 200, "latency_ms": 352, "err": null}
-{"ts": "2026-10-20T21:36:07.080407+00:00", "provider": "llm7", "model": "GLM-5.3-Flash", "status": "server_error", "http": 503, "latency_ms": 360, "err": "{\"error\":{\"message\":\"This model is temporarily busy. Please try again shortly or choose another model.\",\"type\":\"model_temporarily_unavailable\",\"param\":null,\"code\":\"model_temporarily_unavailable\"}}"}
-{"ts": "2026-10-20T21:36:07.098099+00:00", "provider": "mistral", "model": "mistral-code-fim-latest", "status": "ok", "http": 200, "latency_ms": 379, "err": null}
-{"ts": "2026-10-20T21:36:07.100394+00:00", "provider": "llm7", "model": "gemini-3.1-pro", "status": "quota_exhausted", "http": 402, "latency_ms": 379, "err": "{\"error\":{\"message\":\"Insufficient balance. Please top up your balance to continue.\",\"type\":\"insufficient_quota\",\"param\":null,\"code\":\"insufficient_balance\"}}"}
-{"ts": "2026-10-20T21:36:07.150916+00:00", "provider": "ollama", "model": "nemotron-3-super", "status": "ok", "http": 200, "latency_ms": 429, "err": null}
-{"ts": "2026-10-20T21:36:07.222667+00:00", "provider": "cloudflare", "model": "@cf/meta/llama-guard-3-8b", "status": "ok", "http": 200, "latency_ms": 210, "err": null}
-{"ts": "2026-10-20T21:36:07.286316+00:00", "provider": "nvidia", "model": "nvidia/nemotron-3.5-super-vl-120b-a12b", "status": "ok", "http": 200, "latency_ms": 300, "err": null}
-{"ts": "2026-10-20T21:36:07.374726+00:00", "provider": "cloudflare", "model": "@cf/mistral/mistral-7b-instruct-v0.2-lora", "status": "ok", "http": 200, "latency_ms": 333, "err": null}
-{"ts": "2026-10-20T21:36:07.452828+00:00", "provider": "mistral", "model": "ministral-3b-2512", "status": "ok", "http": 200, "latency_ms": 382, "err": null}
-{"ts": "2026-10-20T21:36:07.524230+00:00", "provider": "mistral", "model": "voxtral-mini-transcribe-realtime-3-0", "status": "bad_response", "http": 400, "latency_ms": 426, "err": "{\"object\":\"error\",\"message\":\"Invalid model: voxtral-mini-transcribe-realtime-3-0\",\"type\":\"invalid_model\",\"param\":null,\"code\":\"1500\",\"raw_status_code\":400}"}
-{"ts": "2026-10-20T21:36:07.555486+00:00", "provider": "openrouter", "model": "xingchen-agi/xing4.0-29b-a4b:free", "status": "rate_limited", "http": 429, "latency_ms": 839, "err": null}
-{"ts": "2026-10-20T21:36:07.566644+00:00", "provider": "cloudflare", "model": "@cf/meta/llama-3.1-8b-instruct-fp8", "status": "ok", "http": 200, "latency_ms": 343, "err": null}
-{"ts": "2026-10-20T21:36:07.607661+00:00", "provider": "nvidia", "model": "nvidia/nemotron-parse-2.0", "status": "ok", "http": 200, "latency_ms": 321, "err": null}
-{"ts": "2026-10-20T21:36:07.634571+00:00", "provider": "openrouter", "model": "nvidia/nemotron-3.5-super-vl:free", "status": "rate_limited", "http": 429, "latency_ms": 78, "err": null}
-{"ts": "2026-10-20T21:36:07.676666+00:00", "provider": "kilo", "model": "cohere/north-mini-code:free", "status": "ok", "http": 200, "latency_ms": 953, "err": null}
-{"ts": "2026-10-20T21:36:07.685711+00:00", "provider": "openrouter", "model": "dots-studio/dots-3-note-preview:free", "status": "rate_limited", "http": 429, "latency_ms": 51, "err": null}
-{"ts": "2026-10-20T21:36:07.710340+00:00", "provider": "zai", "model": "glm-4.5-flash", "status": "ok", "http": 200, "latency_ms": 988, "err": null}
-{"ts": "2026-10-20T21:36:07.716596+00:00", "provider": "cloudflare", "model": "@cf/qwen/qwen2.5-coder-32b-instruct", "status": "ok", "http": 200, "latency_ms": 341, "err": null}
-{"ts": "2026-10-20T21:36:07.748848+00:00", "provider": "openrouter", "model": "liquid/lfm-2.5-2.6b:free", "status": "rate_limited", "http": 429, "latency_ms": 63, "err": null}
-{"ts": "2026-10-20T21:36:07.787262+00:00", "provider": "openrouter", "model": "minimax/minimax-m3.1-flash:free", "status": "ok", "http": 200, "latency_ms": 1072, "err": null}
-{"ts": "2026-10-20T21:36:07.818918+00:00", "provider": "openrouter", "model": "poolside/laguna-s-2.1:free", "status": "rate_limited", "http": 429, "latency_ms": 69, "err": null}
-{"ts": "2026-10-20T21:36:07.881082+00:00", "provider": "openrouter", "model": "cohere/north-mini-code:free", "status": "rate_limited", "http": 429, "latency_ms": 62, "err": null}
-{"ts": "2026-10-20T21:36:07.933862+00:00", "provider": "cloudflare", "model": "@cf/google/gemma-7b-it-lora", "status": "ok", "http": 200, "latency_ms": 367, "err": null}
-{"ts": "2026-10-20T21:36:07.940006+00:00", "provider": "openrouter", "model": "poolside/laguna-xs-2.1:free", "status": "rate_limited", "http": 429, "latency_ms": 152, "err": null}
-{"ts": "2026-10-20T21:36:07.941008+00:00", "provider": "openrouter", "model": "nvidia/nemotron-3.5-content-safety:free", "status": "rate_limited", "http": 429, "latency_ms": 59, "err": null}
-{"ts": "2026-10-20T21:36:07.974565+00:00", "provider": "nvidia", "model": "stepfun-ai/step-5-preview", "status": "ok", "http": 200, "latency_ms": 366, "err": null}
-{"ts": "2026-10-20T21:36:08.002702+00:00", "provider": "openrouter", "model": "nvidia/nemotron-3-super-120b-a12b:free", "status": "rate_limited", "http": 429, "latency_ms": 61, "err": null}
-{"ts": "2026-10-20T21:36:08.011221+00:00", "provider": "openrouter", "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "status": "rate_limited", "http": 429, "latency_ms": 71, "err": null}
-{"ts": "2026-10-20T21:36:08.015736+00:00", "provider": "kilo", "model": "minimax/minimax-m3.1-flash:free", "status": "ok", "http": 200, "latency_ms": 1292, "err": null}
-{"ts": "2026-10-20T21:36:08.042976+00:00", "provider": "cloudflare", "model": "@cf/meta/llama-4-scout-17b-16e-instruct", "status": "ok", "http": 200, "latency_ms": 326, "err": null}
-{"ts": "2026-10-20T21:36:08.303011+00:00", "provider": "llm7", "model": "mistral-Nemo-Instruct-2407", "status": "ok", "http": 200, "latency_ms": 1222, "err": null}
-{"ts": "2026-10-20T21:36:08.492198+00:00", "provider": "kilo", "model": "nvidia/nemotron-3-super-120b-a12b:free", "status": "not_found", "http": 404, "latency_ms": 476, "err": "{\"error\":{\"message\":\"Provider returned error\",\"code\":404,\"metadata\":{\"raw\":\"{\\\"status\\\":404,\\\"title\\\":\\\"Not Found\\\",\\\"detail\\\":\\\"Function 'ac74040f-9fc9-4c5e-ac74-279ba5161d69': Not found for account "}
-{"ts": "2026-10-20T21:36:08.965283+00:00", "provider": "kilo", "model": "openrouter/free", "status": "ok", "http": 200, "latency_ms": 472, "err": null}
-{"ts": "2026-10-20T21:36:09.151122+00:00", "provider": "openrouter", "model": "openrouter/free", "status": "ok", "http": 200, "latency_ms": 1148, "err": null}
-{"ts": "2026-10-20T21:36:10.629325+00:00", "provider": "kilo", "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "status": "ok", "http": 200, "latency_ms": 2952, "err": null}
-{"ts": "2026-10-20T21:36:16.832718+00:00", "provider": "nvidia", "model": "google/gemma-4-31b-it", "status": "timeout", "http": null, "latency_ms": 10116, "err": "The read operation timed out"}
 {"ts": "2026-10-21T04:00:12.062703+00:00", "provider": "mistral", "model": "voxtral-mini-transcribe-3", "status": "bad_response", "http": 400, "latency_ms": 288, "err": "{\"object\":\"error\",\"message\":\"Invalid model: voxtral-mini-transcribe-3\",\"type\":\"invalid_model\",\"param\":null,\"code\":\"1500\",\"raw_status_code\":400}"}
 {"ts": "2026-10-21T04:00:12.104915+00:00", "provider": "cloudflare", "model": "@cf/google/gemma-2b-it-lora", "status": "ok", "http": 200, "latency_ms": 327, "err": null}
 {"ts": "2026-10-21T04:00:12.124140+00:00", "provider": "cloudflare", "model": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b", "status": "ok", "http": 200, "latency_ms": 346, "err": null}
@@ -38599,3 +38559,39 @@
 {"ts": "2026-11-19T21:30:36.083698+00:00", "provider": "nvidia", "model": "stepfun-ai/step-5-preview", "status": "timeout", "http": null, "latency_ms": 10044, "err": "The read operation timed out"}
 {"ts": "2026-11-19T21:30:36.347951+00:00", "provider": "cloudflare", "model": "@cf/meta/llama-4-scout-17b-16e-instruct", "status": "timeout", "http": null, "latency_ms": 10016, "err": "The read operation timed out"}
 {"ts": "2026-11-19T21:30:37.883826+00:00", "provider": "nvidia", "model": "z-ai/glm-5.3-flash", "status": "timeout", "http": null, "latency_ms": 10086, "err": "The read operation timed out"}
+{"ts": "2026-11-19T22:00:16.815170+00:00", "provider": "openrouter", "model": "inclusionai/ling-3.2-flash:free", "status": "rate_limited", "http": 429, "latency_ms": 160, "err": null}
+{"ts": "2026-11-19T22:00:16.847737+00:00", "provider": "openrouter", "model": "baidu/ernie-5.5-flash-preview:free", "status": "rate_limited", "http": 429, "latency_ms": 192, "err": null}
+{"ts": "2026-11-19T22:00:16.850013+00:00", "provider": "openrouter", "model": "liquid/lfm-3-1.7b:free", "status": "rate_limited", "http": 429, "latency_ms": 34, "err": null}
+{"ts": "2026-11-19T22:00:16.884450+00:00", "provider": "openrouter", "model": "particle-ai/particle-1:free", "status": "rate_limited", "http": 429, "latency_ms": 36, "err": null}
+{"ts": "2026-11-19T22:00:16.916974+00:00", "provider": "openrouter", "model": "recursive/flint-v1.0:free", "status": "rate_limited", "http": 429, "latency_ms": 66, "err": null}
+{"ts": "2026-11-19T22:00:16.922540+00:00", "provider": "openrouter", "model": "nvidia/nemotron-3.5-super-vl:free", "status": "rate_limited", "http": 429, "latency_ms": 38, "err": null}
+{"ts": "2026-11-19T22:00:16.949627+00:00", "provider": "openrouter", "model": "nvidia/nemotron-3.5-lightning:free", "status": "rate_limited", "http": 429, "latency_ms": 27, "err": null}
+{"ts": "2026-11-19T22:00:16.952702+00:00", "provider": "openrouter", "model": "dots-studio/dots-3-note-preview:free", "status": "rate_limited", "http": 429, "latency_ms": 35, "err": null}
+{"ts": "2026-11-19T22:00:16.972552+00:00", "provider": "cloudflare", "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast", "status": "ok", "http": 200, "latency_ms": 316, "err": null}
+{"ts": "2026-11-19T22:00:16.984372+00:00", "provider": "openrouter", "model": "nvidia/nemotron-3-ultra-550b-a55b:free", "status": "rate_limited", "http": 429, "latency_ms": 31, "err": null}
+{"ts": "2026-11-19T22:00:16.991804+00:00", "provider": "openrouter", "model": "cohere/north-mini-code:free", "status": "rate_limited", "http": 429, "latency_ms": 42, "err": null}
+{"ts": "2026-11-19T22:00:16.998406+00:00", "provider": "mistral", "model": "ministral-14b-latest", "status": "ok", "http": 200, "latency_ms": 340, "err": null}
+{"ts": "2026-11-19T22:00:17.015220+00:00", "provider": "mistral", "model": "codestral-latest", "status": "ok", "http": 200, "latency_ms": 359, "err": null}
+{"ts": "2026-11-19T22:00:17.018308+00:00", "provider": "openrouter", "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "status": "rate_limited", "http": 429, "latency_ms": 33, "err": null}
+{"ts": "2026-11-19T22:00:17.029440+00:00", "provider": "openrouter", "model": "google/gemma-4-26b-a4b-it:free", "status": "rate_limited", "http": 429, "latency_ms": 37, "err": null}
+{"ts": "2026-11-19T22:00:17.116161+00:00", "provider": "openrouter", "model": "openrouter/free", "status": "rate_limited", "http": 429, "latency_ms": 97, "err": null}
+{"ts": "2026-11-19T22:00:17.256220+00:00", "provider": "kilo", "model": "nvidia/nemotron-3.5-super-vl:free", "status": "ok", "http": 200, "latency_ms": 599, "err": null}
+{"ts": "2026-11-19T22:00:17.345313+00:00", "provider": "cloudflare", "model": "@cf/google/gemma-4-26b-a4b-it", "status": "ok", "http": 200, "latency_ms": 372, "err": null}
+{"ts": "2026-11-19T22:00:17.415326+00:00", "provider": "nvidia", "model": "minimaxai/minimax-m3.1-flash", "status": "ok", "http": 200, "latency_ms": 758, "err": null}
+{"ts": "2026-11-19T22:00:17.594915+00:00", "provider": "nvidia", "model": "nvidia/ising-calibration-1.5-31b", "status": "ok", "http": 200, "latency_ms": 179, "err": null}
+{"ts": "2026-11-19T22:00:17.643394+00:00", "provider": "kilo", "model": "dots-studio/dots-3-note-preview:free", "status": "ok", "http": 200, "latency_ms": 986, "err": null}
+{"ts": "2026-11-19T22:00:18.531899+00:00", "provider": "cloudflare", "model": "@cf/mistralai/mistral-small-3.1-24b-instruct", "status": "ok", "http": 200, "latency_ms": 1186, "err": null}
+{"ts": "2026-11-19T22:00:18.559495+00:00", "provider": "llm7", "model": "codestral-latest", "status": "rate_limited", "http": 429, "latency_ms": 1902, "err": null}
+{"ts": "2026-11-19T22:00:18.585371+00:00", "provider": "llm7", "model": "gemma-3-27b", "status": "rate_limited", "http": 429, "latency_ms": 1927, "err": null}
+{"ts": "2026-11-19T22:00:18.768603+00:00", "provider": "cloudflare", "model": "@cf/daily-co/phonellm-mini-alpha-2", "status": "ok", "http": 200, "latency_ms": 236, "err": null}
+{"ts": "2026-11-19T22:00:20.166178+00:00", "provider": "llm7", "model": "gpt-oss:20b", "status": "rate_limited", "http": 429, "latency_ms": 1580, "err": null}
+{"ts": "2026-11-19T22:00:20.831052+00:00", "provider": "cloudflare", "model": "@cf/deepseek-ai/deepseek-v4.1-flash-1017", "status": "ok", "http": 200, "latency_ms": 2062, "err": null}
+{"ts": "2026-11-19T22:00:20.959372+00:00", "provider": "llm7", "model": "gpt-oss:120b", "status": "quota_exhausted", "http": 402, "latency_ms": 2399, "err": "{\"error\":{\"message\":\"Your balance is too low for this request. Please add funds to continue: https://dash.llm7.io/#/billing\",\"type\":\"insufficient_quota\",\"param\":null,\"code\":\"insufficient_balance\"}}"}
+{"ts": "2026-11-19T22:00:21.097429+00:00", "provider": "cloudflare", "model": "@cf/nvidia/nemotron-3-120b-a12b", "status": "ok", "http": 200, "latency_ms": 4440, "err": null}
+{"ts": "2026-11-19T22:00:21.981111+00:00", "provider": "llm7", "model": "mistral-Nemo-Instruct-2407", "status": "rate_limited", "http": 429, "latency_ms": 1814, "err": null}
+{"ts": "2026-11-19T22:00:23.430585+00:00", "provider": "nvidia", "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning", "status": "ok", "http": 200, "latency_ms": 5835, "err": null}
+{"ts": "2026-11-19T22:00:23.676316+00:00", "provider": "nvidia", "model": "nvidia/riva-translate-4b-instruct-v2", "status": "ok", "http": 200, "latency_ms": 245, "err": null}
+{"ts": "2026-11-19T22:00:23.725051+00:00", "provider": "nvidia", "model": "poolside/laguna-xs-2.1", "status": "ok", "http": 200, "latency_ms": 48, "err": null}
+{"ts": "2026-11-19T22:00:26.746399+00:00", "provider": "nvidia", "model": "mistralai/mistral-large-4-1t-a52b", "status": "timeout", "http": null, "latency_ms": 10088, "err": "The read operation timed out"}
+{"ts": "2026-11-19T22:00:30.847541+00:00", "provider": "cloudflare", "model": "@cf/meta/llama-4-scout-17b-16e-instruct", "status": "timeout", "http": null, "latency_ms": 10016, "err": "The read operation timed out"}
+{"ts": "2026-11-19T22:00:33.741916+00:00", "provider": "nvidia", "model": "z-ai/glm-5.3-flash", "status": "timeout", "http": null, "latency_ms": 10016, "err": "The read operation timed out"}
