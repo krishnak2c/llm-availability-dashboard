@@ -14,14 +14,14 @@
     "kilo-nemotron3ultra550ba55b",
     "nvidia-nemotron3ultra550ba55b",
     "kilo-particleaiparticle1",
+    "kilo-recursiveflintv10",
     "nvidia-mistrallarge41ta52b",
     "zai-glm45flash",
-    "kilo-recursiveflintv10",
+    "llm7-mistralnemoinstruct",
     "llm7-codestral",
     "kilo-liquidlfm3",
-    "nvidia-minimaxm31flash",
     "nvidia-step5",
-    "openrouter-inclusionailing32flash",
+    "nvidia-minimaxm31flash",
     "llm7-gemma3",
     "llm7-gptoss20b",
     "llm7-glm53flash"
@@ -112,6 +112,12 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
+      "id": "kilo-recursiveflintv10",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "recursive/flint-v1.0:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
       "id": "nvidia-mistrallarge41ta52b",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "mistralai/mistral-large-4-1t-a52b",
@@ -124,10 +130,10 @@
       "apiKeyEnv": "ZAI_API_KEY"
     },
     {
-      "id": "kilo-recursiveflintv10",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "recursive/flint-v1.0:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
+      "id": "llm7-mistralnemoinstruct",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "mistral-Nemo-Instruct-2407",
+      "apiKeyEnv": "LLM7_API_KEY"
     },
     {
       "id": "llm7-codestral",
@@ -142,22 +148,16 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "nvidia-minimaxm31flash",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "minimaxai/minimax-m3.1-flash",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
       "id": "nvidia-step5",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "stepfun-ai/step-5-preview",
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "openrouter-inclusionailing32flash",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "inclusionai/ling-3.2-flash:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
+      "id": "nvidia-minimaxm31flash",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "minimaxai/minimax-m3.1-flash",
+      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "llm7-gemma3",
@@ -192,13 +192,13 @@
     "gpt-oss:20b",
     "hy3",
     "hy3-free",
-    "inclusionai/ling-3.2-flash:free",
     "kilo-auto/free",
     "laguna-s-2.1-free",
     "liquid/lfm-3-1.7b:free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
     "minimaxai/minimax-m3.1-flash",
+    "mistral-Nemo-Instruct-2407",
     "mistralai/mistral-large-4-1t-a52b",
     "nemotron-3-ultra-free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
