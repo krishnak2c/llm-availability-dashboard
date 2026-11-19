@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T20:28:31.744762+00:00",
+  "updated": "2026-11-19T02:32:48.827747+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
@@ -18,6 +18,20 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 20.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -39,20 +53,6 @@
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 20.0
         }
       ],
       "error": null
@@ -105,6 +105,13 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 4.0
+        },
+        {
+          "id": "poolside/laguna-xs-2.1",
+          "name": "poolside/laguna-xs-2.1",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
         }
       ],
       "error": null
@@ -440,6 +447,13 @@
           "id": "baidu/ernie-5.5-flash-preview:free",
           "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
           "context": 1024000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "recursive/flint-v1.0:free",
+          "name": "Recursive: Flint (free)",
+          "context": 262144,
           "limits": "free tier",
           "params_b": null
         },

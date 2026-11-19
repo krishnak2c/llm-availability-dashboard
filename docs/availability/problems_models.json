@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T20:28:31.744762+00:00",
+  "updated": "2026-11-19T02:32:48.827747+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -9,6 +9,13 @@
           "id": "inclusionai/ling-3.2-flash:free",
           "name": "inclusionAI: Ling 3.2 Flash (free)",
           "context": 1048576,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
+          "id": "baidu/ernie-5.5-flash-preview:free",
+          "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+          "context": 1024000,
           "limits": "20 req/min · 50 req/day",
           "params_b": null
         },
@@ -144,13 +151,6 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 550.0
-        },
-        {
-          "id": "poolside/laguna-xs-2.1",
-          "name": "poolside/laguna-xs-2.1",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
         },
         {
           "id": "stepfun-ai/step-5-preview",
