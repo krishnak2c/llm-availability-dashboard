@@ -1,10 +1,31 @@
 {
-  "updated": "2026-11-20T02:17:46.244034+00:00",
+  "updated": "2026-11-20T11:33:39.878013+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
         {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
@@ -32,27 +53,6 @@
             "prompt_caching"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
         }
       ],
       "error": null
@@ -324,23 +324,6 @@
           "params_b": 7.0
         },
         {
-          "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-          "name": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
-          "context": 80000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "reasoning"
-          ],
-          "params_b": 32.0
-        },
-        {
-          "id": "@cf/meta/llama-3.2-1b-instruct",
-          "name": "@cf/meta/llama-3.2-1b-instruct",
-          "context": 60000,
-          "limits": "10k neurons/day",
-          "params_b": 1.0
-        },
-        {
           "id": "@cf/zai-org/glm-4.7-flash",
           "name": "@cf/zai-org/glm-4.7-flash",
           "context": 131072,
@@ -352,13 +335,6 @@
           "params_b": null
         },
         {
-          "id": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
-          "name": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
-          "context": 8192,
-          "limits": "10k neurons/day",
-          "params_b": 7.0
-        },
-        {
           "id": "@cf/qwen/qwen2.5-coder-32b-instruct",
           "name": "@cf/qwen/qwen2.5-coder-32b-instruct",
           "context": 32768,
@@ -366,40 +342,11 @@
           "params_b": 32.0
         },
         {
-          "id": "@cf/nvidia/nemotron-3-120b-a12b",
-          "name": "@cf/nvidia/nemotron-3-120b-a12b",
-          "context": 256000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": 120.0
-        },
-        {
           "id": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
           "name": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
           "context": 128000,
           "limits": "10k neurons/day",
           "params_b": 27.0
-        },
-        {
-          "id": "@cf/qwen/qwen3-30b-a3b-fp8",
-          "name": "@cf/qwen/qwen3-30b-a3b-fp8",
-          "context": 32768,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": 30.0
-        },
-        {
-          "id": "@cf/google/gemma-7b-it-lora",
-          "name": "@cf/google/gemma-7b-it-lora",
-          "context": 3500,
-          "limits": "10k neurons/day",
-          "params_b": 7.0
         },
         {
           "id": "@cf/google/gemma-4-26b-a4b-it",
@@ -439,16 +386,6 @@
             "reasoning"
           ],
           "params_b": 20.0
-        },
-        {
-          "id": "@cf/qwen/qwq-32b",
-          "name": "@cf/qwen/qwq-32b",
-          "context": 24000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "reasoning"
-          ],
-          "params_b": 32.0
         }
       ],
       "error": null

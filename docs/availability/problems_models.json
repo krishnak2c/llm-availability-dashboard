@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T02:17:46.244034+00:00",
+  "updated": "2026-11-20T11:33:39.878013+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -194,6 +194,16 @@
           "params_b": null
         },
         {
+          "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+          "name": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+          "context": 80000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "reasoning"
+          ],
+          "params_b": 32.0
+        },
+        {
           "id": "@cf/meta/llama-3.1-8b-instruct-fp8",
           "name": "@cf/meta/llama-3.1-8b-instruct-fp8",
           "context": 32000,
@@ -208,6 +218,13 @@
           "params_b": null
         },
         {
+          "id": "@cf/meta/llama-3.2-1b-instruct",
+          "name": "@cf/meta/llama-3.2-1b-instruct",
+          "context": 60000,
+          "limits": "10k neurons/day",
+          "params_b": 1.0
+        },
+        {
           "id": "@cf/moonshotai/kimi-k2.6",
           "name": "@cf/moonshotai/kimi-k2.6",
           "context": 262144,
@@ -217,6 +234,13 @@
             "reasoning"
           ],
           "params_b": null
+        },
+        {
+          "id": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
+          "name": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
+          "context": 8192,
+          "limits": "10k neurons/day",
+          "params_b": 7.0
         },
         {
           "id": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
@@ -257,6 +281,35 @@
           "params_b": null
         },
         {
+          "id": "@cf/nvidia/nemotron-3-120b-a12b",
+          "name": "@cf/nvidia/nemotron-3-120b-a12b",
+          "context": 256000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": 120.0
+        },
+        {
+          "id": "@cf/qwen/qwen3-30b-a3b-fp8",
+          "name": "@cf/qwen/qwen3-30b-a3b-fp8",
+          "context": 32768,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": 30.0
+        },
+        {
+          "id": "@cf/google/gemma-7b-it-lora",
+          "name": "@cf/google/gemma-7b-it-lora",
+          "context": 3500,
+          "limits": "10k neurons/day",
+          "params_b": 7.0
+        },
+        {
           "id": "@cf/deepseek-ai/deepseek-v4-pro-0813",
           "name": "@cf/deepseek-ai/deepseek-v4-pro-0813",
           "context": null,
@@ -286,6 +339,16 @@
             "function_calling"
           ],
           "params_b": 17.0
+        },
+        {
+          "id": "@cf/qwen/qwq-32b",
+          "name": "@cf/qwen/qwq-32b",
+          "context": 24000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "reasoning"
+          ],
+          "params_b": 32.0
         }
       ],
       "error": null
