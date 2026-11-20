@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T11:33:39.878013+00:00",
+  "updated": "2026-11-20T20:12:17.007447+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -236,6 +236,17 @@
           "params_b": null
         },
         {
+          "id": "@cf/zai-org/glm-4.7-flash",
+          "name": "@cf/zai-org/glm-4.7-flash",
+          "context": 131072,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling",
+            "reasoning"
+          ],
+          "params_b": null
+        },
+        {
           "id": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
           "name": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
           "context": 8192,
@@ -438,6 +449,13 @@
           "id": "particle-ai/particle-1:free",
           "name": "Particle AI: Particle-1 (free)",
           "context": 1048576,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "dots-studio/dots-3-note-preview:free",
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "context": 512000,
           "limits": "free tier",
           "params_b": null
         },
