@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T20:32:07.334158+00:00",
+  "updated": "2026-11-20T02:17:46.244034+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -58,13 +58,6 @@
           "id": "nvidia/nemotron-3.5-lightning:free",
           "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
           "context": 1000000,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": null
-        },
-        {
-          "id": "cohere/north-mini-code:free",
-          "name": "Cohere: North Mini Code (free)",
-          "context": 256000,
           "limits": "20 req/min · 50 req/day",
           "params_b": null
         },
@@ -181,13 +174,6 @@
             "reasoning"
           ],
           "params_b": null
-        },
-        {
-          "id": "@cf/meta/llama-guard-3-8b",
-          "name": "@cf/meta/llama-guard-3-8b",
-          "context": 131072,
-          "limits": "10k neurons/day",
-          "params_b": 8.0
         },
         {
           "id": "@cf/moonshotai/kimi-k2.7-code",
@@ -389,13 +375,6 @@
           "id": "particle-ai/particle-1:free",
           "name": "Particle AI: Particle-1 (free)",
           "context": 1048576,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "cohere/north-mini-code:free",
-          "name": "Cohere: North Mini Code (free)",
-          "context": 256000,
           "limits": "free tier",
           "params_b": null
         },
