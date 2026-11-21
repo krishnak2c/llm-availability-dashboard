@@ -22,7 +22,8 @@
     "llm7-gptoss20b",
     "kilo-nemotron35lightning",
     "nvidia-nemotron35lightning30ba3b",
-    "nvidia-gemma431bit"
+    "nvidia-gemma431bit",
+    "llm7-gemma3"
   ],
   "chain": [
     {
@@ -162,6 +163,12 @@
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "google/gemma-4-31b-it",
       "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "llm7-gemma3",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "gemma-3-27b",
+      "apiKeyEnv": "LLM7_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -170,6 +177,7 @@
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
+    "gemma-3-27b",
     "glm-4.5-flash",
     "google/gemma-4-31b-it",
     "gpt-oss:20b",
