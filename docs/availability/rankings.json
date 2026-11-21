@@ -9,8 +9,8 @@
     },
     "artificial_analysis_index_version": 5.0,
     "models_input": "docs/availability/stable_models.json",
-    "source_count": 42,
-    "ranked_count": 42,
+    "source_count": 40,
+    "ranked_count": 40,
     "normalization": "min-max within current dataset"
   },
   "ranking": [
@@ -149,28 +149,6 @@
     {
       "provider": "Groq",
       "provider_id": "groq",
-      "model_id": "openai/gpt-oss-120b",
-      "model_name": "openai/gpt-oss-120b",
-      "aa_slug": "gpt-oss-120b",
-      "aa_name": "gpt-oss-120b (High)",
-      "aa_match": "exact",
-      "agentic": null,
-      "coding": null,
-      "intelligence": 3.8,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": 0.0,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 15.0,
-      "rank": 7
-    },
-    {
-      "provider": "Groq",
-      "provider_id": "groq",
       "model_id": "openai/gpt-oss-20b",
       "model_name": "openai/gpt-oss-20b",
       "aa_slug": "gpt-oss-20b",
@@ -188,6 +166,28 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
+      "rank": 7
+    },
+    {
+      "provider": "Groq",
+      "provider_id": "groq",
+      "model_id": "openai/gpt-oss-120b",
+      "model_name": "openai/gpt-oss-120b",
+      "aa_slug": "gpt-oss-120b",
+      "aa_name": "gpt-oss-120b (High)",
+      "aa_match": "exact",
+      "agentic": null,
+      "coding": null,
+      "intelligence": 3.8,
+      "arena": null,
+      "swebench": null,
+      "agentic_norm": null,
+      "coding_norm": null,
+      "intelligence_norm": 0.0,
+      "arena_norm": null,
+      "swebench_norm": null,
+      "hermes_score": 0.0,
+      "data_coverage": 15.0,
       "rank": 8
     },
     {
@@ -677,28 +677,6 @@
     {
       "provider": "Cloudflare AI",
       "provider_id": "cloudflare",
-      "model_id": "@cf/zai-org/glm-4.7-flash",
-      "model_name": "@cf/zai-org/glm-4.7-flash",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 31
-    },
-    {
-      "provider": "Cloudflare AI",
-      "provider_id": "cloudflare",
       "model_id": "@cf/qwen/qwen2.5-coder-32b-instruct",
       "model_name": "@cf/qwen/qwen2.5-coder-32b-instruct",
       "aa_slug": "qwen2-5-coder-32b-instruct",
@@ -716,7 +694,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 32
+      "rank": 31
     },
     {
       "provider": "Cloudflare AI",
@@ -738,7 +716,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 33
+      "rank": 32
     },
     {
       "provider": "Cloudflare AI",
@@ -760,7 +738,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 34
+      "rank": 33
     },
     {
       "provider": "Cloudflare AI",
@@ -782,7 +760,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 35
+      "rank": 34
     },
     {
       "provider": "Cloudflare AI",
@@ -804,7 +782,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 36
+      "rank": 35
     },
     {
       "provider": "Cloudflare AI",
@@ -826,7 +804,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 37
+      "rank": 36
     },
     {
       "provider": "Kilo Code",
@@ -848,7 +826,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 38
+      "rank": 37
     },
     {
       "provider": "Kilo Code",
@@ -870,29 +848,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 39
-    },
-    {
-      "provider": "Kilo Code",
-      "provider_id": "kilo",
-      "model_id": "dots-studio/dots-3-note-preview:free",
-      "model_name": "Dots Studio: Dots3-Note Preview (free)",
-      "aa_slug": null,
-      "aa_name": null,
-      "aa_match": "missing",
-      "agentic": null,
-      "coding": null,
-      "intelligence": null,
-      "arena": null,
-      "swebench": null,
-      "agentic_norm": null,
-      "coding_norm": null,
-      "intelligence_norm": null,
-      "arena_norm": null,
-      "swebench_norm": null,
-      "hermes_score": 0.0,
-      "data_coverage": 0.0,
-      "rank": 40
+      "rank": 38
     },
     {
       "provider": "Kilo Code",
@@ -914,7 +870,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 41
+      "rank": 39
     },
     {
       "provider": "Kilo Code",
@@ -936,7 +892,7 @@
       "swebench_norm": null,
       "hermes_score": 0.0,
       "data_coverage": 0.0,
-      "rank": 42
+      "rank": 40
     }
   ]
 }
