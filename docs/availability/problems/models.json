@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T19:12:40.627747+00:00",
+  "updated": "2026-11-22T01:16:34.588419+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -83,20 +83,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 20.0
-        },
-        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -111,11 +97,18 @@
           "params_b": 120.0
         },
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
           "limits": "varies per model",
-          "params_b": 7.0
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 20.0
         },
         {
           "id": "qwen/qwen3.8-27b",
@@ -130,6 +123,13 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -143,7 +143,15 @@
     "sambanova": {
       "name": "SambaNova",
       "url": "https://cloud.sambanova.ai",
-      "models": [],
+      "models": [
+        {
+          "id": "GLM-5.3",
+          "name": "GLM-5.3",
+          "context": 1048576,
+          "limits": "free tier",
+          "params_b": null
+        }
+      ],
       "error": null
     },
     "nvidia": {
@@ -432,22 +440,6 @@
             "response_schema"
           ],
           "params_b": null
-        },
-        {
-          "id": "voxtral-small-transcribe-3-0",
-          "name": "Voxtral Small Transcribe 3.0",
-          "context": null,
-          "limits": "1 req/s · 1B tok/month",
-          "mode": "audio_transcription",
-          "params_b": null
-        },
-        {
-          "id": "voxtral-mini-tts-3",
-          "name": "Voxtral Mini TTS 3.0",
-          "context": null,
-          "limits": "1 req/s · 1B tok/month",
-          "mode": "audio_speech",
-          "params_b": null
         }
       ],
       "error": null
@@ -616,6 +608,13 @@
       "url": "https://llm7.io",
       "models": [
         {
+          "id": "claude-haiku-4-5",
+          "name": "claude-haiku-4-5",
+          "context": 200000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
@@ -632,6 +631,13 @@
         {
           "id": "glm-5.3-flash",
           "name": "glm-5.3-flash",
+          "context": null,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "gpt-5.6-luna",
+          "name": "gpt-5.6-luna",
           "context": null,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
@@ -761,7 +767,22 @@
     "zen": {
       "name": "OpenCode Zen",
       "url": "https://opencode.ai/zen",
-      "models": [],
+      "models": [
+        {
+          "id": "iceman-free",
+          "name": "iceman-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
+          "id": "flint-40b-free",
+          "name": "flint-40b-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 40.0
+        }
+      ],
       "error": null
     },
     "ollama": {
