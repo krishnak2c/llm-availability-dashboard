@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T01:16:34.588419+00:00",
+  "updated": "2026-11-22T11:18:10.109865+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -83,20 +83,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 120.0
-        },
-        {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
           "context": 131072,
@@ -130,6 +116,20 @@
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 120.0
         }
       ],
       "error": null
@@ -143,15 +143,7 @@
     "sambanova": {
       "name": "SambaNova",
       "url": "https://cloud.sambanova.ai",
-      "models": [
-        {
-          "id": "GLM-5.3",
-          "name": "GLM-5.3",
-          "context": 1048576,
-          "limits": "free tier",
-          "params_b": null
-        }
-      ],
+      "models": [],
       "error": null
     },
     "nvidia": {
@@ -608,13 +600,6 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "claude-haiku-4-5",
-          "name": "claude-haiku-4-5",
-          "context": 200000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
@@ -631,13 +616,6 @@
         {
           "id": "glm-5.3-flash",
           "name": "glm-5.3-flash",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "gpt-5.6-luna",
-          "name": "gpt-5.6-luna",
           "context": null,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
@@ -767,22 +745,7 @@
     "zen": {
       "name": "OpenCode Zen",
       "url": "https://opencode.ai/zen",
-      "models": [
-        {
-          "id": "iceman-free",
-          "name": "iceman-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "flint-40b-free",
-          "name": "flint-40b-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": 40.0
-        }
-      ],
+      "models": [],
       "error": null
     },
     "ollama": {
