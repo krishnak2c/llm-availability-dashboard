@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T19:35:03.869970+00:00",
+  "updated": "2026-11-23T01:40:16.137386+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
@@ -11,20 +11,6 @@
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
-        },
-        {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -39,6 +25,20 @@
             "prompt_caching"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -112,13 +112,6 @@
             "response_schema"
           ],
           "params_b": 120.0
-        },
-        {
-          "id": "nvidia/riva-translate-4b-instruct-v2",
-          "name": "nvidia/riva-translate-4b-instruct-v2",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 4.0
         },
         {
           "id": "poolside/laguna-xs-2.1",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T19:35:03.869970+00:00",
+  "updated": "2026-11-23T01:40:16.137386+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -90,20 +90,6 @@
           "params_b": 7.0
         },
         {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
-        },
-        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -116,6 +102,20 @@
             "prompt_caching"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -607,6 +607,13 @@
           "params_b": null
         },
         {
+          "id": "deepseek-v4.1-flash",
+          "name": "deepseek-v4.1-flash",
+          "context": 1048576,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "gemma-3-27b",
           "name": "gemma-3-27b",
           "context": 262144,
@@ -633,20 +640,6 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
-        },
-        {
-          "id": "kimi-k3.1-pro",
-          "name": "kimi-k3.1-pro",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "mimo-v2.6-flash",
-          "name": "mimo-v2.6-flash",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
         },
         {
           "id": "mistral-Nemo-Instruct-2407",
