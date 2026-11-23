@@ -1,10 +1,24 @@
 {
-  "updated": "2026-11-23T01:40:16.137386+00:00",
+  "updated": "2026-11-23T12:31:29.663477+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 20.0
+        },
         {
           "id": "allam-2-7b",
           "name": "allam-2-7b",
@@ -39,20 +53,6 @@
             "reasoning"
           ],
           "params_b": 27.0
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 20.0
         }
       ],
       "error": null
@@ -61,6 +61,13 @@
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
+        {
+          "id": "meta/muse-glimmer-30b",
+          "name": "meta/muse-glimmer-30b",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 30.0
+        },
         {
           "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
           "name": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",

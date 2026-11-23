@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T01:40:16.137386+00:00",
+  "updated": "2026-11-23T12:31:29.663477+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -48,6 +48,13 @@
           "params_b": null
         },
         {
+          "id": "dots-studio/dots-3-note-preview:free",
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "context": 512000,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": null
+        },
+        {
           "id": "nvidia/nemotron-3.5-lightning:free",
           "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
           "context": 1000000,
@@ -83,6 +90,20 @@
       "url": "https://console.groq.com",
       "models": [
         {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 20.0
+        },
+        {
           "id": "allam-2-7b",
           "name": "allam-2-7b",
           "context": 4096,
@@ -116,20 +137,6 @@
             "reasoning"
           ],
           "params_b": 27.0
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 20.0
         }
       ],
       "error": null
@@ -600,16 +607,16 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "codestral-latest",
-          "name": "codestral-latest",
-          "context": 32000,
+          "id": "DeepSeek-V4-Flash-0731",
+          "name": "DeepSeek-V4-Flash-0731",
+          "context": 400000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
         {
-          "id": "deepseek-v4.1-flash",
-          "name": "deepseek-v4.1-flash",
-          "context": 1048576,
+          "id": "codestral-latest",
+          "name": "codestral-latest",
+          "context": 32000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -640,6 +647,13 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
+        },
+        {
+          "id": "minimax-m2.7",
+          "name": "minimax-m2.7",
+          "context": 180000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
         },
         {
           "id": "mistral-Nemo-Instruct-2407",
@@ -719,6 +733,13 @@
           "params_b": null
         },
         {
+          "id": "dots-studio/dots-3-note-preview:free",
+          "name": "Dots Studio: Dots3-Note Preview (free)",
+          "context": 512000,
+          "limits": "free tier",
+          "params_b": null
+        },
+        {
           "id": "nvidia/nemotron-3.5-lightning:free",
           "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
           "context": 1000000,
@@ -752,13 +773,29 @@
     "zen": {
       "name": "OpenCode Zen",
       "url": "https://opencode.ai/zen",
-      "models": [],
+      "models": [
+        {
+          "id": "qwen4-max-free",
+          "name": "qwen4-max-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        }
+      ],
       "error": null
     },
     "ollama": {
       "name": "Ollama Cloud",
       "url": "https://ollama.com",
-      "models": [],
+      "models": [
+        {
+          "id": "nemotron-3-nano:30b",
+          "name": "nemotron-3-nano:30b",
+          "context": null,
+          "limits": "free tier",
+          "params_b": 30.0
+        }
+      ],
       "error": null
     },
     "orca": {
