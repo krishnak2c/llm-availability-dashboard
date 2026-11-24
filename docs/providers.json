@@ -5,24 +5,22 @@
     "kilo-nemotron3ultra550ba55b",
     "nvidia-nemotron3ultra550ba55b",
     "nvidia-nemotron35bolte4b",
-    "kilo-kiloautofree",
-    "kilo-baiduernie55flashpreview",
     "kilo-nemotron3nanoomni30ba3breasoning",
     "nvidia-nemotron3nanoomni30ba3breasoning",
-    "kilo-openrouterfree",
+    "kilo-baiduernie55flashpreview",
     "nvidia-lagunaxs21",
+    "kilo-openrouterfree",
+    "kilo-kiloautofree",
     "kilo-recursiveflintv10",
-    "kilo-dots3notepreview",
     "zai-glm45flash",
     "nvidia-mistrallarge41ta52b",
+    "nvidia-step5",
     "kilo-particleaiparticle1",
     "kilo-liquidlfm3",
-    "nvidia-step5",
     "llm7-codestral",
     "llm7-mistralnemoinstruct",
     "llm7-gptoss20b",
     "nvidia-minimaxm31flash",
-    "kilo-inclusionailing32flash",
     "kilo-nemotron35lightning",
     "nvidia-nemotron35lightning30ba3b"
   ],
@@ -58,18 +56,6 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "kilo-kiloautofree",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "kilo-auto/free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "kilo-baiduernie55flashpreview",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "baidu/ernie-5.5-flash-preview:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
       "id": "kilo-nemotron3nanoomni30ba3breasoning",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -82,9 +68,9 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "kilo-openrouterfree",
+      "id": "kilo-baiduernie55flashpreview",
       "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "openrouter/free",
+      "model": "baidu/ernie-5.5-flash-preview:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
@@ -94,15 +80,21 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "kilo-recursiveflintv10",
+      "id": "kilo-openrouterfree",
       "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "recursive/flint-v1.0:free",
+      "model": "openrouter/free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "kilo-dots3notepreview",
+      "id": "kilo-kiloautofree",
       "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "dots-studio/dots-3-note-preview:free",
+      "model": "kilo-auto/free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "kilo-recursiveflintv10",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "recursive/flint-v1.0:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
@@ -118,6 +110,12 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
+      "id": "nvidia-step5",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "stepfun-ai/step-5-preview",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
       "id": "kilo-particleaiparticle1",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "particle-ai/particle-1:free",
@@ -128,12 +126,6 @@
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "liquid/lfm-3-1.7b:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "nvidia-step5",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "stepfun-ai/step-5-preview",
-      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "llm7-codestral",
@@ -160,12 +152,6 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "kilo-inclusionailing32flash",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "inclusionai/ling-3.2-flash:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
       "id": "kilo-nemotron35lightning",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3.5-lightning:free",
@@ -184,12 +170,10 @@
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
-    "dots-studio/dots-3-note-preview:free",
     "glm-4.5-flash",
     "gpt-oss:20b",
     "hy3",
     "hy3-free",
-    "inclusionai/ling-3.2-flash:free",
     "kilo-auto/free",
     "laguna-s-2.1-free",
     "liquid/lfm-3-1.7b:free",

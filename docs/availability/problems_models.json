@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T13:39:10.637103+00:00",
+  "updated": "2026-11-24T23:52:48.610045+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -48,13 +48,6 @@
           "params_b": null
         },
         {
-          "id": "dots-studio/dots-3-note-preview:free",
-          "name": "Dots Studio: Dots3-Note Preview (free)",
-          "context": 512000,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": null
-        },
-        {
           "id": "nvidia/nemotron-3.5-lightning:free",
           "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
           "context": 1000000,
@@ -90,13 +83,6 @@
       "url": "https://build.nvidia.com",
       "models": [
         {
-          "id": "google/gemma-4-31b-it",
-          "name": "google/gemma-4-31b-it",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": 31.0
-        },
-        {
           "id": "minimaxai/minimax-m3.1-flash",
           "name": "minimaxai/minimax-m3.1-flash",
           "context": null,
@@ -123,6 +109,25 @@
           "context": null,
           "limits": "40 req/min",
           "params_b": 31.0
+        },
+        {
+          "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+          "name": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": 8.0
+        },
+        {
+          "id": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "name": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+          "context": null,
+          "limits": "40 req/min",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "nvidia/riva-translate-4b-instruct-v2",
@@ -308,13 +313,6 @@
           "id": "particle-ai/particle-1:free",
           "name": "Particle AI: Particle-1 (free)",
           "context": 1048576,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "dots-studio/dots-3-note-preview:free",
-          "name": "Dots Studio: Dots3-Note Preview (free)",
-          "context": 512000,
           "limits": "free tier",
           "params_b": null
         }
