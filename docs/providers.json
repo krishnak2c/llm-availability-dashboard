@@ -2,8 +2,8 @@
   "order": [
     "kilo-nemotron35supervl",
     "nvidia-nemotron35supervl120ba12b",
-    "nvidia-nemotron3ultra550ba55b",
     "kilo-nemotron3ultra550ba55b",
+    "nvidia-nemotron3ultra550ba55b",
     "nvidia-nemotron35bolte4b",
     "kilo-kiloautofree",
     "kilo-baiduernie55flashpreview",
@@ -12,18 +12,17 @@
     "kilo-openrouterfree",
     "nvidia-lagunaxs21",
     "kilo-recursiveflintv10",
-    "nvidia-mistrallarge41ta52b",
+    "kilo-dots3notepreview",
     "zai-glm45flash",
+    "nvidia-mistrallarge41ta52b",
+    "kilo-particleaiparticle1",
     "nvidia-step5",
-    "kilo-liquidlfm3",
     "llm7-codestral",
     "nvidia-minimaxm31flash",
     "llm7-mistralnemoinstruct",
     "llm7-gptoss20b",
-    "kilo-inclusionailing32flash",
-    "nvidia-nemotron35lightning30ba3b",
     "kilo-nemotron35lightning",
-    "llm7-gemma3"
+    "nvidia-nemotron35lightning30ba3b"
   ],
   "chain": [
     {
@@ -39,16 +38,16 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "nvidia-nemotron3ultra550ba55b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/nemotron-3-ultra-550b-a55b",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
       "id": "kilo-nemotron3ultra550ba55b",
       "baseUrl": "https://api.kilo.ai/api/gateway",
       "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
+      "id": "nvidia-nemotron3ultra550ba55b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "apiKeyEnv": "NIM_API_KEY"
     },
     {
       "id": "nvidia-nemotron35bolte4b",
@@ -99,10 +98,10 @@
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
-      "id": "nvidia-mistrallarge41ta52b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "mistralai/mistral-large-4-1t-a52b",
-      "apiKeyEnv": "NIM_API_KEY"
+      "id": "kilo-dots3notepreview",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "dots-studio/dots-3-note-preview:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "zai-glm45flash",
@@ -111,16 +110,22 @@
       "apiKeyEnv": "ZAI_API_KEY"
     },
     {
+      "id": "nvidia-mistrallarge41ta52b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "mistralai/mistral-large-4-1t-a52b",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "kilo-particleaiparticle1",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "model": "particle-ai/particle-1:free",
+      "apiKeyEnv": "KILOCODE_API_KEY"
+    },
+    {
       "id": "nvidia-step5",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "stepfun-ai/step-5-preview",
       "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "kilo-liquidlfm3",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "liquid/lfm-3-1.7b:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
       "id": "llm7-codestral",
@@ -147,9 +152,9 @@
       "apiKeyEnv": "LLM7_API_KEY"
     },
     {
-      "id": "kilo-inclusionailing32flash",
+      "id": "kilo-nemotron35lightning",
       "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "inclusionai/ling-3.2-flash:free",
+      "model": "nvidia/nemotron-3.5-lightning:free",
       "apiKeyEnv": "KILOCODE_API_KEY"
     },
     {
@@ -157,18 +162,6 @@
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
       "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "kilo-nemotron35lightning",
-      "baseUrl": "https://api.kilo.ai/api/gateway",
-      "model": "nvidia/nemotron-3.5-lightning:free",
-      "apiKeyEnv": "KILOCODE_API_KEY"
-    },
-    {
-      "id": "llm7-gemma3",
-      "baseUrl": "https://api.llm7.io/v1",
-      "model": "gemma-3-27b",
-      "apiKeyEnv": "LLM7_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -177,15 +170,13 @@
     "deepseek-ai/deepseek-v4-flash-0731",
     "deepseek-v4-flash-free",
     "deepseek/deepseek-v4-pro-free",
-    "gemma-3-27b",
+    "dots-studio/dots-3-note-preview:free",
     "glm-4.5-flash",
     "gpt-oss:20b",
     "hy3",
     "hy3-free",
-    "inclusionai/ling-3.2-flash:free",
     "kilo-auto/free",
     "laguna-s-2.1-free",
-    "liquid/lfm-3-1.7b:free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
     "minimaxai/minimax-m3.1-flash",
@@ -202,6 +193,7 @@
     "nvidia/nemotron-3.5-super-vl-120b-a12b",
     "nvidia/nemotron-3.5-super-vl:free",
     "openrouter/free",
+    "particle-ai/particle-1:free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",
     "recursive/flint-v1.0:free",
