@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T08:28:49.782870+00:00",
+  "updated": "2026-11-25T19:13:36.446553+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -69,6 +69,13 @@
           "params_b": 30.0
         },
         {
+          "id": "google/gemma-4-31b-it:free",
+          "name": "Google: Gemma 4 31B (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 31.0
+        },
+        {
           "id": "openrouter/free",
           "name": "Free Models Router",
           "context": 200000,
@@ -82,13 +89,6 @@
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
         {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
@@ -116,6 +116,13 @@
             "prompt_caching"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         },
         {
           "id": "qwen/qwen3.8-27b",
@@ -169,6 +176,13 @@
             "function_calling",
             "tool_choice"
           ],
+          "params_b": null
+        },
+        {
+          "id": "moonshotai/kimi-k3.1-pro",
+          "name": "moonshotai/kimi-k3.1-pro",
+          "context": null,
+          "limits": "40 req/min",
           "params_b": null
         },
         {
@@ -586,9 +600,23 @@
       "url": "https://llm7.io",
       "models": [
         {
+          "id": "claude-fable-5-2",
+          "name": "claude-fable-5-2",
+          "context": 1000000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "flux-2-pro",
+          "name": "flux-2-pro",
+          "context": null,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -607,11 +635,18 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": 131000,
+          "id": "gpt-6.2-astra",
+          "name": "gpt-6.2-astra",
+          "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
-          "params_b": 120.0
+          "params_b": null
+        },
+        {
+          "id": "gpt-6.2-sol",
+          "name": "gpt-6.2-sol",
+          "context": 1000000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
         },
         {
           "id": "gpt-oss:20b",
@@ -619,13 +654,6 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
-        },
-        {
-          "id": "mistral-Nemo-Instruct-2407",
-          "name": "mistral-Nemo-Instruct-2407",
-          "context": 128000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
         }
       ],
       "error": null
@@ -637,6 +665,13 @@
         {
           "id": "glm-4.5-flash",
           "name": "GLM-4.5-Flash",
+          "context": null,
+          "limits": "free Flash tier",
+          "params_b": null
+        },
+        {
+          "id": "glm-5.3-flashx-legal",
+          "name": "glm-5.3-flashx-legal",
           "context": null,
           "limits": "free Flash tier",
           "params_b": null

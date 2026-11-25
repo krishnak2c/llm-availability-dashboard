@@ -1,17 +1,10 @@
 {
-  "updated": "2026-11-25T08:28:49.782870+00:00",
+  "updated": "2026-11-25T19:13:36.446553+00:00",
   "providers": {
     "groq": {
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
         {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
@@ -39,6 +32,13 @@
             "prompt_caching"
           ],
           "params_b": 120.0
+        },
+        {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
         },
         {
           "id": "qwen/qwen3.8-27b",
@@ -104,163 +104,6 @@
       ],
       "error": null
     },
-    "mistral": {
-      "name": "Mistral",
-      "url": "https://console.mistral.ai",
-      "models": [
-        {
-          "id": "codestral-2508",
-          "name": "codestral-2508",
-          "context": 128000,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "codestral-latest",
-          "name": "codestral-2508",
-          "context": 128000,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-code-latest",
-          "name": "codestral-2508",
-          "context": 128000,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "mistral-code-fim-latest",
-          "name": "codestral-2508",
-          "context": 128000,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "ministral-14b-2512",
-          "name": "ministral-14b-2512",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision"
-          ],
-          "params_b": 14.0
-        },
-        {
-          "id": "ministral-14b-latest",
-          "name": "ministral-14b-2512",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision"
-          ],
-          "params_b": 14.0
-        },
-        {
-          "id": "ministral-3b-2512",
-          "name": "ministral-3b-2512",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision"
-          ],
-          "params_b": 3.0
-        },
-        {
-          "id": "ministral-3b-latest",
-          "name": "ministral-3b-2512",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision"
-          ],
-          "params_b": 3.0
-        },
-        {
-          "id": "ministral-8b-2512",
-          "name": "ministral-8b-2512",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision"
-          ],
-          "params_b": 8.0
-        },
-        {
-          "id": "ministral-8b-latest",
-          "name": "ministral-8b-2512",
-          "context": 262144,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision"
-          ],
-          "params_b": 8.0
-        },
-        {
-          "id": "voxtral-small-2507",
-          "name": "Voxtral Small Transcribe",
-          "context": 32768,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        },
-        {
-          "id": "voxtral-small-latest",
-          "name": "Voxtral Small Transcribe",
-          "context": 32768,
-          "limits": "1 req/s · 1B tok/month",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema"
-          ],
-          "params_b": null
-        }
-      ],
-      "error": null
-    },
     "cloudflare": {
       "name": "Cloudflare AI",
       "url": "https://developers.cloudflare.com/workers-ai/",
@@ -301,6 +144,16 @@
           "params_b": 70.0
         },
         {
+          "id": "@cf/ibm-granite/granite-4.0-h-micro",
+          "name": "@cf/ibm-granite/granite-4.0-h-micro",
+          "context": 131000,
+          "limits": "10k neurons/day",
+          "capabilities": [
+            "function_calling"
+          ],
+          "params_b": null
+        },
+        {
           "id": "@cf/qwen/qwen2.5-coder-32b-instruct",
           "name": "@cf/qwen/qwen2.5-coder-32b-instruct",
           "context": 32768,
@@ -313,17 +166,6 @@
           "context": 128000,
           "limits": "10k neurons/day",
           "params_b": 27.0
-        },
-        {
-          "id": "@cf/google/gemma-4-26b-a4b-it",
-          "name": "@cf/google/gemma-4-26b-a4b-it",
-          "context": 256000,
-          "limits": "10k neurons/day",
-          "capabilities": [
-            "function_calling",
-            "reasoning"
-          ],
-          "params_b": 26.0
         },
         {
           "id": "@cf/mistralai/mistral-small-3.1-24b-instruct",

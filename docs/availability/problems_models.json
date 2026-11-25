@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T08:28:49.782870+00:00",
+  "updated": "2026-11-25T19:13:36.446553+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -157,6 +157,163 @@
       ],
       "error": null
     },
+    "mistral": {
+      "name": "Mistral",
+      "url": "https://console.mistral.ai",
+      "models": [
+        {
+          "id": "codestral-2508",
+          "name": "codestral-2508",
+          "context": 128000,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "codestral-latest",
+          "name": "codestral-2508",
+          "context": 128000,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "mistral-code-latest",
+          "name": "codestral-2508",
+          "context": 128000,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "mistral-code-fim-latest",
+          "name": "codestral-2508",
+          "context": 128000,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "ministral-14b-2512",
+          "name": "ministral-14b-2512",
+          "context": 262144,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
+          "params_b": 14.0
+        },
+        {
+          "id": "ministral-14b-latest",
+          "name": "ministral-14b-2512",
+          "context": 262144,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
+          "params_b": 14.0
+        },
+        {
+          "id": "ministral-3b-2512",
+          "name": "ministral-3b-2512",
+          "context": 262144,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
+          "params_b": 3.0
+        },
+        {
+          "id": "ministral-3b-latest",
+          "name": "ministral-3b-2512",
+          "context": 262144,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
+          "params_b": 3.0
+        },
+        {
+          "id": "ministral-8b-2512",
+          "name": "ministral-8b-2512",
+          "context": 262144,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
+          "params_b": 8.0
+        },
+        {
+          "id": "ministral-8b-latest",
+          "name": "ministral-8b-2512",
+          "context": 262144,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision"
+          ],
+          "params_b": 8.0
+        },
+        {
+          "id": "voxtral-small-2507",
+          "name": "Voxtral Small Transcribe",
+          "context": 32768,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
+          "params_b": null
+        },
+        {
+          "id": "voxtral-small-latest",
+          "name": "Voxtral Small Transcribe",
+          "context": 32768,
+          "limits": "1 req/s · 1B tok/month",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema"
+          ],
+          "params_b": null
+        }
+      ],
+      "error": null
+    },
     "cloudflare": {
       "name": "Cloudflare AI",
       "url": "https://developers.cloudflare.com/workers-ai/",
@@ -192,14 +349,15 @@
           "params_b": null
         },
         {
-          "id": "@cf/ibm-granite/granite-4.0-h-micro",
-          "name": "@cf/ibm-granite/granite-4.0-h-micro",
-          "context": 131000,
+          "id": "@cf/google/gemma-4-26b-a4b-it",
+          "name": "@cf/google/gemma-4-26b-a4b-it",
+          "context": 256000,
           "limits": "10k neurons/day",
           "capabilities": [
-            "function_calling"
+            "function_calling",
+            "reasoning"
           ],
-          "params_b": null
+          "params_b": 26.0
         },
         {
           "id": "@cf/qwen/qwen3.8-27b",
@@ -254,25 +412,11 @@
           "params_b": null
         },
         {
-          "id": "gpt-oss:120b",
-          "name": "gpt-oss:120b",
-          "context": 131000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": 120.0
-        },
-        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
-        },
-        {
-          "id": "mistral-Nemo-Instruct-2407",
-          "name": "mistral-Nemo-Instruct-2407",
-          "context": 128000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
         }
       ],
       "error": null
