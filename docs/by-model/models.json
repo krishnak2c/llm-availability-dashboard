@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T23:52:48.610045+00:00",
+  "updated": "2026-11-25T08:28:49.782870+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -83,6 +83,27 @@
       "url": "https://console.groq.com",
       "models": [
         {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 20.0
+        },
+        {
           "id": "openai/gpt-oss-120b",
           "name": "openai/gpt-oss-120b",
           "context": 131072,
@@ -109,27 +130,6 @@
             "reasoning"
           ],
           "params_b": 27.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 20.0
         }
       ],
       "error": null
@@ -593,25 +593,11 @@
           "params_b": null
         },
         {
-          "id": "deepseek-v4-flash-0731-fast",
-          "name": "deepseek-v4-flash-0731-fast",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "gemma-3-27b",
           "name": "gemma-3-27b",
           "context": 262144,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 27.0
-        },
-        {
-          "id": "gemma-4-uncensored",
-          "name": "gemma-4-uncensored",
-          "context": 256000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
         },
         {
           "id": "glm-5.3-flash",

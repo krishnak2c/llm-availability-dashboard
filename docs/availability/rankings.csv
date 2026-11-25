@@ -1,43 +1,40 @@
 provider,provider_id,model_id,model_name,aa_slug,aa_name,aa_match,agentic,coding,intelligence,arena,swebench,agentic_norm,coding_norm,intelligence_norm,arena_norm,swebench_norm,hermes_score,data_coverage,rank
 Groq,groq,qwen/qwen3.8-27b,qwen/qwen3.8-27b,qwen3-8-27b,Qwen3.8 27B (Xhigh),substring,,,20.1,,,,,100.0,,,100.0,15.0,1
-NVIDIA NIM,nvidia,nvidia/nemotron-3.5-super-vl-120b-a12b,nvidia/nemotron-3.5-super-vl-120b-a12b,nemotron-3-5-super-vl,Nemotron 3.5 Super VL,substring,,,13.6,,,,,60.12,,,60.12,15.0,2
-Kilo Code,kilo,nvidia/nemotron-3.5-super-vl:free,NVIDIA: Nemotron 3.5 Super VL (free),nemotron-3-5-super-vl,Nemotron 3.5 Super VL,substring,,,13.6,,,,,60.12,,,60.12,15.0,3
-NVIDIA NIM,nvidia,nvidia/nemotron-3-ultra-550b-a55b,nvidia/nemotron-3-ultra-550b-a55b,nvidia-nemotron-3-ultra-550b-a55b,Nemotron 3 Ultra 550B A55B (Reasoning),compact,,,11.8,,,,,49.08,,,49.08,15.0,4
-Kilo Code,kilo,nvidia/nemotron-3-ultra-550b-a55b:free,NVIDIA: Nemotron 3 Ultra (free),nvidia-nemotron-3-ultra-550b-a55b,Nemotron 3 Ultra 550B A55B (Reasoning),substring,,,11.8,,,,,49.08,,,49.08,15.0,5
-NVIDIA NIM,nvidia,meta/muse-glimmer-30b,meta/muse-glimmer-30b,muse-glimmer,Muse Glimmer (High),substring,,,6.3,,,,,15.34,,,15.34,15.0,6
-NVIDIA NIM,nvidia,nvidia/nemotron-3.5-lightning-30b-a3b,nvidia/nemotron-3.5-lightning-30b-a3b,nemotron-3-5-lightning,Nemotron 3.5 Lightning,substring,,,5.5,,,,,10.43,,,10.43,15.0,7
-Kilo Code,kilo,nvidia/nemotron-3.5-lightning:free,NVIDIA: Nemotron 3.5 Lightning (free),nemotron-3-5-lightning,Nemotron 3.5 Lightning,substring,,,5.5,,,,,10.43,,,10.43,15.0,8
+Kilo Code,kilo,nvidia/nemotron-3.5-super-vl:free,NVIDIA: Nemotron 3.5 Super VL (free),nemotron-3-5-super-vl,Nemotron 3.5 Super VL,substring,,,13.6,,,,,60.12,,,60.12,15.0,2
+NVIDIA NIM,nvidia,nvidia/nemotron-3-ultra-550b-a55b,nvidia/nemotron-3-ultra-550b-a55b,nvidia-nemotron-3-ultra-550b-a55b,Nemotron 3 Ultra 550B A55B (Reasoning),compact,,,11.8,,,,,49.08,,,49.08,15.0,3
+Kilo Code,kilo,nvidia/nemotron-3-ultra-550b-a55b:free,NVIDIA: Nemotron 3 Ultra (free),nvidia-nemotron-3-ultra-550b-a55b,Nemotron 3 Ultra 550B A55B (Reasoning),substring,,,11.8,,,,,49.08,,,49.08,15.0,4
+NVIDIA NIM,nvidia,nvidia/nemotron-3.5-lightning-30b-a3b,nvidia/nemotron-3.5-lightning-30b-a3b,nemotron-3-5-lightning,Nemotron 3.5 Lightning,substring,,,5.5,,,,,10.43,,,10.43,15.0,5
+Kilo Code,kilo,nvidia/nemotron-3.5-lightning:free,NVIDIA: Nemotron 3.5 Lightning (free),nemotron-3-5-lightning,Nemotron 3.5 Lightning,substring,,,5.5,,,,,10.43,,,10.43,15.0,6
+Groq,groq,openai/gpt-oss-120b,openai/gpt-oss-120b,gpt-oss-120b,gpt-oss-120b (High),exact,,,3.8,,,,,0.0,,,0.0,15.0,7
+Groq,groq,allam-2-7b,allam-2-7b,,,missing,,,,,,,,,,,0.0,0.0,8
 Groq,groq,openai/gpt-oss-20b,openai/gpt-oss-20b,gpt-oss-20b,gpt-oss-20b (High),exact,,,,,,,,,,,0.0,0.0,9
-Groq,groq,openai/gpt-oss-120b,openai/gpt-oss-120b,gpt-oss-120b,gpt-oss-120b (High),exact,,,3.8,,,,,0.0,,,0.0,15.0,10
-Groq,groq,allam-2-7b,allam-2-7b,,,missing,,,,,,,,,,,0.0,0.0,11
-NVIDIA NIM,nvidia,nvidia/llama-3.1-nemotron-safety-guard-8b-v3,nvidia/llama-3.1-nemotron-safety-guard-8b-v3,,,missing,,,,,,,,,,,0.0,0.0,12
-NVIDIA NIM,nvidia,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning,,,missing,,,,,,,,,,,0.0,0.0,13
-NVIDIA NIM,nvidia,nvidia/nemotron-3.5-bolt-e4b,nvidia/nemotron-3.5-bolt-e4b,,,missing,,,,,,,,,,,0.0,0.0,14
-NVIDIA NIM,nvidia,poolside/laguna-xs-2.1,poolside/laguna-xs-2.1,,,missing,,,,,,,,,,,0.0,0.0,15
-Mistral,mistral,codestral-2508,codestral-2508,,,missing,,,,,,,,,,,0.0,0.0,16
-Mistral,mistral,codestral-latest,codestral-2508,,,missing,,,,,,,,,,,0.0,0.0,17
-Mistral,mistral,mistral-code-latest,codestral-2508,,,missing,,,,,,,,,,,0.0,0.0,18
-Mistral,mistral,mistral-code-fim-latest,codestral-2508,,,missing,,,,,,,,,,,0.0,0.0,19
-Mistral,mistral,ministral-14b-2512,ministral-14b-2512,,,missing,,,,,,,,,,,0.0,0.0,20
-Mistral,mistral,ministral-14b-latest,ministral-14b-2512,,,missing,,,,,,,,,,,0.0,0.0,21
-Mistral,mistral,ministral-3b-2512,ministral-3b-2512,,,missing,,,,,,,,,,,0.0,0.0,22
-Mistral,mistral,ministral-3b-latest,ministral-3b-2512,,,missing,,,,,,,,,,,0.0,0.0,23
-Mistral,mistral,ministral-8b-2512,ministral-8b-2512,,,missing,,,,,,,,,,,0.0,0.0,24
-Mistral,mistral,ministral-8b-latest,ministral-8b-2512,,,missing,,,,,,,,,,,0.0,0.0,25
-Mistral,mistral,voxtral-small-2507,Voxtral Small Transcribe,,,missing,,,,,,,,,,,0.0,0.0,26
-Mistral,mistral,voxtral-small-latest,Voxtral Small Transcribe,,,missing,,,,,,,,,,,0.0,0.0,27
-Cloudflare AI,cloudflare,@cf/openai/gpt-oss-120b,@cf/openai/gpt-oss-120b,gpt-oss-120b,gpt-oss-120b (High),substring,,,3.8,,,,,0.0,,,0.0,15.0,28
-Cloudflare AI,cloudflare,@cf/meta/llama-guard-3-8b,@cf/meta/llama-guard-3-8b,,,missing,,,,,,,,,,,0.0,0.0,29
-Cloudflare AI,cloudflare,@cf/mistral/mistral-7b-instruct-v0.2-lora,@cf/mistral/mistral-7b-instruct-v0.2-lora,mistral-7b-instruct,Mistral 7B Instruct,substring,,,,,,,,,,,0.0,0.0,30
-Cloudflare AI,cloudflare,@cf/meta/llama-3.3-70b-instruct-fp8-fast,@cf/meta/llama-3.3-70b-instruct-fp8-fast,,,missing,,,,,,,,,,,0.0,0.0,31
-Cloudflare AI,cloudflare,@cf/qwen/qwen2.5-coder-32b-instruct,@cf/qwen/qwen2.5-coder-32b-instruct,qwen2-5-coder-32b-instruct,Qwen2.5 Coder Instruct 32B,substring,,,,,,,,,,,0.0,0.0,32
-Cloudflare AI,cloudflare,@cf/aisingapore/gemma-sea-lion-v4-27b-it,@cf/aisingapore/gemma-sea-lion-v4-27b-it,,,missing,,,,,,,,,,,0.0,0.0,33
-Cloudflare AI,cloudflare,@cf/google/gemma-4-26b-a4b-it,@cf/google/gemma-4-26b-a4b-it,gemma-4-26b-a4b,Gemma 4 26B A4B (Reasoning),substring,,,,,,,,,,,0.0,0.0,34
-Cloudflare AI,cloudflare,@cf/mistralai/mistral-small-3.1-24b-instruct,@cf/mistralai/mistral-small-3.1-24b-instruct,,,missing,,,,,,,,,,,0.0,0.0,35
-Cloudflare AI,cloudflare,@cf/daily-co/phonellm-mini-alpha-2,@cf/daily-co/phonellm-mini-alpha-2,,,missing,,,,,,,,,,,0.0,0.0,36
-Cloudflare AI,cloudflare,@cf/openai/gpt-oss-20b,@cf/openai/gpt-oss-20b,gpt-oss-20b,gpt-oss-20b (High),substring,,,,,,,,,,,0.0,0.0,37
-Kilo Code,kilo,kilo-auto/free,Auto Free,,,missing,,,,,,,,,,,0.0,0.0,38
-Kilo Code,kilo,baidu/ernie-5.5-flash-preview:free,Baidu: ERNIE-5.5-Flash-Preview (free),,,missing,,,,,,,,,,,0.0,0.0,39
-Kilo Code,kilo,recursive/flint-v1.0:free,Recursive: Flint (free),,,missing,,,,,,,,,,,0.0,0.0,40
-Kilo Code,kilo,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,NVIDIA: Nemotron 3 Nano Omni (free),,,missing,,,,,,,,,,,0.0,0.0,41
-Kilo Code,kilo,openrouter/free,OpenRouter Free Models Router,,,missing,,,,,,,,,,,0.0,0.0,42
+NVIDIA NIM,nvidia,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning,,,missing,,,,,,,,,,,0.0,0.0,10
+NVIDIA NIM,nvidia,nvidia/nemotron-3.5-bolt-e4b,nvidia/nemotron-3.5-bolt-e4b,,,missing,,,,,,,,,,,0.0,0.0,11
+NVIDIA NIM,nvidia,poolside/laguna-xs-2.1,poolside/laguna-xs-2.1,,,missing,,,,,,,,,,,0.0,0.0,12
+Mistral,mistral,codestral-2508,codestral-2508,,,missing,,,,,,,,,,,0.0,0.0,13
+Mistral,mistral,codestral-latest,codestral-2508,,,missing,,,,,,,,,,,0.0,0.0,14
+Mistral,mistral,mistral-code-latest,codestral-2508,,,missing,,,,,,,,,,,0.0,0.0,15
+Mistral,mistral,mistral-code-fim-latest,codestral-2508,,,missing,,,,,,,,,,,0.0,0.0,16
+Mistral,mistral,ministral-14b-2512,ministral-14b-2512,,,missing,,,,,,,,,,,0.0,0.0,17
+Mistral,mistral,ministral-14b-latest,ministral-14b-2512,,,missing,,,,,,,,,,,0.0,0.0,18
+Mistral,mistral,ministral-3b-2512,ministral-3b-2512,,,missing,,,,,,,,,,,0.0,0.0,19
+Mistral,mistral,ministral-3b-latest,ministral-3b-2512,,,missing,,,,,,,,,,,0.0,0.0,20
+Mistral,mistral,ministral-8b-2512,ministral-8b-2512,,,missing,,,,,,,,,,,0.0,0.0,21
+Mistral,mistral,ministral-8b-latest,ministral-8b-2512,,,missing,,,,,,,,,,,0.0,0.0,22
+Mistral,mistral,voxtral-small-2507,Voxtral Small Transcribe,,,missing,,,,,,,,,,,0.0,0.0,23
+Mistral,mistral,voxtral-small-latest,Voxtral Small Transcribe,,,missing,,,,,,,,,,,0.0,0.0,24
+Cloudflare AI,cloudflare,@cf/openai/gpt-oss-120b,@cf/openai/gpt-oss-120b,gpt-oss-120b,gpt-oss-120b (High),substring,,,3.8,,,,,0.0,,,0.0,15.0,25
+Cloudflare AI,cloudflare,@cf/meta/llama-guard-3-8b,@cf/meta/llama-guard-3-8b,,,missing,,,,,,,,,,,0.0,0.0,26
+Cloudflare AI,cloudflare,@cf/mistral/mistral-7b-instruct-v0.2-lora,@cf/mistral/mistral-7b-instruct-v0.2-lora,mistral-7b-instruct,Mistral 7B Instruct,substring,,,,,,,,,,,0.0,0.0,27
+Cloudflare AI,cloudflare,@cf/meta/llama-3.3-70b-instruct-fp8-fast,@cf/meta/llama-3.3-70b-instruct-fp8-fast,,,missing,,,,,,,,,,,0.0,0.0,28
+Cloudflare AI,cloudflare,@cf/qwen/qwen2.5-coder-32b-instruct,@cf/qwen/qwen2.5-coder-32b-instruct,qwen2-5-coder-32b-instruct,Qwen2.5 Coder Instruct 32B,substring,,,,,,,,,,,0.0,0.0,29
+Cloudflare AI,cloudflare,@cf/aisingapore/gemma-sea-lion-v4-27b-it,@cf/aisingapore/gemma-sea-lion-v4-27b-it,,,missing,,,,,,,,,,,0.0,0.0,30
+Cloudflare AI,cloudflare,@cf/google/gemma-4-26b-a4b-it,@cf/google/gemma-4-26b-a4b-it,gemma-4-26b-a4b,Gemma 4 26B A4B (Reasoning),substring,,,,,,,,,,,0.0,0.0,31
+Cloudflare AI,cloudflare,@cf/mistralai/mistral-small-3.1-24b-instruct,@cf/mistralai/mistral-small-3.1-24b-instruct,,,missing,,,,,,,,,,,0.0,0.0,32
+Cloudflare AI,cloudflare,@cf/daily-co/phonellm-mini-alpha-2,@cf/daily-co/phonellm-mini-alpha-2,,,missing,,,,,,,,,,,0.0,0.0,33
+Cloudflare AI,cloudflare,@cf/openai/gpt-oss-20b,@cf/openai/gpt-oss-20b,gpt-oss-20b,gpt-oss-20b (High),substring,,,,,,,,,,,0.0,0.0,34
+Kilo Code,kilo,kilo-auto/free,Auto Free,,,missing,,,,,,,,,,,0.0,0.0,35
+Kilo Code,kilo,baidu/ernie-5.5-flash-preview:free,Baidu: ERNIE-5.5-Flash-Preview (free),,,missing,,,,,,,,,,,0.0,0.0,36
+Kilo Code,kilo,recursive/flint-v1.0:free,Recursive: Flint (free),,,missing,,,,,,,,,,,0.0,0.0,37
+Kilo Code,kilo,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,NVIDIA: Nemotron 3 Nano Omni (free),,,missing,,,,,,,,,,,0.0,0.0,38
+Kilo Code,kilo,openrouter/free,OpenRouter Free Models Router,,,missing,,,,,,,,,,,0.0,0.0,39
