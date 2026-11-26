@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T03:32:28.109432+00:00",
+  "updated": "2026-11-26T16:51:01.968728+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -412,13 +412,6 @@
           "params_b": 27.0
         },
         {
-          "id": "glm-5.3-flash",
-          "name": "glm-5.3-flash",
-          "context": null,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": 128000,
@@ -501,6 +494,13 @@
           "context": 1000000,
           "limits": "free tier",
           "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "context": 1000000,
+          "limits": "free tier",
+          "params_b": 550.0
         },
         {
           "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T03:32:28.109432+00:00",
+  "updated": "2026-11-26T16:51:01.968728+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -83,20 +83,6 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 120.0
-        },
-        {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
           "context": 131072,
@@ -116,6 +102,20 @@
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "openai/gpt-oss-20b",
@@ -457,6 +457,13 @@
           "params_b": 120.0
         },
         {
+          "id": "@cf/cloudflare/clairic-flash",
+          "name": "@cf/cloudflare/clairic-flash",
+          "context": null,
+          "limits": "10k neurons/day",
+          "params_b": null
+        },
+        {
           "id": "@cf/meta/llama-guard-3-8b",
           "name": "@cf/meta/llama-guard-3-8b",
           "context": 131072,
@@ -593,16 +600,16 @@
       "url": "https://llm7.io",
       "models": [
         {
-          "id": "Qwen3.8-Flash",
-          "name": "Qwen3.8-Flash",
-          "context": 976000,
+          "id": "codestral-latest",
+          "name": "codestral-latest",
+          "context": 32000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
         {
-          "id": "codestral-latest",
-          "name": "codestral-latest",
-          "context": 32000,
+          "id": "deepseek-v4.1-flash-uncensored",
+          "name": "deepseek-v4.1-flash-uncensored",
+          "context": null,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -614,9 +621,16 @@
           "params_b": 27.0
         },
         {
-          "id": "glm-5.3-flash",
-          "name": "glm-5.3-flash",
-          "context": null,
+          "id": "glm-5-3-flash-uncensored",
+          "name": "glm-5-3-flash-uncensored",
+          "context": 1048576,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
+        },
+        {
+          "id": "gpt-6.1-terra",
+          "name": "gpt-6.1-terra",
+          "context": 1000000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -731,15 +745,7 @@
     "zen": {
       "name": "OpenCode Zen",
       "url": "https://opencode.ai/zen",
-      "models": [
-        {
-          "id": "seaglass-alpha-free",
-          "name": "seaglass-alpha-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        }
-      ],
+      "models": [],
       "error": null
     },
     "ollama": {
