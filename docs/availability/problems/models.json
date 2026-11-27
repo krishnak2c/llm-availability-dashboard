@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T01:43:32.647184+00:00",
+  "updated": "2026-11-27T12:12:42.960043+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -104,20 +104,6 @@
           "params_b": 20.0
         },
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 120.0
-        },
-        {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
           "context": 131072,
@@ -130,6 +116,20 @@
             "reasoning"
           ],
           "params_b": 27.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 120.0
         },
         {
           "id": "allam-2-7b",
@@ -157,6 +157,13 @@
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
+        {
+          "id": "fastino/gliner2-pii",
+          "name": "fastino/gliner2-pii",
+          "context": null,
+          "limits": "40 req/min",
+          "params_b": null
+        },
         {
           "id": "minimaxai/minimax-m3.1-flash",
           "name": "minimaxai/minimax-m3.1-flash",
@@ -223,13 +230,6 @@
             "tool_choice",
             "response_schema"
           ],
-          "params_b": null
-        },
-        {
-          "id": "nvidia/nemotron-3.5-content-safety",
-          "name": "nvidia/nemotron-3.5-content-safety",
-          "context": null,
-          "limits": "40 req/min",
           "params_b": null
         },
         {
@@ -614,8 +614,8 @@
           "params_b": null
         },
         {
-          "id": "gemini-3.5-flash-lite",
-          "name": "gemini-3.5-flash-lite",
+          "id": "gemini-3.6-flash",
+          "name": "gemini-3.6-flash",
           "context": 512000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
@@ -633,13 +633,6 @@
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
-        },
-        {
-          "id": "minimax-m3.1-flash",
-          "name": "minimax-m3.1-flash",
-          "context": 975000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
         }
       ],
       "error": null
@@ -745,15 +738,7 @@
     "zen": {
       "name": "OpenCode Zen",
       "url": "https://opencode.ai/zen",
-      "models": [
-        {
-          "id": "jev-1.13-free",
-          "name": "jev-1.13-free",
-          "context": null,
-          "limits": "free tier",
-          "params_b": null
-        }
-      ],
+      "models": [],
       "error": null
     },
     "ollama": {

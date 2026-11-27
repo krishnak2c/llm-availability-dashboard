@@ -1,19 +1,19 @@
 {
   "order": [
     "nvidia-nemotron3ultra550ba55b",
-    "nvidia-nemotron35bolte4b",
     "nvidia-nemotron3nanoomni30ba3breasoning",
+    "nvidia-nemotron35bolte4b",
     "nvidia-lagunaxs21",
     "nvidia-nemotron35supervl120ba12b",
     "nvidia-mistrallarge41ta52b",
     "zai-glm45flash",
     "llm7-codestral",
+    "llm7-gptoss20b",
     "nvidia-step5",
     "openrouter-openrouterfree",
-    "llm7-gptoss20b",
+    "openrouter-recursiveflintv10",
     "nvidia-minimaxm31flash",
-    "nvidia-nemotron35lightning30ba3b",
-    "openrouter-inclusionailing32flash"
+    "nvidia-nemotron35lightning30ba3b"
   ],
   "chain": [
     {
@@ -23,15 +23,15 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "nvidia-nemotron35bolte4b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "nvidia/nemotron-3.5-bolt-e4b",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
       "id": "nvidia-nemotron3nanoomni30ba3breasoning",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "nvidia-nemotron35bolte4b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "nvidia/nemotron-3.5-bolt-e4b",
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
@@ -65,6 +65,12 @@
       "apiKeyEnv": "LLM7_API_KEY"
     },
     {
+      "id": "llm7-gptoss20b",
+      "baseUrl": "https://api.llm7.io/v1",
+      "model": "gpt-oss:20b",
+      "apiKeyEnv": "LLM7_API_KEY"
+    },
+    {
       "id": "nvidia-step5",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "stepfun-ai/step-5-preview",
@@ -77,10 +83,10 @@
       "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
-      "id": "llm7-gptoss20b",
-      "baseUrl": "https://api.llm7.io/v1",
-      "model": "gpt-oss:20b",
-      "apiKeyEnv": "LLM7_API_KEY"
+      "id": "openrouter-recursiveflintv10",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "recursive/flint-v1.0:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "nvidia-minimaxm31flash",
@@ -93,12 +99,6 @@
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
       "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "openrouter-inclusionailing32flash",
-      "baseUrl": "https://openrouter.ai/api/v1",
-      "model": "inclusionai/ling-3.2-flash:free",
-      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -110,7 +110,6 @@
     "gpt-oss:20b",
     "hy3",
     "hy3-free",
-    "inclusionai/ling-3.2-flash:free",
     "laguna-s-2.1-free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
@@ -125,6 +124,7 @@
     "openrouter/free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",
+    "recursive/flint-v1.0:free",
     "stepfun-ai/step-5-preview",
     "thinkingmachines/inkling",
     "z-ai/glm-5.2"

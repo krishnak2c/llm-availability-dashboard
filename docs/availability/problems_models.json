@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T01:43:32.647184+00:00",
+  "updated": "2026-11-27T12:12:42.960043+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -67,6 +67,13 @@
           "context": 256000,
           "limits": "20 req/min · 50 req/day",
           "params_b": 30.0
+        },
+        {
+          "id": "google/gemma-4-26b-a4b-it:free",
+          "name": "Google: Gemma 4 26B A4B  (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 26.0
         },
         {
           "id": "openrouter/free",
