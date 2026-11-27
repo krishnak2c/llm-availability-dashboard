@@ -1,17 +1,10 @@
 {
-  "updated": "2026-11-27T12:12:42.960043+00:00",
+  "updated": "2026-11-27T21:22:41.461598+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
       "url": "https://openrouter.ai",
       "models": [
-        {
-          "id": "inclusionai/ling-3.2-flash:free",
-          "name": "inclusionAI: Ling 3.2 Flash (free)",
-          "context": 1048576,
-          "limits": "20 req/min · 50 req/day",
-          "params_b": null
-        },
         {
           "id": "baidu/ernie-5.5-flash-preview:free",
           "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
@@ -90,6 +83,27 @@
       "url": "https://console.groq.com",
       "models": [
         {
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
+          "limits": "varies per model",
+          "params_b": 7.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 120.0
+        },
+        {
           "id": "openai/gpt-oss-20b",
           "name": "openai/gpt-oss-20b",
           "context": 131072,
@@ -116,27 +130,6 @@
             "reasoning"
           ],
           "params_b": 27.0
-        },
-        {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 120.0
-        },
-        {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
-          "limits": "varies per model",
-          "params_b": 7.0
         }
       ],
       "error": null
@@ -157,13 +150,6 @@
       "name": "NVIDIA NIM",
       "url": "https://build.nvidia.com",
       "models": [
-        {
-          "id": "fastino/gliner2-pii",
-          "name": "fastino/gliner2-pii",
-          "context": null,
-          "limits": "40 req/min",
-          "params_b": null
-        },
         {
           "id": "minimaxai/minimax-m3.1-flash",
           "name": "minimaxai/minimax-m3.1-flash",
@@ -614,9 +600,9 @@
           "params_b": null
         },
         {
-          "id": "gemini-3.6-flash",
-          "name": "gemini-3.6-flash",
-          "context": 512000,
+          "id": "codex/gpt-6-astra",
+          "name": "codex/gpt-6-astra",
+          "context": 272000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -659,13 +645,6 @@
           "id": "kilo-auto/free",
           "name": "Auto Free",
           "context": 256000,
-          "limits": "free tier",
-          "params_b": null
-        },
-        {
-          "id": "inclusionai/ling-3.2-flash:free",
-          "name": "inclusionAI: Ling 3.2 Flash (free)",
-          "context": 1048576,
           "limits": "free tier",
           "params_b": null
         },
