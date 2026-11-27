@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T16:51:01.968728+00:00",
+  "updated": "2026-11-27T01:43:32.647184+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -69,6 +69,13 @@
           "params_b": 30.0
         },
         {
+          "id": "google/gemma-4-26b-a4b-it:free",
+          "name": "Google: Gemma 4 26B A4B  (free)",
+          "context": 262144,
+          "limits": "20 req/min · 50 req/day",
+          "params_b": 26.0
+        },
+        {
           "id": "openrouter/free",
           "name": "Free Models Router",
           "context": 200000,
@@ -82,6 +89,34 @@
       "name": "Groq",
       "url": "https://console.groq.com",
       "models": [
+        {
+          "id": "openai/gpt-oss-20b",
+          "name": "openai/gpt-oss-20b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 20.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "context": 131072,
+          "limits": "varies per model",
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "reasoning",
+            "prompt_caching"
+          ],
+          "params_b": 120.0
+        },
         {
           "id": "qwen/qwen3.8-27b",
           "name": "qwen/qwen3.8-27b",
@@ -102,34 +137,6 @@
           "context": 4096,
           "limits": "varies per model",
           "params_b": 7.0
-        },
-        {
-          "id": "openai/gpt-oss-120b",
-          "name": "openai/gpt-oss-120b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 120.0
-        },
-        {
-          "id": "openai/gpt-oss-20b",
-          "name": "openai/gpt-oss-20b",
-          "context": 131072,
-          "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "reasoning",
-            "prompt_caching"
-          ],
-          "params_b": 20.0
         }
       ],
       "error": null
@@ -216,6 +223,13 @@
             "tool_choice",
             "response_schema"
           ],
+          "params_b": null
+        },
+        {
+          "id": "nvidia/nemotron-3.5-content-safety",
+          "name": "nvidia/nemotron-3.5-content-safety",
+          "context": null,
+          "limits": "40 req/min",
           "params_b": null
         },
         {
@@ -457,13 +471,6 @@
           "params_b": 120.0
         },
         {
-          "id": "@cf/cloudflare/clairic-flash",
-          "name": "@cf/cloudflare/clairic-flash",
-          "context": null,
-          "limits": "10k neurons/day",
-          "params_b": null
-        },
-        {
           "id": "@cf/meta/llama-guard-3-8b",
           "name": "@cf/meta/llama-guard-3-8b",
           "context": 131072,
@@ -607,9 +614,9 @@
           "params_b": null
         },
         {
-          "id": "deepseek-v4.1-flash-uncensored",
-          "name": "deepseek-v4.1-flash-uncensored",
-          "context": null,
+          "id": "gemini-3.5-flash-lite",
+          "name": "gemini-3.5-flash-lite",
+          "context": 512000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },
@@ -621,25 +628,18 @@
           "params_b": 27.0
         },
         {
-          "id": "glm-5-3-flash-uncensored",
-          "name": "glm-5-3-flash-uncensored",
-          "context": 1048576,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "gpt-6.1-terra",
-          "name": "gpt-6.1-terra",
-          "context": 1000000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
           "id": "gpt-oss:20b",
           "name": "gpt-oss:20b",
           "context": 128000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": 20.0
+        },
+        {
+          "id": "minimax-m3.1-flash",
+          "name": "minimax-m3.1-flash",
+          "context": 975000,
+          "limits": "anonymous · 30 req/min with token",
+          "params_b": null
         }
       ],
       "error": null
@@ -745,7 +745,15 @@
     "zen": {
       "name": "OpenCode Zen",
       "url": "https://opencode.ai/zen",
-      "models": [],
+      "models": [
+        {
+          "id": "jev-1.13-free",
+          "name": "jev-1.13-free",
+          "context": null,
+          "limits": "free tier",
+          "params_b": null
+        }
+      ],
       "error": null
     },
     "ollama": {
