@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T21:22:41.461598+00:00",
+  "updated": "2026-11-28T07:43:52.733247+00:00",
   "providers": {
     "openrouter": {
       "name": "OpenRouter",
@@ -83,11 +83,18 @@
       "url": "https://console.groq.com",
       "models": [
         {
-          "id": "allam-2-7b",
-          "name": "allam-2-7b",
-          "context": 4096,
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
+          "context": 131072,
           "limits": "varies per model",
-          "params_b": 7.0
+          "capabilities": [
+            "function_calling",
+            "tool_choice",
+            "response_schema",
+            "vision",
+            "reasoning"
+          ],
+          "params_b": 27.0
         },
         {
           "id": "openai/gpt-oss-120b",
@@ -118,18 +125,11 @@
           "params_b": 20.0
         },
         {
-          "id": "qwen/qwen3.8-27b",
-          "name": "qwen/qwen3.8-27b",
-          "context": 131072,
+          "id": "allam-2-7b",
+          "name": "allam-2-7b",
+          "context": 4096,
           "limits": "varies per model",
-          "capabilities": [
-            "function_calling",
-            "tool_choice",
-            "response_schema",
-            "vision",
-            "reasoning"
-          ],
-          "params_b": 27.0
+          "params_b": 7.0
         }
       ],
       "error": null
@@ -558,13 +558,6 @@
           "params_b": 27.0
         },
         {
-          "id": "@cf/deepseek-ai/deepseek-v4.1-flash-1017",
-          "name": "@cf/deepseek-ai/deepseek-v4.1-flash-1017",
-          "context": null,
-          "limits": "10k neurons/day",
-          "params_b": null
-        },
-        {
           "id": "@cf/openai/gpt-oss-20b",
           "name": "@cf/openai/gpt-oss-20b",
           "context": 128000,
@@ -596,13 +589,6 @@
           "id": "codestral-latest",
           "name": "codestral-latest",
           "context": 32000,
-          "limits": "anonymous · 30 req/min with token",
-          "params_b": null
-        },
-        {
-          "id": "codex/gpt-6-astra",
-          "name": "codex/gpt-6-astra",
-          "context": 272000,
           "limits": "anonymous · 30 req/min with token",
           "params_b": null
         },

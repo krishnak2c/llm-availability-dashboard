@@ -5,14 +5,17 @@
     "nvidia-nemotron35bolte4b",
     "nvidia-lagunaxs21",
     "nvidia-nemotron35supervl120ba12b",
-    "nvidia-mistrallarge41ta52b",
-    "zai-glm45flash",
     "llm7-codestral",
     "llm7-gptoss20b",
+    "nvidia-mistrallarge41ta52b",
+    "zai-glm45flash",
     "nvidia-step5",
+    "openrouter-openrouterfree",
     "nvidia-minimaxm31flash",
+    "openrouter-recursiveflintv10",
+    "openrouter-liquidlfm3",
     "nvidia-nemotron35lightning30ba3b",
-    "nvidia-kimik31pro"
+    "openrouter-particleaiparticle1"
   ],
   "chain": [
     {
@@ -46,18 +49,6 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "nvidia-mistrallarge41ta52b",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "mistralai/mistral-large-4-1t-a52b",
-      "apiKeyEnv": "NIM_API_KEY"
-    },
-    {
-      "id": "zai-glm45flash",
-      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
-      "model": "glm-4.5-flash",
-      "apiKeyEnv": "ZAI_API_KEY"
-    },
-    {
       "id": "llm7-codestral",
       "baseUrl": "https://api.llm7.io/v1",
       "model": "codestral-latest",
@@ -70,10 +61,28 @@
       "apiKeyEnv": "LLM7_API_KEY"
     },
     {
+      "id": "nvidia-mistrallarge41ta52b",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "model": "mistralai/mistral-large-4-1t-a52b",
+      "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "zai-glm45flash",
+      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+      "model": "glm-4.5-flash",
+      "apiKeyEnv": "ZAI_API_KEY"
+    },
+    {
       "id": "nvidia-step5",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "stepfun-ai/step-5-preview",
       "apiKeyEnv": "NIM_API_KEY"
+    },
+    {
+      "id": "openrouter-openrouterfree",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "openrouter/free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     },
     {
       "id": "nvidia-minimaxm31flash",
@@ -82,16 +91,28 @@
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
+      "id": "openrouter-recursiveflintv10",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "recursive/flint-v1.0:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
+      "id": "openrouter-liquidlfm3",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "liquid/lfm-3-1.7b:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    },
+    {
       "id": "nvidia-nemotron35lightning30ba3b",
       "baseUrl": "https://integrate.api.nvidia.com/v1",
       "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
       "apiKeyEnv": "NIM_API_KEY"
     },
     {
-      "id": "nvidia-kimik31pro",
-      "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "model": "moonshotai/kimi-k3.1-pro",
-      "apiKeyEnv": "NIM_API_KEY"
+      "id": "openrouter-particleaiparticle1",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "model": "particle-ai/particle-1:free",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
     }
   ],
   "modelAllowlist": [
@@ -104,19 +125,22 @@
     "hy3",
     "hy3-free",
     "laguna-s-2.1-free",
+    "liquid/lfm-3-1.7b:free",
     "mimo-v2.5-free",
     "minimaxai/minimax-m3",
     "minimaxai/minimax-m3.1-flash",
     "mistralai/mistral-large-4-1t-a52b",
-    "moonshotai/kimi-k3.1-pro",
     "nemotron-3-ultra-free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
     "nvidia/nemotron-3-ultra-550b-a55b",
     "nvidia/nemotron-3.5-bolt-e4b",
     "nvidia/nemotron-3.5-lightning-30b-a3b",
     "nvidia/nemotron-3.5-super-vl-120b-a12b",
+    "openrouter/free",
+    "particle-ai/particle-1:free",
     "poolside/laguna-xs-2.1",
     "qwen/qwen3.8-27b-free",
+    "recursive/flint-v1.0:free",
     "stepfun-ai/step-5-preview",
     "thinkingmachines/inkling",
     "z-ai/glm-5.2"
